@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
@@ -71,25 +72,40 @@ export default function ServicePage() {
 
       {/* INTRO */}
       <section className="py-24 md:py-40">
-        <div className="container-narrow">
-          <Reveal>
-            <p className="display text-3xl md:text-5xl lg:text-6xl leading-[1.4]">
-              小さなQRコードに、
-              <br />
-              <span className="text-moss">大きな安心を。</span>
-            </p>
-          </Reveal>
-          <Reveal delay={120}>
-            <p className="body-jp mt-12 text-base md:text-lg">
-              QRingは、電話番号を相手に開示することなく、QRコードを介して音声通話を実現する
-              特許取得済（特許第7460140号）の通信サービスです。
-              <br />
-              <br />
-              暗号化された番号情報をクラウドPBX上で復号し、
-              一時的な中間番号を経由して接続する独自方式により、
-              番号を渡すことなく、いつでも、確実に、つながることができます。
-            </p>
-          </Reveal>
+        <div className="container-wide grid md:grid-cols-12 gap-12 lg:gap-20 items-center">
+          <div className="md:col-span-6">
+            <Reveal>
+              <p className="display text-3xl md:text-5xl lg:text-6xl leading-[1.4]">
+                小さなQRコードに、
+                <br />
+                <span className="text-moss">大きな安心を。</span>
+              </p>
+            </Reveal>
+            <Reveal delay={120}>
+              <p className="body-jp mt-12 text-base md:text-lg">
+                QRingは、電話番号を相手に開示することなく、QRコードを介して音声通話を実現する
+                特許取得済（特許第7460140号）の通信サービスです。
+                <br />
+                <br />
+                暗号化された番号情報をクラウドPBX上で復号し、
+                一時的な中間番号を経由して接続する独自方式により、
+                番号を渡すことなく、いつでも、確実に、つながることができます。
+              </p>
+            </Reveal>
+          </div>
+          <div className="md:col-span-6">
+            <Reveal delay={240}>
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src="/images/service-hero.png"
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -128,8 +144,49 @@ export default function ServicePage() {
         </div>
       </section>
 
-      {/* USE CASES */}
+      {/* SENIOR FEATURE */}
       <section id="senior" className="py-24 md:py-40">
+        <div className="container-wide grid md:grid-cols-12 gap-12 lg:gap-20 items-center">
+          <div className="md:col-span-6 order-2 md:order-1">
+            <Reveal>
+              <span className="eyebrow">— For Families</span>
+            </Reveal>
+            <Reveal delay={100}>
+              <h2 className="display mt-8 text-3xl md:text-5xl leading-tight">
+                大切なご家族の
+                <br />
+                <span className="text-moss">見守りに。</span>
+              </h2>
+            </Reveal>
+            <Reveal delay={200}>
+              <p className="mt-10 body-jp text-base md:text-lg">
+                ご高齢のご家族が外出時にもしものことがあったとき、
+                発見者の方から、ご家族の電話番号を一切知らせることなく
+                直接ご連絡をいただける、見守りに特化したパッケージをご用意しています。
+                <br />
+                <br />
+                徘徊や迷子の不安に、静かに寄り添う設計です。
+              </p>
+            </Reveal>
+          </div>
+          <div className="md:col-span-6 order-1 md:order-2">
+            <Reveal delay={150}>
+              <div className="relative aspect-[3/4] overflow-hidden">
+                <Image
+                  src="/images/senior.png"
+                  alt=""
+                  fill
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* USE CASES */}
+      <section className="py-24 md:py-40 bg-cream">
         <div className="container-wide">
           <Reveal>
             <SectionTitle

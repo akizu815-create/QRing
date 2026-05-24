@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import HeroVisual from "@/components/HeroVisual";
 import SectionTitle from "@/components/SectionTitle";
@@ -107,7 +108,14 @@ export default function Home() {
 
       {/* CONCEPT */}
       <section className="relative py-32 md:py-48 overflow-hidden">
-        <div className="container-narrow">
+        <Image
+          src="/images/texture-wave.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover opacity-40 pointer-events-none -z-0"
+        />
+        <div className="container-narrow relative z-10">
           <Reveal>
             <span className="eyebrow">— Concept</span>
           </Reveal>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
@@ -16,81 +17,30 @@ const PRODUCTS = [
     name: "QRing Charm",
     price: "¥2,200 –",
     body: "鍵・バッグに。職人が削り出した真鍮プレートに刻まれた、ひとつだけの番号。",
+    image: "/images/product-charm.png",
   },
   {
     tag: "STICKER",
     name: "QRing Seal",
     price: "¥980 –",
     body: "電子機器・自転車・キャリーケースに。耐水・耐候性のクラフトシール。",
+    image: "/images/product-seal.png",
   },
   {
     tag: "PET TAG",
     name: "QRing for Pets",
     price: "¥1,800 –",
     body: "首輪に取り付ける軽量タイプ。アレルギーに配慮した医療グレード素材を使用。",
+    image: "/images/product-pet.png",
   },
   {
     tag: "CARE CARD",
     name: "QRing Care",
     price: "¥1,500 –",
     body: "ご高齢のご家族の見守りに。お財布に入れて持ち歩ける、上質な紙のカード。",
+    image: "/images/product-care.png",
   },
 ];
-
-function ProductMock() {
-  return (
-    <svg
-      viewBox="0 0 200 240"
-      className="w-full h-full"
-      aria-hidden
-    >
-      <defs>
-        <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#F7F4EE" />
-          <stop offset="100%" stopColor="#E2D7C2" />
-        </linearGradient>
-      </defs>
-      <rect width="200" height="240" fill="url(#card-bg)" />
-      <rect
-        x="30"
-        y="40"
-        width="140"
-        height="160"
-        fill="white"
-        stroke="#1F1A14"
-        strokeOpacity="0.1"
-      />
-      <g transform="translate(70 80)" fill="#1F1A14">
-        <rect width="15" height="15" />
-        <rect x="0" y="20" width="5" height="5" />
-        <rect x="10" y="20" width="5" height="5" />
-        <rect x="0" y="30" width="15" height="5" />
-        <rect x="20" y="0" width="5" height="5" />
-        <rect x="30" y="0" width="15" height="5" />
-        <rect x="20" y="10" width="5" height="25" />
-        <rect x="35" y="10" width="10" height="5" />
-        <rect x="30" y="20" width="5" height="5" />
-        <rect x="40" y="25" width="5" height="10" />
-        <rect x="50" y="0" width="15" height="15" />
-        <rect x="50" y="20" width="5" height="15" />
-        <rect x="60" y="20" width="5" height="5" />
-        <rect x="60" y="30" width="5" height="5" />
-      </g>
-      <text
-        x="100"
-        y="180"
-        textAnchor="middle"
-        fontFamily="serif"
-        fontSize="10"
-        fill="#1F1A14"
-        opacity="0.6"
-        letterSpacing="2"
-      >
-        QRing
-      </text>
-    </svg>
-  );
-}
 
 export default function ShopPage() {
   return (
@@ -120,13 +70,17 @@ export default function ShopPage() {
               <Reveal key={p.name} delay={i * 80}>
                 <article className="group cursor-pointer">
                   <div className="relative aspect-[4/5] bg-cream overflow-hidden">
-                    <div className="absolute inset-0 transition-transform duration-[1500ms] ease-out group-hover:scale-105">
-                      <ProductMock />
-                    </div>
-                    <span className="absolute top-6 left-6 text-[10px] tracking-[0.3em] uppercase text-moss">
+                    <Image
+                      src={p.image}
+                      alt={p.name}
+                      fill
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      className="object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-105"
+                    />
+                    <span className="absolute top-6 left-6 text-[10px] tracking-[0.3em] uppercase text-moss bg-ivory/80 px-3 py-1 backdrop-blur-sm">
                       {p.tag}
                     </span>
-                    <span className="absolute top-6 right-6 text-[10px] tracking-[0.3em] uppercase text-ink/40">
+                    <span className="absolute top-6 right-6 text-[10px] tracking-[0.3em] uppercase text-ink/60 bg-ivory/80 px-3 py-1 backdrop-blur-sm">
                       0{i + 1}
                     </span>
                   </div>

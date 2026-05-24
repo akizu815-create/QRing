@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";
@@ -25,30 +26,43 @@ export default function AboutPage() {
 
       {/* VISION */}
       <section id="vision" className="py-24 md:py-40">
-        <div className="container-wide grid md:grid-cols-12 gap-12">
-          <div className="md:col-span-5">
-            <Reveal>
-              <SectionTitle
-                eyebrow="— Vision"
-                en="Connecting people, quietly."
-                jp="人と人を、静かにつなぐ。"
+        <div className="container-wide">
+          <div className="grid md:grid-cols-12 gap-12 items-start mb-20">
+            <div className="md:col-span-5">
+              <Reveal>
+                <SectionTitle
+                  eyebrow="— Vision"
+                  en="Connecting people, quietly."
+                  jp="人と人を、静かにつなぐ。"
+                />
+              </Reveal>
+            </div>
+            <div className="md:col-span-6 md:col-start-7">
+              <Reveal delay={120}>
+                <p className="body-jp text-base md:text-lg">
+                  電話番号は、もっとも身近で、もっとも繊細な個人情報です。
+                  教えることに躊躇い、教えてもらうことに気を遣う。
+                  その小さな心の負担を、技術の力でほどいていく。
+                  <br />
+                  <br />
+                  QRingが目指すのは、便利さの追求ではなく、
+                  安心して人と人がつながれる社会のあたりまえを、
+                  静かに、丁寧に、つくり直すことです。
+                </p>
+              </Reveal>
+            </div>
+          </div>
+          <Reveal delay={200}>
+            <div className="relative aspect-[16/9] md:aspect-[21/9] overflow-hidden">
+              <Image
+                src="/images/about-vision.png"
+                alt=""
+                fill
+                sizes="100vw"
+                className="object-cover"
               />
-            </Reveal>
-          </div>
-          <div className="md:col-span-6 md:col-start-7">
-            <Reveal delay={120}>
-              <p className="body-jp text-base md:text-lg">
-                電話番号は、もっとも身近で、もっとも繊細な個人情報です。
-                教えることに躊躇い、教えてもらうことに気を遣う。
-                その小さな心の負担を、技術の力でほどいていく。
-                <br />
-                <br />
-                QRingが目指すのは、便利さの追求ではなく、
-                安心して人と人がつながれる社会のあたりまえを、
-                静かに、丁寧に、つくり直すことです。
-              </p>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
