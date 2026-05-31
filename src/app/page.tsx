@@ -50,20 +50,20 @@ const SERVICES = [
 
 const NEWS = [
   {
+    date: "2026.05.31",
+    cat: "NEWS",
+    title: "サービスサイトをリニューアルいたしました",
+  },
+  {
+    date: "2026.05.12",
+    cat: "NEWS",
+    title: "TIB SHOP期間限定出店のお知らせ",
+  },
+  {
     date: "2026.04.14",
     cat: "EVENT",
     title:
       "【出展告知】Start up JAPAN EXPO 2026に出展いたします（4/15-16 幕張メッセ）",
-  },
-  {
-    date: "2026.03.25",
-    cat: "PRESS",
-    title: "『つながるQR』に関する技術特許（第7460140号）を取得しました",
-  },
-  {
-    date: "2026.02.10",
-    cat: "NEWS",
-    title: "ご高齢の方の見守り向けサービスの先行受付を開始しました",
   },
 ];
 
