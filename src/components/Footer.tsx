@@ -4,7 +4,7 @@ const COL_ABOUT = [
   { label: "Vision / Mission", href: "/about#vision" },
   { label: "代表挨拶", href: "/about#message" },
   { label: "会社概要", href: "/about#company" },
-  { label: "特定商取引法表記", href: "/about#legal" },
+  { label: "特定商取引法表記", href: "/law" },
 ];
 
 const COL_SERVICE = [
