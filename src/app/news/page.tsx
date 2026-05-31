@@ -37,7 +37,11 @@ const NEWS: NewsItem[] = [
     cat: "EVENT",
     title:
       "【出展告知】Start up JAPAN EXPO 2026に出展いたします（4/15-16 幕張メッセ）",
-    body: "幕張メッセにて開催されるStart up JAPAN EXPO 2026に出展いたします。デモブースにて『つながるQR』の実演をご覧いただけます。",
+    body: "株式会社QRingは、「日本最大級のスタートアップ展示会」に参加いたします。会場では、電話番号を非開示にしたまま音声通話が可能な『つながるQR』のデモを実施する予定です。\n\n【開催日時】2026年4月15日（水）〜16日（木）10:00〜17:00\n【会場】幕張メッセ国際展示場7・8ホール\n【小間番号】16-31\n【主催】Eight（Sansan株式会社）\n\nご来場は事前登録制となっております。下記よりお申し込みください。",
+    link: {
+      label: "参加申込はこちら →",
+      url: "https://eight-event.8card.net/lp/startup-japan/2026/?code=sj_sp_pk&utm_source=sp",
+    },
   },
 ];
 
