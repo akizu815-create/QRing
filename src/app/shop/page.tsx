@@ -15,28 +15,24 @@ const PRODUCTS = [
   {
     tag: "KEY CHARM",
     name: "QRing Charm",
-    price: "¥2,200 –",
     body: "鍵・バッグに。職人が削り出した真鍮プレートに刻まれた、ひとつだけの番号。",
     image: "/images/product-charm.png",
   },
   {
     tag: "STICKER",
     name: "QRing Seal",
-    price: "¥980 –",
     body: "電子機器・自転車・キャリーケースに。耐水・耐候性のクラフトシール。",
     image: "/images/product-seal.png",
   },
   {
     tag: "PET TAG",
     name: "QRing for Pets",
-    price: "¥1,800 –",
     body: "首輪に取り付ける軽量タイプ。アレルギーに配慮した医療グレード素材を使用。",
     image: "/images/product-pet.png",
   },
   {
     tag: "CARE CARD",
     name: "QRing Care",
-    price: "¥1,500 –",
     body: "ご高齢のご家族の見守りに。お財布に入れて持ち歩ける、上質な紙のカード。",
     image: "/images/product-care.png",
   },
@@ -84,13 +80,11 @@ export default function ShopPage() {
                       0{i + 1}
                     </span>
                   </div>
-                  <div className="pt-8 flex items-baseline justify-between gap-6">
+                  <div className="pt-8">
                     <h3 className="font-serif text-2xl md:text-3xl">{p.name}</h3>
-                    <p className="font-serif text-base text-ink/70 whitespace-nowrap">
-                      {p.price}
-                    </p>
                   </div>
                   <p className="mt-4 body-jp text-sm">{p.body}</p>
+                  <p className="mt-3 text-[10px] tracking-[0.2em] text-ink/40">※ 製品はイメージです</p>
                 </article>
               </Reveal>
             ))}
