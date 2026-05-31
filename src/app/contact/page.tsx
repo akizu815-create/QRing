@@ -78,7 +78,13 @@ export default function ContactPage() {
           {/* FORM */}
           <div className="md:col-span-8">
             <Reveal delay={200}>
-              <form className="space-y-10">
+              <form
+                action="https://formspree.io/f/xeedwlak"
+                method="POST"
+                className="space-y-10"
+              >
+                {/* Formspree: スパム対策ハニーポット */}
+                <input type="text" name="_gotcha" className="hidden" />
                 <div className="grid md:grid-cols-2 gap-8">
                   <Field label="お名前" name="name" placeholder="山田 太郎" required />
                   <Field label="会社名 (任意)" name="company" placeholder="株式会社○○" />
