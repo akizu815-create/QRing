@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+// 外部リンク配置
+const EXTERNAL_URLS = {
+  CONTACT: "https://axb.qring.jp:8070/contact",
+  DOCUMENT_REQUEST: "https://axb.qring.jp:8070/contact",
+} as const;
+
 const COL_ABOUT = [
   { label: "Vision / Mission", href: "/about#vision" },
   { label: "代表挨拶", href: "/about#message" },
@@ -14,13 +20,13 @@ const COL_SERVICE = [
 ];
 
 const COL_BUSINESS = [
-  { label: "導入のご案内", href: "/contact?type=business" },
-  { label: "資料請求", href: "/contact?type=document" },
+  { label: "導入のご案内", href: EXTERNAL_URLS.CONTACT, external: true },
+  { label: "資料請求", href: EXTERNAL_URLS.DOCUMENT_REQUEST, external: true },
   { label: "ショップ", href: "/shop" },
 ];
 
 const COL_CONTACT = [
-  { label: "お問い合わせ", href: "/contact" },
+  { label: "お問い合わせ", href: EXTERNAL_URLS.CONTACT, external: true },
   { label: "FAQ", href: "/contact#faq" },
   { label: "ニュース", href: "/news" },
 ];
@@ -30,7 +36,7 @@ function Col({
   items,
 }: {
   title: string;
-  items: { label: string; href: string }[];
+  items: { label: string; href: string; external?: boolean }[];
 }) {
   return (
     <div>
@@ -40,12 +46,23 @@ function Col({
       <ul className="space-y-3">
         {items.map((i) => (
           <li key={i.href}>
-            <Link
-              href={i.href}
-              className="text-sm text-ink/70 hover:text-ink link-underline"
-            >
-              {i.label}
-            </Link>
+            {i.external ? (
+              <a
+                href={i.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-ink/70 hover:text-ink link-underline"
+              >
+                {i.label}
+              </a>
+            ) : (
+              <Link
+                href={i.href}
+                className="text-sm text-ink/70 hover:text-ink link-underline"
+              >
+                {i.label}
+              </Link>
+            )}
           </li>
         ))}
       </ul>
