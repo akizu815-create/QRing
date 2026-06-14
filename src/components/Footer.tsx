@@ -76,8 +76,12 @@ export default function Footer() {
       <div className="container-wide">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 pb-16 border-b border-ink/10">
           <div className="md:col-span-4">
-            <Link href="/" className="font-serif text-4xl tracking-wider">
-              QRing
+            <Link href="/" className="inline-block">
+              <img
+                src="/images/logo-black.svg"
+                alt="QRing"
+                className="h-8 w-auto"
+              />
             </Link>
             <p className="mt-6 text-sm body-jp">
               電話番号を教えずに、つながる。

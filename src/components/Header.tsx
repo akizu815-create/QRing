@@ -43,15 +43,14 @@ export default function Header() {
       <div className="container-wide flex items-center justify-between h-20 md:h-24">
         <Link
           href="/"
-          className="flex items-baseline gap-2 group"
+          className="flex items-center group"
           onClick={() => setOpen(false)}
         >
-          <span className="font-serif text-2xl md:text-3xl tracking-wider text-ink group-hover:text-moss transition-colors duration-500">
-            QRing
-          </span>
-          <span className="hidden sm:inline text-[10px] tracking-[0.3em] text-ink/50 uppercase">
-            tsunagaru qr
-          </span>
+          <img
+            src="/images/logo-black.svg"
+            alt="QRing"
+            className="h-7 md:h-8 w-auto"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-10">
