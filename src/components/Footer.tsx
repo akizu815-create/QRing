@@ -45,7 +45,7 @@ function Col({
       </h4>
       <ul className="space-y-3">
         {items.map((i) => (
-          <li key={i.href}>
+          <li key={i.label}>
             {i.external ? (
               <a
                 href={i.href}
