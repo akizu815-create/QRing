@@ -257,9 +257,9 @@ export default function Home() {
           </Reveal>
           <Reveal delay={120}>
             <h2 className="display mt-8 text-4xl md:text-6xl lg:text-7xl">
-              新しい連絡のかたちを、
+              次世代のプロダクトを共に創る、
               <br />
-              貴社の事業に。
+              パートナー企業募集中。
             </h2>
           </Reveal>
           <Reveal delay={240}>
