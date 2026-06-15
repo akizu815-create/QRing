@@ -9,7 +9,7 @@ const FEATURES = [
     no: "01",
     en: "No Number Shared",
     jp: "番号を、明かさずに。",
-    body: "QRingは、お互いの電話番号を一切開示せずに音声通話を実現する、特許取得済みの新しい通信技術です。",
+    body: "つながるQRは、お互いの電話番号を一切開示せずに音声通話を実現する、特許取得済みの新しい通信技術です。",
   },
   {
     no: "02",
@@ -29,7 +29,7 @@ const SERVICES = [
   {
     tag: "LOST & FOUND",
     title: "落とし物・忘れ物に",
-    body: "持ち物にQRingを付けておけば、拾った方が読み取るだけであなたへ連絡が届きます。住所や電話番号は、最後まで秘密のまま。",
+    body: "持ち物につながるQRを付けておけば、拾った方が読み取るだけであなたへ連絡が届きます。住所や電話番号は、最後まで秘密のまま。",
   },
   {
     tag: "FOR SENIORS",
@@ -131,7 +131,7 @@ export default function Home() {
             <p className="body-jp mt-12 text-base md:text-lg max-w-2xl">
               番号を渡すこと、それは時に大きな勇気を必要とします。
               <br />
-              QRingは、電話番号を相手に明かさない新しい通話のかたち。
+              つながるQRは、電話番号を相手に明かさない新しい通話のかたち。
               <br />
               落とし物の届け出から、ご家族の見守り、ビジネスの現場まで。
               <br />
@@ -153,7 +153,7 @@ export default function Home() {
             <SectionTitle
               eyebrow="— Features"
               en="Three Promises."
-              jp="QRingの、三つの約束。"
+              jp="つながるQRの、三つの約束。"
             />
           </Reveal>
           <div className="mt-20 grid md:grid-cols-3 gap-10 md:gap-6 lg:gap-12">
@@ -186,7 +186,7 @@ export default function Home() {
                 <SectionTitle
                   eyebrow="— Service"
                   en="Where it works."
-                  jp="QRingが活躍する場面。"
+                  jp="つながるQRが活躍する場面。"
                 />
               </Reveal>
             </div>
