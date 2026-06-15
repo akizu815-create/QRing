@@ -257,15 +257,14 @@ export default function Home() {
           </Reveal>
           <Reveal delay={120}>
             <h2 className="display mt-8 text-4xl md:text-6xl lg:text-7xl">
-              新しい連絡のかたちを、
+              次世代のプロダクトを共に創る、
               <br />
-              貴社の事業に。
+              パートナー企業募集中。
             </h2>
           </Reveal>
           <Reveal delay={240}>
             <p className="mt-10 text-ivory/70 max-w-xl mx-auto text-sm md:text-base leading-loose">
-              法人向けの導入プラン、API連携、ホワイトラベル展開などのご相談を承っております。
-              まずはお気軽に資料請求からどうぞ。
+              コラボレーション製品の共同企画、新規事業開発、業務提携などのご相談を承っております。
             </p>
           </Reveal>
           <Reveal delay={360}>
