@@ -108,9 +108,14 @@ export default function ShopPage() {
             </p>
           </Reveal>
           <Reveal delay={240}>
-            <Link href="/contact" className="mt-12 btn-primary inline-flex">
+            <a
+              href="https://axb.qring.jp:8070/contact"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-12 btn-primary inline-flex"
+            >
               先行案内に登録する
-            </Link>
+            </a>
           </Reveal>
         </div>
       </section>

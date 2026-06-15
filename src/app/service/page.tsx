@@ -22,7 +22,7 @@ const STEPS = [
     no: "02",
     en: "Attach",
     title: "持ち物・場所に付ける",
-    body: "鍵・財布・キャリーケース、お子さまの持ち物、ペットの首輪など、必要な場所につながるQRを装着します。",
+    body: "鍵・財布・キャリーケース、お子さまの持ち物、ペットの首輪など、必要な場所にQRingを装着します。",
   },
   {
     no: "03",
@@ -83,7 +83,7 @@ export default function ServicePage() {
             </Reveal>
             <Reveal delay={120}>
               <p className="body-jp mt-12 text-base md:text-lg">
-                つながるQRは、電話番号を相手に開示することなく、QRコードを介して音声通話を実現する
+                QRingは、電話番号を相手に開示することなく、QRコードを介して音声通話を実現する
                 特許取得済（特許第7460140号）の通信サービスです。
                 <br />
                 <br />
@@ -231,12 +231,14 @@ export default function ServicePage() {
             >
               SHOPを見る
             </Link>
-            <Link
-              href="/contact"
+            <a
+              href="https://axb.qring.jp:8070/contact"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-5 border border-ivory/40 text-ivory text-sm tracking-[0.25em] uppercase hover:bg-ivory hover:text-ink transition-colors duration-500"
             >
               事業者の方はこちら
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -9,7 +9,7 @@ const FEATURES = [
     no: "01",
     en: "No Number Shared",
     jp: "番号を、明かさずに。",
-    body: "つながるQRは、お互いの電話番号を一切開示せずに音声通話を実現する、特許取得済みの新しい通信技術です。",
+    body: "QRingは、お互いの電話番号を一切開示せずに音声通話を実現する、特許取得済みの新しい通信技術です。",
   },
   {
     no: "02",
@@ -29,7 +29,7 @@ const SERVICES = [
   {
     tag: "LOST & FOUND",
     title: "落とし物・忘れ物に",
-    body: "持ち物につながるQRを付けておけば、拾った方が読み取るだけであなたへ連絡が届きます。住所や電話番号は、最後まで秘密のまま。",
+    body: "持ち物にQRingを付けておけば、拾った方が読み取るだけであなたへ連絡が届きます。住所や電話番号は、最後まで秘密のまま。",
   },
   {
     tag: "FOR SENIORS",
@@ -92,9 +92,14 @@ export default function Home() {
               <Link href="/service" className="btn-primary">
                 Discover the Service
               </Link>
-              <Link href="/contact" className="btn-ghost">
+              <a
+                href="https://axb.qring.jp:8070/contact"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-ghost"
+              >
                 資料を請求する
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -131,7 +136,7 @@ export default function Home() {
             <p className="body-jp mt-12 text-base md:text-lg max-w-2xl">
               番号を渡すこと、それは時に大きな勇気を必要とします。
               <br />
-              つながるQRは、電話番号を相手に明かさない新しい通話のかたち。
+              QRingは、電話番号を相手に明かさない新しい通話のかたち。
               <br />
               落とし物の届け出から、ご家族の見守り、ビジネスの現場まで。
               <br />
@@ -153,7 +158,7 @@ export default function Home() {
             <SectionTitle
               eyebrow="— Features"
               en="Three Promises."
-              jp="つながるQRの、三つの約束。"
+              jp="QRingの、三つの約束。"
             />
           </Reveal>
           <div className="mt-20 grid md:grid-cols-3 gap-10 md:gap-6 lg:gap-12">
@@ -186,7 +191,7 @@ export default function Home() {
                 <SectionTitle
                   eyebrow="— Service"
                   en="Where it works."
-                  jp="つながるQRが活躍する場面。"
+                  jp="QRingが活躍する場面。"
                 />
               </Reveal>
             </div>
@@ -257,24 +262,27 @@ export default function Home() {
           </Reveal>
           <Reveal delay={120}>
             <h2 className="display mt-8 text-4xl md:text-6xl lg:text-7xl">
-              次世代のプロダクトを共に創る、
+              新しい連絡のかたちを、
               <br />
-              パートナー企業募集中。
+              貴社の事業に。
             </h2>
           </Reveal>
           <Reveal delay={240}>
             <p className="mt-10 text-ivory/70 max-w-xl mx-auto text-sm md:text-base leading-loose">
-              コラボレーション製品の共同企画、新規事業開発、業務提携などのご相談を承っております。
+              法人向けの導入プラン、API連携、ホワイトラベル展開などのご相談を承っております。
+              まずはお気軽に資料請求からどうぞ。
             </p>
           </Reveal>
           <Reveal delay={360}>
             <div className="mt-12 flex justify-center gap-4 flex-wrap">
-              <Link
-                href="/contact?type=business"
+              <a
+                href="https://axb.qring.jp:8070/contact?"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-10 py-5 bg-ivory text-ink text-sm tracking-[0.25em] uppercase hover:bg-softgold transition-colors duration-500"
               >
                 資料請求 / お問い合わせ
-              </Link>
+              </a>
             </div>
           </Reveal>
         </div>
