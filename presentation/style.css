@@ -1,0 +1,169 @@
+/* =========================================================
+   つながるQR — Presentation Common Style
+   Inherits QRing brand language (see /DESIGN.md)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Serif+JP:wght@300;400&family=Noto+Sans+JP:wght@400;500&display=swap');
+
+:root {
+  /* Colors */
+  --ivory: #F7F4EE;
+  --cream: #EFE9DD;
+  --sand: #E2D7C2;
+  --ink: #1F1A14;
+  --moss: #5B6E4F;
+  --deepmoss: #3F4F36;
+  --gold: #B8954B;
+  --softgold: #D6B97A;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 96px;
+
+  /* Slide canvas (16:9) */
+  --slide-w: 1280px;
+  --slide-h: 720px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Noto Sans JP', system-ui, sans-serif;
+  color: var(--ink);
+  font-feature-settings: "palt";
+}
+
+/* ---------------------------------------------------------
+   Slide canvas — every s##.html wraps content in .slide
+   --------------------------------------------------------- */
+.slide {
+  width: var(--slide-w);
+  height: var(--slide-h);
+  background: var(--ivory);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-xl);
+}
+
+.slide--cream { background: var(--cream); }
+.slide--ink   { background: var(--ink); color: var(--ivory); }
+
+/* ---------------------------------------------------------
+   Typography
+   --------------------------------------------------------- */
+.display {
+  font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.display-italic {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.h2-section {
+  font-family: 'Cormorant Garamond', 'Noto Serif JP', serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.eyebrow {
+  font-family: 'Noto Sans JP', system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--moss);
+}
+
+.body-jp {
+  font-family: 'Noto Sans JP', system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  color: rgba(31, 26, 20, 0.8);
+}
+
+.slide--ink .body-jp { color: rgba(247, 244, 238, 0.8); }
+
+.label-caps {
+  font-family: 'Noto Sans JP', system-ui, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------
+   Decorative components
+   --------------------------------------------------------- */
+.hairline {
+  width: 48px;
+  height: 1px;
+  background: rgba(91, 110, 79, 0.6);
+}
+
+.page-number {
+  position: absolute;
+  bottom: var(--space-lg);
+  right: var(--space-xl);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  color: rgba(31, 26, 20, 0.4);
+}
+
+.slide--ink .page-number { color: rgba(247, 244, 238, 0.4); }
+
+.brand-mark {
+  position: absolute;
+  top: var(--space-lg);
+  left: var(--space-xl);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.9375rem;
+  letter-spacing: 0.05em;
+  color: rgba(31, 26, 20, 0.5);
+}
+
+.slide--ink .brand-mark { color: rgba(247, 244, 238, 0.5); }
+
+/* ---------------------------------------------------------
+   Motion
+   --------------------------------------------------------- */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fade-up { animation: fade-up 1.2s ease-out both; }
+.fade-in { animation: fade-in 1.6s ease-out both; }
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }

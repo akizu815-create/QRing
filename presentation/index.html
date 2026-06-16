@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>つながるQR — プレゼンテーション</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    background: #1F1A14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans JP', system-ui, sans-serif;
+  }
+  .viewer {
+    width: min(92vw, 1280px);
+    height: min(75vh, calc(min(92vw, 1280px) * 9 / 16));
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+    overflow: hidden;
+    position: relative;
+  }
+  iframe {
+    width: 1280px;
+    height: 720px;
+    border: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+    color: #F7F4EE;
+  }
+  .nav button {
+    background: transparent;
+    border: 1px solid rgba(247,244,238,0.3);
+    color: #F7F4EE;
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  .nav button:hover {
+    background: #F7F4EE;
+    color: #1F1A14;
+  }
+  .nav button:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+  .nav span {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 0.1em;
+    font-size: 0.9rem;
+    color: rgba(247,244,238,0.6);
+  }
+</style>
+</head>
+<body>
+
+<div class="viewer">
+  <iframe id="slideFrame" src="s01.html"></iframe>
+</div>
+
+<div class="nav">
+  <button id="prevBtn" onclick="goTo(current - 1)">← Prev</button>
+  <span id="pageLabel">01 / 01</span>
+  <button id="nextBtn" onclick="goTo(current + 1)">Next →</button>
+</div>
+
+<script>
+  // Add new slide filenames here as they are created.
+  const slides = ['s01.html'];
+  let current = 0;
+
+  function pad(n) { return String(n + 1).padStart(2, '0'); }
+
+  function goTo(index) {
+    if (index < 0 || index >= slides.length) return;
+    current = index;
+    document.getElementById('slideFrame').src = slides[current];
+    document.getElementById('pageLabel').textContent = `${pad(current)} / ${pad(slides.length - 1)}`;
+    document.getElementById('prevBtn').disabled = current === 0;
+    document.getElementById('nextBtn').disabled = current === slides.length - 1;
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') goTo(current + 1);
+    if (e.key === 'ArrowLeft') goTo(current - 1);
+  });
+
+  function scaleFrame() {
+    const viewer = document.querySelector('.viewer');
+    const frame = document.getElementById('slideFrame');
+    const scale = viewer.clientWidth / 1280;
+    frame.style.transform = `scale(${scale})`;
+  }
+
+  window.addEventListener('resize', scaleFrame);
+  window.addEventListener('load', scaleFrame);
+  scaleFrame();
+  goTo(0);
+</script>
+
+</body>
+</html>
