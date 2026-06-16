@@ -1,0 +1,306 @@
+/* ===========================================================
+   つながるQR — 大手企業マッチングイベント プレゼン資料
+   共通スタイルシート（QRing DESIGN.md準拠 / プレミアム・ミニマリズム）
+   =========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Noto+Serif+JP:wght@300;500&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+:root {
+  /* Colors */
+  --ivory: #F7F4EE;
+  --cream: #EFE9DD;
+  --sand: #E2D7C2;
+  --ink: #1F1A14;
+  --ink-80: rgba(31, 26, 20, 0.8);
+  --ink-30: rgba(31, 26, 20, 0.3);
+  --ink-10: rgba(31, 26, 20, 0.1);
+  --moss: #5B6E4F;
+  --deepmoss: #3F4F36;
+  --gold: #B8954B;
+  --softgold: #D6B97A;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 96px;
+
+  /* Containers */
+  --container-wide: 1280px;
+  --container-narrow: 960px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--cream);
+}
+
+body {
+  font-family: "Noto Sans JP", system-ui, sans-serif;
+  color: var(--ink);
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(91, 110, 79, 0.2);
+}
+
+/* ---------------------------------------------------------
+   Slide shell — 16:9 を基準に、ビューポートへ収める
+   --------------------------------------------------------- */
+
+.slide {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  min-height: 720px;
+  background-color: var(--ivory);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-inner {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  width: 100%;
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-xl) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grain texture overlay */
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: radial-gradient(circle, var(--ink) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+/* ---------------------------------------------------------
+   Header / Footer
+   --------------------------------------------------------- */
+
+.slide-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-lg);
+}
+
+.brand-mark {
+  font-family: "Cormorant Garamond", "Noto Serif JP", serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+.brand-mark em {
+  font-style: italic;
+  color: var(--moss);
+}
+
+.slide-page {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--ink-30);
+}
+
+.slide-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--ink-10);
+}
+
+.slide-footer .footer-note {
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-30);
+}
+
+/* ---------------------------------------------------------
+   Typography
+   --------------------------------------------------------- */
+
+.eyebrow {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--moss);
+  margin-bottom: var(--space-sm);
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: var(--moss);
+  margin-right: var(--space-sm);
+  vertical-align: middle;
+}
+
+.headline {
+  font-family: "Cormorant Garamond", "Noto Serif JP", serif;
+  font-weight: 300;
+  font-size: 3.4rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+.headline em {
+  font-style: italic;
+  color: var(--moss);
+}
+
+.headline-sm {
+  font-family: "Cormorant Garamond", "Noto Serif JP", serif;
+  font-weight: 300;
+  font-size: 2.25rem;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+.lead {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.9;
+  color: var(--ink-80);
+}
+
+.label-caps {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--moss);
+}
+
+.hairline {
+  width: 48px;
+  height: 1px;
+  background: rgba(91, 110, 79, 0.6);
+  margin: var(--space-md) 0;
+}
+
+/* ---------------------------------------------------------
+   Layout helpers
+   --------------------------------------------------------- */
+
+.slide-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-lg);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--ink-10);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--ink-10);
+}
+
+.panel {
+  background: var(--ivory);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.panel-cream {
+  background: var(--cream);
+}
+
+.panel-ink {
+  background: var(--ink);
+  color: var(--ivory);
+}
+
+.panel-ink .lead {
+  color: rgba(247, 244, 238, 0.8);
+}
+
+.panel-ink .label-caps {
+  color: var(--softgold);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-80);
+  border: 1px solid var(--ink-10);
+  padding: 6px 14px;
+}
+
+.tag .dot {
+  width: 6px;
+  height: 6px;
+  background: var(--moss);
+  display: inline-block;
+}
+
+.number {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: var(--moss);
+  line-height: 1;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  color: var(--ink-30);
+}
+
+/* ---------------------------------------------------------
+   Print / export adjustment
+   --------------------------------------------------------- */
+
+@media print {
+  .slide {
+    width: 1280px;
+    height: 720px;
+    page-break-after: always;
+  }
+}
