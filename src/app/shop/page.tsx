@@ -109,7 +109,7 @@ export default function ShopPage() {
           </Reveal>
           <Reveal delay={240}>
             <a
-              href="https://axb.qring.jp:8070/contact"
+              href="https://axb.qring.jp/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-12 btn-primary inline-flex"

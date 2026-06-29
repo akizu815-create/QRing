@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 
 // 外部リンク配置
 const EXTERNAL_URLS = {
-  CONTACT: "https://axb.qring.jp:8070/contact",
-  DOCUMENT_REQUEST: "https://axb.qring.jp:8070/contact",
+  CONTACT: "https://axb.qring.jp/contact",
+  DOCUMENT_REQUEST: "https://axb.qring.jp/contact",
 } as const;
 
 const NAV = [
@@ -18,7 +18,7 @@ const NAV = [
 ];
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false); 
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -34,13 +34,12 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        open
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${open
           ? "bg-ivory border-b border-ink/10"
           : scrolled
-          ? "bg-ivory/95 backdrop-blur-md border-b border-ink/10"
-          : "bg-transparent"
-      }`}
+            ? "bg-ivory/95 backdrop-blur-md border-b border-ink/10"
+            : "bg-transparent"
+        }`}
     >
       <div className="container-wide flex items-center justify-between h-20 md:h-24">
         <Link
@@ -104,23 +103,20 @@ export default function Header() {
           className="lg:hidden relative w-10 h-10 flex flex-col justify-center items-center gap-1.5 text-ink"
         >
           <span
-            className={`block h-px w-7 bg-current transition-all duration-300 ${
-              open ? "translate-y-[5px] rotate-45" : ""
-            }`}
+            className={`block h-px w-7 bg-current transition-all duration-300 ${open ? "translate-y-[5px] rotate-45" : ""
+              }`}
           />
           <span
-            className={`block h-px w-7 bg-current transition-all duration-300 ${
-              open ? "-translate-y-[3px] -rotate-45" : ""
-            }`}
+            className={`block h-px w-7 bg-current transition-all duration-300 ${open ? "-translate-y-[3px] -rotate-45" : ""
+              }`}
           />
         </button>
       </div>
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden fixed inset-x-0 top-20 bottom-0 bg-ivory transition-all duration-500 ${
-          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
+        className={`lg:hidden fixed inset-x-0 top-20 bottom-0 bg-ivory transition-all duration-500 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
       >
         <div className="container-wide py-12 flex flex-col gap-8">
           {NAV.map((item, i) => (

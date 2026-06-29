@@ -232,7 +232,7 @@ export default function ServicePage() {
               SHOPを見る
             </Link>
             <a
-              href="https://axb.qring.jp:8070/contact"
+              href="https://axb.qring.jp/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-10 py-5 border border-ivory/40 text-ivory text-sm tracking-[0.25em] uppercase hover:bg-ivory hover:text-ink transition-colors duration-500"
