@@ -2,8 +2,8 @@ import Link from "next/link";
 
 // 外部リンク配置
 const EXTERNAL_URLS = {
-  CONTACT: "https://axb.qring.jp:8070/contact",
-  DOCUMENT_REQUEST: "https://axb.qring.jp:8070/contact",
+  CONTACT: "https://axb.qring.jp/contact",
+  DOCUMENT_REQUEST: "https://axb.qring.jp/contact",
 } as const;
 
 const COL_ABOUT = [

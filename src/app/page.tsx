@@ -93,7 +93,7 @@ export default function Home() {
                 Discover the Service
               </Link>
               <a
-                href="https://axb.qring.jp:8070/contact"
+                href="https://axb.qring.jp/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-ghost"
@@ -276,7 +276,7 @@ export default function Home() {
           <Reveal delay={360}>
             <div className="mt-12 flex justify-center gap-4 flex-wrap">
               <a
-                href="https://axb.qring.jp:8070/contact?"
+                href="https://axb.qring.jp/contact?"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-10 py-5 bg-ivory text-ink text-sm tracking-[0.25em] uppercase hover:bg-softgold transition-colors duration-500"
