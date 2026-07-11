@@ -1,0 +1,21 @@
+{
+  "projectId": "9c39c134-c057-448b-a1aa-b31c56fe41d3",
+  "pkg": "qring-site",
+  "globalName": "QRing",
+  "shape": "package",
+  "srcDir": "src/components",
+  "entry": ".design-sync/entry.mjs",
+  "cssEntry": ".design-sync/compiled.css",
+  "readmeHeader": ".design-sync/conventions.md",
+  "overrides": {
+    "Header": { "cardMode": "single", "viewport": "1200x110" }
+  },
+  "componentSrcMap": {
+    "Header": "src/components/Header.tsx",
+    "Footer": "src/components/Footer.tsx",
+    "HeroVisual": "src/components/HeroVisual.tsx",
+    "PageHeader": "src/components/PageHeader.tsx",
+    "Reveal": "src/components/Reveal.tsx",
+    "SectionTitle": "src/components/SectionTitle.tsx"
+  }
+}
