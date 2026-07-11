@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -52,6 +53,18 @@ export default function RootLayout({
       className={`${cormorant.variable} ${notoSerifJp.variable} ${notoSansJp.variable}`}
     >
       <body className="font-sans bg-ivory text-ink antialiased">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-M75FF9RHJ6"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-M75FF9RHJ6');
+          `}
+        </Script>
         <Header />
         <main>{children}</main>
         <Footer />
