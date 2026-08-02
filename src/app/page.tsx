@@ -50,6 +50,12 @@ const SERVICES = [
 
 const NEWS = [
   {
+    date: "2026.08.03",
+    cat: "EVENT",
+    title:
+      "【登壇のお知らせ】Women Leaders TIB Loungeに登壇いたします",
+  },
+  {
     date: "2026.07.22",
     cat: "EVENT",
     title:
@@ -59,11 +65,6 @@ const NEWS = [
     date: "2026.05.31",
     cat: "NEWS",
     title: "サービスサイトをリニューアルいたしました",
-  },
-  {
-    date: "2026.05.12",
-    cat: "NEWS",
-    title: "TIB SHOP期間限定出店のお知らせ",
   },
 ];
 

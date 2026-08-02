@@ -17,6 +17,16 @@ type NewsItem = {
 
 const NEWS: NewsItem[] = [
   {
+    date: "2026.08.03",
+    cat: "EVENT",
+    title: "【登壇のお知らせ】Women Leaders TIB Loungeに登壇いたします",
+    body: "2026年8月3日（月）、Tokyo Innovation Base（TIB）にて開催される「Women Leaders TIB Lounge」に、Lead Sisterとして登壇いたします。\n\n当日は、起業に至った経緯や、「つながるQR」を通じて実現したい今後の展望についてお話しさせていただく予定です。",
+    link: {
+      label: "Women Leaders TIB Lounge",
+      url: "https://peatix.com/event/5084611",
+    },
+  },
+  {
     date: "2026.07.22",
     cat: "EVENT",
     title: "【イベント出展のお知らせ】フィガロジャポン Business with Attitude ピッチコンテスト2026にブース出展いたしました",
