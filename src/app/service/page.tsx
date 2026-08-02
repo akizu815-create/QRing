@@ -22,7 +22,7 @@ const STEPS = [
     no: "02",
     en: "Attach",
     title: "持ち物・場所に付ける",
-    body: "鍵・財布・キャリーケース、お子さまの持ち物、ペットの首輪など、必要な場所にQRingを装着します。",
+    body: "鍵・財布・キャリーケース、お子さまの持ち物、ペットの首輪など、必要な場所につながるQRを装着します。",
   },
   {
     no: "03",
@@ -83,7 +83,7 @@ export default function ServicePage() {
             </Reveal>
             <Reveal delay={120}>
               <p className="body-jp mt-12 text-base md:text-lg">
-                QRingは、電話番号を相手に開示することなく、QRコードを介して音声通話を実現する
+                つながるQRは、電話番号を相手に開示することなく、QRコードを介して音声通話を実現する
                 特許取得済（特許第7460140号）の通信サービスです。
                 <br />
                 <br />
