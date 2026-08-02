@@ -50,6 +50,12 @@ const SERVICES = [
 
 const NEWS = [
   {
+    date: "2026.07.22",
+    cat: "EVENT",
+    title:
+      "【イベント出展のお知らせ】フィガロジャポン Business with Attitude ピッチコンテスト2026にブース出展いたしました",
+  },
+  {
     date: "2026.05.31",
     cat: "NEWS",
     title: "サービスサイトをリニューアルいたしました",
@@ -58,12 +64,6 @@ const NEWS = [
     date: "2026.05.12",
     cat: "NEWS",
     title: "TIB SHOP期間限定出店のお知らせ",
-  },
-  {
-    date: "2026.04.14",
-    cat: "EVENT",
-    title:
-      "【出展告知】Start up JAPAN EXPO 2026に出展いたします（4/15-16 幕張メッセ）",
   },
 ];
 
