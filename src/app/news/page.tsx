@@ -21,6 +21,10 @@ const NEWS: NewsItem[] = [
     cat: "EVENT",
     title: "【イベント出展のお知らせ】フィガロジャポン Business with Attitude ピッチコンテスト2026にブース出展いたしました",
     body: "2026年7月22日（水）、Tokyo Innovation Base（TIB）にて開催された「フィガロジャポン Business with Attitude（BWA）ピッチコンテスト2026」に、ブース出展企業として参加いたしました。\n\n本イベントは、カルチュア・コンビニエンス・クラブ株式会社（CCC）運営「TIB SHOP」の連携企画として開催され、当日は電話番号を明かさずに安心・安全なやり取りができる「つながるQR」をご紹介いたしました。\n\n今後も様々な場を通じて「つながるQR」を発信してまいります。",
+    link: {
+      label: "CCC運営の「TIB SHOP」、「フィガロジャポン Business with Attitude（BWA）ピッチコンテスト2026」に連携参画",
+      url: "https://prtimes.jp/main/html/rd/p/000001676.000018760.html",
+    },
   },
   {
     date: "2026.05.31",
