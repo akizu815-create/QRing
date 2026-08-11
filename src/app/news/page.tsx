@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 
@@ -13,18 +14,20 @@ type NewsItem = {
   title: string;
   body: string;
   link?: { label: string; url: string };
+  image?: string;
 };
 
 const NEWS: NewsItem[] = [
   {
     date: "2026.08.03",
     cat: "EVENT",
-    title: "【登壇のお知らせ】Women Leaders TIB Loungeに登壇いたします",
-    body: "2026年8月3日（月）、Tokyo Innovation Base（TIB）にて開催される「Women Leaders TIB Lounge」に、Lead Sisterとして登壇いたします。\n\n当日は、起業に至った経緯や、「つながるQR」を通じて実現したい今後の展望についてお話しさせていただく予定です。",
+    title: "【開催報告】Women Leaders TIB Lounge",
+    body: "2026年8月3日（月）、Tokyo Innovation Base（TIB）にて「Women Leaders TIB Lounge」が開催され、Lead Sisterとして参加いたしました。\n\n起業に至った経緯や「つながるQR」に込めた思い、今後の展望などについて、参加者のみなさまと和やかにお話しさせていただきました。\n\nご参加いただいたみなさま、誠にありがとうございました。",
     link: {
       label: "Women Leaders TIB Lounge",
       url: "https://peatix.com/event/5084611",
     },
+    image: "/images/S__349110274.jpg",
   },
   {
     date: "2026.07.22",
@@ -100,6 +103,17 @@ export default function NewsPage() {
                   </summary>
                   <div className="md:col-span-9 md:ml-[25%] pb-8 pr-6 md:pr-10">
                     <p className="body-jp text-sm md:text-base whitespace-pre-line">{n.body}</p>
+                    {n.image && (
+                      <div className="mt-6 relative aspect-[4/3] max-w-lg overflow-hidden">
+                        <Image
+                          src={n.image}
+                          alt={n.title}
+                          fill
+                          sizes="(min-width: 768px) 512px, 100vw"
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
                     {n.link && (
                       <a
                         href={n.link.url}
