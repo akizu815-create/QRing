@@ -55,6 +55,7 @@ const NEWS: NewsItem[] = [
       label: "第24回TIB PITCH（SHOPコース）開催報告 | Tokyo Innovation Base",
       url: "https://tib.metro.tokyo.lg.jp/posts/tibpitch024_3",
     },
+    image: "/images/S__349126658.jpg",
   },
   {
     date: "2026.04.14",
