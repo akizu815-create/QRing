@@ -38,6 +38,7 @@ const NEWS: NewsItem[] = [
       label: "CCC運営の「TIB SHOP」、「フィガロジャポン Business with Attitude（BWA）ピッチコンテスト2026」に連携参画",
       url: "https://prtimes.jp/main/html/rd/p/000001676.000018760.html",
     },
+    image: "/images/S__347521038.jpg",
   },
   {
     date: "2026.05.31",
