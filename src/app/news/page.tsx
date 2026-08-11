@@ -14,7 +14,7 @@ type NewsItem = {
   title: string;
   body: string;
   link?: { label: string; url: string };
-  image?: string;
+  images?: string[];
 };
 
 const NEWS: NewsItem[] = [
@@ -27,7 +27,7 @@ const NEWS: NewsItem[] = [
       label: "Women Leaders TIB Lounge",
       url: "https://peatix.com/event/5084611",
     },
-    image: "/images/S__349110274.jpg",
+    images: ["/images/S__349110274.jpg"],
   },
   {
     date: "2026.07.22",
@@ -38,7 +38,7 @@ const NEWS: NewsItem[] = [
       label: "CCC運営の「TIB SHOP」、「フィガロジャポン Business with Attitude（BWA）ピッチコンテスト2026」に連携参画",
       url: "https://prtimes.jp/main/html/rd/p/000001676.000018760.html",
     },
-    image: "/images/S__347521038.jpg",
+    images: ["/images/S__347521038.jpg", "/images/S__349126659.jpg"],
   },
   {
     date: "2026.05.31",
@@ -55,7 +55,7 @@ const NEWS: NewsItem[] = [
       label: "第24回TIB PITCH（SHOPコース）開催報告 | Tokyo Innovation Base",
       url: "https://tib.metro.tokyo.lg.jp/posts/tibpitch024_3",
     },
-    image: "/images/S__349126658.jpg",
+    images: ["/images/S__349126658.jpg"],
   },
   {
     date: "2026.04.14",
@@ -105,15 +105,19 @@ export default function NewsPage() {
                   </summary>
                   <div className="md:col-span-9 md:ml-[25%] pb-8 pr-6 md:pr-10">
                     <p className="body-jp text-sm md:text-base whitespace-pre-line">{n.body}</p>
-                    {n.image && (
-                      <div className="mt-6 relative aspect-[4/3] max-w-lg overflow-hidden">
-                        <Image
-                          src={n.image}
-                          alt={n.title}
-                          fill
-                          sizes="(min-width: 768px) 512px, 100vw"
-                          className="object-cover"
-                        />
+                    {n.images && n.images.length > 0 && (
+                      <div className="mt-6 flex flex-col gap-4">
+                        {n.images.map((src, idx) => (
+                          <div key={idx} className="relative aspect-[4/3] max-w-lg overflow-hidden">
+                            <Image
+                              src={src}
+                              alt={`${n.title} ${idx + 1}`}
+                              fill
+                              sizes="(min-width: 768px) 512px, 100vw"
+                              className="object-cover"
+                            />
+                          </div>
+                        ))}
                       </div>
                     )}
                     {n.link && (
