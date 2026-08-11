@@ -53,7 +53,7 @@ const NEWS = [
     date: "2026.08.03",
     cat: "EVENT",
     title:
-      "【登壇のお知らせ】Women Leaders TIB Loungeに登壇いたします",
+      "【開催報告】Women Leaders TIB Lounge",
   },
   {
     date: "2026.07.22",
