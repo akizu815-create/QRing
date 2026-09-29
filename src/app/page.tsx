@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroVisual from "@/components/HeroVisual";
+import HowItWorks from "@/components/HowItWorks";
 import SectionTitle from "@/components/SectionTitle";
 import Reveal from "@/components/Reveal";
 
@@ -68,49 +69,51 @@ const NEWS = [
   },
 ];
 
+const HERO_CTA_LABEL = "つながる仕組みを見る";
+
 export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-[100svh] flex items-center pt-24">
-        <HeroVisual />
-        <div className="container-wide relative z-10 grid md:grid-cols-12 gap-8 items-center">
-          <div className="md:col-span-7 lg:col-span-6 animate-fade-up">
-            <span className="eyebrow">— Tsunagaru QR</span>
-            <h1 className="display mt-8 text-[44px] sm:text-6xl lg:text-7xl xl:text-[88px]">
-              番号を、
-              <br />
-              <span className="text-moss">明かさずに。</span>
-              <br />
-              <span className="font-serif italic text-ink/90">connect.</span>
-            </h1>
-            <p className="mt-10 body-jp max-w-xl text-base md:text-lg">
-              電話番号を相手に教えることなく、QRコードを読み取るだけで音声通話。
-              <br />
-              アプリ不要、特許取得済の安心の通信体験を、すべての人に。
-            </p>
-            <div className="mt-12 flex flex-wrap gap-4">
-              <Link href="/service" className="btn-primary">
-                Discover the Service
-              </Link>
-              <a
-                href="https://axb.qring.jp/contact"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-ghost"
-              >
-                資料を請求する
-              </a>
-            </div>
-          </div>
+      <section className="bg-ivory pt-20">
+        <div className="container-wide py-10 md:hidden">
+          <span className="eyebrow">— Tsunagaru QR</span>
+          <h1 className="mt-6 font-serif text-[42px] font-light leading-[1.35] tracking-tight">
+            暮らしに、
+            <br />
+            もしもの備えを。
+          </h1>
+          <p className="body-jp mt-6 text-base">
+            大切な人や、大切なものと
+            <br />
+            つながるQRサービス。
+          </p>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-ink/50 animate-fade-in">
-          <span className="text-[10px] tracking-[0.3em] uppercase">scroll</span>
-          <span className="block w-px h-12 bg-ink/30" />
+        <div className="relative mx-auto w-full max-w-[1536px]">
+          <HeroVisual />
+          <div className="hidden md:block">
+            <h1 className="sr-only">暮らしに、もしもの備えを。</h1>
+            <p className="sr-only">大切な人や、大切なものとつながるQRサービス。</p>
+          </div>
+          <a
+            href="#how-it-works"
+            className="absolute left-[5.7%] top-[54%] hidden items-center gap-4 bg-ink px-7 py-4 text-sm tracking-[0.12em] text-ivory transition-colors duration-500 hover:bg-moss md:inline-flex"
+          >
+            {HERO_CTA_LABEL}
+            <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div className="container-wide py-8 md:hidden">
+          <a href="#how-it-works" className="btn-primary w-full normal-case tracking-[0.12em]">
+            {HERO_CTA_LABEL}
+            <span aria-hidden="true">↓</span>
+          </a>
         </div>
       </section>
+
+      <HowItWorks />
 
       {/* CONCEPT */}
       <section className="relative py-32 md:py-48 overflow-hidden">

@@ -2,23 +2,19 @@ import Image from "next/image";
 
 export default function HeroVisual() {
   return (
-    <div className="absolute inset-0 overflow-hidden">
-      {/* Background photo */}
+    <div className="relative aspect-[3/2] w-full overflow-hidden bg-cream">
       <Image
         src="/images/hero.png"
-        alt=""
+        alt="高齢の女性、つながるQRを身につけた犬とバッグ"
         fill
         priority
         sizes="100vw"
-        className="object-cover object-right scale-105 animate-slow-zoom"
+        className="object-contain"
       />
-
-      {/* Soft tonal overlay so the headline sits comfortably on the left */}
-      <div className="absolute inset-0 bg-gradient-to-r from-ivory via-ivory/75 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-ivory/40 via-transparent to-ivory/30" />
-
-      {/* Subtle paper grain */}
-      <div className="absolute inset-0 grain pointer-events-none" />
+      <div
+        className="absolute left-0 top-0 h-[60%] w-[49%] bg-ivory md:hidden"
+        aria-hidden="true"
+      />
     </div>
   );
 }
