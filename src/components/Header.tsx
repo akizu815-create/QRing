@@ -37,8 +37,8 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${open
           ? "bg-ivory border-b border-ink/10"
           : scrolled
-            ? "bg-ivory/95 backdrop-blur-md border-b border-ink/10"
-            : "bg-transparent"
+            ? "bg-ivory border-b border-ink/10 shadow-[0_1px_0_rgba(31,26,20,0.04)]"
+            : "bg-ivory"
         }`}
     >
       <div className="container-wide flex items-center justify-between h-20 md:h-24">
