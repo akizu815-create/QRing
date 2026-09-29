@@ -69,7 +69,8 @@ const NEWS = [
   },
 ];
 
-const HERO_CTA_LABEL = "つながる仕組みを見る";
+const HERO_CTA_LABEL = "お問い合わせはこちら";
+const CONTACT_URL = "https://axb.qring.jp/contact";
 
 export default function Home() {
   return (
@@ -99,11 +100,13 @@ export default function Home() {
 
         <div className="container-wide flex justify-center py-7 md:py-9">
           <a
-            href="#how-it-works"
+            href={CONTACT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary normal-case tracking-[0.12em]"
           >
             {HERO_CTA_LABEL}
-            <span aria-hidden="true">↓</span>
+            <span aria-hidden="true">↗</span>
           </a>
         </div>
       </section>
