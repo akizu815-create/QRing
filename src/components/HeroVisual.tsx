@@ -31,6 +31,10 @@ export default function HeroVisual() {
           className="pointer-events-none absolute inset-x-0 top-0 h-[58%] bg-gradient-to-b from-ivory/75 via-ivory/25 to-transparent"
           aria-hidden="true"
         />
+        <div className="pointer-events-none absolute left-0 top-0 h-[61%] w-[52%]" aria-hidden="true">
+          <div className="absolute left-0 top-0 h-[88%] w-[86%] bg-ivory/95 backdrop-blur-[3px]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-ivory via-ivory/90 to-transparent" />
+        </div>
       </div>
     </div>
   );

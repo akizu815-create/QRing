@@ -67,13 +67,13 @@ export default function HowItWorks() {
   return (
     <section id="how-it-works" className="scroll-mt-20 bg-cream py-24 md:scroll-mt-24 md:py-36">
       <div className="container-wide">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-5xl text-center">
           <Reveal>
             <span className="eyebrow">— How it works</span>
           </Reveal>
           <Reveal delay={100}>
             <h2 className="mt-7 font-serif text-4xl font-light leading-[1.35] md:text-5xl lg:text-6xl">
-              もしものとき、QRからつながる。
+              もしものとき、QRから<span className="whitespace-nowrap text-moss">つながる</span>。
             </h2>
           </Reveal>
           <Reveal delay={180}>
