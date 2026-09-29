@@ -20,7 +20,7 @@ export default function HeroVisual() {
 
       <div className="relative hidden aspect-[3/2] w-full md:block">
         <Image
-          src="/images/hero.png"
+          src="/images/hero-clean.png"
           alt="高齢の女性、つながるQRを身につけた犬とバッグ"
           fill
           priority

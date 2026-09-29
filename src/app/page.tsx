@@ -79,12 +79,12 @@ export default function Home() {
       <section className="bg-ivory pt-20 md:pt-24">
         <div className="relative mx-auto w-full max-w-[1536px]">
           <HeroVisual />
-          <div className="absolute inset-0 z-10 px-6 pt-8 sm:px-10 sm:pt-12 md:hidden">
+          <div className="absolute inset-0 z-10 max-w-[58%] px-6 pt-8 sm:max-w-[54%] sm:px-10 sm:pt-12 md:hidden">
             <span className="eyebrow">— Tsunagaru QR</span>
-            <h1 className="mt-4 font-serif text-[36px] font-light leading-[1.3] tracking-tight sm:mt-5 sm:text-[48px]">
+            <h1 className="mt-4 font-serif text-[30px] font-light leading-[1.35] tracking-tight min-[390px]:text-[32px] sm:mt-5 sm:text-[40px]">
               暮らしに、
               <br />
-              もしもの備えを。
+              <span className="text-moss">もしも</span>の備えを。
             </h1>
             <p className="mt-4 text-sm leading-[1.8] text-ink/80 sm:mt-5 sm:text-base">
               大切な人や、大切なものと
@@ -92,9 +92,19 @@ export default function Home() {
               つながるQRサービス。
             </p>
           </div>
-          <div className="hidden md:block">
-            <h1 className="sr-only">暮らしに、もしもの備えを。</h1>
-            <p className="sr-only">大切な人や、大切なものとつながるQRサービス。</p>
+          <div className="absolute left-[5.5%] top-[12%] z-10 hidden w-[39%] md:block">
+            <span className="eyebrow">— Tsunagaru QR</span>
+            <h1 className="mt-5 font-serif text-[clamp(36px,4vw,64px)] font-light leading-[1.3] tracking-tight">
+              暮らしに、
+              <br />
+              <span className="text-moss">もしも</span>の備えを。
+            </h1>
+            <span className="mt-7 block h-px w-28 bg-gold" aria-hidden="true" />
+            <p className="mt-7 font-sans text-[clamp(15px,1.45vw,22px)] leading-[1.9] tracking-[0.08em] text-ink/80">
+              大切な人や、大切なものと
+              <br />
+              つながるQRサービス。
+            </p>
           </div>
         </div>
 
