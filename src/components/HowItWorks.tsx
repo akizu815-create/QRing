@@ -43,9 +43,15 @@ function StepIcon({ step }: { step: (typeof STEPS)[number]["no"] }) {
   }
 
   return (
-    <svg viewBox="0 0 96 96" aria-hidden="true" className="h-20 w-20">
-      <path d="M31 23c-3 1-8 6-9 10-3 12 7 29 20 42s30 23 42 20c4-1 9-6 10-9 1-2 0-4-2-5l-12-8c-2-1-4-1-6 1l-6 7c-8-3-15-8-22-15S34 52 31 44l7-6c2-2 2-4 1-6l-8-12c-1-2-3-3-5-2Z" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M58 22c9 2 14 7 16 16M58 32c4 1 6 3 7 7" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-16 w-16">
+      <path
+        d="M21.5 16.65v3a2 2 0 0 1-2.18 2 19.75 19.75 0 0 1-8.61-3.06 19.45 19.45 0 0 1-6-6 19.75 19.75 0 0 1-3.06-8.65A2 2 0 0 1 3.64 1.8h3a2 2 0 0 1 2 1.72c.12.95.35 1.89.69 2.79a2 2 0 0 1-.45 2.11L7.6 9.7a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.79.69a2 2 0 0 1 1.72 1.99Z"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.35"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
