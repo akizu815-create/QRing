@@ -54,7 +54,7 @@ function StepIcon({ step }: { step: (typeof STEPS)[number]["no"] }) {
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="scroll-mt-20 bg-cream py-24 md:py-36">
+    <section id="how-it-works" className="scroll-mt-20 bg-cream py-24 md:scroll-mt-24 md:py-36">
       <div className="container-wide">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>

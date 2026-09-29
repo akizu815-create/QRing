@@ -75,38 +75,33 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-ivory pt-20">
-        <div className="container-wide py-10 md:hidden">
-          <span className="eyebrow">— Tsunagaru QR</span>
-          <h1 className="mt-6 font-serif text-[42px] font-light leading-[1.35] tracking-tight">
-            暮らしに、
-            <br />
-            もしもの備えを。
-          </h1>
-          <p className="body-jp mt-6 text-base">
-            大切な人や、大切なものと
-            <br />
-            つながるQRサービス。
-          </p>
-        </div>
-
+      <section className="bg-ivory pt-20 md:pt-24">
         <div className="relative mx-auto w-full max-w-[1536px]">
           <HeroVisual />
+          <div className="absolute inset-0 z-10 px-6 pt-5 sm:px-10 sm:pt-9 md:hidden">
+            <span className="eyebrow">— Tsunagaru QR</span>
+            <h1 className="mt-3 font-serif text-[32px] font-light leading-[1.3] tracking-tight sm:mt-5 sm:text-[44px]">
+              暮らしに、
+              <br />
+              もしもの備えを。
+            </h1>
+            <p className="mt-3 text-xs leading-[1.8] text-ink/80 sm:mt-5 sm:text-base">
+              大切な人や、大切なものと
+              <br />
+              つながるQRサービス。
+            </p>
+          </div>
           <div className="hidden md:block">
             <h1 className="sr-only">暮らしに、もしもの備えを。</h1>
             <p className="sr-only">大切な人や、大切なものとつながるQRサービス。</p>
           </div>
-          <a
-            href="#how-it-works"
-            className="absolute left-[5.7%] top-[54%] hidden items-center gap-4 bg-ink px-7 py-4 text-sm tracking-[0.12em] text-ivory transition-colors duration-500 hover:bg-moss md:inline-flex"
-          >
-            {HERO_CTA_LABEL}
-            <span aria-hidden="true">↓</span>
-          </a>
         </div>
 
-        <div className="container-wide py-8 md:hidden">
-          <a href="#how-it-works" className="btn-primary w-full normal-case tracking-[0.12em]">
+        <div className="container-wide flex justify-center py-7 md:py-9">
+          <a
+            href="#how-it-works"
+            className="btn-primary normal-case tracking-[0.12em]"
+          >
             {HERO_CTA_LABEL}
             <span aria-hidden="true">↓</span>
           </a>
