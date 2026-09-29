@@ -78,14 +78,14 @@ export default function Home() {
       <section className="bg-ivory pt-20 md:pt-24">
         <div className="relative mx-auto w-full max-w-[1536px]">
           <HeroVisual />
-          <div className="absolute inset-0 z-10 px-6 pt-5 sm:px-10 sm:pt-9 md:hidden">
+          <div className="absolute inset-0 z-10 px-6 pt-8 sm:px-10 sm:pt-12 md:hidden">
             <span className="eyebrow">— Tsunagaru QR</span>
-            <h1 className="mt-3 font-serif text-[32px] font-light leading-[1.3] tracking-tight sm:mt-5 sm:text-[44px]">
+            <h1 className="mt-4 font-serif text-[36px] font-light leading-[1.3] tracking-tight sm:mt-5 sm:text-[48px]">
               暮らしに、
               <br />
               もしもの備えを。
             </h1>
-            <p className="mt-3 text-xs leading-[1.8] text-ink/80 sm:mt-5 sm:text-base">
+            <p className="mt-4 text-sm leading-[1.8] text-ink/80 sm:mt-5 sm:text-base">
               大切な人や、大切なものと
               <br />
               つながるQRサービス。
