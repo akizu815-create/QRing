@@ -43,14 +43,21 @@ function StepIcon({ step }: { step: (typeof STEPS)[number]["no"] }) {
   }
 
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className="h-16 w-16">
+    <svg viewBox="0 0 96 96" aria-hidden="true" className="h-20 w-20">
       <path
-        d="M21.5 16.65v3a2 2 0 0 1-2.18 2 19.75 19.75 0 0 1-8.61-3.06 19.45 19.45 0 0 1-6-6 19.75 19.75 0 0 1-3.06-8.65A2 2 0 0 1 3.64 1.8h3a2 2 0 0 1 2 1.72c.12.95.35 1.89.69 2.79a2 2 0 0 1-.45 2.11L7.6 9.7a16 16 0 0 0 6 6l1.28-1.28a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.79.69a2 2 0 0 1 1.72 1.99Z"
+        d="M27 25c-4 3-6 7-6 11 0 16 23 39 39 39 4 0 8-2 11-6l-13-11-8 8c-9-4-16-11-20-20l8-8-11-13Z"
         fill="none"
         stroke="currentColor"
-        strokeWidth="1.35"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
+      />
+      <path
+        d="M56 21c10 2 17 9 19 19M57 30c5 1 8 5 9 10"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
       />
     </svg>
   );
