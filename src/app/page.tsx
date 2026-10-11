@@ -80,7 +80,7 @@ export default function Home() {
       <section className="bg-ivory pt-20 md:pt-24">
         <div className="relative mx-auto w-full max-w-[1536px]">
           <HeroVisual />
-          <div className="absolute inset-0 z-10 max-w-[58%] px-6 pt-8 sm:max-w-[54%] sm:px-10 sm:pt-12 md:hidden">
+          <div className="absolute inset-0 z-10 max-w-[58%] px-6 pt-2 sm:max-w-[54%] sm:px-10 sm:pt-6 md:hidden">
             <span className="eyebrow">— Tsunagaru QR</span>
             <h1 className="mt-4 font-serif text-[30px] font-light leading-[1.35] tracking-tight min-[390px]:text-[32px] sm:mt-5 sm:text-[40px]">
               暮らしに、
@@ -92,9 +92,14 @@ export default function Home() {
               <br />
               つながるQRサービス。
             </p>
-            <ul className="mt-6 space-y-1.5 font-sans text-sm font-medium leading-relaxed text-ink/90">
+            <ul className="mt-6 flex w-[calc(100vw-3rem)] max-w-sm flex-wrap gap-2 font-sans text-[15px] font-medium leading-none text-ink/90">
               {HERO_FEATURES.map((feature) => (
-                <li key={feature}>{feature}</li>
+                <li
+                  key={feature}
+                  className="rounded-full border border-moss/25 bg-white/75 px-4 py-2.5 backdrop-blur-sm"
+                >
+                  {feature}
+                </li>
               ))}
             </ul>
             <a
@@ -107,7 +112,7 @@ export default function Home() {
               <span aria-hidden="true">↗</span>
             </a>
           </div>
-          <div className="absolute left-[5.5%] top-[12%] z-10 hidden w-[39%] md:block">
+          <div className="absolute left-[5.5%] top-[9%] z-10 hidden w-[39%] md:block">
             <span className="eyebrow">— Tsunagaru QR</span>
             <h1 className="mt-5 font-serif text-[clamp(36px,4vw,64px)] font-light leading-[1.3] tracking-tight">
               暮らしに、
@@ -120,10 +125,12 @@ export default function Home() {
               <br />
               つながるQRサービス。
             </p>
-            <ul className="mt-6 flex items-center font-sans text-[clamp(12px,1vw,14px)] font-medium tracking-[0.04em] text-ink/90">
-              {HERO_FEATURES.map((feature, index) => (
-                <li key={feature} className="flex items-center whitespace-nowrap">
-                  {index > 0 && <span className="mx-4 h-4 w-px bg-sand" aria-hidden="true" />}
+            <ul className="mt-6 flex flex-wrap items-center gap-3 font-sans text-[15px] font-medium tracking-[0.02em] text-ink/90">
+              {HERO_FEATURES.map((feature) => (
+                <li
+                  key={feature}
+                  className="whitespace-nowrap rounded-full border border-moss/25 bg-white/75 px-4 py-2.5 backdrop-blur-sm"
+                >
                   {feature}
                 </li>
               ))}
