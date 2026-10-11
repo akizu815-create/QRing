@@ -80,23 +80,23 @@ export default function Home() {
       <section className="bg-ivory pt-20 md:pt-24">
         <div className="relative mx-auto w-full max-w-[1536px]">
           <HeroVisual />
-          <div className="absolute inset-0 z-10 flex flex-col px-6 pb-6 pt-4 md:hidden">
-            <div className="max-w-[60%]">
+          <div className="absolute inset-0 z-10 px-6 pt-3 md:hidden">
+            <div className="max-w-[56%]">
               <span className="eyebrow">— Tsunagaru QR</span>
-              <h1 className="mt-4 font-serif text-[30px] font-light leading-[1.35] tracking-tight min-[390px]:text-[32px]">
+              <h1 className="mt-3 font-serif text-[clamp(28px,7.2vw,30px)] font-light leading-[1.35] tracking-tight">
                 暮らしに、
                 <br />
                 <span className="text-moss">もしも</span>の備えを。
               </h1>
-              <p className="mt-4 text-sm leading-[1.8] text-ink/80">
+              <p className="mt-3 text-sm leading-[1.8] text-ink/80">
                 大切な人や、大切なものと
                 <br />
                 つながるQRサービス。
               </p>
             </div>
 
-            <div className="mt-auto">
-              <ul className="flex w-[calc(100vw-3rem)] max-w-sm flex-wrap gap-2 font-sans text-[15px] font-medium leading-none text-ink/90">
+            <div className="mt-[clamp(8rem,24svh,14.5rem)]">
+              <ul className="grid w-fit grid-cols-[max-content_max-content] gap-2 font-sans text-[15px] font-medium leading-none text-ink/90">
                 {HERO_FEATURES.map((feature) => (
                   <li
                     key={feature}
@@ -110,7 +110,7 @@ export default function Home() {
                 href={CONTACT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary mt-5 whitespace-nowrap !px-5 !py-3 !text-xs normal-case tracking-[0.12em]"
+                className="btn-primary mt-4 whitespace-nowrap !px-5 !py-3 !text-xs normal-case tracking-[0.12em]"
               >
                 {HERO_CTA_LABEL}
                 <span aria-hidden="true">↗</span>
