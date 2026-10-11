@@ -25,7 +25,7 @@ export default function HeroVisual() {
           fill
           priority
           sizes="100vw"
-          className="object-contain"
+          className="object-cover"
         />
         <div
           className="pointer-events-none absolute inset-x-0 top-0 h-[58%] bg-gradient-to-b from-ivory/75 via-ivory/25 to-transparent"

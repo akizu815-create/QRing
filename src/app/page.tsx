@@ -117,20 +117,20 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="absolute left-[5.5%] top-[9%] z-10 hidden w-[39%] md:block">
+          <div className="absolute left-[5.5%] top-0 z-10 hidden h-[68.5%] w-[39%] flex-col pb-[clamp(20px,2.5vw,38px)] pt-[clamp(24px,6vw,92px)] md:flex">
             <span className="eyebrow">— Tsunagaru QR</span>
-            <h1 className="mt-5 font-serif text-[clamp(36px,4vw,64px)] font-light leading-[1.3] tracking-tight">
+            <h1 className="mt-4 font-serif text-[clamp(36px,4vw,64px)] font-light leading-[1.3] tracking-tight xl:mt-5">
               暮らしに、
               <br />
               <span className="text-moss">もしも</span>の備えを。
             </h1>
-            <span className="mt-7 block h-px w-28 bg-gold" aria-hidden="true" />
-            <p className="mt-7 font-sans text-[clamp(15px,1.45vw,22px)] leading-[1.9] tracking-[0.08em] text-ink/80">
+            <span className="mt-5 block h-px w-28 bg-gold xl:mt-7" aria-hidden="true" />
+            <p className="mt-5 font-sans text-[clamp(15px,1.45vw,22px)] leading-[1.9] tracking-[0.08em] text-ink/80 xl:mt-7">
               大切な人や、大切なものと
               <br />
               つながるQRサービス。
             </p>
-            <ul className="mt-6 flex flex-wrap items-center gap-3 font-sans text-[15px] font-medium tracking-[0.02em] text-ink/90">
+            <ul className="mt-4 flex flex-wrap items-center gap-3 font-sans text-[15px] font-medium tracking-[0.02em] text-ink/90 xl:mt-6">
               {HERO_FEATURES.map((feature) => (
                 <li
                   key={feature}
@@ -140,16 +140,18 @@ export default function Home() {
                 </li>
               ))}
             </ul>
+            <div className="mt-auto pt-[clamp(16px,2vw,28px)]">
+              <a
+                href={CONTACT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary normal-case tracking-[0.12em]"
+              >
+                {HERO_CTA_LABEL}
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
-          <a
-            href={CONTACT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary absolute bottom-[6%] left-[3.5%] z-10 hidden normal-case tracking-[0.12em] md:inline-flex"
-          >
-            {HERO_CTA_LABEL}
-            <span aria-hidden="true">↗</span>
-          </a>
         </div>
       </section>
 
