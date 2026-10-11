@@ -140,16 +140,16 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <a
-              href={CONTACT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-8 normal-case tracking-[0.12em]"
-            >
-              {HERO_CTA_LABEL}
-              <span aria-hidden="true">↗</span>
-            </a>
           </div>
+          <a
+            href={CONTACT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary absolute bottom-[6%] left-[5.5%] z-10 hidden normal-case tracking-[0.12em] md:inline-flex"
+          >
+            {HERO_CTA_LABEL}
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
 
