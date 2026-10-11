@@ -80,37 +80,42 @@ export default function Home() {
       <section className="bg-ivory pt-20 md:pt-24">
         <div className="relative mx-auto w-full max-w-[1536px]">
           <HeroVisual />
-          <div className="absolute inset-0 z-10 max-w-[58%] px-6 pt-2 sm:max-w-[54%] sm:px-10 sm:pt-6 md:hidden">
-            <span className="eyebrow">— Tsunagaru QR</span>
-            <h1 className="mt-4 font-serif text-[30px] font-light leading-[1.35] tracking-tight min-[390px]:text-[32px] sm:mt-5 sm:text-[40px]">
-              暮らしに、
-              <br />
-              <span className="text-moss">もしも</span>の備えを。
-            </h1>
-            <p className="mt-4 text-sm leading-[1.8] text-ink/80 sm:mt-5 sm:text-base">
-              大切な人や、大切なものと
-              <br />
-              つながるQRサービス。
-            </p>
-            <ul className="mt-6 flex w-[calc(100vw-3rem)] max-w-sm flex-wrap gap-2 font-sans text-[15px] font-medium leading-none text-ink/90">
-              {HERO_FEATURES.map((feature) => (
-                <li
-                  key={feature}
-                  className="rounded-full border border-moss/25 bg-white/75 px-4 py-2.5 backdrop-blur-sm"
-                >
-                  {feature}
-                </li>
-              ))}
-            </ul>
-            <a
-              href={CONTACT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary mt-7 whitespace-nowrap !px-5 !py-3 !text-xs normal-case tracking-[0.12em]"
-            >
-              {HERO_CTA_LABEL}
-              <span aria-hidden="true">↗</span>
-            </a>
+          <div className="absolute inset-0 z-10 flex flex-col px-6 pb-6 pt-4 md:hidden">
+            <div className="max-w-[60%]">
+              <span className="eyebrow">— Tsunagaru QR</span>
+              <h1 className="mt-4 font-serif text-[30px] font-light leading-[1.35] tracking-tight min-[390px]:text-[32px]">
+                暮らしに、
+                <br />
+                <span className="text-moss">もしも</span>の備えを。
+              </h1>
+              <p className="mt-4 text-sm leading-[1.8] text-ink/80">
+                大切な人や、大切なものと
+                <br />
+                つながるQRサービス。
+              </p>
+            </div>
+
+            <div className="mt-auto">
+              <ul className="flex w-[calc(100vw-3rem)] max-w-sm flex-wrap gap-2 font-sans text-[15px] font-medium leading-none text-ink/90">
+                {HERO_FEATURES.map((feature) => (
+                  <li
+                    key={feature}
+                    className="rounded-full border border-moss/25 bg-white/75 px-4 py-2.5 backdrop-blur-sm"
+                  >
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={CONTACT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary mt-5 whitespace-nowrap !px-5 !py-3 !text-xs normal-case tracking-[0.12em]"
+              >
+                {HERO_CTA_LABEL}
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
           <div className="absolute left-[5.5%] top-[9%] z-10 hidden w-[39%] md:block">
             <span className="eyebrow">— Tsunagaru QR</span>
