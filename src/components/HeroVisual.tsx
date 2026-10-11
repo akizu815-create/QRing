@@ -3,14 +3,14 @@ import Image from "next/image";
 export default function HeroVisual() {
   return (
     <div className="w-full overflow-hidden bg-cream">
-      <div className="relative aspect-[943/1698] w-full md:hidden">
+      <div className="relative h-[calc(100svh-5rem)] min-h-[540px] w-full md:hidden">
         <Image
           src="/images/hero_mobile.png"
           alt="高齢の女性、つながるQRを身につけた犬とバッグ"
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover object-[52%_center]"
         />
         <div
           className="pointer-events-none absolute inset-0 bg-gradient-to-br from-ivory/90 via-ivory/25 to-transparent"
