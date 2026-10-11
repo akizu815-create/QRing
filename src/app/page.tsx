@@ -145,7 +145,7 @@ export default function Home() {
             href={CONTACT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary absolute bottom-[6%] left-[5.5%] z-10 hidden normal-case tracking-[0.12em] md:inline-flex"
+            className="btn-primary absolute bottom-[6%] left-[3.5%] z-10 hidden normal-case tracking-[0.12em] md:inline-flex"
           >
             {HERO_CTA_LABEL}
             <span aria-hidden="true">↗</span>
