@@ -71,6 +71,7 @@ const NEWS = [
 
 const HERO_CTA_LABEL = "お問い合わせはこちら";
 const CONTACT_URL = "https://axb.qring.jp/contact";
+const HERO_FEATURES = ["アプリ不要", "電話番号は非公開", "特許取得済"];
 
 export default function Home() {
   return (
@@ -91,6 +92,20 @@ export default function Home() {
               <br />
               つながるQRサービス。
             </p>
+            <ul className="mt-6 space-y-1.5 font-sans text-sm font-medium leading-relaxed text-ink/90">
+              {HERO_FEATURES.map((feature) => (
+                <li key={feature}>{feature}</li>
+              ))}
+            </ul>
+            <a
+              href={CONTACT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-7 whitespace-nowrap !px-5 !py-3 !text-xs normal-case tracking-[0.12em]"
+            >
+              {HERO_CTA_LABEL}
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
           <div className="absolute left-[5.5%] top-[12%] z-10 hidden w-[39%] md:block">
             <span className="eyebrow">— Tsunagaru QR</span>
@@ -105,19 +120,24 @@ export default function Home() {
               <br />
               つながるQRサービス。
             </p>
+            <ul className="mt-6 flex items-center font-sans text-[clamp(12px,1vw,14px)] font-medium tracking-[0.04em] text-ink/90">
+              {HERO_FEATURES.map((feature, index) => (
+                <li key={feature} className="flex items-center whitespace-nowrap">
+                  {index > 0 && <span className="mx-4 h-4 w-px bg-sand" aria-hidden="true" />}
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <a
+              href={CONTACT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary mt-8 normal-case tracking-[0.12em]"
+            >
+              {HERO_CTA_LABEL}
+              <span aria-hidden="true">↗</span>
+            </a>
           </div>
-        </div>
-
-        <div className="container-wide flex justify-center py-7 md:py-9">
-          <a
-            href={CONTACT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary normal-case tracking-[0.12em]"
-          >
-            {HERO_CTA_LABEL}
-            <span aria-hidden="true">↗</span>
-          </a>
         </div>
       </section>
 
