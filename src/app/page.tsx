@@ -1,6 +1,7 @@
 import Link from "next/link";
 import HeroVisual from "@/components/HeroVisual";
 import HowItWorks from "@/components/HowItWorks";
+import UseCases from "@/components/UseCases";
 import SectionTitle from "@/components/SectionTitle";
 import Reveal from "@/components/Reveal";
 
@@ -111,6 +112,8 @@ export default function Home() {
       </section>
 
       <HowItWorks />
+
+      <UseCases />
 
       {/* CTA BANNER */}
       <section className="relative py-32 md:py-48 bg-ink text-ivory overflow-hidden">
