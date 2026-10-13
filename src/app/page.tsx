@@ -3,6 +3,7 @@ import HeroVisual from "@/components/HeroVisual";
 import HowItWorks from "@/components/HowItWorks";
 import UseCases from "@/components/UseCases";
 import PriceSection from "@/components/PriceSection";
+import ForBusiness from "@/components/ForBusiness";
 import SectionTitle from "@/components/SectionTitle";
 import Reveal from "@/components/Reveal";
 
@@ -118,55 +119,7 @@ export default function Home() {
 
       <PriceSection />
 
-      {/* CTA BANNER */}
-      <section className="relative py-32 md:py-48 bg-ink text-ivory overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <svg
-            viewBox="0 0 1200 600"
-            className="w-full h-full"
-            preserveAspectRatio="xMidYMid slice"
-          >
-            <defs>
-              <radialGradient id="cta-glow" cx="70%" cy="40%" r="50%">
-                <stop offset="0%" stopColor="#D6B97A" stopOpacity="0.6" />
-                <stop offset="100%" stopColor="#D6B97A" stopOpacity="0" />
-              </radialGradient>
-            </defs>
-            <rect width="1200" height="600" fill="url(#cta-glow)" />
-          </svg>
-        </div>
-        <div className="container-narrow relative z-10 text-center">
-          <Reveal>
-            <span className="text-[11px] tracking-[0.35em] uppercase text-softgold">
-              — For Business
-            </span>
-          </Reveal>
-          <Reveal delay={120}>
-            <h2 className="display mt-8 text-4xl md:text-6xl lg:text-7xl">
-              次世代のプロダクトを共に創る、
-              <br />
-              パートナー企業募集中。
-            </h2>
-          </Reveal>
-          <Reveal delay={240}>
-            <p className="mt-10 text-ivory/70 max-w-xl mx-auto text-sm md:text-base leading-loose">
-              コラボレーション製品の共同企画、新規事業開発、業務提携などのご相談を承っております。
-            </p>
-          </Reveal>
-          <Reveal delay={360}>
-            <div className="mt-12 flex justify-center gap-4 flex-wrap">
-              <a
-                href="https://axb.qring.jp/contact?"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-3 px-10 py-5 bg-ivory text-ink text-sm tracking-[0.25em] uppercase hover:bg-softgold transition-colors duration-500"
-              >
-                資料請求 / お問い合わせ
-              </a>
-            </div>
-          </Reveal>
-        </div>
-      </section>
+      <ForBusiness />
 
       {/* NEWS */}
       <section className="py-24 md:py-40">
