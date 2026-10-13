@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 // 外部リンク配置
 const EXTERNAL_URLS = {
   CONTACT: "https://axb.qring.jp/contact",
-  DOCUMENT_REQUEST: "https://axb.qring.jp/contact",
 } as const;
 
 const NAV = [
@@ -86,14 +85,14 @@ export default function Header() {
               </Link>
             )
           ))}
-          <a
-            href={EXTERNAL_URLS.DOCUMENT_REQUEST}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-4 inline-flex items-center gap-2 px-5 py-3 bg-ink text-ivory text-[11px] tracking-[0.25em] hover:bg-moss transition-colors duration-500"
+          <button
+            type="button"
+            disabled
+            aria-disabled="true"
+            className="ml-4 inline-flex cursor-default items-center gap-2 bg-ink px-5 py-3 text-[11px] tracking-[0.25em] text-ivory"
           >
-            資料請求
-          </a>
+            マイページ
+          </button>
         </nav>
 
         <button
@@ -154,15 +153,14 @@ export default function Header() {
               </Link>
             )
           ))}
-          <a
-            href={EXTERNAL_URLS.DOCUMENT_REQUEST}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-            className="mt-6 btn-primary"
+          <button
+            type="button"
+            disabled
+            aria-disabled="true"
+            className="btn-primary mt-6 cursor-default"
           >
-            資料請求 / お問い合わせ
-          </a>
+            マイページ
+          </button>
         </div>
       </div>
     </header>
