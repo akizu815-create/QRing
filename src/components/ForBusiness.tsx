@@ -62,7 +62,7 @@ export default function ForBusiness() {
           </Reveal>
           <Reveal delay={100}>
             <h2 className="mt-8 font-serif text-[clamp(34px,4vw,58px)] font-light leading-[1.3] tracking-tight">
-              新しい安心を、ともに。
+              新しい安心を、<span className="text-moss">ともに</span>。
             </h2>
           </Reveal>
           <Reveal delay={180}>

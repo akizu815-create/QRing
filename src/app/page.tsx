@@ -47,9 +47,9 @@ export default function Home() {
                 <span className="text-moss">もしも</span>の備えを。
               </h1>
               <p className="mt-3 text-sm leading-[1.8] text-ink/80">
-                大切な人や、大切なものと
+                お互いの電話番号を知られることなく、
                 <br />
-                つながるQRサービス。
+                声でつながる。
               </p>
             </div>
 
@@ -84,9 +84,9 @@ export default function Home() {
             </h1>
             <span className="mt-5 block h-px w-28 bg-gold xl:mt-7" aria-hidden="true" />
             <p className="mt-5 font-sans text-[clamp(15px,1.45vw,22px)] leading-[1.9] tracking-[0.08em] text-ink/80 xl:mt-7">
-              大切な人や、大切なものと
+              お互いの電話番号を知られることなく、
               <br />
-              つながるQRサービス。
+              声でつながる。
             </p>
             <ul className="mt-4 flex flex-wrap items-center gap-3 font-sans text-[15px] font-medium tracking-[0.02em] text-ink/90 xl:mt-6">
               {HERO_FEATURES.map((feature) => (
