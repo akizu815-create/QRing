@@ -1,119 +1,137 @@
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
 const STEPS = [
   {
     no: "01",
-    title: "登録する",
-    body: "連絡先を登録し、つながるQRを使いたいものに付けます。",
+    title: "登録してつける",
+    body: (
+      <>
+        QRコードに連絡先を登録し、
+        <br />
+        持ち物やペット用品などに取り付けます。
+      </>
+    ),
+    image: "/images/how-it-works-step-01.png",
+    imageAlt: "バッグに取り付けられたQRチャームの線画",
   },
   {
     no: "02",
-    title: "もしものとき",
-    body: "発見した人がQRコードを読み取り、画面の案内に沿って操作します。",
+    title: "見つけた人が読み取る",
+    body: (
+      <>
+        拾った方・見つけた方がQRコードを
+        <br />
+        スマートフォンで読み取ります。
+      </>
+    ),
+    image: "/images/how-it-works-step-02.png",
+    imageAlt: "スマートフォンでQRコードを読み取る線画",
   },
   {
     no: "03",
-    title: "あなたにつながる",
-    body: "発見した人から、登録したご家族や持ち主へ電話がつながります。",
+    title: "必要な相手とつながる",
+    body: (
+      <>
+        画面の案内に沿って進むだけで、
+        <br />
+        必要な相手へ連絡できます。
+      </>
+    ),
+    image: "/images/how-it-works-step-03.png",
+    imageAlt: "スマートフォンから必要な相手へつながる線画",
   },
 ] as const;
 
-function StepIcon({ step }: { step: (typeof STEPS)[number]["no"] }) {
-  if (step === "01") {
-    return (
-      <svg viewBox="0 0 96 96" aria-hidden="true" className="h-20 w-20">
-        <rect x="17" y="12" width="38" height="70" rx="7" fill="none" stroke="currentColor" strokeWidth="2" />
-        <path d="M30 20h12M31 73h10" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        <rect x="49" y="45" width="32" height="32" rx="3" fill="#F7F4EE" stroke="currentColor" strokeWidth="2" />
-        <path d="M55 51h7v7h-7zM68 51h7v7h-7zM55 64h7v7h-7zM68 64h3v3h-3zM73 68h3v3h-3z" fill="currentColor" />
-      </svg>
-    );
-  }
+const arrowProps = {
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1.4,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+};
 
-  if (step === "02") {
-    return (
-      <svg viewBox="0 0 96 96" aria-hidden="true" className="h-20 w-20">
-        <circle cx="27" cy="25" r="10" fill="none" stroke="currentColor" strokeWidth="2" />
-        <path d="M10 62c2-14 9-21 17-21s15 7 17 21" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        <rect x="49" y="21" width="33" height="58" rx="6" fill="none" stroke="currentColor" strokeWidth="2" />
-        <rect x="57" y="36" width="17" height="17" rx="2" fill="none" stroke="currentColor" strokeWidth="2" />
-        <path d="M60 39h4v4h-4zM67 39h4v4h-4zM60 46h4v4h-4zM68 47h3v3h-3zM57 62h17" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    );
-  }
-
+function StepArtwork({ image, alt }: { image: string; alt: string }) {
   return (
-    <svg viewBox="0 0 96 96" aria-hidden="true" className="h-20 w-20">
-      <path
-        d="M27 25c-4 3-6 7-6 11 0 16 23 39 39 39 4 0 8-2 11-6l-13-11-8 8c-9-4-16-11-20-20l8-8-11-13Z"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+    <div className="relative h-[210px] w-full md:h-[230px]">
+      <Image
+        src={image}
+        alt={alt}
+        fill
+        sizes="(min-width: 1280px) 360px, (min-width: 1024px) 28vw, 80vw"
+        className="object-contain"
       />
-      <path
-        d="M56 21c10 2 17 9 19 19M57 30c5 1 8 5 9 10"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-    </svg>
+    </div>
+  );
+}
+
+function FlowArrow() {
+  return (
+    <div className="flex items-center justify-center py-7 lg:h-[230px] lg:py-0" aria-hidden="true">
+      <svg viewBox="0 0 24 58" className="h-12 w-5 text-moss/60 lg:hidden">
+        <path d="M12 3v46M5 43l7 8 7-8" {...arrowProps} />
+      </svg>
+      <svg viewBox="0 0 60 24" className="hidden h-5 w-12 text-moss/60 lg:block">
+        <path d="M3 12h48M44 5l8 7-8 7" {...arrowProps} />
+      </svg>
+    </div>
+  );
+}
+
+function Step({ step }: { step: (typeof STEPS)[number] }) {
+  return (
+    <article className="flex min-w-0 flex-col items-center text-center">
+      <StepArtwork image={step.image} alt={step.imageAlt} />
+      <p className="mt-5 text-[11px] font-medium tracking-[0.32em] text-moss md:mt-6">
+        STEP {step.no}
+      </p>
+      <span className="mt-4 h-px w-8 bg-moss/55" aria-hidden="true" />
+      <h3 className="mt-5 font-serif text-[26px] font-light leading-snug md:text-[clamp(24px,2vw,30px)]">
+        {step.title}
+      </h3>
+      <p className="body-jp mt-4 max-w-sm text-sm leading-[2] text-ink/70 xl:text-[15px]">
+        {step.body}
+      </p>
+    </article>
   );
 }
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="scroll-mt-20 bg-cream py-24 md:scroll-mt-24 md:py-36">
+    <section id="how-it-works" className="scroll-mt-20 bg-ivory py-24 md:scroll-mt-24 md:py-32">
       <div className="container-wide">
-        <div className="mx-auto max-w-5xl text-center">
+        <div className="mx-auto max-w-6xl text-center">
           <Reveal>
-            <span className="eyebrow">— How it works</span>
+            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-moss/80">
+              How it works
+            </p>
+            <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />
           </Reveal>
           <Reveal delay={100}>
-            <h2 className="mt-7 font-serif text-4xl font-light leading-[1.35] md:text-5xl lg:text-6xl">
-              もしものとき、QRから<span className="whitespace-nowrap text-moss">つながる</span>。
+            <h2 className="mt-8 font-serif text-[clamp(34px,4.2vw,64px)] font-light leading-[1.3] tracking-tight md:whitespace-nowrap">
+              もしものとき、
+              <br className="md:hidden" />
+              QRから<span className="text-moss">つながる</span>。
             </h2>
           </Reveal>
           <Reveal delay={180}>
-            <div className="body-jp mx-auto mt-8 max-w-2xl text-sm md:text-base">
-              <p>
-                QRコードを読み取り、画面の案内に沿って操作すると、
-                <br className="hidden sm:block" />
-                発見した人から、ご家族や持ち主へ電話がつながります。
-              </p>
-              <p className="mt-4">
-                専用の中間番号を経由するため、
-                <br className="hidden sm:block" />
-                お互いの電話番号を明かさずに通話できます。
-              </p>
-            </div>
+            <p className="body-jp mx-auto mt-7 max-w-3xl text-sm leading-[2] text-ink/70 md:text-base">
+              専用アプリは不要。QRコードをきっかけに、
+              <br className="md:hidden" />
+              必要な相手とつながれます。
+            </p>
           </Reveal>
         </div>
 
-        <div className="relative mt-16 md:mt-24">
-          <div className="absolute left-[16.67%] right-[16.67%] top-14 hidden h-px bg-moss/25 md:block" />
-          <div className="relative grid md:grid-cols-3 md:gap-10">
-            {STEPS.map((step, index) => (
-              <Reveal key={step.no} delay={240 + index * 100}>
-                <div className="flex flex-col items-center text-center">
-                  <div className="relative z-10 flex h-28 w-28 items-center justify-center rounded-full border border-moss/25 bg-ivory text-moss">
-                    <StepIcon step={step.no} />
-                  </div>
-                  <p className="mt-7 font-serif text-sm tracking-[0.2em] text-moss">
-                    STEP {step.no}
-                  </p>
-                  <h3 className="mt-3 font-serif text-2xl md:text-3xl">{step.title}</h3>
-                  <p className="body-jp mt-4 max-w-xs text-sm">{step.body}</p>
-                  {index < STEPS.length - 1 && (
-                    <span className="my-8 block h-12 w-px bg-moss/30 md:hidden" aria-hidden="true" />
-                  )}
-                </div>
-              </Reveal>
-            ))}
+        <Reveal delay={240}>
+          <div className="mx-auto mt-16 grid max-w-[1280px] grid-cols-1 md:mt-20 lg:grid-cols-[minmax(0,1fr)_48px_minmax(0,1fr)_48px_minmax(0,1fr)] lg:items-start lg:gap-x-3 xl:grid-cols-[minmax(0,1fr)_56px_minmax(0,1fr)_56px_minmax(0,1fr)] xl:gap-x-8">
+            <Step step={STEPS[0]} />
+            <FlowArrow />
+            <Step step={STEPS[1]} />
+            <FlowArrow />
+            <Step step={STEPS[2]} />
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
