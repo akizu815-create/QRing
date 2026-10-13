@@ -47,9 +47,9 @@ export default function Home() {
                 <span className="text-moss">もしも</span>の備えを。
               </h1>
               <p className="mt-3 text-sm leading-[1.8] text-ink/80">
-                お互いの電話番号を知られることなく、
+                お互いの電話番号を
                 <br />
-                声でつながる。
+                明かさずに、声でつながる。
               </p>
             </div>
 
@@ -84,7 +84,7 @@ export default function Home() {
             </h1>
             <span className="mt-5 block h-px w-28 bg-gold xl:mt-7" aria-hidden="true" />
             <p className="mt-5 font-sans text-[clamp(15px,1.45vw,22px)] leading-[1.9] tracking-[0.08em] text-ink/80 xl:mt-7">
-              お互いの電話番号を知られることなく、
+              お互いの電話番号を明かさずに、
               <br />
               声でつながる。
             </p>
