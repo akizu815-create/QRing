@@ -74,7 +74,7 @@ export default function ServicePage() {
             <Reveal delay={240}>
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/service-hero.png"
+                  src="/images/service-hero-lost-bag.png"
                   alt=""
                   fill
                   sizes="(min-width: 768px) 50vw, 100vw"
