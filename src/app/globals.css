@@ -11,6 +11,9 @@
 }
 
 :root {
+  --font-cormorant: "QRing Cormorant", "Times New Roman", serif;
+  --font-noto-serif: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  --font-noto-sans: "Noto Sans JP", "Yu Gothic", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
   --color-ivory: #f7f4ee;
   --color-cream: #efe9dd;
   --color-sand: #e2d7c2;
