@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
-import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
   title: "Service",
@@ -11,55 +10,29 @@ export const metadata: Metadata = {
     "つながるQRの仕組みと、ご利用方法、活用シーンをご紹介します。",
 };
 
-const STEPS = [
+const USECASES = [
   {
     no: "01",
-    en: "Register",
-    title: "登録する",
-    body: "専用のQRコードをスキャンし、ご自身の電話番号を一度だけ登録します。番号は暗号化され、外部に開示されることはありません。",
+    title: "ご家族の見守りに",
+    body: "ご高齢のご家族が外出先で困っているとき、周囲の方がQRコードを読み取ることで、登録された連絡先へ電話できます。ご家族の電話番号を相手に知らせる必要はありません。",
+    image: "/images/use-case-family.png",
+    imageAlt: "緑道を歩きながら会話する高齢女性と家族",
   },
   {
     no: "02",
-    en: "Attach",
-    title: "持ち物・場所に付ける",
-    body: "鍵・財布・キャリーケース、お子さまの持ち物、ペットの首輪など、必要な場所につながるQRを装着します。",
+    title: "大切なペットに",
+    body: "万が一ペットが迷子になったときも、保護してくださった方が首輪のQRコードから飼い主に連絡できます。個人の電話番号を公開せずに、直接お話しできます。",
+    image: "/images/use-case-pet.png",
+    imageAlt: "QRタグを身につけた犬と見つめ合う女性",
   },
   {
     no: "03",
-    en: "Discover",
-    title: "発見者がスキャン",
-    body: "万一の際、発見してくださった方がQRをスキャン。発信ボタンを押すだけで、システムが安全な中間番号を生成します。",
+    title: "持ち物の紛失に",
+    body: "バッグや鍵、財布などを置き忘れたとき、拾った方から持ち主へ連絡できます。住所や電話番号を書いた名札を付ける必要がなく、プライバシーを守りながら連絡を受けられます。",
+    image: "/images/use-case-belongings.png",
+    imageAlt: "バッグに取り付けられたQRタグ",
   },
-  {
-    no: "04",
-    en: "Connect",
-    title: "番号を介さず通話",
-    body: "中間番号を経由して通話が成立。お互いの本当の電話番号は、最後まで一切表示されません。",
-  },
-];
-
-const USECASES = [
-  {
-    tag: "FOR FAMILIES",
-    title: "ご家族の見守り",
-    body: "ご高齢のご家族や、お子さまの持ち物に。発見者からご家族へ、確実かつ安全に連絡が届きます。一人歩きや迷子の不安を、そっと和らげます。",
-  },
-  {
-    tag: "FOR PETS",
-    title: "大切なペットに",
-    body: "首輪に取り付けるだけ。万が一はぐれても、保護してくださった方からあなたへ直接ご連絡が届きます。",
-  },
-  {
-    tag: "LOST & FOUND",
-    title: "落とし物・忘れ物",
-    body: "鍵、財布、キャリーケース、自転車。よくなくす持ち物にひとつ。住所や電話番号を晒すことなく、落とし物の発見をお知らせいただけます。",
-  },
-  {
-    tag: "BUSINESS",
-    title: "事業者さま向け",
-    body: "配送スタッフ、現場作業員、顧客対応窓口。番号開示が難しい業務シーンに最適です。API連携・大量導入のご相談も承ります。",
-  },
-];
+] as const;
 
 export default function ServicePage() {
   return (
@@ -113,103 +86,49 @@ export default function ServicePage() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
-      <section id="how" className="py-24 md:py-40 bg-cream">
-        <div className="container-wide">
-          <Reveal>
-            <SectionTitle
-              eyebrow="— How it works"
-              en="Four Simple Steps."
-              jp="ご利用の流れ"
-            />
-          </Reveal>
-
-          <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-ink/10">
-            {STEPS.map((step, i) => (
-              <Reveal key={step.no} delay={i * 100}>
-                <div className="h-full bg-cream p-10 lg:p-12 relative">
-                  <div className="flex items-baseline justify-between mb-10">
-                    <span className="font-serif text-5xl text-moss/60">
-                      {step.no}
-                    </span>
-                    <span className="text-[10px] tracking-[0.3em] uppercase text-ink/40">
-                      step
-                    </span>
-                  </div>
-                  <p className="text-[11px] tracking-[0.3em] uppercase text-moss">
-                    {step.en}
-                  </p>
-                  <h3 className="mt-4 font-serif text-2xl">{step.title}</h3>
-                  <p className="mt-6 body-jp text-sm">{step.body}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SENIOR FEATURE */}
-      <section id="senior" className="py-24 md:py-40">
-        <div className="container-wide grid md:grid-cols-12 gap-12 lg:gap-20 items-center">
-          <div className="md:col-span-6 order-2 md:order-1">
-            <Reveal>
-              <span className="eyebrow">— For Families</span>
-            </Reveal>
-            <Reveal delay={100}>
-              <h2 className="display mt-8 text-3xl md:text-5xl leading-tight">
-                大切なご家族の
-                <br />
-                <span className="text-moss">見守りに。</span>
-              </h2>
-            </Reveal>
-            <Reveal delay={200}>
-              <p className="mt-10 body-jp text-base md:text-lg">
-                ご高齢のご家族が外出時にもしものことがあったとき、
-                発見者の方から、ご家族の電話番号を一切知らせることなく
-                直接ご連絡をいただける、見守りに特化したパッケージをご用意しています。
-                <br />
-                <br />
-                一人歩きや迷子の不安に、静かに寄り添う設計です。
-              </p>
-            </Reveal>
-          </div>
-          <div className="md:col-span-6 order-1 md:order-2">
-            <Reveal delay={150}>
-              <div className="relative aspect-[3/4] overflow-hidden">
-                <Image
-                  src="/images/senior.png"
-                  alt=""
-                  fill
-                  sizes="(min-width: 768px) 50vw, 100vw"
-                  className="object-cover"
-                />
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
       {/* USE CASES */}
       <section className="py-24 md:py-40 bg-cream">
         <div className="container-wide">
-          <Reveal>
-            <SectionTitle
-              eyebrow="— Use Cases"
-              en="Where it gently helps."
-              jp="活用シーン"
-            />
-          </Reveal>
-          <div className="mt-20 grid md:grid-cols-2 gap-px bg-ink/10">
+          <div className="mx-auto max-w-3xl text-center">
+            <Reveal>
+              <p className="text-[11px] font-medium tracking-[0.38em] text-moss">
+                Use Cases
+              </p>
+            </Reveal>
+            <Reveal delay={100}>
+              <h2 className="mt-7 font-serif text-3xl font-light leading-[1.35] md:text-5xl">
+                暮らしのさまざまな「もしも」に。
+              </h2>
+            </Reveal>
+            <Reveal delay={180}>
+              <p className="body-jp mx-auto mt-7 max-w-2xl text-sm text-ink/70 md:text-base">
+                身近なものにQRコードを添えることで、必要なときの連絡手段を用意できます。
+              </p>
+            </Reveal>
+          </div>
+
+          <div className="mt-14 grid gap-8 md:mt-20 md:grid-cols-3 lg:gap-10">
             {USECASES.map((u, i) => (
-              <Reveal key={u.tag} delay={i * 80}>
-                <article className="h-full bg-ivory p-10 lg:p-14 hover:bg-cream transition-colors duration-700">
-                  <span className="text-[11px] tracking-[0.3em] uppercase text-moss">
-                    {u.tag}
-                  </span>
-                  <h3 className="mt-6 font-serif text-2xl md:text-3xl">
+              <Reveal key={u.no} delay={240 + i * 80}>
+                <article className="h-full overflow-hidden bg-white">
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <Image
+                      src={u.image}
+                      alt={u.imageAlt}
+                      fill
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      className="object-cover transition-transform duration-[1500ms] ease-out hover:scale-[1.025]"
+                    />
+                  </div>
+                  <div className="p-7 md:p-8 lg:p-10">
+                    <p className="text-[10px] font-medium tracking-[0.32em] text-moss">
+                      USE CASE {u.no}
+                    </p>
+                    <h3 className="mt-4 font-serif text-2xl font-light leading-snug">
                     {u.title}
-                  </h3>
-                  <p className="mt-6 body-jp text-sm md:text-base">{u.body}</p>
+                    </h3>
+                    <p className="body-jp mt-5 text-sm text-ink/70">{u.body}</p>
+                  </div>
                 </article>
               </Reveal>
             ))}
