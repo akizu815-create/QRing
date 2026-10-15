@@ -86,6 +86,86 @@ export default function ServicePage() {
         </div>
       </section>
 
+      {/* PRIVACY CALL */}
+      <section className="border-y border-ink/10 bg-ivory py-24 md:py-40">
+        <div className="container-wide">
+          <div className="mx-auto max-w-4xl text-center">
+            <Reveal>
+              <p className="text-[11px] font-medium tracking-[0.38em] text-moss">
+                Privacy Call
+              </p>
+            </Reveal>
+            <Reveal delay={100}>
+              <h2 className="mt-7 font-serif text-3xl font-light leading-[1.4] md:text-5xl">
+                電話番号を知らせずに、声で<span className="text-moss">つながる</span>。
+              </h2>
+            </Reveal>
+            <Reveal delay={180}>
+              <p className="body-jp mx-auto mt-7 max-w-3xl text-sm text-ink/70 md:text-base">
+                つながるQRでは、プライバシー電話番号を通じて、お互いの電話番号を相手に表示せずに通話できます。
+              </p>
+            </Reveal>
+          </div>
+
+          <Reveal delay={240}>
+            <div className="relative mx-auto mt-14 aspect-[1916/823] w-full max-w-6xl md:mt-20">
+              <Image
+                src="/images/privacy-call.png"
+                alt="登録者と発見者をプライバシー電話番号でつなぐ仕組み"
+                fill
+                sizes="(min-width: 1280px) 1152px, 100vw"
+                className="object-contain"
+              />
+            </div>
+          </Reveal>
+
+          <Reveal delay={320}>
+            <div className="mx-auto mt-12 grid max-w-6xl border-y border-ink/15 md:mt-16 md:grid-cols-[0.8fr_1.05fr_1.5fr]">
+              <div className="py-8 text-center md:px-8 md:py-10">
+                <p className="text-base font-semibold tracking-[0.22em] text-moss">01</p>
+                <p className="mt-3 font-sans text-[38px] font-medium leading-tight tracking-tight text-ink">
+                  <span className="text-moss">3</span>分
+                </p>
+                <p className="mt-4 text-[15px] font-medium leading-7 text-ink/80">
+                  1回の通話は最大3分
+                </p>
+              </div>
+              <div className="border-t border-ink/15 py-8 text-center md:border-l md:border-t-0 md:px-8 md:py-10">
+                <p className="text-base font-semibold tracking-[0.22em] text-moss">02</p>
+                <p className="mt-3 font-sans text-[38px] font-medium leading-tight tracking-tight text-ink">
+                  <span className="text-moss">1</span>時間
+                </p>
+                <p className="mt-4 text-[15px] font-medium leading-7 text-ink/80">
+                  QRコードの読み取りから1時間以内は、双方から再通話・折り返しが可能
+                </p>
+              </div>
+              <div className="border-t border-ink/15 py-8 text-center md:border-l md:border-t-0 md:px-8 md:py-10">
+                <p className="text-base font-semibold tracking-[0.22em] text-moss">03</p>
+                <p className="mt-3 font-sans text-[22px] font-medium leading-tight tracking-tight text-moss lg:text-2xl">
+                  <span className="block md:inline">03-6555-8100〜</span>
+                  <span className="block md:inline">03-6555-8199</span>
+                </p>
+                <p className="mt-4 text-[15px] font-medium leading-7 text-ink/80">
+                  着信に使用する電話番号
+                </p>
+                <p className="mt-1 text-sm font-medium text-ink/65">全100番号</p>
+              </div>
+            </div>
+          </Reveal>
+
+          <Reveal delay={400}>
+            <div className="body-jp mx-auto mt-10 max-w-4xl space-y-3 text-sm text-ink/65">
+              <p>
+                1時間以内なら、同じプライバシー電話番号を使って何度でも通話できます。同じ時間枠内での複数通話に追加のサービス利用料金はかかりません。
+              </p>
+              <p>
+                登録者の方は、この番号帯から着信する場合があることを事前にご確認ください。
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* USE CASES */}
       <section className="py-24 md:py-40 bg-cream">
         <div className="container-wide">
@@ -97,7 +177,7 @@ export default function ServicePage() {
             </Reveal>
             <Reveal delay={100}>
               <h2 className="mt-7 font-serif text-3xl font-light leading-[1.35] md:text-5xl">
-                暮らしのさまざまな「もしも」に。
+                暮らしのさまざまな「<span className="text-moss">もしも</span>」に。
               </h2>
             </Reveal>
             <Reveal delay={180}>
