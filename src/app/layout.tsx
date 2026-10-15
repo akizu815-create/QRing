@@ -1,30 +1,8 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Noto_Sans_JP, Noto_Serif_JP } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
-
-const notoSerifJp = Noto_Serif_JP({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-  variable: "--font-noto-serif",
-  display: "swap",
-});
-
-const notoSansJp = Noto_Sans_JP({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
-  variable: "--font-noto-sans",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -48,10 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="ja"
-      className={`${cormorant.variable} ${notoSerifJp.variable} ${notoSansJp.variable}`}
-    >
+    <html lang="ja">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className="font-sans bg-ivory text-ink antialiased">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-M75FF9RHJ6"
