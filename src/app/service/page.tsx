@@ -66,8 +66,7 @@ export default function ServicePage() {
     <>
       <PageHeader
         eyebrow="— Service"
-        en="Tsunagaru QR."
-        jp="サービスについて"
+        en="Service"
       />
 
       {/* INTRO */}
@@ -75,22 +74,27 @@ export default function ServicePage() {
         <div className="container-wide grid md:grid-cols-12 gap-12 lg:gap-20 items-center">
           <div className="md:col-span-6">
             <Reveal>
-              <p className="display text-3xl md:text-5xl lg:text-6xl leading-[1.4]">
-                小さなQRコードに、
+              <p className="display text-3xl leading-[1.55] md:text-5xl lg:text-6xl">
+                小さな<span className="text-moss">QR</span>コードに、
                 <br />
-                <span className="text-moss">大きな安心を。</span>
+                大きな<span className="text-moss">安心</span>を。
+              </p>
+              <p className="mt-5 text-[11px] tracking-[0.16em] text-ink/50">
+                特許取得済（特許第7460140号）
               </p>
             </Reveal>
             <Reveal delay={120}>
-              <p className="body-jp mt-12 text-base md:text-lg">
-                つながるQRは、電話番号を相手に開示することなく、QRコードを介して音声通話を実現する
-                特許取得済（特許第7460140号）の通信サービスです。
-                <br />
-                <br />
-                暗号化された番号情報をクラウドPBX上で復号し、
-                一時的な中間番号を経由して接続する独自方式により、
-                番号を渡すことなく、いつでも、確実に、つながることができます。
-              </p>
+              <div className="body-jp mt-10 space-y-5 text-base md:text-lg">
+                <p>
+                  つながるQRは、お互いの電話番号を知らせることなく、音声通話ができるサービスです。
+                </p>
+                <p>
+                  ご家族の見守りや、ペットの迷子、持ち物の紛失など。もしものとき、QRコードを通じて必要な相手とつながります。
+                </p>
+                <p>
+                  専用アプリは不要。スマートフォンから手軽にご利用いただけます。
+                </p>
+              </div>
             </Reveal>
           </div>
           <div className="md:col-span-6">

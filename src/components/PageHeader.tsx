@@ -1,7 +1,7 @@
 type Props = {
   eyebrow: string;
   en: string;
-  jp: string;
+  jp?: string;
 };
 
 export default function PageHeader({ eyebrow, en, jp }: Props) {
@@ -24,9 +24,11 @@ export default function PageHeader({ eyebrow, en, jp }: Props) {
         <h1 className="display page-header-title mt-8 text-5xl md:text-7xl lg:text-8xl">
           {en}
         </h1>
-        <p className="mt-6 text-sm md:text-base tracking-[0.25em] text-ink/60">
-          {jp}
-        </p>
+        {jp && (
+          <p className="mt-6 text-sm md:text-base tracking-[0.25em] text-ink/60">
+            {jp}
+          </p>
+        )}
       </div>
     </section>
   );
