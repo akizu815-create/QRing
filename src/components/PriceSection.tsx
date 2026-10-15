@@ -44,7 +44,10 @@ export default function PriceSection() {
               <p className="mt-5 whitespace-nowrap font-serif text-[clamp(38px,5.8vw,76px)] font-light leading-none tracking-tight text-ink">
                 800<span className="ml-1 text-[0.44em]">円／回</span>
               </p>
-              <p className="mt-3 text-[10px] tracking-[0.18em] text-ink/50 md:text-xs">
+              <p className="mt-3 text-[10px] tracking-[0.12em] text-ink/60 md:text-xs">
+                税込880円
+              </p>
+              <p className="mt-2 text-[10px] tracking-[0.18em] text-ink/50 md:text-xs">
                 （後払い）
               </p>
             </div>

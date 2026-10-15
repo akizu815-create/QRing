@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "QRing Cormorant";
+  src: url("/fonts/cormorant-garamond-latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+}
+
 :root {
   --color-ivory: #f7f4ee;
   --color-cream: #efe9dd;
@@ -40,6 +48,10 @@ body {
   }
   .display {
     @apply font-serif font-light leading-[1.15] tracking-tight;
+  }
+  .page-header-title {
+    font-family: "QRing Cormorant", "Times New Roman", serif;
+    font-weight: 300;
   }
   .body-jp {
     @apply leading-[2] text-ink/80;

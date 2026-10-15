@@ -21,7 +21,9 @@ export default function PageHeader({ eyebrow, en, jp }: Props) {
       </div>
       <div className="container-wide relative z-10">
         <span className="eyebrow">{eyebrow}</span>
-        <h1 className="display mt-8 text-5xl md:text-7xl lg:text-8xl">{en}</h1>
+        <h1 className="display page-header-title mt-8 text-5xl md:text-7xl lg:text-8xl">
+          {en}
+        </h1>
         <p className="mt-6 text-sm md:text-base tracking-[0.25em] text-ink/60">
           {jp}
         </p>
