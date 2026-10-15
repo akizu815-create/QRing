@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroVisual() {
   return (
-    <div className="w-full overflow-hidden bg-cream">
+    <div className="relative w-full overflow-hidden bg-cream">
       <div className="relative h-[calc(100svh-5rem)] min-h-[540px] w-full md:hidden">
         <Image
           src="/images/hero_mobile.png"
@@ -32,6 +32,8 @@ export default function HeroVisual() {
           aria-hidden="true"
         />
       </div>
+
+      <div className="pointer-events-none absolute inset-0 grain" aria-hidden="true" />
     </div>
   );
 }
