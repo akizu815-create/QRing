@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
+import HowToUse from "@/components/HowToUse";
 
 export const metadata: Metadata = {
   title: "Service",
@@ -86,6 +87,7 @@ export default function ServicePage() {
         </div>
       </section>
 
+      <HowToUse />
       {/* PRIVACY CALL */}
       <section className="border-y border-ink/10 bg-ivory py-24 md:py-40">
         <div className="container-wide">
@@ -219,28 +221,31 @@ export default function ServicePage() {
       {/* CTA */}
       <section className="py-24 md:py-32 bg-ink text-ivory">
         <div className="container-narrow text-center">
-          <p className="display text-3xl md:text-5xl">
-            まずは、お試しを。
+          <p className="text-[11px] font-medium tracking-[0.38em] text-softgold">
+            Get Started
           </p>
-          <p className="mt-8 text-ivory/70 max-w-xl mx-auto text-sm md:text-base leading-loose">
-            個人のお客さまはオンラインショップから、
-            <br className="hidden md:inline" />
-            事業者さまはお問い合わせフォームよりご相談ください。
+          <h2 className="display mt-7 text-3xl md:text-5xl">
+            もしもの安心を、今日から。
+          </h2>
+          <p className="mx-auto mt-8 max-w-xl text-sm leading-loose text-ivory/70 md:text-base">
+            大切な人やペット、持ち物に。
+            <br />
+            小さなQRコードから、安心の備えを始めませんか。
           </p>
-          <div className="mt-12 flex justify-center gap-4 flex-wrap">
+          <div className="mt-12 flex flex-col items-center gap-7">
             <Link
               href="/shop"
-              className="inline-flex items-center gap-3 px-10 py-5 bg-ivory text-ink text-sm tracking-[0.25em] uppercase hover:bg-softgold transition-colors duration-500"
+              className="inline-flex items-center justify-center bg-moss px-10 py-5 text-sm tracking-[0.16em] text-ivory transition-colors duration-500 hover:bg-moss/80"
             >
-              SHOPを見る
+              アイテムを見る
             </Link>
             <a
               href="https://axb.qring.jp/contact"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-10 py-5 border border-ivory/40 text-ivory text-sm tracking-[0.25em] uppercase hover:bg-ivory hover:text-ink transition-colors duration-500"
+              className="link-underline text-sm tracking-[0.12em] text-ivory/65 transition-colors duration-300 hover:text-ivory"
             >
-              事業者の方はこちら
+              法人・自治体の方はこちら →
             </a>
           </div>
         </div>
