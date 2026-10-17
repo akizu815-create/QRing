@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
-import SectionTitle from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "QRingのビジョン、ミッション、代表挨拶、会社概要をご紹介します。",
+  description: "つながるQRを社会インフラへ。株式会社QRingのビジョン、代表メッセージ、会社概要をご紹介します。",
 };
 
 const COMPANY = [
@@ -22,118 +21,92 @@ const COMPANY = [
 export default function AboutPage() {
   return (
     <>
-      <PageHeader eyebrow="— About" en="About QRing." jp="私たちについて" />
+      <PageHeader eyebrow="— About" en="About QRing" />
 
-      {/* VISION */}
-      <section id="vision" className="py-24 md:py-40">
-        <div className="container-wide">
-          <div className="grid md:grid-cols-12 gap-12 items-start mb-20">
-            <div className="md:col-span-5">
-              <Reveal>
-                <SectionTitle
-                  eyebrow="— Vision"
-                  en="Connecting people, quietly."
-                  jp="人と人を、静かにつなぐ。"
-                />
-              </Reveal>
-            </div>
-            <div className="md:col-span-6 md:col-start-7">
-              <Reveal delay={120}>
-                <p className="body-jp text-base md:text-lg">
-                  電話番号は、もっとも身近で、もっとも繊細な個人情報です。
-                  教えることに躊躇い、教えてもらうことに気を遣う。
-                  その小さな心の負担を、技術の力でほどいていく。
-                  <br />
-                  <br />
-                  QRingが目指すのは、便利さの追求ではなく、
-                  安心して人と人がつながれる社会のあたりまえを、
-                  静かに、丁寧に、つくり直すことです。
-                </p>
-              </Reveal>
-            </div>
+      {/* INTRO */}
+      <section className="py-24 md:py-40">
+        <div className="container-wide grid gap-12 md:grid-cols-12 lg:gap-20">
+          <div className="md:col-span-9 lg:col-span-8">
+            <Reveal>
+              <p className="text-[11px] font-medium tracking-[0.38em] text-moss">
+                About QRing
+              </p>
+            </Reveal>
+            <Reveal delay={100}>
+              <p className="display mt-7 text-3xl leading-[1.55] md:text-5xl lg:text-6xl">
+                つながる安心を、<br />社会の当たり前に。
+              </p>
+            </Reveal>
+            <Reveal delay={180}>
+              <p className="body-jp mt-10 max-w-2xl text-base text-ink/75 md:text-lg">
+                必要なときに、誰もが安心してつながれる未来へ。
+              </p>
+            </Reveal>
           </div>
-          <Reveal delay={200}>
-            <div className="relative aspect-[16/9] md:aspect-[21/9] overflow-hidden">
-              <Image
-                src="/images/about-vision.png"
-                alt=""
-                fill
-                sizes="100vw"
-                className="object-cover"
-              />
-            </div>
-          </Reveal>
         </div>
       </section>
 
-      {/* MISSION */}
-      <section className="py-24 md:py-32 bg-cream">
-        <div className="container-narrow">
-          <Reveal>
-            <span className="eyebrow">— Mission</span>
-          </Reveal>
-          <Reveal delay={120}>
-            <p className="display mt-10 text-3xl md:text-5xl lg:text-6xl leading-[1.4]">
-              「教えない、けれど
-              <br />
-              <span className="text-moss">つながる。」</span>
-            </p>
-          </Reveal>
+      {/* VISION */}
+      <section id="vision" className="bg-cream py-24 md:py-40">
+        <div className="container-wide">
+          <div className="container-narrow text-center">
+            <Reveal>
+              <p className="text-[11px] font-medium tracking-[0.38em] text-moss">
+                OUR VISION
+              </p>
+            </Reveal>
+            <Reveal delay={100}>
+              <h2 className="mt-7 font-serif text-3xl font-light leading-[1.4] text-ink md:text-5xl">
+                つながるQRを、社会インフラへ。
+              </h2>
+            </Reveal>
+            <Reveal delay={180}>
+              <span className="mx-auto mt-8 block h-px w-12 bg-moss" />
+              <p className="body-jp mx-auto mt-9 max-w-2xl text-base text-ink/75 md:text-lg">
+                暮らしの中のさまざまな場面で、プライバシーを守りながら簡単につながれる仕組みを広げていきます。
+              </p>
+            </Reveal>
+          </div>
           <Reveal delay={240}>
-            <p className="body-jp mt-12 text-base md:text-lg">
-              プライバシーを守りながら、必要な時に確かにつながる。
-              この、相反するように見える二つの価値を両立させることが、
-              わたしたちの使命です。
-            </p>
+            <div className="relative mt-14 aspect-video w-full overflow-hidden md:mt-20">
+              <Image
+                src="/images/about-vision-city-walk.png"
+                alt="木漏れ日の都会の歩道を行き交う人々"
+                fill
+                sizes="100vw"
+                className="object-cover object-center"
+              />
+            </div>
           </Reveal>
         </div>
       </section>
 
       {/* MESSAGE */}
       <section id="message" className="py-24 md:py-40">
-        <div className="container-wide grid md:grid-cols-12 gap-12">
+        <div className="container-wide grid gap-12 md:grid-cols-12 md:gap-16">
           <div className="md:col-span-5">
             <Reveal>
-              <SectionTitle
-                eyebrow="— Message"
-                en="From the Founder."
-                jp="代表挨拶"
-              />
+              <p className="text-[11px] font-medium tracking-[0.38em] text-moss">
+                MESSAGE
+              </p>
+              <h2 className="mt-7 max-w-lg font-serif text-3xl font-light leading-[1.5] text-ink md:text-5xl">
+                小さな仕組みを、<br />社会の大きな安心へ。
+              </h2>
+              <span className="mt-8 block h-px w-12 bg-moss" />
             </Reveal>
           </div>
           <div className="md:col-span-6 md:col-start-7">
             <Reveal delay={120}>
-              <div className="body-jp text-base space-y-6">
+              <div className="body-jp max-w-2xl space-y-7 text-base text-ink/80 md:text-lg">
+                <p>私たちは、必要なときに誰もが安心してつながれる社会を目指しています。</p>
+                <p>「つながるQR」は、プライバシーを守りながら、人と人を簡単につなぐ仕組みです。</p>
                 <p>
-                  つながりやすい時代の中で、<br />
-                  人と人とのあいだに、ふと心の距離を感じる場面があります。<br />
-                  近くに人がいても、声をかけることをためらってしまう。<br />
-                  そんな瞬間はないでしょうか。
+                  暮らしの中のさまざまな場面で自然に使われ、やがて社会の当たり前となること。
                 </p>
-
-                <p>
-                  たとえば、道で困った様子の高齢者を見かけたとき。<br />
-                  「見知らぬ相手に声をかけて大丈夫だろうか」「このあと、どうやって対応しようか」と考えてしまい、一歩を踏み出せずにいることがあります。<br />
-                  それは冷たさではなく、相手のことを思う気持ちがあるからこそ生まれるものだと思います。
-                </p>
-
-                <p>
-                  多くの人は、本当は誰かの役に立ちたい。助けたい。<br />
-                  けれど、個人情報への不安などが重なり、その気持ちが行動に結びつきにくくなっている場面が増えています。
-                </p>
-
-                <p>
-                  「つながるQR」は、そうしたためらいを減らし、声をかける一歩をそっと後ろから支えるための仕組みです。<br />
-                  電話番号を見せることなく通話ができることで、見知らぬ相手とも安心して声をつなげられる。文字だけでは伝わりにくい不安にも、声の温度で「大丈夫ですか？」を届けることができます。
-                </p>
-
-                <p>
-                  私たちは、思いやりが安心ととも行動へとつながる社会を、少しずつ増やしていきたいと考えています。<br />
-                  そして、必要なときに、必要な範囲で人と人とがつながる、そのあり方に、真摯に向き合っていきたいと考えています。
-                </p>
-
-                <div className="pt-4">
-                  <p className="font-serif text-lg">代表取締役 木津 愛子</p>
+                <p>その未来に向けて、一歩ずつ取り組んでまいります。</p>
+                <div className="pt-5 text-sm leading-loose text-ink/70 md:text-base">
+                  <p>株式会社QRing</p>
+                  <p>代表取締役　木津 愛子</p>
                 </div>
               </div>
             </Reveal>
@@ -142,24 +115,26 @@ export default function AboutPage() {
       </section>
 
       {/* COMPANY */}
-      <section id="company" className="py-24 md:py-40 bg-cream">
+      <section id="company" className="bg-cream py-24 md:py-40">
         <div className="container-wide">
           <Reveal>
-            <SectionTitle
-              eyebrow="— Company"
-              en="Company Profile."
-              jp="会社概要"
-            />
+            <p className="text-[11px] font-medium tracking-[0.38em] text-moss">
+              COMPANY
+            </p>
+            <h2 className="mt-7 font-serif text-3xl font-light leading-[1.4] text-ink md:text-5xl">
+              会社概要
+            </h2>
+            <span className="mt-8 block h-px w-12 bg-moss" />
           </Reveal>
-          <div className="mt-16 max-w-3xl">
+          <div className="mt-14 max-w-3xl md:mt-16">
             <dl>
               {COMPANY.map((row, i) => (
                 <Reveal as="div" key={row.k} delay={i * 60}>
-                  <div className="grid grid-cols-12 gap-4 py-6 border-t border-ink/10 last:border-b">
-                    <dt className="col-span-12 md:col-span-3 text-[11px] tracking-[0.3em] uppercase text-moss">
+                  <div className="grid grid-cols-12 gap-4 border-t border-ink/10 py-6 last:border-b">
+                    <dt className="col-span-12 text-[11px] uppercase tracking-[0.3em] text-moss md:col-span-3">
                       {row.k}
                     </dt>
-                    <dd className="col-span-12 md:col-span-9 text-sm md:text-base text-ink/80">
+                    <dd className="col-span-12 text-sm text-ink/80 md:col-span-9 md:text-base">
                       {row.v}
                     </dd>
                   </div>
