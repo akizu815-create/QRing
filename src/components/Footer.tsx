@@ -108,9 +108,14 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <p className="text-[11px] tracking-[0.25em] text-ink/50 uppercase">
-            © {new Date().getFullYear()} QRing Inc. All Rights Reserved.
-          </p>
+          <div className="space-y-3">
+            <p className="text-[11px] tracking-[0.25em] text-ink/50 uppercase">
+              © {new Date().getFullYear()} QRing Inc. All Rights Reserved.
+            </p>
+            <p className="text-[10px] leading-relaxed text-ink/40 md:text-[11px]">
+              ※QRコードは株式会社デンソーウェーブの登録商標です。
+            </p>
+          </div>
           <p className="text-[11px] tracking-[0.25em] text-ink/40">
             特許第7460140号
           </p>
