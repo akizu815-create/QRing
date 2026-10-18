@@ -234,10 +234,10 @@ export default function ServicePage() {
           </p>
           <div className="mt-12 flex flex-col items-center gap-7">
             <Link
-              href="/shop"
+              href="/price"
               className="inline-flex items-center justify-center bg-moss px-10 py-5 text-sm tracking-[0.16em] text-ivory transition-colors duration-500 hover:bg-moss/80"
             >
-              アイテムを見る
+              料金について詳しく見る
             </Link>
             <a
               href="https://axb.qring.jp/contact"

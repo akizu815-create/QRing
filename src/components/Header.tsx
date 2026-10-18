@@ -11,7 +11,7 @@ const EXTERNAL_URLS = {
 const NAV = [
   { label: "ABOUT", href: "/about", jp: "私たちについて" },
   { label: "SERVICE", href: "/service", jp: "サービス" },
-  { label: "SHOP", href: "/shop", jp: "ショップ" },
+  { label: "PRICE", href: "/price", jp: "料金案内" },
   { label: "NEWS", href: "/news", jp: "お知らせ" },
   { label: "CONTACT", href: EXTERNAL_URLS.CONTACT, jp: "お問い合わせ", external: true },
 ];
