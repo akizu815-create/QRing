@@ -42,13 +42,13 @@ export default function PriceSection() {
                 通話が成立したとき
               </p>
               <p className="mt-5 whitespace-nowrap font-serif text-[clamp(38px,5.8vw,76px)] font-light leading-none tracking-tight text-ink">
-                800<span className="ml-1 text-[0.44em]">円／回</span>
+                880<span className="ml-1 text-[0.38em]">円（税込）</span>
               </p>
               <p className="mt-3 text-[10px] tracking-[0.12em] text-ink/60 md:text-xs">
-                税込880円
+                1セッションあたり
               </p>
               <p className="mt-2 text-[10px] tracking-[0.18em] text-ink/50 md:text-xs">
-                （後払い）
+                通話成立時・後払い
               </p>
             </div>
           </div>
@@ -57,22 +57,20 @@ export default function PriceSection() {
         <div className="mx-auto mt-12 max-w-2xl text-center md:mt-14">
           <Reveal delay={300}>
             <p className="font-serif text-xl font-light leading-relaxed md:text-2xl">
-              はじめに必要なのは、専用アイテムの購入費用だけ。
+              QRコードを読み取るだけでは、利用料はかかりません。
             </p>
           </Reveal>
           <Reveal delay={360}>
             <p className="body-jp mt-5 text-xs text-ink/55 md:text-sm">
-              ※専用アイテム代金は別途必要です。通話が成立した場合に
-              <span className="whitespace-nowrap">1回800円</span>
-              の利用料が発生します。
+              通話が成立した場合、登録者に1セッション880円（税込）の利用料が発生します。通常の電話料金は発信した方に別途かかります。
             </p>
           </Reveal>
           <Reveal delay={420}>
             <Link
-              href="/shop"
+              href="/price"
               className="btn-primary mt-10 normal-case tracking-[0.16em] md:mt-12"
             >
-              アイテムを見る →
+              料金について詳しく見る →
             </Link>
           </Reveal>
         </div>

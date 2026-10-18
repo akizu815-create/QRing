@@ -22,7 +22,7 @@ const COL_SERVICE = [
 const COL_BUSINESS = [
   { label: "導入のご案内", href: EXTERNAL_URLS.CONTACT, external: true },
   { label: "資料請求", href: EXTERNAL_URLS.DOCUMENT_REQUEST, external: true },
-  { label: "ショップ", href: "/shop" },
+  { label: "料金案内", href: "/price" },
 ];
 
 const COL_CONTACT = [
