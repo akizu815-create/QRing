@@ -34,7 +34,8 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={100}>
               <p className="display mt-7 text-3xl leading-[1.55] md:text-5xl lg:text-6xl">
-                つながる安心を、<br />社会の当たり前に。
+                つながる<span className="text-moss">安心</span>を、<br />
+                社会の<span className="text-moss">当たり前に</span>。
               </p>
             </Reveal>
             <Reveal delay={180}>
@@ -57,7 +58,8 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={100}>
               <h2 className="mt-7 font-serif text-3xl font-light leading-[1.4] text-ink md:text-5xl">
-                つながるQRを、社会インフラへ。
+                つながる<span className="text-moss">QR</span>を、社会
+                <span className="text-moss">インフラ</span>へ。
               </h2>
             </Reveal>
             <Reveal delay={180}>
@@ -90,7 +92,8 @@ export default function AboutPage() {
                 MESSAGE
               </p>
               <h2 className="mt-7 max-w-lg font-serif text-3xl font-light leading-[1.5] text-ink md:text-5xl">
-                小さな仕組みを、<br />社会の大きな安心へ。
+                小さな<span className="text-moss">仕組み</span>を、<br />
+                社会の大きな<span className="text-moss">安心</span>へ。
               </h2>
               <span className="mt-8 block h-px w-12 bg-moss" />
             </Reveal>
