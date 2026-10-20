@@ -98,7 +98,7 @@ export default function PricePage() {
               <p className="text-sm text-ink/70">通常の電話料金</p><p className="text-xl font-medium text-ink">別途、発信した方が負担</p>
             </div>
           </div>
-          <p className="body-jp mt-8 text-sm md:text-base">QRコードを読み取っただけでは、つながるQRのサービス利用料は発生しません。通話が成立した場合に、登録者に料金が発生します。</p>
+          <p className="body-jp mt-8 text-sm md:text-base">QRコードをスキャンしただけでは、つながるQRのサービス利用料は発生しません。通話が成立した場合に、登録者に料金が発生します。</p>
         </div>
       </section>
 
@@ -112,7 +112,7 @@ export default function PricePage() {
               <article key={item.number} className={`grid gap-y-5 border-t border-ink/15 py-10 md:gap-y-4 md:py-14 ${item.number === "02" ? "md:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] md:gap-x-8" : "md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] md:gap-x-12"}`}>
                 <header className="md:col-start-2 md:row-start-1 md:self-end">
                   <p className={label}>CASE {item.number}</p>
-                  <h3 className="mt-3 font-serif text-2xl font-light leading-relaxed md:text-[1.7rem]"><SessionCaseTitle title={item.title} /></h3>
+                  <h3 id={`session-case-${item.number}`} className="mt-3 scroll-mt-24 font-serif text-2xl font-light leading-relaxed md:scroll-mt-28 md:text-[1.7rem]"><SessionCaseTitle title={item.title} /></h3>
                 </header>
                 <div className="body-jp text-sm md:col-start-2 md:row-start-2 md:text-base">
                   <p>{item.description}</p>
@@ -129,7 +129,7 @@ export default function PricePage() {
             ))}
           </div>
           <div className="space-y-2 border-t border-ink/15 pt-8 text-xs leading-relaxed text-ink/75 md:text-sm">
-            <p>※QRコードを読み取っただけではサービス利用料は発生しません。通話が成立したセッションごとに880円（税込）が発生します。</p>
+            <p>※QRコードをスキャンしただけではサービス利用料は発生しません。通話が成立したセッションごとに880円（税込）が発生します。</p>
             <p>※通常の電話料金は別途かかります。発信した方の通信会社・料金プランに応じた通話料が発生します。</p>
           </div>
         </div>
@@ -166,7 +166,7 @@ export default function PricePage() {
           <ol className="mt-12 grid gap-7 border-y border-ink/15 py-8 md:grid-cols-3 md:gap-10">
             {["通話成立", "SMS・メールでお支払い案内", "クレジットカードで決済"].map((step, i) => <li key={step}><span className={label}>STEP 0{i + 1}</span><p className="mt-3 font-serif text-lg">{step}</p></li>)}
           </ol>
-          <p className="mt-6 text-sm text-ink/75">QRコードの読み取りだけでは請求は発生しません。</p>
+          <p className="mt-6 text-sm text-ink/75">QRコードのスキャンだけでは請求は発生しません。</p>
         </div>
       </section>
 

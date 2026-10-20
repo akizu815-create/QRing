@@ -57,7 +57,7 @@ export default function PriceSection() {
         <div className="mx-auto mt-12 max-w-2xl text-center md:mt-14">
           <Reveal delay={300}>
             <p className="font-serif text-xl font-light leading-relaxed md:text-2xl">
-              QRコードを読み取るだけでは、利用料はかかりません。
+              QRコードをスキャンするだけでは、利用料はかかりません。
             </p>
           </Reveal>
           <Reveal delay={360}>

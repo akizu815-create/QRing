@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 const BASE_URL = "https://www.qring.jp";
 
-const ROUTES = ["", "about", "service", "price", "news", "law", "contact"];
+const ROUTES = ["", "about", "service", "price", "news", "law", "contact", "faq"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return ROUTES.map((route) => ({

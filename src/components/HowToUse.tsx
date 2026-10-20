@@ -54,7 +54,7 @@ function RegistrationPanel() {
 
         <div className="pb-9 pt-2 md:pb-11">
           <p className="body-jp text-sm text-ink/75 md:text-base">
-            QRコードを読み取り、「登録者の方」を選択すると登録を始められます。
+            QRコードをスキャンし、「登録者の方」を選択すると登録を始められます。
           </p>
 
           <div className="mt-9 grid items-start gap-6 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)_auto_minmax(0,1fr)] md:gap-4 lg:gap-6">
@@ -116,7 +116,7 @@ function RegistrationPanel() {
 
         <div className="mx-auto max-w-xl pb-7 pt-2 text-center md:pb-8">
           <p className="body-jp text-left text-sm text-ink/75 md:text-base">
-            登録済みのQRコードを読み取り、「登録者の方」からログインできます。マイページでは登録情報の確認・変更ができます。
+            登録済みのQRコードをスキャンし、「登録者の方」からログインできます。マイページでは登録情報の確認・変更ができます。
           </p>
           <div className="relative mx-auto mt-5 aspect-[2/3] w-full max-w-[210px]">
             <Image
@@ -143,7 +143,7 @@ function FinderPanel() {
     >
       <article className="mx-auto max-w-xl px-0 py-4 text-center md:py-6">
         <p className="body-jp text-left text-sm text-ink/75 md:text-base">
-          QRコードを読み取り、表示された「電話をかける」を押すと、登録者へ電話をかけられます。
+          QRコードをスキャンし、表示された「電話をかける」を押すと、登録者へ電話をかけられます。
         </p>
         <div className="relative mx-auto mt-5 aspect-[2/3] w-full max-w-[225px]">
           <Image

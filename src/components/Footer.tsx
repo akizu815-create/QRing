@@ -112,7 +112,7 @@ export default function Footer() {
               <p className="text-xs text-ink/60">受付時間 10:00 – 18:00（土日祝休）</p>
             </div>
             <div className="mt-5 flex flex-wrap gap-x-6 gap-y-1 border-t border-ink/10 pt-4 text-sm">
-              <a href="/contact/#faq" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">よくあるご質問</a>
+              <Link href="/faq/" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">よくあるご質問</Link>
               <Link href="/law/" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">特定商取引法に基づく表記</Link>
             </div>
           </div>

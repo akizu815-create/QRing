@@ -15,7 +15,7 @@ const USECASES = [
   {
     no: "01",
     title: "ご家族の見守りに",
-    body: "ご高齢のご家族が外出先で困っているとき、周囲の方がQRコードを読み取ることで、登録された連絡先へ電話できます。ご家族の電話番号を相手に知らせる必要はありません。",
+    body: "ご高齢のご家族が外出先で困っているとき、周囲の方がQRコードをスキャンすることで、登録された連絡先へ電話できます。ご家族の電話番号を相手に知らせる必要はありません。",
     image: "/images/use-case-family.png",
     imageAlt: "緑道を歩きながら会話する高齢女性と家族",
   },
@@ -138,7 +138,7 @@ export default function ServicePage() {
                   <span className="text-moss">1</span>時間
                 </p>
                 <p className="mt-4 text-[15px] font-medium leading-7 text-ink/80">
-                  QRコードの読み取りから1時間以内は、双方から再通話・折り返しが可能
+                  QRコードのスキャンから1時間以内は、双方から再通話・折り返しが可能
                 </p>
               </div>
               <div className="border-t border-ink/15 py-8 text-center md:border-l md:border-t-0 md:px-8 md:py-10">
