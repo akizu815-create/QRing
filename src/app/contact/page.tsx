@@ -6,27 +6,8 @@ import SectionTitle from "@/components/SectionTitle";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "QRingに関するお問い合わせ・資料請求・法人さま向けのご相談窓口です。",
+    "株式会社QRingへのお問い合わせ、つながるQRのサービスや法人・自治体でのご利用に関するご相談窓口です。",
 };
-
-const FAQ = [
-  {
-    q: "電話番号は本当に相手に伝わりませんか？",
-    a: "はい。QRingは、お互いの電話番号を一切相手に開示することなく通話できる特許取得済みの技術を採用しています。通話は一時的な中間番号を経由するため、本来の番号が表示されることはありません。",
-  },
-  {
-    q: "アプリのインストールは必要ですか？",
-    a: "不要です。QRコードを読み取り、表示された案内に従って発信するだけ。普段お使いの電話アプリでそのままご利用いただけます。",
-  },
-  {
-    q: "中間番号には有効期限がありますか？",
-    a: "セキュリティ確保のため、中間番号は一定時間のみ有効です。期限経過後は自動的に無効化されますので、第三者による不正利用の心配はありません。",
-  },
-  {
-    q: "法人での導入は可能ですか？",
-    a: "もちろん可能です。配送業務、現場連絡、顧客対応など、用途に応じた法人プラン・API連携・ホワイトラベル展開もご相談いただけます。本フォームよりお気軽にお問い合わせください。",
-  },
-];
 
 export default function ContactPage() {
   return (
@@ -143,8 +124,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section id="faq" className="py-24 md:py-40 bg-cream">
+      <section className="bg-cream py-24 md:py-32">
         <div className="container-wide">
           <Reveal>
             <SectionTitle
@@ -153,25 +133,8 @@ export default function ContactPage() {
               jp="よくあるご質問"
             />
           </Reveal>
-          <div className="mt-16 max-w-3xl">
-            {FAQ.map((item, i) => (
-              <Reveal as="div" key={item.q} delay={i * 80}>
-                <details className="group border-t border-ink/10 last:border-b">
-                  <summary className="flex items-start justify-between gap-6 py-7 cursor-pointer list-none">
-                    <span className="font-serif text-base md:text-lg text-ink">
-                      {item.q}
-                    </span>
-                    <span className="font-serif text-2xl text-moss transition-transform duration-500 group-open:rotate-45">
-                      +
-                    </span>
-                  </summary>
-                  <p className="body-jp text-sm md:text-base pb-7 pr-10">
-                    {item.a}
-                  </p>
-                </details>
-              </Reveal>
-            ))}
-          </div>
+          <p className="body-jp mt-10 text-sm text-ink/75 md:text-base">サービスの使い方や料金に関するご質問は、専用ページにまとめています。</p>
+          <a href="/faq/" className="mt-6 inline-flex min-h-11 items-center text-sm text-moss underline decoration-moss/40 underline-offset-4 hover:decoration-moss">よくあるご質問を見る →</a>
         </div>
       </section>
     </>

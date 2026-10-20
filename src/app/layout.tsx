@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s｜QRing",
   },
   description:
-    "QRingは、電話番号を相手に開示することなく音声通話ができる特許技術『つながるQR』を提供します。アプリ不要、QRコードを読み取るだけで、安心の連絡手段を実現。",
+    "株式会社QRingは、お互いの電話番号を相手に表示せずに音声通話ができる『つながるQR』を提供します。専用アプリ不要。QRコードをスキャンするだけで、安心の連絡手段を用意できます。",
   metadataBase: new URL("https://www.qring.jp"),
   openGraph: {
     title: "QRing｜つながるQR",
