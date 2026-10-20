@@ -15,7 +15,7 @@ function SectionHeading({ en, id, children }: { en: string; id: string; children
   return (
     <div className="mb-9 md:mb-12">
       <p className={label}>{en}</p>
-      <h2 id={id} className={`mt-5 font-serif ${heading}`}>{children}</h2>
+      <h2 id={id} className={`mt-5 scroll-mt-24 font-serif md:scroll-mt-28 ${heading}`}>{children}</h2>
       <span className="mt-6 block h-px w-12 bg-moss/70" aria-hidden="true" />
     </div>
   );
