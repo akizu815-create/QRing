@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
 export const metadata: Metadata = {
@@ -27,6 +28,45 @@ function Arrow() {
 function Phone() {
   return <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4 shrink-0"><rect x="7" y="2" width="10" height="20" rx="2" /><path d="M10 18h4" /></svg>;
 }
+
+const SESSION_CASES = [
+  {
+    number: "01",
+    title: "同じ相手なら、1時間以内は何度でも。",
+    image: "/images/session-same-caller.png",
+    imageAlt: "同じ相手との通話・再通話・折り返しを表す線画",
+    imageWidth: 1774,
+    imageHeight: 887,
+    description: "同じ相手との再通話や折り返しは、1時間以内なら追加のサービス利用料はかかりません。",
+    detail: "",
+    price: "1セッション 880円（税込）",
+    note: "1回の通話は最大3分です。1時間以内であれば、同じ相手との再通話や折り返しが可能です。",
+  },
+  {
+    number: "02",
+    title: "別の人から電話があったら？",
+    image: "/images/session-two-finders.png",
+    imageAlt: "登録者と異なる2人の発見者がそれぞれ通話する線画",
+    imageWidth: 887,
+    imageHeight: 887,
+    description: "発見者が変わると、別のセッションになります。2人との通話がそれぞれ成立した場合は、合計2セッションです。",
+    detail: "",
+    price: "880円 × 2セッション ＝ 1,760円（税込）",
+    note: "発見者が異なる場合は、1時間以内であってもそれぞれ別のセッションになります。",
+  },
+  {
+    number: "03",
+    title: "1時間を過ぎて、また電話したら？",
+    image: "/images/session-rescan.png",
+    imageAlt: "1時間経過後にQRコードを再スキャンする様子の線画",
+    imageWidth: 1774,
+    imageHeight: 887,
+    description: "1時間が経過すると、そのセッションの電話番号は使えなくなります。もう一度通話するには、QRコードを再スキャンする必要があります。",
+    detail: "再スキャン後に通話が成立すると、同じ相手でも新しいセッションとして880円（税込）が発生します。",
+    price: "880円 × 2セッション ＝ 1,760円（税込）",
+    note: "合計1,760円は、最初の通話と再スキャン後の通話が両方成立した場合の例です。",
+  },
+] as const;
 
 export default function PricePage() {
   return (
@@ -57,17 +97,34 @@ export default function PricePage() {
 
       <section className="bg-cream py-24 md:py-32" aria-labelledby="session-title">
         <div className="container-narrow">
-          <SectionHeading id="session-title" en="SESSION">1セッションとは？</SectionHeading>
-          <p className="body-jp max-w-3xl text-sm md:text-base">1セッションとは、QRコードが読み取られてから1時間の通話利用をまとめた単位です。1回の通話は最大3分ですが、同じ1時間以内なら再通話や折り返しができます。通話が成立した場合のサービス利用料は、通話回数にかかわらず1セッションにつき880円（税込）です。</p>
-          <div className="mt-12 flex flex-col gap-5 border-y border-ink/15 py-8 md:flex-row md:items-center md:gap-7 md:py-10" aria-label="QRコード読み取りから1時間のセッション終了まで">
-            <div className="md:w-1/4"><p className={label}>START</p><p className="mt-2 font-serif text-lg">QRコード読み取り</p><p className="mt-2 text-xs text-ink/65">読み取りだけでは料金は発生しません</p></div>
-            <Arrow />
-            <div className="border-l border-moss/50 pl-5 md:min-w-0 md:flex-1"><p className={label}>1 HOUR</p><p className="mt-2 font-serif text-xl">1時間のセッション</p><ul className="mt-3 space-y-1 text-sm leading-relaxed text-ink/75"><li>1回の通話は最大3分</li><li>再通話・折り返しが可能</li><li>同じセッション内の追加サービス利用料なし</li></ul></div>
-            <Arrow />
-            <div className="md:w-1/4"><p className={label}>END</p><p className="mt-2 font-serif text-lg">1時間経過で終了</p></div>
+          <SectionHeading id="session-title" en="SESSION">セッションとは？</SectionHeading>
+          <p className="body-jp max-w-3xl text-sm md:text-base">つながるQRでは、同じ相手との1時間以内の通話を「1セッション」と呼びます。1回の通話は最大3分です。</p>
+          <p className="mt-5 text-sm font-medium leading-relaxed md:text-base">サービス利用料は、通話が成立した1セッションにつき<span className="font-sans font-medium tabular-nums text-moss">880円（税込）</span>です。</p>
+          <div className="mt-12 md:mt-16">
+            {SESSION_CASES.map((item) => (
+              <article key={item.number} className="grid gap-x-12 gap-y-5 border-t border-ink/15 py-10 md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] md:gap-y-4 md:py-14">
+                <header className="md:col-start-2 md:row-start-1 md:self-end">
+                  <p className={label}>CASE {item.number}</p>
+                  <h3 className="mt-3 font-serif text-2xl font-light leading-relaxed md:text-[1.7rem]">{item.title}</h3>
+                </header>
+                <figure className={`mx-auto w-full md:col-start-1 md:row-span-3 md:row-start-1 md:self-center ${item.imageWidth === item.imageHeight ? "max-w-[250px] md:max-w-[300px]" : "max-w-[420px]"}`}>
+                  <Image src={item.image} alt={item.imageAlt} width={item.imageWidth} height={item.imageHeight} sizes="(min-width: 768px) 420px, 100vw" className="h-auto w-full mix-blend-multiply" />
+                </figure>
+                <div className="body-jp text-sm md:col-start-2 md:row-start-2 md:text-base">
+                  <p>{item.description}</p>
+                  {item.detail && <p className="mt-3">{item.detail}</p>}
+                </div>
+                <div className="md:col-start-2 md:row-start-3 md:self-start">
+                  <p className="font-sans text-xl font-medium leading-relaxed tabular-nums text-moss md:text-2xl">{item.price}</p>
+                  <p className="mt-3 text-xs leading-relaxed text-ink/70 md:text-sm">※{item.note}</p>
+                </div>
+              </article>
+            ))}
           </div>
-          <p className="mt-7 font-medium leading-relaxed">1時間以内に何度通話しても、つながるQRのサービス利用料は1セッション分の880円（税込）のみです。</p>
-          <p className="mt-2 text-sm text-ink/75">通常の通話料は別途かかります。</p>
+          <div className="space-y-2 border-t border-ink/15 pt-8 text-xs leading-relaxed text-ink/75 md:text-sm">
+            <p>※QRコードを読み取っただけではサービス利用料は発生しません。通話が成立したセッションごとに880円（税込）が発生します。</p>
+            <p>※通常の電話料金は別途かかります。発信した方の通信会社・料金プランに応じた通話料が発生します。</p>
+          </div>
         </div>
       </section>
 
