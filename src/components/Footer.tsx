@@ -1,124 +1,84 @@
 import Link from "next/link";
 
-// 外部リンク配置
-const EXTERNAL_URLS = {
-  CONTACT: "https://axb.qring.jp/contact",
-  DOCUMENT_REQUEST: "https://axb.qring.jp/contact",
-} as const;
-
-const COL_ABOUT = [
-  { label: "Vision / Mission", href: "/about#vision" },
-  { label: "代表挨拶", href: "/about#message" },
-  { label: "会社概要", href: "/about#company" },
-  { label: "特定商取引法表記", href: "/law" },
-];
-
-const COL_SERVICE = [
-  { label: "サービス紹介", href: "/service" },
-  { label: "ご利用方法", href: "/service#how" },
-  { label: "ご高齢の方の見守り", href: "/service#senior" },
-];
-
-const COL_BUSINESS = [
-  { label: "導入のご案内", href: EXTERNAL_URLS.CONTACT, external: true },
-  { label: "資料請求", href: EXTERNAL_URLS.DOCUMENT_REQUEST, external: true },
-  { label: "料金案内", href: "/price" },
-];
-
-const COL_CONTACT = [
-  { label: "お問い合わせ", href: EXTERNAL_URLS.CONTACT, external: true },
-  { label: "FAQ", href: "/contact#faq" },
-  { label: "ニュース", href: "/news" },
-];
-
-function Col({
-  title,
-  items,
-}: {
-  title: string;
-  items: { label: string; href: string; external?: boolean }[];
-}) {
-  return (
-    <div>
-      <h4 className="text-[11px] tracking-[0.3em] text-moss uppercase mb-5">
-        {title}
-      </h4>
-      <ul className="space-y-3">
-        {items.map((i) => (
-          <li key={i.label}>
-            {i.external ? (
-              <a
-                href={i.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-ink/70 hover:text-ink link-underline"
-              >
-                {i.label}
-              </a>
-            ) : (
-              <Link
-                href={i.href}
-                className="text-sm text-ink/70 hover:text-ink link-underline"
-              >
-                {i.label}
-              </Link>
-            )}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+const SITE_LINKS = [
+  { en: "HOME", jp: "トップ", href: "/" },
+  { en: "SERVICE", jp: "サービス", href: "/service" },
+  { en: "PRICE", jp: "料金案内", href: "/price" },
+  { en: "ABOUT", jp: "私たちについて", href: "/about" },
+  { en: "NEWS", jp: "お知らせ", href: "/news" },
+  { en: "CONTACT", jp: "お問い合わせ", href: "https://axb.qring.jp/contact", external: true },
+] as const;
 
 export default function Footer() {
   return (
-    <footer className="relative mt-32 bg-cream pt-20 pb-10">
+    <footer className="relative mt-32 bg-cream pt-16 pb-8 md:pt-20 md:pb-10">
       <div className="container-wide">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 pb-16 border-b border-ink/10">
-          <div className="md:col-span-4">
-            <Link href="/" className="inline-block">
-              <img
-                src="/images/logo-black.svg"
-                alt="QRing"
-                className="h-8 w-auto"
-              />
+        <div className="grid gap-10 border-b border-ink/10 pb-12 md:gap-12 md:pb-16 lg:grid-cols-12 lg:gap-10">
+          <div className="lg:col-span-4">
+            <Link href="/" aria-label="QRing トップページ" className="inline-block">
+              <img src="/images/logo-black.svg" alt="QRing" className="h-7 w-auto md:h-8" />
             </Link>
-            <p className="mt-6 text-sm body-jp">
+            <p className="body-jp mt-5 max-w-sm text-sm">
               電話番号を教えずに、つながる。
               <br />
               特許取得済の通話技術『つながるQR』で、
               <br />
               安心と利便性を両立した新しいコミュニケーションを。
             </p>
-            <div className="mt-8 space-y-2 text-sm text-ink/70">
-              <p>
-                <span className="text-xs tracking-widest text-moss mr-3">TEL</span>
-                03-6555-8000
-              </p>
-              <p className="text-xs text-ink/50">受付時間 10:00 – 18:00（土日祝休）</p>
-            </div>
           </div>
 
-          <div className="md:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
-            <Col title="About" items={COL_ABOUT} />
-            <Col title="Service" items={COL_SERVICE} />
-            <Col title="For Business" items={COL_BUSINESS} />
-            <Col title="Contact" items={COL_CONTACT} />
+          <nav aria-label="フッターナビゲーション" className="lg:col-span-3">
+            <h2 className="eyebrow mb-4">Site</h2>
+            <ul className="grid grid-cols-2 gap-x-5 gap-y-1 sm:max-w-md lg:grid-cols-1">
+              {SITE_LINKS.map((item) => (
+                <li key={item.en}>
+                  {"external" in item ? (
+                    <a href={item.href} target="_blank" rel="noopener noreferrer" className="group flex min-h-11 items-center gap-2 text-sm text-ink/80 transition-colors hover:text-moss focus-visible:text-moss">
+                      <span className="tracking-[0.12em]">{item.en}</span>
+                      <span className="text-[11px] text-ink/55 group-hover:text-moss/80">{item.jp}</span>
+                    </a>
+                  ) : (
+                    <Link href={item.href} className="group flex min-h-11 items-center gap-2 text-sm text-ink/80 transition-colors hover:text-moss focus-visible:text-moss">
+                      <span className="tracking-[0.12em]">{item.en}</span>
+                      <span className="text-[11px] text-ink/55 group-hover:text-moss/80">{item.jp}</span>
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="lg:col-span-5">
+            <h2 className="eyebrow mb-4">Company</h2>
+            <p className="font-serif text-base text-ink">株式会社QRing</p>
+            <address className="mt-3 not-italic text-sm leading-7 text-ink/75">
+              〒170-0005 東京都豊島区南大塚2丁目37番5号
+              <br />
+              RENEX Otsuka 10階
+            </address>
+            <div className="mt-3 text-sm leading-7 text-ink/75">
+              <p><span className="mr-3 text-xs tracking-widest text-moss">TEL</span><a href="tel:0365558000" className="hover:text-moss">03-6555-8000</a></p>
+              <p><span className="mr-3 text-xs tracking-widest text-moss">MAIL</span><a href="mailto:info@qring.jp" className="hover:text-moss">info@qring.jp</a></p>
+              <p className="text-xs text-ink/60">受付時間 10:00 – 18:00（土日祝休）</p>
+            </div>
+            <div className="mt-5 flex flex-wrap gap-x-6 gap-y-1 border-t border-ink/10 pt-4 text-sm">
+              <Link href="/about#company" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">会社概要</Link>
+              <Link href="/contact#faq" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">よくあるご質問</Link>
+              <Link href="/law" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">特定商取引法に基づく表記</Link>
+            </div>
           </div>
         </div>
 
-        <div className="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div className="space-y-3">
-            <p className="text-[11px] tracking-[0.25em] text-ink/50 uppercase">
+        <div className="flex flex-col gap-4 pt-6 md:flex-row md:items-end md:justify-between md:pt-8">
+          <div className="space-y-2">
+            <p className="text-[11px] tracking-[0.14em] text-ink/60">
               © {new Date().getFullYear()} QRing Inc. All Rights Reserved.
             </p>
-            <p className="text-[10px] leading-relaxed text-ink/40 md:text-[11px]">
+            <p className="text-[11px] leading-relaxed text-ink/60">
               ※QRコードは株式会社デンソーウェーブの登録商標です。
             </p>
           </div>
-          <p className="text-[11px] tracking-[0.25em] text-ink/40">
-            特許第7460140号
-          </p>
+          <p className="text-[11px] tracking-[0.14em] text-ink/60">特許第7460140号</p>
         </div>
       </div>
     </footer>
