@@ -89,7 +89,7 @@ export default function ServicePage() {
 
       <HowToUse />
       {/* PRIVACY CALL */}
-      <section className="border-y border-ink/10 bg-ivory py-24 md:py-40">
+      <section id="privacy-call" className="border-y border-ink/10 bg-ivory py-24 md:py-40">
         <div className="container-wide">
           <div className="mx-auto max-w-4xl text-center">
             <Reveal>
@@ -169,7 +169,7 @@ export default function ServicePage() {
       </section>
 
       {/* USE CASES */}
-      <section className="py-24 md:py-40 bg-cream">
+      <section id="use-cases" className="py-24 md:py-40 bg-cream">
         <div className="container-wide">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
