@@ -112,7 +112,7 @@ export default function ServicePage() {
           <Reveal delay={240}>
             <div className="relative mx-auto mt-14 aspect-[1916/823] w-full max-w-6xl md:mt-20">
               <Image
-                src="/images/privacy-call.png"
+                src="/images/call-connection.png"
                 alt="登録者と発見者をプライバシー電話番号でつなぐ仕組み"
                 fill
                 sizes="(min-width: 1280px) 1152px, 100vw"
