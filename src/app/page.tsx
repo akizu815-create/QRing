@@ -34,7 +34,7 @@ const HERO_FEATURES = ["アプリ不要", "電話番号は非公開", "特許取
 export default function Home() {
   return (
     <>
-      {/* HERO */}
+      {/* HERO — Cloudflare Pages PR preview test (no visual changes). */}
       <section className="bg-ivory pt-20 md:pt-24">
         <div className="relative mx-auto w-full max-w-[1536px]">
           <HeroVisual />
