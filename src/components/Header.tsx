@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 // 外部リンク配置
 const EXTERNAL_URLS = {
   CONTACT: "https://axb.qring.jp/contact",
+  MY_PAGE: "https://axb.qring.jp/",
 } as const;
 
 const NAV = [
@@ -85,14 +86,12 @@ export default function Header() {
               </Link>
             )
           ))}
-          <button
-            type="button"
-            disabled
-            aria-disabled="true"
-            className="ml-4 inline-flex cursor-default items-center gap-2 bg-ink px-5 py-3 text-[11px] tracking-[0.25em] text-ivory"
+          <a
+            href={EXTERNAL_URLS.MY_PAGE}
+            className="ml-4 inline-flex items-center gap-2 bg-ink px-5 py-3 text-[11px] tracking-[0.25em] text-ivory"
           >
             マイページ
-          </button>
+          </a>
         </nav>
 
         <button
@@ -153,14 +152,13 @@ export default function Header() {
               </Link>
             )
           ))}
-          <button
-            type="button"
-            disabled
-            aria-disabled="true"
-            className="btn-primary mt-6 cursor-default"
+          <a
+            href={EXTERNAL_URLS.MY_PAGE}
+            onClick={() => setOpen(false)}
+            className="btn-primary mt-6"
           >
             マイページ
-          </button>
+          </a>
         </div>
       </div>
     </header>
