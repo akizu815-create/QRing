@@ -64,6 +64,7 @@ export default function PriceSection() {
             <p className="body-jp mt-5 text-xs text-ink/55 md:text-sm">
               通話が成立した場合、登録者に1セッション880円（税込）の利用料が発生します。通常の電話料金は発信した方に別途かかります。
             </p>
+            <p className="mt-3 text-xs leading-relaxed text-ink/55">※通話時間が5秒未満の場合、サービス利用料は発生しません。</p>
           </Reveal>
           <Reveal delay={420}>
             <Link

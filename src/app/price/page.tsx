@@ -5,7 +5,7 @@ import styles from "./CallFlow.module.css";
 
 export const metadata: Metadata = {
   title: "Price｜料金案内",
-  description: "つながるQRの料金案内。通話が成立した1セッションにつき880円（税込）。通常の電話料金は発信した方に別途かかります。",
+  description: "つながるQRの料金案内。通話が成立した1セッションにつき880円（税込）。通常の電話料金は発信した方に別途かかります。通話時間が5秒未満の場合、サービス利用料は発生しません。",
   alternates: { canonical: "/price/" },
 };
 
@@ -89,7 +89,7 @@ const SESSION_CASES = [
     description: "発見者が変わると、別のセッションになります。2人との通話がそれぞれ成立した場合は、合計2セッションです。",
     detail: "",
     price: "880円 × 2セッション ＝ 1,760円（税込）",
-    note: "発見者が異なる場合は、1時間以内であってもそれぞれ別のセッションになります。",
+    note: "発見者が異なる場合は、1時間以内であってもそれぞれ別のセッションになります。合計1,760円は、両方のセッションで課金対象となる通話があった場合の例です。通話時間が5秒未満の場合、サービス利用料は発生しません。",
   },
   {
     number: "03",
@@ -101,7 +101,7 @@ const SESSION_CASES = [
     description: "1時間が経過すると、そのセッションの電話番号は使えなくなります。もう一度通話するには、QRコードを再スキャンする必要があります。",
     detail: "再スキャン後に通話が成立すると、同じ相手でも新しいセッションとして880円（税込）が発生します。",
     price: "880円 × 2セッション ＝ 1,760円（税込）",
-    note: "合計1,760円は、最初の通話と再スキャン後の通話が両方成立した場合の例です。",
+    note: "合計1,760円は、最初と再スキャン後の両方のセッションで課金対象となる通話があった場合の例です。通話時間が5秒未満の場合、サービス利用料は発生しません。",
   },
 ] as const;
 
@@ -129,6 +129,7 @@ export default function PricePage() {
             </div>
           </div>
           <p className="body-jp mt-8 text-sm md:text-base">QRコードをスキャンしただけでは、つながるQRのサービス利用料は発生しません。通話が成立した場合に、登録者に料金が発生します。</p>
+          <p className="mt-3 text-xs leading-relaxed text-ink/65">※通話時間が5秒未満の場合、サービス利用料は発生しません。</p>
         </div>
       </section>
 
@@ -160,6 +161,7 @@ export default function PricePage() {
           </div>
           <div className="space-y-2 border-t border-ink/15 pt-8 text-xs leading-relaxed text-ink/75 md:text-sm">
             <p>※QRコードをスキャンしただけではサービス利用料は発生しません。通話が成立したセッションごとに880円（税込）が発生します。</p>
+            <p>※通話時間が5秒未満の場合、サービス利用料は発生しません。</p>
             <p>※通常の電話料金は別途かかります。発信した方の通信会社・料金プランに応じた通話料が発生します。</p>
           </div>
         </div>
@@ -233,14 +235,15 @@ export default function PricePage() {
             <li>・通話が成立した場合、登録者に1セッション<span className="font-sans font-medium tabular-nums">880円（税込）</span>のサービス利用料が発生します。</li>
             <li>・登録者が折り返す場合、通常の電話料金は登録者の負担です。</li>
           </ul>
+          <p className="mt-3 text-xs leading-relaxed text-ink/65">※通話時間が5秒未満の場合、サービス利用料は発生しません。通常の電話料金は、発信者に別途発生します。</p>
         </div>
       </section>
 
       <section className="bg-cream py-24 md:py-32" aria-labelledby="payment-title">
         <div className="container-narrow">
           <SectionHeading id="payment-title" en="PAYMENT">お支払いについて</SectionHeading>
-          <p className="body-jp text-sm md:text-base">つながるQRのサービス利用料は、通話成立後に登録者へSMSとメールでご案内します。案内に記載された決済ページから、クレジットカードでお支払いください。</p>
-          <p className="mt-6 border-l-2 border-moss pl-4 text-sm leading-relaxed md:text-base">お支払い期限：通話成立日の2日後、23時59分まで（日本時間）</p>
+          <p className="body-jp text-sm md:text-base">つながるQRのサービス利用料が発生した場合、登録者へSMSとメールでお支払いをご案内します。案内に記載された決済ページから、クレジットカードでお支払いください。</p>
+          <p className="mt-6 border-l-2 border-moss pl-4 text-sm leading-relaxed md:text-base">お支払い期限：サービス利用料が発生した通話日の2日後、23時59分まで（日本時間）</p>
           <ol className="mt-12 grid gap-7 border-y border-ink/15 py-8 md:grid-cols-3 md:gap-10">
             {["通話成立", "SMS・メールでお支払い案内", "クレジットカードで決済"].map((step, i) => <li key={step}><span className={label}>STEP 0{i + 1}</span><p className="mt-3 font-serif text-lg">{step}</p></li>)}
           </ol>
@@ -252,7 +255,7 @@ export default function PricePage() {
         <div className="container-narrow">
           <SectionHeading id="notes-title" en="IMPORTANT NOTES">料金に関するご案内</SectionHeading>
           <ul className="space-y-4 text-sm leading-loose text-ink/80 md:text-base">
-            <li>つながるQRのサービス利用料は、通話が成立した場合に登録者に発生します。</li>
+            <li>つながるQRのサービス利用料は、通話が成立した場合に登録者に発生します。<p className="mt-2 text-xs leading-relaxed text-ink/65">※通話時間が5秒未満の場合、サービス利用料は発生しません。</p></li>
             <li>同一セッション内の再通話・折り返しによる、つながるQRのサービス利用料の追加請求はありません。</li>
             <li>通常の電話料金は、電話を発信した人に別途かかります。</li>
             <li>通常の通話料は各通信会社・料金プランにより異なります。</li>
