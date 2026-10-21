@@ -53,8 +53,7 @@
   width: min(100%, 11.5rem);
   aspect-ratio: 1;
   overflow: hidden;
-  border-radius: 50%;
-  background: var(--color-ivory);
+
 }
 
 .portraitSmall {
@@ -63,26 +62,13 @@
 
 .finderImage,
 .registrantImage {
-  position: absolute;
-  height: auto;
-  max-width: none;
-}
-
-.finderImage {
-  top: -12%;
-  left: 0;
-  width: 186%;
-}
-
-.registrantImage {
-  top: -22%;
-  right: 0;
-  width: 300%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .privacyImage {
-  object-fit: none;
-  object-position: center 40%;
+  object-fit: contain;
 }
 
 .charge {

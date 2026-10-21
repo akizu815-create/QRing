@@ -42,10 +42,10 @@ function CallPortrait({ person, small = false }: { person: "finder" | "registran
   return (
     <div className={`${styles.portrait} ${small ? styles.portraitSmall : ""}`}>
       <Image
-        src="/images/how-it-works-step-03.png"
+        src={person === "finder" ? "/images/call-woman.png" : small ? "/images/call-man-callback.png" : "/images/call-man-smartphone.png"}
         alt={person === "finder" ? "スマートフォンを操作する発見者の線画" : "電話で話す登録者の線画"}
-        width={446}
-        height={315}
+        width={person === "finder" ? 362 : small ? 215 : 365}
+        height={person === "finder" ? 383 : small ? 262 : 377}
         className={person === "finder" ? styles.finderImage : styles.registrantImage}
       />
     </div>
@@ -56,7 +56,7 @@ function PrivacyPhoneIllustration() {
   return (
     <div className={styles.privacyIllustration}>
       <Image
-        src="/images/privacy-call.png"
+        src="/images/call-privacy-phone.png"
         alt="プライバシー電話番号を表す受話器の線画"
         fill
         sizes="184px"
