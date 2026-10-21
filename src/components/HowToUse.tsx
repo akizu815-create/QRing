@@ -57,10 +57,9 @@ function RegistrationPanel() {
             QRコードをスキャンし、「登録者の方」を選択すると登録を始められます。
           </p>
 
-          <div className="mt-9 grid items-start gap-6 md:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)_auto_minmax(0,1fr)] md:gap-4 lg:gap-6">
-            {REGISTER_STEPS.map((step, index) => (
-              <div key={step.no} className="contents">
-                <article className="min-w-0 text-center">
+          <div className="mt-9 grid items-start gap-6 md:grid-cols-3 md:gap-8">
+            {REGISTER_STEPS.map((step) => (
+              <article key={step.no} className="min-w-0 text-center">
                   <p className="text-base font-semibold text-moss">{step.no}</p>
                   <h4 className="mt-3 min-h-0 font-serif text-xl font-light leading-relaxed md:min-h-[3.4rem]">
                     {step.title}
@@ -78,16 +77,6 @@ function RegistrationPanel() {
                     {step.body}
                   </p>
                 </article>
-
-                {index < REGISTER_STEPS.length - 1 && (
-                  <span
-                    className="self-center justify-self-center rotate-90 text-xl font-light text-moss/45 md:rotate-0"
-                    aria-hidden="true"
-                  >
-                    →
-                  </span>
-                )}
-              </div>
             ))}
           </div>
         </div>
@@ -114,19 +103,17 @@ function RegistrationPanel() {
           </svg>
         </summary>
 
-        <div className="mx-auto max-w-xl pb-7 pt-2 text-center md:pb-8">
-          <p className="body-jp text-left text-sm text-ink/75 md:text-base">
-            登録済みのQRコードをスキャンし、「登録者の方」からログインできます。マイページでは登録情報の確認・変更ができます。
+        <div className="grid items-center gap-6 pb-7 pt-2 md:grid-cols-2 md:gap-x-12 md:pb-8">
+          <p className="body-jp text-sm text-ink/75 md:col-start-1 md:row-start-1 md:text-base">
+            登録済みの方は、ログインIDとパスワードを入力してマイページにログインしてください。マイページでは、登録したQRコードや登録情報を確認できます。
           </p>
-          <div className="relative mx-auto mt-5 aspect-[2/3] w-full max-w-[210px]">
-            <Image
-              src="/images/how-to-app-screen.png"
-              alt="登録者がマイページへログインする画面"
-              fill
-              sizes="210px"
-              className="object-contain"
-            />
-          </div>
+          {/* 完成済みのログイン画面画像は、素材受領後にここへ掲載する。 */}
+          <a
+            href="https://axb.qring.jp/"
+            className="btn-primary justify-self-start md:col-start-1 md:row-start-2"
+          >
+            マイページにログインする
+          </a>
         </div>
       </details>
     </div>
