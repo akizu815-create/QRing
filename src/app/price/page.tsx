@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
+import styles from "./CallFlow.module.css";
 
 export const metadata: Metadata = {
   title: "Price｜料金案内",
@@ -21,10 +22,6 @@ function SectionHeading({ en, id, children }: { en: string; id: string; children
   );
 }
 
-function Arrow() {
-  return <span className="shrink-0 text-moss/70" aria-hidden="true">→</span>;
-}
-
 function SessionCaseTitle({ title }: { title: string }) {
   const digitIndex = title.indexOf("1");
   if (digitIndex === -1) return title;
@@ -32,8 +29,41 @@ function SessionCaseTitle({ title }: { title: string }) {
   return <>{title.slice(0, digitIndex)}<span className="font-sans font-normal tabular-nums">1</span>{title.slice(digitIndex + 1)}</>;
 }
 
-function Phone() {
-  return <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4 shrink-0"><rect x="7" y="2" width="10" height="20" rx="2" /><path d="M10 18h4" /></svg>;
+function CallFlowArrow() {
+  return (
+    <div aria-hidden="true" className={styles.arrow}>
+      <svg className={styles.arrowVertical} viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M18 3v27m-8-8 8 8 8-8" /></svg>
+      <svg className={styles.arrowHorizontal} viewBox="0 0 180 32" preserveAspectRatio="none" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 16h172m-12-10 12 10-12 10" /></svg>
+    </div>
+  );
+}
+
+function CallPortrait({ person, small = false }: { person: "finder" | "registrant"; small?: boolean }) {
+  return (
+    <div className={`${styles.portrait} ${small ? styles.portraitSmall : ""}`}>
+      <Image
+        src="/images/how-it-works-step-03.png"
+        alt={person === "finder" ? "スマートフォンを操作する発見者の線画" : "電話で話す登録者の線画"}
+        width={446}
+        height={315}
+        className={person === "finder" ? styles.finderImage : styles.registrantImage}
+      />
+    </div>
+  );
+}
+
+function PrivacyPhoneIllustration() {
+  return (
+    <div className={styles.privacyIllustration}>
+      <Image
+        src="/images/privacy-call.png"
+        alt="プライバシー電話番号を表す受話器の線画"
+        fill
+        sizes="184px"
+        className={styles.privacyImage}
+      />
+    </div>
+  );
 }
 
 const SESSION_CASES = [
@@ -136,25 +166,73 @@ export default function PricePage() {
       </section>
 
       <section className="py-24 md:py-32" aria-labelledby="call-charges-title">
-        <div className="container-narrow">
+        <div className="mx-auto w-full max-w-[1360px] px-6 md:px-10 xl:px-12">
           <SectionHeading id="call-charges-title" en="CALL CHARGES">通常の電話料金について</SectionHeading>
-          <p className="body-jp text-sm md:text-base">つながるQRのサービス利用料とは別に、電話をかけた方には、ご契約の通信会社・料金プランに応じた通常の通話料がかかります。</p>
-          <div className="mt-12 divide-y divide-ink/15 border-y border-ink/15">
-            {[
-              { title: "発見者から電話する場合", from: "発見者", to: "登録者", payer: "発見者" },
-              { title: "登録者が折り返す場合", from: "登録者", to: "発見者", payer: "登録者" },
-            ].map((call) => (
-              <div className="py-8" key={call.title}>
-                <h3 className="font-serif text-xl">{call.title}</h3>
-                <div className="mt-5 grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1.5fr)_auto_minmax(0,1fr)] items-stretch gap-1 text-center text-xs leading-snug sm:gap-3 sm:text-sm" aria-label={`${call.from}がプライバシー電話番号を通じて${call.to}に発信`}>
-                  <span className="flex min-w-0 flex-col items-center justify-center gap-1 border border-ink/20 px-1 py-3 sm:flex-row sm:px-3"><Phone />{call.from}<span className="text-ink/60">（発信）</span></span><span className="self-center"><Arrow /></span><span className="flex min-w-0 items-center justify-center border border-moss/40 px-1 py-3 text-moss sm:px-3">プライバシー電話番号</span><span className="self-center"><Arrow /></span><span className="flex min-w-0 flex-col items-center justify-center gap-1 border border-ink/20 px-1 py-3 sm:flex-row sm:px-3"><Phone />{call.to}<span className="text-ink/60">（着信）</span></span>
-                </div>
-                <p className="mt-5 text-sm font-medium">通常の通話料：{call.payer}が負担</p>
+          <p className="body-jp max-w-4xl text-sm md:text-base">つながるQRのサービス利用料とは別に、電話をかけた方には、ご契約の通信会社・料金プランに応じた通常の通話料がかかります。</p>
+
+          <div className="mt-12 border-y border-ink/15 py-10 md:mt-16 md:py-14">
+            <h3 className="text-center font-serif text-2xl font-light leading-relaxed text-ink md:text-3xl">通話時の費用のかかり方</h3>
+            <p className="mt-3 text-center text-sm leading-relaxed text-ink/65">発見者から登録者へ電話をかける場合</p>
+
+            <div className={styles.flow}>
+              <div className={styles.role}>
+                <p className={styles.roleLabel}>発見者</p>
+                <p className={styles.roleDescription}>QRコードをスキャンした人</p>
+                <div className={styles.roleIllustration}><CallPortrait person="finder" /></div>
               </div>
-            ))}
+
+              <div className={styles.charge}>
+                <div className={styles.chargeSpacer} aria-hidden="true" />
+                <div className={styles.chargeBody}>
+                  <CallFlowArrow />
+                  <div className={`${styles.chargeCard} ${styles.callCharge}`}>
+                    <h4 className={styles.chargeTitle}>通常の電話料金</h4>
+                    <p>発信者の通信会社・料金プランに応じて発生します。</p>
+                    <p className={`${styles.payer} ${styles.callerPayer}`}>発信者負担</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.role}>
+                <p className={styles.roleLabel}>プライバシー電話番号</p>
+                <p className={styles.roleDescription}>お互いの電話番号を知らせずにつながる番号</p>
+                <div className={styles.roleIllustration}><PrivacyPhoneIllustration /></div>
+              </div>
+
+              <div className={styles.charge}>
+                <div className={styles.chargeSpacer} aria-hidden="true" />
+                <div className={styles.chargeBody}>
+                  <CallFlowArrow />
+                  <div className={`${styles.chargeCard} ${styles.serviceCharge}`}>
+                    <h4 className={styles.chargeTitle}>つながるQR<br />サービス利用料</h4>
+                    <p>通話が成立した場合、1セッションにつき<span className="font-sans font-semibold tabular-nums">880円（税込）</span>が発生します。</p>
+                    <p className={`${styles.payer} ${styles.registrantPayer}`}>登録者負担</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.role}>
+                <p className={styles.roleLabel}>登録者</p>
+                <p className={styles.roleDescription}>QRコードを登録した人</p>
+                <div className={styles.roleIllustration}><CallPortrait person="registrant" /></div>
+              </div>
+            </div>
+
+            <div className="mt-10 flex flex-col items-center gap-6 border-t border-dashed border-moss/40 bg-cream/40 px-6 py-8 md:flex-row md:gap-10 md:px-10">
+              <div className="shrink-0"><CallPortrait person="registrant" small /></div>
+              <div className="min-w-0">
+                <h4 className="font-serif text-xl text-deepmoss">登録者が折り返す場合</h4>
+                <p className="body-jp mt-3 text-sm md:text-base">登録者が着信履歴に残ったプライバシー電話番号へ折り返す場合、通常の電話料金は登録者の負担となります。</p>
+              </div>
+            </div>
           </div>
-          <p className="mt-8 font-medium leading-relaxed">つながるQRのサービス利用料880円（税込）／1セッションは、登録者が負担します。</p>
-          <p className="body-jp mt-3 text-sm">通話料は、発信した人の通信会社・料金プランに応じて発生します。つながるQRのサービス利用料880円に通常の通話料は含まれません。</p>
+
+          <ul className="mt-8 space-y-3 rounded-2xl bg-white/50 px-6 py-7 text-sm leading-relaxed text-ink/80 md:px-10 md:text-base">
+            <li>・QRコードをスキャンしただけでは、サービス利用料は発生しません。</li>
+            <li>・発見者が電話をかける際の通常の電話料金は、発見者の負担です。</li>
+            <li>・通話が成立した場合、登録者に1セッション<span className="font-sans font-medium tabular-nums">880円（税込）</span>のサービス利用料が発生します。</li>
+            <li>・登録者が折り返す場合、通常の電話料金は登録者の負担です。</li>
+          </ul>
         </div>
       </section>
 
