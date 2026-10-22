@@ -1,3 +1,4 @@
+import { CONSUMER_SERVICE } from "@/config/consumerService";
 import type { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
@@ -114,6 +115,7 @@ export default function PricePage() {
         <div className="container-narrow">
           <SectionHeading id="pricing-title" en="PRICING">料金のご案内</SectionHeading>
           <p className="font-serif text-xl leading-relaxed md:text-2xl">必要なときだけ、使った分だけ。</p>
+          <p className="mt-4 text-xs leading-relaxed text-ink/65">※{CONSUMER_SERVICE.notice}</p>
           <div className="mt-12 border-y border-ink/15 md:mt-16">
             <div className="grid gap-7 py-9 sm:grid-cols-2 md:gap-12">
               <div><p className="text-sm text-ink/70">登録料</p><p className="mt-2 font-serif text-4xl text-moss">0円</p></div>

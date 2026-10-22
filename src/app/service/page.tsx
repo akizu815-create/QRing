@@ -1,3 +1,4 @@
+import { CONSUMER_SERVICE } from "@/config/consumerService";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -225,19 +226,19 @@ export default function ServicePage() {
             Get Started
           </p>
           <h2 className="display mt-7 text-3xl md:text-5xl">
-            もしもの安心を、今日から。
+            {CONSUMER_SERVICE.heading}
           </h2>
           <p className="mx-auto mt-8 max-w-xl text-sm leading-loose text-ivory/70 md:text-base">
-            大切な人やペット、持ち物に。
-            <br />
-            小さなQRコードから、安心の備えを始めませんか。
+            {CONSUMER_SERVICE.description}
           </p>
           <div className="mt-12 flex flex-col items-center gap-7">
+            <p className="text-sm font-medium tracking-[0.12em] text-softgold">{CONSUMER_SERVICE.availability}</p>
+            <p className="text-sm leading-loose text-ivory/70">{CONSUMER_SERVICE.announcement}</p>
             <Link
-              href="/price"
+              href={CONSUMER_SERVICE.cta.href}
               className="inline-flex items-center justify-center bg-moss px-10 py-5 text-sm tracking-[0.16em] text-ivory transition-colors duration-500 hover:bg-moss/80"
             >
-              料金について詳しく見る
+              {CONSUMER_SERVICE.cta.label}
             </Link>
             <a
               href="https://axb.qring.jp/contact"
