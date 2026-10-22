@@ -54,7 +54,7 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-10">
+        <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
           {NAV.map((item) => (
             item.external ? (
               <a
@@ -86,9 +86,15 @@ export default function Header() {
               </Link>
             )
           ))}
+          <Link
+            href="/municipalities/"
+            className="inline-flex shrink-0 items-center justify-center border border-moss/50 px-3 py-3 text-[11px] font-medium tracking-[0.08em] text-deepmoss transition-colors duration-300 hover:border-moss hover:bg-moss/10 xl:px-4"
+          >
+            自治体の方へ
+          </Link>
           <a
             href={EXTERNAL_URLS.MY_PAGE}
-            className="ml-4 inline-flex items-center gap-2 bg-ink px-5 py-3 text-[11px] tracking-[0.25em] text-ivory"
+            className="ml-0 inline-flex items-center gap-2 bg-ink px-5 py-3 text-[11px] tracking-[0.25em] text-ivory xl:ml-2"
           >
             マイページ
           </a>

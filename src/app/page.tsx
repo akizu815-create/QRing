@@ -36,7 +36,7 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="bg-ivory pt-20 md:pt-24">
-        <div className="relative mx-auto w-full max-w-[1536px]">
+        <div className="relative mx-auto w-full max-w-[1536px] md:max-lg:flex md:max-lg:flex-col-reverse">
           <HeroVisual />
           <div className="absolute inset-0 z-10 px-6 pt-3 md:hidden">
             <div className="max-w-[56%]">
@@ -53,7 +53,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="mt-[clamp(8rem,24svh,14.5rem)]">
+            <div className="mt-[clamp(6rem,18svh,11rem)]">
               <ul className="grid w-fit grid-cols-[max-content_max-content] gap-2 font-sans text-[15px] font-medium leading-none text-ink/90">
                 {HERO_FEATURES.map((feature) => (
                   <li
@@ -64,18 +64,26 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <a
-                href={CONTACT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary mt-4 whitespace-nowrap !px-5 !py-3 !text-xs normal-case tracking-[0.12em]"
-              >
-                {HERO_CTA_LABEL}
-                <span aria-hidden="true">↗</span>
-              </a>
+              <div className="mt-4 flex flex-col items-start gap-2">
+                <a
+                  href={CONTACT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary whitespace-nowrap !px-5 !py-3 !text-xs normal-case tracking-[0.12em]"
+                >
+                  {HERO_CTA_LABEL}
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <Link
+                  href="/municipalities/"
+                  className="inline-flex max-w-full items-center border border-moss/50 bg-ivory/80 px-5 py-3 text-xs font-medium tracking-[0.04em] text-deepmoss transition-colors hover:border-moss hover:bg-ivory"
+                >
+                  自治体向けサービスを見る →
+                </Link>
+              </div>
             </div>
           </div>
-          <div className="absolute left-[5.5%] top-0 z-10 hidden h-[68.5%] w-[39%] flex-col pb-[clamp(20px,2.5vw,38px)] pt-[clamp(24px,6vw,92px)] md:flex">
+          <div className="absolute left-[5.5%] top-0 z-10 hidden h-[63%] w-[43%] flex-col pb-[clamp(20px,2.5vw,38px)] pt-[clamp(24px,4vw,60px)] md:flex md:max-lg:relative md:max-lg:left-auto md:max-lg:h-auto md:max-lg:w-full md:max-lg:bg-ivory md:max-lg:px-[5.5%] md:max-lg:py-10">
             <span className="eyebrow">— Tsunagaru QR</span>
             <h1 className="mt-4 font-serif text-[clamp(36px,4vw,64px)] font-light leading-[1.3] tracking-tight xl:mt-5">
               暮らしに、
@@ -98,7 +106,7 @@ export default function Home() {
                 </li>
               ))}
             </ul>
-            <div className="mt-auto pt-[clamp(16px,2vw,28px)]">
+            <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2">
               <a
                 href={CONTACT_URL}
                 target="_blank"
@@ -108,6 +116,12 @@ export default function Home() {
                 {HERO_CTA_LABEL}
                 <span aria-hidden="true">↗</span>
               </a>
+              <Link
+                href="/municipalities/"
+                className="inline-flex items-center whitespace-nowrap border border-moss/50 bg-ivory/80 px-3 py-3 text-[11px] font-medium tracking-[0.02em] text-deepmoss transition-colors hover:border-moss hover:bg-ivory"
+              >
+                自治体向けサービスを見る →
+              </Link>
             </div>
           </div>
         </div>
