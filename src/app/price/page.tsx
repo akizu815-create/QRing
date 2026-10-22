@@ -262,6 +262,7 @@ export default function PricePage() {
             <li>通常の電話料金は、電話を発信した人に別途かかります。</li>
             <li>通常の通話料は各通信会社・料金プランにより異なります。</li>
             <li>QRタグ・シールなどの専用アイテム代金は、サービス利用料には含まれません。</li>
+            <li>本サービスの通話機能は、日本国内でのみご利用いただけます。</li>
           </ul>
           <div className="mt-14 border-t border-ink/15 pt-10">
             <p className="font-serif text-xl">ご不明な点はお問い合わせください</p>
