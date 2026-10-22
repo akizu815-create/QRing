@@ -1,3 +1,4 @@
+import { CONSUMER_SERVICE } from "@/config/consumerService";
 import Link from "next/link";
 import HeroVisual from "@/components/HeroVisual";
 import HowItWorks from "@/components/HowItWorks";
@@ -126,6 +127,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="container-wide py-5 text-center">
+        <p className="text-xs leading-relaxed text-ink/65">{CONSUMER_SERVICE.notice}</p>
+      </div>
 
       <HowItWorks />
 
