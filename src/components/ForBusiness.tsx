@@ -1,13 +1,24 @@
 import Image from "next/image";
+import Link from "next/link";
 import Reveal from "@/components/Reveal";
 
-const BUSINESS_CARDS = [
+type BusinessCardData = {
+  label: string;
+  title: string;
+  body: string;
+  image: string;
+  imageAlt: string;
+  href?: string;
+};
+
+const BUSINESS_CARDS: BusinessCardData[] = [
   {
-    label: "Pilot project",
-    title: "実証実験パートナー",
-    body: "ホテル・自治体・施設など、実際の現場でサービスを試していただける方へ。",
+    label: "For Municipalities",
+    title: "自治体・地域の見守り",
+    body: "認知症高齢者の見守りをはじめ、地域の安心を支える新たな連絡手段をご提案します。",
     image: "/images/business-pilot-project.png",
     imageAlt: "温かみのある施設でサービスについて相談する様子",
+    href: "/municipalities/",
   },
   {
     label: "Collaboration",
@@ -16,9 +27,9 @@ const BUSINESS_CARDS = [
     image: "/images/business-collaboration.png",
     imageAlt: "バッグや革小物のコラボレーション製品を相談する様子",
   },
-] as const;
+];
 
-function BusinessCard({ card }: { card: (typeof BUSINESS_CARDS)[number] }) {
+function BusinessCard({ card }: { card: BusinessCardData }) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-sm border border-ink/10 bg-white">
       <div className="relative aspect-video overflow-hidden bg-cream">
@@ -38,12 +49,18 @@ function BusinessCard({ card }: { card: (typeof BUSINESS_CARDS)[number] }) {
           {card.title}
         </h3>
         <p className="body-jp mt-5 text-sm text-ink/70 md:max-w-md">{card.body}</p>
-        <span
-          className="mt-8 self-end text-xs tracking-[0.18em] text-ink/55"
-          aria-label={`${card.title}の詳細ページは未設定です`}
-        >
-          詳しく見る →
-        </span>
+        {card.href ? (
+          <Link href={card.href} className="link-underline mt-8 self-end text-xs tracking-[0.18em] text-moss">
+            詳しく見る →
+          </Link>
+        ) : (
+          <span
+            className="mt-8 self-end text-xs tracking-[0.18em] text-ink/55"
+            aria-label={`${card.title}の詳細ページは未設定です`}
+          >
+            詳しく見る →
+          </span>
+        )}
       </div>
     </article>
   );
@@ -67,7 +84,7 @@ export default function ForBusiness() {
           </Reveal>
           <Reveal delay={180}>
             <p className="body-jp mx-auto mt-7 max-w-2xl text-sm text-ink/70 md:text-base">
-              つながるQRの可能性を広げる、パートナーを募集しています。
+              つながるQRを活用した地域の見守りや、企業との新しい取り組みをご紹介します。
             </p>
           </Reveal>
         </div>
