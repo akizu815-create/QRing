@@ -14,6 +14,7 @@ const NAV = [
   { label: "SERVICE", href: "/service", jp: "サービス" },
   { label: "PRICE", href: "/price", jp: "料金案内" },
   { label: "NEWS", href: "/news", jp: "お知らせ" },
+  { label: "FAQ", href: "/faq/", jp: "よくあるご質問" },
   { label: "CONTACT", href: EXTERNAL_URLS.CONTACT, jp: "お問い合わせ", external: true },
 ];
 
@@ -54,7 +55,7 @@ export default function Header() {
           />
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
+        <nav aria-label="メインナビゲーション" className="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-8">
           {NAV.map((item) => (
             item.external ? (
               <a
@@ -103,6 +104,8 @@ export default function Header() {
         <button
           type="button"
           aria-label="menu"
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
           onClick={() => setOpen((v) => !v)}
           className="lg:hidden relative w-10 h-10 flex flex-col justify-center items-center gap-1.5 text-ink"
         >
@@ -119,10 +122,13 @@ export default function Header() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden fixed inset-x-0 top-20 bottom-0 bg-ivory transition-all duration-500 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        id="mobile-navigation"
+        aria-hidden={!open}
+        inert={!open}
+        className={`lg:hidden fixed inset-x-0 top-20 bottom-0 overflow-y-auto overscroll-contain bg-ivory md:top-24 transition-all duration-500 ${open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
           }`}
       >
-        <div className="container-wide py-12 flex flex-col gap-8">
+        <nav aria-label="モバイルナビゲーション" className="container-wide py-12 flex flex-col gap-8">
           {NAV.map((item, i) => (
             item.external ? (
               <a
@@ -158,6 +164,13 @@ export default function Header() {
               </Link>
             )
           ))}
+          <Link
+            href="/municipalities/"
+            onClick={() => setOpen(false)}
+            className="inline-flex shrink-0 items-center justify-center border border-moss/50 px-3 py-3 text-sm font-medium tracking-[0.08em] text-deepmoss transition-colors duration-300 hover:border-moss hover:bg-moss/10"
+          >
+            自治体の方へ
+          </Link>
           <a
             href={EXTERNAL_URLS.MY_PAGE}
             onClick={() => setOpen(false)}
@@ -165,7 +178,7 @@ export default function Header() {
           >
             マイページ
           </a>
-        </div>
+        </nav>
       </div>
     </header>
   );
