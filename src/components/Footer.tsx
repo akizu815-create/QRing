@@ -117,6 +117,8 @@ export default function Footer() {
             <nav aria-label="法務情報" className="mt-5 border-t border-ink/10 pt-4">
               <h3 className="eyebrow mb-2">Legal</h3>
               <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm">
+                <Link href="/terms/" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">利用規約</Link>
+                <Link href="/privacy/" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">プライバシーポリシー</Link>
                 <Link href="/law/" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">特定商取引法に基づく表記</Link>
               </div>
             </nav>
