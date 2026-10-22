@@ -19,6 +19,16 @@ type NewsItem = {
 
 const NEWS: NewsItem[] = [
   {
+    date: "2026.09.26",
+    cat: "MEDIA",
+    title: "「フィガロジャポン」に「つながるQR」が掲載されました",
+    body: "2026年9月26日公開の『フィガロジャポン』Web版（madame FIGARO.jp）にて、株式会社QRingの「つながるQR」が紹介されました。\n\nTokyo Innovation Base（TIB）で開催されたBWAピッチコンテスト2026に関連する記事の中で、TIB SHOP出展者の一社としてご紹介いただきました。\n\n記事では、落とし物や高齢者の見守りなど、さまざまな場面で発見者と登録先を電話でつなぐ「つながるQR」の仕組みが紹介されています。\n\n掲載媒体：madame FIGARO.jp\n掲載日：2026年9月26日\n掲載記事：「頭髪に関する悩みを、AIシステムで解決する。【TIB SHOP】」",
+    link: {
+      label: "掲載記事を読む（madame FIGARO.jp）",
+      url: "https://madamefigaro.jp/society-business/260926-bwa-tib-shop-viewbe/",
+    },
+  },
+  {
     date: "2026.08.03",
     cat: "EVENT",
     title: "【開催報告】Women Leaders TIB Lounge",
