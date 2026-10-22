@@ -180,6 +180,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div className="container-wide pb-8 text-center">
+        <p className="text-xs leading-relaxed text-ink/65">本サービスの通話機能は、日本国内でのみご利用いただけます。</p>
+      </div>
     </>
   );
 }

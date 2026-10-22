@@ -70,6 +70,7 @@ export default function ServicePage() {
                   専用アプリは不要。スマートフォンから手軽にご利用いただけます。
                 </p>
               </div>
+              <p className="mt-5 text-xs leading-relaxed text-ink/65">※本サービスの通話機能は、日本国内でのみご利用いただけます。</p>
             </Reveal>
           </div>
           <div className="md:col-span-6">
