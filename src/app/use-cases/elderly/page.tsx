@@ -1,4 +1,6 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
+import styles from "./StatisticsChart.module.css";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
 import { ELDERLY_MISSING_PERSONS as statistics } from "@/content/statistics/elderlyMissingPersons";
@@ -47,30 +49,23 @@ export default function ElderlyPage() {
           <figure className="mt-12 md:mt-16" aria-labelledby="chart-caption" aria-describedby="chart-notes">
             <figcaption id="chart-caption" className="text-sm leading-7 text-ink/70">認知症またはその疑いに係る行方不明者の届出状況</figcaption>
             <p className="mt-3 text-xs text-ink/55">単位：人（延べ人数）／棒の基点は0</p>
-            <div className="relative mt-12">
-              <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 flex h-64 flex-col justify-between text-[10px] text-ink/45 md:h-80">
-                {[chartMax, chartMax / 2, 0].map((tick) => <div key={tick} className="relative border-t border-ink/10"><span className="absolute -top-4 left-0">{tick.toLocaleString("ja-JP")}</span></div>)}
+            <div className={styles.chart}>
+              <div aria-hidden="true" className={styles.ticks}>
+                {[chartMax, chartMax / 2, 0].map((tick) => <div key={tick} className={styles.tick}><span>{tick.toLocaleString("ja-JP")}</span></div>)}
               </div>
-              <ol className="relative grid grid-cols-5 gap-2 px-1 md:gap-6 md:px-5">
+              <ol className={styles.rows}>
                 {statistics.values.map(({ year, count }) => (
-                  <li key={year} className="min-w-0 text-center">
-                    <div className="flex h-64 flex-col justify-end md:h-80">
-                      <div className="relative" style={{ height: `${count / chartMax * 100}%` }}>
-                        <p className={`absolute inset-x-0 bottom-full mb-3 whitespace-nowrap text-[11px] tabular-nums sm:text-sm md:text-base ${year === latestYear ? "font-semibold text-moss" : "text-ink/70"}`}>
-                          {count.toLocaleString("ja-JP")}<span className="sr-only">人</span>
-                        </p>
-                        <div aria-hidden="true" className={`mx-auto h-full w-full max-w-20 rounded-t-sm ${year === latestYear ? "bg-moss" : "bg-moss/45"}`} />
-                      </div>
-                    </div>
-                    <p className={`mt-4 text-[11px] sm:text-sm ${year === latestYear ? "font-semibold text-moss" : "text-ink/65"}`}>{year}<span className="sr-only">年</span></p>
+                  <li key={year} className={`${styles.row} ${year === latestYear ? styles.latest : "text-ink/70"}`} style={{ "--ratio": count / chartMax } as CSSProperties}>
+                    <p className={styles.year}>{year}<span className="sr-only">年</span></p>
+                    <div aria-hidden="true" className={styles.track}><div className={styles.bar} /></div>
+                    <p className={styles.value}>{count.toLocaleString("ja-JP")}<span className="sr-only">人</span></p>
                   </li>
                 ))}
               </ol>
             </div>
             <div id="chart-notes" className="body-jp mt-8 space-y-2 text-xs text-ink/60">
               <p>※届出が出された者の延べ人数であり、実人数ではありません。認知症またはその疑いを含み、65歳以上に限定した統計ではありません。</p>
-              <p>出典：警察庁「<a href={statistics.sourceUrl} className="link-underline text-moss">{statistics.title}</a>」および過年度資料。<time dateTime={statistics.publishedAt}>{statistics.publishedLabel}</time>公表。</p>
-              <p><a href={statistics.documentUrl} className="link-underline text-moss">原資料（PDF）を見る →</a></p>
+              <p>出典：警察庁『{statistics.title}』および過年度資料をもとに株式会社QRing作成</p>
             </div>
           </figure>
         </div>

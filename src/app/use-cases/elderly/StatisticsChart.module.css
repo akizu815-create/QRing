@@ -1,0 +1,20 @@
+.chart { --plot-height: 14rem; --axis-width: 2.75rem; position: relative; margin-top: 2rem; padding: 3rem 0 0 var(--axis-width); }
+.ticks { position: absolute; display: flex; flex-direction: column; justify-content: space-between; top: 3rem; left: 0; right: 0; height: var(--plot-height); pointer-events: none; }
+.tick { position: relative; margin-left: var(--axis-width); border-top: 1px solid rgb(91 110 79 / .12); }
+.tick span { position: absolute; right: calc(100% + .5rem); top: -.5rem; font-size: .625rem; color: rgb(31 41 35 / .55); }
+.rows { position: relative; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .25rem; }
+.row { position: relative; display: grid; grid-template-columns: minmax(0, 1fr); grid-template-rows: var(--plot-height) 2.25rem; align-items: center; min-width: 0; text-align: center; }
+.year { grid-column: 1; grid-row: 2; align-self: end; font-size: .75rem; }
+.track { grid-column: 1; grid-row: 1; align-self: end; justify-self: center; width: min(70%, 4rem); height: calc(var(--ratio) * var(--plot-height)); }
+.bar { width: 100%; height: 100%; background: rgb(91 110 79 / .45); border-radius: 2px 2px 0 0; }
+.value { position: absolute; inset-inline: 0; bottom: calc(2.25rem + var(--ratio) * var(--plot-height) + .75rem); text-align: center; font-size: .75rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.latest { color: #5b6e4f; font-weight: 600; }
+.latest .bar { background: #5b6e4f; }
+@media (min-width: 768px) {
+  .chart { --plot-height: 18rem; --axis-width: 4rem; }
+  .tick span { right: calc(100% + 1rem); top: -.6rem; font-size: .75rem; }
+  .rows { gap: 1.5rem; }
+  .year { font-size: .875rem; }
+  .track { width: min(100%, 4rem); }
+  .value { font-size: 1rem; }
+}
