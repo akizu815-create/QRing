@@ -1,0 +1,87 @@
+import Link from "next/link";
+import { pageMetadata } from "@/lib/seo";
+import PageStructuredData from "@/components/PageStructuredData";
+
+export const metadata = pageMetadata("pets");
+
+const linkClass = "link-underline inline-block text-sm leading-7 tracking-[0.08em] text-moss transition-colors duration-300 hover:text-ink";
+const headingClass = "font-serif text-[clamp(26px,3.5vw,44px)] font-light leading-[1.6]";
+const eyebrowClass = "text-[10px] font-medium tracking-[0.3em] text-moss";
+const concerns = [
+  { title: "個人情報が気になる", body: "迷子札に自分の電話番号を公開することに抵抗がある。" },
+  { title: "見つけてもらえても連絡できない", body: "連絡先がわからなければ、発見者も飼い主に知らせられない。" },
+  { title: "大切なペットの安否が心配", body: "どこにいるのか、無事なのか。連絡を待つ時間は不安が大きい。" },
+];
+const preparations = [
+  { title: "迷子札", body: "飼い主に連絡するための情報を身につける。" },
+  { title: "マイクロチップ", body: "専用の読み取り機器を使って個体を識別する。" },
+  { title: "つながるQR", body: "見つけてくれた方が、電話番号を公開せず飼い主へ直接連絡できる。" },
+];
+
+export default function PetsPage() {
+  return (
+    <>
+      <PageStructuredData page="pets" />
+      <section className="bg-cream pb-24 pt-36 md:pb-32 md:pt-48">
+        <div className="container-narrow">
+          <p className={eyebrowClass}>— PET CARE</p>
+          <h1 className="mt-9 font-serif text-[clamp(34px,5vw,64px)] font-light leading-[1.5] tracking-tight">
+            もしも、大切な家族が迷子になったら。
+          </h1>
+          <div className="body-jp mt-10 max-w-2xl space-y-4 text-sm text-ink/70 md:text-base">
+            <p>お散歩中や外出先で、思いがけず離れてしまうことも。</p>
+            <p>そんな「もしも」に備えて、見つけてくれた方から連絡を受けられる手段を用意しておきませんか。</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 md:py-32" aria-labelledby="concerns-heading">
+        <div className="container-wide">
+          <p className={eyebrowClass}>CONCERNS</p>
+          <h2 id="concerns-heading" className={`${headingClass} mt-6`}>迷子札に、電話番号を書きたくない。</h2>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {concerns.map(({ title, body }, i) => <article key={title} className="bg-cream p-7 md:p-8"><p className="text-xs tracking-[0.2em] text-moss">0{i + 1}</p><h3 className="mt-5 font-serif text-2xl font-light leading-relaxed">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-ivory px-6 py-28 text-center md:py-44" aria-labelledby="key-message">
+        <h2 id="key-message" className="mx-auto max-w-5xl font-serif text-[clamp(28px,4.2vw,58px)] font-light leading-[1.8] tracking-tight">
+          見つけてくれた、その人と。<br /><span className="text-moss">声でつながる</span>安心を。
+        </h2>
+      </section>
+
+      <section className="py-24 md:py-36" aria-labelledby="solution-heading">
+        <div className="container-narrow">
+          <p className={eyebrowClass}>SOLUTION</p>
+          <h2 id="solution-heading" className={`${headingClass} mt-6`}>電話番号を公開せず、<br />飼い主へ直接連絡。</h2>
+          <div className="body-jp mt-8 max-w-2xl space-y-5 text-sm text-ink/70 md:text-base">
+            <p>首輪などにつけたQRコードを発見者がスキャンすることで、飼い主の電話番号を知らせずに音声通話ができます。</p>
+            <p>発見者も自分の電話番号を飼い主に公開する必要はありません。</p>
+          </div>
+          <Link href="/service/" className={`${linkClass} mt-9`}>サービスの仕組みを見る →</Link>
+        </div>
+      </section>
+
+      <section className="bg-cream py-24 md:py-32" aria-labelledby="preparation-heading">
+        <div className="container-wide">
+          <p className={eyebrowClass}>PREPARATION</p>
+          <h2 id="preparation-heading" className={`${headingClass} mt-6`}>迷子への備えは、<br className="sm:hidden" />ひとつだけではありません。</h2>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">{preparations.map(({ title, body }) => <article key={title} className="border-t border-moss/30 py-7"><h3 className="font-serif text-2xl font-light text-moss">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}</div>
+          <p className="body-jp mt-8 text-sm text-ink/65">それぞれ役割が異なるため、組み合わせて備えることもできます。</p>
+          <p className="body-jp mt-6 text-xs text-ink/55">つながるQRは、法令上必要な所有者明示やマイクロチップに関する手続き・義務を代替するものではありません。</p>
+          <p className="body-jp mt-4 text-xs text-ink/55">参考：<a href="https://www.env.go.jp/nature/dobutsu/aigo/shuyo/how.html" className="link-underline text-moss">環境省「迷子にさせないために」</a></p>
+        </div>
+      </section>
+
+      <section className="py-24 text-center md:py-36" aria-labelledby="closing-heading">
+        <div className="container-narrow">
+          <p className={eyebrowClass}>CLOSING</p>
+          <h2 id="closing-heading" className={`${headingClass} mt-6`}>小さなQRコードに、大きな安心を。</h2>
+          <p className="body-jp mx-auto mt-8 max-w-xl text-sm text-ink/70 md:text-base">「つながるQR」は現在、一般向けサービスの正式リリースに向けて準備中です。</p>
+          <Link href="/news/" className={`${linkClass} mt-9`}>最新のお知らせを見る →</Link>
+        </div>
+      </section>
+    </>
+  );
+}
