@@ -211,6 +211,13 @@ export default function ServicePage() {
                     {u.title}
                     </h3>
                     <p className="body-jp mt-5 text-sm text-ink/70">{u.body}</p>
+                    {u.no === "01" && (
+                      <div className="mt-6 text-right">
+                        <Link href="/use-cases/elderly/" className="link-underline inline-block text-xs tracking-[0.12em] text-moss transition-colors duration-300 hover:text-ink">
+                          詳しく見る →
+                        </Link>
+                      </div>
+                    )}
                   </div>
                 </article>
               </Reveal>
