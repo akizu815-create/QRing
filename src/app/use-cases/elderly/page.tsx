@@ -66,7 +66,6 @@ export default function ElderlyPage() {
             <div id="chart-notes" className="body-jp mt-8 space-y-2 text-xs text-ink/60">
               <p>※届出が出された者の延べ人数であり、実人数ではありません。認知症またはその疑いを含み、65歳以上に限定した統計ではありません。</p>
               <p>出典：警察庁『{statistics.title}』および過年度資料をもとに株式会社QRing作成</p>
-              <p><a href={statistics.sourceUrl} className="link-underline text-moss">警察庁の公表資料を見る ↗</a></p>
             </div>
           </figure>
         </div>
