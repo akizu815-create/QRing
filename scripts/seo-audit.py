@@ -7,7 +7,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 from xml.etree import ElementTree as ET
 
-ROUTES = ['', 'about', 'service', 'price', 'news', 'faq', 'municipalities', 'contact', 'terms', 'privacy', 'law', 'use-cases/elderly', 'use-cases/pets']
+ROUTES = ['', 'about', 'service', 'price', 'news', 'faq', 'municipalities', 'contact', 'terms', 'privacy', 'law', 'use-cases/elderly', 'use-cases/pets', 'use-cases/belongings']
 BASE = 'https://www.qring.jp'
 
 class Page(HTMLParser):

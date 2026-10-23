@@ -46,9 +46,9 @@ function UseCase({ item }: { item: (typeof USE_CASES)[number] }) {
           {item.title}
         </h3>
         <p className="body-jp mt-5 text-sm text-ink/70">{item.body}</p>
-        {(item.no === "01" || item.no === "02") && (
+        {(
           <div className="mt-6 text-right">
-            <Link href={item.no === "01" ? "/use-cases/elderly/" : "/use-cases/pets/"} className="link-underline inline-block text-xs tracking-[0.12em] text-moss transition-colors duration-300 hover:text-ink">
+            <Link href={item.no === "01" ? "/use-cases/elderly/" : item.no === "02" ? "/use-cases/pets/" : "/use-cases/belongings/"} className="link-underline inline-block text-xs tracking-[0.12em] text-moss transition-colors duration-300 hover:text-ink">
               詳しく見る →
             </Link>
           </div>
