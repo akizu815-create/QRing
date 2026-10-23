@@ -1,3 +1,5 @@
+import { pageMetadata } from "@/lib/seo";
+import PageStructuredData from "@/components/PageStructuredData";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
 import Link from "next/link";
 import HeroVisual from "@/components/HeroVisual";
@@ -32,9 +34,13 @@ const HERO_CTA_LABEL = "お問い合わせはこちら";
 const CONTACT_URL = "https://axb.qring.jp/contact";
 const HERO_FEATURES = ["アプリ不要", "電話番号は非公開", "特許取得済"];
 
+export const metadata = pageMetadata("home");
+
 export default function Home() {
   return (
     <>
+      <PageStructuredData page="home" />
+      <h1 className="sr-only">暮らしに、もしもの備えを。</h1>
       {/* HERO */}
       <section className="bg-ivory pt-20 md:pt-24">
         <div className="relative mx-auto w-full max-w-[1536px] md:max-lg:flex md:max-lg:flex-col-reverse">
@@ -42,11 +48,11 @@ export default function Home() {
           <div className="absolute inset-0 z-10 px-6 pt-3 md:hidden">
             <div className="max-w-[56%]">
               <span className="eyebrow">— Tsunagaru QR</span>
-              <h1 className="mt-3 font-serif text-[clamp(28px,7.2vw,30px)] font-light leading-[1.35] tracking-tight">
+              <p aria-hidden="true" className="mt-3 font-serif text-[clamp(28px,7.2vw,30px)] font-light leading-[1.35] tracking-tight">
                 暮らしに、
                 <br />
                 <span className="text-moss">もしも</span>の備えを。
-              </h1>
+              </p>
               <p className="mt-3 text-sm leading-[1.8] text-ink/80">
                 お互いの電話番号を
                 <br />
@@ -86,11 +92,11 @@ export default function Home() {
           </div>
           <div className="absolute left-[5.5%] top-0 z-10 hidden h-[63%] w-[43%] flex-col pb-[clamp(20px,2.5vw,38px)] pt-[clamp(24px,4vw,60px)] md:flex md:max-lg:relative md:max-lg:left-auto md:max-lg:h-auto md:max-lg:w-full md:max-lg:bg-ivory md:max-lg:px-[5.5%] md:max-lg:py-10">
             <span className="eyebrow">— Tsunagaru QR</span>
-            <h1 className="mt-4 font-serif text-[clamp(36px,4vw,64px)] font-light leading-[1.3] tracking-tight xl:mt-5">
+            <p aria-hidden="true" className="mt-4 font-serif text-[clamp(36px,4vw,64px)] font-light leading-[1.3] tracking-tight xl:mt-5">
               暮らしに、
               <br />
               <span className="text-moss">もしも</span>の備えを。
-            </h1>
+            </p>
             <span className="mt-5 block h-px w-28 bg-gold xl:mt-7" aria-hidden="true" />
             <p className="mt-5 font-sans text-[clamp(15px,1.45vw,22px)] leading-[1.9] tracking-[0.08em] text-ink/80 xl:mt-7">
               お互いの電話番号を明かさずに、

@@ -1,16 +1,12 @@
+import { pageMetadata } from "@/lib/seo";
+import PageStructuredData from "@/components/PageStructuredData";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 import HowToUse from "@/components/HowToUse";
 
-export const metadata: Metadata = {
-  title: "Service",
-  description:
-    "つながるQRの仕組みと、ご利用方法、活用シーンをご紹介します。",
-};
 
 const USECASES = [
   {
@@ -36,9 +32,12 @@ const USECASES = [
   },
 ] as const;
 
+export const metadata = pageMetadata("service");
+
 export default function ServicePage() {
   return (
     <>
+      <PageStructuredData page="service" />
       <PageHeader
         eyebrow="— Service"
         en="Service"

@@ -61,9 +61,9 @@ function RegistrationPanel() {
             {REGISTER_STEPS.map((step) => (
               <article key={step.no} className="min-w-0 text-center">
                   <p className="text-base font-semibold text-moss">{step.no}</p>
-                  <h4 className="mt-3 min-h-0 font-serif text-xl font-light leading-relaxed md:min-h-[3.4rem]">
+                  <h3 className="mt-3 min-h-0 font-serif text-xl font-light leading-relaxed md:min-h-[3.4rem]">
                     {step.title}
-                  </h4>
+                  </h3>
                   <div className="relative mx-auto mt-3 h-[295px] w-full max-w-[190px] md:h-[330px]">
                     <Image
                       src={step.image}

@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import PageStructuredData from "@/components/PageStructuredData";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 
-export const metadata: Metadata = {
-  title: "About",
-  description: "つながるQRを社会インフラへ。株式会社QRingのビジョン、代表メッセージ、会社概要をご紹介します。",
-};
 
 const COMPANY = [
   { k: "会社名", v: "株式会社QRing" },
@@ -18,9 +15,12 @@ const COMPANY = [
   { k: "主要取引銀行", v: "三井住友銀行" },
 ];
 
+export const metadata = pageMetadata("about");
+
 export default function AboutPage() {
   return (
     <>
+      <PageStructuredData page="about" />
       <PageHeader eyebrow="— About" en="About QRing" />
 
       {/* INTRO */}

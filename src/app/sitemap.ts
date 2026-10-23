@@ -1,14 +1,9 @@
 import type { MetadataRoute } from "next";
+import { SEO_PAGES, SITE_URL } from "@/lib/seo";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://www.qring.jp";
-
-const ROUTES = ["", "about", "service", "price", "news", "law", "contact", "faq", "municipalities", "terms", "privacy"];
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ROUTES.map((route) => ({
-    url: `${BASE_URL}/${route}${route ? "/" : ""}`,
-    lastModified: new Date(),
-  }));
+  // 本文更新日を正確に管理する仕組みがないため、任意項目lastModifiedは出力しない。
+  return Object.values(SEO_PAGES).map((page) => ({ url: `${SITE_URL}${page.path}` }));
 }

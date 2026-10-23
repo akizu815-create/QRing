@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import PageStructuredData from "@/components/PageStructuredData";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";
 
-export const metadata: Metadata = {
-  title: "特定商取引法に基づく表記",
-  description: "株式会社QRingの特定商取引法に基づく表記です。",
-};
 
 const ROWS = [
   { k: "事業者名", v: "株式会社QRing" },
@@ -44,9 +41,12 @@ const ROWS = [
   },
 ];
 
+export const metadata = pageMetadata("law");
+
 export default function LawPage() {
   return (
     <>
+      <PageStructuredData page="law" />
       <PageHeader
         eyebrow="— Legal"
         en="Specified Commercial Transactions."

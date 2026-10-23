@@ -1,16 +1,7 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import PageStructuredData from "@/components/PageStructuredData";
 import Image from "next/image";
 import Link from "next/link";
-
-const title = "自治体向け認知症高齢者の見守り・QRコード連絡サービス｜つながるQR";
-const description = "認知症高齢者の見守りや発見後の家族への連絡を支援する「つながるQR」。電話番号を公開せず直接通話でき、管理者画面で利用状況も確認可能。自治体での導入や費用負担方法をご相談いただけます。";
-
-export const metadata: Metadata = {
-  title: { absolute: title },
-  description,
-  alternates: { canonical: "/municipalities/" },
-  openGraph: { title, description, url: "/municipalities/", type: "website" },
-};
 
 const contactUrl = "https://axb.qring.jp/contact";
 const sectionClass = "scroll-mt-24 py-20 md:scroll-mt-28 md:py-28";
@@ -70,20 +61,12 @@ const faq = [
   { question: "管理者画面では何を確認できますか？", answer: "登録QRコード数、利用者数、通話成立件数・履歴、利用料金・請求状況を確認できます。提供範囲や権限は個別相談です。" },
 ];
 
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  name: title,
-  description,
-  url: "https://www.qring.jp/municipalities/",
-  inLanguage: "ja-JP",
-  publisher: { "@type": "Organization", name: "株式会社QRing", url: "https://www.qring.jp/" },
-};
+export const metadata = pageMetadata("municipalities");
 
 export default function MunicipalitiesPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <PageStructuredData page="municipalities" />
 
       <section className="bg-cream pb-20 pt-36 md:pb-28 md:pt-48" aria-labelledby="municipalities-title">
         <div className="container-wide grid items-center gap-10 lg:grid-cols-12 lg:gap-14">

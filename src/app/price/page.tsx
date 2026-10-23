@@ -1,14 +1,10 @@
+import { pageMetadata } from "@/lib/seo";
+import PageStructuredData from "@/components/PageStructuredData";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
-import type { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import styles from "./CallFlow.module.css";
 
-export const metadata: Metadata = {
-  title: "Price｜料金案内",
-  description: "つながるQRの料金案内。通話が成立した1セッションにつき880円（税込）。通常の電話料金は発信した方に別途かかります。通話時間が5秒未満の場合、サービス利用料は発生しません。",
-  alternates: { canonical: "/price/" },
-};
 
 const heading = "text-3xl font-light leading-relaxed md:text-4xl";
 const label = "text-[11px] font-medium tracking-[0.32em] text-moss";
@@ -106,9 +102,12 @@ const SESSION_CASES = [
   },
 ] as const;
 
+export const metadata = pageMetadata("price");
+
 export default function PricePage() {
   return (
     <>
+      <PageStructuredData page="price" />
       <PageHeader eyebrow="— Price" en="Price" />
 
       <section className="py-24 md:py-32" aria-labelledby="pricing-title">

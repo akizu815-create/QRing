@@ -1,17 +1,16 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import PageStructuredData from "@/components/PageStructuredData";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "株式会社QRingへのお問い合わせ、つながるQRのサービスや法人・自治体でのご利用に関するご相談窓口です。",
-};
+
+export const metadata = pageMetadata("contact");
 
 export default function ContactPage() {
   return (
     <>
+      <PageStructuredData page="contact" />
       <PageHeader
         eyebrow="— Contact"
         en="Get in touch."
