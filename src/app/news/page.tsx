@@ -1,12 +1,9 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
+import PageStructuredData from "@/components/PageStructuredData";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 
-export const metadata: Metadata = {
-  title: "News",
-  description: "QRingからの最新のお知らせ、リリース情報、イベント情報。",
-};
 
 type NewsItem = {
   date: string;
@@ -80,9 +77,12 @@ const NEWS: NewsItem[] = [
   },
 ];
 
+export const metadata = pageMetadata("news");
+
 export default function NewsPage() {
   return (
     <>
+      <PageStructuredData page="news" />
       <PageHeader
         eyebrow="— News"
         en="News & Updates."
