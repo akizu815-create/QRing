@@ -1,125 +1,112 @@
+import type { CSSProperties } from "react";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
+import { ELDERLY_MISSING_PERSONS as statistics } from "@/content/statistics/elderlyMissingPersons";
+import chartStyles from "@/app/use-cases/elderly/StatisticsChart.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
 const contactUrl = "https://axb.qring.jp/contact";
-const sectionClass = "scroll-mt-24 py-20 md:scroll-mt-28 md:py-28";
+const sectionClass = "scroll-mt-24 py-16 md:scroll-mt-28 md:py-24";
 const linkClass = "link-underline inline-block text-sm leading-7 text-moss transition-colors duration-300 hover:text-ink";
 
 function SectionHeading({ en, title, id }: { en: string; title: string; id: string }) {
-  return <div className="mb-10 md:mb-14"><p className="eyebrow">{en}</p><h2 id={id} className="mt-6 max-w-4xl font-serif text-[clamp(28px,3.5vw,46px)] font-light leading-[1.6]">{title}</h2></div>;
+  return <div className="mb-9 md:mb-12"><p className="eyebrow">{en}</p><h2 id={id} className="mt-6 max-w-4xl font-serif text-[clamp(28px,3.5vw,46px)] font-light leading-[1.6]">{title}</h2></div>;
 }
-const challenges = [
-  "高齢者を保護しても、ご家族への連絡先がすぐにわからない",
-  "ご家族への連絡や関係機関との調整が必要になる",
-  "既存の見守り施策だけでは、発見後の連絡を十分に支援できない場合がある",
-];
 const benefits = [
-  { title: "発見後の連絡・調整を支援", body: "発見者からご家族などの登録先へ直接連絡できる手段を用意することで、連絡先の確認や関係機関との調整を支援します。" },
-  { title: "既存の見守り施策を補完", body: "SOSネットワークやGPS、地域の見守り活動など、すでに実施している施策を活かしながら、発見後の連絡手段を追加できます。" },
-  { title: "利用状況を把握し、施策の検証に活用", body: "登録状況や通話実績などを把握することで、試験導入後の利用状況の確認や施策の評価に役立てることを目指します。", note: "登録QRコード数・利用者数・通話成立件数／履歴・利用料金／請求状況を確認できます。自治体での提供範囲・権限は個別相談です。" },
-  { title: "住民に寄り添う自治体の姿勢を示す", body: "認知症高齢者やご家族の不安に目を向け、地域の助け合いを支える新たな取り組みとして、住民サービスの充実につなげます。" },
+  { title: "連絡・調整の負担を軽減", body: "発見者から登録先へ直接連絡できる手段で、職員の連絡対応を支援します。" },
+  { title: "既存施策をそのまま活用", body: "GPSや見守りネットワークに、発見後の連絡という選択肢を追加できます。" },
+  { title: "無理のない導入を支援", body: "QRコードと案内資料を活用し、新たな業務負担を抑えた導入を目指します。" },
+  { title: "地域の魅力向上へ", body: "住民に寄り添う新たな取り組みとして、自治体の姿勢を発信できます。" },
+];
+const useCases = [
+  { title: "警察", body: "保護した高齢者のご家族への連絡支援" },
+  { title: "消防・救急", body: "緊急時の連絡先確認を補完" },
+  { title: "福祉・地域包括", body: "地域の見守り活動を補完" },
+  { title: "金融機関", body: "特殊詐欺が疑われる場面での連絡支援" },
+  { title: "防災・動物愛護", body: "迷子ペットの飼い主への連絡支援" },
 ];
 const steps = [
-  { title: "QRコードをスキャン", body: "発見者が、身につけたQRコードをスマートフォンで読み取ります。" },
-  { title: "登録先へ電話", body: "画面の案内から、ご家族などの登録先へ発信します。" },
-  { title: "電話番号を公開せず通話", body: "登録先が応答すると、プライバシー電話番号を通じて通話できます。" },
+  { title: "ご相談", body: "対象者・配布数・費用負担などを相談。" },
+  { title: "QRコード・資料の準備", body: "QRコードや住民向け案内資料を準備。" },
+  { title: "住民への案内・配布", body: "既存の窓口や福祉事業などを活用。" },
+  { title: "利用開始・効果検証", body: "利用状況を確認し、運用を改善。" },
 ];
-const complements = [
-  { title: "見守りネットワーク", body: "関係機関が連携する仕組みに、発見後の連絡という選択肢を加えます。" },
-  { title: "GPS", body: "位置を確認する手段と、発見後に登録先へ連絡する手段を組み合わせて備えられます。" },
-  { title: "地域の見守り活動", body: "地域の方が声をかけた後、必要な登録先へ連絡できる手段を用意します。" },
-];
-const management = ["登録QRコード数", "利用者数", "通話成立件数・履歴", "利用料金・請求状況"];
-const prices = [
-  { label: "登録料", value: "無料" },
-  { label: "月額基本料", value: "無料" },
-  { label: "通話成立時", value: "1セッション880円（税込・一般向け料金）" },
-  { label: "QRコード製品代", value: "別途" },
-  { label: "発見者のサービス利用料", value: "無料" },
-  { label: "通常の電話料金", value: "発信者負担" },
-];
-
 const faq = [
-  { question: "既存の見守りサービスと併用できますか？", answer: "はい。GPSや地域の見守りネットワークを置き換えるのではなく、発見後の連絡手段として補完します。既存施策との運用上の連携方法は個別にご相談ください。" },
-  { question: "登録は自治体職員が行いますか？住民自身が行いますか？", answer: "登録を担当する方や住民への案内方法は、地域の運用に合わせて確認する事項です。現時点で一律の登録方式を定めてご案内するものではありません。" },
-  { question: "費用は誰が負担しますか？", answer: "自治体負担・住民負担など、ご希望の運用をお聞かせください。採用できる方式、費用負担の範囲、契約条件は個別に確認・ご案内します。" },
-  { question: "管理者画面では何を確認できますか？", answer: "登録QRコード数、利用者数、通話成立件数・履歴、利用料金・請求状況を確認できます。これらは実装済みの管理機能です。自治体での提供範囲や閲覧権限は個別にご相談ください。" },
+  { question: "既存の見守り施策と併用できますか？", answer: "はい。GPSや地域の見守りネットワークを補完する連絡手段として活用を想定しています。" },
+  { question: "導入時に新しいシステム開発は必要ですか？", answer: "基本的なサービス利用では、大規模なシステム開発を前提としていません。具体的な運用方法は個別にご相談いただけます。" },
+  { question: "まずは小規模に試すことはできますか？", answer: "対象者や配布数を絞った試験導入についてもご相談いただけます。" },
 ];
 
 export const metadata = pageMetadata("municipalities");
 
 export default function MunicipalitiesPage() {
+  const latestYear = statistics.values[statistics.values.length - 1].year;
+  const chartMax = Math.ceil(Math.max(...statistics.values.map(({ count }) => count)) / 5000) * 5000;
   return (
     <>
       <PageStructuredData page="municipalities" />
-      <section className="bg-cream pb-20 pt-36 md:pb-28 md:pt-48" aria-labelledby="municipalities-title">
+      <section className="bg-cream pb-20 pt-36 md:pb-24 md:pt-48" aria-labelledby="municipalities-title">
         <div className="container-wide grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
           <div className="lg:col-span-6">
             <p className="eyebrow">FOR MUNICIPALITIES</p>
-            <h1 id="municipalities-title" className="mt-8 font-serif text-[clamp(32px,4vw,56px)] font-light leading-[1.6] tracking-tight">地域の見守りに、<br /><span className="text-moss">つながる仕組みを。</span></h1>
-            <p className="body-jp mt-8 text-base text-ink/80">高齢者の見守りに、発見後の連絡という新たな選択肢を。</p>
-            <p className="body-jp mt-5 text-sm text-ink/70 md:text-base">「つながるQR」は、地域の善意を連絡という行動につなぎ、自治体の見守り施策を補完するサービスです。</p>
+            <h1 id="municipalities-title" className="mt-8 font-serif text-[clamp(32px,4vw,56px)] font-light leading-[1.6] tracking-tight">地域の安心を、<br /><span className="text-moss">自治体の新たな力に。</span></h1>
+            <p className="body-jp mt-8 text-base text-ink/80">住民の善意を、実際の連絡につなぐ。</p>
+            <p className="body-jp mt-5 text-sm text-ink/70 md:text-base">「つながるQR」は、発見後の連絡を支え、自治体の見守り施策を補完する新しい選択肢です。</p>
             <a href={contactUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-9 normal-case">自治体での導入を相談する</a>
           </div>
           <div className="lg:col-span-6"><Image src="/images/municipalities-hero.png" alt="屋外を一緒に歩く高齢女性と若い女性。高齢女性のバッグにQRコードのタグが付いている" width={1672} height={941} priority sizes="(min-width: 1024px) 48vw, 100vw" className="h-auto w-full" /></div>
         </div>
       </section>
 
-      <section className={sectionClass} aria-labelledby="challenges-title">
-        <div className="container-wide"><SectionHeading en="CHALLENGES" title="見守りの現場に、こんな課題はありませんか。" id="challenges-title" />
-          <ol className="grid gap-6 md:grid-cols-3">{challenges.map((item, i) => <li key={item} className="border-t border-moss/30 pt-6"><p className="text-xs tracking-[0.2em] text-moss">0{i + 1}</p><h3 className="mt-5 font-serif text-xl font-light leading-relaxed md:text-2xl">{item}</h3></li>)}</ol>
+      <section className={sectionClass} aria-labelledby="social-issue-title">
+        <div className="container-wide grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
+          <div className="lg:col-span-5"><SectionHeading en="SOCIAL ISSUE" title="見守りの、その先にある課題。" id="social-issue-title" />
+
+          </div>
+          <figure className="min-w-0 lg:col-span-7" aria-labelledby="chart-caption" aria-describedby="chart-notes">
+            <figcaption id="chart-caption" className="text-sm leading-7 text-ink/75">認知症またはその疑いに係る行方不明者の届出状況</figcaption>
+            <p className="mt-3 text-xs text-ink/55">単位：人（延べ人数）／棒の基点は0</p>
+            <div className={chartStyles.chart}>
+              <div aria-hidden="true" className={chartStyles.ticks}>{[chartMax, chartMax / 2, 0].map((tick) => <div key={tick} className={chartStyles.tick}><span>{tick.toLocaleString("ja-JP")}</span></div>)}</div>
+              <ol className={chartStyles.rows}>{statistics.values.map(({ year, count }) => <li key={year} className={`${chartStyles.row} ${year === latestYear ? chartStyles.latest : "text-ink/70"}`} style={{ "--ratio": count / chartMax } as CSSProperties}><p className={chartStyles.year}>{year}<span className="sr-only">年</span></p><div aria-hidden="true" className={chartStyles.track}><div className={chartStyles.bar} /></div><p className={chartStyles.value}>{count.toLocaleString("ja-JP")}<span className="sr-only">人</span></p></li>)}</ol>
+            </div>
+            <div id="chart-notes" className="body-jp mt-7 space-y-2 text-xs text-ink/55"><p>※届出が出された者の延べ人数で、実人数ではありません。認知症またはその疑いを含み、65歳以上に限定した統計ではありません。</p><p>出典：警察庁『{statistics.title}』および過年度資料をもとに株式会社QRing作成</p></div>
+          </figure>
+          <div className="lg:col-span-12 border-t border-ink/10 pt-8">
+            <p className="font-serif text-xl font-light leading-[1.9] md:text-2xl">「見つける仕組み」に加えて、<br />「見つけた人が連絡できる仕組み」も。</p>
+            <p className="body-jp mt-6 text-sm text-ink/70">既存の見守り活動を活かしながら、発見者からご家族などの登録先へ連絡できる手段を追加することができます。</p>
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3"><Link href="/use-cases/elderly/" className={linkClass}>高齢者の見守りと連絡の備えを見る →</Link><Link href="/service/" className={linkClass}>サービスの仕組みを見る →</Link></div>
+          </div>
         </div>
       </section>
 
       <section className={`${sectionClass} bg-cream`} aria-labelledby="benefits-title">
-        <div className="container-wide"><SectionHeading en="BENEFITS" title="自治体の見守りを、もっと円滑に。" id="benefits-title" />
-          <div className="grid gap-6 md:grid-cols-2">{benefits.map((item, i) => <article key={item.title} className="bg-ivory p-7 md:p-10"><p className="text-xs tracking-[0.2em] text-moss">0{i + 1}</p><h3 className="mt-5 font-serif text-2xl font-light leading-relaxed text-moss">{item.title}</h3><p className="body-jp mt-5 text-sm text-ink/75">{item.body}</p>{item.note && <p className="body-jp mt-4 text-xs text-ink/55">※{item.note}</p>}</article>)}</div>
+        <div className="container-wide"><SectionHeading en="BENEFITS" title="自治体にも、職員にも。4つの導入メリット。" id="benefits-title" />
+          <div className="grid gap-5 md:grid-cols-2">{benefits.map((item, i) => <article key={item.title} className="bg-ivory p-7 md:p-9"><p className="text-xs tracking-[0.2em] text-moss">0{i + 1}</p><h3 className="mt-4 font-serif text-2xl font-light leading-relaxed text-moss">{item.title}</h3><p className="body-jp mt-4 text-sm text-ink/75">{item.body}</p></article>)}</div>
         </div>
       </section>
 
-      <section className={sectionClass} aria-labelledby="connection-title">
-        <div className="container-wide"><SectionHeading en="HOW IT CONNECTS" title="発見した方から、ご家族などの登録先へ。" id="connection-title" />
-          <ol className="grid gap-7 md:grid-cols-3">{steps.map((item, i) => <li key={item.title} className="border-t border-moss/30 py-6"><p className="text-xs tracking-[0.2em] text-moss">STEP 0{i + 1}</p><h3 className="mt-5 font-serif text-2xl font-light leading-relaxed">{item.title}</h3><p className="body-jp mt-4 text-sm text-ink/70">{item.body}</p></li>)}</ol>
-          <Link href="/service/" className={`${linkClass} mt-6`}>サービスの仕組みを見る →</Link>
+      <section className={sectionClass} aria-labelledby="use-cases-title">
+        <div className="container-wide"><SectionHeading en="USE CASES" title="一つの仕組みを、地域のさまざまな場面に。" id="use-cases-title" />
+          <div className="divide-y divide-ink/10 border-y border-ink/10">{useCases.map((item, i) => <article key={item.title} className="grid gap-3 py-5 md:grid-cols-[2rem_12rem_minmax(0,1fr)] md:items-baseline md:gap-6"><p className="text-xs tracking-[0.2em] text-moss">0{i + 1}</p><h3 className="font-serif text-xl font-light text-moss">{item.title}</h3><p className="body-jp text-sm text-ink/70">{item.body}</p></article>)}</div>
+          <p className="body-jp mt-5 text-xs text-ink/55">※いずれも想定する活用場面です。各機関での導入・運用が決定しているものではなく、正式な業務手順や緊急通報に代わるものではありません。金融機関での利用は本人の了承を得られる場合を想定しています。</p>
         </div>
       </section>
 
-      <section className={`${sectionClass} bg-ivory`} aria-labelledby="complements-title">
-        <div className="container-wide"><SectionHeading en="WORKING TOGETHER" title="いまある見守りに、連絡の選択肢を。" id="complements-title" />
-          <div className="grid gap-6 md:grid-cols-3">{complements.map((item) => <article key={item.title} className="border-t border-moss/30 py-6"><h3 className="font-serif text-2xl font-light text-moss">{item.title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{item.body}</p></article>)}</div>
-          <p className="body-jp mt-6 max-w-3xl text-sm text-ink/65">従来の取り組みを置き換えるものではありません。新たな連絡手段としての併用を想定し、既存システムとの接続や情報連携の可否は個別に確認します。</p>
-        </div>
-      </section>
-
-      <section className={sectionClass} aria-labelledby="management-title">
-        <div className="container-wide grid gap-10 md:grid-cols-12 md:gap-12">
-          <div className="md:col-span-5"><SectionHeading en="MANAGEMENT & OPERATION" title="導入前に、管理と運用を確かめる。" id="management-title" /><p className="body-jp text-sm text-ink/70">実装済みの管理者画面で、登録状況や通話実績、料金・請求状況を確認できます。地域での利用範囲や権限を確認しながら、導入・運用方法をご相談いただけます。</p></div>
-          <div className="md:col-span-7"><h3 className="text-sm font-medium text-moss">実装済みの管理機能</h3><ul className="mt-5 grid gap-3 sm:grid-cols-2">{management.map((item) => <li key={item} className="bg-cream p-5 text-sm leading-7">{item}</li>)}</ul><p className="body-jp mt-5 text-xs text-ink/60">※自治体向けの提供範囲や閲覧権限、契約条件は導入相談時に確認します。</p>
-          <h3 className="mt-9 text-sm font-medium text-moss">あわせて確認する運用事項</h3><ul className="body-jp mt-4 space-y-2 text-sm text-ink/70"><li>登録を担当する方と、住民への案内・問い合わせ対応</li><li>QRコードの配布方法と登録情報の管理</li><li>既存施策との役割分担、費用負担と契約条件</li></ul></div>
-        </div>
-      </section>
-
-      <section className={`${sectionClass} bg-cream`} aria-labelledby="implementation-title">
-        <div className="container-wide"><SectionHeading en="IMPLEMENTATION & PRICE" title="地域に合う運用と、費用の考え方。" id="implementation-title" />
-          <p className="body-jp max-w-3xl text-sm text-ink/70">自治体負担・住民負担など、ご希望の費用負担方式をお聞かせください。採用できる方式や具体的な負担範囲、契約条件は個別に確認します。</p>
-          <h3 id="price-title" className="mb-6 mt-10 scroll-mt-24 border-t border-ink/15 pt-8 font-serif text-2xl font-light">料金の目安</h3>
-          <dl className="max-w-4xl divide-y divide-ink/10 border-y border-ink/10">{prices.map((item) => <div key={item.label} className="grid gap-1 py-4 sm:grid-cols-[220px_1fr] sm:gap-6"><dt className="text-sm text-ink/65">{item.label}</dt><dd className="font-sans text-base font-medium leading-relaxed text-ink">{item.value}</dd></div>)}</dl>
-          <p className="mt-6 max-w-3xl text-xs leading-relaxed text-ink/70">※サービス利用料は通話成立時のみ発生します。QRコードのスキャンだけ、または通話時間が5秒未満の場合は発生しません。通常の電話料金は別途発信者が負担します。QRコード製品の価格は未定です。</p>
-          <Link href="/price/#pricing-title" className={`${linkClass} mt-6`}>料金について詳しく見る →</Link>
+      <section className={`${sectionClass} bg-ivory`} aria-labelledby="implementation-title">
+        <div className="container-wide"><SectionHeading en="EASY IMPLEMENTATION" title="新しい見守りを、無理のない導入から。" id="implementation-title" />
+          <ol className="grid gap-6 md:grid-cols-4">{steps.map((item, i) => <li key={item.title} className="border-t border-moss/40 pt-5"><p className="text-xs tracking-[0.16em] text-moss">STEP {i + 1}</p><h3 className="mt-4 font-serif text-xl font-light leading-relaxed">{item.title}</h3><p className="body-jp mt-3 text-sm text-ink/70">{item.body}</p></li>)}</ol>
+          <p className="body-jp mt-8 text-sm text-ink/70">住民向け説明動画や配布資料、職員向けマニュアルなど、導入負担を抑える支援体制の整備も進めています。</p>
+          <div className="mt-8 border-t border-ink/15 pt-6"><h3 id="price-title" className="scroll-mt-24 text-sm font-medium text-moss">料金・管理について</h3><ul className="body-jp mt-4 space-y-2 text-sm text-ink/70"><li>自治体負担・住民負担などの費用負担方式は個別にご相談ください。</li><li>登録・通話状況、料金・請求状況を確認する管理機能は実装済みです。自治体向けの提供範囲・権限を確認のうえご案内します。</li><li>具体的な料金・契約条件は個別相談です。一般向け料金がそのまま自治体の契約価格となるものではありません。</li></ul><Link href="/price/" className={`${linkClass} mt-4`}>一般向けの料金条件を見る →</Link></div>
         </div>
       </section>
 
       <section className={sectionClass} aria-labelledby="faq-title">
-        <div className="container-narrow"><SectionHeading en="FAQ" title="導入・運用に関するご質問" id="faq-title" />
+        <div className="container-narrow"><SectionHeading en="FAQ & CONTACT" title="導入前の疑問から、ご相談ください。" id="faq-title" />
           <div className="divide-y divide-ink/10 border-y border-ink/10">{faq.map((item) => <details key={item.question} className="group py-1"><summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-6 py-4 text-left text-sm font-medium leading-relaxed marker:hidden md:text-base [&::-webkit-details-marker]:hidden"><span>{item.question}</span><span aria-hidden="true" className="shrink-0 text-xl font-light text-moss group-open:rotate-45">＋</span></summary><p className="body-jp pb-5 pr-8 text-sm text-ink/70">{item.answer}</p></details>)}</div>
-          <Link href="/faq/" className={`${linkClass} mt-7`}>すべてのよくあるご質問を見る →</Link>
+          <div className="mt-12 text-center md:mt-16"><h3 className="font-serif text-[clamp(26px,3vw,38px)] font-light leading-relaxed">地域に合った見守りの形を、<br />一緒に考えませんか。</h3><a href={contactUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-8 normal-case">自治体での導入を相談する</a></div>
         </div>
-      </section>
-
-      <section className={`${sectionClass} bg-cream`} aria-labelledby="contact-title">
-        <div className="container-narrow text-center"><p className="eyebrow">CONTACT</p><h2 id="contact-title" className="mt-7 font-serif text-[clamp(28px,3.5vw,46px)] font-light leading-relaxed">地域の見守りに合うか、<br />まずはご相談ください。</h2><a href={contactUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-9 normal-case">自治体での導入を相談する</a></div>
       </section>
     </>
   );
