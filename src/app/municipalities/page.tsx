@@ -18,7 +18,7 @@ const challenges = [
 const benefits = [
   { title: "発見後の連絡・調整を支援", body: "発見者からご家族などの登録先へ直接連絡できる手段を用意することで、連絡先の確認や関係機関との調整を支援します。" },
   { title: "既存の見守り施策を補完", body: "SOSネットワークやGPS、地域の見守り活動など、すでに実施している施策を活かしながら、発見後の連絡手段を追加できます。" },
-  { title: "利用状況を把握し、施策の検証に活用", body: "登録状況や通話実績などを把握することで、試験導入後の利用状況の確認や施策の評価に役立てることを目指します。", note: "管理機能の提供範囲・確認できる項目・権限は個別にご確認ください。" },
+  { title: "利用状況を把握し、施策の検証に活用", body: "登録状況や通話実績などを把握することで、試験導入後の利用状況の確認や施策の評価に役立てることを目指します。", note: "登録QRコード数・利用者数・通話成立件数／履歴・利用料金／請求状況を確認できます。自治体での提供範囲・権限は個別相談です。" },
   { title: "住民に寄り添う自治体の姿勢を示す", body: "認知症高齢者やご家族の不安に目を向け、地域の助け合いを支える新たな取り組みとして、住民サービスの充実につなげます。" },
 ];
 const steps = [
@@ -45,7 +45,7 @@ const faq = [
   { question: "既存の見守りサービスと併用できますか？", answer: "はい。GPSや地域の見守りネットワークを置き換えるのではなく、発見後の連絡手段として補完します。既存施策との運用上の連携方法は個別にご相談ください。" },
   { question: "登録は自治体職員が行いますか？住民自身が行いますか？", answer: "登録を担当する方や住民への案内方法は、地域の運用に合わせて確認する事項です。現時点で一律の登録方式を定めてご案内するものではありません。" },
   { question: "費用は誰が負担しますか？", answer: "自治体負担・住民負担など、ご希望の運用をお聞かせください。採用できる方式、費用負担の範囲、契約条件は個別に確認・ご案内します。" },
-  { question: "管理者画面では何を確認できますか？", answer: "登録QRコード数、利用者数、通話成立件数・履歴、利用料金・請求状況について、必要な管理項目をお聞かせください。利用できる項目と実装・提供状況、権限の範囲は、導入相談時に個別にご確認ください。" },
+  { question: "管理者画面では何を確認できますか？", answer: "登録QRコード数、利用者数、通話成立件数・履歴、利用料金・請求状況を確認できます。これらは実装済みの管理機能です。自治体での提供範囲や閲覧権限は個別にご相談ください。" },
 ];
 
 export const metadata = pageMetadata("municipalities");
@@ -95,8 +95,8 @@ export default function MunicipalitiesPage() {
 
       <section className={sectionClass} aria-labelledby="management-title">
         <div className="container-wide grid gap-10 md:grid-cols-12 md:gap-12">
-          <div className="md:col-span-5"><SectionHeading en="MANAGEMENT & OPERATION" title="導入前に、管理と運用を確かめる。" id="management-title" /><p className="body-jp text-sm text-ink/70">地域で必要な管理項目と、提供可能な機能・権限の範囲を確認しながら、導入・運用方法をご相談いただけます。</p></div>
-          <div className="md:col-span-7"><h3 className="text-sm font-medium text-moss">管理機能の確認・相談項目</h3><ul className="mt-5 grid gap-3 sm:grid-cols-2">{management.map((item) => <li key={item} className="bg-cream p-5 text-sm leading-7">{item}</li>)}</ul><p className="body-jp mt-5 text-xs text-ink/60">※上記すべての実装・提供を確約するものではありません。利用できる項目、提供時期、閲覧権限は導入相談時に確認します。</p>
+          <div className="md:col-span-5"><SectionHeading en="MANAGEMENT & OPERATION" title="導入前に、管理と運用を確かめる。" id="management-title" /><p className="body-jp text-sm text-ink/70">実装済みの管理者画面で、登録状況や通話実績、料金・請求状況を確認できます。地域での利用範囲や権限を確認しながら、導入・運用方法をご相談いただけます。</p></div>
+          <div className="md:col-span-7"><h3 className="text-sm font-medium text-moss">実装済みの管理機能</h3><ul className="mt-5 grid gap-3 sm:grid-cols-2">{management.map((item) => <li key={item} className="bg-cream p-5 text-sm leading-7">{item}</li>)}</ul><p className="body-jp mt-5 text-xs text-ink/60">※自治体向けの提供範囲や閲覧権限、契約条件は導入相談時に確認します。</p>
           <h3 className="mt-9 text-sm font-medium text-moss">あわせて確認する運用事項</h3><ul className="body-jp mt-4 space-y-2 text-sm text-ink/70"><li>登録を担当する方と、住民への案内・問い合わせ対応</li><li>QRコードの配布方法と登録情報の管理</li><li>既存施策との役割分担、費用負担と契約条件</li></ul></div>
         </div>
       </section>
