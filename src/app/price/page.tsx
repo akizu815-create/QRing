@@ -7,7 +7,7 @@ import styles from "./CallFlow.module.css";
 
 
 const heading = "text-3xl font-light leading-relaxed md:text-4xl";
-const label = "text-[11px] font-medium tracking-[0.32em] text-moss";
+const label = "text-[11px] font-medium tracking-[0.32em] text-ink/60";
 
 function SectionHeading({ en, id, children }: { en: string; id: string; children: React.ReactNode }) {
   return (
@@ -117,8 +117,8 @@ export default function PricePage() {
           <p className="mt-4 text-xs leading-relaxed text-ink/65">※{CONSUMER_SERVICE.notice}</p>
           <div className="mt-12 border-y border-ink/15 md:mt-16">
             <div className="grid gap-7 py-9 sm:grid-cols-2 md:gap-12">
-              <div><p className="text-sm text-ink/70">登録料</p><p className="mt-2 font-serif text-4xl text-moss">0円</p></div>
-              <div><p className="text-sm text-ink/70">月額基本料</p><p className="mt-2 font-serif text-4xl text-moss">0円</p></div>
+              <div><p className="text-sm text-ink/70">登録料</p><p className="mt-2 font-serif text-4xl text-ink/60">0円</p></div>
+              <div><p className="text-sm text-ink/70">月額基本料</p><p className="mt-2 font-serif text-4xl text-ink/60">0円</p></div>
             </div>
             <div className="border-t border-ink/15 py-10 md:py-12">
               <p className="text-sm text-ink/70">つながるQRサービス利用料</p>
@@ -151,7 +151,7 @@ export default function PricePage() {
                   {item.detail && <p className="mt-3">{item.detail}</p>}
                 </div>
                 <div className="md:col-start-2 md:row-start-3 md:self-start">
-                  <p className="font-sans text-xl font-medium leading-relaxed tabular-nums text-moss md:text-2xl">{item.price}</p>
+                  <p className="font-sans text-xl font-medium leading-relaxed tabular-nums text-ink/60 md:text-2xl">{item.price}</p>
                   <p className="mt-3 text-xs leading-relaxed text-ink/70 md:text-sm">※{item.note}</p>
                 </div>
                 <figure className={`mx-auto w-full md:col-start-1 md:row-span-3 md:row-start-1 md:self-center ${item.number === "02" ? "max-w-[520px] overflow-hidden aspect-[5/4]" : "max-w-[420px]"}`}>
@@ -224,7 +224,7 @@ export default function PricePage() {
             <div className="mt-10 flex flex-col items-center gap-6 border-t border-dashed border-moss/40 bg-cream/40 px-6 py-8 md:flex-row md:gap-10 md:px-10">
               <div className="shrink-0"><CallPortrait person="registrant" small /></div>
               <div className="min-w-0">
-                <h4 className="font-serif text-xl text-deepmoss">登録者が折り返す場合</h4>
+                <h4 className="font-serif text-xl text-ink">登録者が折り返す場合</h4>
                 <p className="body-jp mt-3 text-sm md:text-base">登録者が着信履歴に残ったプライバシー電話番号へ折り返す場合、通常の電話料金は登録者の負担となります。</p>
               </div>
             </div>

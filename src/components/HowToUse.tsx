@@ -36,7 +36,7 @@ function RegistrationPanel() {
       <details className="group mx-auto max-w-4xl border-y border-ink/15">
         <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-6 [&::-webkit-details-marker]:hidden">
           <span>
-            <span className="mr-4 text-[11px] font-medium tracking-[0.24em] text-moss">
+            <span className="mr-4 text-[11px] font-medium tracking-[0.24em] text-ink/60">
               01
             </span>
             <span className="font-serif text-xl font-light md:text-2xl">新規登録</span>
@@ -60,7 +60,7 @@ function RegistrationPanel() {
           <div className="mt-9 grid items-start gap-6 md:grid-cols-3 md:gap-8">
             {REGISTER_STEPS.map((step) => (
               <article key={step.no} className="min-w-0 text-center">
-                  <p className="text-base font-semibold text-moss">{step.no}</p>
+                  <p className="text-base font-semibold text-ink/60">{step.no}</p>
                   <h3 className="mt-3 min-h-0 font-serif text-xl font-light leading-relaxed md:min-h-[3.4rem]">
                     {step.title}
                   </h3>
@@ -85,7 +85,7 @@ function RegistrationPanel() {
       <details className="group mx-auto max-w-4xl border-b border-ink/15">
         <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-6 [&::-webkit-details-marker]:hidden">
           <span>
-            <span className="mr-4 text-[11px] font-medium tracking-[0.24em] text-moss">
+            <span className="mr-4 text-[11px] font-medium tracking-[0.24em] text-ink/60">
               02
             </span>
             <span className="font-serif text-xl font-light md:text-2xl">
@@ -154,7 +154,7 @@ export default function HowToUse() {
       <div className="container-wide">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
-            <p className="text-[11px] font-medium tracking-[0.38em] text-moss">
+            <p className="text-[11px] font-medium tracking-[0.38em] text-ink/60">
               How to Use
             </p>
           </Reveal>

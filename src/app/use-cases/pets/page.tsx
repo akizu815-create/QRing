@@ -6,7 +6,7 @@ export const metadata = pageMetadata("pets");
 
 const linkClass = "link-underline inline-block text-sm leading-7 tracking-[0.08em] text-moss transition-colors duration-300 hover:text-ink";
 const headingClass = "font-serif text-[clamp(26px,3.5vw,44px)] font-light leading-[1.6]";
-const eyebrowClass = "text-[10px] font-medium tracking-[0.3em] text-moss";
+const eyebrowClass = "text-[10px] font-medium tracking-[0.3em] text-ink/60";
 const concerns = [
   { title: "個人情報が気になる", body: "迷子札に自分の電話番号を公開することに抵抗がある。" },
   { title: "見つけてもらえても連絡できない", body: "連絡先がわからなければ、発見者も飼い主に知らせられない。" },
@@ -40,7 +40,7 @@ export default function PetsPage() {
           <p className={eyebrowClass}>CONCERNS</p>
           <h2 id="concerns-heading" className={`${headingClass} mt-6`}>迷子札に、電話番号を書きたくない。</h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {concerns.map(({ title, body }, i) => <article key={title} className="bg-cream p-7 md:p-8"><p className="text-xs tracking-[0.2em] text-moss">0{i + 1}</p><h3 className="mt-5 font-serif text-2xl font-light leading-relaxed">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}
+            {concerns.map(({ title, body }, i) => <article key={title} className="bg-cream p-7 md:p-8"><p className="text-xs tracking-[0.2em] text-ink/60">0{i + 1}</p><h3 className="mt-5 font-serif text-2xl font-light leading-relaxed">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}
           </div>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function PetsPage() {
         <div className="container-wide">
           <p className={eyebrowClass}>PREPARATION</p>
           <h2 id="preparation-heading" className={`${headingClass} mt-6`}>迷子への備えは、<br className="sm:hidden" />ひとつだけではありません。</h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">{preparations.map(({ title, body }) => <article key={title} className="border-t border-moss/30 py-7"><h3 className="font-serif text-2xl font-light text-moss">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}</div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">{preparations.map(({ title, body }) => <article key={title} className="border-t border-moss/30 py-7"><h3 className="font-serif text-2xl font-light text-ink">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}</div>
           <p className="body-jp mt-8 text-sm text-ink/65">それぞれ役割が異なるため、組み合わせて備えることもできます。</p>
           <p className="body-jp mt-6 text-xs text-ink/55">つながるQRは、法令上必要な所有者明示やマイクロチップに関する手続き・義務を代替するものではありません。</p>
           <p className="body-jp mt-4 text-xs text-ink/55">参考：<a href="https://www.env.go.jp/nature/dobutsu/aigo/shuyo/how.html" className="link-underline text-moss">環境省「迷子にさせないために」</a></p>

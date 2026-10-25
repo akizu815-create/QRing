@@ -27,7 +27,7 @@ export default function ContactPage() {
             <Reveal delay={120}>
               <div className="mt-12 space-y-8">
                 <div>
-                  <p className="text-[11px] tracking-[0.3em] uppercase text-moss mb-2">
+                  <p className="text-[11px] tracking-[0.3em] uppercase text-ink/60 mb-2">
                     Phone
                   </p>
                   <p className="font-serif text-2xl">03-6555-8000</p>
@@ -36,7 +36,7 @@ export default function ContactPage() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-[11px] tracking-[0.3em] uppercase text-moss mb-2">
+                  <p className="text-[11px] tracking-[0.3em] uppercase text-ink/60 mb-2">
                     For Business
                   </p>
                   <p className="body-jp text-sm">
@@ -44,7 +44,7 @@ export default function ContactPage() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-[11px] tracking-[0.3em] uppercase text-moss mb-2">
+                  <p className="text-[11px] tracking-[0.3em] uppercase text-ink/60 mb-2">
                     Press
                   </p>
                   <p className="body-jp text-sm">
@@ -73,7 +73,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-[11px] tracking-[0.3em] uppercase text-moss mb-3">
+                  <label className="block text-[11px] tracking-[0.3em] uppercase text-ink/60 mb-3">
                     お問い合わせ種別
                   </label>
                   <div className="flex flex-wrap gap-3">
@@ -92,7 +92,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-[11px] tracking-[0.3em] uppercase text-moss mb-3">
+                  <label className="block text-[11px] tracking-[0.3em] uppercase text-ink/60 mb-3">
                     お問い合わせ内容
                   </label>
                   <textarea
@@ -155,7 +155,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-[11px] tracking-[0.3em] uppercase text-moss mb-3">
+      <label className="block text-[11px] tracking-[0.3em] uppercase text-ink/60 mb-3">
         {label}
       </label>
       <input

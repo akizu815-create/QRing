@@ -31,7 +31,7 @@ export default function ServicePage() {
           <div className="md:col-span-6">
             <Reveal>
               <p className="display text-3xl leading-[1.55] md:text-5xl lg:text-6xl">
-                小さな<span className="text-moss">QR</span>コードに、
+                小さな<span>QR</span>コードに、
                 <br />
                 大きな<span className="text-moss">安心</span>を。
               </p>
@@ -76,7 +76,7 @@ export default function ServicePage() {
         <div className="container-wide">
           <div className="mx-auto max-w-4xl text-center">
             <Reveal>
-              <p className="text-[11px] font-medium tracking-[0.38em] text-moss">
+              <p className="text-[11px] font-medium tracking-[0.38em] text-ink/60">
                 Privacy Call
               </p>
             </Reveal>
@@ -107,26 +107,26 @@ export default function ServicePage() {
           <Reveal delay={320}>
             <div className="mx-auto mt-12 grid max-w-6xl border-y border-ink/15 md:mt-16 md:grid-cols-[0.8fr_1.05fr_1.5fr]">
               <div className="py-8 text-center md:px-8 md:py-10">
-                <p className="text-base font-semibold tracking-[0.22em] text-moss">01</p>
+                <p className="text-base font-semibold tracking-[0.22em] text-ink/60">01</p>
                 <p className="mt-3 font-sans text-[38px] font-medium leading-tight tracking-tight text-ink">
-                  <span className="text-moss">3</span>分
+                  <span>3</span>分
                 </p>
                 <p className="mt-4 text-[15px] font-medium leading-7 text-ink/80">
                   1回の通話は最大3分
                 </p>
               </div>
               <div className="border-t border-ink/15 py-8 text-center md:border-l md:border-t-0 md:px-8 md:py-10">
-                <p className="text-base font-semibold tracking-[0.22em] text-moss">02</p>
+                <p className="text-base font-semibold tracking-[0.22em] text-ink/60">02</p>
                 <p className="mt-3 font-sans text-[38px] font-medium leading-tight tracking-tight text-ink">
-                  <span className="text-moss">1</span>時間
+                  <span>1</span>時間
                 </p>
                 <p className="mt-4 text-[15px] font-medium leading-7 text-ink/80">
                   QRコードのスキャンから1時間以内は、双方から再通話・折り返しが可能
                 </p>
               </div>
               <div className="border-t border-ink/15 py-8 text-center md:border-l md:border-t-0 md:px-8 md:py-10">
-                <p className="text-base font-semibold tracking-[0.22em] text-moss">03</p>
-                <p className="mt-3 font-sans text-[22px] font-medium leading-tight tracking-tight text-moss lg:text-2xl">
+                <p className="text-base font-semibold tracking-[0.22em] text-ink/60">03</p>
+                <p className="mt-3 font-sans text-[22px] font-medium leading-tight tracking-tight text-ink/60 lg:text-2xl">
                   <span className="block md:inline">03-6555-8100〜</span>
                   <span className="block md:inline">03-6555-8199</span>
                 </p>
@@ -156,7 +156,7 @@ export default function ServicePage() {
         <div className="container-wide">
           <div className="mx-auto max-w-3xl text-center">
             <Reveal>
-              <p className="text-[11px] font-medium tracking-[0.38em] text-moss">
+              <p className="text-[11px] font-medium tracking-[0.38em] text-ink/60">
                 Use Cases
               </p>
             </Reveal>
@@ -175,7 +175,7 @@ export default function ServicePage() {
           <div className="mt-12 grid gap-6 md:mt-16 md:grid-cols-3 lg:gap-10">
             {USECASES.map((u) => (
               <article key={u.no} className="flex min-w-0 flex-col border-t border-moss/30 py-7">
-                <p className="text-[10px] font-medium tracking-[0.32em] text-moss">USE CASE {u.no}</p>
+                <p className="text-[10px] font-medium tracking-[0.32em] text-ink/60">USE CASE {u.no}</p>
                 <h3 className="mt-4 font-serif text-2xl font-light leading-snug">{u.title}</h3>
                 <p className="body-jp mt-4 text-sm text-ink/70">{u.body}</p>
                 <div className="mt-6 text-right"><Link href={u.href} className="link-underline inline-block text-xs tracking-[0.12em] text-moss transition-colors duration-300 hover:text-ink">詳しく見る →</Link></div>

@@ -22,7 +22,7 @@ export default function SectionTitle({
       {eyebrow && (
         <span
           className={`text-[11px] tracking-[0.35em] uppercase mb-6 ${
-            invert ? "text-softgold" : "text-moss"
+            invert ? "text-softgold" : "text-ink/60"
           }`}
         >
           {eyebrow}

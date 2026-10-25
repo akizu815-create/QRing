@@ -68,7 +68,7 @@ export default function LawPage() {
               {ROWS.map((row, i) => (
                 <Reveal as="div" key={row.k} delay={i * 60}>
                   <div className="grid grid-cols-12 gap-4 py-7 border-t border-ink/10 last:border-b">
-                    <dt className="col-span-12 md:col-span-3 text-[11px] tracking-[0.3em] uppercase text-moss pt-0.5">
+                    <dt className="col-span-12 md:col-span-3 text-[11px] tracking-[0.3em] uppercase text-ink/60 pt-0.5">
                       {row.k}
                     </dt>
                     <dd className="col-span-12 md:col-span-9 body-jp text-sm md:text-base text-ink/80 whitespace-pre-line">

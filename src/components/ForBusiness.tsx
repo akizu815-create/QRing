@@ -42,7 +42,7 @@ function BusinessCard({ card }: { card: BusinessCardData }) {
         />
       </div>
       <div className="flex flex-1 flex-col p-7 md:p-9 lg:p-10">
-        <p className="text-[10px] font-medium uppercase tracking-[0.32em] text-moss">
+        <p className="text-[10px] font-medium uppercase tracking-[0.32em] text-ink/60">
           {card.label}
         </p>
         <h3 className="mt-4 font-serif text-[26px] font-light leading-snug md:text-3xl">
@@ -72,7 +72,7 @@ export default function ForBusiness() {
       <div className="container-wide">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-moss/80">
+            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">
               For business
             </p>
             <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />

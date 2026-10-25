@@ -33,7 +33,7 @@ export default function FaqAccordion() {
           <section key={category.title} className="border-b border-ink/15" aria-labelledby={`${categoryId}-heading`}>
             <h2 id={`${categoryId}-heading`}>
               <button type="button" aria-expanded={categoryOpen} aria-controls={`${categoryId}-panel`} onClick={() => setOpenCategories((current) => ({ ...current, [categoryIndex]: !current[categoryIndex] }))} className="flex min-h-20 w-full items-center gap-4 py-5 text-left font-serif text-xl leading-relaxed text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-moss md:min-h-24 md:text-2xl">
-                <span className="font-sans text-sm font-medium tabular-nums tracking-widest text-moss">{String(categoryIndex + 1).padStart(2, "0")}</span>
+                <span className="font-sans text-sm font-medium tabular-nums tracking-widest text-ink/60">{String(categoryIndex + 1).padStart(2, "0")}</span>
                 <span className="min-w-0 flex-1">{category.title}</span>
                 <Chevron open={categoryOpen} />
               </button>
