@@ -13,11 +13,6 @@ const COMPANY = [
   { k: "主要取引銀行", v: "三井住友銀行" },
 ];
 
-const scenes = [
-  { image: "/images/use-case-family.png", alt: "緑道を歩きながら会話する高齢女性と家族", text: "道で困っている高齢者を見かけたとき。" },
-  { image: "/images/use-case-pet.png", alt: "QRタグを身につけた犬と見つめ合う女性", text: "迷子のペットを見つけたとき。" },
-  { image: "/images/use-case-belongings.png", alt: "バッグに取り付けられたQRタグ", text: "誰かの落とし物を拾ったとき。" },
-];
 const eyebrow = "text-[10px] font-medium tracking-[0.28em] text-moss md:text-[11px]";
 
 export const metadata = pageMetadata("about");
@@ -53,23 +48,13 @@ export default function AboutPage() {
         <div className="container-wide">
           <p className={eyebrow}>OUR APPROACH<span className="ml-5 tracking-[0.12em] text-ink/55">私たちの取り組み</span></p>
           <h2 id="approach-heading" className="mt-8 font-serif text-[clamp(30px,4vw,54px)] font-light leading-[1.6] tracking-tight">小さなQRコードで、<br className="sm:hidden" /><span className="text-moss">大きな安心を。</span></h2>
-          <div className="mt-12 grid gap-9 md:mt-16 md:grid-cols-3 md:gap-6 lg:gap-10">
-            {scenes.map((scene) => (
-              <figure key={scene.image} className="min-w-0">
-                <div className="relative aspect-[3/2] overflow-hidden"><Image src={scene.image} alt={scene.alt} fill sizes="(min-width: 768px) 30vw, 100vw" className="object-cover" /></div>
-                <figcaption className="body-jp mt-5 text-sm text-ink/75">{scene.text}</figcaption>
-              </figure>
-            ))}
-          </div>
-          <div className="mt-12 grid gap-8 border-t border-moss/20 pt-10 md:mt-16 md:grid-cols-12 md:gap-10 md:pt-12">
-            <p className="font-serif text-xl font-light leading-[1.9] md:col-span-5 md:text-2xl">助けたいと思っても、<br />連絡する方法がわからないことがあります。</p>
-            <div className="body-jp space-y-6 text-sm text-ink/75 md:col-span-7 md:text-base">
-              <p>そんなとき、小さなQRコードが、人と人をつなぐきっかけになれたら。</p>
-              <p>私たちは、その思いから「つながるQR」の開発を進めています。</p>
-              <p>お互いの電話番号を公開せずに通話できる仕組みを通じて、助けたいという気持ちを、実際の行動につなげていきたいと考えています。</p>
-              <div className="pt-3"><Link href="/service/" className="link-underline inline-block text-sm leading-7 text-moss transition-colors duration-300 hover:text-ink">つながるQRについて詳しく見る →</Link></div>
-              <p className="text-xs text-ink/55">「つながるQR」は正式リリースに向けて準備中です。</p>
-            </div>
+          <div className="body-jp mt-9 max-w-3xl space-y-6 text-sm text-ink/75 md:mt-12 md:text-base">
+            <p>誰かを助けたいと思っても、その気持ちを届けるための手段がなければ、行動に移せないことがあります。</p>
+            <p>私たちが開発を進めている「つながるQR」は、そんな善意と行動の間をつなぐ、小さなツールです。</p>
+            <p>お互いの電話番号を公開せずに連絡できる仕組みによって、助けたいという気持ちを、安心して行動に移せるように。</p>
+            <p>小さなQRコードが、人と人とのつながりを支える存在になることを目指しています。</p>
+            <div className="pt-3"><Link href="/service/" className="link-underline inline-block text-sm leading-7 text-moss transition-colors duration-300 hover:text-ink">つながるQRについて詳しく見る →</Link></div>
+            <p className="text-xs text-ink/55">「つながるQR」は正式リリースに向けて準備中です。</p>
           </div>
         </div>
       </section>
