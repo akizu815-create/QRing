@@ -9,27 +9,9 @@ import HowToUse from "@/components/HowToUse";
 
 
 const USECASES = [
-  {
-    no: "01",
-    title: "ご家族の見守りに",
-    body: "ご高齢のご家族が外出先で困っているとき、周囲の方がQRコードをスキャンすることで、登録された連絡先へ電話できます。ご家族の電話番号を相手に知らせる必要はありません。",
-    image: "/images/use-case-family.png",
-    imageAlt: "緑道を歩きながら会話する高齢女性と家族",
-  },
-  {
-    no: "02",
-    title: "大切なペットに",
-    body: "万が一ペットが迷子になったときも、保護してくださった方が首輪のQRコードから飼い主に連絡できます。個人の電話番号を公開せずに、直接お話しできます。",
-    image: "/images/use-case-pet.png",
-    imageAlt: "QRタグを身につけた犬と見つめ合う女性",
-  },
-  {
-    no: "03",
-    title: "持ち物の紛失に",
-    body: "バッグや鍵、財布などを置き忘れたとき、拾った方から持ち主へ連絡できます。住所や電話番号を書いた名札を付ける必要がなく、プライバシーを守りながら連絡を受けられます。",
-    image: "/images/use-case-belongings.png",
-    imageAlt: "バッグに取り付けられたQRタグ",
-  },
+  { no: "01", title: "ご家族の見守りに", body: "外出時の連絡に備える。", href: "/use-cases/elderly/" },
+  { no: "02", title: "大切なペットに", body: "迷子になった後の連絡に備える。", href: "/use-cases/pets/" },
+  { no: "03", title: "持ち物の紛失に", body: "落とし物・忘れ物の連絡に備える。", href: "/use-cases/belongings/" },
 ] as const;
 
 export const metadata = pageMetadata("service");
@@ -190,37 +172,14 @@ export default function ServicePage() {
             </Reveal>
           </div>
 
-          <div className="mt-14 grid gap-8 md:mt-20 md:grid-cols-3 lg:gap-10">
-            {USECASES.map((u, i) => (
-              <Reveal key={u.no} delay={240 + i * 80}>
-                <article className="h-full overflow-hidden bg-white">
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <Image
-                      src={u.image}
-                      alt={u.imageAlt}
-                      fill
-                      sizes="(min-width: 768px) 33vw, 100vw"
-                      className="object-cover transition-transform duration-[1500ms] ease-out hover:scale-[1.025]"
-                    />
-                  </div>
-                  <div className="p-7 md:p-8 lg:p-10">
-                    <p className="text-[10px] font-medium tracking-[0.32em] text-moss">
-                      USE CASE {u.no}
-                    </p>
-                    <h3 className="mt-4 font-serif text-2xl font-light leading-snug">
-                    {u.title}
-                    </h3>
-                    <p className="body-jp mt-5 text-sm text-ink/70">{u.body}</p>
-                    {(
-                      <div className="mt-6 text-right">
-                        <Link href={u.no === "01" ? "/use-cases/elderly/" : u.no === "02" ? "/use-cases/pets/" : "/use-cases/belongings/"} className="link-underline inline-block text-xs tracking-[0.12em] text-moss transition-colors duration-300 hover:text-ink">
-                          詳しく見る →
-                        </Link>
-                      </div>
-                    )}
-                  </div>
-                </article>
-              </Reveal>
+          <div className="mt-12 grid gap-6 md:mt-16 md:grid-cols-3 lg:gap-10">
+            {USECASES.map((u) => (
+              <article key={u.no} className="flex min-w-0 flex-col border-t border-moss/30 py-7">
+                <p className="text-[10px] font-medium tracking-[0.32em] text-moss">USE CASE {u.no}</p>
+                <h3 className="mt-4 font-serif text-2xl font-light leading-snug">{u.title}</h3>
+                <p className="body-jp mt-4 text-sm text-ink/70">{u.body}</p>
+                <div className="mt-6 text-right"><Link href={u.href} className="link-underline inline-block text-xs tracking-[0.12em] text-moss transition-colors duration-300 hover:text-ink">詳しく見る →</Link></div>
+              </article>
             ))}
           </div>
         </div>
