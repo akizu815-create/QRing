@@ -9,7 +9,7 @@ export const metadata = pageMetadata("elderly");
 
 const linkClass = "link-underline inline-block text-sm leading-7 tracking-[0.08em] text-moss transition-colors duration-300 hover:text-ink";
 const headingClass = "font-serif text-[clamp(26px,3.5vw,44px)] font-light leading-[1.6]";
-const eyebrowClass = "text-[10px] font-medium tracking-[0.3em] text-moss";
+const eyebrowClass = "text-[10px] font-medium tracking-[0.3em] text-ink/60";
 const concerns = [
   { title: "本人が説明できない", body: "ご自身の名前や連絡先を伝えられない場合がある。" },
   { title: "家族の連絡先がわからない", body: "発見した方が、誰に連絡すればよいかわからないことがある。" },
@@ -76,14 +76,14 @@ export default function ElderlyPage() {
           <p className={eyebrowClass}>FAMILY CONCERNS</p>
           <h2 id="concerns-heading" className={`${headingClass} mt-6`}>発見されても、<br className="sm:hidden" />家族につながれないことがある。</h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {concerns.map(({ title, body }, i) => <article key={title} className="bg-cream p-7 md:p-8"><p className="text-xs tracking-[0.2em] text-moss">0{i + 1}</p><h3 className="mt-5 font-serif text-2xl font-light leading-relaxed">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}
+            {concerns.map(({ title, body }, i) => <article key={title} className="bg-cream p-7 md:p-8"><p className="text-xs tracking-[0.2em] text-ink/60">0{i + 1}</p><h3 className="mt-5 font-serif text-2xl font-light leading-relaxed">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}
           </div>
         </div>
       </section>
 
       <section className="bg-ivory px-6 py-28 text-center md:py-44" aria-labelledby="key-message">
         <h2 id="key-message" className="mx-auto max-w-5xl font-serif text-[clamp(28px,4.2vw,58px)] font-light leading-[1.8] tracking-tight">
-          見つけてもらえた、その先に。<br /><span className="text-moss">ご家族へつながる</span>手段を。
+          見つけてもらえた、その先に。<br /><span className="text-moss">ご家族</span>へつながる手段を。
         </h2>
       </section>
 
@@ -101,7 +101,7 @@ export default function ElderlyPage() {
         <div className="container-wide">
           <p className={eyebrowClass}>OTHER OPTIONS</p>
           <h2 id="options-heading" className={`${headingClass} mt-6`}>見守りの備えは、<br className="sm:hidden" />ひとつだけではありません。</h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">{options.map(({ title, body }) => <article key={title} className="border-t border-moss/30 py-7"><h3 className="font-serif text-2xl font-light text-moss">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}</div>
+          <div className="mt-12 grid gap-6 md:grid-cols-3">{options.map(({ title, body }) => <article key={title} className="border-t border-moss/30 py-7"><h3 className="font-serif text-2xl font-light text-ink">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}</div>
           <p className="body-jp mt-8 text-sm text-ink/65">それぞれ役割が異なるため、組み合わせて備えることもできます。</p>
         </div>
       </section>

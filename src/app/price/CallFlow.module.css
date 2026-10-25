@@ -23,7 +23,7 @@
   padding: 0.45rem 1.1rem;
   border-radius: 9999px;
   background: rgba(226, 215, 194, 0.68);
-  color: #394d3c;
+  color: #1f1a14;
   font-family: var(--font-noto-serif), serif;
   font-size: 15px;
   line-height: 1.4;
@@ -131,7 +131,7 @@
 }
 
 .chargeTitle {
-  color: #394d3c;
+  color: #1f1a14;
   font-family: var(--font-noto-serif), serif;
   font-size: 18px;
   line-height: 1.45;

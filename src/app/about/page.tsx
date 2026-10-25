@@ -13,7 +13,7 @@ const COMPANY = [
   { k: "主要取引銀行", v: "三井住友銀行" },
 ];
 
-const eyebrow = "text-[10px] font-medium tracking-[0.28em] text-moss md:text-[11px]";
+const eyebrow = "text-[10px] font-medium tracking-[0.28em] text-ink/60 md:text-[11px]";
 
 export const metadata = pageMetadata("about");
 
@@ -47,7 +47,7 @@ export default function AboutPage() {
       <section id="approach" className="scroll-mt-24 bg-cream py-20 md:py-32" aria-labelledby="approach-heading">
         <div className="container-wide">
           <p className={eyebrow}>OUR APPROACH<span className="ml-5 tracking-[0.12em] text-ink/55">私たちの取り組み</span></p>
-          <h2 id="approach-heading" className="mt-8 font-serif text-[clamp(30px,4vw,54px)] font-light leading-[1.6] tracking-tight">小さなQRコードで、<br className="sm:hidden" /><span className="text-moss">大きな安心を。</span></h2>
+          <h2 id="approach-heading" className="mt-8 font-serif text-[clamp(30px,4vw,54px)] font-light leading-[1.6] tracking-tight">小さなQRコードで、<br className="sm:hidden" />大きな<span className="text-moss">安心</span>を。</h2>
           <div className="body-jp mt-9 max-w-3xl space-y-6 text-sm text-ink/75 md:mt-12 md:text-base">
             <p>誰かを助けたいと思っても、その気持ちを届けるための手段がなければ、行動に移せないことがあります。</p>
             <p>私たちが開発を進めている「つながるQR」は、そんな善意と行動の間をつなぐ、小さなツールです。</p>
@@ -61,7 +61,7 @@ export default function AboutPage() {
 
       <section id="message" className="scroll-mt-24 py-20 md:py-24" aria-labelledby="message-heading">
         <div className="container-wide grid gap-9 md:grid-cols-12 md:gap-12">
-          <div className="md:col-span-4"><h2 id="message-heading" className="text-sm font-medium leading-8 tracking-[0.08em]"><span className="text-moss">MESSAGE</span><span className="mx-3 text-ink/30">｜</span>代表挨拶</h2></div>
+          <div className="md:col-span-4"><h2 id="message-heading" className="text-sm font-medium leading-8 tracking-[0.08em]"><span className="text-ink/60">MESSAGE</span><span className="mx-3 text-ink/30">｜</span>代表挨拶</h2></div>
           <div className="body-jp space-y-6 text-sm text-ink/75 md:col-span-8 md:max-w-2xl md:text-base">
             <p>誰かの力になりたいと思っていても、不安やためらいから、一歩を踏み出せないことがあります。</p>
             <p>技術だけで、人を助けることはできません。人を動かすのは、一人ひとりの中にある優しさや思いやりです。</p>
@@ -76,7 +76,7 @@ export default function AboutPage() {
         <div className="container-wide grid gap-10 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-4"><p className={eyebrow}>COMPANY</p><h2 id="company-heading" className="mt-6 font-serif text-3xl font-light leading-relaxed md:text-4xl">会社概要</h2></div>
           <dl className="min-w-0 border-b border-ink/10 md:col-span-8">
-            {COMPANY.map((row) => <div key={row.k} className="grid gap-3 border-t border-ink/10 py-6 sm:grid-cols-[7rem_minmax(0,1fr)] sm:gap-6"><dt className="text-xs leading-7 tracking-[0.12em] text-moss">{row.k}</dt><dd className="break-words text-sm leading-7 text-ink/80 md:text-base">{row.v}</dd></div>)}
+            {COMPANY.map((row) => <div key={row.k} className="grid gap-3 border-t border-ink/10 py-6 sm:grid-cols-[7rem_minmax(0,1fr)] sm:gap-6"><dt className="text-xs leading-7 tracking-[0.12em] text-ink/60">{row.k}</dt><dd className="break-words text-sm leading-7 text-ink/80 md:text-base">{row.v}</dd></div>)}
           </dl>
         </div>
       </section>

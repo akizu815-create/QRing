@@ -113,7 +113,7 @@ function Step({
       style={{ transitionDelay: `${delay}ms` } as CSSProperties}
     >
       <StepArtwork image={step.image} alt={step.imageAlt} />
-      <p className="mt-5 text-[11px] font-medium tracking-[0.32em] text-moss md:mt-6">
+      <p className="mt-5 text-[11px] font-medium tracking-[0.32em] text-ink/60 md:mt-6">
         STEP {step.no}
       </p>
       <span className="mt-4 h-px w-8 bg-moss/55" aria-hidden="true" />
@@ -187,7 +187,7 @@ export default function HowItWorks() {
       <div className="container-wide">
         <div className="mx-auto max-w-6xl text-center">
           <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-moss/80">
+            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">
               How it works
             </p>
             <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />

@@ -7,7 +7,7 @@ export default function PriceSection() {
       <div className="container-wide">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-moss/80">
+            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">
               Price
             </p>
             <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />
@@ -30,7 +30,7 @@ export default function PriceSection() {
               <p className="min-h-10 text-[11px] leading-relaxed tracking-[0.08em] text-ink/60 md:min-h-0 md:text-sm">
                 登録料・月額基本料
               </p>
-              <p className="mt-4 font-serif text-[clamp(58px,8vw,104px)] font-light leading-none tracking-tight text-moss">
+              <p className="mt-4 font-serif text-[clamp(58px,8vw,104px)] font-light leading-none tracking-tight text-ink/60">
                 0<span className="ml-1 text-[0.42em] text-ink">円</span>
               </p>
             </div>

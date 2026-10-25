@@ -8,7 +8,7 @@
 .track { grid-column: 1; grid-row: 1; align-self: end; justify-self: center; width: min(70%, 4rem); height: calc(var(--ratio) * var(--plot-height)); }
 .bar { width: 100%; height: 100%; background: rgb(91 110 79 / .45); border-radius: 2px 2px 0 0; }
 .value { position: absolute; inset-inline: 0; bottom: calc(2.25rem + var(--ratio) * var(--plot-height) + .75rem); text-align: center; font-size: .75rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.latest { color: #5b6e4f; font-weight: 600; }
+.latest { color: rgb(31 26 20 / .75); font-weight: 600; }
 .latest .bar { background: #5b6e4f; }
 @media (min-width: 768px) {
   .chart { --plot-height: 18rem; --axis-width: 4rem; }

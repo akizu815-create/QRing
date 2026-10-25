@@ -110,8 +110,8 @@ export default function Footer() {
               RENEX Otsuka 10階
             </address>
             <div className="mt-3 text-sm leading-7 text-ink/75">
-              <p><span className="mr-3 text-xs tracking-widest text-moss">TEL</span><a href="tel:0365558000" className="hover:text-moss">03-6555-8000</a></p>
-              <p><span className="mr-3 text-xs tracking-widest text-moss">MAIL</span><a href="mailto:info@qring.jp" className="hover:text-moss">info@qring.jp</a></p>
+              <p><span className="mr-3 text-xs tracking-widest text-ink/60">TEL</span><a href="tel:0365558000" className="hover:text-moss">03-6555-8000</a></p>
+              <p><span className="mr-3 text-xs tracking-widest text-ink/60">MAIL</span><a href="mailto:info@qring.jp" className="hover:text-moss">info@qring.jp</a></p>
               <p className="text-xs text-ink/60">受付時間 10:00 – 18:00（土日祝休）</p>
             </div>
             <nav aria-label="法務情報" className="mt-5 border-t border-ink/10 pt-4">

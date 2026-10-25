@@ -98,7 +98,7 @@ export default function NewsPage() {
                   <summary className="grid md:grid-cols-12 gap-4 md:gap-10 py-8 md:py-10 cursor-pointer list-none items-baseline">
                     <div className="md:col-span-3 flex md:flex-col gap-4 md:gap-3 items-baseline md:items-start">
                       <p className="font-serif text-base text-ink/60">{n.date}</p>
-                      <span className="text-[10px] tracking-[0.3em] uppercase text-moss">
+                      <span className="text-[10px] tracking-[0.3em] uppercase text-ink/60">
                         {n.cat}
                       </span>
                     </div>
