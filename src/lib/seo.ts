@@ -27,7 +27,7 @@ export const SEO_PAGES = {
   "about": {
     "path": "/about/",
     "title": "会社概要・企業理念｜株式会社QRing",
-    "description": "つながるQRを社会インフラへ。株式会社QRingのビジョン、代表メッセージ、会社概要をご紹介します。"
+    "description": "人の善意を、行動につなぐ。株式会社QRingの企業理念、つながるQRを通じた取り組み、代表取締役 木津愛子の挨拶、会社概要をご紹介します。"
   },
   "service": {
     "path": "/service/",
