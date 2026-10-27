@@ -140,16 +140,17 @@ export default function Home() {
       <section className="py-14 md:py-20" aria-labelledby="service-overview">
         <div className="container-narrow text-center">
           <h1 id="service-overview" className="font-serif text-[clamp(26px,3.5vw,44px)] font-light leading-[1.6]">
-            高齢者の見守りと、落とし物対策に。<br />
-            <span className="text-moss">電話番号を公開せず、声でつながるQR。</span>
+            高齢者・ペットの見守りと、落とし物対策に。<br />
+            電話番号を公開せず、<span className="text-moss">声でつながる</span>QR。
           </h1>
           <div className="body-jp mx-auto mt-8 max-w-2xl space-y-4 text-left text-sm md:text-base">
-            <p>つながるQRは、高齢者の外出や持ち物の紛失に備える、QRコードの連絡サービスです。</p>
-            <p>身につけたQRコードを見つけた方が読み取り、画面の「電話をかける」から、ご家族や持ち主へ連絡できます。お互いの電話番号を公開せず、専用アプリなしで通話できます。</p>
+            <p>つながるQRは、高齢者の外出時の見守り、ペットの迷子、持ち物の紛失に備える、QRコードの連絡サービスです。</p>
+            <p>身につけたQRコードを見つけた方が読み取り、画面の「電話をかける」から、ご家族・飼い主・持ち主へ連絡できます。お互いの電話番号を公開せず、専用アプリなしで通話できます。</p>
           </div>
-          <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-moss">
-            <Link href="/use-cases/elderly/" className="link-underline">高齢者の外出時の見守り →</Link>
-            <Link href="/use-cases/belongings/" className="link-underline">落とし物・忘れ物対策 →</Link>
+          <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-ink/75">
+            <Link href="/use-cases/elderly/" className="link-underline transition-colors hover:text-moss">高齢者の外出時の見守り →</Link>
+            <Link href="/use-cases/pets/" className="link-underline transition-colors hover:text-moss">ペットの迷子対策 →</Link>
+            <Link href="/use-cases/belongings/" className="link-underline transition-colors hover:text-moss">落とし物・忘れ物対策 →</Link>
           </div>
         </div>
       </section>
