@@ -37,7 +37,7 @@ export const SEO_PAGES = {
   "guides": {
     "path": "/column/",
     "title": "高齢者の見守り・落とし物対策の選び方｜つながるQR",
-    "description": "高齢者の見守りや、鍵・財布の紛失対策を検討する方へ。室内の安否確認、GPSやAirTagなどの位置確認、QRコードを使った発見後の連絡について、役割と選ぶ際の確認点を解説します。"
+    "description": "高齢者の見守りや、鍵・財布の紛失対策を検討する方へ。室内の安否確認、GPSやタグによる位置確認、QRコードを使った発見後の連絡について、役割と選ぶ際の確認点を解説します。"
   },
   "elderlyGuide": {
     "path": "/column/elderly-monitoring/",
@@ -46,8 +46,8 @@ export const SEO_PAGES = {
   },
   "belongingsGuide": {
     "path": "/column/lost-item-preparation/",
-    "title": "物をよくなくす方の紛失対策｜AirTag・QRタグの違い｜つながるQR",
-    "description": "鍵や財布をよくなくす方へ。置き忘れへの備え、AirTagなどによる位置確認、find returnの拾得後通知、QRタグで持ち主へ連絡する方法を比較。電話番号をタグに書きたくない場合の選び方も解説します。"
+    "title": "物をよくなくす方の紛失対策｜位置確認と発見後の連絡｜つながるQR",
+    "description": "鍵や財布をよくなくす方へ。置き忘れへの備え、タグによる位置確認、拾得後の通知、QRコードで持ち主へ連絡する方法を役割別に解説。電話番号をタグに書きたくない場合の選び方もご紹介します。"
   },
   "price": {
     "path": "/price/",

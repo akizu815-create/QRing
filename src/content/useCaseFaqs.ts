@@ -27,7 +27,7 @@ export const elderlyQuestions: readonly UseCaseQuestion[] = [
 
 export const belongingsQuestions: readonly UseCaseQuestion[] = [
   {
-    question: "AirTagのように、なくした物の場所が分かりますか？",
+    question: "なくした持ち物の位置を確認できますか？",
     answer: "つながるQRに位置を追跡する機能はありません。事前に付けたQRコードを見つけた方が読み取り、持ち主へ連絡する仕組みです。位置を確認する方法と、発見後に連絡を受ける方法は、役割を確かめて選べます。",
   },
   {

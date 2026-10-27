@@ -6,7 +6,7 @@ export const metadata = pageMetadata("guides");
 
 const guides = [
   { page: SEO_PAGES.elderlyGuide, title: "高齢者の見守り方法の選び方", description: "自宅での安否確認、外出時のGPS、QRコードによる家族への連絡。それぞれの役割と、導入前に確認したいことをご紹介します。" },
-  { page: SEO_PAGES.belongingsGuide, title: "物をよくなくす方の紛失対策", description: "鍵・財布の置き忘れへの備えから、AirTag、find return、QRタグまで。位置の確認と、発見後の連絡の違いを解説します。" },
+  { page: SEO_PAGES.belongingsGuide, title: "物をよくなくす方の紛失対策", description: "鍵・財布の置き忘れへの備えから、位置確認タグ、拾得後の通知、QRによる連絡まで。それぞれの役割と確認点を解説します。" },
 ] as const;
 
 export default function GuidesPage() {

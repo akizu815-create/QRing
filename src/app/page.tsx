@@ -169,7 +169,7 @@ export default function Home() {
           <h2 id="guides-heading" className="mt-6 font-serif text-3xl font-light leading-relaxed md:text-4xl">ご家族や持ち物に合う、備えの選び方。</h2>
           <div className="mt-8 grid gap-6 text-sm leading-8 text-moss md:grid-cols-2">
             <Link href="/column/elderly-monitoring/" className="border-t border-ink/15 py-6 hover:text-ink">高齢者の見守り方法を比較する →</Link>
-            <Link href="/column/lost-item-preparation/" className="border-t border-ink/15 py-6 hover:text-ink">AirTag・QRタグなどの紛失対策を比較する →</Link>
+            <Link href="/column/lost-item-preparation/" className="border-t border-ink/15 py-6 hover:text-ink">位置確認タグ・QRタグの役割を知る →</Link>
           </div>
         </div>
       </section>

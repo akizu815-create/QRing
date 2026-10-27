@@ -19,9 +19,8 @@ export default function ElderlyMonitoringGuide() {
       relatedHref="/use-cases/elderly/"
       relatedLabel="高齢者の外出時の見守りに、つながるQR"
       sources={[
-        { label: "セコム：高齢者見守りサービス一覧・比較", href: "https://www.secom.co.jp/mimamori/" },
         { label: "鈴鹿市：高齢の親が道に迷う場合に利用できるサービス", href: "https://www.city.suzuka.lg.jp/faq/kenko/1008249/1008260.html" },
-        { label: "倉敷市：安心おかえりシール", href: "https://www.city.kurashiki.okayama.jp/fukushi/elderly/1004100/1012661/1004131.html" },
+        { label: "倉敷市：高齢者の外出時の連絡支援", href: "https://www.city.kurashiki.okayama.jp/fukushi/elderly/1004100/1012661/1004131.html" },
       ]}
     >
       <GuideSection id="choose-purpose" title="どの場面に備えたいかを整理する">

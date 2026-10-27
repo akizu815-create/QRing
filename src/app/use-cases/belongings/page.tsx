@@ -79,8 +79,8 @@ export default function BelongingsPage() {
         <div className="container-narrow">
           <p className={eyebrowClass}>PREPARATION</p>
           <h2 id="preparation-heading" className={`${headingClass} mt-6`}>位置を探す対策と、見つかった後の連絡対策。</h2>
-          <p className="body-jp mt-7 text-sm text-ink/70 md:text-base">持ち物の紛失対策には、置き場所を決めるなどの予防、AirTagなどで位置を確認する方法、拾った方から連絡を受ける方法があります。つながるQRは、発見後の連絡を支援します。</p>
-          <Link href="/column/lost-item-preparation/" className={`${linkClass} mt-8`}>AirTag・find return・QRタグの役割を比較する →</Link>
+          <p className="body-jp mt-7 text-sm text-ink/70 md:text-base">持ち物の紛失対策には、置き場所を決めるなどの予防、タグで位置を確認する方法、拾った方から連絡を受ける方法があります。つながるQRは、発見後の連絡を支援します。</p>
+          <Link href="/column/lost-item-preparation/" className={`${linkClass} mt-8`}>位置確認と発見後の連絡、それぞれの役割を見る →</Link>
         </div>
       </section>
 
