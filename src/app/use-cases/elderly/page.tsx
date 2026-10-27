@@ -120,7 +120,7 @@ export default function ElderlyPage() {
             <table className="w-full min-w-[760px] table-fixed border-collapse text-left text-sm leading-7">
               <caption className="sr-only">見守り方法の基本機能と発見後の連絡方法の比較</caption>
               <colgroup><col className="w-[28%]" /><col className="w-[24%] bg-ivory" /><col className="w-[22%]" /><col className="w-[26%]" /></colgroup>
-              <thead><tr className="border-y border-ink/20"><th scope="col" className="p-5 font-medium">比較項目</th><th scope="col" className="p-5 font-medium">つながるQR</th><th scope="col" className="p-5 font-medium">GPS見守り</th><th scope="col" className="p-5 font-medium">どこシル伝言板</th></tr></thead>
+              <thead><tr className="border-y border-ink/20"><th scope="col" className="p-5 font-medium">比較項目</th><th scope="col" className="p-5 font-medium">つながるQR</th><th scope="col" className="p-5 font-medium">GPS見守り</th><th scope="col" className="p-5 font-medium">QRコード伝言板サービス</th></tr></thead>
               <tbody>{comparison.map(([label, qring, gps, board]) => <tr key={label} className="border-b border-ink/10"><th scope="row" className="p-5 font-medium text-ink/80">{label}</th><td className="p-5 text-ink/75">{qring}</td><td className="p-5 text-ink/75">{gps}</td><td className="p-5 text-ink/75">{board}</td></tr>)}</tbody>
             </table>
           </div>
