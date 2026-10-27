@@ -9,9 +9,9 @@ import HowToUse from "@/components/HowToUse";
 
 
 const USECASES = [
-  { no: "01", title: "ご家族の見守りに", body: "外出時の連絡に備える。", href: "/use-cases/elderly/" },
-  { no: "02", title: "大切なペットに", body: "迷子になった後の連絡に備える。", href: "/use-cases/pets/" },
-  { no: "03", title: "持ち物の紛失に", body: "落とし物・忘れ物の連絡に備える。", href: "/use-cases/belongings/" },
+  { no: "01", title: "高齢者の外出時の見守りに", body: "道に迷ったとき、ご家族への連絡に備える。", href: "/use-cases/elderly/", linkLabel: "高齢者の見守り・迷子対策を見る" },
+  { no: "02", title: "ペットの迷子対策に", body: "保護されたとき、飼い主への連絡に備える。", href: "/use-cases/pets/", linkLabel: "電話番号を公開しないQR迷子札を見る" },
+  { no: "03", title: "持ち物の紛失・忘れ物対策に", body: "鍵や財布を拾った方からの連絡に備える。", href: "/use-cases/belongings/", linkLabel: "落とし物・忘れ物対策を見る" },
 ] as const;
 
 export const metadata = pageMetadata("service");
@@ -23,6 +23,7 @@ export default function ServicePage() {
       <PageHeader
         eyebrow="— Service"
         en="Service"
+        heading="QRコードから、電話番号を公開せず通話。"
       />
 
       {/* INTRO */}
@@ -42,10 +43,10 @@ export default function ServicePage() {
             <Reveal delay={120}>
               <div className="body-jp mt-10 space-y-5 text-base md:text-lg">
                 <p>
-                  つながるQRは、お互いの電話番号を知らせることなく、音声通話ができるサービスです。
+                  つながるQRは、QRコードを見つけた方と、事前に登録された連絡先を、プライバシー電話番号でつなぐサービスです。相手に本来の電話番号を表示せず、音声で連絡できます。
                 </p>
                 <p>
-                  ご家族の見守りや、ペットの迷子、持ち物の紛失など。もしものとき、QRコードを通じて必要な相手とつながります。
+                  高齢者の外出時の見守り、ペットの迷子、鍵や財布などの紛失への備えとして活用できます。
                 </p>
                 <p>
                   専用アプリは不要。スマートフォンから手軽にご利用いただけます。
@@ -178,7 +179,7 @@ export default function ServicePage() {
                 <p className="text-[10px] font-medium tracking-[0.32em] text-ink/60">USE CASE {u.no}</p>
                 <h3 className="mt-4 font-serif text-2xl font-light leading-snug">{u.title}</h3>
                 <p className="body-jp mt-4 text-sm text-ink/70">{u.body}</p>
-                <div className="mt-6 text-right"><Link href={u.href} className="link-underline inline-block text-xs tracking-[0.12em] text-moss transition-colors duration-300 hover:text-ink">詳しく見る →</Link></div>
+                <div className="mt-6 text-right"><Link href={u.href} className="link-underline inline-block text-xs tracking-[0.12em] text-moss transition-colors duration-300 hover:text-ink">{u.linkLabel} →</Link></div>
               </article>
             ))}
           </div>

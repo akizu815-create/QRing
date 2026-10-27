@@ -4,6 +4,8 @@ import type { CSSProperties } from "react";
 import styles from "./StatisticsChart.module.css";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
+import UseCaseFaq from "@/components/UseCaseFaq";
+import { elderlyQuestions, commonQuestions } from "@/content/useCaseFaqs";
 import { ELDERLY_MISSING_PERSONS as statistics } from "@/content/statistics/elderlyMissingPersons";
 
 export const metadata = pageMetadata("elderly");
@@ -34,11 +36,11 @@ export default function ElderlyPage() {
         <div className="container-narrow">
           <p className={eyebrowClass}>— FAMILY CARE</p>
           <h1 className="mt-9 font-serif text-[clamp(34px,5vw,64px)] font-light leading-[1.5] tracking-tight">
-            もしも、家族が<br className="sm:hidden" />帰ってこなかったら。
+            高齢者の外出時の見守りに、<br />ご家族へつながるQRを。
           </h1>
           <div className="body-jp mt-10 max-w-2xl space-y-4 text-sm text-ink/70 md:text-base">
-            <p>いつもの外出が、思いがけない出来事につながることもあります。</p>
-            <p>そんな「もしも」に備えて、見つけてくださった方からご家族へ連絡できる手段を用意しておきませんか。</p>
+            <p>つながるQRは、外出先で道に迷うなどした方を見つけた人が、ご家族へ連絡するためのサービスです。</p>
+            <p>身につけたQRコードを読み取り、「電話をかける」をタップすると、登録先へ電話できます。発見者とご家族は、お互いの電話番号を公開せずに、居場所や状況を声で伝え合えます。</p>
           </div>
           <div className="mt-10 md:mt-14">
             <Image
@@ -51,6 +53,57 @@ export default function ElderlyPage() {
               className="h-auto w-full"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28" aria-labelledby="family-contact-flow">
+        <div className="container-narrow">
+          <p className={eyebrowClass}>HOW IT WORKS</p>
+          <h2 id="family-contact-flow" className={`${headingClass} mt-6`}>見つけた方から、ご家族へ連絡する流れ。</h2>
+          <ol className="body-jp mt-8 list-decimal space-y-4 pl-6 text-sm md:text-base">
+            <li>ご家族などの連絡先を登録したQRコードを身につけます。</li>
+            <li>見つけた方が、スマートフォンでQRコードを読み取ります。</li>
+            <li>画面の「電話をかける」から、登録先と通話します。</li>
+          </ol>
+          <h3 className="mt-12 font-serif text-2xl font-light leading-relaxed">ご自宅での見守りに、外出時の連絡手段も。</h3>
+          <p className="body-jp mt-5 text-sm text-ink/70 md:text-base">認知症のあるご家族が道に迷ったとき、名前や住所、連絡先をうまく伝えられるか心配。つながるQRは、発見されたときに家族へ電話してもらうための備えとして活用できます。</p>
+          <Link href="/column/elderly-monitoring/" className={`${linkClass} mt-7`}>自宅・外出時の見守り方法を比較する →</Link>
+        </div>
+      </section>
+
+      <section className="bg-cream py-20 md:py-28" aria-labelledby="concerns-heading">
+        <div className="container-narrow">
+          <p className={eyebrowClass}>FAMILY CONCERNS</p>
+          <h2 id="concerns-heading" className={`${headingClass} mt-6`}>見つけてもらえても、家族につながれないことがあります。</h2>
+          <div className="body-jp mt-7 space-y-4 text-sm text-ink/70 md:text-base"><p>認知症のある方が外出先で保護されても、誰に連絡すればよいかわからないことがあります。</p><p>だからこそ、見つけてくださった方がすぐに行動できる、わかりやすい案内があることも大切です。</p></div>
+          <div className="mt-9 border-l border-moss/30 pl-6"><h3 className="text-xs font-medium tracking-[0.12em] text-ink/60">シールの案内文イメージ</h3><ul className="body-jp mt-4 space-y-2 text-sm text-ink/80 md:text-base"><li>迷子になっている可能性があります。</li><li>見守りが必要な方です。</li><li>こちらにご連絡ください。</li></ul></div>
+        </div>
+      </section>
+
+      <section className="bg-ivory py-24 md:py-36" aria-labelledby="solution-heading">
+        <div className="container-narrow">
+          <p className={eyebrowClass}>SOLUTION</p>
+          <h2 id="solution-heading" className="mt-7 font-serif text-[clamp(28px,4.2vw,58px)] font-light leading-[1.8] tracking-tight">見つけてもらえた、その先に。<br /><span className="text-moss">ご家族</span>へつながる手段を。</h2>
+          <div className="body-jp mt-8 max-w-3xl space-y-5 text-sm text-ink/70 md:text-base"><p>身につけたQRコードを発見者がスキャンし、「電話をかける」をタップ。<br />お互いの電話番号を公開することなく、ご家族などの登録先と直接通話できます。</p><p>見つけてくださった方の善意を、ご家族への連絡につなぐ。<br />「つながるQR」は、そんな小さな備えを目指しています。</p></div>
+          <Link href="/service/" className={`${linkClass} mt-8`}>サービスの仕組みを見る →</Link>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28" aria-labelledby="options-heading">
+        <div className="container-wide">
+          <p className={eyebrowClass}>OTHER OPTIONS</p>
+          <h2 id="options-heading" className={`${headingClass} mt-6`}>GPS・見守りQRシールとの役割の違い。</h2>
+          <p className="body-jp mt-6 text-sm text-ink/70 md:text-base">見守りサービスには、それぞれ役割があります。<br />つながるQRは、発見後にご家族につながる手段として活用できます。</p>
+          <p id="comparison-help" className="mt-7 text-xs text-ink/55 md:hidden">表は横にスクロールしてご覧いただけます。</p>
+          <div className="mt-4 overflow-x-auto overscroll-x-contain focus-visible:outline focus-visible:outline-2 focus-visible:outline-moss md:mt-9" role="region" aria-label="見守り方法の比較表" aria-describedby="comparison-help" tabIndex={0}>
+            <table className="w-full min-w-[760px] table-fixed border-collapse text-left text-sm leading-7">
+              <caption className="sr-only">見守り方法の基本機能と発見後の連絡方法の比較</caption>
+              <colgroup><col className="w-[28%]" /><col className="w-[24%] bg-ivory" /><col className="w-[22%]" /><col className="w-[26%]" /></colgroup>
+              <thead><tr className="border-y border-ink/20"><th scope="col" className="p-5 font-medium">比較項目</th><th scope="col" className="p-5 font-medium">つながるQR</th><th scope="col" className="p-5 font-medium">GPS見守り</th><th scope="col" className="p-5 font-medium">QRコード伝言板サービス</th></tr></thead>
+              <tbody>{comparison.map(([label, qring, gps, board]) => <tr key={label} className="border-b border-ink/10"><th scope="row" className="p-5 font-medium text-ink/80">{label}</th><td className="p-5 text-ink/75">{qring}</td><td className="p-5 text-ink/75">{gps}</td><td className="p-5 text-ink/75">{board}</td></tr>)}</tbody>
+            </table>
+          </div>
+          <div className="body-jp mt-6 space-y-1 text-xs text-ink/55"><p>※一般的なGPS見守りサービスおよび各サービスの基本的な機能をもとに整理しています。</p><p>※サービスごとに機能や運用方法は異なります。</p><p>※それぞれ役割が異なるため、併用も考えられます。</p></div>
         </div>
       </section>
 
@@ -92,41 +145,7 @@ export default function ElderlyPage() {
         </div>
       </section>
 
-      <section className="bg-cream py-20 md:py-28" aria-labelledby="concerns-heading">
-        <div className="container-narrow">
-          <p className={eyebrowClass}>FAMILY CONCERNS</p>
-          <h2 id="concerns-heading" className={`${headingClass} mt-6`}>見つけてもらえても、家族につながれないことがあります。</h2>
-          <div className="body-jp mt-7 space-y-4 text-sm text-ink/70 md:text-base"><p>認知症のある方が外出先で保護されても、誰に連絡すればよいかわからないことがあります。</p><p>だからこそ、見つけてくださった方がすぐに行動できる、わかりやすい案内があることも大切です。</p></div>
-          <div className="mt-9 border-l border-moss/30 pl-6"><h3 className="text-xs font-medium tracking-[0.12em] text-ink/60">シールの案内文イメージ</h3><ul className="body-jp mt-4 space-y-2 text-sm text-ink/80 md:text-base"><li>迷子になっている可能性があります。</li><li>見守りが必要な方です。</li><li>こちらにご連絡ください。</li></ul></div>
-        </div>
-      </section>
-
-      <section className="bg-ivory py-24 md:py-36" aria-labelledby="solution-heading">
-        <div className="container-narrow">
-          <p className={eyebrowClass}>SOLUTION</p>
-          <h2 id="solution-heading" className="mt-7 font-serif text-[clamp(28px,4.2vw,58px)] font-light leading-[1.8] tracking-tight">見つけてもらえた、その先に。<br /><span className="text-moss">ご家族</span>へつながる手段を。</h2>
-          <div className="body-jp mt-8 max-w-3xl space-y-5 text-sm text-ink/70 md:text-base"><p>身につけたQRコードを発見者がスキャンし、「電話をかける」をタップ。<br />お互いの電話番号を公開することなく、ご家族などの登録先と直接通話できます。</p><p>見つけてくださった方の善意を、ご家族への連絡につなぐ。<br />「つながるQR」は、そんな小さな備えを目指しています。</p></div>
-          <Link href="/service/" className={`${linkClass} mt-8`}>サービスの仕組みを見る →</Link>
-        </div>
-      </section>
-
-      <section className="py-20 md:py-28" aria-labelledby="options-heading">
-        <div className="container-wide">
-          <p className={eyebrowClass}>OTHER OPTIONS</p>
-          <h2 id="options-heading" className={`${headingClass} mt-6`}>見守りの方法は、一つではありません。</h2>
-          <p className="body-jp mt-6 text-sm text-ink/70 md:text-base">見守りサービスには、それぞれ役割があります。<br />つながるQRは、発見後にご家族につながる手段として活用できます。</p>
-          <p id="comparison-help" className="mt-7 text-xs text-ink/55 md:hidden">表は横にスクロールしてご覧いただけます。</p>
-          <div className="mt-4 overflow-x-auto overscroll-x-contain focus-visible:outline focus-visible:outline-2 focus-visible:outline-moss md:mt-9" role="region" aria-label="見守り方法の比較表" aria-describedby="comparison-help" tabIndex={0}>
-            <table className="w-full min-w-[760px] table-fixed border-collapse text-left text-sm leading-7">
-              <caption className="sr-only">見守り方法の基本機能と発見後の連絡方法の比較</caption>
-              <colgroup><col className="w-[28%]" /><col className="w-[24%] bg-ivory" /><col className="w-[22%]" /><col className="w-[26%]" /></colgroup>
-              <thead><tr className="border-y border-ink/20"><th scope="col" className="p-5 font-medium">比較項目</th><th scope="col" className="p-5 font-medium">つながるQR</th><th scope="col" className="p-5 font-medium">GPS見守り</th><th scope="col" className="p-5 font-medium">QRコード伝言板サービス</th></tr></thead>
-              <tbody>{comparison.map(([label, qring, gps, board]) => <tr key={label} className="border-b border-ink/10"><th scope="row" className="p-5 font-medium text-ink/80">{label}</th><td className="p-5 text-ink/75">{qring}</td><td className="p-5 text-ink/75">{gps}</td><td className="p-5 text-ink/75">{board}</td></tr>)}</tbody>
-            </table>
-          </div>
-          <div className="body-jp mt-6 space-y-1 text-xs text-ink/55"><p>※一般的なGPS見守りサービスおよび各サービスの基本的な機能をもとに整理しています。</p><p>※サービスごとに機能や運用方法は異なります。</p><p>※それぞれ役割が異なるため、併用も考えられます。</p></div>
-        </div>
-      </section>
+      <UseCaseFaq id="elderly-questions" title="高齢者の見守りについて、よくあるご質問。" questions={[...elderlyQuestions, ...commonQuestions]} />
 
       <section className="py-24 text-center md:py-36" aria-labelledby="closing-heading">
         <div className="container-narrow">
@@ -135,6 +154,7 @@ export default function ElderlyPage() {
           <p className="body-jp mx-auto mt-8 max-w-xl text-sm text-ink/70 md:text-base">「つながるQR」は現在、一般向けサービスの正式リリースに向けて準備中です。</p>
           <p className="body-jp mt-4 text-sm text-ink/70 md:text-base">最新情報は、お知らせページをご確認ください。</p>
           <Link href="/news/" className={`${linkClass} mt-9`}>最新のお知らせを見る →</Link>
+          <div className="mt-6"><Link href="/price/" className={linkClass}>見守りに備える料金と利用条件を見る →</Link></div>
           <div className="mt-10"><Link href="/municipalities/" className="link-underline inline-block text-xs leading-7 text-ink/55 transition-colors duration-300 hover:text-moss">自治体での見守りへの活用はこちら →</Link></div>
         </div>
       </section>

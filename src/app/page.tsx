@@ -40,7 +40,6 @@ export default function Home() {
   return (
     <>
       <PageStructuredData page="home" />
-      <h1 className="sr-only">暮らしに、もしもの備えを。</h1>
       {/* HERO */}
       <section className="bg-ivory pt-20 md:pt-24">
         <div className="relative mx-auto w-full max-w-[1536px] md:max-lg:flex md:max-lg:flex-col-reverse">
@@ -138,6 +137,24 @@ export default function Home() {
         <p className="text-xs leading-relaxed text-ink/65">{CONSUMER_SERVICE.notice}</p>
       </div>
 
+      <section className="py-14 md:py-20" aria-labelledby="service-overview">
+        <div className="container-narrow text-center">
+          <h1 id="service-overview" className="font-serif text-[clamp(26px,3.5vw,44px)] font-light leading-[1.6]">
+            高齢者・ペットの見守りと、落とし物対策に。<br />
+            電話番号を公開せず、<span className="text-moss">声でつながる</span>QR。
+          </h1>
+          <div className="body-jp mx-auto mt-8 max-w-2xl space-y-4 text-left text-sm md:text-base">
+            <p>つながるQRは、高齢者の外出時の見守り、ペットの迷子、持ち物の紛失に備える、QRコードの連絡サービスです。</p>
+            <p>身につけたQRコードを見つけた方が読み取り、画面の「電話をかける」から、ご家族・飼い主・持ち主へ連絡できます。お互いの電話番号を公開せず、専用アプリなしで通話できます。</p>
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm text-ink/75">
+            <Link href="/use-cases/elderly/" className="link-underline transition-colors hover:text-moss">高齢者の外出時の見守り →</Link>
+            <Link href="/use-cases/pets/" className="link-underline transition-colors hover:text-moss">ペットの迷子対策 →</Link>
+            <Link href="/use-cases/belongings/" className="link-underline transition-colors hover:text-moss">落とし物・忘れ物対策 →</Link>
+          </div>
+        </div>
+      </section>
+
       <HowItWorks />
 
       <UseCases />
@@ -145,6 +162,17 @@ export default function Home() {
       <PriceSection />
 
       <ForBusiness />
+
+      <section className="bg-cream py-20 md:py-28" aria-labelledby="guides-heading">
+        <div className="container-narrow">
+          <p className="eyebrow">GUIDES</p>
+          <h2 id="guides-heading" className="mt-6 font-serif text-3xl font-light leading-relaxed md:text-4xl">ご家族や持ち物に合う、備えの選び方。</h2>
+          <div className="mt-8 grid gap-6 text-sm leading-8 text-moss md:grid-cols-2">
+            <Link href="/column/elderly-monitoring/" className="border-t border-ink/15 py-6 hover:text-ink">高齢者の見守り方法を比較する →</Link>
+            <Link href="/column/lost-item-preparation/" className="border-t border-ink/15 py-6 hover:text-ink">位置確認タグ・QRタグの役割を知る →</Link>
+          </div>
+        </div>
+      </section>
 
       {/* NEWS */}
       <section className="py-24 md:py-40">

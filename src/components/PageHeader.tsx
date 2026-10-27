@@ -2,9 +2,11 @@ type Props = {
   eyebrow: string;
   en: string;
   jp?: string;
+  heading?: string;
 };
 
-export default function PageHeader({ eyebrow, en, jp }: Props) {
+export default function PageHeader({ eyebrow, en, jp, heading }: Props) {
+  const DisplayTag = heading ? "p" : "h1";
   return (
     <section className="relative pt-40 pb-20 md:pt-52 md:pb-32 bg-cream overflow-hidden">
       <div className="absolute inset-0 grain pointer-events-none" />
@@ -21,9 +23,14 @@ export default function PageHeader({ eyebrow, en, jp }: Props) {
       </div>
       <div className="container-wide relative z-10">
         <span className="eyebrow">{eyebrow}</span>
-        <h1 className="display page-header-title mt-8 text-5xl md:text-7xl lg:text-8xl">
+        <DisplayTag className="display page-header-title mt-8 text-5xl md:text-7xl lg:text-8xl">
           {en}
-        </h1>
+        </DisplayTag>
+        {heading && (
+          <h1 className="mt-7 font-serif text-[clamp(24px,3vw,36px)] font-light leading-relaxed">
+            {heading}
+          </h1>
+        )}
         {jp && (
           <p className="mt-6 text-sm md:text-base tracking-[0.25em] text-ink/60">
             {jp}
