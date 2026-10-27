@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { CSSProperties } from "react";
 import styles from "./StatisticsChart.module.css";
 import { pageMetadata } from "@/lib/seo";
@@ -38,6 +39,17 @@ export default function ElderlyPage() {
           <div className="body-jp mt-10 max-w-2xl space-y-4 text-sm text-ink/70 md:text-base">
             <p>いつもの外出が、思いがけない出来事につながることもあります。</p>
             <p>そんな「もしも」に備えて、見つけてくださった方からご家族へ連絡できる手段を用意しておきませんか。</p>
+          </div>
+          <div className="mt-10 md:mt-14">
+            <Image
+              src="/images/municipalities-hero.png"
+              alt="公園で寄り添って歩き、笑顔を交わす高齢女性とご家族"
+              width={1672}
+              height={941}
+              priority
+              sizes="(min-width: 1024px) 960px, 100vw"
+              className="h-auto w-full"
+            />
           </div>
         </div>
       </section>
@@ -95,7 +107,6 @@ export default function ElderlyPage() {
           <h2 id="solution-heading" className="mt-7 font-serif text-[clamp(28px,4.2vw,58px)] font-light leading-[1.8] tracking-tight">見つけてもらえた、その先に。<br /><span className="text-moss">ご家族</span>へつながる手段を。</h2>
           <div className="body-jp mt-8 max-w-3xl space-y-5 text-sm text-ink/70 md:text-base"><p>身につけたQRコードを発見者がスキャンし、「電話をかける」をタップ。<br />お互いの電話番号を公開することなく、ご家族などの登録先と直接通話できます。</p><p>見つけてくださった方の善意を、ご家族への連絡につなぐ。<br />「つながるQR」は、そんな小さな備えを目指しています。</p></div>
           <Link href="/service/" className={`${linkClass} mt-8`}>サービスの仕組みを見る →</Link>
-          <div className="body-jp mt-7 space-y-1 text-xs text-ink/55"><p>※GPSによる位置追跡や、自動検知の機能ではありません。</p><p>※発見後の連絡手段として活用するサービスです。</p></div>
         </div>
       </section>
 
