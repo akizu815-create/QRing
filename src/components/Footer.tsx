@@ -25,6 +25,7 @@ const SITE_LINKS = [
   { en: "INFORMATION", children: [
     { label: "お知らせ", href: "/news/" },
     { label: "よくあるご質問", href: "/faq/" },
+    { label: "見守り・紛失対策の選び方", href: "/column/" },
   ] },
   { en: "FOR BUSINESS", children: [
     { label: "自治体の方へ", href: "/municipalities/" },

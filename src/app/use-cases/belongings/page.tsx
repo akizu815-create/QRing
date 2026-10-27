@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
+import UseCaseFaq from "@/components/UseCaseFaq";
+import { belongingsQuestions, commonQuestions } from "@/content/useCaseFaqs";
 
 export const metadata = pageMetadata("belongings");
 
@@ -27,11 +29,11 @@ export default function BelongingsPage() {
         <div className="container-narrow">
           <p className={eyebrowClass}>LOST &amp; FOUND</p>
           <h1 className="mt-9 font-serif text-[clamp(34px,5vw,64px)] font-light leading-[1.5] tracking-tight">
-            大切なものを、なくしてしまったら。
+            落とし物・忘れ物対策に、<br />持ち主へつながるQRを。
           </h1>
           <div className="body-jp mt-10 max-w-2xl space-y-4 text-sm text-ink/70 md:text-base">
-            <p>バッグや鍵、財布など、毎日使う大切な持ち物。</p>
-            <p>もしも置き忘れてしまったとき、見つけてくれた方から連絡を受けられる手段を用意しておきませんか。</p>
+            <p>鍵や財布、バッグをよくなくす方へ。つながるQRは、持ち物を見つけた方から連絡を受けるための備えです。</p>
+            <p>事前に取り付けたQRコードを発見者が読み取ると、登録先へ電話できます。持ち主も発見者も、自分の電話番号を相手に公開せず通話できます。</p>
           </div>
         </div>
       </section>
@@ -55,7 +57,7 @@ export default function BelongingsPage() {
       <section className="py-24 md:py-36" aria-labelledby="solution-heading">
         <div className="container-narrow">
           <p className={eyebrowClass}>SOLUTION</p>
-          <h2 id="solution-heading" className={`${headingClass} mt-6`}>電話番号を公開せず、<br />持ち主へ直接連絡。</h2>
+          <h2 id="solution-heading" className={`${headingClass} mt-6`}>電話番号を書かずに、<br />持ち物へ連絡手段を。</h2>
           <div className="body-jp mt-8 max-w-2xl space-y-5 text-sm text-ink/70 md:text-base">
             <p>バッグや鍵などに取り付けたQRコードを発見者がスキャンすると、プライバシー電話番号を通じて登録先へ電話できます。</p>
             <p>持ち主も発見者も、お互いの電話番号を公開する必要はありません。</p>
@@ -73,12 +75,24 @@ export default function BelongingsPage() {
         </div>
       </section>
 
+      <section className="py-20 md:py-28" aria-labelledby="preparation-heading">
+        <div className="container-narrow">
+          <p className={eyebrowClass}>PREPARATION</p>
+          <h2 id="preparation-heading" className={`${headingClass} mt-6`}>位置を探す対策と、見つかった後の連絡対策。</h2>
+          <p className="body-jp mt-7 text-sm text-ink/70 md:text-base">持ち物の紛失対策には、置き場所を決めるなどの予防、AirTagなどで位置を確認する方法、拾った方から連絡を受ける方法があります。つながるQRは、発見後の連絡を支援します。</p>
+          <Link href="/column/lost-item-preparation/" className={`${linkClass} mt-8`}>AirTag・find return・QRタグの役割を比較する →</Link>
+        </div>
+      </section>
+
+      <UseCaseFaq id="belongings-questions" title="落とし物対策について、よくあるご質問。" questions={[...belongingsQuestions, ...commonQuestions]} />
+
       <section className="py-24 text-center md:py-36" aria-labelledby="closing-heading">
         <div className="container-narrow">
           <p className={eyebrowClass}>CLOSING</p>
           <h2 id="closing-heading" className={`${headingClass} mt-6`}>小さなQRコードに、大きな安心を。</h2>
           <p className="body-jp mx-auto mt-8 max-w-xl text-sm text-ink/70 md:text-base">「つながるQR」は現在、一般向けサービスの正式リリースに向けて準備中です。</p>
           <Link href="/news/" className={`${linkClass} mt-9`}>最新のお知らせを見る →</Link>
+          <div className="mt-6"><Link href="/price/" className={linkClass}>紛失への備えの料金と利用条件を見る →</Link></div>
         </div>
       </section>
     </>
