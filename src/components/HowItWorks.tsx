@@ -8,39 +8,21 @@ const STEPS = [
   {
     no: "01",
     title: "登録してつける",
-    body: (
-      <>
-        QRコードに連絡先を登録し、
-        <br />
-        持ち物やペット用品などに取り付けます。
-      </>
-    ),
+    body: "QRコードに連絡先を登録し、身近なものに取り付けます。",
     image: "/images/how-it-works-step-01.png",
     imageAlt: "バッグに取り付けられたQRチャームの線画",
   },
   {
     no: "02",
     title: "見つけた人がスキャンする",
-    body: (
-      <>
-        拾った方・見つけた方がQRコードを
-        <br />
-        スマートフォンでスキャンします。
-      </>
-    ),
+    body: "発見した方がQRコードをスキャンします。",
     image: "/images/how-it-works-step-02.png",
     imageAlt: "スマートフォンでQRコードをスキャンする線画",
   },
   {
     no: "03",
-    title: "必要な相手とつながる",
-    body: (
-      <>
-        画面の案内に沿って進むだけで、
-        <br />
-        必要な相手へ連絡できます。
-      </>
-    ),
+    title: "電話をかける",
+    body: "画面の『電話をかける』をタップすると、登録先につながります。",
     image: "/images/how-it-works-step-03.png",
     imageAlt: "スマートフォンから必要な相手へつながる線画",
   },
@@ -201,9 +183,7 @@ export default function HowItWorks() {
           </Reveal>
           <Reveal delay={180}>
             <p className="body-jp mx-auto mt-7 max-w-3xl text-sm leading-[2] text-ink/70 md:text-base">
-              専用アプリは不要。QRコードをきっかけに、
-              <br className="md:hidden" />
-              必要な相手とつながれます。
+              登録から連絡まで、3つのステップ。
             </p>
           </Reveal>
         </div>
