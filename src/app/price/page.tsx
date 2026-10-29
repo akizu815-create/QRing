@@ -133,18 +133,16 @@ export default function PricePage() {
           <div className="mt-12 md:mt-16">
             {SESSION_CASES.map((item) => (
               <article key={item.number} className={`grid gap-y-5 border-t border-ink/15 py-8 md:gap-y-3 md:py-10 ${item.number === "02" ? "md:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] md:gap-x-8" : "md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] md:gap-x-12"}`}>
-                <header className="md:col-start-2 md:row-start-1 md:self-end">
-                  <p className={label}>CASE {item.number}</p>
-                  <h3 id={`session-case-${item.number}`} className="mt-3 scroll-mt-24 font-serif text-2xl font-light leading-relaxed md:scroll-mt-28 md:text-[1.7rem]"><SessionCaseTitle title={item.title} /></h3>
-                </header>
-                <div className="body-jp text-sm md:col-start-2 md:row-start-2 md:text-base">
-                  <p>{item.description}</p>
+                <div className="md:col-start-2 md:row-start-1 md:self-center">
+                  <header>
+                    <p className={label}>CASE {item.number}</p>
+                    <h3 id={`session-case-${item.number}`} className="mt-3 scroll-mt-24 font-serif text-2xl font-light leading-relaxed md:scroll-mt-28 md:text-[1.7rem]"><SessionCaseTitle title={item.title} /></h3>
+                  </header>
+                  <p className="body-jp mt-4 text-sm md:text-base">{item.description}</p>
+                  <p className="mt-5 font-sans text-xl font-medium leading-relaxed tabular-nums text-ink/60 md:text-2xl">{item.price}</p>
                 </div>
-                <div className="md:col-start-2 md:row-start-3 md:self-start">
-                  <p className="font-sans text-xl font-medium leading-relaxed tabular-nums text-ink/60 md:text-2xl">{item.price}</p>
-                </div>
-                <figure className={`mx-auto w-full md:col-start-1 md:row-span-3 md:row-start-1 md:self-center ${item.number === "02" ? "max-w-[520px] overflow-hidden aspect-[5/4]" : "max-w-[420px]"}`}>
-                  <Image src={item.image} alt={item.imageAlt} width={item.imageWidth} height={item.imageHeight} sizes={item.number === "02" ? "(min-width: 768px) 520px, 100vw" : "(min-width: 768px) 420px, 100vw"} className={item.number === "02" ? "h-full w-full object-cover object-center mix-blend-darken" : "h-auto w-full mix-blend-darken"} />
+                <figure className={`mx-auto w-full md:col-start-1 md:row-start-1 md:self-center ${item.number === "02" ? "max-w-[420px] overflow-hidden aspect-[5/4]" : "max-w-[420px]"}`}>
+                  <Image src={item.image} alt={item.imageAlt} width={item.imageWidth} height={item.imageHeight} sizes="(min-width: 768px) 420px, 100vw" className={item.number === "02" ? "h-full w-full object-cover object-center mix-blend-darken" : "h-auto w-full mix-blend-darken"} />
                 </figure>
               </article>
             ))}
