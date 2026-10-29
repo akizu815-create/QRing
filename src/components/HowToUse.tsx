@@ -130,7 +130,7 @@ function FinderPanel() {
     >
       <article className="mx-auto max-w-xl px-0 py-4 text-center md:py-6">
         <p className="body-jp text-left text-sm text-ink/75 md:text-base">
-          QRコードをスキャンし、表示された「電話をかける」を押すと、登録者へ電話をかけられます。
+          QRコードをスキャンし、画面の「電話をかける」をタップすると、登録先につながります。
         </p>
         <div className="relative mx-auto mt-5 aspect-[2/3] w-full max-w-[225px]">
           <Image
