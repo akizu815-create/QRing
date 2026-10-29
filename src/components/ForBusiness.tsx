@@ -26,6 +26,7 @@ const BUSINESS_CARDS: BusinessCardData[] = [
     body: "ブランドやメーカーとともに、つながるQRを活用した新しい製品を。",
     image: "/images/business-collaboration.png",
     imageAlt: "バッグや革小物のコラボレーション製品を相談する様子",
+    href: "/collaboration/",
   },
 ];
 
