@@ -1,98 +1,125 @@
+import Image from "next/image";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
-import UseCaseFaq from "@/components/UseCaseFaq";
-import { belongingsQuestions, commonQuestions } from "@/content/useCaseFaqs";
 
 export const metadata = pageMetadata("belongings");
 
 const linkClass = "link-underline inline-block text-sm leading-7 tracking-[0.08em] text-moss transition-colors duration-300 hover:text-ink";
-const headingClass = "font-serif text-[clamp(26px,3.5vw,44px)] font-light leading-[1.6]";
-const eyebrowClass = "text-[10px] font-medium tracking-[0.3em] text-ink/60";
-const concerns = [
-  { title: "持ち主の連絡先がわからない", body: "落とし物を見つけても、誰に連絡すればよいかわからない。" },
-  { title: "電話番号を公開したくない", body: "持ち物に名前や電話番号を書くことに抵抗がある。" },
-  { title: "拾った方も連絡をためらう", body: "持ち主に知らせたくても、自分の電話番号を伝えることに不安がある。" },
+const headingClass = "font-serif text-[clamp(26px,3vw,40px)] font-light leading-[1.6]";
+const eyebrowClass = "font-serif text-[11px] tracking-[0.24em] text-ink/60";
+const photoMask = {
+  maskImage: "linear-gradient(to right, transparent, black 9%, black 91%, transparent), linear-gradient(to bottom, transparent, black 10%, black 89%, transparent)",
+  WebkitMaskImage: "linear-gradient(to right, transparent, black 9%, black 91%, transparent), linear-gradient(to bottom, transparent, black 10%, black 89%, transparent)",
+  maskComposite: "intersect",
+  WebkitMaskComposite: "source-in",
+};
+const steps = [
+  { title: "QRコードをスキャン", body: "見つけた方が、持ち物のQRコードをスキャンします。", image: "/images/how-it-works-step-02.png", alt: "QRタグをスマートフォンで読み取る操作のイメージ" },
+  { title: "電話をかける", body: "画面の「電話をかける」をタップします。", image: "/images/how-to-app-screen.png", alt: "「電話をかける」ボタンがあるつながるQRの案内画面" },
+  { title: "持ち主へつながる", body: "お互いの電話番号を公開せず、登録先と通話できます。", image: "/images/how-it-works-step-03.png", alt: "電話番号を相手に公開せず通話するイメージ" },
 ];
 const belongings = [
-  { title: "バッグ・リュック", body: "外出先での置き忘れや紛失への備えに" },
-  { title: "鍵・キーケース", body: "小さく、落とした場所がわかりにくい持ち物にも" },
-  { title: "財布・小物", body: "持ち主への連絡手段を用意したいものに" },
-  { title: "スーツケース・旅行用品", body: "宿泊先や移動中の忘れ物への備えに" },
+  { title: "鍵・キーケース", body: "日常的に持ち歩くものに、もしもの連絡手段を。", image: "keys", alt: "鍵とQRタグを付けたキーケースの利用イメージ" },
+  { title: "財布・小物", body: "落としたときに、見つけた方から持ち主へつながる備えに。", image: "wallet", alt: "QRタグを付けた財布の利用イメージ" },
+  { title: "スーツケース・旅行用品", body: "移動や宿泊の際の、紛失・取り違え対策に。", image: "suitcase", alt: "QRタグを付けたスーツケースの利用イメージ" },
 ];
 
 export default function BelongingsPage() {
   return (
     <>
       <PageStructuredData page="belongings" />
-      <section className="bg-cream pb-24 pt-36 md:pb-32 md:pt-48">
-        <div className="container-narrow">
-          <p className={eyebrowClass}>LOST &amp; FOUND</p>
-          <h1 className="mt-9 font-serif text-[clamp(34px,5vw,64px)] font-light leading-[1.5] tracking-tight">
-            落とし物・忘れ物対策に、<br />持ち主へつながるQRを。
-          </h1>
-          <div className="body-jp mt-10 max-w-2xl space-y-4 text-sm text-ink/70 md:text-base">
-            <p>鍵や財布、バッグをよくなくす方へ。つながるQRは、持ち物を見つけた方から連絡を受けるための備えです。</p>
-            <p>事前に取り付けたQRコードを発見者が読み取ると、登録先へ電話できます。持ち主も発見者も、自分の電話番号を相手に公開せず通話できます。</p>
+      <section className="overflow-hidden bg-ivory pb-10 pt-32 md:pb-14 md:pt-40" aria-labelledby="belongings-heading">
+        <div className="container-wide grid items-center gap-4 md:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] md:gap-5">
+          <div className="relative z-10">
+            <p className={eyebrowClass}>LOST &amp; FOUND</p>
+            <h1 id="belongings-heading" className="mt-5 font-serif text-[clamp(30px,3.2vw,46px)] font-light leading-[1.6] tracking-tight">
+              大切な持ち物に、<br /><span className="text-moss">もしもの備え</span>を。
+            </h1>
+            <div className="body-jp mt-6 max-w-xl space-y-3 text-sm text-ink/75 md:text-base">
+              <p>バッグや鍵、財布、旅行用品などを見つけてくださった方から、持ち主へ。</p>
+              <p>つながるQRは、お互いの電話番号を公開せず、声でつながる連絡手段です。</p>
+            </div>
+          </div>
+          <div className="relative -mx-6 aspect-[5/4] md:-mx-8 md:aspect-[6/5]" style={photoMask}>
+            <Image src="/images/belongings/keys.webp" alt="自然光の中に置かれた、鍵とQRタグ付きキーケースの利用イメージ" fill priority sizes="(min-width: 1280px) 660px, (min-width: 768px) 55vw, 100vw" className="object-cover object-[61%_50%]" />
           </div>
         </div>
       </section>
 
-      <section className="py-24 md:py-32" aria-labelledby="concerns-heading">
-        <div className="container-wide">
+      <section className="bg-cream/40 py-14 md:py-20" aria-labelledby="concerns-heading">
+        <div className="container-narrow">
           <p className={eyebrowClass}>CONCERNS</p>
-          <h2 id="concerns-heading" className={`${headingClass} mt-6`}>見つけてもらえても、連絡できないことがある。</h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {concerns.map(({ title, body }, i) => <article key={title} className="bg-cream p-7 md:p-8"><p className="text-xs tracking-[0.2em] text-ink/60">0{i + 1}</p><h3 className="mt-5 font-serif text-2xl font-light leading-relaxed">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}
+          <h2 id="concerns-heading" className={`${headingClass} mt-4`}>持ち物に、<span className="inline-block">電話番号を書きたくない。</span></h2>
+          <div className="body-jp mt-6 max-w-3xl space-y-3 text-sm text-ink/75 md:text-base">
+            <p>落とし物や忘れ物に備えたい。でも、名前や電話番号をそのまま記載することには抵抗がある。</p>
+            <p>そんなときにも、持ち主へつながる連絡手段を用意できます。</p>
           </div>
         </div>
       </section>
 
-      <section className="bg-ivory px-6 py-28 text-center md:py-44" aria-labelledby="key-message">
-        <h2 id="key-message" className="mx-auto max-w-5xl font-serif text-[clamp(28px,4.2vw,58px)] font-light leading-[1.8] tracking-tight">
-          見つけてくれた、その気持ちを。<br /><span className="text-moss">持ち主へつなぐ。</span>
-        </h2>
-      </section>
-
-      <section className="py-24 md:py-36" aria-labelledby="solution-heading">
-        <div className="container-narrow">
+      <section className="py-16 md:py-24" aria-labelledby="solution-heading">
+        <div className="container-wide">
           <p className={eyebrowClass}>SOLUTION</p>
-          <h2 id="solution-heading" className={`${headingClass} mt-6`}>電話番号を書かずに、<br />持ち物へ連絡手段を。</h2>
-          <div className="body-jp mt-8 max-w-2xl space-y-5 text-sm text-ink/70 md:text-base">
-            <p>バッグや鍵などに取り付けたQRコードを発見者がスキャンすると、プライバシー電話番号を通じて登録先へ電話できます。</p>
-            <p>持ち主も発見者も、お互いの電話番号を公開する必要はありません。</p>
+          <h2 id="solution-heading" className={`${headingClass} mt-4`}>見つけてくださった方と、<span className="inline-block">声でつながる。</span></h2>
+          <div className="body-jp mt-6 max-w-3xl space-y-3 text-sm text-ink/75 md:text-base">
+            <p>持ち物に付けたQRコードを発見者がスキャンし、「電話をかける」をタップ。</p>
+            <p>プライバシー電話番号を通じて、持ち主と直接通話できます。</p>
           </div>
-          <p className="body-jp mt-6 text-sm text-ink/65">持ち物を見つけてもらった、その先の連絡を支援します。</p>
-          <Link href="/service/" className={`${linkClass} mt-9`}>サービスの仕組みを見る →</Link>
+          <ol className="mt-10 grid gap-9 md:grid-cols-3 md:gap-10">
+            {steps.map((step, index) => (
+              <li key={step.title} className="relative min-w-0">
+                <div className="relative mx-auto h-44 w-full max-w-sm md:h-48">
+                  <Image src={step.image} alt={step.alt} fill sizes="(min-width: 1280px) 350px, (min-width: 768px) 28vw, 85vw" className="object-contain" />
+                </div>
+                {index < 2 && <span className="absolute -right-7 top-20 hidden text-2xl font-light text-moss/60 md:block" aria-hidden="true">›</span>}
+                <h3 className="mt-5 font-serif text-xl font-light leading-relaxed"><span className="mr-3 text-sm text-moss">0{index + 1}</span>{step.title}</h3>
+                <p className="body-jp mt-3 text-sm text-ink/75">{step.body}</p>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-7 text-[11px] leading-relaxed text-ink/55">※図解・画面は操作のイメージです。図解内のQRコードはご利用いただけません。</p>
+          <p className="body-jp mt-5 text-sm text-ink/75">専用アプリや、発見者による電話番号の手入力は不要です。</p>
+          <div className="mt-5 flex flex-wrap gap-x-7 gap-y-2">
+            <Link href="/service/" className={linkClass}>サービスの仕組みを見る →</Link>
+            <Link href="/faq/" className={linkClass}>よくあるご質問 →</Link>
+          </div>
         </div>
       </section>
 
-      <section className="bg-cream py-24 md:py-32" aria-labelledby="use-cases-heading">
+      <section className="overflow-hidden bg-cream/40 py-14 md:py-20" aria-labelledby="use-cases-heading">
         <div className="container-wide">
           <p className={eyebrowClass}>USE CASES</p>
-          <h2 id="use-cases-heading" className={`${headingClass} mt-6`}>身近な持ち物に、もしもの備えを。</h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">{belongings.map(({ title, body }) => <article key={title} className="border-t border-moss/30 py-7"><h3 className="font-serif text-2xl font-light text-ink">{title}</h3><p className="body-jp mt-5 text-sm text-ink/70">{body}</p></article>)}</div>
+          <h2 id="use-cases-heading" className={`${headingClass} mt-4`}>さまざまな持ち物に。</h2>
+          <p className="body-jp mt-6 text-sm text-ink/75 md:text-base">用途に合わせて、さまざまな持ち物に取り入れることができます。</p>
+          <div className="mt-9 grid gap-9 md:grid-cols-3 md:gap-8">
+            {belongings.map((item) => (
+              <article key={item.title} className="min-w-0">
+                <div className="relative -mx-3 aspect-[5/3]" style={photoMask}>
+                  <Image src={`/images/belongings/${item.image}.webp`} alt={item.alt} fill sizes="(min-width: 1280px) 380px, (min-width: 768px) 30vw, 94vw" className="object-cover" />
+                </div>
+                <h3 className="mt-4 font-serif text-xl font-light leading-relaxed">{item.title}</h3>
+                <p className="body-jp mt-3 text-sm text-ink/75">{item.body}</p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-9 md:flex md:items-baseline md:gap-6">
+            <h3 className="font-serif text-xl font-light leading-relaxed">バッグ・持ち歩き用品</h3>
+            <p className="body-jp mt-2 text-sm text-ink/75 md:mt-0">外出先での忘れ物や落とし物への備えに。</p>
+          </div>
+          <p className="body-jp mt-6 text-xs text-ink/60">※写真は利用イメージです。販売中の商品を示すものではなく、写真内のQRコードはご利用いただけません。</p>
+          <p className="body-jp mt-3 text-xs text-ink/60">事前にQRコードを取り付け、発見後の連絡に備える仕組みです。位置を追跡する機能はなく、返還を保証するものではありません。通話機能は日本国内でのみご利用いただけます。</p>
+          <Link href="/column/lost-item-preparation/" className={`${linkClass} mt-5`}>紛失への備えと、発見後の連絡について →</Link>
         </div>
       </section>
 
-      <section className="py-20 md:py-28" aria-labelledby="preparation-heading">
-        <div className="container-narrow">
-          <p className={eyebrowClass}>PREPARATION</p>
-          <h2 id="preparation-heading" className={`${headingClass} mt-6`}>位置を探す対策と、見つかった後の連絡対策。</h2>
-          <p className="body-jp mt-7 text-sm text-ink/70 md:text-base">持ち物の紛失対策には、置き場所を決めるなどの予防、タグで位置を確認する方法、拾った方から連絡を受ける方法があります。つながるQRは、発見後の連絡を支援します。</p>
-          <Link href="/column/lost-item-preparation/" className={`${linkClass} mt-8`}>位置確認と発見後の連絡、それぞれの役割を見る →</Link>
-        </div>
-      </section>
-
-      <UseCaseFaq id="belongings-questions" title="落とし物対策について、よくあるご質問。" questions={[...belongingsQuestions, ...commonQuestions]} />
-
-      <section className="py-24 text-center md:py-36" aria-labelledby="closing-heading">
+      <section className="py-16 text-center md:py-24" aria-labelledby="closing-heading">
         <div className="container-narrow">
           <p className={eyebrowClass}>CLOSING</p>
-          <h2 id="closing-heading" className={`${headingClass} mt-6`}>小さなQRコードに、大きな安心を。</h2>
-          <p className="body-jp mx-auto mt-8 max-w-xl text-sm text-ink/70 md:text-base">「つながるQR」は現在、一般向けサービスの正式リリースに向けて準備中です。</p>
-          <Link href="/news/" className={`${linkClass} mt-9`}>最新のお知らせを見る →</Link>
-          <div className="mt-6"><Link href="/price/" className={linkClass}>紛失への備えの料金と利用条件を見る →</Link></div>
+          <h2 id="closing-heading" className={`${headingClass} mt-4`}>小さなQRコードに、<span className="inline-block">大きな安心を。</span></h2>
+          <p className="body-jp mx-auto mt-6 max-w-xl text-sm text-ink/75 md:text-base">一般向けの「つながるQR」は、正式リリースに向けて準備中です。</p>
+          <Link href="/news/" className="mt-7 inline-flex items-center gap-4 bg-moss px-7 py-4 text-sm text-ivory transition-colors duration-300 hover:bg-deepmoss">最新のお知らせを見る<span aria-hidden="true">→</span></Link>
+          <p className="mt-5"><Link href="/price/" className={linkClass}>料金を見る →</Link></p>
         </div>
       </section>
     </>
