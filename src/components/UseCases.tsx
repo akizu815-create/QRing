@@ -6,7 +6,7 @@ const USE_CASES = [
   {
     no: "01",
     title: "高齢者の外出時の見守りに",
-    body: "道に迷ったり、連絡先をうまく伝えられなかったりしたときの備えに。見つけた方からご家族へ、電話番号を公開せず連絡できます。",
+    body: "外出先で困っている方を発見した際、ご家族への連絡に。",
     linkLabel: "高齢者の見守り・迷子対策を見る",
     image: "/images/use-case-family.png",
     imageAlt: "緑道を歩きながら会話する高齢女性と家族",
@@ -14,7 +14,7 @@ const USE_CASES = [
   {
     no: "02",
     title: "ペットの迷子対策に",
-    body: "保護した方がQRコードから連絡できるため、飼い主へスムーズに知らせられます。",
+    body: "迷子のペットを保護した方から、飼い主への連絡に。",
     linkLabel: "電話番号を公開しないQR迷子札を見る",
     image: "/images/use-case-pet.png",
     imageAlt: "QRタグを身につけた犬と見つめ合う女性",
@@ -22,7 +22,7 @@ const USE_CASES = [
   {
     no: "03",
     title: "鍵・財布などの落とし物対策に",
-    body: "大切な持ち物を拾った方から、持ち主へ連絡してもらうための備えに。持ち物に電話番号を書かずに、通話で状況を確認できます。",
+    body: "バッグや鍵などを見つけた方から、持ち主への連絡に。",
     linkLabel: "落とし物・忘れ物対策を見る",
     image: "/images/use-case-belongings.png",
     imageAlt: "バッグに取り付けられたQRタグ",
