@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
+import PageHeader from "@/components/PageHeader";
 
 const COMPANY = [
   { k: "会社名", v: "株式会社QRing" },
@@ -21,41 +22,31 @@ export default function AboutPage() {
   return (
     <>
       <PageStructuredData page="about" />
-      <section id="vision" className="scroll-mt-24 bg-ivory pb-20 pt-36 md:pb-32 md:pt-48" aria-labelledby="philosophy-heading">
-        <div className="container-wide">
-          <p className={eyebrow}>PHILOSOPHY<span className="ml-5 tracking-[0.12em] text-ink/55">企業理念</span></p>
-          <h1 id="philosophy-heading" className="mt-9 font-serif text-[clamp(36px,5.2vw,74px)] font-light leading-[1.55] tracking-tight">
-            人の善意を、<br className="sm:hidden" /><span className="text-moss">行動につなぐ。</span>
-          </h1>
-          <div className="mt-12 grid items-start gap-12 md:mt-16 md:grid-cols-12 md:gap-10 lg:gap-20">
-            <div className="body-jp space-y-6 text-sm text-ink/75 md:col-span-7 md:text-base lg:col-span-6">
-              <p>誰かを助けたいと思う気持ちは、私たちの身近なところにあります。</p>
-              <p>でも、その気持ちがあっても、連絡する方法がわからなかったり、不安を感じたりして、行動に移せないことがあります。</p>
-              <p>私たちQRingは、そんな善意と行動の間にある小さな障壁を、技術の力で取り除きたいと考えています。</p>
-              <p>人の優しさを変えるのではなく、その優しさが自然に届くための仕組みをつくる。</p>
-              <p>それが、私たちの目指すことです。</p>
-            </div>
-            <figure className="md:col-span-5 lg:col-span-6">
-              <div className="relative aspect-[4/3] overflow-hidden md:mt-2 lg:aspect-[6/5]">
-                <Image src="/images/about-vision-city-walk.png" alt="木漏れ日の都会の歩道を行き交う人々" fill sizes="(min-width: 1280px) 560px, (min-width: 768px) 42vw, 100vw" className="object-cover object-center" priority />
-              </div>
-            </figure>
-          </div>
-        </div>
-      </section>
+      <div className="[&>section]:pb-12 md:[&>section]:pb-16">
+        <PageHeader eyebrow="— About" en="About" jp="私たちについて" />
+      </div>
 
-      <section id="approach" className="scroll-mt-24 bg-cream py-20 md:py-32" aria-labelledby="approach-heading">
-        <div className="container-wide">
-          <p className={eyebrow}>OUR APPROACH<span className="ml-5 tracking-[0.12em] text-ink/55">私たちの取り組み</span></p>
-          <h2 id="approach-heading" className="mt-8 font-serif text-[clamp(30px,4vw,54px)] font-light leading-[1.6] tracking-tight">小さなQRコードで、<br className="sm:hidden" />大きな<span className="text-moss">安心</span>を。</h2>
-          <div className="body-jp mt-9 max-w-3xl space-y-6 text-sm text-ink/75 md:mt-12 md:text-base">
-            <p>誰かを助けたいと思っても、その気持ちを届けるための手段がなければ、行動に移せないことがあります。</p>
-            <p>私たちが開発を進めている「つながるQR」は、そんな善意と行動の間をつなぐ、小さなツールです。</p>
-            <p>お互いの電話番号を公開せずに連絡できる仕組みによって、助けたいという気持ちを、安心して行動に移せるように。</p>
-            <p>小さなQRコードが、人と人とのつながりを支える存在になることを目指しています。</p>
-            <div className="pt-3"><Link href="/service/" className="link-underline inline-block text-sm leading-7 text-moss transition-colors duration-300 hover:text-ink">つながるQRについて詳しく見る →</Link></div>
-            <p className="text-xs text-ink/55">「つながるQR」は正式リリースに向けて準備中です。</p>
+      <section id="vision" className="scroll-mt-24 bg-ivory pb-20 pt-12 md:pb-24 md:pt-16" aria-labelledby="philosophy-heading">
+        <div className="container-wide grid items-center gap-12 md:grid-cols-12 md:gap-10 lg:gap-20">
+          <div className="md:col-span-6">
+            <p className={eyebrow}>PHILOSOPHY<span className="ml-5 tracking-[0.12em] text-ink/55">企業理念</span></p>
+            <h2 id="philosophy-heading" className="mt-8 font-serif text-[clamp(36px,5.2vw,74px)] font-light leading-[1.55] tracking-tight">
+              人の善意を、<br /><span className="text-moss">行動につなぐ。</span>
+            </h2>
+            <div className="body-jp mt-8 space-y-5 text-sm text-ink/75 md:mt-10 md:text-base">
+              <p>誰かを助けたいと思う気持ちは、私たちの身近なところにあります。</p>
+              <p>その気持ちを、安心して行動に移せるように。</p>
+              <p>QRingは、人と人をつなぐ仕組みを、技術の力でつくっていきます。</p>
+            </div>
+            <div id="approach" className="scroll-mt-24 mt-7">
+              <Link href="/service/" className="link-underline inline-block text-sm leading-7 text-ink/75 transition-colors duration-300 hover:text-moss">つながるQRについて詳しく見る →</Link>
+            </div>
           </div>
+          <figure className="md:col-span-6">
+            <div className="relative aspect-[4/3] overflow-hidden lg:aspect-[6/5]">
+              <Image src="/images/about-vision-city-walk.png" alt="木漏れ日の都会の歩道を行き交う人々" fill sizes="(min-width: 1280px) 560px, (min-width: 768px) 42vw, 100vw" className="object-cover object-center" priority />
+            </div>
+          </figure>
         </div>
       </section>
 
@@ -63,10 +54,9 @@ export default function AboutPage() {
         <div className="container-wide grid gap-9 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-4"><h2 id="message-heading" className="text-sm font-medium leading-8 tracking-[0.08em]"><span className="text-ink/60">MESSAGE</span><span className="mx-3 text-ink/30">｜</span>代表挨拶</h2></div>
           <div className="body-jp space-y-6 text-sm text-ink/75 md:col-span-8 md:max-w-2xl md:text-base">
-            <p>誰かの力になりたいと思っていても、不安やためらいから、一歩を踏み出せないことがあります。</p>
-            <p>技術だけで、人を助けることはできません。人を動かすのは、一人ひとりの中にある優しさや思いやりです。</p>
-            <p>だからこそ、その気持ちを信じ、安心して行動に移せる仕組みをつくっていきたいと考えています。</p>
-            <p>誰かを思う気持ちが、誰かの支えになる。そのつながりを、これからも大切に育ててまいります。</p>
+            <p>技術だけで、人を助けることはできません。</p>
+            <p>人を動かすのは、一人ひとりの中にある優しさや思いやりだと考えています。</p>
+            <p>私たちは、その気持ちが自然に届く仕組みをつくり、人と人とのつながりを大切に育ててまいります。</p>
             <div className="pt-3 text-right text-sm leading-loose"><p>株式会社QRing</p><p>代表取締役 木津 愛子</p></div>
           </div>
         </div>
