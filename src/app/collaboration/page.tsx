@@ -33,9 +33,9 @@ export default function CollaborationPage() {
     <>
       <PageStructuredData page="collaboration" />
 
-      <section className="bg-ivory pb-14 pt-36 md:pb-20 md:pt-44" aria-labelledby="collaboration-heading">
-        <div className="container-wide grid items-center gap-9 md:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] md:gap-10 lg:gap-12">
-          <div>
+      <section className="overflow-hidden bg-ivory pb-10 pt-36 md:pb-16 md:pt-44" aria-labelledby="collaboration-heading">
+        <div className="container-wide grid items-center gap-5 md:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] md:gap-10 lg:gap-12">
+          <div className="relative z-10">
             <p className={label}>COLLABORATION</p>
             <h1 id="collaboration-heading" className="mt-5 font-serif text-[clamp(26px,3vw,40px)] font-light leading-[1.65] tracking-tight">
               いつもの商品に、<br />新しい<span className="text-moss">安心</span>という価値を。
@@ -46,8 +46,16 @@ export default function CollaborationPage() {
             </div>
             <div className="mt-7"><ContactButton>コラボについて相談する</ContactButton></div>
           </div>
-          <div className="relative aspect-[9/4] w-full overflow-hidden">
-            <Image src="/images/collaboration/hero.webp" alt="QRタグを付けたバッグとキーホルダーの協業商品イメージ" fill priority sizes="(min-width: 1280px) 590px, (min-width: 768px) 50vw, 100vw" className="object-cover" />
+          <div
+            className="relative -mx-6 aspect-[9/4] w-[calc(100%+3rem)] md:-mx-10 md:w-[calc(100%+5rem)]"
+            style={{
+              maskImage: "linear-gradient(to right, transparent, black 12%, black 88%, transparent), linear-gradient(to bottom, transparent, black 14%, black 82%, transparent)",
+              WebkitMaskImage: "linear-gradient(to right, transparent, black 12%, black 88%, transparent), linear-gradient(to bottom, transparent, black 14%, black 82%, transparent)",
+              maskComposite: "intersect",
+              WebkitMaskComposite: "source-in",
+            }}
+          >
+            <Image src="/images/collaboration/hero.webp" alt="QRタグを付けたバッグとキーホルダーの協業商品イメージ" fill priority sizes="(min-width: 1280px) 670px, (min-width: 768px) 56vw, 100vw" className="object-cover" />
           </div>
         </div>
       </section>
