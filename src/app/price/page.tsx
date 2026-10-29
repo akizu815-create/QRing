@@ -2,6 +2,7 @@ import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
 import Image from "next/image";
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import styles from "./CallFlow.module.css";
 
@@ -71,10 +72,8 @@ const SESSION_CASES = [
     imageAlt: "同じ相手との通話・再通話・折り返しを表す線画",
     imageWidth: 1774,
     imageHeight: 887,
-    description: "同じ相手との再通話や折り返しは、1時間以内なら追加のサービス利用料はかかりません。",
-    detail: "",
+    description: "同じ相手との再通話・折り返しは、1時間以内なら追加のサービス利用料はかかりません。",
     price: "1セッション 880円（税込）",
-    note: "1回の通話は最大3分です。1時間以内であれば、同じ相手との再通話や折り返しが可能です。",
   },
   {
     number: "02",
@@ -83,10 +82,8 @@ const SESSION_CASES = [
     imageAlt: "登録者と異なる2人の発見者がそれぞれ通話する線画",
     imageWidth: 887,
     imageHeight: 887,
-    description: "発見者が変わると、別のセッションになります。2人との通話がそれぞれ成立した場合は、合計2セッションです。",
-    detail: "",
+    description: "発見者が異なる場合は、それぞれ別のセッションとして計算されます。",
     price: "880円 × 2セッション ＝ 1,760円（税込）",
-    note: "発見者が異なる場合は、1時間以内であってもそれぞれ別のセッションになります。合計1,760円は、両方のセッションで課金対象となる通話があった場合の例です。通話時間が5秒未満の場合、サービス利用料は発生しません。",
   },
   {
     number: "03",
@@ -95,10 +92,8 @@ const SESSION_CASES = [
     imageAlt: "1時間経過後にQRコードを再スキャンする様子の線画",
     imageWidth: 1774,
     imageHeight: 887,
-    description: "1時間が経過すると、そのセッションの電話番号は使えなくなります。もう一度通話するには、QRコードを再スキャンする必要があります。",
-    detail: "再スキャン後に通話が成立すると、同じ相手でも新しいセッションとして880円（税込）が発生します。",
+    description: "QRコードを再スキャンして新たに通話すると、別のセッションになります。",
     price: "880円 × 2セッション ＝ 1,760円（税込）",
-    note: "合計1,760円は、最初と再スキャン後の両方のセッションで課金対象となる通話があった場合の例です。通話時間が5秒未満の場合、サービス利用料は発生しません。",
   },
 ] as const;
 
@@ -112,8 +107,7 @@ export default function PricePage() {
 
       <section className="py-24 md:py-32" aria-labelledby="pricing-title">
         <div className="container-narrow">
-          <SectionHeading id="pricing-title" en="PRICING">料金のご案内</SectionHeading>
-          <p className="font-serif text-xl leading-relaxed md:text-2xl">必要なときだけ、使った分だけ。</p>
+          <SectionHeading id="pricing-title" en="PRICE">必要なときだけ、使った分だけ。</SectionHeading>
           <p className="mt-4 text-xs leading-relaxed text-ink/65">※{CONSUMER_SERVICE.notice}</p>
           <div className="mt-12 border-y border-ink/15 md:mt-16">
             <div className="grid gap-7 py-9 sm:grid-cols-2 md:gap-12">
@@ -123,13 +117,10 @@ export default function PricePage() {
             <div className="border-t border-ink/15 py-10 md:py-12">
               <p className="text-sm text-ink/70">つながるQRサービス利用料</p>
               <p className="mt-4 font-serif text-[clamp(3.5rem,9vw,6rem)] font-light leading-none text-moss">880<span className="ml-2 text-[0.45em] text-ink">円（税込）</span></p>
-              <p className="mt-4 text-sm font-medium text-ink">1セッションあたり・通話成立時のみ</p>
-            </div>
-            <div className="flex flex-wrap items-baseline justify-between gap-3 border-t border-ink/15 py-7">
-              <p className="text-sm text-ink/70">通常の電話料金</p><p className="text-xl font-medium text-ink">別途、発信した方が負担</p>
+              <p className="mt-4 text-sm font-medium text-ink">1セッションあたり・通話成立時・後払い</p>
             </div>
           </div>
-          <p className="body-jp mt-8 text-sm md:text-base">QRコードをスキャンしただけでは、つながるQRのサービス利用料は発生しません。通話が成立した場合に、登録者に料金が発生します。</p>
+          <p id="charge-conditions" className="body-jp mt-8 scroll-mt-28 text-sm md:text-base">QRコードをスキャンするだけでは、サービス利用料は発生しません。通話が成立した場合、登録者に1セッション880円（税込）が発生します。</p>
           <p className="mt-3 text-xs leading-relaxed text-ink/65">※通話時間が5秒未満の場合、サービス利用料は発生しません。</p>
         </div>
       </section>
@@ -137,22 +128,20 @@ export default function PricePage() {
       <section className="bg-cream py-24 md:py-32" aria-labelledby="session-title">
         <div className="container-narrow">
           <SectionHeading id="session-title" en="SESSION">セッションとは？</SectionHeading>
-          <p className="body-jp max-w-3xl text-sm md:text-base">つながるQRでは、同じ相手との1時間以内の通話を「1セッション」と呼びます。1回の通話は最大3分です。</p>
-          <p className="mt-5 text-sm font-medium leading-relaxed md:text-base">サービス利用料は、通話が成立した1セッションにつき<span className="font-sans font-medium tabular-nums text-moss">880円（税込）</span>です。</p>
+          <p className="body-jp max-w-3xl text-sm md:text-base">同じ相手との1時間以内の通話を、1セッションとします。1回の通話は最大3分です。</p>
+          <p className="mt-4 text-xs leading-relaxed text-ink/65 md:text-sm">1時間はQRコードのスキャン時から数えます。1時間を過ぎると、そのセッションのプライバシー電話番号は利用できなくなります。</p>
           <div className="mt-12 md:mt-16">
             {SESSION_CASES.map((item) => (
-              <article key={item.number} className={`grid gap-y-5 border-t border-ink/15 py-10 md:gap-y-4 md:py-14 ${item.number === "02" ? "md:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] md:gap-x-8" : "md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] md:gap-x-12"}`}>
+              <article key={item.number} className={`grid gap-y-5 border-t border-ink/15 py-8 md:gap-y-3 md:py-10 ${item.number === "02" ? "md:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] md:gap-x-8" : "md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] md:gap-x-12"}`}>
                 <header className="md:col-start-2 md:row-start-1 md:self-end">
                   <p className={label}>CASE {item.number}</p>
                   <h3 id={`session-case-${item.number}`} className="mt-3 scroll-mt-24 font-serif text-2xl font-light leading-relaxed md:scroll-mt-28 md:text-[1.7rem]"><SessionCaseTitle title={item.title} /></h3>
                 </header>
                 <div className="body-jp text-sm md:col-start-2 md:row-start-2 md:text-base">
                   <p>{item.description}</p>
-                  {item.detail && <p className="mt-3">{item.detail}</p>}
                 </div>
                 <div className="md:col-start-2 md:row-start-3 md:self-start">
                   <p className="font-sans text-xl font-medium leading-relaxed tabular-nums text-ink/60 md:text-2xl">{item.price}</p>
-                  <p className="mt-3 text-xs leading-relaxed text-ink/70 md:text-sm">※{item.note}</p>
                 </div>
                 <figure className={`mx-auto w-full md:col-start-1 md:row-span-3 md:row-start-1 md:self-center ${item.number === "02" ? "max-w-[520px] overflow-hidden aspect-[5/4]" : "max-w-[420px]"}`}>
                   <Image src={item.image} alt={item.imageAlt} width={item.imageWidth} height={item.imageHeight} sizes={item.number === "02" ? "(min-width: 768px) 520px, 100vw" : "(min-width: 768px) 420px, 100vw"} className={item.number === "02" ? "h-full w-full object-cover object-center mix-blend-darken" : "h-auto w-full mix-blend-darken"} />
@@ -160,10 +149,9 @@ export default function PricePage() {
               </article>
             ))}
           </div>
-          <div className="space-y-2 border-t border-ink/15 pt-8 text-xs leading-relaxed text-ink/75 md:text-sm">
-            <p>※QRコードをスキャンしただけではサービス利用料は発生しません。通話が成立したセッションごとに880円（税込）が発生します。</p>
-            <p>※通話時間が5秒未満の場合、サービス利用料は発生しません。</p>
-            <p>※通常の電話料金は別途かかります。発信した方の通信会社・料金プランに応じた通話料が発生します。</p>
+          <div className="space-y-2 border-t border-ink/15 pt-6 text-xs leading-relaxed text-ink/75 md:text-sm">
+            <p>※各ケースには、基本料金欄の<Link href="#charge-conditions" className="underline underline-offset-4">課金・免除条件</Link>が適用されます。</p>
+            <p>※CASE 02・03の1,760円は、2つのセッションでそれぞれ課金対象の通話が成立した場合の例です。</p>
           </div>
         </div>
       </section>
@@ -190,7 +178,7 @@ export default function PricePage() {
                   <CallFlowArrow />
                   <div className={`${styles.chargeCard} ${styles.callCharge}`}>
                     <h4 className={styles.chargeTitle}>通常の電話料金</h4>
-                    <p>発信者の通信会社・料金プランに応じて発生します。</p>
+                    <p>発見者が発信した場合の通話料です。</p>
                     <p className={`${styles.payer} ${styles.callerPayer}`}>発信者負担</p>
                   </div>
                 </div>
@@ -208,7 +196,7 @@ export default function PricePage() {
                   <CallFlowArrow />
                   <div className={`${styles.chargeCard} ${styles.serviceCharge}`}>
                     <h4 className={styles.chargeTitle}>つながるQR<br />サービス利用料</h4>
-                    <p>通話が成立した場合、1セッションにつき<span className="font-sans font-semibold tabular-nums">880円（税込）</span>が発生します。</p>
+                    <p>課金対象のセッションについて発生します。</p>
                     <p className={`${styles.payer} ${styles.registrantPayer}`}>登録者負担</p>
                   </div>
                 </div>
@@ -229,43 +217,23 @@ export default function PricePage() {
               </div>
             </div>
           </div>
-
-          <ul className="mt-8 space-y-3 rounded-2xl bg-white/50 px-6 py-7 text-sm leading-relaxed text-ink/80 md:px-10 md:text-base">
-            <li>・QRコードをスキャンしただけでは、サービス利用料は発生しません。</li>
-            <li>・発見者が電話をかける際の通常の電話料金は、発見者の負担です。</li>
-            <li>・通話が成立した場合、登録者に1セッション<span className="font-sans font-medium tabular-nums">880円（税込）</span>のサービス利用料が発生します。</li>
-            <li>・登録者が折り返す場合、通常の電話料金は登録者の負担です。</li>
-          </ul>
-          <p className="mt-3 text-xs leading-relaxed text-ink/65">※通話時間が5秒未満の場合、サービス利用料は発生しません。通常の電話料金は、発信者に別途発生します。</p>
         </div>
       </section>
 
       <section className="bg-cream py-24 md:py-32" aria-labelledby="payment-title">
         <div className="container-narrow">
-          <SectionHeading id="payment-title" en="PAYMENT">お支払いについて</SectionHeading>
-          <p className="body-jp text-sm md:text-base">つながるQRのサービス利用料が発生した場合、登録者へSMSとメールでお支払いをご案内します。案内に記載された決済ページから、クレジットカードでお支払いください。</p>
+          <SectionHeading id="payment-title" en="PAYMENT & INFORMATION">お支払いについて</SectionHeading>
+          <p className="body-jp text-sm md:text-base">サービス利用料が発生した場合、登録者へSMSとメールでお支払いをご案内します。案内に記載された決済ページから、クレジットカードでお支払いください。</p>
           <p className="mt-6 border-l-2 border-moss pl-4 text-sm leading-relaxed md:text-base">お支払い期限：サービス利用料が発生した通話日の2日後、23時59分まで（日本時間）</p>
           <ol className="mt-12 grid gap-7 border-y border-ink/15 py-8 md:grid-cols-3 md:gap-10">
             {["通話成立", "SMS・メールでお支払い案内", "クレジットカードで決済"].map((step, i) => <li key={step}><span className={label}>STEP 0{i + 1}</span><p className="mt-3 font-serif text-lg">{step}</p></li>)}
           </ol>
-          <p className="mt-6 text-sm text-ink/75">QRコードのスキャンだけでは請求は発生しません。</p>
-        </div>
-      </section>
-
-      <section className="py-24 md:py-32" aria-labelledby="notes-title">
-        <div className="container-narrow">
-          <SectionHeading id="notes-title" en="IMPORTANT NOTES">料金に関するご案内</SectionHeading>
-          <ul className="space-y-4 text-sm leading-loose text-ink/80 md:text-base">
-            <li>つながるQRのサービス利用料は、通話が成立した場合に登録者に発生します。<p className="mt-2 text-xs leading-relaxed text-ink/65">※通話時間が5秒未満の場合、サービス利用料は発生しません。</p></li>
-            <li>同一セッション内の再通話・折り返しによる、つながるQRのサービス利用料の追加請求はありません。</li>
-            <li>通常の電話料金は、電話を発信した人に別途かかります。</li>
-            <li>通常の通話料は各通信会社・料金プランにより異なります。</li>
-            <li>QRタグ・シールなどの専用アイテム代金は、サービス利用料には含まれません。</li>
-            <li>本サービスの通話機能は、日本国内でのみご利用いただけます。</li>
-          </ul>
-          <div className="mt-14 border-t border-ink/15 pt-10">
-            <p className="font-serif text-xl">ご不明な点はお問い合わせください</p>
-            <a href="https://axb.qring.jp/contact" target="_blank" rel="noopener noreferrer" className="btn-primary mt-7 normal-case">お問い合わせ →</a>
+          <div id="notes-title" className="mt-8 scroll-mt-28 text-xs leading-relaxed text-ink/65 md:text-sm">
+            <ul className="space-y-3">
+              <li>QRタグ・シールなどの専用アイテム代金は、サービス利用料には含まれません。</li>
+              <li>本サービスの通話機能は、日本国内でのみご利用いただけます。</li>
+            </ul>
+            <p className="mt-5">利用料金やお支払いに関するご質問は、<a href="https://axb.qring.jp/contact" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 transition-colors hover:text-moss">お問い合わせ窓口</a>へご連絡ください。</p>
           </div>
         </div>
       </section>
