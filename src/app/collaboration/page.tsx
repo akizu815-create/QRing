@@ -55,7 +55,7 @@ export default function CollaborationPage() {
       <section className="bg-white py-14 md:py-20" aria-labelledby="product-ideas-heading">
         <div className="container-wide">
           <p className={label}>PRODUCT IDEAS</p>
-          <h2 id="product-ideas-heading" className={sectionHeading}>さまざまな商品に、つながる仕組みを。</h2>
+          <h2 id="product-ideas-heading" className={sectionHeading}>さまざまな商品に、<span className="inline-block">つながる仕組みを。</span></h2>
           <p className="body-jp mt-4 text-sm text-ink/75">商品の用途やデザインに合わせて、つながるQRを取り入れることができます。</p>
           <div className="mt-8 grid grid-cols-1 gap-x-6 gap-y-9 sm:grid-cols-2 lg:grid-cols-4">
             {PRODUCTS.map((product) => (
@@ -76,7 +76,7 @@ export default function CollaborationPage() {
       <section className="bg-ivory py-14 md:py-20" aria-labelledby="partnership-plans-heading">
         <div className="container-wide">
           <p className={label}>PARTNERSHIP PLANS</p>
-          <h2 id="partnership-plans-heading" className={sectionHeading}>ご要望に合わせた、2つの協業プラン。</h2>
+          <h2 id="partnership-plans-heading" className={sectionHeading}>ご要望に合わせた、<span className="inline-block">2つの協業プラン。</span></h2>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {PLANS.map((plan) => (
               <article key={plan.en} className="flex h-full flex-col border border-ink/10 bg-white/40 p-7 md:p-9">
@@ -94,7 +94,7 @@ export default function CollaborationPage() {
       <section className="bg-cream py-14 md:py-20" aria-labelledby="collaboration-contact-heading">
         <div className="container-narrow text-center">
           <p className={label}>CONTACT</p>
-          <h2 id="collaboration-contact-heading" className={sectionHeading}>新しい商品づくりを、ご一緒に。</h2>
+          <h2 id="collaboration-contact-heading" className={sectionHeading}>新しい商品づくりを、<span className="inline-block">ご一緒に。</span></h2>
           <div className="body-jp mt-5 space-y-2 text-sm text-ink/75">
             <p>商品アイデアの段階から、お気軽にご相談ください。</p>
             <p>貴社のご要望に合わせた協業の形を検討します。</p>
