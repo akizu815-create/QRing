@@ -40,7 +40,7 @@ export default function ContactPage() {
                     For Business
                   </p>
                   <p className="body-jp text-sm">
-                    法人プラン・API連携・大量導入・ホワイトラベル展開のご相談
+                    法人・自治体での導入、実証実験、複数のQRコードのご利用など、お気軽にご相談ください。
                   </p>
                 </div>
                 <div>
