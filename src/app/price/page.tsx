@@ -223,6 +223,7 @@ export default function PricePage() {
           <SectionHeading id="payment-title" en="PAYMENT & INFORMATION">お支払いについて</SectionHeading>
           <p className="body-jp text-sm md:text-base">サービス利用料が発生した場合、登録者へSMSとメールでお支払いをご案内します。案内に記載された決済ページから、クレジットカードでお支払いください。</p>
           <p className="mt-6 border-l-2 border-moss pl-4 text-sm leading-relaxed md:text-base">お支払い期限：サービス利用料が発生した通話日の2日後、23時59分まで（日本時間）</p>
+          <p className="mt-3 text-xs leading-relaxed text-ink/65 md:text-sm">お支払い期限を過ぎた未払いが1回でも発生した場合、サービスを停止します。</p>
           <ol className="mt-12 grid gap-7 border-y border-ink/15 py-8 md:grid-cols-3 md:gap-10">
             {["通話成立", "SMS・メールでお支払い案内", "クレジットカードで決済"].map((step, i) => <li key={step}><span className={label}>STEP 0{i + 1}</span><p className="mt-3 font-serif text-lg">{step}</p></li>)}
           </ol>
