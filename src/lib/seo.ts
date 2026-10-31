@@ -74,11 +74,6 @@ export const SEO_PAGES = {
     "title": "企業向けコラボ・カスタム商品開発｜つながるQR｜QRing",
     "description": "つながるQRをバッグ、キーホルダー、ペット用品などの商品に組み合わせる企業向け協業のご案内。コラボプランとカスタムプランをご紹介します。"
   },
-  "contact": {
-    "path": "/contact/",
-    "title": "お問い合わせ｜株式会社QRing",
-    "description": "株式会社QRingへのお問い合わせ、つながるQRのサービスや法人・自治体でのご利用に関するご相談窓口です。"
-  },
   "terms": {
     "path": "/terms/",
     "title": "つながるQR 利用規約｜株式会社QRing",

@@ -7,8 +7,9 @@ from pathlib import Path
 from urllib.parse import urlsplit, unquote
 from xml.etree import ElementTree as ET
 
-ROUTES = ['', 'about', 'service', 'price', 'news', 'faq', 'municipalities', 'collaboration', 'contact', 'terms', 'privacy', 'law', 'use-cases/elderly', 'use-cases/pets', 'use-cases/belongings', 'column', 'column/elderly-monitoring', 'column/lost-item-preparation']
+ROUTES = ['', 'about', 'service', 'price', 'news', 'faq', 'municipalities', 'collaboration', 'terms', 'privacy', 'law', 'use-cases/elderly', 'use-cases/pets', 'use-cases/belongings', 'column', 'column/elderly-monitoring', 'column/lost-item-preparation']
 BASE = 'https://www.qring.jp'
+CONTACT_URL = 'https://axb.qring.jp/contact'
 
 class Page(HTMLParser):
     def __init__(self, html):
@@ -16,6 +17,8 @@ class Page(HTMLParser):
         self.titles, self.descriptions, self.canonicals, self.robots = [], [], [], []
         self.headings, self.images, self.links, self.ids, self.schemas = [], [], [], set(), []
         self.main_text = []
+        self.in_head = False
+        self.refreshes, self.forms = [], []
         self.in_main = self.in_title = False
         self.heading = None
         self.script = None
@@ -24,10 +27,14 @@ class Page(HTMLParser):
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if a.get('id'): self.ids.add(a['id'])
+        if tag == 'head': self.in_head = True
+        if tag == 'form': self.forms.append(a)
         if tag == 'main': self.in_main = True
         if tag == 'title': self.in_title = True; self.titles.append('')
         if tag == 'meta':
             name = a.get('name', '').lower()
+            if a.get('http-equiv', '').lower() == 'refresh':
+                self.refreshes.append({'content': a.get('content'), 'inHead': self.in_head})
             if name == 'description': self.descriptions.append(a.get('content', ''))
             if name == 'robots': self.robots.append(a.get('content', ''))
         if tag == 'link' and a.get('rel') == 'canonical': self.canonicals.append(a.get('href'))
@@ -37,6 +44,7 @@ class Page(HTMLParser):
         if self.in_main and re.fullmatch('h[1-6]', tag):
             self.heading = {'level': int(tag[1]), 'text': ''}; self.headings.append(self.heading)
     def handle_endtag(self, tag):
+        if tag == 'head': self.in_head = False
         if tag == 'main': self.in_main = False
         if tag == 'title': self.in_title = False
         if self.heading and tag == 'h' + str(self.heading['level']): self.heading = None
@@ -52,15 +60,15 @@ class Page(HTMLParser):
 
 def audit(root):
     pages = {}
-    for route in ROUTES + ['shop']:
+    for route in ROUTES + ['contact', 'shop']:
         file = root / route / 'index.html'
         p = Page(file.read_text())
         pages[route] = {'title': p.titles, 'description': p.descriptions, 'canonical': p.canonicals,
-            'robots': p.robots, 'headings': p.headings, 'images': p.images,
+            'robots': p.robots, 'refreshes': p.refreshes, 'forms': p.forms, 'headings': p.headings, 'images': p.images,
             'structuredData': p.schemas, 'initialMainText': ' '.join(p.main_text), 'htmlBytes': file.stat().st_size}
     broken = []
     cache = {}
-    for route in ROUTES:
+    for route in ROUTES + ['contact']:
         p = Page((root / route / 'index.html').read_text())
         for href in set(p.links):
             u = urlsplit(href)
@@ -112,6 +120,14 @@ if __name__ == '__main__':
         if len(all_ids) != len(set(all_ids)): errors.append('duplicate schema entity ids across pages')
         if len({tuple(p['title']) for r,p in result['pages'].items() if r in ROUTES}) != len(ROUTES): errors.append('duplicate page titles')
         if not any('noindex' in x for x in result['pages']['shop']['robots']): errors.append('old shop route must remain noindex')
+        contact = result['pages']['contact']
+        if contact['canonical'] != [CONTACT_URL]: errors.append('contact: redirect canonical')
+        if contact['refreshes'] != [{'content': '0;url=' + CONTACT_URL, 'inHead': True}]: errors.append('contact: zero-second refresh must appear once in head')
+        if contact['forms'] or contact['structuredData']: errors.append('contact: obsolete form or schema')
+        contact_html = (Path(args.out) / 'contact/index.html').read_text()
+        if 'formspree' in contact_html.lower(): errors.append('contact: obsolete Formspree endpoint')
+        if CONTACT_URL not in Page(contact_html).links: errors.append('contact: manual fallback link missing')
+        if sum(h['level'] == 1 for h in contact['headings']) != 1: errors.append('contact: H1 count')
         if not result['has404']: errors.append('404.html missing')
     print(json.dumps({'publicPages': len(ROUTES), 'brokenInternalLinks': result['brokenInternalLinks'], 'errors': errors}, ensure_ascii=False))
     raise SystemExit(1 if errors else 0)
