@@ -1,5 +1,7 @@
 # お問い合わせ窓口統一：事前確認と301設定案（切り替え保留）
 
+> 追加調査（2026年10月31日）：DNS管理元と接続先が判明しました。末尾の「追加調査：DNS確定結果と転送方式の選定」を最新の結論としてください。フォーム・本番設定は未変更です。
+
 確認日：2026年10月31日。基準：`4741c16e95e5a591f3cab8528c265f2ea1589837`。
 
 ## 現在の判定
@@ -158,3 +160,103 @@ Cloudflareプロキシ配下でなければ、現在の配信・DNS管理者とH
 - Next.js 15 静的出力の制限：https://nextjs.org/docs/15/app/guides/static-exports
 - Cloudflare Pages redirects：https://developers.cloudflare.com/pages/configuration/redirects/
 - Cloudflare Single Redirects：https://developers.cloudflare.com/rules/url-forwarding/single-redirects/settings/
+
+
+## 追加調査：DNS確定結果と転送方式の選定
+
+### 1. 新フォームの送信先・通知先
+
+公開HTML、コアJS `/assets/index-CMuWCVyS.js`、フォームJS `/assets/Inquiry-wlpVkjwM.js` を再確認した。
+
+| 項目 | 追加確認結果 |
+|---|---|
+| フォーム画面 | `https://axb.qring.jp/contact`、GETはHTTP 200 |
+| API送信先 | 公開コードのbaseURL `/prod-api` と `/contact/sendEmail` から、`POST https://axb.qring.jp/prod-api/contact/sendEmail` と特定。POSTは未実行 |
+| 成功の判定場所 | 応答の `code === 200` で「送信完了」モーダルを表示する実装 |
+| 管理者宛のTo/Cc/Bcc | バックエンド設定を参照できず未特定 |
+| 利用者向け確認メール | フロントエンドには確認メールを送った旨の表示があるが、実際の配信・送信先の決定処理は未確認 |
+| 管理権限 | 公式サイトリポジトリは参照・更新可能。接続済みコード検索で新フォームのバックエンド処理は見つからなかった。バックエンド配備環境・メール管理・Xserverの管理設定を閲覧できる接続は確認できていない |
+| 実送信 | 今回の追加指示に従い未実施。送信先・通知先・保存データも未変更 |
+
+画面に表示された会社のメールアドレス、SMTPの送信アカウント、DNSのMXだけから、問い合わせの通知先を推測してはいけない。通知先はサーバー側で決まるためである。
+
+**通知先特定のために必要な画面・確認手順**
+
+1. axbアプリの管理者が、稼働中のバックエンドのリポジトリ／配備管理画面を開く。対象は公式サイトのNext.jsリポジトリではない。
+2. ルート `/contact/sendEmail` を処理するコードを検索し、管理者通知と利用者確認メールの処理を分けて追う。管理者通知のTo/Cc/Bccが固定値、設定キー、DBのどこから取得されるか特定する。
+3. 本番の配備管理画面にある環境変数・設定ファイル・アプリ設定管理を参照し、そのキーの**本番適用値**と処理が利用する値を照合する。画面名・URLはバックエンド管理元が未特定のため断定できない。SMTPパスワードやAPIキーの共有・公開は不要。
+4. メール配信サービスの管理画面またはSMTP送信ログで、既存の問い合わせの配信日時・Message ID・宛先・配信結果を閲覧し、上記To/Cc/Bccと一致するか確認する。DNSの管理元がXserverでも、メール配信元がXserverとは限らない。
+5. 通知先が会社の意図した窓口か管理責任者と照合する。必要な実送信テストは別途許可を得てから行う。今回、受信確認のための問い合わせ送信はしていない。
+
+### 2. DNS・本番配信の確定事項
+
+Google Public DNSのJSON APIでNS・SOA・CNAME・A・AAAAを照会し、Cloudflare Public DNSのJSON APIでもNS・www CNAME・Aを照合した。両リゾルバーの結果は一致した。
+
+| 項目 | 確認結果 |
+|---|---|
+| 権威ネームサーバー | `ns1.xserver.jp` ～ `ns5.xserver.jp` |
+| SOA | `ns1.xserver.jp` |
+| DNS提供元 | Xserver。契約アカウント・管理担当者・ドメイン登録事業者は別途未確認 |
+| www CNAME | `www.qring.jp → akizu815-create.github.io` |
+| wwwの解決先IPv4 | `185.199.108.153`、`185.199.109.153`、`185.199.110.153`、`185.199.111.153`（GitHub Pagesの公式案内と一致） |
+| wwwの解決先IPv6 | `2606:50c0:8000::153` ～ `2606:50c0:8003::153` |
+| Cloudflareプロキシ | 公開DNSではGitHub Pagesへ直接解決。通常のCloudflareプロキシ経由を示す構成ではない |
+| 本番デプロイ | main push → GitHub Actions → `npm run build` → `out/` → GitHub Pages |
+| Cloudflare Pages | プレビュー用。プレビューの転送設定は現在のwwwの配信には適用されない |
+| axbの公開Aレコード | `203.143.123.26`。このIPだけからバックエンドの契約先・管理画面・メール通知先は特定できない |
+
+旧ページは引き続きHTTP 200で、応答にGitHubのリクエストIDがあった。実行環境の中継がServerヘッダーを変更するため、Serverヘッダーだけで配信事業者を断定せず、DNS・ワークフローと合わせて判断した。
+
+**設定画面での最終照合（すべて読み取り）**
+
+- Xserver契約管理者：対象サービスの「DNSレコード設定」→ `qring.jp` → `www` のCNAMEを確認する。サーバー契約の場合はサーバーパネルの同項目。編集・保存はしない。
+- GitHub管理者：`akizu815-create/QRing → Settings → Pages` で、公開元・Custom domain・HTTPS設定を閲覧する。今回、この管理画面の現値までは閲覧していない。`public/CNAME` にはwww.qring.jpがあるが、カスタムActions配信ではこのファイルだけを設定値の根拠にしない。
+- Cloudflare：Pagesのプレビュープロジェクトと、本番ホストをプロキシするDNSゾーンは別物。現在のwwwは直接GitHub Pagesへ解決するため、プレビューの管理権限があることだけで本番301を設定できるわけではない。
+
+### 3. A/B比較と採用案
+
+| 比較 | A：HTTP 301 | B：ページ内の自動転送 |
+|---|---|---|
+| 返す応答 | サーバー／エッジから301＋Location | 旧URLはHTTP 200のHTML。HTMLが新URLへ案内する |
+| 推奨実装 | 本番通信を処理するエッジで旧contactのパスだけ転送 | 旧フォームを案内文＋通常リンクに置換し、出力HTMLのheadへ0秒meta refresh |
+| 必要な権限 | 対象ホストのエッジ／サーバー設定権限。現在は新しい配信層・DNS接続の検討も必要 | QRingリポジトリのコード更新・レビュー・公開権限 |
+| 現在の条件での実施 | DNS・本番ホスティングを一切変えず、リポジトリだけの変更では実現できない | GitHub Pagesを維持し、旧ページと関連SEO設定だけで実装可能 |
+| JavaScript無効時 | 転送できる | meta refreshはJavaScript不要。常時表示する通常リンクでも移動できる |
+| SEO | Googleが優先する恒久移転方法 | 0秒meta refreshはGoogleでは恒久移転の信号として扱われる。ただしHTTP 301ではなく、すべてのクライアントで301と同じ動作になるわけではない |
+| 既存サイトへの影響 | パスの条件を限定できるが、今の構成ではwww全体の入口となる配信層を変える必要がある | 旧contactページを中心に限定可能。他ページの本文・デザイン・問い合わせリンクは維持 |
+| URLパラメーター | エッジで保持できる | 固定meta refreshでは元クエリの自動引き継ぎを保証できない。必要性を確認し、補助JSで許可したパラメーターだけを扱う案を別途検討 |
+| 今回の状態 | 未実装・未適用 | 実装案のみ。旧フォームは維持 |
+
+**採用方針：現在の「DNS・本番ホスティングを変えない」条件ではBを推奨する。AをDNS無変更で有効化できる構成ではない。** 将来、エッジの導入・配信方式変更を別途行う場合はAを優先する。今回はどちらも公開・有効化していない。
+
+CloudflareのSingle/Bulk Redirectsは、対象ホストの通信がCloudflareにプロキシされることが必要。XserverのDNSにパス単位のレコードを追加することはできず、Xserver側へ.htaccessを置いても、GitHub Pagesへ直接向かう現在のwwwには効かない。301だけのためにDNSやサイト全体の配信設定を無断で変えない。
+
+**Bの実装仕様（未実装）**
+
+- `src/app/contact/page.tsx` から旧フォームを除き、既存の共通デザインを利用した短い案内と、`https://axb.qring.jp/contact` への通常のaリンクを置く。
+- ビルド後の `out/contact/index.html` のheadに、次のmeta refreshと転送先canonicalが確実に1つずつ存在するようにする。必要なら対象HTMLだけを処理するビルド補助スクリプトを使い、他ページには作用させない。Next.jsのサーバーredirectsは使わない。
+- 移動リンクはnoscript内だけでなく常時表示する。JavaScriptやmeta refreshを利用しない環境でも、リンクで移動できる。
+- 旧フォームのHTML・RSCにも送信フォームが残らないようソース段階で除去する。Formspreeの既存データ・通知先は変更しない。
+- sitemapから旧contactを除外し、構造化データ・SEO監査では通常の本文ページから転送ページの検査へ変更する。新フォームのURL・API送信処理は変更しない。
+- JSあり／なしの両条件、外部からの直接アクセス、転送先、ループなし、通常リンクをプレビューで確認する。HTTP 200の転送ページであることを報告し、301成功と表記しない。
+
+```html
+<!-- 旧ページの出力HTMLのhead。実装時は重複を検査する -->
+<meta http-equiv="refresh" content="0; url=https://axb.qring.jp/contact">
+<link rel="canonical" href="https://axb.qring.jp/contact">
+<!-- body内には既存デザインに合わせた説明と常時利用可能なリンク -->
+<a href="https://axb.qring.jp/contact">新しいお問い合わせ窓口へ移動する</a>
+```
+
+### 4. 今回の作業範囲と未確認事項
+
+- 今回は調査報告の追記・方式案の確定まで。コード、DNS、本番ホスティング、送信先、通知設定、GA4は変更していない。問い合わせの実送信もしていない。
+- 未確認：管理者通知の実メール宛先、利用者確認メールの配信処理、本番のメール設定・配信ログ、バックエンド管理画面のURLと担当者、Xserver契約の管理者、GitHub Pages管理画面の現値。
+- Bを実装する前にも、新フォームが意図した窓口に届くことの確認が必要。実送信は今回許可されていないため、既存ログ・コード・本番設定の読み取りを先に行う。
+
+追加参照：
+- DNS照会：Google Public DNS JSON API、Cloudflare Public DNS JSON API（qring.jp NS、www.qring.jp CNAME/Aを照合）
+- Xserver DNSレコード設定：https://www.xserver.ne.jp/manual/man_domain_dns_setting.php
+- GitHub Pagesカスタムドメイン：https://docs.github.com/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site
+- Cloudflareのプロキシ要件：https://developers.cloudflare.com/rules/url-forwarding/
+- Googleの転送方式と即時meta refresh：https://developers.google.com/search/docs/crawling-indexing/301-redirects
