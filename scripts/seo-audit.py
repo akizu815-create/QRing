@@ -91,6 +91,8 @@ def audit(root):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('--out', default='out'); ap.add_argument('--json', required=True); ap.add_argument('--check', action='store_true'); args = ap.parse_args()
+    article = Path(args.out) / 'news/newmarket-support/index.html'
+    if article.is_file() and 'data-newmarket-article' in article.read_text(): ROUTES.append('news/newmarket-support')
     result = audit(Path(args.out)); Path(args.json).write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
     errors = []
     if args.check:

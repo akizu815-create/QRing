@@ -1,9 +1,15 @@
+import { NEWMARKET_SUPPORT } from "@/content/newmarketSupport";
 import type { Metadata } from "next";
 
 export const SITE_URL = "https://www.qring.jp";
 
 // 公開する正規URL・メタ情報を共有し、canonical / sitemap / JSON-LD を一致させる。
 export const SEO_PAGES = {
+  newmarket: {
+    path: NEWMARKET_SUPPORT.path,
+    title: NEWMARKET_SUPPORT.title,
+    description: NEWMARKET_SUPPORT.paragraphs[0],
+  },
   "home": {
     "path": "/",
     "title": "つながるQR｜高齢者・ペットの見守りと落とし物対策｜番号非公開で通話",
