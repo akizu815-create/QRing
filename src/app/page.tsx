@@ -1,3 +1,4 @@
+import NewmarketSupportPlacement from "@/components/NewmarketSupportPlacement";
 import { NEWMARKET_SUPPORT, isNewmarketSupportActive } from "@/content/newmarketSupport";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
@@ -120,6 +121,8 @@ export default function Home() {
       <PriceSection />
 
       <ForBusiness />
+
+      <NewmarketSupportPlacement placement="home-support" />
 
       {/* NEWS */}
       <section className="py-24 md:py-40">

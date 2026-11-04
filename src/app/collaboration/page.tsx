@@ -1,3 +1,4 @@
+import NewmarketSupportPlacement from "@/components/NewmarketSupportPlacement";
 import Image from "next/image";
 import PageStructuredData from "@/components/PageStructuredData";
 import { pageMetadata } from "@/lib/seo";
@@ -98,6 +99,8 @@ export default function CollaborationPage() {
           <p className="mt-5 text-xs leading-relaxed text-ink/60">※対応範囲・費用・数量・納期などは個別にご相談ください。</p>
         </div>
       </section>
+
+      <NewmarketSupportPlacement placement="collaboration-support" />
 
       <section className="bg-cream py-14 md:py-20" aria-labelledby="collaboration-contact-heading">
         <div className="container-narrow text-center">

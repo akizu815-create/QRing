@@ -33,7 +33,7 @@ class Document(HTMLParser):
         if not self.skip: self.text.append(text)
         if self.paragraph is not None: self.paragraph += text
 
-ap = argparse.ArgumentParser(); ap.add_argument('--out', default='out'); ap.add_argument('--mode', choices=['news-only','proposals','disabled'], default='news-only'); args=ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument('--out', default='out'); ap.add_argument('--mode', choices=['news-only','proposals','all-approved','disabled'], default='news-only'); args=ap.parse_args()
 root=Path(args.out)
 if args.mode == 'disabled':
     for file in root.rglob('*.html'):
@@ -44,10 +44,13 @@ if args.mode == 'disabled':
     print('PASS: 使用停止時は全HTML・sitemapから対象原稿を除外')
 else:
     expected={'news':1,'news/newmarket-support':1,'':0,'service':0,'municipalities':0,'collaboration':0}
-    if args.mode=='proposals': expected.update({'':1,'service':1,'municipalities':1,'collaboration':1})
+    if args.mode in ['proposals','all-approved']: expected.update({'':1,'service':1,'municipalities':1,'collaboration':1})
     for route,count in expected.items():
         doc=Document((root/route/'index.html').read_text())
         assert len(doc.groups)==count,(route,len(doc.groups),count)
-        for group in doc.groups: assert group==PARAGRAPHS,(route,group)
+        if count and not route.startswith('news'): assert '中小企業ニューマーケット開拓支援事業について' in ''.join(doc.text),route
+        for group in doc.groups:
+            expected_copy = PARAGRAPHS if route.startswith('news') else PARAGRAPHS[1:]
+            assert group==expected_copy,(route,group)
         if route in ['', 'news','news/newmarket-support']: assert TITLE in ''.join(doc.text),route
-    print('PASS: タイトルと全3段落が完全一致、掲載範囲も一致 ('+args.mode+')')
+    print('PASS: NEWS原稿・短文版が完全一致、掲載範囲も一致 ('+args.mode+')')

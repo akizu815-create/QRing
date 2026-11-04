@@ -1,3 +1,4 @@
+import NewmarketSupportPlacement from "@/components/NewmarketSupportPlacement";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
@@ -136,6 +137,8 @@ export default function ServicePage() {
           </Reveal>
         </div>
       </section>
+
+      <NewmarketSupportPlacement placement="service-support" />
 
       {/* CTA */}
       <section className="py-24 md:py-32 bg-ink text-ivory">
