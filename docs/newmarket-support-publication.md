@@ -1,10 +1,10 @@
 # 中小企業ニューマーケット開拓支援事業：掲載管理
 
-## 承認と公開の分離
+## 承認と掲載範囲
 
 承認済みは提出済みNEWS原稿とその掲載イメージ。NEWS詳細 `/news/newmarket-support/`、NEWS一覧、HOMEのNEWS一覧に掲載する。HOMEのNEWS一覧は記事への入口で、独立した実績紹介エリアとは区別する。
 
-HOMEの実績紹介、SERVICE、自治体向け、法人コラボ向けの掲載方法は追加承認待ち。`preview/newmarket-placement-proposals` ブランチだけで制作し、本番用NEWSのPRには含めない。プレビューはURLを知る人が閲覧できる共有用で、承認済み本番掲載を意味しない。
+2026年11月4日、ユーザーよりHOME・SERVICE・自治体・法人コラボ向けの掲載についても承認取得済みと確認。NEWSは元の3段落を維持し、それ以外の4箇所は添付の短文版（支援対象製品の説明と注意書きの2段落）を使用する。見出しは「中小企業ニューマーケット開拓支援事業について」。短文版は元原稿の第2・第3段落をそのまま参照し、文言を再入力しない。
 
 ## 原稿・管理設定
 
@@ -31,20 +31,20 @@ HOMEの実績紹介、SERVICE、自治体向け、法人コラボ向けの掲載
 | NEWS詳細 | /news/newmarket-support/ | タイトル・本文3段落・日付 | 承認済み |
 | NEWS一覧 | /news/ | タイトル・本文3段落・詳細リンク | 承認済みNEWS |
 | HOME NEWS一覧 | / | タイトル・日付・記事リンク | NEWS掲載の入口 |
-| HOME実績紹介案 | / | FOR BUSINESSの直後に本文3段落 | 追加承認待ち |
-| SERVICE掲載案 | /service/ | 最後のCTA手前に本文3段落 | 追加承認待ち |
-| 自治体向け掲載案 | /municipalities/ | 最後の相談CTA手前に本文3段落 | 追加承認待ち |
-| 法人コラボ向け掲載案 | /collaboration/ | 最後の問い合わせセクション手前に本文3段落 | 追加承認待ち |
+| HOME実績紹介案 | / | FOR BUSINESSの直後に短文版2段落 | 承認取得済み |
+| SERVICE掲載案 | /service/ | 最後のCTA手前に短文版2段落 | 承認取得済み |
+| 自治体向け掲載案 | /municipalities/ | 最後の相談CTA手前に短文版2段落 | 承認取得済み |
+| 法人コラボ向け掲載案 | /collaboration/ | 最後の問い合わせセクション手前に短文版2段落 | 承認取得済み |
 
-追加掲載の承認後は掲載位置・表示方法を確認し、該当箇所だけ本番用PRへ移す。未承認箇所をまとめてマージしない。
+将来の掲載位置・文言変更は承認範囲を確認してから反映する。
 
 ## 検証
 
 ```sh
 npm run build
 python3 scripts/seo-audit.py --json /tmp/qring-seo.json --check
-python3 scripts/check-newmarket-copy.py --mode news-only
-# 掲載案ブランチは --mode proposals
+python3 scripts/check-newmarket-copy.py --mode all-approved
+# NEWSだけの版は --mode news-only
 # enabled:falseでの再ビルド後は --mode disabled
 ```
 

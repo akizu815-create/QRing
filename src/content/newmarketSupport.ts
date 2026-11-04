@@ -11,14 +11,15 @@ export const NEWMARKET_SUPPORT = {
     "つながるQRは（公財）東京都中小企業振興公社 中小企業ニューマーケット開拓支援事業の支援対象製品です。",
     "※但し、公社は製品の効能効果を保証するものではありません",
   ],
+  shortHeading: "中小企業ニューマーケット開拓支援事業について",
   placements: [
     { id: "news-index", path: "/news/", status: "approved" },
     { id: "news-detail", path: "/news/newmarket-support/", status: "approved" },
     { id: "home-news", path: "/", status: "approved-news-list" },
-    { id: "home-support", path: "/", status: "additional-approval-required" },
-    { id: "service-support", path: "/service/", status: "additional-approval-required" },
-    { id: "municipalities-support", path: "/municipalities/", status: "additional-approval-required" },
-    { id: "collaboration-support", path: "/collaboration/", status: "additional-approval-required" },
+    { id: "home-support", path: "/", status: "approved-additional" },
+    { id: "service-support", path: "/service/", status: "approved-additional" },
+    { id: "municipalities-support", path: "/municipalities/", status: "approved-additional" },
+    { id: "collaboration-support", path: "/collaboration/", status: "approved-additional" },
   ],
 } as const;
 
