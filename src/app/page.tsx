@@ -1,3 +1,4 @@
+import { NEWMARKET_SUPPORT, isNewmarketSupportActive } from "@/content/newmarketSupport";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
@@ -37,6 +38,9 @@ const HERO_FEATURES = ["アプリ不要", "電話番号は非公開", "特許取
 export const metadata = pageMetadata("home");
 
 export default function Home() {
+  const newsItems = isNewmarketSupportActive()
+    ? [{ date: NEWMARKET_SUPPORT.publishedOn.replaceAll("-", "."), cat: "NEWS", title: NEWMARKET_SUPPORT.title, href: NEWMARKET_SUPPORT.path }, ...NEWS.map((item) => ({ ...item, href: "/news/" }))]
+    : NEWS.map((item) => ({ ...item, href: "/news/" }));
   return (
     <>
       <PageStructuredData page="home" />
@@ -135,10 +139,10 @@ export default function Home() {
           </div>
           <div className="md:col-span-8">
             <ul>
-              {NEWS.map((n, i) => (
+              {newsItems.map((n, i) => (
                 <Reveal as="li" key={n.title} delay={i * 80}>
                   <Link
-                    href="/news"
+                    href={n.href}
                     className="group grid grid-cols-12 gap-4 py-7 border-t border-ink/10 last:border-b items-baseline"
                   >
                     <span className="col-span-3 font-serif text-sm text-ink/60">
