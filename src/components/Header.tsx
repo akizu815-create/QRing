@@ -13,6 +13,7 @@ const NAV = [
   { label: "ABOUT", href: "/about", jp: "私たちについて" },
   { label: "SERVICE", href: "/service", jp: "サービス" },
   { label: "PRICE", href: "/price", jp: "料金案内" },
+  { label: "COLUMN", href: "/column/", jp: "コラム" },
   { label: "NEWS", href: "/news", jp: "お知らせ" },
   { label: "FAQ", href: "/faq/", jp: "よくあるご質問" },
   { label: "CONTACT", href: EXTERNAL_URLS.CONTACT, jp: "お問い合わせ", external: true },
@@ -55,7 +56,7 @@ export default function Header() {
           />
         </Link>
 
-        <nav aria-label="メインナビゲーション" className="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-8">
+        <nav aria-label="メインナビゲーション" className="hidden lg:flex items-center gap-2 xl:gap-4 2xl:gap-6">
           {NAV.map((item) => (
             item.external ? (
               <a
@@ -95,7 +96,7 @@ export default function Header() {
           </Link>
           <a
             href={EXTERNAL_URLS.MY_PAGE}
-            className="ml-0 inline-flex items-center gap-2 bg-ink px-5 py-3 text-[11px] tracking-[0.25em] text-ivory xl:ml-2"
+            className="ml-0 inline-flex items-center gap-2 bg-ink px-3 py-3 text-[11px] tracking-[0.25em] text-ivory xl:ml-2"
           >
             マイページ
           </a>

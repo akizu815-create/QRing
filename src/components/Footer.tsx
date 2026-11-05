@@ -22,10 +22,13 @@ const SITE_LINKS = [
     { label: "通常の電話料金", href: "/price/#call-charges-title" },
     { label: "お支払いについて", href: "/price/#payment-title" },
   ] },
+  { en: "COLUMN", href: "/column/", children: [
+    { label: "コラム", href: "/column/" },
+    { label: "自治体・公共機関向け", href: "/column/audience/municipal/" },
+  ] },
   { en: "INFORMATION", children: [
     { label: "お知らせ", href: "/news/" },
     { label: "よくあるご質問", href: "/faq/" },
-    { label: "見守り・紛失対策の選び方", href: "/column/" },
   ] },
   { en: "FOR BUSINESS", children: [
     { label: "自治体の方へ", href: "/municipalities/" },
@@ -65,7 +68,7 @@ export default function Footer() {
 
           <nav aria-label="フッターナビゲーション" className="lg:col-span-12 lg:row-start-2">
             <h2 className="eyebrow mb-5">Site</h2>
-            <ul className="divide-y divide-ink/10 border-y border-ink/10 lg:grid lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1.25fr)_minmax(0,1.3fr)_minmax(0,0.75fr)_minmax(0,0.9fr)] lg:gap-6 lg:divide-y-0 lg:border-0">
+            <ul className="divide-y divide-ink/10 border-y border-ink/10 lg:grid lg:grid-cols-6 lg:gap-6 lg:divide-y-0 lg:border-0">
               {SITE_LINKS.map((item) => (
                 <li key={item.en}>
                   <>

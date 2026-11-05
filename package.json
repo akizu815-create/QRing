@@ -13,7 +13,8 @@
     "seo:sync": "node scripts/gsc-report.mjs --sync",
     "seo:actions": "python3 -m scripts.seo_ops.cli actions",
     "seo:effects": "python3 -m scripts.seo_ops.cli effects",
-    "test:seo-ops": "python3 -m unittest discover -s tests/seo_ops -v"
+    "test:seo-ops": "python3 -m unittest discover -s tests/seo_ops -v",
+    "check:column-navigation": "python3 scripts/check-column-navigation.py"
   },
   "dependencies": {
     "next": "^15.0.0",

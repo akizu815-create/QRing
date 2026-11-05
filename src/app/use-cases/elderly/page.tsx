@@ -1,3 +1,4 @@
+import RelatedServiceColumns from "@/components/columns/RelatedServiceColumns";
 import Link from "next/link";
 import Image from "next/image";
 import type { CSSProperties } from "react";
@@ -147,7 +148,6 @@ export default function ElderlyPage() {
           </div>
           <div className="body-jp mt-6 space-y-1 text-xs text-ink/55"><p>※一般的なGPS見守りサービスおよび各サービスの基本的な機能をもとに整理しています。</p><p>※サービスごとに機能や運用方法は異なります。</p><p>※それぞれ役割が異なるため、併用も考えられます。</p></div>
           <p className="body-jp mt-3 text-xs text-ink/60">つながるQRには、位置追跡や転倒の自動検知を行う機能はありません。</p>
-          <Link href="/column/elderly-monitoring/" className={`${linkClass} mt-5`}>自宅・外出時の見守り方法を比較する →</Link>
         </div>
       </section>
 
@@ -164,6 +164,7 @@ export default function ElderlyPage() {
           <p className="mt-5"><Link href="/municipalities/" className="link-underline inline-block text-xs leading-7 text-ink/60 transition-colors duration-300 hover:text-moss">自治体での見守りへの活用はこちら →</Link></p>
         </div>
       </section>
+      <RelatedServiceColumns serviceHref="/use-cases/elderly/" id="elderly-columns" />
     </>
   );
 }

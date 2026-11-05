@@ -1,3 +1,4 @@
+import HomeColumns from "@/components/columns/HomeColumns";
 import NewmarketSupportPlacement from "@/components/NewmarketSupportPlacement";
 import { NEWMARKET_SUPPORT, isNewmarketSupportActive } from "@/content/newmarketSupport";
 import { pageMetadata } from "@/lib/seo";
@@ -121,6 +122,8 @@ export default function Home() {
       <PriceSection />
 
       <ForBusiness />
+
+      <HomeColumns />
 
       <NewmarketSupportPlacement placement="home-support" />
 

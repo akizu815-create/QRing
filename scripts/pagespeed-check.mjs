@@ -1,33 +1,21 @@
-// Usage: node scripts/pagespeed-check.mjs [url]
-// Prints the Lighthouse performance score for a URL (default: https://www.qring.jp/).
-//
-// Unlike GA4/Search Console, PageSpeed Insights is a public API that only needs
-// GCP_API_KEY (no service account, no per-site permission) since it just analyzes
-// a public URL rather than reading account data. See
-// .claude/skills/google-apis/SKILL.md for details.
-
+// node scripts/pagespeed-check.mjs [url] [--mobile|--desktop]
+// Existing PSI helper: lab metrics are distinct from optional page/origin field data.
 import "dotenv/config";
-
-const url = process.argv[2] ?? "https://www.qring.jp/";
-const apiKey = process.env.GCP_API_KEY;
-
-if (!apiKey) {
-  console.error("Missing GCP_API_KEY in .env.");
-  process.exit(1);
-}
-
+import { summarizePageSpeed } from "./pagespeed-summary.mjs";
+const args = process.argv.slice(2);
+const url = args.find((arg) => !arg.startsWith("--")) ?? "https://www.qring.jp/";
+const strategy = args.includes("--desktop") ? "desktop" : "mobile";
 const endpoint = new URL("https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed");
 endpoint.searchParams.set("url", url);
-endpoint.searchParams.set("key", apiKey);
+if (process.env.GCP_API_KEY) endpoint.searchParams.set("key", process.env.GCP_API_KEY);
 endpoint.searchParams.set("category", "performance");
-
-const res = await fetch(endpoint);
-const data = await res.json();
-
-if (data.error) {
-  console.error("ERROR:", data.error.message);
-  process.exit(1);
+endpoint.searchParams.set("strategy", strategy);
+try {
+  const res = await fetch(endpoint, { signal: AbortSignal.timeout(55000) });
+  const data = await res.json();
+  if (!res.ok || data.error || !data.lighthouseResult) throw new Error("unavailable");
+  console.log(JSON.stringify(summarizePageSpeed(data, strategy), null, 2));
+} catch {
+  console.log(JSON.stringify({ url, strategy, status: "unavailable", LCP: null, INP: null, CLS: null, note: "API/network/quota failure. No measurement or pass/fail verdict; no automatic retry." }, null, 2));
+  process.exitCode = 1;
 }
-
-console.log("URL analyzed:", data.id);
-console.log("Performance score:", data.lighthouseResult.categories.performance.score);

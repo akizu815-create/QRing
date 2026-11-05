@@ -6,12 +6,20 @@ const path = require('node:path');
 const ts = require('typescript');
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'qring-column-test-'));
 try {
-  for (const name of ['types', 'publication']) {
+  for (const name of ['types', 'publication', 'navigation']) {
     fs.writeFileSync(path.join(tmp, name + '.js'), ts.transpileModule(fs.readFileSync(path.join('src/lib/columns', name + '.ts'), 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText);
   }
   const { selectPublishedArticles, toArticleCard, validateArticle } = require(path.join(tmp, 'publication.js'));
+  const { latestArticles, columnPageCount, columnListPath, relatedArticles } = require(path.join(tmp, 'navigation.js'));
+  assert.equal(columnPageCount(23), 3);
+  assert.equal(columnListPath(1), '/column/');
+  assert.equal(columnListPath(2), '/column/page/2/');
+  assert.equal(columnListPath(2, '/column/audience/municipal/'), '/column/audience/municipal/page/2/');
   const { CATEGORIES, AUDIENCES } = require(path.join(tmp, 'types.js'));
   const records = JSON.parse(fs.readFileSync('src/content/columns/published.json', 'utf8'));
+  assert.equal(latestArticles(records, { serviceHref: '/use-cases/pets/' }).length, 0);
+  assert.equal(latestArticles(records, { audience: 'municipal' }).length, 0);
+  assert.equal(relatedArticles(records[0], records)[0].id, records[1].id);
   const now = Date.parse('2026-11-05T12:00:00+09:00');
   const clone = () => structuredClone(records[0]);
   assert.equal(CATEGORIES.length, 7); assert.equal(AUDIENCES.length, 3);
