@@ -6,7 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:columns": "node scripts/test-column-publication.cjs && python3 scripts/check-column-migration.py",
+    "check:column-export": "python3 scripts/check-column-export.py",
+    "report:column-review": "node scripts/column-review-report.cjs",
+    "seo:sync": "node scripts/gsc-report.mjs --sync",
+    "seo:actions": "python3 -m scripts.seo_ops.cli actions",
+    "seo:effects": "python3 -m scripts.seo_ops.cli effects",
+    "test:seo-ops": "python3 -m unittest discover -s tests/seo_ops -v"
   },
   "dependencies": {
     "next": "^15.0.0",
