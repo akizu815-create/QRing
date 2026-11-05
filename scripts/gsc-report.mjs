@@ -12,6 +12,9 @@ import { GoogleAuth } from "google-auth-library";
 
 if (process.argv.includes("--sync")) {
   await import("./gsc-sync.mjs");
+} else if (process.argv.includes("--inspect")) {
+  const { runInspection } = await import("./gsc-inspect.mjs");
+  await runInspection();
 } else {
 
 const SITE_URL = "sc-domain:qring.jp";

@@ -4,7 +4,7 @@ import json
 import re
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit, unquote
+from urllib.parse import urlsplit, urljoin, unquote
 from xml.etree import ElementTree as ET
 
 ROUTES = ['', 'about', 'service', 'price', 'news', 'faq', 'municipalities', 'collaboration', 'terms', 'privacy', 'law', 'use-cases/elderly', 'use-cases/pets', 'use-cases/belongings', 'column', 'column/elderly-monitoring', 'column/lost-item-preparation']
@@ -72,7 +72,7 @@ def audit(root):
         p = Page((root / route / 'index.html').read_text())
         for href in set(p.links):
             u = urlsplit(href)
-            if u.scheme or u.netloc or not href: continue
+            if not href or (u.netloc and u.netloc != urlsplit(BASE).netloc) or (u.scheme and u.scheme not in ('http', 'https')): continue
             target = unquote(u.path) if u.path else '/' + route + ('/' if route else '')
             target = target.lstrip('/')
             file = root / target
@@ -83,7 +83,19 @@ def audit(root):
                 if unquote(u.fragment) not in cache[file].ids: broken.append({'page': route or '/', 'href': href, 'reason': 'missing anchor'})
     sitemap = ET.parse(root / 'sitemap.xml')
     urls = [n.text for n in sitemap.findall('.//{*}loc')]
+    public = set(urls)
+    reached, queue = {BASE + '/'}, [BASE + '/']
+    while queue:
+        current = queue.pop()
+        file = root / urlsplit(current).path.lstrip('/') / 'index.html'
+        if not file.is_file(): continue
+        for href in Page(file.read_text()).links:
+            target = urlsplit(urljoin(current, href))
+            url = target.scheme + '://' + target.netloc + target.path
+            if url in public and url not in reached:
+                reached.add(url); queue.append(url)
     result = {'pages': pages, 'brokenInternalLinks': broken, 'sitemap': urls,
+        'orphanPublicRoutes': sorted(public - reached),
         'sitemapHasLastModified': bool(sitemap.findall('.//{*}lastmod')),
         'robotsTxt': (root / 'robots.txt').read_text() if (root / 'robots.txt').exists() else None,
         'has404': (root / '404.html').exists()}
@@ -106,6 +118,7 @@ if __name__ == '__main__':
         if result['sitemapHasLastModified']: errors.append('lastModified must not be a fabricated build date')
         if not result['robotsTxt'] or BASE + '/sitemap.xml' not in result['robotsTxt']: errors.append('robots.txt/sitemap declaration missing')
         if result['brokenInternalLinks']: errors.append('broken internal links')
+        if result['orphanPublicRoutes']: errors.append('public canonical pages unreachable from HOME')
         all_ids = []
         for route, canonical in zip(ROUTES, expected):
             p = result['pages'][route]
@@ -118,6 +131,14 @@ if __name__ == '__main__':
             ids = [n.get('@id') for n in nodes if n.get('@id')]
             if len(ids) != len(set(ids)): errors.append(route + ': duplicate schema ids')
             if sum(n.get('@type') == 'WebPage' for n in nodes) != 1: errors.append(route + ': WebPage schema')
+            if route and sum(n.get('@type') == 'BreadcrumbList' for n in nodes) != 1: errors.append(route + ': BreadcrumbList schema')
+            for node in nodes:
+                if node.get('@type') == 'BreadcrumbList':
+                    crumbs = node.get('itemListElement', [])
+                    if len(crumbs) < 2 or [c.get('position') for c in crumbs] != list(range(1, len(crumbs) + 1)): errors.append(route + ': breadcrumb positions')
+                    if not crumbs or crumbs[-1].get('item') != canonical: errors.append(route + ': breadcrumb canonical')
+                    if any(not c.get('name') or not (c.get('item') or '').startswith(BASE + '/') for c in crumbs): errors.append(route + ': breadcrumb content')
+                if node.get('@type') == 'Service' and (route != 'service' or node.get('description') not in p['initialMainText']): errors.append(route + ': Service must match visible content')
             if not p['initialMainText'].strip(): errors.append(route + ': empty main HTML')
             previous_level = 0
             for h in p['headings']:
@@ -126,6 +147,9 @@ if __name__ == '__main__':
             all_ids.extend(ids)
         if len(all_ids) != len(set(all_ids)): errors.append('duplicate schema entity ids across pages')
         if len({tuple(p['title']) for r,p in result['pages'].items() if r in ROUTES}) != len(ROUTES): errors.append('duplicate page titles')
+        if len({tuple(p['description']) for r,p in result['pages'].items() if r in ROUTES}) != len(ROUTES): errors.append('duplicate page descriptions')
+        service_nodes = [n for s in result['pages']['service']['structuredData'] for n in s.get('@graph', [s])]
+        if sum(n.get('@type') == 'Service' for n in service_nodes) != 1: errors.append('service: Service schema missing')
         if not any('noindex' in x for x in result['pages']['shop']['robots']): errors.append('old shop route must remain noindex')
         contact = result['pages']['contact']
         if contact['canonical'] != [CONTACT_URL]: errors.append('contact: redirect canonical')

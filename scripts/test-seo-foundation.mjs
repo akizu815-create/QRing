@@ -1,0 +1,27 @@
+import assert from "node:assert/strict";
+import { inspectionUrls, inspectGsc } from "./gsc-inspect.mjs";
+import { summarizePageSpeed } from "./pagespeed-summary.mjs";
+assert.throws(() => inspectionUrls(["https://other.example/"]));
+assert.throws(() => inspectionUrls(Array.from({ length: 21 }, (_, i) => `https://www.qring.jp/${i}/`)));
+const urls = inspectionUrls(["https://www.qring.jp/column/", "https://www.qring.jp/column/"]);
+assert.equal(urls.length, 1);
+const calls = [];
+const client = { async request(options) {
+  calls.push(options);
+  if (options.method === "GET") throw { response: { status: 403 } };
+  if (options.data.inspectionUrl.endsWith("/service/")) throw { response: { status: 429 } };
+  return { data: { inspectionResult: { indexStatusResult: { verdict: "PASS" } } } };
+} };
+const report = await inspectGsc(client, [...urls, "https://www.qring.jp/service/"]);
+assert.equal(report.sitemaps.status, "unavailable");
+assert.equal(report.pages[0].result.indexStatusResult.verdict, "PASS");
+assert.equal(report.pages[1].status, "unavailable");
+assert.equal(calls.length, 3);
+assert(calls.every((o) => o.retry === false && o.timeout === 20000));
+const summary = summarizePageSpeed({ lighthouseResult: { audits: { "total-blocking-time": { numericValue: 0 } } }, originLoadingExperience: { metrics: { CUMULATIVE_LAYOUT_SHIFT_SCORE: { percentile: 12 } } } }, "mobile");
+assert.equal(summary.lab.TBT_ms, 0);
+assert.equal(summary.lab.INP_ms, null);
+assert.equal(summary.fieldPage.status, "unavailable");
+assert.equal(summary.fieldPage.LCP_ms_p75, null);
+assert.equal(summary.fieldOrigin.CLS_p75, .12);
+console.log("SEO foundation: scope limits, partial failures, no retries, missing data and field/lab separation passed.");

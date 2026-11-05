@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 type Props = {
   children: React.ReactNode;
@@ -16,33 +16,34 @@ export default function Reveal({
   as: Tag = "div",
 }: Props) {
   const ref = useRef<HTMLElement | null>(null);
-  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || !("IntersectionObserver" in window) || !el.animate || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let animation: Animation | undefined;
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setVisible(true);
+          animation = el.animate(
+            [{ opacity: 0, transform: "translateY(1.5rem)" }, { opacity: 1, transform: "translateY(0)" }],
+            { duration: 1200, delay, easing: "ease-out", fill: "backwards" },
+          );
           io.disconnect();
         }
       },
       { threshold: 0.15 }
     );
     io.observe(el);
-    return () => io.disconnect();
-  }, []);
+    return () => { io.disconnect(); animation?.cancel(); };
+  }, [delay]);
 
   const Component = Tag as React.ElementType;
 
   return (
     <Component
       ref={ref as React.RefObject<HTMLElement>}
-      className={`transition-all duration-[1200ms] ease-out ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-      } ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
+      className={className}
+      data-reveal=""
     >
       {children}
     </Component>
