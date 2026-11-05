@@ -1,3 +1,6 @@
+import RecentColumnLinks from "@/components/columns/RecentColumnLinks";
+import { getPublishedArticles } from "@/lib/columns";
+import { latestArticles } from "@/lib/columns/navigation";
 import NewmarketSupportPlacement from "@/components/NewmarketSupportPlacement";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
@@ -39,6 +42,7 @@ const faq = [
 export const metadata = pageMetadata("municipalities");
 
 export default function MunicipalitiesPage() {
+  const municipalArticles = latestArticles(getPublishedArticles(), { audience: "municipal" });
   return (
     <>
       <PageStructuredData page="municipalities" />
@@ -80,7 +84,7 @@ export default function MunicipalitiesPage() {
       <section className={sectionClass} aria-labelledby="faq-title">
         <div className="container-narrow"><SectionHeading en="FAQ & CONTACT" title="導入前の疑問から、ご相談ください。" id="faq-title" />
           <div className="divide-y divide-ink/10 border-y border-ink/10">{faq.map((item) => <details key={item.question} className="group py-1"><summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-6 py-4 text-left text-sm font-medium leading-relaxed marker:hidden md:text-base [&::-webkit-details-marker]:hidden"><span>{item.question}</span><span aria-hidden="true" className="shrink-0 text-xl font-light text-moss group-open:rotate-45">＋</span></summary><p className="body-jp pb-5 pr-8 text-sm text-ink/70">{item.answer}</p></details>)}</div>
-          <div className="mt-10 border-t border-ink/15 pt-7"><h3 className="font-serif text-xl font-light">地域の見守りを考えるコラム</h3><p className="body-jp mt-4 text-sm text-ink/70">施策の役割や連絡体制、実証の検討に役立つ情報をお届けします。</p><Link href="/column/audience/municipal/" className={`${linkClass} mt-4`}>自治体・公共機関向けのコラムを見る →</Link></div>
+          <div className="mt-10 border-t border-ink/15 pt-7"><h3 className="font-serif text-xl font-light">地域の見守りを考えるコラム</h3><p className="body-jp mt-4 text-sm text-ink/70">施策の役割や連絡体制、実証の検討に役立つ情報をお届けします。</p><Link href="/column/audience/municipal/" className={`${linkClass} mt-4`}>自治体・公共機関向けのコラムを見る →</Link><RecentColumnLinks articles={municipalArticles} /></div>
           <NewmarketSupportPlacement placement="municipalities-support" compact />
           <div className="mt-12 text-center md:mt-16"><h3 className="font-serif text-[clamp(26px,3vw,38px)] font-light leading-relaxed">地域に合った見守りの形を、<br />一緒に考えませんか。</h3><a href={contactUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-8 normal-case">自治体での導入を相談する</a></div>
         </div>

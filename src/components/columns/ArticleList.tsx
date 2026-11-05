@@ -2,11 +2,12 @@
 import { useState } from "react";
 import Link from "next/link";
 import { CATEGORIES, AUDIENCES, categoryLabel, audienceLabel, articlePath, formatDate, type ArticleCard, type Audience } from "@/lib/columns/types";
-const PAGE_SIZE = 9;
-export default function ArticleList({ articles, fixedAudience }: { articles: ArticleCard[]; fixedAudience?: Audience }) {
+import { COLUMN_PAGE_SIZE as PAGE_SIZE, columnListPath } from "@/lib/columns/navigation";
+export default function ArticleList({ articles, fixedAudience, initialPage = 1, basePath = "/column/" }: { articles: ArticleCard[]; fixedAudience?: Audience; initialPage?: number; basePath?: string }) {
   const [category, setCategory] = useState("");
   const [audience, setAudience] = useState(fixedAudience ?? "");
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(initialPage);
+  const filteredMode = Boolean(category || (!fixedAudience && audience));
   const filtered = articles.filter((a) => (!category || a.category === category) && (!(fixedAudience || audience) || a.primaryAudience === (fixedAudience || audience)));
   const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const current = Math.min(page, pages);
@@ -36,9 +37,9 @@ export default function ArticleList({ articles, fixedAudience }: { articles: Art
         </article>)}
       </div> : <div className="py-12"><p className="body-jp text-sm">該当する公開記事はまだありません。</p>{(category || (!fixedAudience && audience)) && <button type="button" className="mt-4 min-h-12 text-sm text-moss underline underline-offset-4" onClick={reset}>絞り込みを解除する</button>}</div>}
       {pages > 1 && <nav aria-label="記事一覧のページ送り" className="mt-12 flex flex-wrap items-center gap-4 text-sm">
-        <button type="button" className="min-h-12 border border-ink/25 px-5 disabled:opacity-40" disabled={current === 1} onClick={() => setPage(current - 1)}>前へ</button>
+        {filteredMode ? <button type="button" className="min-h-12 border border-ink/25 px-5 disabled:opacity-40" disabled={current === 1} onClick={() => setPage(current - 1)}>前へ</button> : current > 1 ? <Link href={columnListPath(current - 1, basePath)} onClick={() => setPage(current - 1)} className="inline-flex min-h-12 items-center border border-ink/25 px-5">前へ</Link> : <span className="inline-flex min-h-12 items-center border border-ink/25 px-5 opacity-40">前へ</span>}
         <span>{current} / {pages}</span>
-        <button type="button" className="min-h-12 border border-ink/25 px-5 disabled:opacity-40" disabled={current === pages} onClick={() => setPage(current + 1)}>次へ</button>
+        {filteredMode ? <button type="button" className="min-h-12 border border-ink/25 px-5 disabled:opacity-40" disabled={current === pages} onClick={() => setPage(current + 1)}>次へ</button> : current < pages ? <Link href={columnListPath(current + 1, basePath)} onClick={() => setPage(current + 1)} className="inline-flex min-h-12 items-center border border-ink/25 px-5">次へ</Link> : <span className="inline-flex min-h-12 items-center border border-ink/25 px-5 opacity-40">次へ</span>}
       </nav>}
     </div>
   );

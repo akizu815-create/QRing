@@ -1,3 +1,4 @@
+import RelatedServiceColumns from "@/components/columns/RelatedServiceColumns";
 import Image from "next/image";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
@@ -99,6 +100,7 @@ export default function PetsPage() {
           <p className="mt-5"><Link href="/price/" className={linkClass}>料金について →</Link></p>
         </div>
       </section>
+      <RelatedServiceColumns serviceHref="/use-cases/pets/" id="pets-columns" />
     </>
   );
 }

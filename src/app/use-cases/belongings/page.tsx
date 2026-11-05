@@ -1,3 +1,4 @@
+import RelatedServiceColumns from "@/components/columns/RelatedServiceColumns";
 import Image from "next/image";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
@@ -109,7 +110,6 @@ export default function BelongingsPage() {
           </div>
           <p className="body-jp mt-6 text-xs text-ink/60">※写真は利用イメージです。販売中の商品を示すものではなく、写真内のQRコードはご利用いただけません。</p>
           <p className="body-jp mt-3 text-xs text-ink/60">事前にQRコードを取り付け、発見後の連絡に備える仕組みです。位置を追跡する機能はなく、返還を保証するものではありません。通話機能は日本国内でのみご利用いただけます。</p>
-          <Link href="/column/lost-item-preparation/" className={`${linkClass} mt-5`}>紛失への備えと、発見後の連絡について →</Link>
         </div>
       </section>
 
@@ -122,6 +122,7 @@ export default function BelongingsPage() {
           <p className="mt-5"><Link href="/price/" className={linkClass}>料金を見る →</Link></p>
         </div>
       </section>
+      <RelatedServiceColumns serviceHref="/use-cases/belongings/" id="belongings-columns" />
     </>
   );
 }

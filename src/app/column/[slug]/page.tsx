@@ -1,3 +1,4 @@
+import { relatedArticles } from "@/lib/columns/navigation";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ColumnArticle from "@/components/columns/ColumnArticle";
@@ -14,5 +15,5 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const a = getPublishedArticle((await params).slug);
   if (!a) notFound();
-  return <ColumnArticle article={a} related={getPublishedArticles().filter((r) => a.relatedArticleIds.includes(r.id) && r.id !== a.id)} />;
+  return <ColumnArticle article={a} related={relatedArticles(a, getPublishedArticles())} />;
 }
