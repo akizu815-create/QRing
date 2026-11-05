@@ -93,6 +93,9 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser(); ap.add_argument('--out', default='out'); ap.add_argument('--json', required=True); ap.add_argument('--check', action='store_true'); args = ap.parse_args()
     article = Path(args.out) / 'news/newmarket-support/index.html'
     if article.is_file() and 'data-newmarket-article' in article.read_text(): ROUTES.append('news/newmarket-support')
+    municipal = Path(args.out) / 'column/audience/municipal/index.html'
+    municipal_indexed = municipal.exists() and not any('noindex' in r for r in Page(municipal.read_text()).robots)
+    if municipal_indexed: ROUTES.append('column/audience/municipal')
     result = audit(Path(args.out)); Path(args.json).write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
     errors = []
     if args.check:

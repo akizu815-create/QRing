@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:columns": "node scripts/test-column-publication.cjs && python3 scripts/check-column-migration.py",
+    "check:column-export": "python3 scripts/check-column-export.py",
+    "report:column-review": "node scripts/column-review-report.cjs"
   },
   "dependencies": {
     "next": "^15.0.0",
