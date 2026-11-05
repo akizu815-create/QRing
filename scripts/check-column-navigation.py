@@ -61,8 +61,12 @@ assert home.index('id="for-business"')<block.start()<home.index('最新のお知
 for label in ['メインナビゲーション','モバイルナビゲーション']:
     nav=re.search(r'<nav[^>]*aria-label="'+label+r'".*?</nav>',home,re.S)[0]
     nav_links=[href.rstrip('/') for href in seo.Page(nav).links]
-    assert nav_links.index('/price')<nav_links.index('/column')<nav_links.index('/news')
-    assert 'https://axb.qring.jp/contact' in nav and '/municipalities/' in nav and 'https://axb.qring.jp/' in nav
+    expected=['/service','/price','/column','/about','/#for-business','https://axb.qring.jp/contact']
+    if label=='メインナビゲーション': expected.append('https://axb.qring.jp')
+    assert nav_links==expected,'Primary navigation order or action links changed'
+aux=re.search(r'<nav[^>]*aria-label="補助ナビゲーション".*?</nav>',home,re.S)[0]
+assert seo.Page(aux).links==['/faq/','/news/'],'Auxiliary NEWS/FAQ access lost'
+assert 'https://axb.qring.jp/' in home,'My-page access lost'
 footer=re.search(r'<nav[^>]*aria-label="フッターナビゲーション".*?</nav>',home,re.S)[0]
 assert 'COLUMN' in footer and 'コラム' in footer and '見守り・紛失対策の選び方' not in footer
 for slug in ['elderly','belongings','pets']:

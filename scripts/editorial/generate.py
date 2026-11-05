@@ -7,6 +7,7 @@ import uuid
 from .core import (ROOT, today, encode, published, all_articles, seo_context, create_draft,
                    audit, utcnow, check_conflicts, quality)
 from ..seo_ops.actions import KEYWORDS
+from .topics import candidates
 from ..seo_ops.ai import MODEL, INPUT_RATE, OUTPUT_RATE
 
 PROMPT_VERSION = 'column-draft-v1'
@@ -24,6 +25,7 @@ def plan(db, day):
     return {'day': day, 'audience': audience, 'category': category,
             'keyword': candidate['query'] if candidate else None,
             'selectionBasis': 'gsc_observed_query' if candidate else 'editorial_rotation_requires_research',
+            'themeCandidates': candidates(all_articles(db),context['actions']['nextArticles']),
             'seo': context['actions'], 'existing': [{'id':a['id'],'title':a['title'],'slug':a['slug'],'searchIntent':a.get('searchIntent',''),'primaryAudience':a['primaryAudience']} for a in all_articles(db)]}
 
 def schema():

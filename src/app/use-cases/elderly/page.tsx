@@ -1,3 +1,5 @@
+import UseCaseFaq from "@/components/UseCaseFaq";
+import { elderlyQuestions } from "@/content/useCaseFaqs";
 import RelatedServiceColumns from "@/components/columns/RelatedServiceColumns";
 import Link from "next/link";
 import Image from "next/image";
@@ -42,11 +44,11 @@ export default function ElderlyPage() {
           <div className="relative z-10">
             <p className={eyebrowClass}>FAMILY CARE</p>
             <h1 id="elderly-heading" className="mt-5 font-serif text-[clamp(30px,3.2vw,46px)] font-light leading-[1.6] tracking-tight">
-              <span className="text-moss">もしも</span>、家族が<br /><span className="inline-block">帰ってこなかったら。</span>
+              高齢者の外出に、<br /><span className="text-moss">QRコードで家族へ</span><br className="md:hidden" />つながる備えを。
             </h1>
             <div className="body-jp mt-6 max-w-xl space-y-3 text-sm text-ink/75 md:text-base">
-              <p>いつもの外出が、思いがけない出来事につながることもあります。</p>
-              <p>そんな『もしも』に備えて、見つけてくださった方からご家族へ連絡できる手段を用意しておきませんか。</p>
+              <p>もしも、家族が帰ってこなかったら。認知症のあるご家族など、外出中に見守りが必要な方への備えを考えてみませんか。</p>
+              <p>つながるQRは、見つけた方が身につけたQRコードを読み取り、発信をタップすると、ご家族などの登録先と電話番号を公開せずに通話できる連絡手段です。</p>
             </div>
           </div>
           <div className="relative -mx-6 aspect-[5/4] md:-mx-8 md:aspect-[6/5]" style={{ maskImage: "linear-gradient(to right, transparent, black 9%, black 91%, transparent), linear-gradient(to bottom, transparent, black 8%, black 90%, transparent)", WebkitMaskImage: "linear-gradient(to right, transparent, black 9%, black 91%, transparent), linear-gradient(to bottom, transparent, black 8%, black 90%, transparent)", maskComposite: "intersect", WebkitMaskComposite: "source-in" }}>
@@ -88,7 +90,7 @@ export default function ElderlyPage() {
               ))}
             </ol>
             <p className="mt-6 text-[11px] leading-relaxed text-ink/55">※図解・画面は操作のイメージです。図解内のQRコードはご利用いただけません。</p>
-            <p className="body-jp mt-4 text-sm text-ink/75">QRコードを身につけるご本人のスマートフォン操作は不要です。専用アプリや、発見者による電話番号の手入力も必要ありません。</p>
+            <p className="body-jp mt-4 text-sm text-ink/75">QRコードを身につけるご本人のスマートフォン操作は不要です。専用アプリや、発見者による電話番号の手入力も必要ありません。連絡には、発見者による読み取りと発信、登録先の応答が必要です。</p>
             <Link href="/service/" className={`${linkClass} mt-5`}>サービスの仕組みを見る →</Link>
           </div>
         </div>
@@ -164,6 +166,7 @@ export default function ElderlyPage() {
           <p className="mt-5"><Link href="/municipalities/" className="link-underline inline-block text-xs leading-7 text-ink/60 transition-colors duration-300 hover:text-moss">自治体での見守りへの活用はこちら →</Link></p>
         </div>
       </section>
+      <UseCaseFaq id="elderly-qr-faq" title="高齢者の見守りQRについて" questions={elderlyQuestions} />
       <RelatedServiceColumns serviceHref="/use-cases/elderly/" id="elderly-columns" />
     </>
   );

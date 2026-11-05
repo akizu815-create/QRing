@@ -3,7 +3,7 @@ import Reveal from "@/components/Reveal";
 
 export default function PriceSection() {
   return (
-    <section id="price" className="bg-cream py-24 md:py-32">
+    <section id="price" className="bg-cream py-16 md:py-24">
       <div className="container-wide">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
@@ -19,13 +19,13 @@ export default function PriceSection() {
           </Reveal>
           <Reveal delay={180}>
             <p className="mt-6 text-sm tracking-[0.12em] text-ink/70 md:text-base">
-              必要なときだけ、使った分だけ。
+              ベーシックプランは、通話が成立したときに登録者が支払う仕組みです。
             </p>
           </Reveal>
         </div>
 
         <Reveal delay={240}>
-          <div className="mx-auto mt-14 grid max-w-4xl grid-cols-[minmax(0,1fr)_1px_minmax(0,1fr)] border-y border-ink/10 md:mt-16">
+          <div className="mx-auto mt-10 grid max-w-4xl grid-cols-[minmax(0,1fr)_1px_minmax(0,1fr)] border-y border-ink/10 md:mt-12">
             <div className="flex min-w-0 flex-col items-center justify-center px-3 py-10 text-center md:px-10 md:py-12">
               <p className="min-h-10 text-[11px] leading-relaxed tracking-[0.08em] text-ink/60 md:min-h-0 md:text-sm">
                 登録料・月額基本料
@@ -54,7 +54,7 @@ export default function PriceSection() {
           </div>
         </Reveal>
 
-        <div className="mx-auto mt-12 max-w-2xl text-center md:mt-14">
+        <div className="mx-auto mt-8 max-w-2xl text-center md:mt-10">
           <Reveal delay={300}>
             <p className="font-serif text-xl font-light leading-relaxed md:text-2xl">
               QRコードをスキャンするだけでは、利用料はかかりません。
@@ -74,6 +74,7 @@ export default function PriceSection() {
               料金について詳しく見る →
             </Link>
           </Reveal>
+          <p className="mt-5"><Link href="/faq/" className="link-underline inline-flex min-h-12 items-center text-sm text-moss">料金・お支払いのよくあるご質問 →</Link></p>
         </div>
       </div>
     </section>

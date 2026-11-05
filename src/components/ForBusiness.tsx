@@ -69,7 +69,7 @@ function BusinessCard({ card }: { card: BusinessCardData }) {
 
 export default function ForBusiness() {
   return (
-    <section id="for-business" className="bg-ivory py-24 md:py-32">
+    <section id="for-business" className="scroll-mt-24 bg-ivory py-16 md:py-24">
       <div className="container-wide">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
@@ -90,12 +90,16 @@ export default function ForBusiness() {
           </Reveal>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 md:mt-20 md:grid-cols-2 md:gap-10">
+        <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-8 md:mt-12 md:grid-cols-2 md:gap-10">
           {BUSINESS_CARDS.map((card, index) => (
             <Reveal key={card.label} delay={240 + index * 120} className="h-full">
               <BusinessCard card={card} />
             </Reveal>
           ))}
+        </div>
+        <div className="mx-auto mt-8 max-w-5xl border-t border-ink/15 pt-6 text-center">
+          <p className="body-jp text-sm text-ink/75">企業・施設での活用や、導入前の疑問もご相談いただけます。</p>
+          <a href="https://axb.qring.jp/contact" className="link-underline mt-2 inline-flex min-h-12 items-center text-sm text-moss">企業・施設の活用を相談する →</a>
         </div>
       </div>
     </section>
