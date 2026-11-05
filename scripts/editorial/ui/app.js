@@ -37,7 +37,7 @@ function link(source, parent) { const a = el('a', source.label || source.href ||
 catch (_) { } return a; }
 function field(label, value, parent, multi = false) { const l = el('label', label, parent); const input = el(multi ? 'textarea' : 'input', undefined, l); input.value = value || ''; return input; }
 function dump(label, value, parent) { const d = el('details', undefined, parent); el('summary', label, d); el('pre', JSON.stringify(value, null, 2), d); }
-async function load(reset = true) { state = await api('/api/bootstrap'); $('identity').textContent = state.actor + (state.development ? ' ／ ローカル開発用' : ''); const list = $('list'); list.replaceChildren(); el('h2', '記事一覧', list); const filter = el('select', undefined, list); filter.setAttribute('aria-label', '記事の状態'); for (const [v, t] of [['all', 'すべて'], ...Object.entries(labels)]) {
+async function load(reset = true) { state = await api('/api/bootstrap'); $('identity').textContent = state.actor + (state.development ? ' ／ ローカル開発用' : ''); drawImport(); const list = $('list'); list.replaceChildren(); el('h2', '記事一覧', list); const filter = el('select', undefined, list); filter.setAttribute('aria-label', '記事の状態'); for (const [v, t] of [['all', 'すべて'], ...Object.entries(labels)]) {
     const o = el('option', t, filter);
     o.value = v;
 } const cards = el('div', undefined, list); function draw() { cards.replaceChildren(); for (const a of state.articles.filter(a => filter.value === 'all' || (filter.value === 'published' ? a.publicRevision !== null : a.status === filter.value))) {
@@ -50,6 +50,86 @@ async function load(reset = true) { state = await api('/api/bootstrap'); $('iden
 } if (!cards.childNodes.length)
     el('p', '該当する記事はありません。', cards); } filter.onchange = draw; draw(); const ops = $('operations'); ops.replaceChildren(); el('h2', '運用状況', ops); el('p', `今月の推定利用額 $${state.usage.settledUsd.toFixed(4)} ／ 予約額 $${state.usage.reservedUsd.toFixed(4)}`, ops); el('small', state.usage.notice, ops); dump('トークン数・費用台帳', state.usage.entries, ops); dump('生成履歴・エラー', state.runs, ops); dump('GSCからの編集候補（既存分析を利用）', state.seoActions, ops); dump('公開準備履歴（本番反映は別途承認）', state.releases, ops); if (reset)
     message(''); }
+function drawImport() {
+    const root = $('import');
+    if (!state.roles.includes('editor')) { root.hidden = true; return; }
+    root.hidden = false;
+    // Do not replace unsaved input when another part of the screen reloads.
+    if (root.childNodes.length) return;
+    const panel = el('details', undefined, root);
+    el('summary', 'ChatGPT原稿を下書きに取り込む（追加AI料金なし）', panel);
+    el('p', '毎朝8時の原稿を、確認してから貼り付けてください。AIの呼出し・記事承認・本番公開は行いません。保存先はこの管理サーバーの非公開DBです。', panel);
+    const daily = state.runs.find(run => run.day === state.day);
+    if (daily && !(daily.state === 'import_failed' && daily.attempts < 2)) {
+        el('p', '本日の取込・生成履歴があります。重複作成せず、一覧から既存の下書きを確認してください。', panel);
+        return;
+    }
+    let retry = !!daily;
+    if (retry) el('p', '本日の取込に失敗しています。内容を修正して再試行できます（合計2回まで）。', panel);
+    el('p', '画面を閉じると未保存の入力は失われます。原稿の元データは手元にも残してください。', panel);
+    const form = el('form', undefined, panel), inputs = {};
+    for (const [name,label,multi] of [
+        ['title','記事タイトル'], ['slug','URLスラッグ（半角英数字・ハイフン）'],
+        ['summary','導入文',true], ['seoTitle','SEOタイトル'], ['metaDescription','メタディスクリプション',true],
+        ['searchIntent','検索者の疑問・検索意図',true], ['primaryKeyword','主な検索キーワード'],
+        ['topicClusterId','テーマ管理ID（既存記事との重複を確認）'],
+        ['serviceSpecificationVersion','確認に使ったサービス仕様の版・日付']
+    ]) { inputs[name] = field(label,'',form,multi); inputs[name].required = true; }
+    inputs.slug.pattern = '[a-z0-9]+(-[a-z0-9]+)*';
+    inputs.seoTitle.maxLength = 120; inputs.metaDescription.maxLength = 320;
+    for (const [name,label,options] of [['category','カテゴリー',state.importOptions.categories],['primaryAudience','主な読者',state.importOptions.audiences]]) {
+        const select = el('select', undefined, el('label', label, form));
+        select.required = true; el('option','選択してください',select).value = '';
+        options.forEach(item => el('option',item.label,select).value = item.id);
+        inputs[name] = select;
+    }
+    el('p', '本文はそのまま貼り付けられます。「## 見出し」で節を区切り、空行で段落を分けます。HTML・リンク・表・箇条書きの記号は自動変換せず文字として保持します。保存後に全文を確認してください。',form);
+    inputs.body = field('本文（## 見出しと段落）','',form,true); inputs.body.required = true; inputs.body.className = 'import-body';
+    const proofs = el('div',undefined,form), sourceInputs = [];
+    function addSource() {
+        const box = el('fieldset',undefined,proofs);
+        el('legend','出典 '+(sourceInputs.length+1),box);
+        const fields = {};
+        for (const [name,label,multi] of [['label','資料名'],['href','出典URL（https）'],['checkedAt','原文を確認した日'],['excerpt','原文から確認した抜粋（20文字以上）',true],['claim','この資料で根拠を確認する本文の主張',true]]) {
+            fields[name] = field(label,'',box,multi); fields[name].required = true;
+        }
+        fields.href.type = 'url'; fields.href.pattern = 'https://.*'; fields.checkedAt.type = 'date'; fields.checkedAt.max = state.day; fields.excerpt.minLength = 20;
+        fields.kind = el('select',undefined,el('label','資料の区分',box));
+        for (const [value,label] of [['primary','一次情報'],['trusted','信頼できる資料']]) el('option',label,fields.kind).value = value;
+        sourceInputs.push(fields);
+        const remove = button('この出典を取り除く',()=>{ sourceInputs.splice(sourceInputs.indexOf(fields),1); box.remove(); },box);
+        if (sourceInputs.length === 1) remove.hidden = true;
+    }
+    addSource();
+    button('出典を追加',()=>{ if (sourceInputs.length < 20) addSource(); else message('出典は20件までです。'); },form);
+    el('p', '未確認の実績や出典を作らず、原文・本文・サービス仕様を確認してください。取込時は下書き・未承認で保存します。公開予定日は取込日として仮設定され、編集画面で変更できます。',form);
+    const submit = el('button',retry ? '失敗した取込を再試行' : '下書きとして取り込む',form); submit.type = 'submit'; submit.className = 'primary';
+    form.onsubmit = event => {
+        event.preventDefault();
+        if (busy || !form.reportValidity()) return;
+        perform(async () => {
+            const fields = Object.fromEntries(Object.entries(inputs).map(([key,input])=>[key,input.value]));
+            fields.sources = sourceInputs.map(fields=>Object.fromEntries(Object.entries(fields).map(([key,input])=>[key,input.value])));
+            let result;
+            try { result = await api('/api/import',{ fields, retry }); }
+            catch (error) {
+                try {
+                    const fresh = await api('/api/bootstrap');
+                    const run = fresh.runs.find(run => run.day === fresh.day);
+                    retry = run?.state === 'import_failed' && run.attempts < 2;
+                    if (retry) submit.textContent = '失敗した取込を再試行';
+                    if (run?.article_id) message('既に保存された原稿があります。一覧で確認してください。');
+                } catch (_) { /* Preserve input even when the status check also fails. */ }
+                throw error;
+            }
+            // Clear only after the server confirms persistence; failed requests retain all text.
+            root.replaceChildren();
+            message('下書きとして保存しました。AI利用0回・未承認・本番未反映です。全文と出典を確認してください。');
+            current = {article:{id:result.articleId}};
+        });
+    };
+}
+
 async function openArticle(id, scroll = true) {
     try {
         current = await api('/api/articles/' + encodeURIComponent(id));
