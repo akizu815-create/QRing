@@ -1,0 +1,36 @@
+name: Private editorial checks
+on:
+  pull_request:
+    paths:
+      - 'scripts/editorial/**'
+      - 'scripts/seo_ops/**'
+      - 'src/lib/columns/**'
+      - 'tests/**'
+      - 'package*.json'
+      - '.github/workflows/editorial-checks.yml'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run test:columns
+      - run: npm run test:seo-ops
+      - run: npm run test:editorial
+      - run: npm run build
+      - run: npm run check:column-export
+      - run: npm run check:column-navigation
+      - run: node scripts/test-seo-foundation.mjs
+      - run: python3 scripts/seo-audit.py --json /tmp/qring-editorial-seo.json --check
