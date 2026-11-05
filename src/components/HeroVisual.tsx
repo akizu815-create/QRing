@@ -1,7 +1,9 @@
+import styles from "./HomeHero.module.css";
+
 export default function HeroVisual() {
   return (
     <div className="relative col-start-1 row-start-1 w-full overflow-hidden bg-cream">
-      <div className="relative aspect-[941/1450] w-full md:aspect-[3/2]">
+      <div className={`${styles.heroFrame} relative aspect-[941/1450] w-full md:aspect-[3/2]`}>
         {/* 静的配信でも、画面幅・対応形式に合う既存写真だけを読み込む。 */}
         <picture>
           <source media="(max-width: 767px)" type="image/avif" srcSet="/images/hero_mobile.avif" />
@@ -16,10 +18,10 @@ export default function HeroVisual() {
             height={992}
             fetchPriority="high"
             decoding="async"
-            className="absolute inset-0 h-full w-full object-cover object-[52%_top] md:object-center"
+            className={`${styles.heroPhoto} absolute inset-0 h-full w-full object-cover object-[52%_top] md:object-center`}
           />
         </picture>
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ivory/90 via-ivory/40 to-transparent md:hidden" aria-hidden="true" />
+        <div className={`${styles.heroWash} pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ivory/90 via-ivory/40 to-transparent md:hidden`} aria-hidden="true" />
         <div
           className="pointer-events-none absolute inset-x-0 top-0 hidden h-[66%] bg-gradient-to-b from-ivory/85 via-ivory/30 to-transparent xl:block"
           aria-hidden="true"
