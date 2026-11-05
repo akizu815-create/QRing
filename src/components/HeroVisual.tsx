@@ -1,7 +1,7 @@
 export default function HeroVisual() {
   return (
     <div className="relative w-full overflow-hidden bg-cream">
-      <div className="relative h-[calc(100svh-5rem)] min-h-[540px] w-full md:aspect-[3/2] md:h-auto md:min-h-0">
+      <div className="relative aspect-[4/5] w-full md:aspect-[3/2]">
         {/* 静的配信でも、画面幅・対応形式に合う既存写真だけを読み込む。 */}
         <picture>
           <source media="(max-width: 767px)" type="image/avif" srcSet="/images/hero_mobile.avif" />
@@ -16,15 +16,11 @@ export default function HeroVisual() {
             height={992}
             fetchPriority="high"
             decoding="async"
-            className="absolute inset-0 h-full w-full object-cover object-[52%_center] md:object-center"
+            className="absolute inset-0 h-full w-full object-cover object-[52%_30%] md:object-center"
           />
         </picture>
         <div
-          className="pointer-events-none absolute inset-0 bg-gradient-to-br from-ivory/90 via-ivory/25 to-transparent md:hidden"
-          aria-hidden="true"
-        />
-        <div
-          className="pointer-events-none absolute inset-x-0 top-0 hidden h-[58%] bg-gradient-to-b from-ivory/75 via-ivory/25 to-transparent md:block"
+          className="pointer-events-none absolute inset-x-0 top-0 hidden h-[66%] bg-gradient-to-b from-ivory/85 via-ivory/30 to-transparent xl:block"
           aria-hidden="true"
         />
       </div>

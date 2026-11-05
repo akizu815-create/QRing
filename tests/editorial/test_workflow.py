@@ -95,6 +95,15 @@ class WorkflowTests(unittest.TestCase):
         with self.assertRaises(ValueError): reconcile(self.db,run_id,10,20,'operator','')
         result=reconcile(self.db,run_id,10,20,'operator','provider-request-fixture')
         self.assertEqual(result['state'],'invalid'); self.assertFalse(result['automaticRetry']); self.assertEqual(core.usage(self.db)['reservedUsd'],0)
+    def test_topic_candidates_require_research_and_preserve_existing_pages(self):
+        from scripts.editorial.topics import candidates
+        result=candidates(core.published(),[])
+        self.assertEqual(len(result),4)
+        self.assertTrue(all(not item['generationAuthorized'] for item in result))
+        self.assertTrue(all(item['demandStatus']=='not_acquired' for item in result))
+        elderly=next(item for item in result if item['id']=='elderly-qr-preparation')
+        self.assertEqual(elderly['action'],'review_existing_first')
+        self.assertIn('/column/elderly-monitoring/',elderly['existingPages'])
     def test_shared_budget_prevents_api_call(self):
         day=core.today()
         with self.db: self.db.execute('INSERT INTO usage_ledger VALUES(?,?,?,?,?,?,?,?)',('prior',day[:7],day,'seo:prior',1,1,'settled',core.utcnow()))

@@ -63,7 +63,7 @@ function UseCase({ item }: { item: (typeof USE_CASES)[number] }) {
 
 export default function UseCases() {
   return (
-    <section id="use-cases" className="bg-white py-24 md:py-32">
+    <section id="use-cases" className="bg-white py-16 md:py-24">
       <div className="container-wide">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
@@ -86,7 +86,7 @@ export default function UseCases() {
         </div>
 
         <Reveal delay={240}>
-          <div className="mt-16 grid grid-cols-1 gap-y-14 md:mt-20 lg:grid-cols-[minmax(0,1fr)_1px_minmax(0,1fr)_1px_minmax(0,1fr)] lg:gap-x-10">
+          <div className="mt-10 grid grid-cols-1 gap-y-14 md:mt-12 lg:grid-cols-[minmax(0,1fr)_1px_minmax(0,1fr)_1px_minmax(0,1fr)] lg:gap-x-10">
             <UseCase item={USE_CASES[0]} />
             <span className="hidden h-full w-px bg-ink/10 lg:block" aria-hidden="true" />
             <UseCase item={USE_CASES[1]} />
@@ -96,7 +96,7 @@ export default function UseCases() {
         </Reveal>
 
         <Reveal delay={320}>
-          <div className="mt-16 text-center md:mt-20">
+          <div className="mt-16 text-center md:mt-12">
             <Link
               href="/service"
               className="inline-block text-xs tracking-[0.22em] text-ink transition-colors duration-300 hover:text-moss link-underline"

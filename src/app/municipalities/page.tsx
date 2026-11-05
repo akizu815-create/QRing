@@ -52,7 +52,7 @@ export default function MunicipalitiesPage() {
             <p className="eyebrow">FOR MUNICIPALITIES</p>
             <h1 id="municipalities-title" className="mt-8 font-serif text-[clamp(32px,4vw,56px)] font-light leading-[1.6] tracking-tight">地域の安心を、<br /><span className="text-moss">自治体</span>の新たな力に。</h1>
             <p className="body-jp mt-8 text-base text-ink/80">住民の善意を、実際の連絡につなぐ。</p>
-            <p className="body-jp mt-5 text-sm text-ink/70 md:text-base">「つながるQR」は、発見後の連絡を支え、自治体の見守り施策を補完する新しい選択肢です。</p>
+            <p className="body-jp mt-5 text-sm text-ink/70 md:text-base">「つながるQR」は、発見後の連絡を支え、自治体の見守り施策を補完する新しい選択肢です。高齢者見守りQRの導入では、配布対象や費用負担に加え、ご家族などの登録先が応答できる連絡体制も一緒に検討します。</p>
             <a href={contactUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-9 normal-case">自治体での導入を相談する</a>
           </div>
           <div className="lg:col-span-6"><Image src="/images/municipalities-hero.png" alt="屋外を一緒に歩く高齢女性と若い女性。高齢女性のバッグにQRコードのタグが付いている" width={1672} height={941} priority sizes="(min-width: 1024px) 48vw, 100vw" className="h-auto w-full" /></div>

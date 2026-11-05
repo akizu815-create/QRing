@@ -33,87 +33,43 @@ const NEWS = [
   },
 ];
 
-const HERO_CTA_LABEL = "お問い合わせはこちら";
-const CONTACT_URL = "https://axb.qring.jp/contact";
-const HERO_FEATURES = ["アプリ不要", "電話番号は非公開", "特許取得済"];
+const HERO_CTA_LABEL = "サービスの仕組みを見る";
+const HERO_FEATURES = ["専用アプリ不要", "高齢者・ペット・落とし物に"];
 
 export const metadata = pageMetadata("home");
 
 export default function Home() {
   const newsItems = isNewmarketSupportActive()
-    ? [{ date: NEWMARKET_SUPPORT.publishedOn.replaceAll("-", "."), cat: "NEWS", title: NEWMARKET_SUPPORT.title, href: NEWMARKET_SUPPORT.path }, ...NEWS.map((item) => ({ ...item, href: "/news/" }))]
-    : NEWS.map((item) => ({ ...item, href: "/news/" }));
+    ? [{ date: NEWMARKET_SUPPORT.publishedOn.replaceAll("-", "."), cat: "NEWS", title: NEWMARKET_SUPPORT.title, href: NEWMARKET_SUPPORT.path }, ...NEWS.slice(0, 2).map((item) => ({ ...item, href: "/news/" }))]
+    : NEWS.slice(0, 3).map((item) => ({ ...item, href: "/news/" }));
   return (
     <>
       <PageStructuredData page="home" />
-      {/* HERO */}
-      <section className="bg-ivory pt-20 md:pt-24">
-        <div className="relative mx-auto w-full max-w-[1536px] md:max-lg:flex md:max-lg:flex-col-reverse">
-          <HeroVisual />
-          <div className="absolute inset-0 z-10 px-6 pt-3 md:inset-auto md:left-[5.5%] md:top-0 md:flex md:h-[63%] md:w-[43%] md:flex-col md:px-0 md:pb-[clamp(20px,2.5vw,38px)] md:pt-[clamp(24px,4vw,60px)] md:max-lg:relative md:max-lg:left-auto md:max-lg:h-auto md:max-lg:w-full md:max-lg:bg-ivory md:max-lg:px-[5.5%] md:max-lg:py-10">
-            <div className="max-w-[56%] md:max-w-none">
-              <span className="eyebrow">— Tsunagaru QR</span>
-              <h1 className="mt-3 whitespace-nowrap font-serif text-[clamp(28px,7.2vw,30px)] font-light leading-[1.35] tracking-tight md:mt-4 md:text-[clamp(36px,4vw,64px)] md:leading-[1.3] xl:mt-5">
-                暮らしに、
-                <br />
-                <span className="text-moss">もしも</span>の備えを。
-              </h1>
-              <span className="mt-5 hidden h-px w-28 bg-gold md:block xl:mt-7" aria-hidden="true" />
-              <p className="mt-3 text-sm leading-[1.8] text-ink/80 md:mt-5 md:font-sans md:text-[clamp(15px,1.45vw,22px)] md:leading-[1.9] md:tracking-[0.08em] xl:mt-7">
-                お互いの電話番号を<br className="md:hidden" />
-                明かさずに、<br className="hidden md:block" />声でつながる。
-              </p>
+      {/* HERO: exact approved wording; mobile text and photograph do not overlap. */}
+      <section className="bg-ivory pt-20 md:pt-24" aria-labelledby="home-hero-title">
+        <div className="relative mx-auto w-full max-w-[1536px]">
+          <div className="relative z-10 px-6 pb-7 pt-9 xl:absolute xl:left-[5.5%] xl:top-0 xl:w-[48%] xl:px-0 xl:pb-0 xl:pt-[clamp(26px,4vw,60px)]">
+            <p className="text-xs leading-relaxed tracking-[0.08em] text-ink/65 md:text-sm">暮らしに、もしもの備えを。</p>
+            <h1 id="home-hero-title" className="mt-4 font-serif text-[clamp(28px,7.5vw,38px)] font-light leading-[1.5] tracking-tight md:text-[clamp(31px,3.3vw,52px)] md:leading-[1.4]">
+              <span className="block whitespace-nowrap">番号を知らせず、</span>
+              <span className="block md:whitespace-nowrap"><span className="inline-block">QRから</span><span className="inline-block text-moss">声でつながる。</span></span>
+            </h1>
+            <p className="mt-5 text-sm leading-[1.9] text-ink/80 md:mt-5 md:text-[clamp(12px,1.12vw,17px)]">
+              QRコードを読み取って、発信するだけ。<br />
+              お互いの電話番号を公開せずに、直接話せます。
+            </p>
+            <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-xs leading-relaxed text-deepmoss md:mt-5 md:text-sm">
+              {HERO_FEATURES.map((feature) => <li key={feature}>{feature}</li>)}
+            </ul>
+            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 md:mt-5">
+              <Link href="/service/" className="btn-primary min-h-12 !px-5 !py-3 !text-sm normal-case tracking-[0.06em]">{HERO_CTA_LABEL}<span aria-hidden="true">→</span></Link>
+              <Link href="/#for-business" className="inline-flex min-h-12 items-center text-sm text-deepmoss underline decoration-moss/35 underline-offset-4">自治体・法人の方へ →</Link>
             </div>
-            <div className="mt-[clamp(6rem,18svh,11rem)] md:mt-4 xl:mt-6">
-              <ul className="grid w-fit grid-cols-[max-content_max-content] gap-2 font-sans text-[15px] font-medium leading-none text-ink/90 md:flex md:flex-wrap md:items-center md:gap-3 md:leading-normal md:tracking-[0.02em]">
-                {HERO_FEATURES.map((feature) => (
-                  <li key={feature} className="whitespace-nowrap rounded-full border border-moss/25 bg-white/75 px-4 py-2.5 backdrop-blur-sm">
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-4 flex flex-col md:hidden items-start gap-2">
-                <a
-                  href={CONTACT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary whitespace-nowrap !px-5 !py-3 !text-xs normal-case tracking-[0.12em]"
-                >
-                  {HERO_CTA_LABEL}
-                  <span aria-hidden="true">↗</span>
-                </a>
-                <Link
-                  href="/municipalities/"
-                  className="inline-flex max-w-full items-center border border-moss/50 bg-ivory/80 px-5 py-3 text-xs font-medium tracking-[0.04em] text-deepmoss transition-colors hover:border-moss hover:bg-ivory"
-                >
-                  自治体向けサービスを見る →
-                </Link>
-              </div>
-              <div className="mt-4 hidden flex-wrap md:flex items-center gap-x-5 gap-y-2">
-                <a
-                  href={CONTACT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary normal-case tracking-[0.12em]"
-                >
-                  {HERO_CTA_LABEL}
-                  <span aria-hidden="true">↗</span>
-                </a>
-                <Link
-                  href="/municipalities/"
-                  className="inline-flex items-center whitespace-nowrap border border-moss/50 bg-ivory/80 px-3 py-3 text-[11px] font-medium tracking-[0.02em] text-deepmoss transition-colors hover:border-moss hover:bg-ivory"
-                >
-                  自治体向けサービスを見る →
-                </Link>
-              </div>
-            </div>
+            <p className="mt-4 max-w-sm text-xs leading-relaxed text-ink/70">{CONSUMER_SERVICE.notice}</p>
           </div>
+          <HeroVisual />
         </div>
       </section>
-
-      <div className="container-wide py-5 text-center">
-        <p className="text-xs leading-relaxed text-ink/65">{CONSUMER_SERVICE.notice}</p>
-      </div>
 
       <HowItWorks />
 
@@ -128,7 +84,7 @@ export default function Home() {
       <NewmarketSupportPlacement placement="home-support" />
 
       {/* NEWS */}
-      <section className="py-24 md:py-40">
+      <section className="py-16 md:py-24">
         <div className="container-wide grid md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <Reveal>

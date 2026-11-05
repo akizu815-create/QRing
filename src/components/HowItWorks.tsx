@@ -190,7 +190,7 @@ export default function HowItWorks() {
 
         <div
           ref={stepsRef}
-          className="mx-auto mt-16 grid max-w-[1280px] grid-cols-1 md:mt-20 lg:grid-cols-[minmax(0,1fr)_48px_minmax(0,1fr)_48px_minmax(0,1fr)] lg:items-start lg:gap-x-3 xl:grid-cols-[minmax(0,1fr)_56px_minmax(0,1fr)_56px_minmax(0,1fr)] xl:gap-x-8"
+          className="mx-auto mt-10 grid max-w-[1280px] grid-cols-1 md:mt-12 lg:grid-cols-[minmax(0,1fr)_48px_minmax(0,1fr)_48px_minmax(0,1fr)] lg:items-start lg:gap-x-3 xl:grid-cols-[minmax(0,1fr)_56px_minmax(0,1fr)_56px_minmax(0,1fr)] xl:gap-x-8"
         >
           <Step step={STEPS[0]} visible={stepsVisible} delay={0} />
           <FlowArrow visible={stepsVisible} delay={150} />

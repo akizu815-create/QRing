@@ -5,7 +5,7 @@ import re
 from .analysis import normalized
 from .store import utcnow
 
-KEYWORDS={'elderly-dementia':['高齢','認知症','行方不明','見守り'],'family-care':['介護','家族','親'],'lost-items':['紛失','落とし物','忘れ物','鍵','財布'],'pets':['ペット','犬','猫','迷子札'],'municipal-community':['自治体','地域','実証','行政'],'business-safety':['施設','ホテル','企業'],'privacy-life':['プライバシー','電話番号','個人情報']}
+KEYWORDS={'elderly-dementia':['高齢','認知症','行方不明','見守り'],'family-care':['介護','家族','親'],'lost-items':['紛失','落とし物','忘れ物','鍵','財布'],'pets':['ペット','犬','猫','迷子札'],'municipal-community':['自治体','地域','実証','行政'],'business-safety':['施設','ホテル','企業'],'privacy-life':['プライバシー','電話番号','個人情報','電話 qr','電話 QR','QRコードから電話','qrコード 電話']}
 def similarity(a,b):
     a=normalized(a);b=normalized(b)
     if not a or not b:return 0
