@@ -10,6 +10,10 @@
 import "dotenv/config";
 import { GoogleAuth } from "google-auth-library";
 
+if (process.argv.includes("--sync")) {
+  await import("./gsc-sync.mjs");
+} else {
+
 const SITE_URL = "sc-domain:qring.jp";
 
 const auth = new GoogleAuth({
@@ -44,4 +48,6 @@ if (rows.length === 0) {
   for (const row of rows) {
     console.log(row.keys[0], "clicks:", row.clicks, "impressions:", row.impressions);
   }
+}
+
 }

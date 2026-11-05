@@ -46,3 +46,8 @@ next-env.d.ts
 /.design-sync/node_modules
 /.design-sync/compiled.css
 /.design-sync/media/
+
+# Private SEO operations data (never static assets or source data)
+/.qring-private/
+__pycache__/
+*.pyc
