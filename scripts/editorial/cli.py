@@ -15,7 +15,7 @@ def import_external(db, packet, actor, retry=False):
     try:
         prior = db.execute('SELECT * FROM editorial_runs WHERE day=?',(day,)).fetchone()
         if prior:
-            if not retry or prior['state'] != 'import_failed' or prior['attempts'] >= 2: raise ValueError('A daily job already exists; edit its draft instead of duplicating it')
+            if not retry or prior['state'] != 'import_failed' or prior['attempts'] >= 2: raise core.Conflict('本日の取込・生成履歴が既にあります。既存の下書きを確認してください。失敗時の再試行は合計2回までです。')
             run_id = prior['id']; attempts = prior['attempts']+1
         else: attempts = 1
         db.execute('INSERT OR REPLACE INTO editorial_runs VALUES(?,?,?,?,?,?,?)',(run_id,day,'running',attempts,None,None,core.utcnow()))

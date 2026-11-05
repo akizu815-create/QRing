@@ -11,6 +11,8 @@ import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import unquote, urlsplit
 from . import core
+from .cli import import_external
+from .manual import packet as manual_packet
 
 ASSETS = core.ROOT/'scripts/editorial/ui'
 ROLES = {'viewer','editor','reviewer','publisher'}
@@ -65,7 +67,7 @@ class Handler(BaseHTTPRequestHandler):
                     filename, content_type = {'/':('index.html','text/html; charset=utf-8'),'/app.js':('app.js','text/javascript; charset=utf-8'),'/style.css':('style.css','text/css; charset=utf-8')}[path]
                     return self.respond(200,(ASSETS/filename).read_bytes(),content_type)
                 if path == '/api/bootstrap':
-                    return self.respond(200,{'actor':actor,'roles':sorted(roles),'development':self.server.development,'articles':[{**{k:a[k] for k in ['id','title','status','slug','contentRevision','approvalRevision','primaryAudience']}, 'publicRevision':next((p['contentRevision'] for p in core.published() if p['id']==a['id']),None)} for a in core.all_articles(db)],
+                    return self.respond(200,{'actor':actor,'day':core.today(),'importOptions':core.content_options(),'roles':sorted(roles),'development':self.server.development,'articles':[{**{k:a[k] for k in ['id','title','status','slug','contentRevision','approvalRevision','primaryAudience']}, 'publicRevision':next((p['contentRevision'] for p in core.published() if p['id']==a['id']),None)} for a in core.all_articles(db)],
                         'usage':core.usage(db),'runs':[dict(r) for r in db.execute('SELECT * FROM editorial_runs ORDER BY day DESC LIMIT 31')],
                         'releases':[{k:r[k] for k in ['id','actor','created_at','snapshot_hash','status']} for r in db.execute('SELECT * FROM editorial_releases ORDER BY created_at DESC LIMIT 20')],
                         'seoActions':core.seo_context(db)['actions']})
@@ -82,6 +84,11 @@ class Handler(BaseHTTPRequestHandler):
                         'history':[{**dict(r),'detail':json.loads(r['detail_json'])} for r in db.execute('SELECT id,actor,action,revision,created_at,detail_json FROM editorial_events WHERE article_id=? ORDER BY id DESC LIMIT 100',(article_id,))]})
                 return self.respond(404,{'error':'Not found'})
             data = json.loads(body)
+            if path == '/api/import':
+                if 'editor' not in roles: raise PermissionError('Editor permission required')
+                if not isinstance(data, dict) or set(data) != {'fields','retry'} or type(data['retry']) is not bool: raise ValueError('Invalid import request')
+                result = import_external(db, manual_packet(data['fields']), actor, retry=data['retry'])
+                return self.respond(201, result)
             if path == '/api/releases':
                 if 'publisher' not in roles: raise PermissionError('Publisher permission required')
                 return self.respond(200,core.prepare_release(db,actor,data['selections']))

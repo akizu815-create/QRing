@@ -1,5 +1,6 @@
 """Private editing service. Public Next.js code must never import this package."""
 import datetime as dt
+from functools import lru_cache
 import hashlib
 import json
 import os
@@ -40,6 +41,12 @@ def audit(db, actor, action, article=None, detail=None):
     if not isinstance(actor, str) or not actor.strip(): raise ValueError('Actor required')
     db.execute('INSERT INTO editorial_events(article_id,actor,action,revision,created_at,detail_json) VALUES(?,?,?,?,?,?)',
                (article.get('id') if article else None, actor, action, article.get('contentRevision') if article else None, utcnow(), encode(detail or {})))
+
+@lru_cache(maxsize=1)
+def content_options():
+    result = subprocess.run(['node', str(ROOT/'scripts/editorial/validate.cjs'), '--options'],
+                            text=True, capture_output=True, cwd=ROOT, timeout=30, check=True)
+    return json.loads(result.stdout)
 
 def validate(article):
     result = subprocess.run(['node', str(ROOT/'scripts/editorial/validate.cjs')], input=encode(article), text=True, capture_output=True, cwd=ROOT, timeout=30)
