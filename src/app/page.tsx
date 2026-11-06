@@ -69,10 +69,10 @@ export default function Home() {
                 <Link href="/service/" className="btn-primary min-h-12 !px-5 !py-3 !text-sm normal-case tracking-[0.06em]">{HERO_CTA_LABEL}<span aria-hidden="true">→</span></Link>
                 <Link href="/#for-business" className="inline-flex min-h-12 items-center text-sm text-deepmoss underline decoration-moss/35 underline-offset-4">自治体・法人の方へ →</Link>
               </div>
-              <p className={`${heroStyles.heroNotice} mt-4 max-w-sm text-xs leading-relaxed text-ink/70`}>{CONSUMER_SERVICE.notice}</p>
             </div>
           </div>
           <HeroVisual />
+          <p className={`${heroStyles.heroNotice} relative z-10 mt-4 max-w-sm text-xs leading-relaxed text-ink/70 lg:static`}>{CONSUMER_SERVICE.notice}</p>
         </div>
       </section>
 
