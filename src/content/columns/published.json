@@ -477,12 +477,12 @@
     "status": "published",
     "publicationOrigin": "editorial",
     "publishedAt": "2026-11-06",
-    "updatedAt": null,
+    "updatedAt": "2026-11-06",
     "reviewedAt": "2026-11-06",
     "nextReviewAt": "2027-02-06",
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "relatedArticleIds": [
       "elderly-monitoring"
     ],
@@ -495,6 +495,12 @@
         "id": "source-1",
         "label": "つながるQRのサービス紹介",
         "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "mhlw-community-watch",
+        "label": "厚生労働省：認知症施策の取組事例（地域の見守り体制整備）",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000167804.html",
         "checkedAt": "2026-11-06"
       }
     ],
@@ -592,6 +598,10 @@
       {
         "check": "user-approved-copy-2026-11-06",
         "passed": true
+      },
+      {
+        "check": "official-community-watch-reference-reviewed",
+        "passed": true
       }
     ],
     "generationRunId": null,
@@ -606,6 +616,13 @@
       "width": 1280,
       "height": 853,
       "alt": "QRコードを付けたバッグを持つ高齢女性と、スマートフォンで連絡する女性のイラスト"
-    }
+    },
+    "publishedTimestamp": "2026-11-06T09:33:41+09:00",
+    "relatedLinks": [
+      {
+        "href": "/use-cases/elderly/",
+        "label": "高齢者の外出時の見守りに、つながるQR"
+      }
+    ]
   }
 ]

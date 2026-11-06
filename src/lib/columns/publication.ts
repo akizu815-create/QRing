@@ -1,4 +1,4 @@
-import { CATEGORIES, AUDIENCES, articleDisplayDate, type Article, type ArticleCard } from "./types";
+import { CATEGORIES, AUDIENCES, comparePublicationDates, type Article, type ArticleCard } from "./types";
 
 const legacySlugs = new Set(["elderly-monitoring", "lost-item-preparation"]);
 const reservedSlugs = new Set(["audience", "category", "page"]);
@@ -31,6 +31,7 @@ export function validateArticle(value: unknown): asserts value is Article {
   for (const d of [a.updatedAt, a.reviewedAt, a.nextReviewAt]) requireValue(d === null || dateIsValid(d), `${a.slug}: review/update date`);
   requireValue(Number.isInteger(a.contentRevision) && a.contentRevision > 0, `${a.slug}: revision`);
   requireValue(["none", "contextual", "municipal"].includes(a.cta), `${a.slug}: CTA`);
+  requireValue(a.relatedLinks === undefined || (Array.isArray(a.relatedLinks) && a.relatedLinks.every((link) => safeHref(link.href) && text(link.label))), `${a.slug}: related links`);
   requireValue(Array.isArray(a.tags) && a.tags.every(text) && Array.isArray(a.relatedArticleIds) && a.relatedArticleIds.every(text), `${a.slug}: tags/related articles`);
   requireValue(a.relatedService === null || (safeHref(a.relatedService.href) && text(a.relatedService.label)), `${a.slug}: service link`);
   requireValue(Array.isArray(a.sources) && a.sources.length > 0, `${a.slug}: sources`);
@@ -69,15 +70,15 @@ export function selectPublishedArticles(records: readonly unknown[], now = Date.
     validateArticle(value);
     requireValue(!slugs.has(value.slug) && !ids.has(value.id), `duplicate article ${value.slug}`);
     slugs.add(value.slug); ids.add(value.id);
-    if (Date.parse(`${value.publishedAt}T00:00:00+09:00`) > now) continue;
-    if (value.publicationOrigin !== "existing" || value.contentRevision !== 1) {
-      requireValue(value.approvalRevision === value.contentRevision, `${value.slug}: missing/stale revision approval`);
-      requireValue(value.claims.every((c) => c.verified) && value.validationResults.length > 0 && value.validationResults.every((r) => r.passed), `${value.slug}: unresolved quality checks`);
-    }
+    if (Date.parse(value.publishedTimestamp ?? `${value.publishedAt}T00:00:00+09:00`) > now) continue;
+    // The legacy migration exemption is no longer needed: every live article has
+    // an approved revision. Never let an unreviewed legacy snapshot return.
+    requireValue(value.approvalRevision === value.contentRevision, `${value.slug}: missing/stale revision approval`);
+    requireValue(value.claims.every((c) => c.verified) && value.validationResults.length > 0 && value.validationResults.every((r) => r.passed), `${value.slug}: unresolved quality checks`);
     published.push(value);
   }
-  return published.sort((a, b) => articleDisplayDate(b).localeCompare(articleDisplayDate(a)) || a.slug.localeCompare(b.slug));
+  return published.sort(comparePublicationDates);
 }
 export function toArticleCard(a: Article): ArticleCard {
-  return { id: a.id, slug: a.slug, title: a.title, summary: a.summary, category: a.category, primaryAudience: a.primaryAudience, publishedAt: a.publishedAt, ...(a.editionDate ? { editionDate: a.editionDate } : {}), ...(a.contentFormat === "approved-manuscript" && a.image ? { image: a.image } : {}) };
+  return { id: a.id, slug: a.slug, title: a.title, summary: a.summary, category: a.category, primaryAudience: a.primaryAudience, publishedAt: a.publishedAt, ...(a.publishedTimestamp ? { publishedTimestamp: a.publishedTimestamp } : {}), ...(a.contentFormat === "approved-manuscript" && a.image ? { image: a.image } : {}) };
 }

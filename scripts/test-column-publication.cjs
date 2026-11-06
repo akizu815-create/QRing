@@ -15,7 +15,7 @@ try {
   assert.equal(columnListPath(1), '/column/');
   assert.equal(columnListPath(2), '/column/page/2/');
   assert.equal(columnListPath(2, '/column/audience/municipal/'), '/column/audience/municipal/page/2/');
-  const { CATEGORIES, AUDIENCES, articleDisplayDate } = require(path.join(tmp, 'types.js'));
+  const { CATEGORIES, AUDIENCES, articlePublicationDate, comparePublicationDates, articlePublishedTime, articleModifiedTime } = require(path.join(tmp, 'types.js'));
   const records = JSON.parse(fs.readFileSync('src/content/columns/published.json', 'utf8'));
   assert.equal(latestArticles(records, { serviceHref: '/use-cases/pets/' }).length, 0);
   assert.deepEqual(latestArticles(records, { audience: 'municipal' }).map(a => a.slug), ['elderly-monitoring-contact-system']);
@@ -46,15 +46,26 @@ try {
   const unsafe = clone(); unsafe.sections[0].blocks.push({ type: 'link', href: 'javascript:alert(1)', label: 'bad' });
   assert.throws(() => validateArticle(unsafe), /link/);
   const card = toArticleCard(records[0]);
-  assert.deepEqual(Object.keys(card).sort(), ['id','slug','title','summary','category','primaryAudience','publishedAt','editionDate','image'].sort());
-  assert.equal(articleDisplayDate(records[0]), '2026-11-01');
+  assert.deepEqual(Object.keys(card).sort(), ['id','slug','title','summary','category','primaryAudience','publishedAt','publishedTimestamp','image'].sort());
+  assert.equal(articlePublicationDate(records[0]), '2026-10-28');
   assert.equal(records[0].publishedAt, '2026-10-28');
-  assert.equal(selectPublishedArticles(records, Date.parse('2026-11-06T12:00:00+09:00'))[1].slug, 'lost-item-preparation');
+  assert.equal(selectPublishedArticles(records, Date.parse('2026-11-06T12:00:00+09:00'))[1].slug, 'elderly-monitoring');
   assert.throws(() => validateArticle({ ...clone(), editionDate: '2026-02-30' }), /edition date/);
   assert.throws(() => validateArticle({ ...clone(), publishedTimestamp: '2026-11-01T00:00:00+09:00' }), /timestamp/);
   validateArticle({ ...clone(), status: 'draft', reviewedAt: null, approvalRevision: null });
   assert.throws(() => validateArticle({ ...clone(), approvalRecord: { ...clone().approvalRecord, approvedOn: '2026-02-30' } }), /approval record/);
   assert.throws(() => validateArticle({ ...clone(), approvalRecord: { ...clone().approvalRecord, sha256: 'invalid' } }), /approval record/);
+  assert(!('editionDate' in card), 'Issue dates are private editorial metadata');
+  const pendingLegacy = { ...clone(), publicationOrigin: 'existing', contentRevision: 1, approvalRevision: null };
+  assert.throws(() => selectPublishedArticles([pendingLegacy], now), /approval/);
+  const changedEditorialDates = records.map(a => ({ ...a, editionDate: '2099-01-01', updatedAt: '2099-01-01' }));
+  assert.deepEqual(latestArticles(changedEditorialDates).map(a=>a.id), latestArticles(records).map(a=>a.id), 'Issue/update dates must never reorder published articles');
+  const scheduledTime = { ...clone(), publishedAt: '2026-11-05', publishedTimestamp: '2026-11-05T18:00:00+09:00' };
+  assert.equal(selectPublishedArticles([scheduledTime], now).length, 0, 'Known future publication time must not leak');
+  assert.equal(articlePublishedTime({ publishedAt: '2026-10-28' }), '2026-10-28', 'Do not invent midnight when no time is known');
+  assert.equal(articleModifiedTime({ updatedAt: '2026-11-06' }), '2026-11-06');
+  assert(comparePublicationDates({ slug:'early', publishedAt:'2026-11-06',publishedTimestamp:'2026-11-06T09:00:00+09:00' }, { slug:'late', publishedAt:'2026-11-06',publishedTimestamp:'2026-11-06T10:00:00+09:00' }) > 0);
+  assert.throws(() => validateArticle({ ...clone(), relatedLinks: [{ href: 'javascript:alert(1)', label: 'bad' }] }), /related links/);
   assert(!('sections' in card) && !('approvalRevision' in card));
   console.log('Column publication guards: all assertions passed (statuses, future date, revision approval, checks, independent audience/category, duplicates, safe content, client projection).');
 } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
