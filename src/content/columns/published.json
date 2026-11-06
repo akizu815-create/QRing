@@ -845,5 +845,656 @@
       "height": 720,
       "alt": "QRコード付きの迷子札を付けた愛犬と飼い主の水彩イラスト"
     }
+  },
+  {
+    "id": "dementia-early-signs",
+    "slug": "dementia-early-signs",
+    "title": "「もしかして認知症？」気になる初期症状をチェック",
+    "summary": "「最近、同じことを何度も聞くようになった」「以前より物忘れが増えた気がする」。",
+    "introduction": [
+      "親や家族のちょっとした変化に、気になることはありませんか？",
+      "年齢を重ねると物忘れが増えることがありますが、認知症による変化とはどのような違いがあるのでしょうか。"
+    ],
+    "seoTitle": "認知症の初期症状チェック｜物忘れとの違いと相談先",
+    "metaDescription": "認知症の初期症状にはどのようなものがある？物忘れとの違いや、家族が気づきたい日常の変化をチェック形式で紹介。気になったときの相談先も解説します。",
+    "category": "elderly-dementia",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "approved",
+    "publicationOrigin": "editorial",
+    "editionDate": "2026-11-03",
+    "publishedAt": "2026-11-07",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/dementia-early-signs.md",
+      "sha256": "da0a13285baf31630ba9dd7964b0a612ce39eb8f087c475964b0e7f193fadf9d",
+      "receivedOn": "2026-11-06"
+    },
+    "relatedArticleIds": [],
+    "relatedService": null,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "政府広報オンライン｜知っておきたい認知症の基本",
+        "href": "https://www.gov-online.go.jp/article/202501/entry-7013.html",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "source-2",
+        "label": "厚生労働省｜認知症に関する相談について",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "年齢による物忘れと認知症の違い",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "例えば、昨日の夕食で何を食べたか思い出せないのは、加齢による物忘れでも見られます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "一方、食事をしたこと自体を忘れてしまう場合は、認知症で見られる記憶の変化の一例です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、こうした違いだけで認知症かどうかを判断することはできません。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "気になる変化をチェック",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "認知症では、物忘れ以外にもさまざまな変化が見られることがあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "次のようなことがないか、普段の様子を振り返ってみましょう。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "同じ質問や話を何度も繰り返す",
+              "慣れている家事や計算で間違いが増えた",
+              "約束の日時や場所が分からなくなる",
+              "以前好きだった趣味に関心を示さなくなった",
+              "怒りっぽくなるなど、普段と様子が変わった",
+              "慣れた場所で道に迷うことがある"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "これらは認知症で見られることのある変化の例ですが、当てはまるからといって認知症と決まるわけではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "また、当てはまる項目が少ないからといって、認知症ではないと判断することもできません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "このチェック項目は診断を目的としたものではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "気になるときは、どこに相談する？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "まずは、かかりつけ医や「もの忘れ外来」などの医療機関に相談できます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "地域包括支援センターでも、認知症や介護について相談でき、必要に応じて医療・介護サービスにつなぐ支援を受けられます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "家族が変化を感じた場合は、いつ頃から、どのような場面で気になったのかをメモしておくと、相談時に役立ちます。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "本人の気持ちも大切に",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "気になる変化があっても、本人を問い詰めたり、物忘れを繰り返し指摘したりすることは避けたいものです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "認知症に似た症状が別の病気などによって現れる場合もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "一人で判断せず、本人の気持ちを尊重しながら専門家に相談することが大切です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "小さな変化に気づくことは、本人を決めつけることではなく、必要な支援につながる第一歩です。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "参考資料",
+        "blocks": [
+          {
+            "type": "link",
+            "href": "https://www.gov-online.go.jp/article/202501/entry-7013.html",
+            "label": "政府広報オンライン｜知っておきたい認知症の基本"
+          },
+          {
+            "type": "paragraph",
+            "text": "https://www.gov-online.go.jp/article/202501/entry-7013.html"
+          },
+          {
+            "type": "link",
+            "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html",
+            "label": "厚生労働省｜認知症に関する相談について"
+          },
+          {
+            "type": "paragraph",
+            "text": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "認知症の初期症状にはどのようなものがある？物忘れとの違いや、家族が気づきたい日常の変化をチェック形式で紹介。気になったときの相談先も解説します。",
+    "primaryKeyword": "認知症の初期症状チェック",
+    "topicClusterId": "elderly-dementia",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "user-supplied-approved-manuscript-exact-text",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/dementia-early-signs.webp",
+      "width": 640,
+      "height": 384,
+      "alt": "物忘れについて考える高齢男性と、日常の変化を記したチェックリストの水彩イラスト"
+    }
+  },
+  {
+    "id": "senior-care-facility-types",
+    "slug": "senior-care-facility-types",
+    "title": "老人ホームって種類が多すぎ！何が違うの？",
+    "summary": "親の介護や今後の暮らしについて考え始めると、「サ高住」「特養」「グループホーム」「デイサービス」など、さまざまな名前を耳にします。",
+    "introduction": [
+      "どれも高齢者を支える仕組みですが、実は役割が大きく異なります。",
+      "まずは、住む場所なのか、通って利用するサービスなのかを区別すると、違いが分かりやすくなります。"
+    ],
+    "seoTitle": "高齢者向け施設の種類と違い｜サ高住・特養・グループホーム",
+    "metaDescription": "老人ホームや高齢者向け施設にはどんな種類がある？サ高住、特養、グループホーム、デイサービスなどの違いと、それぞれの役割や選び方を分かりやすく解説します。",
+    "category": "business-safety",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "approved",
+    "publicationOrigin": "editorial",
+    "editionDate": "2026-11-04",
+    "publishedAt": "2026-11-07",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/senior-care-facility-types.md",
+      "sha256": "74fd65253d23f56b8f51b3ce2868b1bdecb76e5a01a4bd9446aef7b6581e641f",
+      "receivedOn": "2026-11-06"
+    },
+    "relatedArticleIds": [],
+    "relatedService": null,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "厚生労働省｜介護保険サービスの解説",
+        "href": "https://www.kaigokensaku.mhlw.go.jp/commentary/service.html",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "source-2",
+        "label": "厚生労働省｜サービス付き高齢者向け住宅について",
+        "href": "https://www.kaigokensaku.mhlw.go.jp/publish_sumai/",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "住まいとして利用する施設",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "サービス付き高齢者向け住宅（サ高住）"
+          },
+          {
+            "type": "paragraph",
+            "text": "高齢者が暮らすための住宅で、安否確認や生活相談のサービスが提供されます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "介護サービスの提供体制は住宅によって異なるため、入居前の確認が必要です。"
+          },
+          {
+            "type": "heading",
+            "text": "有料老人ホーム"
+          },
+          {
+            "type": "paragraph",
+            "text": "食事や介護、生活支援などを提供する高齢者向けの住まいです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "介護付き、住宅型などの種類があり、受けられるサービスや費用は施設によって異なります。"
+          },
+          {
+            "type": "heading",
+            "text": "特別養護老人ホーム（特養）"
+          },
+          {
+            "type": "paragraph",
+            "text": "常時介護が必要で、自宅での生活が難しい方を支える施設です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "原則として要介護3以上の方が入所対象ですが、一定の条件を満たす場合には例外もあります。"
+          },
+          {
+            "type": "heading",
+            "text": "グループホーム"
+          },
+          {
+            "type": "paragraph",
+            "text": "認知症のある方が、少人数で共同生活を送りながら介護や日常生活の支援を受ける施設です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "原則として要支援2以上で認知症の診断がある方が対象となり、地域密着型サービスとして住所地などの利用条件があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "自宅で暮らしながら利用するサービス",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "デイサービス（通所介護）"
+          },
+          {
+            "type": "paragraph",
+            "text": "自宅などで暮らす方が日中に施設へ通い、食事や入浴、機能訓練などの支援を受けるサービスです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "家族の介護負担を軽減する役割もあります。"
+          },
+          {
+            "type": "heading",
+            "text": "デイケア（通所リハビリテーション）"
+          },
+          {
+            "type": "paragraph",
+            "text": "医師の指示などに基づき、病院や介護老人保健施設などに通ってリハビリテーションを受けるサービスです。"
+          },
+          {
+            "type": "heading",
+            "text": "ショートステイ（短期入所）"
+          },
+          {
+            "type": "paragraph",
+            "text": "施設に短期間宿泊し、介護や生活支援を受けるサービスです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "家族が一時的に介護できない場合などにも利用されます。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "どの施設・サービスを選べばいい？",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "自立した生活を続けながら見守りもほしい場合"
+          },
+          {
+            "type": "paragraph",
+            "text": "サ高住などが選択肢になります。"
+          },
+          {
+            "type": "heading",
+            "text": "日常生活に継続的な介護が必要な場合"
+          },
+          {
+            "type": "paragraph",
+            "text": "介護付き有料老人ホームや特養などを検討できます。"
+          },
+          {
+            "type": "heading",
+            "text": "認知症があり、共同生活での支援を希望する場合"
+          },
+          {
+            "type": "paragraph",
+            "text": "グループホームが選択肢の一つです。"
+          },
+          {
+            "type": "heading",
+            "text": "自宅で暮らしながら日中の支援を受けたい場合"
+          },
+          {
+            "type": "paragraph",
+            "text": "デイサービスなどを利用する方法があります。"
+          },
+          {
+            "type": "heading",
+            "text": "リハビリテーションを受けたい場合"
+          },
+          {
+            "type": "paragraph",
+            "text": "デイケアなどが選択肢になります。"
+          },
+          {
+            "type": "heading",
+            "text": "一時的に宿泊して介護を受けたい場合"
+          },
+          {
+            "type": "paragraph",
+            "text": "ショートステイという方法もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "実際に利用できるかどうかは、要介護認定、本人の状態、施設の受け入れ条件などによって異なります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "また、費用や医療対応、夜間の職員配置も施設ごとに違います。"
+          },
+          {
+            "type": "paragraph",
+            "text": "迷ったときは、地域包括支援センターや担当のケアマネジャーに相談し、本人の希望に合った選択肢を探してみましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "施設の名前だけで判断せず、「どこで、どのような暮らしをしたいか」から考えることが大切です。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "参考資料",
+        "blocks": [
+          {
+            "type": "link",
+            "href": "https://www.kaigokensaku.mhlw.go.jp/commentary/service.html",
+            "label": "厚生労働省｜介護保険サービスの解説"
+          },
+          {
+            "type": "paragraph",
+            "text": "https://www.kaigokensaku.mhlw.go.jp/commentary/service.html"
+          },
+          {
+            "type": "link",
+            "href": "https://www.kaigokensaku.mhlw.go.jp/publish_sumai/",
+            "label": "厚生労働省｜サービス付き高齢者向け住宅について"
+          },
+          {
+            "type": "paragraph",
+            "text": "https://www.kaigokensaku.mhlw.go.jp/publish_sumai/"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "老人ホームや高齢者向け施設にはどんな種類がある？サ高住、特養、グループホーム、デイサービスなどの違いと、それぞれの役割や選び方を分かりやすく解説します。",
+    "primaryKeyword": "高齢者向け施設の種類と違い",
+    "topicClusterId": "business-safety",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "user-supplied-approved-manuscript-exact-text",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/senior-care-facility-types.webp",
+      "width": 640,
+      "height": 384,
+      "alt": "車椅子の高齢女性と支援する女性を中心に、高齢者向け施設の種類を描いた水彩イラスト"
+    }
+  },
+  {
+    "id": "school-contact-list-privacy",
+    "slug": "school-contact-list-privacy",
+    "title": "そういえば、学校の連絡網ってなくなった？",
+    "summary": "昔は、学校から配られるクラスの連絡網に、友達の家の電話番号がずらりと並んでいました。",
+    "introduction": [
+      "卒業アルバムには住所や電話番号が載り、町内会の名簿にも近所の人の連絡先が書かれていることがありました。",
+      "ところが今では、こうした情報を見かける機会が少なくなっています。",
+      "私たちの個人情報に対する考え方は、どのように変わってきたのでしょうか。"
+    ],
+    "seoTitle": "学校の連絡網が減った理由｜個人情報とプライバシーの変化",
+    "metaDescription": "昔は当たり前だった学校の連絡網や住所録は、なぜ見かけなくなったのでしょうか。個人情報保護への意識の変化、連絡手段のデジタル化、プライバシーとの付き合い方を解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "approved",
+    "publicationOrigin": "editorial",
+    "editionDate": "2026-11-05",
+    "publishedAt": "2026-11-07",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/school-contact-list-privacy.md",
+      "sha256": "5f56370031dda461b55ba1bec6993983988dc8e450411b6fd6fc770a54e38192",
+      "receivedOn": "2026-11-06"
+    },
+    "relatedArticleIds": [],
+    "relatedService": null,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "個人情報保護委員会｜名簿の作成・配布に関するQ&A",
+        "href": "https://www.ppc.go.jp/all_faq_index/faq1-q4-18/",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "source-2",
+        "label": "個人情報保護委員会｜公式サイト",
+        "href": "https://www.ppc.go.jp/",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "昔は当たり前だった「連絡先の共有」",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "携帯電話やインターネットが普及する前は、学校の緊急連絡や地域の連絡事項を伝えるために、電話番号を共有することが便利な方法でした。"
+          },
+          {
+            "type": "paragraph",
+            "text": "クラスの連絡網では、先生から保護者へ、保護者から次の家庭へと電話をつなぐ仕組みが一般的でした。"
+          },
+          {
+            "type": "paragraph",
+            "text": "近所付き合いでも、お互いの家の電話番号を知っていることは珍しくありませんでした。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "なぜ連絡網は減っていったの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "大きな理由の一つは、個人情報を慎重に扱う意識が高まったことです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "電話番号や住所が多くの人に配られると、本来の目的以外に使われたり、意図しない相手に知られたりする可能性があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "また、学校からの一斉メールや保護者向けアプリなどが普及し、各家庭の電話番号を共有しなくても連絡できる方法が増えました。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、個人情報保護法によって学校の連絡網が一律に禁止されたわけではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "現在でも、利用目的や提供先を明示し、必要な同意を得るなど、適切な手続きを踏んで作成・配布することは可能です。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "卒業アルバムや町内会の名簿も変化",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "学校の連絡網だけではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "卒業アルバムの住所録や、地域の名簿なども、掲載する情報や配布方法を見直す動きがあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "以前は便利さが優先されていた場面でも、今では「誰が情報を見るのか」「何のために使うのか」を確認することが大切になっています。"
+          },
+          {
+            "type": "paragraph",
+            "text": "一方で、連絡先を共有しないことによって、緊急時の連絡や地域のつながりが難しくなる場合もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "プライバシーを守ることと、必要なときに連絡できること。その両立が求められています。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "デジタル化で便利になった一方、新しい課題も",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "今では、SNSやメッセージアプリを使えば、電話番号を直接交換せずに連絡できる場面も増えました。"
+          },
+          {
+            "type": "paragraph",
+            "text": "一方で、写真に写り込んだ情報や、SNSで公開した投稿から、思いがけず個人情報が広がる可能性もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "連絡先を紙で配らなくなったからといって、プライバシーの問題がなくなったわけではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "むしろ、情報をどこまで公開するかを自分で考える機会が増えたともいえるでしょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "大切なのは、情報を隠すことだけではない",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "昔と今を比べると、個人情報の扱い方は大きく変わりました。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただ、連絡網が担っていた「必要なときに人と人をつなぐ」という役割まで、不要になったわけではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "大切なのは、必要以上に個人情報を公開せず、それでも必要な連絡が取れる方法を考えることです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "便利さと安心のバランスを、これからも見直していきたいですね。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "参考資料",
+        "blocks": [
+          {
+            "type": "link",
+            "href": "https://www.ppc.go.jp/all_faq_index/faq1-q4-18/",
+            "label": "個人情報保護委員会｜名簿の作成・配布に関するQ&A"
+          },
+          {
+            "type": "paragraph",
+            "text": "https://www.ppc.go.jp/all_faq_index/faq1-q4-18/"
+          },
+          {
+            "type": "link",
+            "href": "https://www.ppc.go.jp/",
+            "label": "個人情報保護委員会｜公式サイト"
+          },
+          {
+            "type": "paragraph",
+            "text": "https://www.ppc.go.jp/"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "昔は当たり前だった学校の連絡網や住所録は、なぜ見かけなくなったのでしょうか。個人情報保護への意識の変化、連絡手段のデジタル化、プライバシーとの付き合い方を解説します。",
+    "primaryKeyword": "学校の連絡網が減った理由",
+    "topicClusterId": "privacy-life",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "user-supplied-approved-manuscript-exact-text",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/school-contact-list-privacy.webp",
+      "width": 800,
+      "height": 324,
+      "alt": "昔の紙のクラス連絡網と、スマートフォンを使う親子を対比した水彩イラスト"
+    }
   }
 ]

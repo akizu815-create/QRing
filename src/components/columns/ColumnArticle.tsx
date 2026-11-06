@@ -8,7 +8,7 @@ import { articlePath, articleDisplayDate, articlePublishedTime, audienceLabel, c
 function ContentBlock({ block }: { block: Block }) {
   switch (block.type) {
     case "heading": return <h3 className="pt-3 font-serif text-xl font-light leading-relaxed md:text-2xl">{block.text}</h3>;
-    case "paragraph": return <p className={block.small ? "text-xs text-ink/60" : undefined}>{block.text}</p>;
+    case "paragraph": return <p className={[block.small ? "text-xs text-ink/60" : "", block.text.startsWith("https://") ? "break-all" : ""].filter(Boolean).join(" ") || undefined}>{block.text}</p>;
     case "list": return <ul className="list-disc space-y-3 pl-5">{block.items.map((item, i) => <li key={i}>{item}</li>)}</ul>;
     case "link": {
       const link = <Link href={block.href} className="link-underline text-moss">{block.label}</Link>;
