@@ -13,7 +13,7 @@ root=Path('out')
 records=json.loads(Path('src/content/columns/published.json').read_text())
 today=dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
 articles=[a for a in records if a.get('status')=='published' and a['publishedAt']<=today and (a.get('publicationOrigin')=='existing' and a['contentRevision']==1 or a.get('approvalRevision')==a['contentRevision'])]
-articles.sort(key=lambda a:(-dt.date.fromisoformat(a['publishedAt']).toordinal(),a['slug']))
+articles.sort(key=lambda a:(-dt.date.fromisoformat(a.get('editionDate',a['publishedAt'])).toordinal(),a['slug']))
 path=lambda a:'/column/'+a['slug']+'/'
 html=lambda route:(root/route.strip('/')/'index.html').read_text()
 parsed=lambda route:seo.Page(html(route))

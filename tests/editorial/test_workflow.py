@@ -19,6 +19,10 @@ class WorkflowTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory(); self.path = str(Path(self.tmp.name)/'private'/'test.sqlite'); self.db = core.connect(self.path)
         a = copy.deepcopy(core.published()[0]); a.update(id='fixture-editorial',slug='fixture-editorial',title='防災訓練における連絡網の整備手順',searchIntent='施設の防災訓練で緊急連絡網を整備する担当者向けの手順',primaryKeyword='防災訓練 連絡網',topicClusterId='emergency-exercise',publicationOrigin='editorial',publishedAt=core.today(),sources=[{'id':'fixture-source','href':'https://example.org/primary','label':'Synthetic evidence','checkedAt':core.today()}],claims=[{'text':'Synthetic claim for tests only','sourceIds':['fixture-source'],'verified':False}],relatedArticleIds=[])
+        # A synthetic new article must not inherit the source article's historical
+        # publication timestamp, issue date or approved-manuscript provenance.
+        for key in ['editionDate', 'publishedTimestamp', 'contentFormat', 'approvalRecord', 'introduction']:
+            a.pop(key, None)
         self.article = a; self.evidence = [{'sourceId':'fixture-source','url':'https://example.org/primary','checkedAt':core.today(),'excerpt':'Synthetic primary source excerpt, not a real researched statement.','kind':'primary'}]
         self.public_before = (core.ROOT/'src/content/columns/published.json').read_bytes()
     def tearDown(self):
@@ -139,7 +143,7 @@ class WorkflowTests(unittest.TestCase):
             signature=hmac.new(b'x'*32,'\n'.join(['reader',stamp,'get-once','GET',get_path,hashlib.sha256(b'').hexdigest()]).encode(),hashlib.sha256).hexdigest()
             conn.request('GET',get_path,headers={'X-QRing-Actor':'reader','X-QRing-Time':stamp,'X-QRing-Nonce':'get-once','X-QRing-Signature':signature})
             response=conn.getresponse(); self.assertEqual(response.status,200); self.assertEqual(response.getheader('Cache-Control'),'no-store')
-            data=json.loads(response.read()); self.assertEqual(data['roles'],['viewer']); self.assertEqual(len(data['articles']),len(core.published())); self.assertEqual(data['articles'][0]['publicRevision'],1)
+            data=json.loads(response.read()); self.assertEqual(data['roles'],['viewer']); self.assertEqual(len(data['articles']),len(core.published())); self.assertEqual(data['articles'][0]['publicRevision'],core.published()[0]['contentRevision'])
             body=b'{}';stamp=str(int(time.time()));nonce='one';path='/api/releases'
             sig=hmac.new(b'x'*32,'\n'.join(['reader',stamp,nonce,'POST',path,hashlib.sha256(body).hexdigest()]).encode(),hashlib.sha256).hexdigest()
             headers={'X-QRing-Actor':'reader','X-QRing-Time':stamp,'X-QRing-Nonce':nonce,'X-QRing-Signature':sig,'Content-Type':'application/json','Origin':'https://editorial.example.org'}

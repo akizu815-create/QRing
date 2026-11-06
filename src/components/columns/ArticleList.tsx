@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { CATEGORIES, AUDIENCES, categoryLabel, audienceLabel, articlePath, formatDate, type ArticleCard, type Audience } from "@/lib/columns/types";
+import Image from "next/image";
+import { CATEGORIES, AUDIENCES, articleDisplayDate, categoryLabel, audienceLabel, articlePath, formatDate, type ArticleCard, type Audience } from "@/lib/columns/types";
 import { COLUMN_PAGE_SIZE as PAGE_SIZE, columnListPath } from "@/lib/columns/navigation";
 export default function ArticleList({ articles, fixedAudience, initialPage = 1, basePath = "/column/" }: { articles: ArticleCard[]; fixedAudience?: Audience; initialPage?: number; basePath?: string }) {
   const [category, setCategory] = useState("");
@@ -29,10 +30,11 @@ export default function ArticleList({ articles, fixedAudience, initialPage = 1, 
       <p role="status" aria-live="polite" className="mt-6 text-sm leading-7 text-ink/70">{filtered.length}件の記事{filtered.length > PAGE_SIZE ? ` ・ ${current} / ${pages}ページ` : ""}</p>
       {filtered.length ? <div className="mt-8 grid gap-x-10 gap-y-12 md:grid-cols-2">
         {filtered.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE).map((a) => <article key={a.id} className="flex flex-col border-t border-ink/20 pt-7">
+          {a.image && <Link href={articlePath(a.slug)} tabIndex={-1} aria-hidden="true"><Image src={a.image.src} width={a.image.width} height={a.image.height} alt="" sizes="(max-width: 768px) 100vw, 384px" className="mb-6 h-auto w-full" /></Link>}
           <p className="text-xs leading-7 text-ink/65">{categoryLabel(a.category)}<span aria-hidden="true"> ／ </span>{audienceLabel(a.primaryAudience)}</p>
           <h3 className="mt-4 font-serif text-2xl font-light leading-relaxed"><Link className="hover:text-moss" href={articlePath(a.slug)}>{a.title}</Link></h3>
           <p className="body-jp mt-5 flex-1 text-sm">{a.summary}</p>
-          <p className="mt-5 text-xs text-ink/60">公開日：<time dateTime={a.publishedAt}>{formatDate(a.publishedAt)}</time></p>
+          <p className="mt-5 text-xs text-ink/60">{a.editionDate ? "記事日：" : "公開日："}<time dateTime={articleDisplayDate(a)}>{formatDate(articleDisplayDate(a))}</time></p>
           <Link className="link-underline mt-6 self-start py-2 text-sm text-moss" href={articlePath(a.slug)}>記事を読む →<span className="sr-only">{a.title}</span></Link>
         </article>)}
       </div> : <div className="py-12"><p className="body-jp text-sm">該当する公開記事はまだありません。</p>{(category || (!fixedAudience && audience)) && <button type="button" className="mt-4 min-h-12 text-sm text-moss underline underline-offset-4" onClick={reset}>絞り込みを解除する</button>}</div>}
