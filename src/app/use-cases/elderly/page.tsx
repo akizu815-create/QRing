@@ -17,13 +17,14 @@ const eyebrowClass = "font-serif text-[11px] tracking-[0.24em] text-ink/60";
 // 内閣府 令和8年版高齢社会白書 図1-2-2-6：443.2万人・584.2万人を概数表示。
 // https://www8.cao.go.jp/kourei/whitepaper/w-2026/zenbun/pdf/1s2s_02.pdf
 const projections = [{ year: "2022年", value: "443", label: "推計" }, { year: "2040年", value: "584", label: "将来推計" }];
-// 比較対象の基本操作は公式案内で照合。運営会社名は表示しない。
-// https://mirai-town.com/product/dokoshiru-briefing/
+// GPS・伝言板は公式案内で確認した役割を例示。個別サービスの機能は異なる。
 const comparison = [
-  ["主な役割", "発見後の音声連絡", "現在地の把握", "発見情報の通知・伝言"],
-  ["発見者から家族へ直接音声でつながれる", "○", "サービス・機種による", "基本は伝言板でのやり取り"],
-  ["発見者の基本操作", "スキャン後、発信ボタンをタップ", "サービスによる", "スキャン後、発見情報を入力"],
-  ["電話番号を相手に公開せず連絡", "○", "サービスによる", "○"],
+  ["主な役割", "発見後の音声連絡", "端末を携帯する方の位置確認", "発見後の情報共有（サービスによる）"],
+  ["位置情報の確認", "追跡・自動検知なし。通話で場所を伝える", "測位・通信条件に応じて確認", "発見場所などを共有する方式もある"],
+  ["発見後の連絡・音声通話", "登録先へ直接通話", "通話の対応はサービス・機種による", "伝言板での情報共有など。音声対応は個別に確認"],
+  ["発見者の基本操作", "スキャン後、発信ボタンをタップ", "発見者の操作を要しない位置確認が中心", "スキャン後、情報を入力する方式など"],
+  ["電話番号の取り扱い", "お互いの電話番号を公開しない", "サービス・機種による", "非公開の方式もある。各サービスの案内を確認"],
+  ["利用条件・注意点", "発見者の協力と登録先の応答が必要。通話は日本国内限定", "端末の携帯・充電、測位・通信環境などを確認", "発見者の操作や通知の受信・確認方法を確認"],
 ];
 
 const steps = [
@@ -48,7 +49,7 @@ export default function ElderlyPage() {
             </h1>
             <div className="body-jp mt-6 max-w-xl space-y-3 text-sm text-ink/75 md:text-base">
               <p>もしも、家族が帰ってこなかったら。認知症のあるご家族など、外出中に見守りが必要な方への備えを考えてみませんか。</p>
-              <p>つながるQRは、見つけた方が身につけたQRコードを読み取り、発信をタップすると、ご家族などの登録先と電話番号を公開せずに通話できる連絡手段です。</p>
+              <p>つながるQRは、見つけた方が身につけたQRコードをスキャンし、発信をタップすると、ご家族などの登録先と電話番号を公開せずに通話できる連絡手段です。</p>
             </div>
           </div>
           <div className="relative -mx-6 aspect-[5/4] md:-mx-8 md:aspect-[6/5]" style={{ maskImage: "linear-gradient(to right, transparent, black 9%, black 91%, transparent), linear-gradient(to bottom, transparent, black 8%, black 90%, transparent)", WebkitMaskImage: "linear-gradient(to right, transparent, black 9%, black 91%, transparent), linear-gradient(to bottom, transparent, black 8%, black 90%, transparent)", maskComposite: "intersect", WebkitMaskComposite: "source-in" }}>
@@ -90,7 +91,7 @@ export default function ElderlyPage() {
               ))}
             </ol>
             <p className="mt-6 text-[11px] leading-relaxed text-ink/55">※図解・画面は操作のイメージです。図解内のQRコードはご利用いただけません。</p>
-            <p className="body-jp mt-4 text-sm text-ink/75">QRコードを身につけるご本人のスマートフォン操作は不要です。専用アプリや、発見者による電話番号の手入力も必要ありません。連絡には、発見者による読み取りと発信、登録先の応答が必要です。</p>
+            <p className="body-jp mt-4 text-sm text-ink/75">QRコードを身につけるご本人のスマートフォン操作は不要です。専用アプリや、発見者による電話番号の手入力も必要ありません。連絡には、発見者によるスキャンと発信、登録先の応答が必要です。</p>
             <Link href="/service/" className={`${linkClass} mt-5`}>サービスの仕組みを見る →</Link>
           </div>
         </div>
@@ -148,7 +149,7 @@ export default function ElderlyPage() {
               <tbody>{comparison.map(([label, qring, gps, board]) => <tr key={label} className="border-b border-ink/10"><th scope="row" className="p-5 font-medium text-ink/80">{label}</th><td className="p-5 text-ink/75">{qring}</td><td className="p-5 text-ink/75">{gps}</td><td className="p-5 text-ink/75">{board}</td></tr>)}</tbody>
             </table>
           </div>
-          <div className="body-jp mt-6 space-y-1 text-xs text-ink/55"><p>※一般的なGPS見守りサービスおよび各サービスの基本的な機能をもとに整理しています。</p><p>※サービスごとに機能や運用方法は異なります。</p><p>※それぞれ役割が異なるため、併用も考えられます。</p></div>
+          <div className="body-jp mt-6 space-y-1 text-xs text-ink/55"><p>※GPS見守り・QRコード伝言板は、公式資料で確認した仕組みの例です。各サービスの機能を一律に示すものではありません。</p><p>※サービスごとに機能や運用方法は異なります。</p><p>※それぞれ役割が異なるため、併用も考えられます。</p><p>参考：<a href="https://www.city.shibuya.tokyo.jp/kenko/ninchisho/ninchisho-shien/itizyohotansakusabisu.html" className="link-underline text-moss">渋谷区のGPS位置情報探索サービス</a>、<a href="https://www.city.kurashiki.okayama.jp/fukushi/elderly/1004100/1012661/1004131.html" className="link-underline text-moss">倉敷市のQRコード伝言板による連絡支援</a></p></div>
           <p className="body-jp mt-3 text-xs text-ink/60">つながるQRには、位置追跡や転倒の自動検知を行う機能はありません。</p>
         </div>
       </section>
