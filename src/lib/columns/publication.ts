@@ -14,6 +14,8 @@ export function validateArticle(value: unknown): asserts value is Article {
   const a = value as Article;
   for (const key of ["id", "slug", "title", "summary", "seoTitle", "metaDescription", "serviceSpecificationVersion"] as const) requireValue(text(a[key]), `missing ${key}`);
   requireValue(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(a.slug) && !reservedSlugs.has(a.slug), `invalid/reserved slug ${a.slug}`);
+  requireValue(a.introduction === undefined || (Array.isArray(a.introduction) && a.introduction.every(text)), `${a.slug}: introduction`);
+  if (a.image) requireValue(/^\/images\/[a-zA-Z0-9/_.-]+$/.test(a.image.src) && text(a.image.alt) && Number.isInteger(a.image.width) && a.image.width > 0 && Number.isInteger(a.image.height) && a.image.height > 0, `${a.slug}: image`);
   requireValue(CATEGORIES.some((c) => c.id === a.category), `${a.slug}: category`);
   requireValue(AUDIENCES.some((r) => r.id === a.primaryAudience), `${a.slug}: audience`);
   requireValue(statuses.has(a.status), `${a.slug}: status`);
@@ -42,7 +44,7 @@ export function validateArticle(value: unknown): asserts value is Article {
       switch (b.type) {
         case "paragraph": requireValue(text(b.text), `${a.slug}: paragraph`); break;
         case "list": requireValue(Array.isArray(b.items) && b.items.length && b.items.every(text), `${a.slug}: list`); break;
-        case "link": requireValue(safeHref(b.href) && text(b.label), `${a.slug}: link`); break;
+        case "link": requireValue(safeHref(b.href) && text(b.label) && (b.prefix === undefined || text(b.prefix)) && (b.suffix === undefined || text(b.suffix)), `${a.slug}: link`); break;
         case "table": requireValue(text(b.caption) && Array.isArray(b.headers) && b.headers.length && b.headers.every(text) && Array.isArray(b.rows) && b.rows.length && b.rows.every((r) => Array.isArray(r) && r.length === b.headers.length && r.every(text)), `${a.slug}: table`); break;
         default: throw new Error(`${a.slug}: unsupported block`);
       }

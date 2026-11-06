@@ -49,13 +49,14 @@ class WorkflowTests(unittest.TestCase):
         a=copy.deepcopy(self.article); a['id']='other'; a['slug']='other'; core.create_draft(self.db,a,self.evidence,'editor')
         self.assertIn('other',core.check_conflicts(self.db,self.article))
     def test_publish_snapshot_separate_from_article_approval(self):
+        published_before = copy.deepcopy(core.published())
         self.draft()
         with self.assertRaises(ValueError): core.prepare_release(self.db,'publisher',[{'id':self.article['id'],'revision':1}])
         self.step('submit'); self.step('verify',attested=True); self.step('approve')
         r=core.prepare_release(self.db,'publisher',[{'id':self.article['id'],'revision':1}])
-        self.assertFalse(r['deploymentApproved']); self.assertEqual(len(core.published()),2)
+        self.assertFalse(r['deploymentApproved']); self.assertEqual(core.published(),published_before)
         export=export_release(self.db,r['id'],'operator'); self.assertTrue(Path(export['path']).is_file())
-        snap=json.loads(Path(export['path']).read_text()); self.assertEqual(len(snap),3); self.assertEqual(snap[:2],core.published())
+        snap=json.loads(Path(export['path']).read_text()); self.assertEqual(len(snap),len(published_before)+1); self.assertEqual(snap[:-1],published_before)
         self.step('return',note='Source needs recheck')
         with self.assertRaises(ValueError): export_release(self.db,r['id'],'operator')
     def test_existing_fork_does_not_change_public(self):
@@ -138,7 +139,7 @@ class WorkflowTests(unittest.TestCase):
             signature=hmac.new(b'x'*32,'\n'.join(['reader',stamp,'get-once','GET',get_path,hashlib.sha256(b'').hexdigest()]).encode(),hashlib.sha256).hexdigest()
             conn.request('GET',get_path,headers={'X-QRing-Actor':'reader','X-QRing-Time':stamp,'X-QRing-Nonce':'get-once','X-QRing-Signature':signature})
             response=conn.getresponse(); self.assertEqual(response.status,200); self.assertEqual(response.getheader('Cache-Control'),'no-store')
-            data=json.loads(response.read()); self.assertEqual(data['roles'],['viewer']); self.assertEqual(len(data['articles']),2); self.assertEqual(data['articles'][0]['publicRevision'],1)
+            data=json.loads(response.read()); self.assertEqual(data['roles'],['viewer']); self.assertEqual(len(data['articles']),len(core.published())); self.assertEqual(data['articles'][0]['publicRevision'],1)
             body=b'{}';stamp=str(int(time.time()));nonce='one';path='/api/releases'
             sig=hmac.new(b'x'*32,'\n'.join(['reader',stamp,nonce,'POST',path,hashlib.sha256(body).hexdigest()]).encode(),hashlib.sha256).hexdigest()
             headers={'X-QRing-Actor':'reader','X-QRing-Time':stamp,'X-QRing-Nonce':nonce,'X-QRing-Signature':sig,'Content-Type':'application/json','Origin':'https://editorial.example.org'}

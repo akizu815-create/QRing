@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
 import { GuideSection } from "@/components/GuidePage";
 import ColumnStructuredData from "./ColumnStructuredData";
@@ -7,7 +8,10 @@ function ContentBlock({ block }: { block: Block }) {
   switch (block.type) {
     case "paragraph": return <p className={block.small ? "text-xs text-ink/60" : undefined}>{block.text}</p>;
     case "list": return <ul className="list-disc space-y-3 pl-5">{block.items.map((item, i) => <li key={i}>{item}</li>)}</ul>;
-    case "link": return <Link href={block.href} className="link-underline text-moss">{block.label}</Link>;
+    case "link": {
+      const link = <Link href={block.href} className="link-underline text-moss">{block.label}</Link>;
+      return block.prefix || block.suffix ? <p>{block.prefix}{link}{block.suffix}</p> : link;
+    }
     case "table": return <div className="overflow-x-auto overscroll-x-contain focus-visible:outline focus-visible:outline-2 focus-visible:outline-moss" role="region" aria-label={block.caption} tabIndex={0}>
       <table className="w-full min-w-[640px] border-collapse text-left text-sm leading-7">
         <caption className="sr-only">{block.caption}</caption>
@@ -27,6 +31,8 @@ export default function ColumnArticle({ article: a, related }: { article: Articl
         <p className="mt-5 text-xs leading-7 text-ink/65">{categoryLabel(a.category)} ／ {a.primaryAudience === "municipal" ? <Link href="/column/audience/municipal/" className="underline underline-offset-4">{audienceLabel(a.primaryAudience)}</Link> : audienceLabel(a.primaryAudience)}</p>
         <h1 className="mt-7 font-serif text-[clamp(28px,4.2vw,48px)] font-light leading-[1.6]">{a.title}</h1>
         <p className="body-jp mt-8 text-sm md:text-base">{a.summary}</p>
+        {a.introduction?.map((text, i) => <p key={i} className="body-jp mt-6 text-sm md:text-base">{text}</p>)}
+        {a.image && <Image src={a.image.src} width={a.image.width} height={a.image.height} alt={a.image.alt} className="mt-10 h-auto w-full rounded-sm" sizes="(max-width: 768px) 100vw, 768px" priority />}
         <p className="mt-7 text-xs leading-7 text-ink/60">株式会社QRing　公開日：<time dateTime={a.publishedAt}>{formatDate(a.publishedAt)}</time>{a.updatedAt && <>　更新日：<time dateTime={a.updatedAt}>{formatDate(a.updatedAt)}</time></>}</p>
       </div></header>
       <div className="container-narrow py-8 md:py-12">

@@ -3,6 +3,8 @@ import json, re, subprocess
 from pathlib import Path
 records = json.loads(Path('src/content/columns/published.json').read_text())
 for a in records:
+    if a.get('publicationOrigin') != 'existing':
+        continue
     old = subprocess.check_output(['git', 'show', f'60ceb5c:src/app/column/{a["slug"]}/page.tsx'], text=True)
     original_sections = re.findall(r'<GuideSection id="([^"]+)" title="([^"]+)">(.*?)</GuideSection>', old, re.S)
     assert [(s['id'], s['title']) for s in a['sections']] == [(i,t) for i,t,_ in original_sections]

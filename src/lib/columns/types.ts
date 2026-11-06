@@ -18,10 +18,12 @@ export type ArticleStatus = "draft" | "review" | "approved" | "scheduled" | "pub
 export type Block =
   | { type: "paragraph"; text: string; small?: boolean }
   | { type: "list"; items: string[] }
-  | { type: "link"; href: string; label: string }
+  | { type: "link"; href: string; label: string; prefix?: string; suffix?: string }
   | { type: "table"; caption: string; headers: string[]; rows: string[][] };
 export type Article = {
   id: string; slug: string; title: string; summary: string; seoTitle: string; metaDescription: string;
+  introduction?: string[];
+  image?: { src: string; width: number; height: number; alt: string };
   category: Category; primaryAudience: Audience; tags: string[]; status: ArticleStatus;
   publicationOrigin: "existing" | "editorial";
   publishedAt: string; updatedAt: string | null; reviewedAt: string | null; nextReviewAt: string | null;

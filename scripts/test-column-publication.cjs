@@ -18,9 +18,10 @@ try {
   const { CATEGORIES, AUDIENCES } = require(path.join(tmp, 'types.js'));
   const records = JSON.parse(fs.readFileSync('src/content/columns/published.json', 'utf8'));
   assert.equal(latestArticles(records, { serviceHref: '/use-cases/pets/' }).length, 0);
-  assert.equal(latestArticles(records, { audience: 'municipal' }).length, 0);
+  assert.deepEqual(latestArticles(records, { audience: 'municipal' }).map(a => a.slug), ['elderly-monitoring-contact-system']);
   assert.equal(relatedArticles(records[0], records)[0].id, records[1].id);
   const now = Date.parse('2026-11-05T12:00:00+09:00');
+  assert(selectPublishedArticles(records, Date.parse('2026-11-06T12:00:00+09:00')).some(a => a.slug === 'elderly-monitoring-contact-system'));
   const clone = () => structuredClone(records[0]);
   assert.equal(CATEGORIES.length, 7); assert.equal(AUDIENCES.length, 3);
   assert.deepEqual(new Set(selectPublishedArticles(records, now).map(a => a.slug)), new Set(['elderly-monitoring', 'lost-item-preparation']));
