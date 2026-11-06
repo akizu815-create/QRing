@@ -15,7 +15,7 @@ try {
   assert.equal(columnListPath(1), '/column/');
   assert.equal(columnListPath(2), '/column/page/2/');
   assert.equal(columnListPath(2, '/column/audience/municipal/'), '/column/audience/municipal/page/2/');
-  const { CATEGORIES, AUDIENCES } = require(path.join(tmp, 'types.js'));
+  const { CATEGORIES, AUDIENCES, articleDisplayDate } = require(path.join(tmp, 'types.js'));
   const records = JSON.parse(fs.readFileSync('src/content/columns/published.json', 'utf8'));
   assert.equal(latestArticles(records, { serviceHref: '/use-cases/pets/' }).length, 0);
   assert.deepEqual(latestArticles(records, { audience: 'municipal' }).map(a => a.slug), ['elderly-monitoring-contact-system']);
@@ -29,10 +29,10 @@ try {
     const a = { ...clone(), id: status, slug: status, status };
     assert.equal(selectPublishedArticles([a], now).length, 0, status);
   }
-  const future = { ...clone(), publishedAt: '2099-01-01' };
+  const future = { ...clone(), publishedAt: '2099-01-01', publishedTimestamp: '2099-01-01T00:00:00+09:00' };
   assert.equal(selectPublishedArticles([future], now).length, 0);
-  assert.throws(() => selectPublishedArticles([{ ...clone(), contentRevision: 2 }], now), /approval/);
-  const editorial = { ...clone(), id: 'new-article', slug: 'new-article', publicationOrigin: 'editorial', approvalRevision: 1, primaryAudience: 'municipal', validationResults: [{ check: 'manual-review', passed: true }] };
+  assert.throws(() => selectPublishedArticles([{ ...clone(), contentRevision: clone().contentRevision + 1 }], now), /approval/);
+  const editorial = { ...clone(), id: 'new-article', slug: 'new-article', publicationOrigin: 'editorial', contentRevision: 1, approvalRevision: 1, primaryAudience: 'municipal', validationResults: [{ check: 'manual-review', passed: true }] };
   assert.equal(selectPublishedArticles([editorial], now).length, 1);
   assert.equal(selectPublishedArticles([editorial], now)[0].category, 'elderly-dementia', 'municipal selection is independent of category');
   assert.throws(() => selectPublishedArticles([{ ...editorial, approvalRevision: null }], now), /approval/);
@@ -46,7 +46,15 @@ try {
   const unsafe = clone(); unsafe.sections[0].blocks.push({ type: 'link', href: 'javascript:alert(1)', label: 'bad' });
   assert.throws(() => validateArticle(unsafe), /link/);
   const card = toArticleCard(records[0]);
-  assert.deepEqual(Object.keys(card).sort(), ['id','slug','title','summary','category','primaryAudience','publishedAt'].sort());
+  assert.deepEqual(Object.keys(card).sort(), ['id','slug','title','summary','category','primaryAudience','publishedAt','editionDate'].sort());
+  assert.equal(articleDisplayDate(records[0]), '2026-11-01');
+  assert.equal(records[0].publishedAt, '2026-10-28');
+  assert.equal(selectPublishedArticles(records, Date.parse('2026-11-06T12:00:00+09:00'))[1].slug, 'lost-item-preparation');
+  assert.throws(() => validateArticle({ ...clone(), editionDate: '2026-02-30' }), /edition date/);
+  assert.throws(() => validateArticle({ ...clone(), publishedTimestamp: '2026-11-01T00:00:00+09:00' }), /timestamp/);
+  validateArticle({ ...clone(), status: 'draft', reviewedAt: null, approvalRevision: null });
+  assert.throws(() => validateArticle({ ...clone(), approvalRecord: { ...clone().approvalRecord, approvedOn: '2026-02-30' } }), /approval record/);
+  assert.throws(() => validateArticle({ ...clone(), approvalRecord: { ...clone().approvalRecord, sha256: 'invalid' } }), /approval record/);
   assert(!('sections' in card) && !('approvalRevision' in card));
   console.log('Column publication guards: all assertions passed (statuses, future date, revision approval, checks, independent audience/category, duplicates, safe content, client projection).');
 } finally { fs.rmSync(tmp, { recursive: true, force: true }); }

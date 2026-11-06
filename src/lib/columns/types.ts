@@ -26,6 +26,10 @@ export type Article = {
   image?: { src: string; width: number; height: number; alt: string };
   category: Category; primaryAudience: Audience; tags: string[]; status: ArticleStatus;
   publicationOrigin: "existing" | "editorial";
+  editionDate?: string;
+  publishedTimestamp?: string;
+  contentFormat?: "approved-manuscript";
+  approvalRecord?: { sourceFile: string; sha256: string; approvedOn: string };
   publishedAt: string; updatedAt: string | null; reviewedAt: string | null; nextReviewAt: string | null;
   serviceSpecificationVersion: string; contentRevision: number; approvalRevision: number | null;
   relatedArticleIds: string[]; relatedService: { href: string; label: string } | null;
@@ -38,8 +42,14 @@ export type Article = {
   generationRunId: string | null; promptVersion: string | null;
 };
 // Only this projection crosses the server/client boundary. Never pass full records to the list.
-export type ArticleCard = Pick<Article, "id" | "slug" | "title" | "summary" | "category" | "primaryAudience" | "publishedAt">;
+export type ArticleCard = Pick<Article, "id" | "slug" | "title" | "summary" | "category" | "primaryAudience" | "publishedAt" | "editionDate" | "image">;
 export const categoryLabel = (id: Category) => CATEGORIES.find((c) => c.id === id)!.label;
 export const audienceLabel = (id: Audience) => AUDIENCES.find((a) => a.id === id)!.label;
 export const articlePath = (slug: string) => `/column/${slug}/`;
 export const formatDate = (value: string) => new Intl.DateTimeFormat("ja-JP", { timeZone: "Asia/Tokyo", year: "numeric", month: "long", day: "numeric" }).format(new Date(value));
+
+// Issue dates are for editorial organization, never substitutes for publication history.
+export const COLUMN_OPERATION_STARTED_ON = "2026-11-01";
+export const articleDisplayDate = (a: Pick<Article, "publishedAt" | "editionDate">) => a.editionDate ?? a.publishedAt;
+export const articlePublishedTime = (a: Article) => a.publishedTimestamp ?? `${a.publishedAt}T00:00:00+09:00`;
+export const articleModifiedTime = (a: Article) => a.updatedAt ? (a.contentFormat === "approved-manuscript" ? a.updatedAt : `${a.updatedAt}T00:00:00+09:00`) : undefined;

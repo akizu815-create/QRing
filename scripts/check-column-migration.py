@@ -2,9 +2,11 @@
 import json, re, subprocess
 from pathlib import Path
 records = json.loads(Path('src/content/columns/published.json').read_text())
+checked = 0
 for a in records:
     if a.get('publicationOrigin') != 'existing':
         continue
+    checked += 1
     old = subprocess.check_output(['git', 'show', f'60ceb5c:src/app/column/{a["slug"]}/page.tsx'], text=True)
     original_sections = re.findall(r'<GuideSection id="([^"]+)" title="([^"]+)">(.*?)</GuideSection>', old, re.S)
     assert [(s['id'], s['title']) for s in a['sections']] == [(i,t) for i,t,_ in original_sections]
@@ -20,4 +22,4 @@ for a in records:
     assert [(s['label'],s['href']) for s in a['sources']] == re.findall(r'\{ label: "([^"]+)", href: "([^"]+)" \}',old)
     assert a['title'] == re.search(r'\btitle="([^"]+)"',old).group(1)
     assert a['summary'] == re.search(r'\bintroduction="([^"]+)"',old).group(1)
-print('Existing 2 articles: titles, introductions, 10 sections, every paragraph/list/link/table/source preserved.')
+print(f'Unrevised legacy records: {checked} checked against their historical source. Approved revisions are checked separately against supplied manuscripts.')

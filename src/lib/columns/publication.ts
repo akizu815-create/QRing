@@ -1,4 +1,4 @@
-import { CATEGORIES, AUDIENCES, type Article, type ArticleCard } from "./types";
+import { CATEGORIES, AUDIENCES, articleDisplayDate, type Article, type ArticleCard } from "./types";
 
 const legacySlugs = new Set(["elderly-monitoring", "lost-item-preparation"]);
 const reservedSlugs = new Set(["audience", "category", "page"]);
@@ -22,6 +22,12 @@ export function validateArticle(value: unknown): asserts value is Article {
   requireValue(a.publicationOrigin === "existing" || a.publicationOrigin === "editorial", `${a.slug}: origin`);
   requireValue(a.publicationOrigin !== "existing" || legacySlugs.has(a.slug), `${a.slug}: legacy exception is restricted to the two existing URLs`);
   requireValue(dateIsValid(a.publishedAt), `${a.slug}: publication date`);
+  if (a.editionDate !== undefined) requireValue(dateIsValid(a.editionDate), `${a.slug}: edition date`);
+  if (a.publishedTimestamp !== undefined) requireValue(Number.isFinite(Date.parse(a.publishedTimestamp)) && a.publishedTimestamp.startsWith(a.publishedAt + "T"), `${a.slug}: publication timestamp`);
+  if (a.contentFormat !== undefined) {
+    requireValue(a.contentFormat === "approved-manuscript", `${a.slug}: content format`);
+    requireValue(a.approvalRecord && /^src\/content\/columns\/approved\/[a-z-]+\.md$/.test(a.approvalRecord.sourceFile) && /^[a-f0-9]{64}$/.test(a.approvalRecord.sha256) && dateIsValid(a.approvalRecord.approvedOn), `${a.slug}: manuscript approval record`);
+  }
   for (const d of [a.updatedAt, a.reviewedAt, a.nextReviewAt]) requireValue(d === null || dateIsValid(d), `${a.slug}: review/update date`);
   requireValue(Number.isInteger(a.contentRevision) && a.contentRevision > 0, `${a.slug}: revision`);
   requireValue(["none", "contextual", "municipal"].includes(a.cta), `${a.slug}: CTA`);
@@ -70,8 +76,8 @@ export function selectPublishedArticles(records: readonly unknown[], now = Date.
     }
     published.push(value);
   }
-  return published.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.slug.localeCompare(b.slug));
+  return published.sort((a, b) => articleDisplayDate(b).localeCompare(articleDisplayDate(a)) || a.slug.localeCompare(b.slug));
 }
 export function toArticleCard(a: Article): ArticleCard {
-  return { id: a.id, slug: a.slug, title: a.title, summary: a.summary, category: a.category, primaryAudience: a.primaryAudience, publishedAt: a.publishedAt };
+  return { id: a.id, slug: a.slug, title: a.title, summary: a.summary, category: a.category, primaryAudience: a.primaryAudience, publishedAt: a.publishedAt, ...(a.editionDate ? { editionDate: a.editionDate } : {}), ...(a.contentFormat === "approved-manuscript" && a.image ? { image: a.image } : {}) };
 }
