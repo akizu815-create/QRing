@@ -6,14 +6,12 @@ export default function HeroVisual() {
       <div className={`${styles.heroFrame} relative aspect-[941/1450] w-full md:aspect-[3/2]`}>
         {/* 静的配信でも、画面幅・対応形式に合う既存写真だけを読み込む。 */}
         <picture>
-          <source media="(max-width: 767px)" type="image/avif" srcSet="/images/hero_mobile.avif" />
-          <source media="(max-width: 767px)" type="image/webp" srcSet="/images/hero_mobile.webp" />
-          <source media="(max-width: 767px)" srcSet="/images/hero_mobile.png" />
+          <source media="(max-width: 767px)" type="image/webp" srcSet="/images/hero-mobile-woman-dog.webp" />
           <source type="image/avif" srcSet="/images/hero-clean.avif" />
           <source type="image/webp" srcSet="/images/hero-clean.webp" />
           <img
             src="/images/hero-clean.png"
-            alt="高齢の女性、つながるQRを身につけた犬とバッグ"
+            alt="女性、つながるQRを身につけた犬とバッグ"
             width={1586}
             height={992}
             fetchPriority="high"
@@ -28,7 +26,7 @@ export default function HeroVisual() {
         />
       </div>
 
-      <div className="pointer-events-none absolute inset-0 grain" aria-hidden="true" />
+      <div className="pointer-events-none absolute inset-0 hidden grain md:block" aria-hidden="true" />
     </div>
   );
 }
