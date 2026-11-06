@@ -1,5 +1,6 @@
 """Check crawlable HTML paths, newest-article selection, reciprocal links and orphans."""
 import datetime as dt
+from functools import cmp_to_key
 import importlib.util
 import json
 import re
@@ -12,8 +13,17 @@ spec=importlib.util.spec_from_file_location('seo',Path(__file__).with_name('seo-
 root=Path('out')
 records=json.loads(Path('src/content/columns/published.json').read_text())
 today=dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
-articles=[a for a in records if a.get('status')=='published' and a['publishedAt']<=today and (a.get('publicationOrigin')=='existing' and a['contentRevision']==1 or a.get('approvalRevision')==a['contentRevision'])]
-articles.sort(key=lambda a:(-dt.date.fromisoformat(a.get('editionDate',a['publishedAt'])).toordinal(),a['slug']))
+articles=[a for a in records if a.get('status')=='published' and a['publishedAt']<=today and a.get('approvalRevision')==a['contentRevision']]
+def publication_order(a,b):
+    da,db=a.get('editionDate',a['publishedAt']),b.get('editionDate',b['publishedAt'])
+    if da!=db:return -1 if da>db else 1
+    if a['publishedAt'] != b['publishedAt']:return -1 if a['publishedAt'] > b['publishedAt'] else 1
+    if bool(a.get('publishedTimestamp')) != bool(b.get('publishedTimestamp')):return -1 if a.get('publishedTimestamp') else 1
+    if a.get('publishedTimestamp') and b.get('publishedTimestamp'):
+        ta,tb=dt.datetime.fromisoformat(a['publishedTimestamp']),dt.datetime.fromisoformat(b['publishedTimestamp'])
+        if ta!=tb:return -1 if ta>tb else 1
+    return (a['slug']>b['slug'])-(a['slug']<b['slug'])
+articles.sort(key=cmp_to_key(publication_order))
 path=lambda a:'/column/'+a['slug']+'/'
 html=lambda route:(root/route.strip('/')/'index.html').read_text()
 parsed=lambda route:seo.Page(html(route))
@@ -70,7 +80,7 @@ assert 'https://axb.qring.jp/' in home,'My-page access lost'
 footer=re.search(r'<nav[^>]*aria-label="フッターナビゲーション".*?</nav>',home,re.S)[0]
 assert 'COLUMN' in footer and 'コラム' in footer and '見守り・紛失対策の選び方' not in footer
 for slug in ['elderly','belongings','pets']:
-    related=[a for a in articles if a.get('relatedService') and a['relatedService']['href']==f'/use-cases/{slug}/'][:3]
+    related=[a for a in articles if a.get('relatedService') and (a['relatedService']['href']==f'/use-cases/{slug}/' or any(link['href']==f'/use-cases/{slug}/' for link in a.get('relatedLinks',[])))][:3]
     view=html('/use-cases/'+slug+'/')
     if related:assert all(path(a) in parsed('/use-cases/'+slug+'/').links for a in related)
     else:assert f'id="{slug}-columns"' not in view,'Empty related section'

@@ -1,0 +1,9 @@
+query,match,start_date,end_date,country,device,search_type,clicks,impressions,ctr,average_position,status
+電話 QR,exact,,,,,web,,,,,not_acquired_no_credentials
+高齢者 見守り QR,exact,,,,,web,,,,,not_acquired_no_credentials
+認知症 迷子 QR,exact,,,,,web,,,,,not_acquired_no_credentials
+QR 電話番号 非公開,exact,,,,,web,,,,,not_acquired_no_credentials
+高齢者 見守り QRコード,exact,,,,,web,,,,,not_acquired_no_credentials
+認知症 迷子 対策,exact,,,,,web,,,,,not_acquired_no_credentials
+高齢者 外出 見守り,exact,,,,,web,,,,,not_acquired_no_credentials
+電話番号 非公開 見守り,exact,,,,,web,,,,,not_acquired_no_credentials

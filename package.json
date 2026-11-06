@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test:columns": "node scripts/test-column-publication.cjs && python3 scripts/check-column-migration.py && python3 scripts/approved-column-manuscripts.py",
-    "check:column-export": "python3 scripts/check-column-export.py",
+    "check:column-export": "python3 scripts/check-column-export.py && python3 scripts/check-column-dates.py",
     "report:column-review": "node scripts/column-review-report.cjs",
     "seo:sync": "node scripts/gsc-report.mjs --sync",
     "seo:actions": "python3 -m scripts.seo_ops.cli actions",
