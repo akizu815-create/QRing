@@ -6,7 +6,7 @@ import { getPublishedArticles } from "@/lib/columns";
 import { articlePath } from "@/lib/columns/types";
 export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
-  const articles = getPublishedArticles();
+  const articles = getPublishedArticles().filter((a) => !a.publicationPending);
   // Article URLs come from the publication allowlist, never the legacy SEO registry.
   const staticPages = Object.entries(SEO_PAGES).filter(([key, page]) =>
     key !== "elderlyGuide" && key !== "belongingsGuide" &&

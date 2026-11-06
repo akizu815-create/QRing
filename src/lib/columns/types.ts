@@ -16,6 +16,7 @@ export type Category = typeof CATEGORIES[number]["id"];
 export type Audience = typeof AUDIENCES[number]["id"];
 export type ArticleStatus = "draft" | "review" | "approved" | "scheduled" | "published" | "needs_revision" | "archived";
 export type Block =
+  | { type: "heading"; text: string }
   | { type: "paragraph"; text: string; small?: boolean }
   | { type: "list"; items: string[] }
   | { type: "link"; href: string; label: string; prefix?: string; suffix?: string }
@@ -29,7 +30,11 @@ export type Article = {
   editionDate?: string;
   publishedTimestamp?: string;
   contentFormat?: "approved-manuscript";
-  approvalRecord?: { sourceFile: string; sha256: string; approvedOn: string };
+  approvalRecord?: { sourceFile: string; sha256: string; approvedOn?: string; receivedOn?: string };
+  // A supplied approved manuscript awaiting deployment approval, never public by default.
+  publicationPending?: boolean;
+  audienceDescription?: string;
+  manuscriptReferences?: boolean;
   publishedAt: string; updatedAt: string | null; reviewedAt: string | null; nextReviewAt: string | null;
   serviceSpecificationVersion: string; contentRevision: number; approvalRevision: number | null;
   relatedLinks?: { href: string; label: string }[];
