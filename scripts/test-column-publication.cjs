@@ -17,6 +17,30 @@ try {
   assert.equal(columnListPath(2, '/column/audience/municipal/'), '/column/audience/municipal/page/2/');
   const { CATEGORIES, AUDIENCES, articlePublicationDate, articleDisplayDate, comparePublicationDates, articlePublishedTime, articleModifiedTime } = require(path.join(tmp, 'types.js'));
   const records = JSON.parse(fs.readFileSync('src/content/columns/published.json', 'utf8'));
+  const suppliedBatch = [
+    ['dementia-early-signs', '2026-11-03', 'elderly-dementia'],
+    ['senior-care-facility-types', '2026-11-04', 'business-safety'],
+    ['school-contact-list-privacy', '2026-11-05', 'privacy-life'],
+  ];
+  assert.equal(new Set(records.map(a => a.slug)).size, records.length, 'No duplicate registered URLs');
+  for (const [slug, editionDate, category] of suppliedBatch) {
+    const a = records.find(a => a.slug === slug);
+    const source = fs.readFileSync(a.approvalRecord.sourceFile, 'utf8');
+    const supplied = source.split('\n').filter(line => line.trim()).map(line => line.replace(/^#{1,3} |^\* /, ''));
+    const rendered = [a.title, a.summary, ...a.introduction, ...a.sections.flatMap(s => [s.title, ...s.blocks.flatMap(b => b.type === 'list' ? b.items : [b.type === 'link' ? b.label : b.text])])];
+    assert.deepEqual(rendered, supplied, `${slug}: preserve the full manuscript, including reference URLs`);
+    assert.equal(require('node:crypto').createHash('sha256').update(source).digest('hex'), a.approvalRecord.sha256);
+    assert.equal(a.editionDate, editionDate);
+    assert.equal(a.category, category);
+    assert.equal(a.cta, 'none');
+    assert.equal(a.relatedService, null);
+    assert.equal(a.reviewedAt, null, 'No invented representative review date');
+    assert.equal(a.approvalRecord.approvedOn, undefined);
+    const pending = { ...a, status: 'approved', publicationPending: true };
+    assert.equal(selectPublishedArticles([pending], Date.parse('2099-01-01')).length, 0);
+    assert.equal(selectPublishedArticles([pending], Date.parse('2026-11-07'), { previewPending: true }).length, 1);
+    assert.deepEqual(toArticleCard(a).image, a.image);
+  }
   const suppliedDog = records.find(a => a.slug === 'lost-dog-preparation');
   const suppliedDogText = fs.readFileSync(suppliedDog.approvalRecord.sourceFile, 'utf8');
   const suppliedLines = suppliedDogText.split('\n').filter(line => line.trim() && line !== '---').map(line => line.replace(/^#{1,3} |^\* /, ''));
