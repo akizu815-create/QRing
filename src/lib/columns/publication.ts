@@ -23,10 +23,13 @@ export function validateArticle(value: unknown): asserts value is Article {
   requireValue(a.publicationOrigin !== "existing" || legacySlugs.has(a.slug), `${a.slug}: legacy exception is restricted to the two existing URLs`);
   requireValue(dateIsValid(a.publishedAt), `${a.slug}: publication date`);
   if (a.editionDate !== undefined) requireValue(dateIsValid(a.editionDate), `${a.slug}: edition date`);
+  requireValue(a.publicationPending === undefined || typeof a.publicationPending === "boolean", `${a.slug}: pending publication`);
+  requireValue(a.audienceDescription === undefined || text(a.audienceDescription), `${a.slug}: audience description`);
+  requireValue(a.manuscriptReferences === undefined || typeof a.manuscriptReferences === "boolean", `${a.slug}: manuscript references`);
   if (a.publishedTimestamp !== undefined) requireValue(Number.isFinite(Date.parse(a.publishedTimestamp)) && a.publishedTimestamp.startsWith(a.publishedAt + "T"), `${a.slug}: publication timestamp`);
   if (a.contentFormat !== undefined) {
     requireValue(a.contentFormat === "approved-manuscript", `${a.slug}: content format`);
-    requireValue(a.approvalRecord && /^src\/content\/columns\/approved\/[a-z-]+\.md$/.test(a.approvalRecord.sourceFile) && /^[a-f0-9]{64}$/.test(a.approvalRecord.sha256) && dateIsValid(a.approvalRecord.approvedOn), `${a.slug}: manuscript approval record`);
+    requireValue(a.approvalRecord && /^src\/content\/columns\/approved\/[a-z-]+\.md$/.test(a.approvalRecord.sourceFile) && /^[a-f0-9]{64}$/.test(a.approvalRecord.sha256) && dateIsValid(a.approvalRecord.approvedOn ?? a.approvalRecord.receivedOn), `${a.slug}: manuscript approval record`);
   }
   for (const d of [a.updatedAt, a.reviewedAt, a.nextReviewAt]) requireValue(d === null || dateIsValid(d), `${a.slug}: review/update date`);
   requireValue(Number.isInteger(a.contentRevision) && a.contentRevision > 0, `${a.slug}: revision`);
@@ -49,6 +52,7 @@ export function validateArticle(value: unknown): asserts value is Article {
     ids.add(s.id);
     for (const b of s.blocks) {
       switch (b.type) {
+        case "heading": requireValue(text(b.text), `${a.slug}: heading`); break;
         case "paragraph": requireValue(text(b.text), `${a.slug}: paragraph`); break;
         case "list": requireValue(Array.isArray(b.items) && b.items.length && b.items.every(text), `${a.slug}: list`); break;
         case "link": requireValue(safeHref(b.href) && text(b.label) && (b.prefix === undefined || text(b.prefix)) && (b.suffix === undefined || text(b.suffix)), `${a.slug}: link`); break;
@@ -60,17 +64,18 @@ export function validateArticle(value: unknown): asserts value is Article {
 }
 
 /** Build-time allowlist: this is a guard, NOT an authenticated approval mechanism. */
-export function selectPublishedArticles(records: readonly unknown[], now = Date.now()): Article[] {
+export function selectPublishedArticles(records: readonly unknown[], now = Date.now(), { previewPending = false } = {}): Article[] {
   const published: Article[] = [];
   const slugs = new Set<string>(); const ids = new Set<string>();
   for (const value of records) {
     const candidate = value as Partial<Article> | null;
-    // Inactive records are never passed on to routes, metadata, sitemap or client components.
-    if (!candidate || candidate.status !== "published") continue;
+    // Only explicitly approved pending manuscripts may enter a branch preview.
+    if (!candidate || (candidate.status !== "published" && !(previewPending && candidate.status === "approved" && candidate.publicationPending))) continue;
     validateArticle(value);
     requireValue(!slugs.has(value.slug) && !ids.has(value.id), `duplicate article ${value.slug}`);
     slugs.add(value.slug); ids.add(value.id);
-    if (Date.parse(value.publishedTimestamp ?? `${value.publishedAt}T00:00:00+09:00`) > now) continue;
+    if (value.publicationPending && !previewPending) continue;
+    if (!value.publicationPending && Date.parse(value.publishedTimestamp ?? `${value.publishedAt}T00:00:00+09:00`) > now) continue;
     // The legacy migration exemption is no longer needed: every live article has
     // an approved revision. Never let an unreviewed legacy snapshot return.
     requireValue(value.approvalRevision === value.contentRevision, `${value.slug}: missing/stale revision approval`);
@@ -80,5 +85,5 @@ export function selectPublishedArticles(records: readonly unknown[], now = Date.
   return published.sort(compareArticleDates);
 }
 export function toArticleCard(a: Article): ArticleCard {
-  return { id: a.id, slug: a.slug, title: a.title, summary: a.summary, category: a.category, primaryAudience: a.primaryAudience, publishedAt: a.publishedAt, ...(a.editionDate ? { editionDate: a.editionDate } : {}), ...(a.publishedTimestamp ? { publishedTimestamp: a.publishedTimestamp } : {}), ...(a.contentFormat === "approved-manuscript" && a.image ? { image: a.image } : {}) };
+  return { id: a.id, slug: a.slug, title: a.title, summary: a.summary, category: a.category, primaryAudience: a.primaryAudience, publishedAt: a.publishedAt, ...(a.editionDate ? { editionDate: a.editionDate } : {}), ...(a.publishedTimestamp ? { publishedTimestamp: a.publishedTimestamp } : {}), ...(a.image ? { image: a.image } : {}) };
 }

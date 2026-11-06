@@ -624,5 +624,226 @@
         "label": "高齢者の外出時の見守りに、つながるQR"
       }
     ]
+  },
+  {
+    "id": "lost-dog-preparation",
+    "slug": "lost-dog-preparation",
+    "title": "もしも、大切な愛犬が迷子になったら。",
+    "summary": "いつもそばにいる、大切な愛犬。",
+    "introduction": [
+      "お散歩中にリードが外れたり、玄関のドアが開いた隙に飛び出してしまったり。ほんの一瞬の出来事で、愛犬が迷子になってしまうことがあります。",
+      "もしもそんなことが起きたら、どこを探し、誰に連絡すればよいのでしょうか。",
+      "今回は、愛犬が迷子になったときの対処法と、普段からできる備えをご紹介します。"
+    ],
+    "seoTitle": "犬が迷子になったら？探し方と事前にできる対策｜つながるQR",
+    "metaDescription": "愛犬が迷子になったら、まず何をすればいい？探すときの行動や警察・保健所への連絡、迷子札・マイクロチップによる備え、電話番号を公開せずに連絡を受ける方法をご紹介します。",
+    "category": "pets",
+    "primaryAudience": "personal",
+    "audienceDescription": "犬を飼っている方",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "editionDate": "2026-11-07",
+    "publishedAt": "2026-11-07",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/lost-dog-preparation.md",
+      "sha256": "ea880f688c537d1aa1e89bfca38c2603e348bb7a953ba42210e71041f4af654c",
+      "receivedOn": "2026-11-06"
+    },
+    "relatedArticleIds": [],
+    "relatedService": {
+      "href": "/service/",
+      "label": "つながるQRのサービス紹介"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "環境省｜迷子にさせてしまったら",
+        "href": "https://www.env.go.jp/nature/dobutsu/aigo/shuyo/if.html",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "source-2",
+        "label": "環境省｜犬と猫のマイクロチップ情報登録について",
+        "href": "https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "愛犬がいなくなったら、まず何をする？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "まずは、最後に姿を見た場所や時間を確認しましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "自宅周辺やいつものお散歩コース、公園など、愛犬が慣れている場所を探します。ただし、怖がっている犬を慌てて追いかけると、さらに逃げてしまうこともあるため注意が必要です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "捜索と並行して、次の機関にも早めに連絡しておきましょう。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "警察署・交番：保護された犬の情報が届いている場合があります。",
+              "保健所・動物愛護管理センター：地域で保護・収容された犬の情報を確認できます。",
+              "近隣の動物病院：保護した方が連れてきている可能性があります。"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "自治体によって担当窓口が異なるため、近隣地域も含めて確認するとよいでしょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "写真やSNSも捜索の手がかりに",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "愛犬の写真や特徴をまとめておくと、情報提供を呼びかける際に役立ちます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "犬種、毛色、体格、首輪の色、迷子になった日時や場所などを整理し、地域の掲示板やSNSで協力を呼びかける方法もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "最近では、迷子になったペットの情報を地域で共有したり、専門スタッフが捜索を支援したりするサービスもあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、SNSに自宅住所や電話番号を公開する際は、個人情報の取り扱いに注意しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "知っておきたい、愛犬の迷子対策",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "迷子対策には、昔ながらの迷子札だけでなく、便利な仕組みがいくつもあります。"
+          },
+          {
+            "type": "heading",
+            "text": "マイクロチップ"
+          },
+          {
+            "type": "paragraph",
+            "text": "体内に装着したマイクロチップを専用機器で読み取り、登録情報から飼い主を特定する手がかりにする仕組みです。位置を追跡する機能はないため、登録情報を最新に保つことが大切です。"
+          },
+          {
+            "type": "heading",
+            "text": "GPS端末"
+          },
+          {
+            "type": "paragraph",
+            "text": "首輪などに取り付け、スマートフォンから愛犬の位置を確認できるものがあります。移動中の捜索に役立ちますが、充電や通信環境が必要です。"
+          },
+          {
+            "type": "heading",
+            "text": "Bluetoothタグ"
+          },
+          {
+            "type": "paragraph",
+            "text": "小型の紛失防止タグを利用する方法です。対応するスマートフォンなどを通じて位置を確認できますが、周囲の利用環境によっては位置情報が更新されにくいこともあります。"
+          },
+          {
+            "type": "heading",
+            "text": "QRコード付き迷子札"
+          },
+          {
+            "type": "paragraph",
+            "text": "発見した方がQRコードをスキャンし、飼い主の情報を確認したり、連絡したりできる仕組みです。電話番号を直接記載せずに連絡を受けられるタイプもあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "それぞれ役割が異なるため、愛犬の生活環境に合わせて組み合わせることもできます。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "発見してくれた方と、声でつながる方法も",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "愛犬が見つかっても、保護してくれた方が飼い主への連絡方法を知らなければ、すぐに再会できないかもしれません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "株式会社QRingの「つながるQR」は、QRコードをスキャンして発信することで、発見者と登録者が互いの電話番号を知らせずに通話できる仕組みです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "専用アプリは不要。首輪などにQRコード付きのタグを取り付けておけば、愛犬を見つけてくれた方から連絡を受ける手段として活用できます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "GPSのように居場所を追跡するものではなく、見つけてくれた方と直接話せることが特徴です。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "大切な愛犬のために、今日からできること",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "どれだけ気をつけていても、思いがけない出来事が起こる可能性はあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "普段から首輪やリードの状態を確認すること。愛犬の写真を残しておくこと。マイクロチップの登録情報や、迷子札などの備えを見直しておくこと。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そして、万が一のときに慌てないよう、地域の警察や動物愛護管理センターの連絡先を調べておくことも大切です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "大切な愛犬が、いつもの場所に帰ってこられるように。"
+          },
+          {
+            "type": "paragraph",
+            "text": "小さな備えから、始めてみませんか。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "愛犬が迷子になったら、まず何をすればいい？探すときの行動や警察・保健所への連絡、迷子札・マイクロチップによる備え、電話番号を公開せずに連絡を受ける方法をご紹介します。",
+    "primaryKeyword": "犬 迷子 対策",
+    "topicClusterId": "pets",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "user-supplied-approved-manuscript-exact-text",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/lost-dog-preparation.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "QRコード付きの迷子札を付けた愛犬と飼い主の水彩イラスト"
+    }
   }
 ]

@@ -7,6 +7,7 @@ import ColumnStructuredData from "./ColumnStructuredData";
 import { articlePath, articleDisplayDate, articlePublishedTime, audienceLabel, categoryLabel, formatDate, type Article, type Block } from "@/lib/columns/types";
 function ContentBlock({ block }: { block: Block }) {
   switch (block.type) {
+    case "heading": return <h3 className="pt-3 font-serif text-xl font-light leading-relaxed md:text-2xl">{block.text}</h3>;
     case "paragraph": return <p className={block.small ? "text-xs text-ink/60" : undefined}>{block.text}</p>;
     case "list": return <ul className="list-disc space-y-3 pl-5">{block.items.map((item, i) => <li key={i}>{item}</li>)}</ul>;
     case "link": {
@@ -29,12 +30,12 @@ export default function ColumnArticle({ article: a, related }: { article: Articl
       <header className="bg-cream pb-16 pt-36 md:pb-24 md:pt-48"><div className="container-narrow">
         <nav aria-label="パンくず" className="text-xs leading-7 text-ink/60"><Link href="/" className="hover:text-moss">ホーム</Link><span aria-hidden="true"> / </span><Link href="/column/" className="hover:text-moss">コラム</Link></nav>
         <p className="eyebrow mt-8">COLUMN</p>
-        <p className="mt-5 text-xs leading-7 text-ink/65">{categoryLabel(a.category)} ／ {a.primaryAudience === "municipal" ? <Link href="/column/audience/municipal/" className="underline underline-offset-4">{audienceLabel(a.primaryAudience)}</Link> : audienceLabel(a.primaryAudience)}</p>
+        <p className="mt-5 text-xs leading-7 text-ink/65">{categoryLabel(a.category)} ／ {a.primaryAudience === "municipal" ? <Link href="/column/audience/municipal/" className="underline underline-offset-4">{audienceLabel(a.primaryAudience)}</Link> : (a.audienceDescription ?? audienceLabel(a.primaryAudience))}</p>
         <h1 className="mt-7 font-serif text-[clamp(28px,4.2vw,48px)] font-light leading-[1.6]">{a.title}</h1>
         <p data-approved-introduction={a.contentFormat === "approved-manuscript" ? true : undefined} className="body-jp mt-8 text-sm md:text-base">{a.summary}</p>
         {a.introduction?.map((text, i) => <p key={i} data-approved-introduction={a.contentFormat === "approved-manuscript" ? true : undefined} className="body-jp mt-6 text-sm md:text-base">{text}</p>)}
         {a.image && <Image src={a.image.src} width={a.image.width} height={a.image.height} alt={a.image.alt} className="mt-10 h-auto w-full rounded-sm" sizes="(max-width: 768px) 100vw, 768px" priority />}
-        <p className="mt-7 text-xs leading-7 text-ink/60">株式会社QRing　{a.editionDate && <>記事日：<time dateTime={articleDisplayDate(a)}>{formatDate(articleDisplayDate(a))}</time>　</>}公開日：<time dateTime={articlePublishedTime(a)}>{formatDate(a.publishedAt)}</time>{a.updatedAt && <>　更新日：<time dateTime={a.updatedAt}>{formatDate(a.updatedAt)}</time></>}</p>
+        <p className="mt-7 text-xs leading-7 text-ink/60">株式会社QRing　{a.editionDate && <>記事日：<time dateTime={articleDisplayDate(a)}>{formatDate(articleDisplayDate(a))}</time>　</>}{a.publicationPending ? <>公開前プレビュー</> : <>公開日：<time dateTime={articlePublishedTime(a)}>{formatDate(a.publishedAt)}</time></>}{a.updatedAt && <>　更新日：<time dateTime={a.updatedAt}>{formatDate(a.updatedAt)}</time></>}</p>
       </div></header>
       <div className="container-narrow py-8 md:py-12">
         <nav aria-labelledby="article-toc" className="pb-10 pt-3"><h2 id="article-toc" className="font-serif text-xl font-light">この記事の内容</h2><ol className="mt-5 space-y-3 text-sm leading-7 text-moss">{a.sections.map((s) => <li key={s.id}><a className="underline underline-offset-4" href={`#${s.id}`}>{s.title}</a></li>)}</ol></nav>
@@ -48,8 +49,9 @@ export default function ColumnArticle({ article: a, related }: { article: Articl
       {a.contentFormat === "approved-manuscript" && a.relatedService && <section className="container-narrow border-t border-ink/15 py-10" data-approved-related-service>
         <p className="text-sm"><strong>関連サービス</strong></p>
         <p className="mt-5 text-sm leading-7"><Link href={a.relatedService.href} className="link-underline text-moss">{a.relatedService.label}</Link></p>
-        <p className="mt-3 break-all text-sm leading-7"><Link href={a.relatedService.href} className="underline underline-offset-4 text-moss">{SITE_URL}{a.relatedService.href}</Link></p>
+        {!a.manuscriptReferences && <p className="mt-3 break-all text-sm leading-7"><Link href={a.relatedService.href} className="underline underline-offset-4 text-moss">{SITE_URL}{a.relatedService.href}</Link></p>}
       </section>}
+      {a.manuscriptReferences && <section className="container-narrow border-t border-ink/15 py-10" aria-labelledby="article-sources"><h2 id="article-sources" className="font-serif text-2xl font-light">参考資料</h2><ul className="mt-6 space-y-4 text-sm leading-7 text-moss">{a.sources.map((source) => <li key={source.id}><a className="underline underline-offset-4" href={source.href}>{source.label}</a></li>)}</ul></section>}
     </article>
     {a.primaryAudience === "municipal" && <div className="container-narrow py-8" data-municipal-article-return><Link href="/municipalities/" className="link-underline inline-block py-2 text-sm text-moss">自治体向けサービスについて →</Link></div>}
     {(related.length > 0 || Boolean(a.relatedLinks?.length)) && <section className="py-14 md:py-20" aria-labelledby="article-related"><div className="container-narrow"><h2 id="article-related" className="font-serif text-2xl font-light">あわせて読む</h2><ul className="mt-6 space-y-4 text-sm leading-7 text-moss">{related.map((r) => <li key={r.id}><Link className="underline underline-offset-4" href={articlePath(r.slug)}>{r.title}</Link></li>)}{a.relatedLinks?.map((link) => <li key={link.href}><Link className="underline underline-offset-4" href={link.href}>{link.label}</Link></li>)}</ul></div></section>}
