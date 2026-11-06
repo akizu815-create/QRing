@@ -16,7 +16,7 @@ const photoMask = {
   WebkitMaskComposite: "source-in",
 };
 const steps = [
-  { title: "QRコードをスキャン", body: "見つけた方が、持ち物のQRコードをスキャンします。", image: "/images/how-it-works-step-02.png", alt: "QRタグをスマートフォンで読み取る操作のイメージ" },
+  { title: "QRコードをスキャン", body: "見つけた方が、持ち物のQRコードをスキャンします。", image: "/images/how-it-works-step-02.png", alt: "QRタグをスマートフォンでスキャンする操作のイメージ" },
   { title: "電話をかける", body: "画面の「電話をかける」をタップします。", image: "/images/how-to-app-screen.png", alt: "「電話をかける」ボタンがあるつながるQRの案内画面" },
   { title: "持ち主へつながる", body: "お互いの電話番号を公開せず、登録先と通話できます。", image: "/images/how-it-works-step-03.png", alt: "電話番号を相手に公開せず通話するイメージ" },
 ];

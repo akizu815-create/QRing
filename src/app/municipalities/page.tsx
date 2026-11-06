@@ -36,7 +36,7 @@ const steps = [
 const faq = [
   { question: "既存の見守り施策と併用できますか？", answer: "はい。GPSや地域の見守りネットワークを補完する連絡手段として活用を想定しています。" },
   { question: "導入時に新しいシステム開発は必要ですか？", answer: "基本的なサービス利用では、大規模なシステム開発を前提としていません。具体的な運用方法は個別にご相談いただけます。" },
-  { question: "まずは小規模に試すことはできますか？", answer: "対象者や配布数を絞った試験導入についてもご相談いただけます。" },
+  { question: "まずは小規模に試すことはできますか？", answer: "はい。小規模な実証から、地域の状況に合った運用をご相談いただけます。" },
 ];
 
 export const metadata = pageMetadata("municipalities");
@@ -86,7 +86,7 @@ export default function MunicipalitiesPage() {
           <div className="divide-y divide-ink/10 border-y border-ink/10">{faq.map((item) => <details key={item.question} className="group py-1"><summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-6 py-4 text-left text-sm font-medium leading-relaxed marker:hidden md:text-base [&::-webkit-details-marker]:hidden"><span>{item.question}</span><span aria-hidden="true" className="shrink-0 text-xl font-light text-moss group-open:rotate-45">＋</span></summary><p className="body-jp pb-5 pr-8 text-sm text-ink/70">{item.answer}</p></details>)}</div>
           <div className="mt-10 border-t border-ink/15 pt-7"><h3 className="font-serif text-xl font-light">地域の見守りを考えるコラム</h3><p className="body-jp mt-4 text-sm text-ink/70">施策の役割や連絡体制、実証の検討に役立つ情報をお届けします。</p><Link href="/column/audience/municipal/" className={`${linkClass} mt-4`}>自治体・公共機関向けのコラムを見る →</Link><RecentColumnLinks articles={municipalArticles} /></div>
           <NewmarketSupportPlacement placement="municipalities-support" compact />
-          <div className="mt-12 text-center md:mt-16"><h3 className="font-serif text-[clamp(26px,3vw,38px)] font-light leading-relaxed">地域に合った見守りの形を、<br />一緒に考えませんか。</h3><a href={contactUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-8 normal-case">自治体での導入を相談する</a></div>
+          <div className="mt-12 text-center md:mt-16"><h3 className="font-serif text-[clamp(26px,3vw,38px)] font-light leading-relaxed">地域に合った見守りの形を、<br />一緒に考えませんか。</h3><p className="body-jp mt-6 text-sm text-ink/80">まずは小規模な実証からご相談いただけます。</p><p className="body-jp mx-auto mt-3 max-w-xl text-sm text-ink/65">対象人数・実施期間・費用負担・検証項目について、地域の状況に応じてご相談いただけます。</p><a href={contactUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-8 normal-case">自治体での導入を相談する</a></div>
         </div>
       </section>
     </>

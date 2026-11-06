@@ -1,0 +1,7 @@
+query,match_type,period_start,period_end,search_type,country,device,landing_page,clicks,impressions,ctr,average_position,acquired_at,status
+電話 QR,exact,,,web,,,,,,,,,not_acquired_no_credentials
+高齢者 見守り QR,exact,,,web,,,,,,,,,not_acquired_no_credentials
+認知症 迷子 QRコード,exact,,,web,,,,,,,,,not_acquired_no_credentials
+電話番号 非公開 QR,exact,,,web,,,,,,,,,not_acquired_no_credentials
+犬 迷子札 電話番号,exact,,,web,,,,,,,,,not_acquired_no_credentials
+落とし物 QRコード,exact,,,web,,,,,,,,,not_acquired_no_credentials
