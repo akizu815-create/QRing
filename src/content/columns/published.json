@@ -16,8 +16,8 @@
     "reviewedAt": "2026-11-06",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 2,
-    "approvalRevision": 2,
+    "contentRevision": 3,
+    "approvalRevision": 3,
     "relatedArticleIds": [
       "lost-item-preparation"
     ],
@@ -213,6 +213,10 @@
       {
         "check": "publication-history-separated-from-edition-date",
         "passed": true
+      },
+      {
+        "check": "user-supplied-illustration-split-without-redrawing",
+        "passed": true
       }
     ],
     "generationRunId": null,
@@ -229,7 +233,13 @@
     },
     "editionDate": "2026-11-01",
     "contentFormat": "approved-manuscript",
-    "publishedTimestamp": "2026-10-28T00:58:01+09:00"
+    "publishedTimestamp": "2026-10-28T00:58:01+09:00",
+    "image": {
+      "src": "/images/columns/qring-column-nov01-illustration.webp",
+      "width": 1280,
+      "height": 421,
+      "alt": "離れて暮らす高齢の母親とスマートフォンで連絡を取る女性の水彩イラスト"
+    }
   },
   {
     "id": "lost-item-preparation",
@@ -248,8 +258,8 @@
     "reviewedAt": "2026-11-06",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 2,
-    "approvalRevision": 2,
+    "contentRevision": 3,
+    "approvalRevision": 3,
     "relatedArticleIds": [
       "elderly-monitoring"
     ],
@@ -425,6 +435,10 @@
       {
         "check": "publication-history-separated-from-edition-date",
         "passed": true
+      },
+      {
+        "check": "user-supplied-illustration-split-without-redrawing",
+        "passed": true
       }
     ],
     "generationRunId": null,
@@ -442,7 +456,13 @@
     },
     "editionDate": "2026-11-02",
     "contentFormat": "approved-manuscript",
-    "publishedTimestamp": "2026-10-28T00:58:01+09:00"
+    "publishedTimestamp": "2026-10-28T00:58:01+09:00",
+    "image": {
+      "src": "/images/columns/qring-column-nov02-illustration.webp",
+      "width": 1280,
+      "height": 421,
+      "alt": "鍵と財布、QRコード付きキーホルダー、持ち物チェックリストの水彩イラスト"
+    }
   },
   {
     "id": "elderly-monitoring-contact-system",

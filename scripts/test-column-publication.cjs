@@ -46,7 +46,7 @@ try {
   const unsafe = clone(); unsafe.sections[0].blocks.push({ type: 'link', href: 'javascript:alert(1)', label: 'bad' });
   assert.throws(() => validateArticle(unsafe), /link/);
   const card = toArticleCard(records[0]);
-  assert.deepEqual(Object.keys(card).sort(), ['id','slug','title','summary','category','primaryAudience','publishedAt','editionDate'].sort());
+  assert.deepEqual(Object.keys(card).sort(), ['id','slug','title','summary','category','primaryAudience','publishedAt','editionDate','image'].sort());
   assert.equal(articleDisplayDate(records[0]), '2026-11-01');
   assert.equal(records[0].publishedAt, '2026-10-28');
   assert.equal(selectPublishedArticles(records, Date.parse('2026-11-06T12:00:00+09:00'))[1].slug, 'lost-item-preparation');

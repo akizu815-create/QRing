@@ -68,19 +68,20 @@ def main():
             continue
         expected = {**manuscript(a['slug']), **METADATA[a['slug']]}
         if '--sync' in sys.argv:
+            revision = max(2, a['contentRevision'])
             a.update(expected)
             a.update(
                 contentFormat='approved-manuscript', publicationOrigin='editorial',
                 publishedAt='2026-10-28', publishedTimestamp='2026-10-28T00:58:01+09:00',
                 updatedAt='2026-11-06', reviewedAt='2026-11-06', nextReviewAt=None,
-                contentRevision=2, approvalRevision=2, primaryAudience='personal',
+                contentRevision=revision, approvalRevision=revision, primaryAudience='personal',
                 cta='none', searchIntent=a['metaDescription'], claims=[],
                 sources=[{'id': 'source-1', 'label': a['relatedService']['label'], 'href': 'https://www.qring.jp' + a['relatedService']['href'], 'checkedAt': '2026-11-06'}],
                 validationResults=[{'check': 'user-approved-manuscript-exact-text', 'passed': True}, {'check': 'publication-history-separated-from-edition-date', 'passed': True}],
             )
         for key, value in expected.items():
             assert a[key] == value, f'{a["slug"]}: approved {key} differs'
-        assert a['contentRevision'] == a['approvalRevision'] == 2
+        assert a['contentRevision'] == a['approvalRevision'] and a['contentRevision'] >= 2
         assert a['contentFormat'] == 'approved-manuscript'
         assert a['publishedAt'] == '2026-10-28' and a['reviewedAt'] == '2026-11-06'
         assert a['cta'] == 'none', 'Do not append the legacy service pitch'
