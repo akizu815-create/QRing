@@ -46,18 +46,19 @@ export default function Home() {
   return (
     <>
       <PageStructuredData page="home" />
-      {/* HERO: exact approved wording; mobile heading overlays the original photograph; desktop layout is preserved. */}
+      {/* HERO: background and copy share one stage; desktop and mobile styles are scoped separately. */}
       <section className="bg-ivory pt-20 md:pt-24" aria-labelledby="home-hero-title">
-        <div className="relative mx-auto grid w-full max-w-[1536px] grid-cols-1 md:block">
-          <div className={`${heroStyles.heroCopy} contents md:relative md:z-10 md:block md:px-6 md:pb-7 md:pt-9 xl:absolute xl:left-[5.5%] xl:top-0 xl:w-[48%] xl:px-0 xl:pb-0 xl:pt-[clamp(26px,4vw,60px)]`}>
-            <div className={`${heroStyles.heroHeading} absolute inset-x-0 top-0 z-10 px-6 pt-3 md:static md:p-0`}>
+        <div className={`${heroStyles.heroStage} relative mx-auto grid w-full max-w-[1536px] grid-cols-1`}>
+          <HeroVisual />
+          <div className={`${heroStyles.heroCopy} contents`}>
+            <div className={`${heroStyles.heroHeading} absolute inset-x-0 top-0 z-10 px-6 pt-3`}>
               <p className={`${heroStyles.heroBrand} text-[10px] leading-relaxed tracking-[0.08em] text-ink/65 md:text-sm`}>暮らしに、もしもの備えを。</p>
               <h1 id="home-hero-title" className={`${heroStyles.heroTitle} mt-2 font-serif text-[clamp(24px,6.7vw,30px)] font-light leading-[1.35] tracking-tight md:mt-4 md:text-[clamp(31px,3.3vw,52px)] md:leading-[1.4]`}>
                 <span className="block whitespace-nowrap">番号を知らせず、</span>
                 <span className="block md:whitespace-nowrap"><span className="inline-block">QRから</span><span className="inline-block text-moss">声でつながる。</span></span>
               </h1>
             </div>
-            <div className={`${heroStyles.heroDetails} col-start-1 row-start-2 px-6 pb-7 pt-5 md:p-0`}>
+            <div className={`${heroStyles.heroDetails} col-start-1 row-start-2 px-6 pb-7 pt-5`}>
               <p className={`${heroStyles.heroSubcopy} mt-0 text-sm leading-[1.9] text-ink/80 md:mt-5 md:text-[clamp(12px,1.12vw,17px)]`}>
                 <span className="md:hidden" data-mobile-hero-subcopy>QRコードをスキャンして、発信するだけ。<br />お互いの電話番号を公開せずに、通話ができます。</span>
                 <span className="hidden md:inline">QRコードをスキャンして、発信するだけ。<br />お互いの電話番号を公開せずに、通話ができます。</span>
@@ -69,10 +70,10 @@ export default function Home() {
                 <Link href="/service/" className="btn-primary min-h-12 !px-5 !py-3 !text-sm normal-case tracking-[0.06em]">{HERO_CTA_LABEL}<span aria-hidden="true">→</span></Link>
                 <Link href="/#for-business" className="inline-flex min-h-12 items-center text-sm text-deepmoss underline decoration-moss/35 underline-offset-4">自治体・法人の方へ →</Link>
               </div>
+              <p className={`${heroStyles.heroNotice} mt-4 max-w-sm text-xs leading-relaxed text-ink/70`}>{CONSUMER_SERVICE.notice}</p>
             </div>
           </div>
-          <HeroVisual />
-          <p className={`${heroStyles.heroNotice} relative z-10 mt-4 max-w-sm text-xs leading-relaxed text-ink/70 lg:static`}>{CONSUMER_SERVICE.notice}</p>
+
         </div>
       </section>
 

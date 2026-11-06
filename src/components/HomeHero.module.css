@@ -32,29 +32,39 @@
   .heroFrame { height: calc(100vw * 4 / 3 + 256px); }
 }
 
-/* b0808e7（PR #114直前）のPC配置を復元。現行コピーとスマホは維持。 */
-@media (min-width: 1024px) {
-  .heroFrame { aspect-ratio: 3 / 2; }
+/* PC: 写真は通常フローに置かず、同一ステージの背景レイヤーに固定する。 */
+@media (min-width: 768px) {
+  .heroStage { display: block; aspect-ratio: 3 / 2; overflow: hidden; isolation: isolate; }
+  .heroStage .heroVisual { position: absolute; inset: 0; z-index: 0; }
+  .heroVisual .heroFrame { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; }
   .heroFrame .heroPhoto { object-fit: cover; object-position: center; }
-  .heroFrame .heroWash { display: none; }
-  .heroCopy {
-    position: absolute; inset: auto; left: 5.5%; top: 0;
-    display: flex; flex-direction: column; width: 43%; height: 63%;
-    padding: clamp(24px, 4vw, 60px) 0 clamp(20px, 2.5vw, 38px);
+  .heroFrame .heroWash {
+    display: block; inset: 0; height: auto;
+    background: linear-gradient(90deg, rgba(247,244,238,.38), rgba(247,244,238,.1) 40%, transparent 58%);
   }
-  .heroBrand { font-size: 11px; font-weight: 500; line-height: 24px; letter-spacing: .3em; color: rgba(31,26,20,.6); }
-  .heroTitle { margin-top: 16px; font-size: clamp(36px, 4vw, 64px); line-height: 1.3; }
-  .heroHeading::after { content: ""; display: block; width: 112px; height: 1px; margin-top: 20px; background: var(--color-gold); }
-  .heroSubcopy { margin-top: 20px; font-size: clamp(15px, 1.45vw, 22px); line-height: 1.9; letter-spacing: .08em; }
-  .heroFeatures { width: fit-content; margin-top: 16px; align-items: center; gap: 12px; font-size: 15px; font-weight: 500; line-height: 1.5; letter-spacing: .02em; color: rgba(31,26,20,.9); }
-  .heroFeatures > li { white-space: nowrap; padding: 10px 16px; border: 1px solid rgba(91,110,79,.25); border-radius: 999px; background: rgba(255,255,255,.75); backdrop-filter: blur(4px); }
-  .heroActions { margin-top: 16px; gap: 8px 20px; }
-  .heroActions > :first-child { padding: 16px 32px !important; letter-spacing: .12em; }
-  .heroActions > :last-child { min-height: 0; padding: 12px; border: 1px solid rgba(91,110,79,.5); background: rgba(247,244,238,.8); font-size: 11px; font-weight: 500; line-height: 1.5; letter-spacing: .02em; text-decoration: none; white-space: nowrap; }
-  .heroNotice { position: static; max-width: none; margin: 0; padding: 20px 24px; text-align: center; font-size: 12px; line-height: 20px; color: rgba(31,26,20,.65); }
+  .heroStage .heroCopy {
+    position: absolute; inset: 0 auto auto 5.5%; z-index: 10;
+    display: block; width: 48%; padding: clamp(24px, 4vw, 60px) 0 0;
+    background: transparent;
+  }
+  .heroCopy .heroHeading { position: static; padding: 0; }
+  .heroCopy .heroDetails { width: 100%; padding: 0; }
+  .heroCopy .heroBrand { font-size: clamp(12px, 1.1vw, 15px); line-height: 1.6; letter-spacing: .04em; }
+  .heroCopy .heroTitle { margin-top: 12px; font-size: clamp(26px, 3.5vw, 52px); line-height: 1.35; }
+  .heroCopy .heroTitle > span { white-space: nowrap; }
+  .heroCopy .heroSubcopy { margin-top: 14px; font-size: clamp(12px, 1.25vw, 17px); line-height: 1.9; }
+  .heroCopy .heroFeatures { margin-top: 12px; gap: 8px 12px; font-size: clamp(10px, 1vw, 14px); line-height: 1.5; }
+  .heroCopy .heroActions { margin-top: 16px; gap: 8px 16px; }
+  .heroCopy .heroActions > :first-child { min-height: 40px; padding: 10px 16px !important; font-size: clamp(11px, 1.1vw, 14px) !important; }
+  .heroCopy .heroActions > :last-child { min-height: 40px; font-size: clamp(11px, 1.1vw, 14px); }
+  .heroCopy .heroNotice { max-width: none; margin-top: 12px; font-size: clamp(10px, .85vw, 12px); line-height: 1.7; }
 }
 @media (min-width: 1280px) {
-  .heroTitle { margin-top: 20px; }
-  .heroHeading::after, .heroSubcopy { margin-top: 28px; }
-  .heroFeatures { margin-top: 24px; }
+  .heroCopy .heroTitle { margin-top: 18px; }
+  .heroCopy .heroSubcopy { margin-top: 22px; }
+  .heroCopy .heroFeatures { margin-top: 20px; }
+  .heroCopy .heroActions { margin-top: 24px; gap: 16px 24px; }
+  .heroCopy .heroActions > :first-child { min-height: 48px; padding: 12px 20px !important; }
+  .heroCopy .heroActions > :last-child { min-height: 48px; }
+  .heroCopy .heroNotice { margin-top: 18px; }
 }
