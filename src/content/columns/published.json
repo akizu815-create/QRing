@@ -331,5 +331,149 @@
     "validationResults": [],
     "generationRunId": null,
     "promptVersion": null
+  },
+  {
+    "id": "elderly-monitoring-contact-system",
+    "slug": "elderly-monitoring-contact-system",
+    "title": "高齢者の見守りに、つながる安心を。",
+    "summary": "高齢者が住み慣れた地域で安心して暮らし続けるために、各自治体では地域の実情に応じたさまざまな見守り施策が進められています。",
+    "seoTitle": "高齢者の見守りとQRコード｜発見後の連絡を支える仕組み",
+    "metaDescription": "高齢者の見守りには、日常の安否確認だけでなく、外出先で困ったときの連絡手段も大切です。地域の見守り活動を補完する、電話番号を知らせずに声でつながるQRコードの仕組みをご紹介します。",
+    "category": "municipal-community",
+    "primaryAudience": "municipal",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-06",
+    "updatedAt": null,
+    "reviewedAt": "2026-11-06",
+    "nextReviewAt": "2027-02-06",
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "relatedArticleIds": [
+      "elderly-monitoring"
+    ],
+    "relatedService": {
+      "href": "/municipalities/",
+      "label": "自治体向けサービス案内"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "つながるQRのサービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "sections": [
+      {
+        "id": "community-monitoring",
+        "title": "地域の見守りと発見後の連絡",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "高齢者の見守りには、日常の声かけ、安否確認、外出時の支援など、さまざまな取り組みがあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "一方、外出先で道に迷った方や、家族への連絡が難しい方を見かけた場合、発見者が連絡先を把握しているとは限りません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "本人が携帯電話を持っていない場合や、操作が難しい場合も考えられます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "こうした場面で、発見者と家族・支援者をつなぐ連絡手段を用意しておくことは、既存の見守り活動を補完する方法の一つです。"
+          }
+        ]
+      },
+      {
+        "id": "voice-contact",
+        "title": "電話番号を知らせずに声でつながるQRコード",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "株式会社QRingの「つながるQR」は、QRコードをスキャンして発信することで、発見者と登録者が互いの電話番号を知らせずに通話できる仕組みです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "専用アプリは不要で、バッグや持ち物などにQRコードを付けておくことで、外出先で困った際の連絡手段として活用が考えられます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "GPSによる位置追跡や自動検知とは異なり、発見後の連絡を支えることに特化しています。"
+          },
+          {
+            "type": "link",
+            "href": "/service/",
+            "label": "つながるQRのサービス紹介",
+            "prefix": "詳しい仕組みは「",
+            "suffix": "」をご覧ください。"
+          }
+        ]
+      },
+      {
+        "id": "complementary-contact",
+        "title": "既存の見守り活動を補完する連絡手段として",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "つながるQRは、自治体や地域の関係者による既存の見守り活動に置き換わるものではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "地域の方が困っている高齢者を見かけたとき、登録された連絡先へ電話でつながる手段を提供するものです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "自治体ごとに見守り施策や地域の連携体制は異なります。つながるQRは、そうした既存の取り組みの中で、必要に応じて活用を検討いただける選択肢の一つです。"
+          }
+        ]
+      },
+      {
+        "id": "summary",
+        "title": "まとめ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "高齢者の見守りには、地域の方々による日々の気づきや支え合いが欠かせません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "つながるQRは、その取り組みを支える「発見後の連絡」という場面に着目したサービスです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "電話番号を知らせずに声でつながる仕組みが、地域の安心を支える新たな選択肢となることを目指しています。"
+          }
+        ]
+      }
+    ],
+    "cta": "municipal",
+    "searchIntent": "高齢者の見守りには、日常の安否確認だけでなく、外出先で困ったときの連絡手段も大切です。地域の見守り活動を補完する、電話番号を知らせずに声でつながるQRコードの仕組みをご紹介します。",
+    "primaryKeyword": "高齢者 見守り QRコード",
+    "topicClusterId": "municipal-community",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "user-approved-copy-2026-11-06",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "introduction": [
+      "地域住民による声かけや関係機関との連携、外出時の見守りなど、その取り組みは多岐にわたります。",
+      "こうした地域の見守り活動において、一つの課題となり得るのが、外出先で困っている高齢者を発見した際の連絡方法です。",
+      "発見した方が家族や支援者の連絡先を知らない場合でも、円滑に連絡できる方法があれば、地域の見守りを支える新たな選択肢になります。"
+    ],
+    "image": {
+      "src": "/images/columns/elderly-monitoring-contact-system.jpg",
+      "width": 1280,
+      "height": 853,
+      "alt": "QRコードを付けたバッグを持つ高齢女性と、スマートフォンで連絡する女性のイラスト"
+    }
   }
 ]

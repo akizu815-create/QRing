@@ -10,7 +10,7 @@ export function generateStaticParams() { return getPublishedArticles().map((a) =
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const a = getPublishedArticle((await params).slug);
   if (!a) notFound();
-  return { title: { absolute: a.seoTitle }, description: a.metaDescription, alternates: { canonical: articlePath(a.slug) }, openGraph: { title: a.seoTitle, description: a.metaDescription, url: articlePath(a.slug), type: "article", locale: "ja_JP", publishedTime: `${a.publishedAt}T00:00:00+09:00`, ...(a.updatedAt ? { modifiedTime: `${a.updatedAt}T00:00:00+09:00` } : {}) } };
+  return { title: { absolute: a.seoTitle }, description: a.metaDescription, alternates: { canonical: articlePath(a.slug) }, openGraph: { title: a.seoTitle, description: a.metaDescription, url: articlePath(a.slug), type: "article", locale: "ja_JP", ...(a.image ? { images: [{ url: a.image.src, width: a.image.width, height: a.image.height, alt: a.image.alt }] } : {}), publishedTime: `${a.publishedAt}T00:00:00+09:00`, ...(a.updatedAt ? { modifiedTime: `${a.updatedAt}T00:00:00+09:00` } : {}) } };
 }
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const a = getPublishedArticle((await params).slug);
