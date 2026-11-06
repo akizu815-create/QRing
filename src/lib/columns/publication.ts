@@ -1,4 +1,4 @@
-import { CATEGORIES, AUDIENCES, comparePublicationDates, type Article, type ArticleCard } from "./types";
+import { CATEGORIES, AUDIENCES, compareArticleDates, type Article, type ArticleCard } from "./types";
 
 const legacySlugs = new Set(["elderly-monitoring", "lost-item-preparation"]);
 const reservedSlugs = new Set(["audience", "category", "page"]);
@@ -77,8 +77,8 @@ export function selectPublishedArticles(records: readonly unknown[], now = Date.
     requireValue(value.claims.every((c) => c.verified) && value.validationResults.length > 0 && value.validationResults.every((r) => r.passed), `${value.slug}: unresolved quality checks`);
     published.push(value);
   }
-  return published.sort(comparePublicationDates);
+  return published.sort(compareArticleDates);
 }
 export function toArticleCard(a: Article): ArticleCard {
-  return { id: a.id, slug: a.slug, title: a.title, summary: a.summary, category: a.category, primaryAudience: a.primaryAudience, publishedAt: a.publishedAt, ...(a.publishedTimestamp ? { publishedTimestamp: a.publishedTimestamp } : {}), ...(a.contentFormat === "approved-manuscript" && a.image ? { image: a.image } : {}) };
+  return { id: a.id, slug: a.slug, title: a.title, summary: a.summary, category: a.category, primaryAudience: a.primaryAudience, publishedAt: a.publishedAt, ...(a.editionDate ? { editionDate: a.editionDate } : {}), ...(a.publishedTimestamp ? { publishedTimestamp: a.publishedTimestamp } : {}), ...(a.contentFormat === "approved-manuscript" && a.image ? { image: a.image } : {}) };
 }

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { CATEGORIES, AUDIENCES, articlePublicationDate, articlePublishedTime, categoryLabel, audienceLabel, articlePath, formatDate, type ArticleCard, type Audience } from "@/lib/columns/types";
+import { CATEGORIES, AUDIENCES, articleDisplayDate, categoryLabel, audienceLabel, articlePath, formatDate, type ArticleCard, type Audience } from "@/lib/columns/types";
 import { COLUMN_PAGE_SIZE as PAGE_SIZE, columnListPath } from "@/lib/columns/navigation";
 export default function ArticleList({ articles, fixedAudience, initialPage = 1, basePath = "/column/" }: { articles: ArticleCard[]; fixedAudience?: Audience; initialPage?: number; basePath?: string }) {
   const [category, setCategory] = useState("");
@@ -37,7 +37,7 @@ export default function ArticleList({ articles, fixedAudience, initialPage = 1, 
           <p className="text-xs leading-7 text-ink/65">{categoryLabel(a.category)}<span aria-hidden="true"> ／ </span>{audienceLabel(a.primaryAudience)}</p>
           <h3 className="mt-4 font-serif text-2xl font-light leading-relaxed"><Link className="hover:text-moss" href={articlePath(a.slug)}>{a.title}</Link></h3>
           <p className="body-jp mt-5 flex-1 text-sm">{a.summary}</p>
-          <p className="mt-5 text-xs text-ink/60">公開日：<time dateTime={articlePublishedTime(a)}>{formatDate(articlePublicationDate(a))}</time></p>
+          <p className="mt-5 text-xs text-ink/60">記事日：<time dateTime={articleDisplayDate(a)}>{formatDate(articleDisplayDate(a))}</time></p>
           <Link className="link-underline mt-6 self-start py-2 text-sm text-moss" href={articlePath(a.slug)}>記事を読む →<span className="sr-only">{a.title}</span></Link>
         </article>)}
       </div> : <div className="py-12"><p className="body-jp text-sm">該当する公開記事はまだありません。</p></div>}

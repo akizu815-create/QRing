@@ -4,7 +4,7 @@ import Image from "next/image";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
 import { GuideSection } from "@/components/GuidePage";
 import ColumnStructuredData from "./ColumnStructuredData";
-import { articlePath, articlePublishedTime, audienceLabel, categoryLabel, formatDate, type Article, type Block } from "@/lib/columns/types";
+import { articlePath, articleDisplayDate, articlePublishedTime, audienceLabel, categoryLabel, formatDate, type Article, type Block } from "@/lib/columns/types";
 function ContentBlock({ block }: { block: Block }) {
   switch (block.type) {
     case "paragraph": return <p className={block.small ? "text-xs text-ink/60" : undefined}>{block.text}</p>;
@@ -34,7 +34,7 @@ export default function ColumnArticle({ article: a, related }: { article: Articl
         <p data-approved-introduction={a.contentFormat === "approved-manuscript" ? true : undefined} className="body-jp mt-8 text-sm md:text-base">{a.summary}</p>
         {a.introduction?.map((text, i) => <p key={i} data-approved-introduction={a.contentFormat === "approved-manuscript" ? true : undefined} className="body-jp mt-6 text-sm md:text-base">{text}</p>)}
         {a.image && <Image src={a.image.src} width={a.image.width} height={a.image.height} alt={a.image.alt} className="mt-10 h-auto w-full rounded-sm" sizes="(max-width: 768px) 100vw, 768px" priority />}
-        <p className="mt-7 text-xs leading-7 text-ink/60">株式会社QRing　公開日：<time dateTime={articlePublishedTime(a)}>{formatDate(a.publishedAt)}</time>{a.updatedAt && <>　更新日：<time dateTime={a.updatedAt}>{formatDate(a.updatedAt)}</time></>}</p>
+        <p className="mt-7 text-xs leading-7 text-ink/60">株式会社QRing　{a.editionDate && <>記事日：<time dateTime={articleDisplayDate(a)}>{formatDate(articleDisplayDate(a))}</time>　</>}公開日：<time dateTime={articlePublishedTime(a)}>{formatDate(a.publishedAt)}</time>{a.updatedAt && <>　更新日：<time dateTime={a.updatedAt}>{formatDate(a.updatedAt)}</time></>}</p>
       </div></header>
       <div className="container-narrow py-8 md:py-12">
         <nav aria-labelledby="article-toc" className="pb-10 pt-3"><h2 id="article-toc" className="font-serif text-xl font-light">この記事の内容</h2><ol className="mt-5 space-y-3 text-sm leading-7 text-moss">{a.sections.map((s) => <li key={s.id}><a className="underline underline-offset-4" href={`#${s.id}`}>{s.title}</a></li>)}</ol></nav>

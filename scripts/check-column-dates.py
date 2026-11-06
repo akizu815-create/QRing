@@ -1,4 +1,4 @@
-"""Verify public dates/order against the approved registry, not editorial issue dates."""
+"""Verify public dates/order against the approved registry, keeping approved article dates separate from publication history."""
 import datetime as dt
 from collections import Counter
 import importlib.util
@@ -48,7 +48,10 @@ for a in articles:
     html = (root / 'column' / a['slug'] / 'index.html').read_text()
     p = seo.Page(html)
     article = re.search(r'<article[ >].*?</article>', html, re.S)[0]
-    assert '記事日：' not in article and '原稿確認日：' not in article
+    assert '原稿確認日：' not in article
+    if a.get('editionDate'):
+        assert '記事日：' in article
+        assert [a['editionDate'], display_date(a['editionDate'])] in Times(article).values
     published_time = a.get('publishedTimestamp', a['publishedAt'])
     assert [published_time, display_date(a['publishedAt'])] in Times(article).values
     if a['updatedAt']:
@@ -79,7 +82,7 @@ all_listing_times = list(listing_times)
 pages = sorted((p for p in (root / 'column/page').glob('*/index.html') if p.parent.name.isdigit() and int(p.parent.name) > 1), key=lambda p: int(p.parent.name))
 for page in pages:
     all_listing_times.extend(Times(page.read_text().split('role="status"', 1)[1]).values)
-expected = [[a.get('publishedTimestamp', a['publishedAt']), display_date(a['publishedAt'])] for a in articles]
-assert Counter(map(tuple, all_listing_times)) == Counter(map(tuple, expected)), 'Missing article or editorial date leaked into public list' 
+expected = [[a.get('editionDate', a['publishedAt']), display_date(a.get('editionDate', a['publishedAt']))] for a in articles]
+assert Counter(map(tuple, all_listing_times)) == Counter(map(tuple, expected)), 'Missing article or approved article date mismatch'
 assert '公開記事' in listing
-print(json.dumps({'publicArticles': len(articles), 'publicDateConsistency': 'passed', 'homeAndListingOrder': 'passed', 'editorialDatesNotDisplayedAsPublication': 'passed', 'structuredEntityReferences': 'passed'}, ensure_ascii=False))
+print(json.dumps({'publicArticles': len(articles), 'publicDateConsistency': 'passed', 'homeAndListingOrder': 'passed', 'articleDatesSeparateFromPublication': 'passed', 'structuredEntityReferences': 'passed'}, ensure_ascii=False))

@@ -15,6 +15,8 @@ records=json.loads(Path('src/content/columns/published.json').read_text())
 today=dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
 articles=[a for a in records if a.get('status')=='published' and a['publishedAt']<=today and a.get('approvalRevision')==a['contentRevision']]
 def publication_order(a,b):
+    da,db=a.get('editionDate',a['publishedAt']),b.get('editionDate',b['publishedAt'])
+    if da!=db:return -1 if da>db else 1
     if a['publishedAt'] != b['publishedAt']:return -1 if a['publishedAt'] > b['publishedAt'] else 1
     if bool(a.get('publishedTimestamp')) != bool(b.get('publishedTimestamp')):return -1 if a.get('publishedTimestamp') else 1
     if a.get('publishedTimestamp') and b.get('publishedTimestamp'):

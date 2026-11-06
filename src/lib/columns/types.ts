@@ -43,14 +43,18 @@ export type Article = {
   generationRunId: string | null; promptVersion: string | null;
 };
 // Only this projection crosses the server/client boundary. Never pass full records to the list.
-export type ArticleCard = Pick<Article, "id" | "slug" | "title" | "summary" | "category" | "primaryAudience" | "publishedAt" | "publishedTimestamp" | "image">;
+export type ArticleCard = Pick<Article, "id" | "slug" | "title" | "summary" | "category" | "primaryAudience" | "publishedAt" | "publishedTimestamp" | "editionDate" | "image">;
 export const categoryLabel = (id: Category) => CATEGORIES.find((c) => c.id === id)!.label;
 export const audienceLabel = (id: Audience) => AUDIENCES.find((a) => a.id === id)!.label;
 export const articlePath = (slug: string) => `/column/${slug}/`;
 export const formatDate = (value: string) => new Intl.DateTimeFormat("ja-JP", { timeZone: "Asia/Tokyo", year: "numeric", month: "long", day: "numeric" }).format(new Date(value));
 
-// Issue dates are for editorial organization, never substitutes for publication history.
+// Approved article dates control presentation; publication history stays separate.
 export const COLUMN_OPERATION_STARTED_ON = "2026-11-01";
+export const articleDisplayDate = (a: Pick<Article, "publishedAt" | "editionDate">) => a.editionDate ?? a.publishedAt;
+export function compareArticleDates(a: Pick<Article, "publishedAt" | "publishedTimestamp" | "editionDate" | "slug">, b: Pick<Article, "publishedAt" | "publishedTimestamp" | "editionDate" | "slug">) {
+  return articleDisplayDate(b).localeCompare(articleDisplayDate(a)) || comparePublicationDates(a, b);
+}
 export const articlePublicationDate = (a: Pick<Article, "publishedAt">) => a.publishedAt;
 export function comparePublicationDates(a: Pick<Article, "publishedAt" | "publishedTimestamp" | "slug">, b: Pick<Article, "publishedAt" | "publishedTimestamp" | "slug">) {
   const byDate = b.publishedAt.localeCompare(a.publishedAt);
