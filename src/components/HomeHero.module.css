@@ -1,4 +1,4 @@
-/* モバイルHEROだけを調整する。768px以上は既存レイアウトをそのまま使用。 */
+/* 画面幅ごとにHOMEのHEROを調整する。 */
 @media (max-width: 767px) {
   .heroFrame { height: calc(100vw * 4 / 3 + 220px); aspect-ratio: auto; background: #f7f4ee; }
   /* 同じ写真の左上の木漏れ日を背景にも使い、コピーと写真を一続きにする。 */
@@ -30,4 +30,41 @@
 /* 狭い端末でも特徴表示が犬のQRタグに重ならない余白。 */
 @media (max-width: 374px) {
   .heroFrame { height: calc(100vw * 4 / 3 + 256px); }
+}
+
+/* PC: 写真は通常フローに置かず、同一ステージの背景レイヤーに固定する。 */
+@media (min-width: 768px) {
+  .heroStage { display: block; aspect-ratio: 3 / 2; overflow: hidden; isolation: isolate; }
+  .heroStage .heroVisual { position: absolute; inset: 0; z-index: 0; }
+  .heroVisual .heroFrame { position: absolute; inset: 0; width: 100%; height: 100%; aspect-ratio: auto; }
+  .heroFrame .heroPhoto { object-fit: cover; object-position: center; }
+  .heroFrame .heroWash {
+    display: block; inset: 0; height: auto;
+    background: linear-gradient(90deg, rgba(247,244,238,.38), rgba(247,244,238,.1) 40%, transparent 58%);
+  }
+  .heroStage .heroCopy {
+    position: absolute; inset: 0 auto auto 5.5%; z-index: 10;
+    display: block; width: 48%; padding: clamp(24px, 4vw, 60px) 0 0;
+    background: transparent;
+  }
+  .heroCopy .heroHeading { position: static; padding: 0; }
+  .heroCopy .heroDetails { width: 100%; padding: 0; }
+  .heroCopy .heroBrand { font-size: clamp(12px, 1.1vw, 15px); line-height: 1.6; letter-spacing: .04em; }
+  .heroCopy .heroTitle { margin-top: 12px; font-size: clamp(26px, 3.5vw, 52px); line-height: 1.35; }
+  .heroCopy .heroTitle > span { white-space: nowrap; }
+  .heroCopy .heroSubcopy { margin-top: 14px; font-size: clamp(12px, 1.25vw, 17px); line-height: 1.9; }
+  .heroCopy .heroFeatures { margin-top: 12px; gap: 8px 12px; font-size: clamp(10px, 1vw, 14px); line-height: 1.5; }
+  .heroCopy .heroActions { margin-top: 16px; gap: 8px 16px; }
+  .heroCopy .heroActions > :first-child { min-height: 40px; padding: 10px 16px !important; font-size: clamp(11px, 1.1vw, 14px) !important; }
+  .heroCopy .heroActions > :last-child { min-height: 40px; font-size: clamp(11px, 1.1vw, 14px); }
+  .heroCopy .heroNotice { max-width: none; margin-top: 12px; font-size: clamp(10px, .85vw, 12px); line-height: 1.7; }
+}
+@media (min-width: 1280px) {
+  .heroCopy .heroTitle { margin-top: 18px; }
+  .heroCopy .heroSubcopy { margin-top: 22px; }
+  .heroCopy .heroFeatures { margin-top: 20px; }
+  .heroCopy .heroActions { margin-top: 24px; gap: 16px 24px; }
+  .heroCopy .heroActions > :first-child { min-height: 48px; padding: 12px 20px !important; }
+  .heroCopy .heroActions > :last-child { min-height: 48px; }
+  .heroCopy .heroNotice { margin-top: 18px; }
 }
