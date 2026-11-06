@@ -19,14 +19,8 @@ export default function HeroVisual() {
             className={`${styles.heroPhoto} absolute inset-0 h-full w-full object-cover object-[52%_top] md:object-center`}
           />
         </picture>
-        <div className={`${styles.heroWash} pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ivory/90 via-ivory/40 to-transparent md:hidden`} aria-hidden="true" />
-        <div
-          className="pointer-events-none absolute inset-x-0 top-0 hidden h-[66%] bg-gradient-to-b from-ivory/85 via-ivory/30 to-transparent xl:block"
-          aria-hidden="true"
-        />
+        <div className={`${styles.heroWash} pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-ivory/90 via-ivory/40 to-transparent md:hidden xl:block`} aria-hidden="true" />
       </div>
-
-      <div className="pointer-events-none absolute inset-0 hidden grain md:block" aria-hidden="true" />
     </div>
   );
 }

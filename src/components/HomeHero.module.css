@@ -1,4 +1,4 @@
-/* モバイルHEROだけを調整する。768px以上は既存レイアウトをそのまま使用。 */
+/* 画面幅ごとにHOMEのHEROを調整する。 */
 @media (max-width: 767px) {
   .heroFrame { height: calc(100vw * 4 / 3 + 220px); aspect-ratio: auto; background: #f7f4ee; }
   /* 同じ写真の左上の木漏れ日を背景にも使い、コピーと写真を一続きにする。 */
@@ -30,4 +30,24 @@
 /* 狭い端末でも特徴表示が犬のQRタグに重ならない余白。 */
 @media (max-width: 374px) {
   .heroFrame { height: calc(100vw * 4 / 3 + 256px); }
+}
+
+/* PCでは既存写真を全体表示し、上段左側の余白にコピーとCTAを重ねる。 */
+@media (min-width: 1280px) {
+  .heroFrame { aspect-ratio: 1586 / 992; }
+  .heroFrame .heroPhoto { object-fit: contain; }
+  .heroFrame .heroWash {
+    inset: 0; height: auto;
+    background: linear-gradient(90deg, rgba(247,244,238,.42), rgba(247,244,238,.12) 40%, transparent 58%);
+  }
+  .heroCopy {
+    position: absolute; top: 0; left: 5.5%; width: 47%;
+    padding: clamp(40px, 4vw, 60px) 0 0;
+  }
+  .heroBrand { font-size: 15px; letter-spacing: .04em; }
+  .heroTitle { margin-top: 18px; font-size: clamp(44px, 3.5vw, 52px); line-height: 1.4; }
+  .heroSubcopy { margin-top: 22px; font-size: 16px; line-height: 1.9; }
+  .heroFeatures { margin-top: 20px; font-size: 14px; }
+  .heroActions { margin-top: 24px; gap: 16px 24px; }
+  .heroNotice { max-width: none; margin-top: 18px; font-size: 12px; line-height: 1.8; }
 }
