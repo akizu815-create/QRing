@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # 08:00 JST (23:00 UTC, previous calendar day).
+  # GitHub scheduled workflows may start later than the specified minute.
+  schedule:
+    - cron: "0 23 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -24,6 +29,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      # Fail closed if a scheduled/unpublished article leaks into the export.
+      - run: npm run check:column-export
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
