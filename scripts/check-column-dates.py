@@ -15,7 +15,8 @@ spec.loader.exec_module(seo)
 root = Path('out')
 now = dt.datetime.now(dt.timezone.utc)
 records = json.loads(Path('src/content/columns/published.json').read_text())
-articles = [a for a in records if a['status'] == 'published' and a['approvalRevision'] == a['contentRevision'] and dt.datetime.fromisoformat(a.get('publishedTimestamp', a['publishedAt'] + 'T00:00:00+09:00')) <= now]
+from column_export_support import published_articles
+articles = published_articles(records)
 
 
 class Times(HTMLParser):

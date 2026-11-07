@@ -6,7 +6,8 @@ from xml.etree import ElementTree as ET
 from importlib.util import spec_from_file_location, module_from_spec
 spec=spec_from_file_location('seo_audit',Path(__file__).with_name('seo-audit.py')); mod=module_from_spec(spec);spec.loader.exec_module(mod)
 root=Path('out'); records=json.loads(Path('src/content/columns/published.json').read_text())
-published=[a for a in records if a.get('status')=='published']
+from column_export_support import published_articles
+published=published_articles(records)
 existing=[a for a in published if a.get('publicationOrigin')=='existing']
 urls=[n.text for n in ET.parse(root/'sitemap.xml').findall('.//{*}loc')]
 assert len(urls)==len(set(urls)), 'Duplicate sitemap URLs'
@@ -49,6 +50,13 @@ assert not list(Path('src/app/column').glob('lost-item-preparation/page.tsx'))
 # Canary fixtures are synthetic and never committed. Scan every public text payload, not only HTML.
 for file in root.rglob('*'):
  if file.is_file() and file.suffix in {'.html','.txt','.json','.js','.xml'}:
-  assert 'PRIVATE_COLUMN_CANARY' not in file.read_text(errors='ignore'), f'Unpublished content leaked into {file}'
+  payload=file.read_text(errors='ignore')
+  assert 'PRIVATE_COLUMN_CANARY' not in payload, f'Unpublished content leaked into {file}'
+  for a in records:
+   if a not in published:
+    assert a['title'] not in payload and '/column/'+a['slug']+'/' not in payload, f'Future/held article leaked into {file}: {a["slug"]}'
+for a in records:
+ if a not in published:
+  assert not (root/'column'/a['slug']).exists(), f'Unpublished individual route: {a["slug"]}'
 assert not list((root/'column').glob('private-column-canary-*'))
 print('Static export: existing URLs/content/metadata/schema/anchors preserved; municipal article listed and listing indexed; unpublished canaries absent from HTML/RSC/JS/XML.')
