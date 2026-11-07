@@ -59,7 +59,12 @@ try {
   const november6 = records.find(a => a.slug === 'elderly-monitoring-contact-system');
   assert.deepEqual(toArticleCard(november6).image, november6.image, 'Illustrations must reach cards regardless of manuscript format');
   assert.deepEqual(toArticleCard(suppliedDog).image, suppliedDog.image);
-  assert.equal(latestArticles(records, { serviceHref: '/use-cases/pets/' }).length, 0);
+  assert.deepEqual(latestArticles(records, { serviceHref: '/use-cases/pets/' }).map(a=>a.slug), ['lost-dog-preparation']);
+  for (const slug of ['dementia-early-signs','senior-care-facility-types']) {
+    const a=records.find(a=>a.slug===slug);
+    assert.equal(a.relatedService,null, 'Keep supplied manuscript fields intact');
+    assert.deepEqual(a.relatedLinks.map(l=>l.href), ['/use-cases/elderly/']);
+  }
   assert.deepEqual(latestArticles(records, { audience: 'municipal' }).map(a => a.slug), ['elderly-monitoring-contact-system']);
   assert.equal(relatedArticles(records[0], records)[0].id, records[1].id);
   const now = Date.parse('2026-11-05T12:00:00+09:00');

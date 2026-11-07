@@ -15,10 +15,10 @@ function SectionHeading({ en, title, id }: { en: string; title: string; id: stri
   return <div className="mb-9 md:mb-12"><p className="eyebrow">{en}</p><h2 id={id} className="mt-6 max-w-4xl font-serif text-[clamp(28px,3.5vw,46px)] font-light leading-[1.6]">{title}</h2></div>;
 }
 const benefits = [
-  { title: "連絡・調整の負担を軽減", body: "発見者から登録先へ直接連絡できる手段で、職員の連絡対応を支援します。" },
+  { title: "連絡・調整の負担を軽減", body: "発見者とご家族などの登録先が直接声で話せる手段で、職員の連絡対応を支援します。" },
   { title: "既存施策をそのまま活用", body: "GPSや見守りネットワークに、発見後の連絡という選択肢を追加できます。" },
   { title: "無理のない導入を支援", body: "QRコードと案内資料を活用し、新たな業務負担を抑えた導入を目指します。" },
-  { title: "地域の魅力向上へ", body: "住民に寄り添う新たな取り組みとして、自治体の姿勢を発信できます。" },
+  { title: "地域の見守りを、もっと身近に。", body: "お互いの電話番号を知らせずに話せる仕組みで、地域の助け合いを支えます。" },
 ];
 const useCases = [
   { title: "警察", body: "保護した高齢者のご家族への連絡支援" },
