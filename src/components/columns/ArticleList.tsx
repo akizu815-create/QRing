@@ -21,7 +21,7 @@ export default function ArticleList({ articles, fixedAudience, initialPage = 1, 
             <option value="">すべてのカテゴリー</option>{CATEGORIES.map((c) => <option value={c.id} key={c.id}>{c.label}</option>)}
           </select>
         </label>
-        {!fixedAudience && <label className="text-sm leading-7">想定読者
+        {!fixedAudience && <label className="text-sm leading-7">読者から探す
           <select className="mt-2 block min-h-12 w-full border border-ink/25 bg-ivory px-3 py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-moss" value={audience} onChange={(e) => { setAudience(e.target.value); setPage(1); }}>
             <option value="">すべての読者</option>{AUDIENCES.map((a) => <option value={a.id} key={a.id}>{a.label}</option>)}
           </select>

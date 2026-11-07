@@ -75,8 +75,7 @@ export default function Header() {
           <a href={MY_PAGE} className={`inline-flex min-h-12 items-center bg-ink px-4 text-sm text-ivory ${focusStyle}`}>マイページ</a>
         </nav>
         <div className="flex items-center gap-2 md:gap-3 xl:hidden">
-          <a href={MY_PAGE} className={`inline-flex min-h-11 items-center gap-1.5 whitespace-nowrap rounded-full border border-moss/30 bg-moss/5 px-2.5 text-xs text-ink max-[374px]:gap-1 max-[374px]:px-2 md:min-h-12 md:gap-0 md:rounded-none md:border-0 md:bg-transparent md:px-0 md:text-sm ${focusStyle}`}>
-            <svg aria-hidden="true" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.25" className="h-4 w-4 shrink-0 text-moss max-[374px]:h-3.5 max-[374px]:w-3.5 md:hidden"><circle cx="10" cy="6" r="3" /><path d="M4 17v-2a6 6 0 0 1 12 0v2" /></svg>
+          <a href={MY_PAGE} className={`inline-flex min-h-11 items-center gap-1.5 whitespace-nowrap rounded-[3px] border border-[#B5A183] bg-[#FBFAF6] px-3 text-xs text-[#514333] max-[374px]:gap-1 max-[374px]:px-2 md:min-h-12 md:gap-0 md:rounded-none md:border-0 md:bg-transparent md:px-0 md:text-sm md:text-ink ${focusStyle}`}>
             マイページ
           </a>
           <button ref={toggleRef} type="button" aria-label={open ? "メニューを閉じる" : "メニューを開く"} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)} className={`flex h-12 w-12 flex-col items-center justify-center gap-1.5 ${focusStyle}`}>
