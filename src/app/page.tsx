@@ -67,7 +67,7 @@ export default function Home() {
                 {HERO_FEATURES.map((feature) => <li key={feature}>{feature}</li>)}
               </ul>
               <div className={`${heroStyles.heroActions} mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 md:mt-5`}>
-                <Link href="/service/" className="btn-primary min-h-12 !px-5 !py-3 !text-sm normal-case tracking-[0.06em]">{HERO_CTA_LABEL}<span aria-hidden="true">→</span></Link>
+                <Link href="/service/" className="btn-primary !hidden md:!inline-flex min-h-12 !px-5 !py-3 !text-sm normal-case tracking-[0.06em]">{HERO_CTA_LABEL}<span aria-hidden="true">→</span></Link>
                 <Link href="/#for-business" className="inline-flex min-h-12 items-center text-sm text-deepmoss underline decoration-moss/35 underline-offset-4">自治体・法人の方へ →</Link>
               </div>
               <p className={`${heroStyles.heroNotice} mt-4 max-w-sm text-xs leading-relaxed text-ink/70`}>{CONSUMER_SERVICE.notice}</p>

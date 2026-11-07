@@ -103,7 +103,7 @@ export default function PricePage() {
   return (
     <>
       <PageStructuredData page="price" />
-      <PageHeader eyebrow="— Price" en="Price" />
+      <PageHeader eyebrow="— PRICE" en="PRICE" heading="料金について" />
 
       <section className="py-24 md:py-32" aria-labelledby="pricing-title">
         <div className="container-narrow">
