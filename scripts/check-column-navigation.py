@@ -80,7 +80,7 @@ assert 'https://axb.qring.jp/' in home,'My-page access lost'
 footer=re.search(r'<nav[^>]*aria-label="フッターナビゲーション".*?</nav>',home,re.S)[0]
 assert 'COLUMN' in footer and 'コラム' in footer and '見守り・紛失対策の選び方' not in footer
 for slug in ['elderly','belongings','pets']:
-    related=[a for a in articles if a.get('relatedService') and (a['relatedService']['href']==f'/use-cases/{slug}/' or any(link['href']==f'/use-cases/{slug}/' for link in a.get('relatedLinks',[])))][:3]
+    related=[a for a in articles if ((a.get('relatedService') or {}).get('href')==f'/use-cases/{slug}/' or any(link['href']==f'/use-cases/{slug}/' for link in a.get('relatedLinks',[])))][:3]
     view=html('/use-cases/'+slug+'/')
     if related:assert all(path(a) in parsed('/use-cases/'+slug+'/').links for a in related)
     else:assert f'id="{slug}-columns"' not in view,'Empty related section'

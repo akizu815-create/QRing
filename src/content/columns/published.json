@@ -646,12 +646,12 @@
     "editionDate": "2026-11-07",
     "publishedAt": "2026-11-07",
     "publicationPending": false,
-    "updatedAt": null,
+    "updatedAt": "2026-11-07",
     "reviewedAt": null,
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
       "sourceFile": "src/content/columns/approved/lost-dog-preparation.md",
@@ -835,6 +835,10 @@
       {
         "check": "user-supplied-approved-manuscript-exact-text",
         "passed": true
+      },
+      {
+        "check": "user-requested-phase2-related-link-only",
+        "passed": true
       }
     ],
     "generationRunId": null,
@@ -844,7 +848,13 @@
       "width": 1280,
       "height": 720,
       "alt": "QRコード付きの迷子札を付けた愛犬と飼い主の水彩イラスト"
-    }
+    },
+    "relatedLinks": [
+      {
+        "href": "/use-cases/pets/",
+        "label": "つながるQRで、ペットの迷子時の連絡に備える"
+      }
+    ]
   },
   {
     "id": "dementia-early-signs",
@@ -865,12 +875,12 @@
     "editionDate": "2026-11-03",
     "publishedAt": "2026-11-07",
     "publicationPending": false,
-    "updatedAt": null,
+    "updatedAt": "2026-11-07",
     "reviewedAt": null,
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
       "sourceFile": "src/content/columns/approved/dementia-early-signs.md",
@@ -1023,6 +1033,10 @@
       {
         "check": "user-supplied-approved-manuscript-exact-text",
         "passed": true
+      },
+      {
+        "check": "user-requested-phase2-related-link-only",
+        "passed": true
       }
     ],
     "generationRunId": null,
@@ -1032,7 +1046,13 @@
       "width": 640,
       "height": 384,
       "alt": "物忘れについて考える高齢男性と、日常の変化を記したチェックリストの水彩イラスト"
-    }
+    },
+    "relatedLinks": [
+      {
+        "href": "/use-cases/elderly/",
+        "label": "つながるQRで、高齢者の外出時の連絡に備える"
+      }
+    ]
   },
   {
     "id": "senior-care-facility-types",
@@ -1053,12 +1073,12 @@
     "editionDate": "2026-11-04",
     "publishedAt": "2026-11-07",
     "publicationPending": false,
-    "updatedAt": null,
+    "updatedAt": "2026-11-07",
     "reviewedAt": null,
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
       "sourceFile": "src/content/columns/approved/senior-care-facility-types.md",
@@ -1278,6 +1298,10 @@
       {
         "check": "user-supplied-approved-manuscript-exact-text",
         "passed": true
+      },
+      {
+        "check": "user-requested-phase2-related-link-only",
+        "passed": true
       }
     ],
     "generationRunId": null,
@@ -1287,7 +1311,13 @@
       "width": 640,
       "height": 384,
       "alt": "車椅子の高齢女性と支援する女性を中心に、高齢者向け施設の種類を描いた水彩イラスト"
-    }
+    },
+    "relatedLinks": [
+      {
+        "href": "/use-cases/elderly/",
+        "label": "高齢者の外出時の連絡手段として、つながるQRを知る"
+      }
+    ]
   },
   {
     "id": "school-contact-list-privacy",
