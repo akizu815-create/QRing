@@ -88,7 +88,7 @@ def registration(meta):
                 status='published', publicationOrigin='editorial',
                 publishedAt=date, editionDate=date, publishedTimestamp=date+'T08:00:00+09:00', publicationPending=False,
                 updatedAt=None, reviewedAt=None, nextReviewAt=None, serviceSpecificationVersion='2026-10-27',
-                contentRevision=1, approvalRevision=1, contentFormat='approved-manuscript',
+                contentRevision=2 if meta['day']==11 else 1, approvalRevision=2 if meta['day']==11 else 1, contentFormat='approved-manuscript',
                 approvalRecord=dict(sourceFile=str(approved.relative_to(ROOT)), sha256=hashlib.sha256(source.read_bytes()).hexdigest(), receivedOn=CHECKED),
                 image=dict(src=f'/images/columns/{meta["slug"]}.webp', width=1280, height=853 if meta['day']==8 else 720, alt=meta['alt']),
                 relatedArticleIds=meta['related'], relatedService=None,
@@ -114,7 +114,7 @@ def main():
         actual = next(a for a in records if a['id']==article['id'])
         assert actual == article, f'{article["slug"]}: registration differs'
         assert hashlib.sha256((ROOT/article['approvalRecord']['sourceFile']).read_bytes()).hexdigest()==article['approvalRecord']['sha256']
-    print('PR #130: all eight titles, paragraphs, tables, numbered steps and references registered without rewriting; all eight ready for scheduled builds after merge approval.')
+    print('PR #130: all eight titles, paragraphs, tables, numbered steps and references registered from supplied text and the authorized Nov 11 correction; all eight ready for scheduled builds after merge approval.')
 
 
 if __name__ == '__main__':

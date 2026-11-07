@@ -2126,12 +2126,12 @@
     "reviewedAt": null,
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
       "sourceFile": "src/content/columns/approved/lost-property-retention.md",
-      "sha256": "b5c428ad9b3e1b6d88e3f12f04c948f0d9548dd04c0e79179ff9a5d41ad1a59b",
+      "sha256": "74f11df549a483c9243007661f4c3d7b25b4bd5c02e0cea9de7c26dda99d4b93",
       "receivedOn": "2026-11-07"
     },
     "image": {
@@ -2172,7 +2172,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "忘れ物の扱いは、施設の種類や管理体制によって異なります。店舗などの施設占有者には、拾得物を適切に管理し、法律で定められた手続きに従って警察へ提出するなどの義務があります。一般的な施設占有者は、拾得物を受け取ってから原則1週間以内に警察へ提出する必要があります。ただし、一定の要件を満たす特例施設占有者には、所定の手続きを経て自ら保管できる仕組みがあります。そのため、「すべての店舗で3か月間保管する」といった一律の説明は正確ではありません。"
+            "text": "忘れ物の扱いは、施設の種類や管理体制によって異なります。店舗などの施設占有者は、拾得物を速やかに落とした方へ返還するか、警察へ提出する必要があります。また、一般的な施設占有者は、拾得物の交付を受けた日、または自ら拾った日から1週間以内に警察へ提出しないと、報労金を請求する権利や所有権を取得する権利などを失います。ただし、一定の要件を満たす特例施設占有者には、所定の手続きを経て自ら保管できる仕組みがあります。そのため、「すべての店舗で3か月間保管する」といった一律の説明は正確ではありません。"
           }
         ]
       },

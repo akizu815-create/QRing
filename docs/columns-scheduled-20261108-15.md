@@ -17,11 +17,11 @@
 | 11/14 | 犬のマイクロチップって何？ | /column/dog-microchip/ | 7-写真7.jpg → dog-microchip.webp | 1280×720 | 191,982 B |
 | 11/15 | 介護保険って何歳から？ | /column/care-insurance-age/ | 8-写真8.jpg → care-insurance-age.webp | 1280×720 | 193,126 B |
 
-本文・画像は8件すべて登録済み。記事本文の執筆・変更、画像生成は行っていない。
+本文・画像は8件すべて登録済み。記事本文の新規執筆・画像生成は行っていない。11/11の該当2文のみ、ユーザーの修正指示に基づき変更した。
 
 ## 原稿・画像の扱い
 
-- staging原稿はPR #130のバイト列を維持。approvedにも同じ原稿をコピーし、SHA-256で登録元を記録。11/8は完成原稿の段落・認定区分表・番号付き手順・関連記事・参考資料をすべて維持。
+- staging原稿はPR #130を基準とし、11/11の該当2文のみユーザーの修正指示に基づき、速やかな返還・提出義務と1週間を過ぎた場合の権利喪失が区別できる表現に修正。その他はバイト列を維持。approvedにも同じ原稿をコピーし、SHA-256で登録元を記録。11/8は完成原稿の段落・認定区分表・番号付き手順・関連記事・参考資料をすべて維持。
 - `scripts/register-november-columns.py` は当該8件だけを変換する。通常実行は検査、`--sync` は登録を同期。メタディスクリプションは原稿の導入文、SEOタイトルは原稿タイトルを使用し、別の文章を生成しない。
 - カテゴリー・読者・関連記事・関連サービスリンク・出典URL・alt・公開日時を付与。本文の段落や表のセルを独立したテストで原稿と照合する。
 - 添付JPEGを寸法維持・WebP品質90で再符号化。切り抜き・色調補正・加筆なし。11/8のみ元画像の約3:2を維持し、説明・顔・サービス例を切らないことを優先。他7枚は16:9。
@@ -37,7 +37,7 @@
 | 11/8 | 厚生労働省の[要介護認定](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html)、[介護サービス情報公表制度](https://www.mhlw.go.jp/stf/kaigo-kouhyou.html)、[介護保険の案内](https://www.mhlw.go.jp/content/12300000/000362938.pdf)。7区分、認定過程、利用者負担を照合。原則30日は[自治体公式案内](https://www.city.okazaki.lg.jp/kenko/kourei/1003886/1012323/1003950/1003955.html)でも確認 |
 | 11/9 | [警察庁の遺失物案内](https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/)。報労金5〜20%、施設内の扱い、3か月、引取期間・個人情報物件の例外 |
 | 11/10 | [日本老年医学会](https://www.jpn-geriat-soc.or.jp/tool/tool_02)。HDS-Rの9項目・30点・20点以下・6〜10分、単独で診断を確定しないこと |
-| 11/11 | 警察庁と[石川県警の施設占有者向け案内](https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html)。1週間・24時間・報労金の扱い。法令上の義務は速やかな返還・提出であり、1週間は権利喪失にも関係する期限。石川県警の同一ページ内「施設占有者の方へ」「提出書」で両方を確認済み。出典不明の記述ではないため、原稿を維持し確認事項は解消 |
+| 11/11 | 警察庁と[石川県警の施設占有者向け案内](https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html)。1週間・24時間・報労金の扱い。法令上の義務は速やかな返還・提出であり、1週間は権利喪失にも関係する期限。石川県警の同一ページ内「施設占有者の方へ」「提出書」で両方を確認済み。ユーザーの修正指示に基づき、本文でも両者を区別する2文に修正済み。確認事項は解消 |
 | 11/12 | [IPAの写真位置情報解説](https://www.ipa.go.jp/security/10threats/ps6vr7000000auzz-att/yougoyashikumi_2022.pdf)と[岡山県の教材](https://www.pref.okayama.jp/uploaded/attachment/233419.pdf)。Exif/GPSと背景からの推測、SNSごとの差 |
 | 11/13 | [警察庁統計](https://www.npa.go.jp/news/release/2026/20260625001.html)、[国家公安委員会会見](https://www.npsc.go.jp/pressconf_2026/06_25.htm)で17,345人・約95%を確認。[岡山県](https://www.pref.okayama.jp/page/407947.html)で2025/11/1時点9人・いずれも認知症またはその疑いなし、[岐阜県](https://www.pref.gifu.lg.jp/page/13791.html)で2025年12月末3人、[千葉県](https://www.pref.chiba.lg.jp/koufuku/shien/ninchishou/mimotohumei.html)で2026/9/1時点0人を照合。対象定義と調査時点は異なる |
 | 11/14 | [日本愛玩動物協会報告p.6](https://www.jpc.or.jp/pdf/r7_02_report.pdf)で2,331件・48.0%・9.2%・42.7%を確認。[環境白書](https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html)で2024年度末190万頭超、[環境省制度案内](https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html)で制度・変更登録を確認。全国の犬だけの装着率とは区別 |
