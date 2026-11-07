@@ -13,7 +13,8 @@ spec=importlib.util.spec_from_file_location('seo',Path(__file__).with_name('seo-
 root=Path('out')
 records=json.loads(Path('src/content/columns/published.json').read_text())
 today=dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
-articles=[a for a in records if a.get('status')=='published' and a['publishedAt']<=today and a.get('approvalRevision')==a['contentRevision']]
+from column_export_support import published_articles
+articles=published_articles(records)
 def publication_order(a,b):
     da,db=a.get('editionDate',a['publishedAt']),b.get('editionDate',b['publishedAt'])
     if da!=db:return -1 if da>db else 1

@@ -11,17 +11,19 @@ export function listingData(municipal: boolean, pageNumber: number) {
   if (!Number.isInteger(pageNumber) || pageNumber < 1 || pageNumber > columnPageCount(articles.length)) notFound();
   const base = municipal ? "/column/audience/municipal/" : "/column/";
   const seoKey = municipal ? "municipalColumns" : "guides";
-  return { articles, base, path: columnListPath(pageNumber, base), seoKey, seo: SEO_PAGES[seoKey] } as const;
+  const seo = SEO_PAGES[seoKey];
+  const description = pageNumber > 1 ? `${pageNumber}ページ目。${seo.description}` : seo.description;
+  return { articles, base, path: columnListPath(pageNumber, base), seoKey, seo, description } as const;
 }
 export function listingMetadata(municipal: boolean, pageNumber: number, alias = false): Metadata {
-  const { articles, path, seoKey, seo } = listingData(municipal, pageNumber);
+  const { articles, path, seoKey, seo, description } = listingData(municipal, pageNumber);
   const title = pageNumber > 1 ? `${seo.title}｜${pageNumber}ページ目` : seo.title;
-  return { ...pageMetadata(seoKey), title: { absolute: title }, alternates: { canonical: path }, openGraph: { title, description: seo.description, url: path, type: "website", locale: "ja_JP" }, robots: { index: !alias && (!municipal || articles.length > 0), follow: true } };
+  return { ...pageMetadata(seoKey), title: { absolute: title }, description, alternates: { canonical: path }, openGraph: { title, description, url: path, type: "website", locale: "ja_JP" }, robots: { index: !alias && (!municipal || articles.length > 0), follow: true } };
 }
 export default function ColumnListing({ municipal = false, pageNumber = 1 }: { municipal?: boolean; pageNumber?: number }) {
-  const { articles, path, base, seo } = listingData(municipal, pageNumber);
+  const { articles, path, base, seo, description } = listingData(municipal, pageNumber);
   return <>
-    <ColumnStructuredData path={path} title={pageNumber > 1 ? `${seo.title}｜${pageNumber}ページ目` : seo.title} description={seo.description} articles={articles.slice((pageNumber - 1) * COLUMN_PAGE_SIZE, pageNumber * COLUMN_PAGE_SIZE)} />
+    <ColumnStructuredData path={path} title={pageNumber > 1 ? `${seo.title}｜${pageNumber}ページ目` : seo.title} description={description} articles={articles.slice((pageNumber - 1) * COLUMN_PAGE_SIZE, pageNumber * COLUMN_PAGE_SIZE)} />
     <section className="bg-cream pb-20 pt-36 md:pb-28 md:pt-48"><div className="container-narrow">
       {municipal && <nav aria-label="パンくず" className="text-xs leading-7 text-ink/60"><Link href="/">ホーム</Link> / <Link href="/column/">コラム</Link></nav>}
       <p className={`eyebrow ${municipal ? "mt-8" : ""}`}>{municipal ? "FOR MUNICIPALITIES" : "COLUMN"}</p>

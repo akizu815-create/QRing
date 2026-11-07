@@ -1526,5 +1526,1380 @@
       "height": 324,
       "alt": "昔の紙のクラス連絡網と、スマートフォンを使う親子を対比した水彩イラスト"
     }
+  },
+  {
+    "id": "care-levels",
+    "slug": "care-levels",
+    "title": "要支援？要介護？いったい何が違うの？",
+    "summary": "「母は要支援2になったらしい」「父は要介護1から2に変わったんだって」",
+    "introduction": [
+      "そんな話を聞いても、介護に関わったことがなければ、何が違うのか分からないですよね。",
+      "そもそも要支援と要介護って何？ 数字が大きくなるとどうなるの？",
+      "今回は、介護保険の基本を分かりやすく解説します。"
+    ],
+    "seoTitle": "要支援？要介護？いったい何が違うの？",
+    "metaDescription": "「母は要支援2になったらしい」「父は要介護1から2に変わったんだって」",
+    "category": "family-care",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-08",
+    "editionDate": "2026-11-08",
+    "publishedTimestamp": "2026-11-08T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/care-levels.md",
+      "sha256": "52a7e9966d98c64a4845b49bd51db45ff9f5af5d9c6f5ed6d8af67194a60aaa8",
+      "receivedOn": "2026-11-07"
+    },
+    "image": {
+      "src": "/images/columns/care-levels.webp",
+      "width": 1280,
+      "height": 853,
+      "alt": "要支援・要介護の認定区分とサービス例を、高齢の夫婦に説明する女性の水彩イラスト"
+    },
+    "relatedArticleIds": [],
+    "relatedService": null,
+    "relatedLinks": [
+      {
+        "href": "/use-cases/elderly/",
+        "label": "つながるQRの関連サービスを見る"
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "厚生労働省｜要介護認定はどのように行われるか",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "厚生労働省｜介護サービス情報公表システム",
+        "href": "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-3",
+        "label": "厚生労働省｜介護保険制度について",
+        "href": "https://www.mhlw.go.jp/content/12300000/000362938.pdf",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "そもそも「要支援」「要介護」って何？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "要支援・要介護とは、日常生活でどのくらい支援や介護が必要なのかを表す、介護保険の認定区分です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "要支援は、基本的な生活はおおむね自分でできるものの、一部に支援が必要な状態です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "要介護は、食事や入浴、着替えなど、日常生活で介護が必要な状態です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、実際の状態は人によって異なります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "要支援1・2、要介護1〜5の違い",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "認定区分は全部で7段階あります。"
+          },
+          {
+            "type": "table",
+            "caption": "要支援1・2、要介護1〜5の違い",
+            "headers": [
+              "区分",
+              "状態の目安"
+            ],
+            "rows": [
+              [
+                "要支援1",
+                "基本的な生活はほぼ自分でできるが、一部に支援が必要"
+              ],
+              [
+                "要支援2",
+                "生活機能が低下し、継続的な支援が必要"
+              ],
+              [
+                "要介護1",
+                "立ち上がりや身の回りのことなどに部分的な介助が必要"
+              ],
+              [
+                "要介護2",
+                "入浴や着替え、移動など、介助が必要な場面が増える"
+              ],
+              [
+                "要介護3",
+                "日常生活の多くの場面で介助が必要"
+              ],
+              [
+                "要介護4",
+                "日常生活の大部分で介助が必要"
+              ],
+              [
+                "要介護5",
+                "生活全般にわたり、継続的で手厚い介護が必要"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "※これは一般的な目安です。実際の認定は、身体の状態だけでなく、認知機能や介護に必要な手間なども考慮して決まります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "要支援2と要介護1は、何が違う？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "この2つは特に分かりにくい区分です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "要支援2と要介護1は、介護の必要度を測る基準上、同じ範囲に入ります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そのうえで、認知機能の状態や、今後も介護が必要な状態が続く可能性などを考慮して区分されます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "また、要介護1と2についても、単に「歩けるかどうか」で決まるわけではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "同じ区分でも、身体の介助が必要な方と、認知症による見守りが必要な方では、生活の様子が異なります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "認定されると何が変わる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "認定を受けると、区分や本人の状態に応じて、介護保険サービスを利用できます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "例えば、デイサービス、訪問介護、福祉用具の貸与、ショートステイなどです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、要支援と要介護では、利用できるサービスや制度が異なる場合があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "自己負担は原則1〜3割で、所得などによって異なります。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "誰が、どうやって決めるの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "要支援・要介護の区分は、市区町村が審査を経て認定します。"
+          },
+          {
+            "type": "paragraph",
+            "text": "流れは次のとおりです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "1. 市区町村に申請する"
+          },
+          {
+            "type": "paragraph",
+            "text": "2. 認定調査を受ける"
+          },
+          {
+            "type": "paragraph",
+            "text": "3. 主治医の意見書を作成してもらう"
+          },
+          {
+            "type": "paragraph",
+            "text": "4. 介護認定審査会などで審査・判定される"
+          },
+          {
+            "type": "paragraph",
+            "text": "5. 認定結果が通知される"
+          },
+          {
+            "type": "paragraph",
+            "text": "申請から認定結果の通知までは、原則30日以内とされています。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "迷ったら、まずは相談を",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "「まだ介護が必要というほどではないかも」"
+          },
+          {
+            "type": "paragraph",
+            "text": "そんな段階でも、地域包括支援センターに相談できます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "要支援・要介護の認定は、本人に「できない」という評価を付けるためのものではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "必要な支援を受けながら、その人らしい暮らしを続けるための仕組みです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "まずは言葉の意味を知ることから、介護について考えてみませんか。"
+          }
+        ]
+      },
+      {
+        "id": "section-7",
+        "title": "関連記事",
+        "blocks": [
+          {
+            "type": "link",
+            "label": "老人ホームって種類が多すぎ！何が違うの？",
+            "href": "/column/senior-care-facility-types/"
+          }
+        ]
+      },
+      {
+        "id": "section-8",
+        "title": "参考資料",
+        "blocks": [
+          {
+            "type": "link",
+            "label": "厚生労働省｜要介護認定はどのように行われるか",
+            "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html"
+          },
+          {
+            "type": "link",
+            "label": "厚生労働省｜介護サービス情報公表システム",
+            "href": "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "「母は要支援2になったらしい」「父は要介護1から2に変わったんだって」",
+    "primaryKeyword": "要支援？要介護？いったい何が違うの？",
+    "topicClusterId": "family-care",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "supplied-pr130-manuscript-exact-text",
+        "passed": true
+      },
+      {
+        "check": "source-review-complete",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null
+  },
+  {
+    "id": "lost-wallet",
+    "slug": "lost-wallet",
+    "title": "お財布を落としたら？",
+    "summary": "財布をなくしたとき、気になるのは「何をすればいいのか」だけではありません。警察に遺失届を出した後はどうなるのか。財布が見つかったら連絡が来るのか。現金は戻ってくるのか。紛失直後の対応から、発見後の手続きまでを解説します。",
+    "introduction": [],
+    "seoTitle": "お財布を落としたら？",
+    "metaDescription": "財布をなくしたとき、気になるのは「何をすればいいのか」だけではありません。警察に遺失届を出した後はどうなるのか。財布が見つかったら連絡が来るのか。現金は戻ってくるのか。紛失直後の対応から、発見後の手続きまでを解説します。",
+    "category": "lost-items",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-09",
+    "editionDate": "2026-11-09",
+    "publishedTimestamp": "2026-11-09T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/lost-wallet.md",
+      "sha256": "232662feb932904aa2f83c0ddb22bcb44a826f696a7c88e4a0fba477f7f291e1",
+      "receivedOn": "2026-11-07"
+    },
+    "image": {
+      "src": "/images/columns/lost-wallet.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "なくした財布を思い浮かべ、警察への相談を考える高齢男性の水彩イラスト"
+    },
+    "relatedArticleIds": [
+      "lost-item-preparation"
+    ],
+    "relatedService": null,
+    "relatedLinks": [
+      {
+        "href": "/use-cases/belongings/",
+        "label": "つながるQRの関連サービスを見る"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "警察庁｜落とし物・忘れ物",
+        "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "最初にすべきことは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "財布が見つからない場合は、被害の拡大を防ぐため、クレジットカードやキャッシュカードの利用停止を優先しましょう。カード会社や金融機関の公式窓口に連絡し、停止・再発行の手続きを確認します。運転免許証やマイナンバーカードなどが入っていた場合も、それぞれの紛失手続きが必要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "遺失届を出すとどうなる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "警察に遺失届を出すと、財布の特徴や落とした日時・場所などが記録されます。その後、警察に財布が届けられ、届出内容と一致すると判断されれば、持ち主へ連絡が来る場合があります。ただし、遺失届は財布を必ず発見してもらえる制度ではありません。電車や店舗でなくした可能性がある場合は、それぞれの忘れ物窓口にも問い合わせましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "財布が見つかったら？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "警察から発見の連絡を受けた場合は、案内された場所で返還手続きを行います。本人確認書類などが必要になることがあるため、事前に確認しておきましょう。一方、自分で財布を発見した場合は、遺失届を提出した警察へ連絡し、発見したことを伝えます。なお、利用停止したカードが見つかっても、停止を解除できるとは限りません。カード会社の案内に従ってください。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "拾った人にお礼は必要？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "遺失物法では、拾得者が所定の条件を満たしている場合、落とし主に報労金を請求できる制度があります。原則として、落とし物の価値の5〜20％が範囲です。ただし、駅や店舗など施設内で拾われた場合には、施設側との関係で扱いが異なります。拾得者が権利を放棄している場合など、必ず支払いが必要になるわけではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "3か月経っても持ち主が現れなかったら？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "警察に提出された落とし物について、原則3か月以内に持ち主が判明しなかった場合、一定の条件を満たす拾得者が所有権を取得できることがあります。ただし、すべての物が対象ではありません。運転免許証やキャッシュカードなど、個人情報に関わる物には例外があります。また、拾得者が権利を取得した場合でも、所定の引取期間内に受け取らなければ権利を失うことがあります。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "そもそも、拾った人が連絡できるようにするには？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "財布に電話番号を書いておけば、拾った人から連絡が来る可能性があります。しかし、見知らぬ人に自分の電話番号を公開することに抵抗がある方もいるでしょう。株式会社QRingの「つながるQR」は、QRコードをスキャンした人が、互いの電話番号を知らせずに通話できるサービスです。財布や持ち物に取り付けておくことで、発見者から連絡を受けるための手段を用意できます。もちろん、財布が必ず戻ることを保証するものではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-7",
+        "title": "まとめ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "財布をなくしたら、カードの停止、遺失届、必要な身分証明書の手続きを進めましょう。そして、遺失届を出した後も、発見時の連絡や返還の手続きがあります。紛失後の対応を知ることと、紛失前に連絡手段を備えること。その両方が大切です。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "財布をなくしたとき、気になるのは「何をすればいいのか」だけではありません。警察に遺失届を出した後はどうなるのか。財布が見つかったら連絡が来るのか。現金は戻ってくるのか。紛失直後の対応から、発見後の手続きまでを解説します。",
+    "primaryKeyword": "お財布を落としたら？",
+    "topicClusterId": "lost-items",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "supplied-pr130-manuscript-exact-text",
+        "passed": true
+      },
+      {
+        "check": "source-review-complete",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null
+  },
+  {
+    "id": "dementia-forgetfulness",
+    "slug": "dementia-forgetfulness",
+    "title": "認知症と物忘れ、何が違う？",
+    "summary": "「昨日の夕食を思い出せない」「同じ話を何度もする」。こうした変化があったとき、単なる物忘れなのか、認知症なのか、不安になる方もいるでしょう。大切なのは、症状の違いを知るだけでなく、どこで相談し、どのような検査を受けられるかを知ることです。",
+    "introduction": [],
+    "seoTitle": "認知症と物忘れ、何が違う？",
+    "metaDescription": "「昨日の夕食を思い出せない」「同じ話を何度もする」。こうした変化があったとき、単なる物忘れなのか、認知症なのか、不安になる方もいるでしょう。大切なのは、症状の違いを知るだけでなく、どこで相談し、どのような検査を受けられるかを知ることです。",
+    "category": "elderly-dementia",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-10",
+    "editionDate": "2026-11-10",
+    "publishedTimestamp": "2026-11-10T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/dementia-forgetfulness.md",
+      "sha256": "460928d6861b83c99af84bc17673c9818bfe4699464926e1cd86e3aa0e899cf7",
+      "receivedOn": "2026-11-07"
+    },
+    "image": {
+      "src": "/images/columns/dementia-forgetfulness.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "認知症や物忘れについて、診察室で医師に相談する高齢女性の水彩イラスト"
+    },
+    "relatedArticleIds": [
+      "dementia-early-signs"
+    ],
+    "relatedService": null,
+    "relatedLinks": [
+      {
+        "href": "/use-cases/elderly/",
+        "label": "つながるQRの関連サービスを見る"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "日本老年医学会｜認知機能の評価法と認知症の診断",
+        "href": "https://www.jpn-geriat-soc.or.jp/tool/tool_02",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "年齢による物忘れとの違い",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "年齢を重ねると、名前や予定を思い出すまでに時間がかかることがあります。例えば、夕食の献立を忘れても、食事をしたこと自体は覚えている場合があります。一方、認知症では、食事をしたこと自体を覚えていなかったり、慣れた場所で道に迷ったり、金銭管理が難しくなったりすることがあります。ただし、忘れ方だけで認知症と判断することはできません。重要なのは、以前と比べた変化と、日常生活への影響です。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "認知症が心配なときは何科を受診する？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "認知症の相談先は、精神科だけではありません。もの忘れ外来、脳神経内科、精神科、老年内科などで診療を受けられます。まず、普段から診てもらっているかかりつけ医に相談する方法もあります。地域によっては「認知症疾患医療センター」が専門的な相談や診断に対応しています。どの診療科を選べばよいかわからない場合は、地域包括支援センターに相談することもできます。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "長谷川式認知症スケールとは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "認知機能を調べる検査の一つに、改訂長谷川式認知症スケール（HDS-R）があります。年齢や日付、場所の確認、単語の記憶、計算、数字を逆から言う課題など、9項目で構成されています。30点満点で、一般に20点以下が認知症を疑う目安とされています。検査時間はおおむね6〜10分です。ただし、20点以下だから必ず認知症というわけではなく、21点以上なら問題がないという意味でもありません。聴力や体調、教育歴などの影響も考慮し、医師が総合的に判断します。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "CTやMRIも受けるの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "必要に応じて、CTやMRIなどの画像検査が行われます。これは脳の状態を確認し、認知機能の低下につながる病気がないかを調べるためです。血液検査などを行い、認知症以外の原因を確認することもあります。すべての人が同じ検査を受けるわけではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "受診前に準備しておくとよいこと",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "本人や家族が気づいた変化を、具体的に記録しておくと診察に役立ちます。例えば、「先月から同じ質問が増えた」「以前はできていた支払いが難しくなった」といった情報です。服用中の薬や、過去の病気についても伝えられるようにしておきましょう。急激な意識の変化や、突然の言語障害・麻痺などがある場合は、通常のもの忘れ外来の予約を待たず、緊急の医療対応が必要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "まとめ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "認知症と物忘れの違いは、簡単なチェックだけでは判断できません。気になる変化があれば、もの忘れ外来やかかりつけ医などに相談し、必要な検査を受けることが大切です。早めの相談は、適切な診断と生活上の支援につながります。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "「昨日の夕食を思い出せない」「同じ話を何度もする」。こうした変化があったとき、単なる物忘れなのか、認知症なのか、不安になる方もいるでしょう。大切なのは、症状の違いを知るだけでなく、どこで相談し、どのような検査を受けられるかを知ることです。",
+    "primaryKeyword": "認知症と物忘れ、何が違う？",
+    "topicClusterId": "elderly-dementia",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "supplied-pr130-manuscript-exact-text",
+        "passed": true
+      },
+      {
+        "check": "source-review-complete",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null
+  },
+  {
+    "id": "lost-property-retention",
+    "slug": "lost-property-retention",
+    "title": "忘れ物はいつまで保管する？",
+    "summary": "店舗やホテル、商業施設で預かった忘れ物。「持ち主が取りに来ない場合、いつまで保管すればいいの？」という疑問を持つ方もいるでしょう。また、自分が落とし物を拾った場合、持ち主が現れなければ、その物はどうなるのでしょうか。遺失物法の基本的なルールを確認します。",
+    "introduction": [],
+    "seoTitle": "忘れ物はいつまで保管する？",
+    "metaDescription": "店舗やホテル、商業施設で預かった忘れ物。「持ち主が取りに来ない場合、いつまで保管すればいいの？」という疑問を持つ方もいるでしょう。また、自分が落とし物を拾った場合、持ち主が現れなければ、その物はどうなるのでしょうか。遺失物法の基本的なルールを確認します。",
+    "category": "lost-items",
+    "primaryAudience": "business",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-11",
+    "editionDate": "2026-11-11",
+    "publishedTimestamp": "2026-11-11T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 2,
+    "approvalRevision": 2,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/lost-property-retention.md",
+      "sha256": "74f11df549a483c9243007661f4c3d7b25b4bd5c02e0cea9de7c26dda99d4b93",
+      "receivedOn": "2026-11-07"
+    },
+    "image": {
+      "src": "/images/columns/lost-property-retention.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "店舗の遺失物取扱所で、担当者と忘れ物の届出を確認する高齢女性の水彩イラスト"
+    },
+    "relatedArticleIds": [
+      "lost-wallet"
+    ],
+    "relatedService": null,
+    "relatedLinks": [
+      {
+        "href": "/use-cases/belongings/",
+        "label": "つながるQRの関連サービスを見る"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "警察庁｜落とし物・忘れ物",
+        "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "石川県警察｜落とし物・忘れ物（施設占有者の方へ）",
+        "href": "https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "店舗の忘れ物は何日間保管する？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "忘れ物の扱いは、施設の種類や管理体制によって異なります。店舗などの施設占有者は、拾得物を速やかに落とした方へ返還するか、警察へ提出する必要があります。また、一般的な施設占有者は、拾得物の交付を受けた日、または自ら拾った日から1週間以内に警察へ提出しないと、報労金を請求する権利や所有権を取得する権利などを失います。ただし、一定の要件を満たす特例施設占有者には、所定の手続きを経て自ら保管できる仕組みがあります。そのため、「すべての店舗で3か月間保管する」といった一律の説明は正確ではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "拾った人はいつまでに届ける？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "道路などで拾った場合、拾得者の権利を維持するには、原則として拾得から7日以内に警察へ提出する必要があります。一方、駅や店舗など管理者のいる施設で拾った場合は、原則24時間以内に施設の管理者へ届け出る必要があります。期限を過ぎると、報労金や所有権取得などの権利を失うことがあります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "持ち主が現れなかったら？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "警察に提出された落とし物について、原則3か月以内に持ち主が判明しなければ、拾得者が所有権を取得できる場合があります。ただし、拾得者が権利を放棄している場合や、個人情報を含む物などは例外です。また、所有権を取得できる場合でも、警察が指定する期間内に引き取る必要があります。「拾って届けたから、3か月後には必ず自分の物になる」というわけではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "お礼は何％もらえる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "拾得者には、条件を満たす場合、落とし物の価値の5〜20％の報労金を請求できる権利があります。施設内で拾われた場合は、施設占有者と拾得者で報労金を分ける仕組みがあり、拾得者の割合は原則2.5〜10％となります。ただし、権利の放棄や請求期限などの条件があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "店舗が気をつけたい個人情報",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "財布やスマートフォンなどには、持ち主の個人情報が含まれています。持ち主を探す目的でも、必要以上に中身を確認したり、スマートフォンを操作したりすることは避けましょう。発見日時、場所、担当者、警察への提出状況などを記録し、管理手順を統一することが重要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "持ち主への連絡手段を増やすには？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "持ち物に連絡用のQRコードが付いていれば、拾った方が持ち主に連絡できる可能性があります。株式会社QRingの「つながるQR」は、QRコードをスキャンして、互いの電話番号を知らせずに通話できるサービスです。店舗や施設での忘れ物対応において、持ち主への連絡を補助する手段として考えられます。ただし、遺失物法に基づく管理や警察への提出を代替するものではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-7",
+        "title": "まとめ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "忘れ物の扱いには、警察への提出期限、拾得者の権利、持ち主への返還など、複数のルールがあります。店舗では社内の管理手順を整え、拾った人も法律上の期限を確認することが大切です。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "店舗やホテル、商業施設で預かった忘れ物。「持ち主が取りに来ない場合、いつまで保管すればいいの？」という疑問を持つ方もいるでしょう。また、自分が落とし物を拾った場合、持ち主が現れなければ、その物はどうなるのでしょうか。遺失物法の基本的なルールを確認します。",
+    "primaryKeyword": "忘れ物はいつまで保管する？",
+    "topicClusterId": "lost-items",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "supplied-pr130-manuscript-exact-text",
+        "passed": true
+      },
+      {
+        "check": "source-review-complete",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null
+  },
+  {
+    "id": "photo-location-privacy",
+    "slug": "photo-location-privacy",
+    "title": "写真の位置情報、大丈夫？",
+    "summary": "SNSに投稿した何気ない写真から、自宅や撮影場所が推測されることがあります。位置情報を公開していなくても、電柱や道路標識、マンホール、建物の形などが手がかりになる場合があるのです。写真に潜む位置情報のリスクと、投稿前に確認したいことを紹介します。",
+    "introduction": [],
+    "seoTitle": "写真の位置情報、大丈夫？",
+    "metaDescription": "SNSに投稿した何気ない写真から、自宅や撮影場所が推測されることがあります。位置情報を公開していなくても、電柱や道路標識、マンホール、建物の形などが手がかりになる場合があるのです。写真に潜む位置情報のリスクと、投稿前に確認したいことを紹介します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-12",
+    "editionDate": "2026-11-12",
+    "publishedTimestamp": "2026-11-12T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/photo-location-privacy.md",
+      "sha256": "2868e2cb3a91c8b29a729f32cd72dc22386478810bb743e408163b7a5306702c",
+      "receivedOn": "2026-11-07"
+    },
+    "image": {
+      "src": "/images/columns/photo-location-privacy.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "スマートフォンの写真に写った電柱や街並みから撮影場所が推測されることを示す水彩イラスト"
+    },
+    "relatedArticleIds": [
+      "school-contact-list-privacy"
+    ],
+    "relatedService": null,
+    "relatedLinks": [
+      {
+        "href": "/service/",
+        "label": "つながるQRの関連サービスを見る"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "IPA｜情報セキュリティ10大脅威 用語と仕組み（写真の位置情報）",
+        "href": "https://www.ipa.go.jp/security/10threats/ps6vr7000000auzz-att/yougoyashikumi_2022.pdf",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "岡山県｜写真をSNSにアップしてもいいですか？",
+        "href": "https://www.pref.okayama.jp/uploaded/attachment/233419.pdf",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "写真に位置情報が保存される？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "スマートフォンで撮影した写真には、撮影日時やカメラの情報に加え、GPSによる撮影場所が記録される場合があります。こうした情報は、写真のメタデータと呼ばれます。旅行写真の整理には便利ですが、写真を共有する際には注意が必要です。位置情報を削除せずに写真ファイルを送ると、受け取った人が撮影場所を確認できる場合があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "電柱1本から場所がわかる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "電柱には、管理番号や所在地を示す表示が付いている場合があります。そのため、写真に写った電柱の表示が、場所を絞り込む手がかりになることがあります。同様に、地域特有のマンホールの模様、道路標識、ガードレールの形状、建物の配置なども、複数の情報を組み合わせれば場所の推測に役立ちます。例えば、背景に特徴的な看板が写っていれば、地図や公開写真と照合される可能性があります。ただし、「電柱が写った写真なら必ず住所がわかる」というわけではありません。どの程度特定できるかは、写真に含まれる情報や周辺環境によって異なります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "位置情報を消せば安全？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "写真に記録されたGPS情報を削除しても、背景から場所が推測される可能性は残ります。特に、自宅の窓から見える景色や、マンションの共用部分、近所の店舗などは注意したい対象です。また、同じ場所で撮影した写真を何度も投稿すると、生活圏や行動パターンが推測されやすくなる場合があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "SNSでは位置情報が消える？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "SNSによっては、アップロードされた写真から位置情報などのメタデータが削除されます。ただし、すべてのサービスや共有方法で同じ処理が行われるわけではありません。写真をファイルとして直接送る場合と、SNSへ投稿する場合でも扱いが異なることがあります。「SNSなら絶対に安全」と考えず、利用するサービスの仕様を確認しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "投稿前に確認したいこと",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "写真を投稿する前には、位置情報だけでなく、背景にも注目してみましょう。自宅の表札、学校名、車のナンバープレート、住所がわかる表示などが写っていないでしょうか。スマートフォンのカメラ設定で位置情報の保存を制限する方法もあります。また、写真を共有するときに位置情報を含めない設定が用意されている機種もあります。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "まとめ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "写真から場所が推測される原因は、GPS情報だけではありません。電柱や標識など、普段は気に留めないものが手がかりになることもあります。SNSへ投稿する前に、写真の情報と背景を確認する習慣をつけましょう。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "SNSに投稿した何気ない写真から、自宅や撮影場所が推測されることがあります。位置情報を公開していなくても、電柱や道路標識、マンホール、建物の形などが手がかりになる場合があるのです。写真に潜む位置情報のリスクと、投稿前に確認したいことを紹介します。",
+    "primaryKeyword": "写真の位置情報、大丈夫？",
+    "topicClusterId": "privacy-life",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "supplied-pr130-manuscript-exact-text",
+        "passed": true
+      },
+      {
+        "check": "source-review-complete",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null
+  },
+  {
+    "id": "unidentified-elderly",
+    "slug": "unidentified-elderly",
+    "title": "身元不明の高齢者、どう探す？",
+    "summary": "認知症などによって行方がわからなくなった高齢者。多くの方は比較的早く発見されますが、なかには保護された後も、名前や住所、家族がわからないまま生活している方がいます。行方不明者の人数だけでは見えない「身元不明のまま保護される」という問題を考えます。",
+    "introduction": [],
+    "seoTitle": "身元不明の高齢者、どう探す？",
+    "metaDescription": "認知症などによって行方がわからなくなった高齢者。多くの方は比較的早く発見されますが、なかには保護された後も、名前や住所、家族がわからないまま生活している方がいます。行方不明者の人数だけでは見えない「身元不明のまま保護される」という問題を考えます。",
+    "category": "municipal-community",
+    "primaryAudience": "municipal",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-13",
+    "editionDate": "2026-11-13",
+    "publishedTimestamp": "2026-11-13T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/unidentified-elderly.md",
+      "sha256": "fa14c23e9470188c4f030d78f645986511347602b51e8b3c6c10b648aad72d37",
+      "receivedOn": "2026-11-07"
+    },
+    "image": {
+      "src": "/images/columns/unidentified-elderly.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "身元を確認するため、高齢男性に警察官と女性が声をかける水彩イラスト"
+    },
+    "relatedArticleIds": [
+      "elderly-monitoring-contact-system"
+    ],
+    "relatedService": null,
+    "relatedLinks": [
+      {
+        "href": "/municipalities/",
+        "label": "つながるQRの関連サービスを見る"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "警察庁｜令和7年における行方不明者届受理等の状況",
+        "href": "https://www.npa.go.jp/news/release/2026/20260625001.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "国家公安委員会｜2026年6月25日記者会見要旨",
+        "href": "https://www.npsc.go.jp/pressconf_2026/06_25.htm",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-3",
+        "label": "厚生労働省｜行方のわからない認知症高齢者等をお探しの方へ",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000052978.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-4",
+        "label": "岡山県｜身元不明の認知症高齢者等に関する情報",
+        "href": "https://www.pref.okayama.jp/page/407947.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-5",
+        "label": "岐阜県｜身元不明で保護されている高齢者等に関する情報",
+        "href": "https://www.pref.gifu.lg.jp/page/13791.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-6",
+        "label": "千葉県｜認知症と思われる身元不明者について",
+        "href": "https://www.pref.chiba.lg.jp/koufuku/shien/ninchishou/mimotohumei.html",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "認知症による行方不明者は年間何人？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "警察庁によると、2025年に届け出があった認知症またはその疑いに係る行方不明者は、全国で17,345人でした。これは行方不明者全体の約2割に当たります。この数字は届出に基づくものであり、65歳以上の人だけを集計したものではありません。また、同じ人が複数回届け出られる場合があります。警察庁は、認知症に係る行方不明者の約95％が、届出受理から3日以内に生存して発見されていると説明しています。一方、発見までの期間が長くなると、生存確認が難しくなる傾向も指摘されています。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "保護されても、身元がわからない人がいる",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "行方不明になった方が発見されても、必ずしも家族のもとへ戻れるとは限りません。本人が自分の名前や住所を説明できず、身分証明書や連絡先も持っていない場合、身元確認が難しくなることがあります。厚生労働省は、こうした身元不明の認知症高齢者等について、自治体が公開している情報を探せる特設サイトを設けています。これは、保護された後も身元が判明しない方が実際に存在するためです。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "身元不明のままの人は何人いる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "全国で何人が身元不明のまま保護されているのか、最新の統一された人数を示す資料は、今回確認した範囲では見つかりませんでした。ただし、自治体ごとの公表例があります。岡山県では、2025年11月1日時点で、身元不明のまま保護されている方が9人と公表されています。なお、この9人については、認知症またはその疑いはないとされています。岐阜県では、2025年12月末時点で、施設などで保護されている身元不明の方が3人と公表されています。一方、千葉県では、2026年9月1日時点で、県内で保護されている認知症によると思われる身元不明高齢者は0人と公表されています。これらは対象者の定義や調査時点が異なるため、単純に足して全国の人数を推計することはできません。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "何年も身元がわからないことはある？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "過去には、長期間にわたって身元が判明しない方が社会問題として取り上げられました。厚生労働省も、身元不明者に関する自治体の情報公開や、広域的な照会の仕組みを整えてきました。ただし、現在、身元不明の状態が平均何日続くのか、何年以上続いている人が全国で何人いるのかについては、確認できた公表資料だけでは明らかではありません。そのため、行方不明者の発見までの日数を、身元不明のまま保護される期間と混同しないことが重要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "家族を探すにはどうする？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "行方がわからなくなった家族を探す場合は、速やかに警察へ相談します。加えて、自治体の高齢者福祉担当窓口や、厚生労働省が案内する身元不明者情報を確認する方法があります。身元不明の方を保護している自治体では、公開可能な範囲で本人の特徴などを掲載し、心当たりのある方からの問い合わせを受け付けている場合があります。個人情報や本人の尊厳に配慮しながら、関係機関が連携することが重要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "発見した人が家族へ連絡できる備え",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "本人が連絡先を説明できない場合に備え、持ち物に連絡手段を用意しておく方法があります。ただし、氏名・住所・電話番号を誰でも見られる形で表示することには、プライバシー上の懸念があります。株式会社QRingの「つながるQR」は、QRコードをスキャンした方が、互いの電話番号を知らせずに通話できるサービスです。本人の持ち物から家族や登録先へ連絡するための補助的な手段として活用が考えられます。ただし、GPSによる位置追跡や身元の公的な証明を行うものではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-7",
+        "title": "まとめ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "認知症に係る行方不明者は、2025年に17,345人届け出られました。その一方で、発見・保護された後も身元がわからない方がいることは、あまり知られていません。行方不明者の早期発見だけでなく、発見された方を家族や支援者につなぐ仕組みも重要です。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "認知症などによって行方がわからなくなった高齢者。多くの方は比較的早く発見されますが、なかには保護された後も、名前や住所、家族がわからないまま生活している方がいます。行方不明者の人数だけでは見えない「身元不明のまま保護される」という問題を考えます。",
+    "primaryKeyword": "身元不明の高齢者、どう探す？",
+    "topicClusterId": "municipal-community",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "supplied-pr130-manuscript-exact-text",
+        "passed": true
+      },
+      {
+        "check": "source-review-complete",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null
+  },
+  {
+    "id": "dog-microchip",
+    "slug": "dog-microchip",
+    "title": "犬のマイクロチップって何？",
+    "summary": "犬が迷子になったとき、飼い主を確認する手がかりになるマイクロチップ。ペットショップなどで購入した犬への装着が義務化され、身近な存在になっています。しかし、実際にはどれくらい普及しているのでしょうか。また、GPSのように犬の居場所を探せるのでしょうか。",
+    "introduction": [],
+    "seoTitle": "犬のマイクロチップって何？",
+    "metaDescription": "犬が迷子になったとき、飼い主を確認する手がかりになるマイクロチップ。ペットショップなどで購入した犬への装着が義務化され、身近な存在になっています。しかし、実際にはどれくらい普及しているのでしょうか。また、GPSのように犬の居場所を探せるのでしょうか。",
+    "category": "pets",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-14",
+    "editionDate": "2026-11-14",
+    "publishedTimestamp": "2026-11-14T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/dog-microchip.md",
+      "sha256": "e7370a3b6dba2986a40d8426a3f3b273997a7a82abc0c769a358925b26014b35",
+      "receivedOn": "2026-11-07"
+    },
+    "image": {
+      "src": "/images/columns/dog-microchip.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "犬をなでる女性と、マイクロチップおよび専用読み取り機を示す水彩イラスト"
+    },
+    "relatedArticleIds": [
+      "lost-dog-preparation"
+    ],
+    "relatedService": null,
+    "relatedLinks": [
+      {
+        "href": "/use-cases/pets/",
+        "label": "つながるQRの関連サービスを見る"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "日本愛玩動物協会｜令和7年度全国愛玩動物飼養管理士の日の活動結果報告",
+        "href": "https://www.jpc.or.jp/pdf/r7_02_report.pdf",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "環境省｜犬と猫のマイクロチップ情報登録について",
+        "href": "https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-3",
+        "label": "環境省｜令和7年版環境白書 第2部第2章第5節",
+        "href": "https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "マイクロチップの仕組み",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "マイクロチップは、犬や猫の体内に装着する小さな識別器具です。専用の読み取り機を使うと、個体ごとに割り当てられた識別番号を確認できます。その番号を登録情報と照合することで、飼い主の確認につながります。マイクロチップそのものに、住所や電話番号などの個人情報が直接記録されているわけではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "装着率は何％？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "2025年度の日本愛玩動物協会の調査では、犬・猫の飼い主などから得た有効回答2,331件のうち、48.0％が「すべての犬・猫に装着している」と回答しました。「一部の犬・猫に装着している」は9.2％、「全く装着していない」は42.7％でした。つまり、回答者の約57％が、飼育する犬・猫の少なくとも一部にマイクロチップを装着していると答えています。ただし、これは調査対象者の回答割合であり、犬だけの全国装着率を示す数字ではありません。環境省によると、2024年度末時点で、制度に基づく犬・猫の飼い主などの登録情報は190万頭を超えています。登録頭数と装着率は異なるため、混同しないことが重要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "GPSとは何が違う？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "マイクロチップには、犬の現在地を追跡する機能はありません。犬が迷子になっても、スマートフォンの地図上で居場所を確認することはできません。マイクロチップが役立つのは、保護された犬を専用機器で読み取り、飼い主の登録情報を確認する場面です。一方、GPS端末は、通信や電池などの条件が整っていれば、位置情報を確認するために利用できます。それぞれ役割が異なります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "装着は義務なの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "2022年6月1日から、ブリーダーやペットショップなどで販売される犬・猫について、マイクロチップの装着と登録が義務化されました。購入した飼い主は、所有者情報を自分の情報へ変更登録する必要があります。一方、それ以前から飼育している犬などについては、すべての飼い主に新たな装着が一律に義務付けられているわけではありません。装着済みの犬を譲り受けた場合や、新たに装着した場合には、必要な登録手続きを確認しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "引っ越したらどうする？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "マイクロチップが装着されていても、登録された電話番号や住所が古いままでは、飼い主への連絡が難しくなる場合があります。引っ越しや連絡先の変更があった場合は、登録情報を更新することが重要です。登録先が環境省の制度なのか、別の登録団体なのかも確認しておきましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "迷子札も必要？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "マイクロチップの読み取りには専用機器が必要です。そのため、一般の方が犬を発見しても、その場ですぐに飼い主を確認できるとは限りません。首輪や迷子札は、発見者が連絡先などを確認するための補助的な手段です。ただし、首輪が外れる可能性もあります。マイクロチップ、迷子札、必要に応じた位置確認手段などを組み合わせて備えることが大切です。"
+          }
+        ]
+      },
+      {
+        "id": "section-7",
+        "title": "まとめ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "マイクロチップは、犬が保護されたときに飼い主を確認するための仕組みです。GPSのように現在地を追跡するものではありません。装着するだけでなく、登録情報を最新の状態に保ち、複数の迷子対策を組み合わせましょう。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "犬が迷子になったとき、飼い主を確認する手がかりになるマイクロチップ。ペットショップなどで購入した犬への装着が義務化され、身近な存在になっています。しかし、実際にはどれくらい普及しているのでしょうか。また、GPSのように犬の居場所を探せるのでしょうか。",
+    "primaryKeyword": "犬のマイクロチップって何？",
+    "topicClusterId": "pets",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "supplied-pr130-manuscript-exact-text",
+        "passed": true
+      },
+      {
+        "check": "source-review-complete",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null
+  },
+  {
+    "id": "care-insurance-age",
+    "slug": "care-insurance-age",
+    "title": "介護保険って何歳から？",
+    "summary": "介護保険は何歳から加入するのでしょうか。そして、毎月いくら支払うのでしょうか。介護保険は40歳から加入する制度ですが、保険料を払うことと、介護サービスを利用できることは別です。年齢による違いと、気になるお金の仕組みを解説します。",
+    "introduction": [],
+    "seoTitle": "介護保険って何歳から？",
+    "metaDescription": "介護保険は何歳から加入するのでしょうか。そして、毎月いくら支払うのでしょうか。介護保険は40歳から加入する制度ですが、保険料を払うことと、介護サービスを利用できることは別です。年齢による違いと、気になるお金の仕組みを解説します。",
+    "category": "family-care",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-15",
+    "editionDate": "2026-11-15",
+    "publishedTimestamp": "2026-11-15T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": null,
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/care-insurance-age.md",
+      "sha256": "2b845b4839717e9b240f67f65fbd011924a4a0a239af3911ac678bcb18275e54",
+      "receivedOn": "2026-11-07"
+    },
+    "image": {
+      "src": "/images/columns/care-insurance-age.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "介護サービスの利用の流れについて、窓口の担当者に相談する高齢女性の水彩イラスト"
+    },
+    "relatedArticleIds": [
+      "care-levels",
+      "senior-care-facility-types"
+    ],
+    "relatedService": null,
+    "relatedLinks": [
+      {
+        "href": "/use-cases/elderly/",
+        "label": "つながるQRの関連サービスを見る"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "厚生労働省｜介護保険制度について",
+        "href": "https://www.mhlw.go.jp/content/12300000/000362938.pdf",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "厚生労働省｜第9期介護保険の第1号保険料等",
+        "href": "https://www.mhlw.go.jp/stf/newpage_40211.html",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "介護保険は40歳から",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "日本の公的介護保険制度では、40歳から64歳までの医療保険加入者が第2号被保険者、65歳以上の方が第1号被保険者となります。40歳から64歳までの方は、原則として医療保険料とあわせて介護保険料を支払います。65歳以上になると、市区町村が定める介護保険料を負担します。ただし、保険料を支払っているだけで、誰でも介護サービスを利用できるわけではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "介護保険料はいくら？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "65歳以上の方の介護保険料は、市区町村や本人・世帯の所得状況によって異なります。2024〜2026年度の全国平均の基準額は、月額6,225円です。年間に換算すると74,700円になります。ただし、これは全国平均の基準額であり、すべての人が同じ金額を支払うわけではありません。所得段階によって、基準額より低くなる人も、高くなる人もいます。40〜64歳の方の保険料は、加入する医療保険や報酬などによって異なります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "65歳になれば誰でも使える？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "65歳以上の方は、要介護・要支援認定を受け、必要と認められた場合に介護保険サービスを利用できます。年齢だけで自動的に利用できるわけではありません。40〜64歳の方は、加齢に伴う特定疾病が原因で要介護・要支援状態になった場合などに、利用対象となります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "サービスを使うと毎月いくら？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "介護保険サービスを利用する際には、原則として費用の1〜3割を自己負担します。例えば、保険給付の対象となるサービス費用が月10万円だった場合、自己負担額の目安は次のようになります。"
+          },
+          {
+            "type": "table",
+            "caption": "サービスを使うと毎月いくら？",
+            "headers": [
+              "負担割合",
+              "自己負担額"
+            ],
+            "rows": [
+              [
+                "1割",
+                "10,000円"
+              ],
+              [
+                "2割",
+                "20,000円"
+              ],
+              [
+                "3割",
+                "30,000円"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、これは計算をわかりやすくするための例です。実際には、要介護度ごとの区分支給限度基準額、利用するサービスの種類、各種加算などによって支払額が変わります。また、施設での食費・居住費など、保険給付の対象外となる費用が発生することもあります。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "自己負担が高額になったら？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "介護保険には、一定の条件を満たす場合に、1か月の自己負担額のうち上限を超えた部分が払い戻される「高額介護サービス費」という制度があります。上限額は所得区分などによって異なります。ただし、食費や居住費など、対象外の費用もあるため、実際の負担額を確認することが必要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "申請はどこでする？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "介護サービスの利用を希望する場合は、市区町村の介護保険担当窓口などに相談します。要介護・要支援認定の申請後、認定調査や主治医意見書などをもとに審査が行われます。認定結果に応じて、利用できるサービスを検討します。「まだ介護が必要かわからない」という段階なら、地域包括支援センターに相談することもできます。"
+          }
+        ]
+      },
+      {
+        "id": "section-7",
+        "title": "まとめ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "介護保険は40歳から加入する制度ですが、利用条件は年齢によって異なります。また、毎月の保険料と、実際にサービスを使った際の自己負担額は別のものです。制度を理解する際には、加入年齢だけでなく、保険料・利用条件・サービス費用の3つを確認しておきましょう。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "介護保険は何歳から加入するのでしょうか。そして、毎月いくら支払うのでしょうか。介護保険は40歳から加入する制度ですが、保険料を払うことと、介護サービスを利用できることは別です。年齢による違いと、気になるお金の仕組みを解説します。",
+    "primaryKeyword": "介護保険って何歳から？",
+    "topicClusterId": "family-care",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "supplied-pr130-manuscript-exact-text",
+        "passed": true
+      },
+      {
+        "check": "source-review-complete",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null
   }
 ]

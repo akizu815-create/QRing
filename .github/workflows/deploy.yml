@@ -3,6 +3,13 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # 08:00 JST (23:00 UTC, previous calendar day).
+  # GitHub scheduled workflows may start later than the specified minute.
+  schedule:
+    - cron: "0 23 * * *"
+    # Best-effort catch-up runs at 08:15 / 08:45 JST; not an exact-time SLA.
+    - cron: "15,45 23 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -15,6 +22,7 @@ concurrency:
 
 jobs:
   build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -23,7 +31,14 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: npm run test:columns
+      - run: npm run test:scheduled-columns
+      - name: Fix the publication cutoff for this build and its checks
+        run: echo "COLUMN_BUILD_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
       - run: npm run build
+      # Fail closed if a scheduled/unpublished article leaks into the export.
+      - run: npm run check:column-export
+      - run: npm run check:column-navigation
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
