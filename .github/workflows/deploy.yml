@@ -3,10 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  # 08:00 JST (23:00 UTC, previous calendar day).
-  # GitHub scheduled workflows may start later than the specified minute.
+  # Prepare at 07:50 JST, away from the hourly dispatch peak, then wait until
+  # the real clock reaches 08:00 before taking the publication cutoff.
+  # GitHub dispatch and the build/deployment can still be delayed.
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "50 22 * * *"
     # Best-effort catch-up runs at 08:15 / 08:45 JST; not an exact-time SLA.
     - cron: "15,45 23 * * *"
   workflow_dispatch:
@@ -24,6 +25,9 @@ jobs:
   build:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 25
+    outputs:
+      cutoff: ${{ steps.cutoff.outputs.cutoff }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -33,8 +37,12 @@ jobs:
       - run: npm ci
       - run: npm run test:columns
       - run: npm run test:scheduled-columns
+      - run: python3 -m unittest discover -s tests/publication -v
       - name: Fix the publication cutoff for this build and its checks
-        run: echo "COLUMN_BUILD_AT=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
+        id: cutoff
+        env:
+          COLUMN_SCHEDULE: ${{ github.event.schedule }}
+        run: python3 scripts/prepare-column-build.py
       - run: npm run build
       # Fail closed if a scheduled/unpublished article leaks into the export.
       - run: npm run check:column-export
@@ -49,6 +57,30 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
+    timeout-minutes: 15
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/deploy-pages@v4
         id: deployment
+      - name: Verify the live due articles and exclude future articles
+        run: python3 scripts/check-live-columns.py
+
+  publication-status:
+    if: always() && github.ref == 'refs/heads/main'
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Summarize publication or surface a failure
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          CUTOFF: ${{ needs.build.outputs.cutoff }}
+          BUILD_RESULT: ${{ needs.build.result }}
+          DEPLOY_RESULT: ${{ needs.deploy.result }}
+        run: |
+          printf '## Column publication\n\nEvent: %s\n\nCron: %s\n\nCutoff: %s\n\nBuild: %s\n\nDeploy/live verification: %s\n' "$EVENT" "$SCHEDULE" "$CUTOFF" "$BUILD_RESULT" "$DEPLOY_RESULT" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$BUILD_RESULT" != success ] || [ "$DEPLOY_RESULT" != success ]; then
+            echo '::error::Column publication failed. Inspect build/deploy logs; the next scheduled run retries from main.'
+            exit 1
+          fi
