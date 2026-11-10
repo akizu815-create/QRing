@@ -27,6 +27,8 @@ BATCH = [
          service='/use-cases/elderly/', related=['dementia-early-signs'],
          sources=[('日本老年医学会｜認知機能の評価法と認知症の診断', 'https://www.jpn-geriat-soc.or.jp/tool/tool_02')]),
     dict(day=11, file='lost-property', slug='lost-property-retention', category='lost-items', audience='business',
+         # User explicitly approved immediate publication on Nov 11, before 08:00 JST.
+         publishedTimestamp='2026-11-11T00:03:38+09:00',
          alt='店舗の遺失物取扱所で、担当者と忘れ物の届出を確認する高齢女性の水彩イラスト',
          service='/use-cases/belongings/', related=['lost-wallet'],
          sources=[LOST, ('石川県警察｜落とし物・忘れ物（施設占有者の方へ）', 'https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html')]),
@@ -86,7 +88,7 @@ def registration(meta):
     return dict(id=meta['slug'], slug=meta['slug'], title=title, summary=intro[0], introduction=intro[1:],
                 seoTitle=title, metaDescription=intro[0], category=meta['category'], primaryAudience=meta['audience'], tags=[],
                 status='published', publicationOrigin='editorial',
-                publishedAt=date, editionDate=date, publishedTimestamp=date+'T08:00:00+09:00', publicationPending=False,
+                publishedAt=date, editionDate=date, publishedTimestamp=meta.get('publishedTimestamp', date+'T08:00:00+09:00'), publicationPending=False,
                 updatedAt=None, reviewedAt=None, nextReviewAt=None, serviceSpecificationVersion='2026-10-27',
                 contentRevision=2 if meta['day']==11 else 1, approvalRevision=2 if meta['day']==11 else 1, contentFormat='approved-manuscript',
                 approvalRecord=dict(sourceFile=str(approved.relative_to(ROOT)), sha256=hashlib.sha256(source.read_bytes()).hexdigest(), receivedOn=CHECKED),

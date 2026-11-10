@@ -17,12 +17,13 @@ try {
   assert.equal(crypto.createHash('sha256').update(JSON.stringify(records.slice(0,7))).digest('hex'),
     '8a72354d599450f2011a856c8d2b5853c98d0b577e0e179dc9d8865218a74b39',
     'Existing article data/SEO must remain unchanged');
-  const batch = records.filter(a=>a.publishedTimestamp?.match(/^2026-11-(?:0[89]|1[0-5])T08:00:00\+09:00$/));
+  const batch = records.filter(a=>a.publishedTimestamp?.match(/^2026-11-(?:0[89]|1[0-5])T/));
   assert.equal(batch.length,8);
   for (let i=0;i<8;i++) {
     const article=batch[i]; const day=8+i;
     assert.equal(article.publishedAt,`2026-11-${String(day).padStart(2,'0')}`);
-    assert.equal(new Date(article.publishedTimestamp).toISOString(),`2026-11-${String(day-1).padStart(2,'0')}T23:00:00.000Z`);
+    const expectedUtc = day===11 ? '2026-11-10T15:03:38.000Z' : `2026-11-${String(day-1).padStart(2,'0')}T23:00:00.000Z`;
+    assert.equal(new Date(article.publishedTimestamp).toISOString(),expectedUtc);
     validateArticle(article);
     const raw=fs.readFileSync(article.approvalRecord.sourceFile,'utf8');
     const expected=raw.split('\n').filter(line=>line.trim() && line!=='---' && !/^\|[-:| ]+\|$/.test(line)).flatMap(line=>line.startsWith('|')?line.replace(/^\||\|$/g,'').split('|').map(c=>c.trim()):[line.replace(/^#{1,2} |^- /,'')]);
