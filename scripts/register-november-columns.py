@@ -33,6 +33,8 @@ BATCH = [
          service='/use-cases/belongings/', related=['lost-wallet'],
          sources=[LOST, ('石川県警察｜落とし物・忘れ物（施設占有者の方へ）', 'https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html')]),
     dict(day=12, file='photo-location', slug='photo-location-privacy', category='privacy-life', audience='personal',
+         # User requested immediate publication on Nov 12.
+         publishedTimestamp='2026-11-12T05:52:51+09:00',
          alt='スマートフォンの写真に写った電柱や街並みから撮影場所が推測されることを示す水彩イラスト',
          service='/service/', related=['school-contact-list-privacy'],
          sources=[('IPA｜情報セキュリティ10大脅威 用語と仕組み（写真の位置情報）', 'https://www.ipa.go.jp/security/10threats/ps6vr7000000auzz-att/yougoyashikumi_2022.pdf'), ('岡山県｜写真をSNSにアップしてもいいですか？', 'https://www.pref.okayama.jp/uploaded/attachment/233419.pdf')]),
