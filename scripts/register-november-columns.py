@@ -39,6 +39,8 @@ BATCH = [
          service='/service/', related=['school-contact-list-privacy'],
          sources=[('IPA｜情報セキュリティ10大脅威 用語と仕組み（写真の位置情報）', 'https://www.ipa.go.jp/security/10threats/ps6vr7000000auzz-att/yougoyashikumi_2022.pdf'), ('岡山県｜写真をSNSにアップしてもいいですか？', 'https://www.pref.okayama.jp/uploaded/attachment/233419.pdf')]),
     dict(day=13, file='unidentified-elderly', slug='unidentified-elderly', category='municipal-community', audience='municipal',
+         # User requested immediate publication on Nov 13.
+         publishedTimestamp='2026-11-13T07:46:47+09:00',
          alt='身元を確認するため、高齢男性に警察官と女性が声をかける水彩イラスト',
          service='/municipalities/', related=['elderly-monitoring-contact-system'],
          sources=[('警察庁｜令和7年における行方不明者届受理等の状況', 'https://www.npa.go.jp/news/release/2026/20260625001.html'), ('国家公安委員会｜2026年6月25日記者会見要旨', 'https://www.npsc.go.jp/pressconf_2026/06_25.htm'), ('厚生労働省｜行方のわからない認知症高齢者等をお探しの方へ', 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000052978.html'), ('岡山県｜身元不明の認知症高齢者等に関する情報', 'https://www.pref.okayama.jp/page/407947.html'), ('岐阜県｜身元不明で保護されている高齢者等に関する情報', 'https://www.pref.gifu.lg.jp/page/13791.html'), ('千葉県｜認知症と思われる身元不明者について', 'https://www.pref.chiba.lg.jp/koufuku/shien/ninchishou/mimotohumei.html')]),

@@ -22,7 +22,7 @@ try {
   for (let i=0;i<8;i++) {
     const article=batch[i]; const day=8+i;
     assert.equal(article.publishedAt,`2026-11-${String(day).padStart(2,'0')}`);
-    const expectedUtc = day===11 ? '2026-11-10T15:03:38.000Z' : day===12 ? '2026-11-11T20:52:51.000Z' : `2026-11-${String(day-1).padStart(2,'0')}T23:00:00.000Z`;
+    const expectedUtc = day===11 ? '2026-11-10T15:03:38.000Z' : day===12 ? '2026-11-11T20:52:51.000Z' : day===13 ? '2026-11-12T22:46:47.000Z' : `2026-11-${String(day-1).padStart(2,'0')}T23:00:00.000Z`;
     assert.equal(new Date(article.publishedTimestamp).toISOString(),expectedUtc);
     validateArticle(article);
     const raw=fs.readFileSync(article.approvalRecord.sourceFile,'utf8');
