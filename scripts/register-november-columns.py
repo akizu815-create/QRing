@@ -45,6 +45,8 @@ BATCH = [
          service='/municipalities/', related=['elderly-monitoring-contact-system'],
          sources=[('警察庁｜令和7年における行方不明者届受理等の状況', 'https://www.npa.go.jp/news/release/2026/20260625001.html'), ('国家公安委員会｜2026年6月25日記者会見要旨', 'https://www.npsc.go.jp/pressconf_2026/06_25.htm'), ('厚生労働省｜行方のわからない認知症高齢者等をお探しの方へ', 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000052978.html'), ('岡山県｜身元不明の認知症高齢者等に関する情報', 'https://www.pref.okayama.jp/page/407947.html'), ('岐阜県｜身元不明で保護されている高齢者等に関する情報', 'https://www.pref.gifu.lg.jp/page/13791.html'), ('千葉県｜認知症と思われる身元不明者について', 'https://www.pref.chiba.lg.jp/koufuku/shien/ninchishou/mimotohumei.html')]),
     dict(day=14, file='dog-microchip', slug='dog-microchip', category='pets', audience='personal',
+         # User requested immediate publication on Nov 14.
+         publishedTimestamp='2026-11-14T02:22:05+09:00',
          alt='犬をなでる女性と、マイクロチップおよび専用読み取り機を示す水彩イラスト',
          service='/use-cases/pets/', related=['lost-dog-preparation'],
          sources=[('日本愛玩動物協会｜令和7年度全国愛玩動物飼養管理士の日の活動結果報告', 'https://www.jpc.or.jp/pdf/r7_02_report.pdf'), ('環境省｜犬と猫のマイクロチップ情報登録について', 'https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html'), ('環境省｜令和7年版環境白書 第2部第2章第5節', 'https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html')]),
