@@ -51,6 +51,8 @@ BATCH = [
          service='/use-cases/pets/', related=['lost-dog-preparation'],
          sources=[('日本愛玩動物協会｜令和7年度全国愛玩動物飼養管理士の日の活動結果報告', 'https://www.jpc.or.jp/pdf/r7_02_report.pdf'), ('環境省｜犬と猫のマイクロチップ情報登録について', 'https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html'), ('環境省｜令和7年版環境白書 第2部第2章第5節', 'https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html')]),
     dict(day=15, file='care-insurance', slug='care-insurance-age', category='family-care', audience='personal',
+         # User requested immediate publication on Nov 15.
+         publishedTimestamp='2026-11-15T00:30:27+09:00',
          alt='介護サービスの利用の流れについて、窓口の担当者に相談する高齢女性の水彩イラスト',
          service='/use-cases/elderly/', related=['care-levels', 'senior-care-facility-types'],
          sources=[MHLW, ('厚生労働省｜第9期介護保険の第1号保険料等', 'https://www.mhlw.go.jp/stf/newpage_40211.html')]),
