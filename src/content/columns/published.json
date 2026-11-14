@@ -2914,7 +2914,7 @@
     ],
     "seoTitle": "知らない番号から電話が来たら出るべき？安全な対処法と詐欺対策",
     "metaDescription": "知らない番号から電話が来たら出るべき？警察を装った詐欺電話や国際電話の注意点、折り返す前の確認方法、家族でできる防犯対策を解説します。",
-    "category": "daily-life",
+    "category": "privacy-life",
     "primaryAudience": "personal",
     "tags": [],
     "status": "published",
@@ -2931,7 +2931,6 @@
     "approvalRevision": 1,
     "contentFormat": "approved-manuscript",
     "relatedArticleIds": [
-      "school-contact-network",
       "photo-location-privacy"
     ],
     "relatedService": null,
@@ -3078,7 +3077,7 @@
     "cta": "none",
     "searchIntent": "知らない番号からの着信に出るべきか、折り返す前にどう確認すればよいか知りたい",
     "primaryKeyword": "知らない番号 電話 出るべき",
-    "topicClusterId": "daily-life",
+    "topicClusterId": "privacy-life",
     "claims": [],
     "validationResults": [
       {
