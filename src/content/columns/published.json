@@ -3086,6 +3086,17 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/unknown-calls.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "知らない番号からの着信に戸惑う高齢女性と、警察や銀行を装う電話への注意を示す水彩イラスト"
+    },
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/unknown-calls.md",
+      "sha256": "8a97fb4773318c2e000a2ae2e42726dd8741aaf07a8094c2577a17bcd1881e35",
+      "receivedOn": "2026-11-14"
+    }
   }
 ]
