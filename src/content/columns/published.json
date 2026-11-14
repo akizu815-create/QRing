@@ -2901,5 +2901,202 @@
     ],
     "generationRunId": null,
     "promptVersion": null
+  },
+  {
+    "id": "unknown-calls",
+    "slug": "unknown-calls",
+    "title": "知らない番号から電話が来たら、出るべき？",
+    "summary": "スマートフォンに突然、知らない番号からの着信。 「仕事の連絡かもしれない」「宅配便かな？」「大切な用事だったらどうしよう」。そんなふうに迷った経験はありませんか？",
+    "introduction": [
+      "スマートフォンに突然、知らない番号からの着信。",
+      "「仕事の連絡かもしれない」「宅配便かな？」「大切な用事だったらどうしよう」。そんなふうに迷った経験はありませんか？",
+      "最近では、警察官や金融機関を装った詐欺電話も問題になっています。では、知らない番号から電話がかかってきたとき、どう対応するのが安全なのでしょうか。"
+    ],
+    "seoTitle": "知らない番号から電話が来たら出るべき？安全な対処法と詐欺対策",
+    "metaDescription": "知らない番号から電話が来たら出るべき？警察を装った詐欺電話や国際電話の注意点、折り返す前の確認方法、家族でできる防犯対策を解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-16",
+    "editionDate": "2026-11-16",
+    "publishedTimestamp": "2026-11-16T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-14",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "relatedArticleIds": [
+      "photo-location-privacy"
+    ],
+    "relatedService": null,
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "警察庁｜固定電話の番号表示・非通知拒否サービス",
+        "href": "https://www.npa.go.jp/bureau/safetylife/sos47/case/service/",
+        "checkedAt": "2026-11-14"
+      },
+      {
+        "id": "source-2",
+        "label": "警察庁｜警察に偽装した電話番号に注意",
+        "href": "https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/250325/01.html",
+        "checkedAt": "2026-11-14"
+      },
+      {
+        "id": "source-3",
+        "label": "政府広報オンライン｜電話の向こうの「警察官」はホンモノ？",
+        "href": "https://www.gov-online.go.jp/article/202610/entry-11718.html",
+        "checkedAt": "2026-11-14"
+      },
+      {
+        "id": "source-4",
+        "label": "警察庁｜架空料金請求詐欺",
+        "href": "https://www.npa.go.jp/bureau/safetylife/sos47/case/fictitious-billing/",
+        "checkedAt": "2026-11-14"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "知らない番号からの電話は、出なくても大丈夫",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "結論からいうと、知らない番号からの電話に、無理に出る必要はありません。警察庁も特殊詐欺対策として、知らない番号からの着信に安易に応答しないよう呼びかけています。"
+          },
+          {
+            "type": "paragraph",
+            "text": "もちろん、すべての知らない番号が詐欺というわけではありません。病院や配送業者、仕事の取引先などから連絡が来ることもあります。ただし、本当に必要な連絡であれば、留守番電話やSMSなどで用件を確認できる場合もあります。まずは慌てず、相手が誰なのかを確かめることが大切です。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "電話番号が表示されていても安心とは限らない",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "実は、着信画面に表示された番号が、必ずしも本当の発信元とは限りません。警察庁は2025年、実在する警察署などの電話番号を偽装して表示させる詐欺について注意を呼びかけました。"
+          },
+          {
+            "type": "paragraph",
+            "text": "例えば、警察官を名乗る人物から突然電話があり、「あなたの銀行口座が犯罪に使われています」「捜査のため、お金を別の口座に移してください」などと言われるケースがあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "表示された番号が本物の警察署の番号と一致していても、それだけで信用してはいけません。不審な内容なら一度電話を切り、自分で調べた公式の電話番号へ連絡することが重要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "「＋」から始まる電話番号には注意",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "最近の特殊詐欺では、国際電話番号が悪用されるケースもあります。「＋1」「＋44」など、日本の一般的な電話番号とは異なる表示を見かけたことはありませんか。「＋」の後ろに続く数字は国番号を表します。"
+          },
+          {
+            "type": "paragraph",
+            "text": "海外との通話に心当たりがない場合は、安易に応答したり、折り返したりしないようにしましょう。ただし、国際電話番号だからといって、すべてが詐欺というわけではありません。海外の知人や仕事関係者からの正当な連絡もあります。大切なのは、心当たりのない相手に、確認せず対応しないことです。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "知らない番号から着信があったら、どうする？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "① まずは着信履歴を確認する。番号に見覚えがあるか、最近連絡を待っている相手がいないかを考えます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "② 留守番電話やSMSを確認する。用件が残っていれば、相手を判断する手がかりになります。ただし、SMSに書かれたURLや電話番号が安全とは限りません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "③ 公式サイトなどで連絡先を調べる。銀行や配送業者などを名乗る場合は、相手が伝えた番号ではなく、自分で確認した公式窓口を利用しましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "④ 不審な番号には折り返さない。特に、身に覚えのない国際電話や、お金を要求する不審な連絡には注意が必要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "もし電話に出てしまったら？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "知らない番号に出てしまったからといって、それだけで詐欺被害が確定するわけではありません。大切なのは、その後の対応です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "相手が警察官や金融機関を名乗っていても、暗証番号やSMSの認証コードを教えたり、指示された口座へ送金したりしないでください。不安をあおられたり、急いで対応するよう求められたりした場合は、いったん電話を切りましょう。詐欺が疑われるときは、警察相談専用電話「#9110」などに相談できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "家族で決めておきたい電話のルール",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "高齢の家族がいる場合は、日頃から電話への対応を話し合っておくと安心です。例えば、「知らない番号には無理に出ない」「電話でお金の話が出たら、いったん切る」「困ったときは家族や警察に相談する」といった簡単なルールを共有しておくだけでも、落ち着いて対応しやすくなります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "固定電話では番号表示や非通知着信の拒否、スマートフォンでは迷惑電話対策機能なども活用できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-7",
+        "title": "まとめ｜電話に出ないことも、自分を守る選択",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "知らない番号からの電話に、必ず出なければならないということはありません。大切なのは、相手が誰なのかを確認する前に、個人情報やお金を渡さないことです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "電話は便利な連絡手段だからこそ、安心して使えるようにしたいもの。「知らない番号には、まず慎重に対応する」。そんな小さな習慣が、自分や家族を守ることにつながります。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "知らない番号からの着信に出るべきか、折り返す前にどう確認すればよいか知りたい",
+    "primaryKeyword": "知らない番号 電話 出るべき",
+    "topicClusterId": "privacy-life",
+    "claims": [],
+    "validationResults": [
+      {
+        "check": "user-approved-manuscript",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/unknown-calls.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "知らない番号からの着信に戸惑う高齢女性と、警察や銀行を装う電話への注意を示す水彩イラスト"
+    },
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/unknown-calls.md",
+      "sha256": "8a97fb4773318c2e000a2ae2e42726dd8741aaf07a8094c2577a17bcd1881e35",
+      "receivedOn": "2026-11-14"
+    }
   }
 ]
