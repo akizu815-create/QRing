@@ -3098,5 +3098,175 @@
       "sha256": "8a97fb4773318c2e000a2ae2e42726dd8741aaf07a8094c2577a17bcd1881e35",
       "receivedOn": "2026-11-14"
     }
+  },
+  {
+    "id": "dog-owner-voice",
+    "slug": "dog-owner-voice",
+    "title": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+    "summary": "犬は声の特徴を手がかりに、飼い主とほかの人を聞き分けられると考えられています。同じ呼びかけでも、誰が話すかで反応が違って見えるのは、顔やにおい以外の情報も使っているからです。",
+    "introduction": [
+      "声を覚えることと、言葉の意味を理解することは同じではありません。研究でわかったことと、日々の接し方を分けて見ていきます。"
+    ],
+    "seoTitle": "犬は飼い主の声を聞き分けられる？犬の聴覚と声の認識を解説",
+    "metaDescription": "犬は飼い主の声を覚えているのでしょうか？声の聞き分け方や言葉の理解、録音した声への反応など、犬の聴覚とコミュニケーションを解説します。",
+    "category": "pets",
+    "primaryAudience": "personal",
+    "tags": [
+      "犬の聴覚",
+      "声の認識"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-17",
+    "editionDate": "2026-11-17",
+    "publishedTimestamp": "2026-11-17T05:57:38+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/dog-owner-voice.md",
+      "sha256": "41d245c618a21e9dc86ba847f01c0ef24aa48a116fd3f9811f99757a1d647338",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "cat-owner-memory"
+    ],
+    "relatedService": {
+      "href": "/use-cases/pets/",
+      "label": "ペットの迷子への備え"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/dog-microchip/",
+        "label": "犬のマイクロチップって何？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "dog",
+        "label": "Gábor et al. (2022)｜The acoustic bases of human voice identity processing in dogs（Animal Cognition）",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "犬は飼い主の声を認識できる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬は、声の特徴を手がかりに飼い主を認識できると考えられています。2022年に発表された研究では、犬が飼い主の声を、声に含まれる音響的な特徴から識別できることが示されました。"
+          },
+          {
+            "type": "paragraph",
+            "text": "つまり、犬は飼い主の顔やにおいだけでなく、声も手がかりにしているのです。ただし、すべての犬が同じように反応するわけではありません。年齢や経験、周囲の環境によっても反応は異なります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/cat-owner-memory/",
+            "label": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "犬は言葉の意味も理解している？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "「お散歩」「ごはん」「おやつ」こうした言葉を聞くと、急に元気になる犬もいます。犬は、繰り返し聞く言葉と、その後に起こる出来事を結びつけて学習できます。一方で、言葉だけを理解しているとは限りません。飼い主の声の調子、表情、立ち上がる動作、時間帯なども判断材料になっています。"
+          },
+          {
+            "type": "link",
+            "href": "/column/dog-microchip/",
+            "label": "犬のマイクロチップって何？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "録音した飼い主の声にも反応する？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "スマートフォンから飼い主の声を流すと、首をかしげたり、音のする方向を探したりする犬もいます。しかし、録音された声と実際の飼い主の声では、聞こえ方や周囲の情報が異なります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "反応しなかったからといって、飼い主を忘れたわけではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "犬への声かけで大切なこと",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬とコミュニケーションを取るときは、短くわかりやすい言葉を、一貫して使うことが役立ちます。同じ行動に対して毎回違う言葉を使うよりも、決まった言葉を繰り返す方が、犬は学習しやすくなります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "また、急に呼びかけへの反応が悪くなった場合は、聴力や体調の変化が関係している可能性もあります。気になる場合は獣医師に相談しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "声かけを日々のやり取りに生かす",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬にとって飼い主の声は、大切な情報の一つです。声を覚え、日々の経験と結びつけながら、人とのコミュニケーションを学んでいます。普段何気なくかけている言葉も、愛犬との信頼関係を育てる一部なのかもしれません。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "犬 飼い主 声 聞き分け",
+    "primaryKeyword": "犬 飼い主 声 聞き分け",
+    "topicClusterId": "dog-owner-voice",
+    "claims": [
+      {
+        "text": "犬は声の特徴を手がかりに、飼い主とほかの人を聞き分けられると考えられています。同じ呼びかけでも、誰が話すかで反応が違って見えるのは、顔やにおい以外の情報も使っているからです。",
+        "sourceIds": [
+          "dog"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/dog-owner-voice.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト"
+    }
   }
 ]
