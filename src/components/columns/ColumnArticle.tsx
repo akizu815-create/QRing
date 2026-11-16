@@ -4,6 +4,8 @@ import Image from "next/image";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
 import { GuideSection } from "@/components/GuidePage";
 import ColumnStructuredData from "./ColumnStructuredData";
+import { getPublishedArticles } from "@/lib/columns";
+import { visibleArticleSections } from "@/lib/columns/navigation";
 import { articlePath, articleDisplayDate, articlePublishedTime, audienceLabel, categoryLabel, formatDate, type Article, type Block } from "@/lib/columns/types";
 function ContentBlock({ block }: { block: Block }) {
   switch (block.type) {
@@ -24,6 +26,7 @@ function ContentBlock({ block }: { block: Block }) {
   }
 }
 export default function ColumnArticle({ article: a, related }: { article: Article; related: Article[] }) {
+  const sections = visibleArticleSections(a, getPublishedArticles());
   return <>
     <ColumnStructuredData path={articlePath(a.slug)} title={a.seoTitle} description={a.metaDescription} article={a} />
     <article data-approved-manuscript={a.contentFormat === "approved-manuscript" ? a.approvalRecord?.sha256 : undefined}>
@@ -39,7 +42,7 @@ export default function ColumnArticle({ article: a, related }: { article: Articl
       </div></header>
       <div className="container-narrow py-8 md:py-12">
         <nav aria-labelledby="article-toc" className="pb-10 pt-3"><h2 id="article-toc" className="font-serif text-xl font-light">この記事の内容</h2><ol className="mt-5 space-y-3 text-sm leading-7 text-moss">{a.sections.map((s) => <li key={s.id}><a className="underline underline-offset-4" href={`#${s.id}`}>{s.title}</a></li>)}</ol></nav>
-        {a.sections.map((s) => <GuideSection id={s.id} title={s.title} key={s.id}>{s.blocks.map((block, i) => <ContentBlock key={i} block={block} />)}</GuideSection>)}
+        {sections.map((s) => <GuideSection id={s.id} title={s.title} key={s.id}>{s.blocks.map((block, i) => <ContentBlock key={i} block={block} />)}</GuideSection>)}
       </div>
       {a.contentFormat !== "approved-manuscript" && <section className="bg-cream py-14 md:py-20" aria-labelledby="article-sources"><div className="container-narrow">
         <h2 id="article-sources" className="font-serif text-2xl font-light">参考にした公式情報</h2>
