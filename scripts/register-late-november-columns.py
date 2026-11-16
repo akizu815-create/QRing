@@ -119,6 +119,14 @@ BATCH = [
          ending='相手への非開示と利用条件を確認する', overlap='SERVICEとの検索意図重複が最も高い。中心ページは/service/のまま、当記事は利用場面・非開示と事業者取扱いの違いを説明する補助記事。承認時に要確認。'),
 ]
 
+SUPPLIED_IMAGES = {
+    17: dict(src="/images/columns/dog-owner-voice.webp", width=1280, height=720, alt="公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト"),
+    18: dict(src="/images/columns/young-onset-dementia.webp", width=1280, height=720, alt="室内で穏やかに話し合う眼鏡の男性と女性の水彩イラスト"),
+    19: dict(src="/images/columns/wallet-contents-safety.webp", width=1280, height=720, alt="財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト"),
+    20: dict(src="/images/columns/qr-code-inventor.webp", width=1280, height=720, alt="設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト"),
+    21: dict(src="/images/columns/cat-owner-memory.webp", width=1280, height=720, alt="帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト"),
+}
+
 SERVICE_PATHS = {k: f'/use-cases/{k}/' for k in ['pets', 'elderly', 'belongings']}
 SERVICE_PATHS['service'] = '/service/'
 SERVICE_LABELS = {'pets': 'ペットの迷子への備え', 'elderly': '高齢者の見守りへの活用', 'belongings': '落とし物への備え', 'service': 'つながるQRのサービスと利用条件'}
@@ -215,8 +223,8 @@ def build(meta, titles):
                 validationResults=[dict(check='source-review-complete', passed=day not in [23, 29]),
                                    dict(check='image-supplied', passed=False), dict(check='release-approved', passed=False)],
                 generationRunId=None, promptVersion=None)
-    if day == 17:
-        article["image"] = dict(src="/images/columns/dog-owner-voice.webp", width=1280, height=720, alt="公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト")
+    if day in SUPPLIED_IMAGES:
+        article["image"] = SUPPLIED_IMAGES[day].copy()
         next(c for c in article["validationResults"] if c["check"] == "image-supplied")["passed"] = True
     return article, edited_text
 

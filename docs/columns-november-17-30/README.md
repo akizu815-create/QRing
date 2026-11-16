@@ -4,8 +4,8 @@
 
 ## 公開状態と残作業
 
-- 全14記事は `draft` / `publicationPending: true` / `approvalRevision: null`。未登録画像・公開承認未了の検証フラグはfalse（11/17のimage-suppliedのみtrue）。日付を過ぎても、Cloudflareブランチプレビューでも公開対象になりません。
-- 11/17の画像1枚を登録済み、残り13枚は未提供です。生成・流用・選定はしていません。画像ファイル、alt、OGP画像、画像ありでのスマホ表示は未検証です。画像到着後に固有ファイルを登録します。
+- 全14記事は `draft` / `publicationPending: true` / `approvalRevision: null`。未登録画像・公開承認未了の検証フラグはfalse（11/17〜21のimage-suppliedのみtrue）。日付を過ぎても、Cloudflareブランチプレビューでも公開対象になりません。
+- 11/17〜21の画像5枚を登録済み、残り9枚は未提供です。生成・流用・選定はしていません。画像ファイル、alt、OGP画像、画像ありでのスマホ表示は未検証です。画像到着後に固有ファイルを登録します。
 - 11/23と11/29は一次資料の最終確認も未完了として検証フラグをfalseにしています。取得制限をサイトのリンク切れや本文の誤りと断定していません。
 - 画像と内容確認が完了した後、明示的な公開承認を受けて既存の公開フラグを更新する必要があります。このPRをマージするだけで14記事が自動公開される状態にはしていません。
 - mainへのマージ、本番公開、外部アカウント追加、GA4/GSC設定変更は行っていません。
@@ -15,10 +15,10 @@
 |日付|H1／記事タイトル|予定URL|画像|
 |---|---|---|---|
 |11/17|犬は飼い主の声を聞き分けられる？声を覚える仕組みとは|`/column/dog-owner-voice/`|登録済み|
-|11/18|認知症は何歳から始まる？若年性認知症の特徴と相談先|`/column/young-onset-dementia/`|未登録|
-|11/19|財布に入れてはいけないものってある？紛失時に困らないための整理術|`/column/wallet-contents-safety/`|未登録|
-|11/20|QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史|`/column/qr-code-inventor/`|未登録|
-|11/21|猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議|`/column/cat-owner-memory/`|未登録|
+|11/18|認知症は何歳から始まる？若年性認知症の特徴と相談先|`/column/young-onset-dementia/`|登録済み|
+|11/19|財布に入れてはいけないものってある？紛失時に困らないための整理術|`/column/wallet-contents-safety/`|登録済み|
+|11/20|QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史|`/column/qr-code-inventor/`|登録済み|
+|11/21|猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議|`/column/cat-owner-memory/`|登録済み|
 |11/22|高齢者が転倒しやすいのはなぜ？家の中でできる予防対策|`/column/elderly-fall-prevention/`|未登録|
 |11/23|スマホの緊急SOS機能、使ったことある？もしものときの備え方|`/column/smartphone-emergency-sos/`|未登録|
 |11/24|電話番号から個人情報はどこまでわかる？知られたときのリスクと対策|`/column/phone-number-personal-information/`|未登録|
@@ -81,7 +81,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 - 参考資料URL:
   - [厚生労働省｜主な認知症施策について（若年性認知症施策）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00006.html)
   - [厚生労働省｜若年性認知症のガイドライン・取組事例](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000167853.html)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/young-onset-dementia.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/young-onset-dementia.webp` 登録済み（1280×720、165,060 bytes）。alt: 室内で穏やかに話し合う眼鏡の男性と女性の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/19 財布に入れてはいけないものってある？紛失時に困らないための整理術
 
@@ -102,7 +102,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 - 参考資料URL:
   - [金融庁｜あなたのキャッシュカードが狙われています](https://www.fsa.go.jp/ordinary/card/)
   - [警察庁｜遺失届とは？遺失届のポイント](https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/loss.html)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/wallet-contents-safety.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/wallet-contents-safety.webp` 登録済み（1280×720、204,258 bytes）。alt: 財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/20 QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史
 
@@ -125,7 +125,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
   - [デンソーウェーブ｜QRコードの道のり](https://www.qrcode.com/history/)
   - [デンソーウェーブ｜QRコードとは？](https://www.qrcode.com/about/)
   - [株式会社QRing｜つながるQR サービス紹介](https://www.qring.jp/service/)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/qr-code-inventor.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/qr-code-inventor.webp` 登録済み（1280×720、214,862 bytes）。alt: 設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/21 猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議
 
@@ -145,7 +145,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 - 参考資料URL:
   - [Saito & Shinozuka (2013)｜Vocal recognition of owners by domestic cats (Felis catus)](https://pubmed.ncbi.nlm.nih.gov/23525707/)
   - [東京大学｜ツレない猫、答えないけど飼い主の声聞き分ける](https://www.u-tokyo.ac.jp/focus/ja/press/p01_250327_02.html)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/cat-owner-memory.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/cat-owner-memory.webp` 登録済み（1280×720、223,074 bytes）。alt: 帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/22 高齢者が転倒しやすいのはなぜ？家の中でできる予防対策
 
@@ -361,7 +361,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 
 ## 次の確認の優先順位
 
-1. 14枚の挿絵の受領・対応確認・最適化・alt/OGP設定・画像込みスマホ検証。
+1. 残り9枚の挿絵の受領・対応確認・最適化・alt/OGP設定・画像込みスマホ検証。
 2. 11/23の最新Apple操作条件、11/29の原著全文を再確認。本文の編集差分を確認し、特に11/30とSERVICEの意図重複を承認時に判断。
 3. 記事ごとの公開承認後に既存の公開状態を更新し、実ビルド／未来記事抑止を再検証してPRをマージ。予定日を過ぎてから承認された場合、次の正常なビルドで公開対象になる。
 4. 本番公開後に既存Actionsのlive照合とSummaryで反映を確認。SEO/AIOの表示・引用を保証する設定ではないため、Search Consoleで実績を追う。
@@ -371,3 +371,5 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 `npm run test:late-november-columns` と既存の `npm run test:columns` / `npm run test:scheduled-columns` を実行できます。通常状態の `npm run build` は14件を除外します。日時を固定する場合は `COLUMN_BUILD_AT=2026-11-17T08:00:00+09:00 NEXT_TELEMETRY_DISABLED=1 npm run build` とし、同じ日時で `check:column-export` / `check:column-navigation` を実行します。未承認の状態は日時だけを変更しても公開されません。テスト目的の承認済みコピーはリモートへpushしないでください。
 
 11/17挿絵追記：ユーザー提供画像1枚を登録。既存の検証結果は画像追加前の記録で、当該画像の追加後検証は image-validation.json に記録。未提供の13枚は引き続き未登録です。
+
+11/18〜21挿絵追記：添付順に男性と女性の会話、財布の整理、設計室の技術者、飼い主と猫を各記事へ登録。画像は実在人物の写真や診断結果として扱わず、描写に基づくaltを設定。images-18-21-validation.json に追加検証を記録。現在は5枚登録済み、9枚未登録で、全14記事の公開保留は維持。
