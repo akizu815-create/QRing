@@ -23,11 +23,11 @@ try {
   for (let i = 0; i < batch.length; i++) {
     const a = batch[i];
     validateArticle(a);
-    assert.equal(a.publishedTimestamp, `2026-11-${17+i}T08:00:00+09:00`);
-    assert.equal(new Date(a.publishedTimestamp).toISOString(), `2026-11-${16+i}T23:00:00.000Z`);
-    assert.equal(a.status, 'draft');
-    assert.equal(a.publicationPending, true);
-    assert.equal(a.approvalRevision, null);
+    assert.equal(a.publishedTimestamp, i===0 ? '2026-11-17T05:57:38+09:00' : `2026-11-${17+i}T08:00:00+09:00`);
+    assert.equal(new Date(a.publishedTimestamp).toISOString(), i===0 ? '2026-11-16T20:57:38.000Z' : `2026-11-${16+i}T23:00:00.000Z`);
+    assert.equal(a.status, i===0 ? 'published' : 'draft');
+    assert.equal(a.publicationPending, i!==0);
+    assert.equal(a.approvalRevision, i===0 ? 1 : null);
     {
       assert.equal(a.image.src, `/images/columns/${a.slug}.webp`);
       assert.equal(a.image.width,1280); assert.equal(a.image.height,720);
@@ -36,13 +36,13 @@ try {
       assert(fs.statSync('public'+a.image.src).size<300000);
     }
     assert.equal(a.validationResults.find(c=>c.check==='image-supplied').passed, true);
-    assert.equal(a.validationResults.find(c=>c.check==='release-approved').passed, false);
+    assert.equal(a.validationResults.find(c=>c.check==='release-approved').passed, i===0);
     for (const id of a.relatedArticleIds) assert(ids.has(id), `${a.slug}: missing related id ${id}`);
     assert.equal(crypto.createHash('sha256').update(fs.readFileSync(a.approvalRecord.sourceFile)).digest('hex'), a.approvalRecord.sha256);
     assert.equal(a.updatedAt, null, 'No invented post-publication update date');
   }
   for (const previewPending of [false, true]) {
-    assert.equal(selectPublishedArticles(records, Date.parse('2027-01-01T00:00:00Z'), {previewPending}).length, 16, 'Held drafts remain private even in branch previews');
+    assert.equal(selectPublishedArticles(records, Date.parse('2027-01-01T00:00:00Z'), {previewPending}).length, 17, 'Remaining 13 drafts stay private, including branch previews');
   }
   const simulated = records.map(a=>batch.includes(a) ? {...a,status:'published',publicationPending:false,approvalRevision:a.contentRevision,claims:a.claims.map(c=>({...c,verified:true})),validationResults:[{check:'LOCAL-SIMULATION-ONLY',passed:true}]} : a);
   for (const a of batch) {
@@ -62,5 +62,5 @@ try {
     }
   }
   assert.equal(selectPublishedArticles(simulated, Date.parse('2026-11-30T08:00:00+09:00')).length,30);
-  console.log('14 held drafts; all JST/UTC before/at/after boundaries; no early body/related links; duplicate-free repeat builds; source hashes: passed.');
+  console.log('Nov 17 released and 13 held drafts; all JST/UTC before/at/after boundaries; no early body/related links; duplicate-free repeat builds; source hashes: passed.');
 } finally {fs.rmSync(tmp, {recursive:true,force:true});}

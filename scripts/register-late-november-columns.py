@@ -1,4 +1,4 @@
-"""Register the supplied Nov 17–30 manuscripts as held drafts; never authorize release.
+"""Register the supplied Nov 17–30 manuscripts as held drafts; preserve the explicitly authorized Nov 17 release.
 
 The checked-in source, edited Markdown and unified diffs make every edit reviewable.
 Default mode checks the deterministic projection; --sync updates only this batch.
@@ -235,6 +235,11 @@ def build(meta, titles):
     if day in SUPPLIED_IMAGES:
         article["image"] = SUPPLIED_IMAGES[day].copy()
         next(c for c in article["validationResults"] if c["check"] == "image-supplied")["passed"] = True
+    # Nov 17 was explicitly authorized for immediate release by the user.
+    if day == 17:
+        article.update(status='published', publicationPending=False, approvalRevision=1,
+                       publishedTimestamp='2026-11-17T05:57:38+09:00')
+        next(c for c in article['validationResults'] if c['check'] == 'release-approved')['passed'] = True
     return article, edited_text
 
 
@@ -264,7 +269,7 @@ def main():
     if sync:
         ids = {a['id'] for a in generated}
         REGISTRY.write_text(json.dumps([a for a in records if a['id'] not in ids] + generated, ensure_ascii=False, indent=2) + '\n')
-    print('Nov 17–30: 14 supplied manuscripts projected; all held drafts, no images substituted, no release authorized.')
+    print('Nov 17–30: 14 supplied manuscripts projected; Nov 17 release preserved, remaining 13 held drafts; no images substituted.')
 
 
 if __name__ == '__main__':
