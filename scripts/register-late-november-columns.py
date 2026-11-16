@@ -121,7 +121,7 @@ BATCH = [
 
 SUPPLIED_IMAGES = {
     17: dict(src="/images/columns/dog-owner-voice.webp", width=1280, height=720, alt="公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト"),
-    18: dict(src="/images/columns/young-onset-dementia.webp", width=1280, height=720, alt="室内で穏やかに話し合う眼鏡の男性と女性の水彩イラスト"),
+    18: dict(src="/images/columns/young-onset-dementia.webp", width=1280, height=720, alt="認知症の説明資料を手にした女性と、テーブルを挟んで話す眼鏡の男性の水彩イラスト"),
     19: dict(src="/images/columns/wallet-contents-safety.webp", width=1280, height=720, alt="財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト"),
     20: dict(src="/images/columns/qr-code-inventor.webp", width=1280, height=720, alt="設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト"),
     21: dict(src="/images/columns/cat-owner-memory.webp", width=1280, height=720, alt="帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト"),
