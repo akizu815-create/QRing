@@ -3253,7 +3253,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -3261,7 +3261,13 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/dog-owner-voice.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト"
+    }
   },
   {
     "id": "young-onset-dementia",

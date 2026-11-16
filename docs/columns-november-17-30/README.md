@@ -4,8 +4,8 @@
 
 ## 公開状態と残作業
 
-- 全14記事は `draft` / `publicationPending: true` / `approvalRevision: null`。画像未登録・公開承認未了の検証フラグはfalse。日付を過ぎても、Cloudflareブランチプレビューでも公開対象になりません。
-- 画像14枚は未提供です。生成・流用・選定はしていません。画像ファイル、alt、OGP画像、画像ありでのスマホ表示は未検証です。画像到着後に固有ファイルを登録します。
+- 全14記事は `draft` / `publicationPending: true` / `approvalRevision: null`。未登録画像・公開承認未了の検証フラグはfalse（11/17のimage-suppliedのみtrue）。日付を過ぎても、Cloudflareブランチプレビューでも公開対象になりません。
+- 11/17の画像1枚を登録済み、残り13枚は未提供です。生成・流用・選定はしていません。画像ファイル、alt、OGP画像、画像ありでのスマホ表示は未検証です。画像到着後に固有ファイルを登録します。
 - 11/23と11/29は一次資料の最終確認も未完了として検証フラグをfalseにしています。取得制限をサイトのリンク切れや本文の誤りと断定していません。
 - 画像と内容確認が完了した後、明示的な公開承認を受けて既存の公開フラグを更新する必要があります。このPRをマージするだけで14記事が自動公開される状態にはしていません。
 - mainへのマージ、本番公開、外部アカウント追加、GA4/GSC設定変更は行っていません。
@@ -14,7 +14,7 @@
 
 |日付|H1／記事タイトル|予定URL|画像|
 |---|---|---|---|
-|11/17|犬は飼い主の声を聞き分けられる？声を覚える仕組みとは|`/column/dog-owner-voice/`|未登録|
+|11/17|犬は飼い主の声を聞き分けられる？声を覚える仕組みとは|`/column/dog-owner-voice/`|登録済み|
 |11/18|認知症は何歳から始まる？若年性認知症の特徴と相談先|`/column/young-onset-dementia/`|未登録|
 |11/19|財布に入れてはいけないものってある？紛失時に困らないための整理術|`/column/wallet-contents-safety/`|未登録|
 |11/20|QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史|`/column/qr-code-inventor/`|未登録|
@@ -59,7 +59,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 - 関連活用／サービス: [ペットの迷子への備え](/use-cases/pets/)
 - 参考資料URL:
   - [Gábor et al. (2022)｜The acoustic bases of human voice identity processing in dogs（Animal Cognition）](https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/dog-owner-voice.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/dog-owner-voice.webp` 登録済み（1280×720、208,862 bytes）。alt: 公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト。添付JPEGをトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/18 認知症は何歳から始まる？若年性認知症の特徴と相談先
 
@@ -369,3 +369,5 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 ## ローカルでの再確認
 
 `npm run test:late-november-columns` と既存の `npm run test:columns` / `npm run test:scheduled-columns` を実行できます。通常状態の `npm run build` は14件を除外します。日時を固定する場合は `COLUMN_BUILD_AT=2026-11-17T08:00:00+09:00 NEXT_TELEMETRY_DISABLED=1 npm run build` とし、同じ日時で `check:column-export` / `check:column-navigation` を実行します。未承認の状態は日時だけを変更しても公開されません。テスト目的の承認済みコピーはリモートへpushしないでください。
+
+11/17挿絵追記：ユーザー提供画像1枚を登録。既存の検証結果は画像追加前の記録で、当該画像の追加後検証は image-validation.json に記録。未提供の13枚は引き続き未登録です。

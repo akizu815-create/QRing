@@ -199,7 +199,7 @@ def build(meta, titles):
     file = f'src/content/columns/approved/{slug}.md'
     sources = [dict(id=k, label=SOURCES[k][0], href=SOURCES[k][1], checkedAt=CHECKED)
                for k in meta['sources']]
-    return dict(id=slug, slug=slug, title=title, summary=meta['lead'][0], introduction=meta['lead'][1:],
+    article = dict(id=slug, slug=slug, title=title, summary=meta['lead'][0], introduction=meta['lead'][1:],
                 seoTitle=seo, metaDescription=desc, category=meta['category'], primaryAudience='personal', tags=meta['tags'],
                 status='draft', publicationOrigin='editorial', publishedAt=f'2026-11-{day}', editionDate=f'2026-11-{day}',
                 publishedTimestamp=f'2026-11-{day}T08:00:00+09:00', publicationPending=True,
@@ -214,7 +214,11 @@ def build(meta, titles):
                 claims=[dict(text=meta['lead'][0], sourceIds=meta['sources'], verified=day not in [23, 29])],
                 validationResults=[dict(check='source-review-complete', passed=day not in [23, 29]),
                                    dict(check='image-supplied', passed=False), dict(check='release-approved', passed=False)],
-                generationRunId=None, promptVersion=None), edited_text
+                generationRunId=None, promptVersion=None)
+    if day == 17:
+        article["image"] = dict(src="/images/columns/dog-owner-voice.webp", width=1280, height=720, alt="公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト")
+        next(c for c in article["validationResults"] if c["check"] == "image-supplied")["passed"] = True
+    return article, edited_text
 
 
 def main():

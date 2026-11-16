@@ -28,8 +28,13 @@ try {
     assert.equal(a.status, 'draft');
     assert.equal(a.publicationPending, true);
     assert.equal(a.approvalRevision, null);
-    assert.equal(a.image, undefined, 'No substituted or invented artwork');
-    assert.equal(a.validationResults.find(c=>c.check==='image-supplied').passed, false);
+    if (i===0) {
+      assert.equal(a.image.src, '/images/columns/dog-owner-voice.webp');
+      assert.equal(a.image.width,1280); assert.equal(a.image.height,720);
+      assert(fs.existsSync('public'+a.image.src));
+      assert(a.image.alt.includes('声'));
+    } else assert.equal(a.image, undefined, 'No substituted or invented artwork');
+    assert.equal(a.validationResults.find(c=>c.check==='image-supplied').passed, i===0);
     assert.equal(a.validationResults.find(c=>c.check==='release-approved').passed, false);
     for (const id of a.relatedArticleIds) assert(ids.has(id), `${a.slug}: missing related id ${id}`);
     assert.equal(crypto.createHash('sha256').update(fs.readFileSync(a.approvalRecord.sourceFile)).digest('hex'), a.approvalRecord.sha256);
