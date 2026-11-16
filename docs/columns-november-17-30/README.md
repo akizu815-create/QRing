@@ -4,8 +4,8 @@
 
 ## 公開状態と残作業
 
-- 全14記事は `draft` / `publicationPending: true` / `approvalRevision: null`。未登録画像・公開承認未了の検証フラグはfalse（11/17〜21のimage-suppliedのみtrue）。日付を過ぎても、Cloudflareブランチプレビューでも公開対象になりません。
-- 11/17〜21の画像5枚を登録済み、残り9枚は未提供です。生成・流用・選定はしていません。画像ファイル、alt、OGP画像、画像ありでのスマホ表示は未検証です。画像到着後に固有ファイルを登録します。
+- 全14記事は `draft` / `publicationPending: true` / `approvalRevision: null`。全件のimage-suppliedはtrue、公開承認未了の検証フラグはfalse。日付を過ぎても、Cloudflareブランチプレビューでも公開対象になりません。
+- 全14枚のユーザー提供挿絵を登録済みです。構図を変更せず1280×720 WebPに最適化し、altを設定。画像込みの390px/1280px表示・OGP・Article.imageをローカル公開シミュレーションで検証（all-images-validation.json）。生成・流用・代替選定は行っていません。
 - 11/23と11/29は一次資料の最終確認も未完了として検証フラグをfalseにしています。取得制限をサイトのリンク切れや本文の誤りと断定していません。
 - 画像と内容確認が完了した後、明示的な公開承認を受けて既存の公開フラグを更新する必要があります。このPRをマージするだけで14記事が自動公開される状態にはしていません。
 - mainへのマージ、本番公開、外部アカウント追加、GA4/GSC設定変更は行っていません。
@@ -19,15 +19,15 @@
 |11/19|財布に入れてはいけないものってある？紛失時に困らないための整理術|`/column/wallet-contents-safety/`|登録済み|
 |11/20|QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史|`/column/qr-code-inventor/`|登録済み|
 |11/21|猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議|`/column/cat-owner-memory/`|登録済み|
-|11/22|高齢者が転倒しやすいのはなぜ？家の中でできる予防対策|`/column/elderly-fall-prevention/`|未登録|
-|11/23|スマホの緊急SOS機能、使ったことある？もしものときの備え方|`/column/smartphone-emergency-sos/`|未登録|
-|11/24|電話番号から個人情報はどこまでわかる？知られたときのリスクと対策|`/column/phone-number-personal-information/`|未登録|
-|11/25|犬や猫は地震を予知できるって本当？動物の不思議な行動と防災|`/column/pets-earthquake-prediction/`|未登録|
-|11/26|「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える|`/column/monitoring-and-surveillance/`|未登録|
-|11/27|QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説|`/column/qr-code-scan-mechanism/`|未登録|
-|11/28|災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え|`/column/disaster-family-contact/`|未登録|
-|11/29|なぜ人は物をなくすの？脳の仕組みと忘れ物を減らすコツ|`/column/why-we-misplace-things/`|未登録|
-|11/30|電話番号を教えずに、声だけでつながる時代へ|`/column/number-private-calls/`|未登録|
+|11/22|高齢者が転倒しやすいのはなぜ？家の中でできる予防対策|`/column/elderly-fall-prevention/`|登録済み|
+|11/23|スマホの緊急SOS機能、使ったことある？もしものときの備え方|`/column/smartphone-emergency-sos/`|登録済み|
+|11/24|電話番号から個人情報はどこまでわかる？知られたときのリスクと対策|`/column/phone-number-personal-information/`|登録済み|
+|11/25|犬や猫は地震を予知できるって本当？動物の不思議な行動と防災|`/column/pets-earthquake-prediction/`|登録済み|
+|11/26|「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える|`/column/monitoring-and-surveillance/`|登録済み|
+|11/27|QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説|`/column/qr-code-scan-mechanism/`|登録済み|
+|11/28|災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え|`/column/disaster-family-contact/`|登録済み|
+|11/29|なぜ人は物をなくすの？脳の仕組みと忘れ物を減らすコツ|`/column/why-we-misplace-things/`|登録済み|
+|11/30|電話番号を教えずに、声だけでつながる時代へ|`/column/number-private-calls/`|登録済み|
 
 JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し、UTC変換と前後境界をテストしています。公開予定日時とActions開始・ビルド・配信反映は別です。既存cron（07:50先行、08:15/08:45補完）は変更していません。scheduleの遅延・起動漏れ、Pages配信・CDN反映の遅延があるため08:00ちょうどは保証できません。
 
@@ -165,7 +165,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 - 参考資料URL:
   - [消費者庁｜高齢者の事故を防ぐために](https://www.caa.go.jp/policies/policy/consumer_safety/caution/caution_055/)
   - [国立長寿医療研究センター｜高齢者のための転倒防止セルフチェック](https://www.ncgg.go.jp/hospital/tento/)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/elderly-fall-prevention.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/elderly-fall-prevention.webp` 登録済み（1280×720、129,740 bytes）。alt: 室内の段差でつまずきそうになり、壁の手すりにつかまる高齢女性の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/23 スマホの緊急SOS機能、使ったことある？もしものときの備え方
 
@@ -186,7 +186,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
   - [Apple｜SOSを使ってiPhoneで緊急通報サービスに連絡する](https://support.apple.com/ja-jp/guide/iphone/iph3c99374c/ios)
   - [Google｜Androidスマートフォンを使用して緊急時に助けを求める](https://support.google.com/android/answer/9319337?hl=ja)
   - [Apple｜日本での衛星経由の緊急SOS提供開始と緊急通報の基本操作](https://www.apple.com/jp/newsroom/2024/07/emergency-sos-via-satellite-available-today/)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/smartphone-emergency-sos.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/smartphone-emergency-sos.webp` 登録済み（1280×720、198,176 bytes）。alt: 救急用品や充電器を用意したテーブルで、スマートフォンの緊急通報設定を確認する女性の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/24 電話番号から個人情報はどこまでわかる？知られたときのリスクと対策
 
@@ -210,7 +210,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
   - [LINEヘルプセンター｜アドレス帳の情報の利用について](https://help.line.me/line/?contentId=10002423&lang=ja)
   - [IPA｜情報セキュリティ安心相談窓口の相談状況（2025年第1四半期）](https://www.ipa.go.jp/security/anshin/reports/2025q1outline.html)
   - [株式会社QRing｜つながるQR サービス紹介](https://www.qring.jp/service/)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/phone-number-personal-information.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/phone-number-personal-information.webp` 登録済み（1280×720、169,644 bytes）。alt: 連絡先のプライバシーについて考えながらスマートフォンを見る女性の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/25 犬や猫は地震を予知できるって本当？動物の不思議な行動と防災
 
@@ -230,7 +230,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 - 参考資料URL:
   - [気象庁｜地震予知について](https://www.jma.go.jp/jma/kishou/know/faq/faq24.html)
   - [環境省｜ペットの災害対策](https://www.env.go.jp/nature/dobutsu/aigo/1_law/disaster.html)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/pets-earthquake-prediction.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/pets-earthquake-prediction.webp` 登録済み（1280×720、184,954 bytes）。alt: 揺れる照明に反応する犬と猫を、室内で見つめる高齢の夫婦の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/26 「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える
 
@@ -253,7 +253,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
   - [厚生労働省｜認知症の人の日常生活・社会生活における意思決定支援ガイドライン](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212395.html)
   - [個人情報保護委員会｜携帯電話番号やクレジットカード番号は個人識別符号に該当しますか](https://www.ppc.go.jp/all_faq_index/faq1-q1-25/)
   - [株式会社QRing｜つながるQR サービス紹介](https://www.qring.jp/service/)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/monitoring-and-surveillance.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/monitoring-and-surveillance.webp` 登録済み（1280×720、179,270 bytes）。alt: タブレットを一緒に見ながら見守りについて話す高齢女性と家族の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/27 QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説
 
@@ -276,7 +276,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
   - [デンソーウェーブ｜QRコードとは？](https://www.qrcode.com/about/)
   - [警視庁｜QRコードを利用する時の注意点](https://www.keishicho.metro.tokyo.lg.jp/kurashi/cyber/notes/qrcord.html)
   - [株式会社QRing｜つながるQR サービス紹介](https://www.qring.jp/service/)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/qr-code-scan-mechanism.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/qr-code-scan-mechanism.webp` 登録済み（1280×720、155,182 bytes）。alt: 店頭のQRコードをスマートフォンでスキャンし、情報ページを確認する女性の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/28 災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え
 
@@ -296,7 +296,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 - 参考資料URL:
   - [NTT東日本｜災害用伝言ダイヤル（171）概要とご提供のしくみ](https://www.ntt-east.co.jp/saigai/voice171s/intro.html)
   - [NTT東日本｜災害用伝言板（web171）](https://www.ntt-east.co.jp/saigai/web171/)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/disaster-family-contact.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/disaster-family-contact.webp` 登録済み（1280×720、178,112 bytes）。alt: 防災用品や地図をそろえ、スマートフォンとメモで家族の連絡方法を確認する女性の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/29 なぜ人は物をなくすの？脳の仕組みと忘れ物を減らすコツ
 
@@ -317,7 +317,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 - 参考資料URL:
   - [Craik et al. (1996)｜The effects of divided attention on encoding and retrieval processes in human memory](https://macal.missouri.edu/assets/doc/pubs/EffectsDividedAttentionEncodingRetrieval.pdf)
   - [米国国立医学図書館 MedlinePlus｜Memory loss](https://www.medlineplus.gov/ency/article/003257.htm)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/why-we-misplace-things.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/why-we-misplace-things.webp` 登録済み（1280×720、177,724 bytes）。alt: 鍵とスマートフォンの置き場所を思い出そうとして室内を探す男性の水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ### 11/30 電話番号を教えずに、声だけでつながる時代へ
 
@@ -338,11 +338,11 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 - 関連活用／サービス: [つながるQRのサービスと利用条件](/service/)
 - 参考資料URL:
   - [株式会社QRing｜つながるQR サービス紹介](https://www.qring.jp/service/)
-- 挿絵: 未登録。受領後の予定ファイルは `public/images/columns/number-private-calls.webp`。実画像の内容を見てalt・寸法を設定（現時点では参照を追加しない）。
+- 挿絵: `public/images/columns/number-private-calls.webp` 登録済み（1280×720、178,046 bytes）。alt: バッグのQRタグをスキャンする女性と、電話で応じる高齢女性を描いた水彩イラスト。添付画像をトリミングせずWebPへ最適化。公開承認は未了。
 
 ## 構造・実装
 
-既存のArticle・BreadcrumbList・WebPage・Organization参照をそのまま利用し、JSON-LDを重複追加しません。H1は記事タイトル1個、節はH2、手順の小見出しはH3。canonicalは既存の`/column/[slug]/`から生成します。未更新記事に架空の更新日は付けず`updatedAt: null`。公開承認後の`datePublished`は各日08:00 JSTで、更新した際のみdateModifiedが出ます。OGP画像・Article.imageは画像登録待ちです。
+既存のArticle・BreadcrumbList・WebPage・Organization参照をそのまま利用し、JSON-LDを重複追加しません。H1は記事タイトル1個、節はH2、手順の小見出しはH3。canonicalは既存の`/column/[slug]/`から生成します。未更新記事に架空の更新日は付けず`updatedAt: null`。公開承認後の`datePublished`は各日08:00 JSTで、更新した際のみdateModifiedが出ます。OGP画像・Article.imageは各記事の固有画像を参照します。
 
 新記事同士の関連記事は既存の相互リンク選択と最大3件に合わせて整理。既存記事への本文リンクに加え、既存のrelatedLinks枠で各記事最大1件を補足しています。既存の猫専用迷子記事はないため、犬の記事を猫の迷子対策として誘導せずペット活用ページを関連先にしました。
 
@@ -361,7 +361,7 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 
 ## 次の確認の優先順位
 
-1. 残り9枚の挿絵の受領・対応確認・最適化・alt/OGP設定・画像込みスマホ検証。
+1. 全14枚の挿絵登録・対応確認・最適化・alt/OGP設定・画像込みスマホ検証は完了。
 2. 11/23の最新Apple操作条件、11/29の原著全文を再確認。本文の編集差分を確認し、特に11/30とSERVICEの意図重複を承認時に判断。
 3. 記事ごとの公開承認後に既存の公開状態を更新し、実ビルド／未来記事抑止を再検証してPRをマージ。予定日を過ぎてから承認された場合、次の正常なビルドで公開対象になる。
 4. 本番公開後に既存Actionsのlive照合とSummaryで反映を確認。SEO/AIOの表示・引用を保証する設定ではないため、Search Consoleで実績を追う。
@@ -375,3 +375,5 @@ JST 08:00は前日23:00 UTCです。`publishedTimestamp`に`+09:00`を明記し�
 11/18〜21挿絵追記：添付順に男性と女性の会話、財布の整理、設計室の技術者、飼い主と猫を各記事へ登録。画像は実在人物の写真や診断結果として扱わず、描写に基づくaltを設定。images-18-21-validation.json に追加検証を記録。現在は5枚登録済み、9枚未登録で、全14記事の公開保留は維持。
 
 11/18挿絵差し替え：ユーザー指定の認知症資料を手に話す場面へ差し替え。181,944 bytes、1280×720 WebP。alt・OGP・390px/1280px表示を再検証済み。本文・公開状態・予定日時は維持。
+
+最終画像登録追記：11/23〜30の8枚、および11/22の転倒予防用画像を追加。これで11/17〜30の14記事すべてに固有の画像が揃いました。過去の画像未登録という記録は各作業時点の履歴です。最新の画像検証は all-images-validation.json を参照。画像が揃っても公開承認を自動的に付与せず、全14件のdraft・publicationPending・approvalRevisionは維持。

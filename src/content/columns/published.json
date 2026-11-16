@@ -4178,7 +4178,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -4186,7 +4186,13 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/elderly-fall-prevention.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "室内の段差でつまずきそうになり、壁の手すりにつかまる高齢女性の水彩イラスト"
+    }
   },
   {
     "id": "smartphone-emergency-sos",
@@ -4351,7 +4357,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -4359,7 +4365,13 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/smartphone-emergency-sos.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "救急用品や充電器を用意したテーブルで、スマートフォンの緊急通報設定を確認する女性の水彩イラスト"
+    }
   },
   {
     "id": "phone-number-personal-information",
@@ -4543,7 +4555,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -4551,7 +4563,13 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/phone-number-personal-information.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "連絡先のプライバシーについて考えながらスマートフォンを見る女性の水彩イラスト"
+    }
   },
   {
     "id": "pets-earthquake-prediction",
@@ -4724,7 +4742,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -4732,7 +4750,13 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/pets-earthquake-prediction.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "揺れる照明に反応する犬と猫を、室内で見つめる高齢の夫婦の水彩イラスト"
+    }
   },
   {
     "id": "monitoring-and-surveillance",
@@ -4913,7 +4937,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -4921,7 +4945,13 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/monitoring-and-surveillance.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "タブレットを一緒に見ながら見守りについて話す高齢女性と家族の水彩イラスト"
+    }
   },
   {
     "id": "qr-code-scan-mechanism",
@@ -5104,7 +5134,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -5112,7 +5142,13 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/qr-code-scan-mechanism.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "店頭のQRコードをスマートフォンでスキャンし、情報ページを確認する女性の水彩イラスト"
+    }
   },
   {
     "id": "disaster-family-contact",
@@ -5298,7 +5334,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -5306,7 +5342,13 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/disaster-family-contact.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "防災用品や地図をそろえ、スマートフォンとメモで家族の連絡方法を確認する女性の水彩イラスト"
+    }
   },
   {
     "id": "why-we-misplace-things",
@@ -5491,7 +5533,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -5499,7 +5541,13 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/why-we-misplace-things.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "鍵とスマートフォンの置き場所を思い出そうとして室内を探す男性の水彩イラスト"
+    }
   },
   {
     "id": "number-private-calls",
@@ -5681,7 +5729,7 @@
       },
       {
         "check": "image-supplied",
-        "passed": false
+        "passed": true
       },
       {
         "check": "release-approved",
@@ -5689,6 +5737,12 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/number-private-calls.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "バッグのQRタグをスキャンする女性と、電話で応じる高齢女性を描いた水彩イラスト"
+    }
   }
 ]

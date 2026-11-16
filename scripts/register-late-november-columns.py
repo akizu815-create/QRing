@@ -125,6 +125,15 @@ SUPPLIED_IMAGES = {
     19: dict(src="/images/columns/wallet-contents-safety.webp", width=1280, height=720, alt="財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト"),
     20: dict(src="/images/columns/qr-code-inventor.webp", width=1280, height=720, alt="設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト"),
     21: dict(src="/images/columns/cat-owner-memory.webp", width=1280, height=720, alt="帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト"),
+    23: dict(src="/images/columns/smartphone-emergency-sos.webp", width=1280, height=720, alt="救急用品や充電器を用意したテーブルで、スマートフォンの緊急通報設定を確認する女性の水彩イラスト"),
+    24: dict(src="/images/columns/phone-number-personal-information.webp", width=1280, height=720, alt="連絡先のプライバシーについて考えながらスマートフォンを見る女性の水彩イラスト"),
+    25: dict(src="/images/columns/pets-earthquake-prediction.webp", width=1280, height=720, alt="揺れる照明に反応する犬と猫を、室内で見つめる高齢の夫婦の水彩イラスト"),
+    26: dict(src="/images/columns/monitoring-and-surveillance.webp", width=1280, height=720, alt="タブレットを一緒に見ながら見守りについて話す高齢女性と家族の水彩イラスト"),
+    27: dict(src="/images/columns/qr-code-scan-mechanism.webp", width=1280, height=720, alt="店頭のQRコードをスマートフォンでスキャンし、情報ページを確認する女性の水彩イラスト"),
+    28: dict(src="/images/columns/disaster-family-contact.webp", width=1280, height=720, alt="防災用品や地図をそろえ、スマートフォンとメモで家族の連絡方法を確認する女性の水彩イラスト"),
+    29: dict(src="/images/columns/why-we-misplace-things.webp", width=1280, height=720, alt="鍵とスマートフォンの置き場所を思い出そうとして室内を探す男性の水彩イラスト"),
+    30: dict(src="/images/columns/number-private-calls.webp", width=1280, height=720, alt="バッグのQRタグをスキャンする女性と、電話で応じる高齢女性を描いた水彩イラスト"),
+    22: dict(src="/images/columns/elderly-fall-prevention.webp", width=1280, height=720, alt="室内の段差でつまずきそうになり、壁の手すりにつかまる高齢女性の水彩イラスト"),
 }
 
 SERVICE_PATHS = {k: f'/use-cases/{k}/' for k in ['pets', 'elderly', 'belongings']}
