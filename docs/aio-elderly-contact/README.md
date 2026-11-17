@@ -1,7 +1,7 @@
 # 高齢者への連絡サービスに関するAIO監査・最小修正
 
 対象: SERVICE `/service/`、高齢者見守り `/use-cases/elderly/`、FAQ `/faq/`。
-基点: main `2b0b9501e737a62706aa8581c0591094adf6674d`。作業ブランチ: `fix/aio-elderly-contact`。
+初回基点: main `2b0b9501e737a62706aa8581c0591094adf6674d`。修正後は最新main `13cb1640bb75754d9b8e31efc93612c6e4f6daef`を取り込み済み。作業ブランチ: `fix/aio-elderly-contact`。
 本番へのマージ・公開、外部サービス設定の変更は実施しない。
 
 ユーザーの追加指示に従い、サービス紹介ページには競合サービスへの外部リンクを掲載しない。法的文書をSEO・AIO表記ルールに基づいて自動変更しない。
@@ -83,7 +83,7 @@ SERVICE・高齢者・FAQの生成HTMLに旧用語の残存はない。法的文
 ## 検証結果
 
 - `NEXT_TELEMETRY_DISABLED=1 npm run build`: 成功（TypeScript・Next.jsビルドを含む）。
-- `npm run check:column-export` / `npm run check:column-navigation`: 成功。既存17記事・URL・日付・構造化データ・関連記事を維持。
+- `npm run check:column-export` / `npm run check:column-navigation`: 成功。既存18記事・URL・日付・構造化データ・関連記事を維持。
 - [static-validation.json](static-validation.json): 対象3ページのcanonical/H1/JSON-LD、ローカル内部リンクとアンカー、比較表1個、robots許可、対象3ページの旧用語0件、追加した競合リンク0件、保護対象ファイル・HEROソース無変更、法務JSONと現行mainのバイト単位の一致を検証。
 - [browser-validation.json](browser-validation.json): 390px / 1280px × 3ページの6ケース。FAQと高齢者Q&Aの開閉・リンク表示、横はみ出し、画像読み込み、JavaScriptエラーを確認。外部のフォント・解析通信を遮断したローカル静的配信試験。実機や本番CDNの性能試験ではない。
 - ビルドのBrowserslistデータ更新案内は既存の警告で、依存パッケージは変更していない。
