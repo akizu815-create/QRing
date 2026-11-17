@@ -1,0 +1,43 @@
+{
+  "results": [
+    {
+      "path": "/service/",
+      "title": "QRコードで電話番号を公開せず通話する仕組み｜つながるQR",
+      "canonical": "https://www.qring.jp/service/",
+      "h1": 1,
+      "jsonldTypes": [
+        "WebPage",
+        "BreadcrumbList",
+        "Service"
+      ],
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/use-cases/elderly/",
+      "title": "高齢者の見守りQRコード｜認知症の外出・迷子対策｜つながるQR",
+      "canonical": "https://www.qring.jp/use-cases/elderly/",
+      "h1": 1,
+      "jsonldTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "internalLinks": "passed"
+    },
+    {
+      "path": "/faq/",
+      "title": "つながるQRのよくあるご質問｜株式会社QRing",
+      "canonical": "https://www.qring.jp/faq/",
+      "h1": 1,
+      "jsonldTypes": [
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "internalLinks": "passed"
+    }
+  ],
+  "obsoleteTermOccurrences": 0,
+  "robots": "User-Agent: *\nAllow: /\n\nSitemap: https://www.qring.jp/sitemap.xml\n",
+  "protectedSourceFiles": "unchanged",
+  "heroSource": "unchanged",
+  "legalDefinitionChange": "terminology only"
+}

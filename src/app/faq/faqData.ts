@@ -16,7 +16,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     title: "サービスについて",
     items: [
       { question: CONSUMER_SERVICE.faq.question, answer: CONSUMER_SERVICE.faq.answer, link: CONSUMER_SERVICE.faq.link },
-      { question: "「つながるQR」とは、どのようなサービスですか？", answer: "QRコードをスキャンし、画面の「電話をかける」をタップすると、お互いの電話番号を知らせずに通話できるサービスです。高齢者の見守りやペットの迷子対策、落とし物の連絡など、さまざまな場面で利用できます。" },
+      { question: "「つながるQR」とは、どのようなサービスですか？", answer: "QRコードをスキャンし、画面の「電話をかける」をタップすると、お互いの電話番号を知らせずに通話できるサービスです。高齢者の見守りやペットの迷子対策、落とし物の連絡など、さまざまな場面で利用できます。", link: { label: "高齢者の見守りでの連絡方法", href: "/use-cases/elderly/#elderly-qr-faq" } },
       { question: "海外でも利用できますか？", answer: "本サービスの通話機能は、日本国内でのみご利用いただけます。" },
       { question: "専用アプリのインストールは必要ですか？", answer: "いいえ、必要ありません。" },
       { question: "QRコードをスキャンする人も登録が必要ですか？", answer: "いいえ、必要ありません。" },

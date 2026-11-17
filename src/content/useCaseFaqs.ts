@@ -26,7 +26,8 @@ export const elderlyQuestions: readonly UseCaseQuestion[] = [
   },
   {
     question: "家族の電話番号は発見者に分かりますか？",
-    answer: "プライバシー電話番号を経由して通話するため、ご家族と発見者は、お互いの本来の電話番号を公開せずに連絡できます。",
+    answer: `つながるQRは、プライバシー電話番号を経由して、ご家族と発見者が互いの本来の電話番号を公開せずに通話できる連絡サービスです。見つけた方が身につけたQRコードをスキャンし、画面の「電話をかける」をタップして登録先へ連絡します。${CONSUMER_SERVICE.notice}`,
+    link: { href: "/service/#privacy-call", label: "電話番号を公開しない通話の仕組み" },
   },
 ];
 

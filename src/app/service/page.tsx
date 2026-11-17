@@ -133,6 +133,8 @@ export default function ServicePage() {
                 着信には03-6555-8100〜03-6555-8199の電話番号を使用します。登録者の方は、この番号帯から着信する場合があることを事前にご確認ください。
               </p>
               <p><Link href="/price/#session-title" className="link-underline text-ink/75 transition-colors hover:text-moss">セッション・料金について詳しく見る →</Link></p>
+              <p><Link href="/use-cases/elderly/#elderly-qr-faq" className="link-underline text-ink/70 transition-colors hover:text-moss">電話番号を公開しない高齢者の見守り連絡 →</Link></p>
+              <p><Link href="/faq/" className="link-underline text-ink/70 transition-colors hover:text-moss">通話・登録についてのよくあるご質問 →</Link></p>
             </div>
           </Reveal>
         </div>
