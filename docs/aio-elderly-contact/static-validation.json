@@ -35,9 +35,11 @@
       "internalLinks": "passed"
     }
   ],
-  "obsoleteTermOccurrences": 0,
+  "obsoleteTermInTargetPages": 0,
+  "legalMainByteMatch": true,
+  "competitorLinksAdded": 0,
   "robots": "User-Agent: *\nAllow: /\n\nSitemap: https://www.qring.jp/sitemap.xml\n",
   "protectedSourceFiles": "unchanged",
   "heroSource": "unchanged",
-  "legalDefinitionChange": "terminology only"
+  "legalDefinitionChange": "none, restored exactly to main"
 }

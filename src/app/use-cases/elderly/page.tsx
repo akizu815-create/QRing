@@ -151,8 +151,6 @@ export default function ElderlyPage() {
           </div>
           <div className="body-jp mt-6 space-y-1 text-xs text-ink/55"><p>※GPS見守り・QRコード伝言板は、公式資料で確認した仕組みの例です。各サービスの機能を一律に示すものではありません。</p><p>※サービスごとに機能や運用方法は異なります。</p><p>※それぞれ役割が異なるため、併用も考えられます。</p><p>参考：<a href="https://www.city.shibuya.tokyo.jp/kenko/ninchisho/ninchisho-shien/itizyohotansakusabisu.html" className="link-underline text-moss">渋谷区のGPS位置情報探索サービス</a>、<a href="https://www.city.kurashiki.okayama.jp/fukushi/elderly/1004100/1012661/1004131.html" className="link-underline text-moss">倉敷市のQRコード伝言板による連絡支援</a></p></div>
           <p className="body-jp mt-3 text-xs text-ink/60">つながるQRには、位置追跡や転倒の自動検知を行う機能はありません。</p>
-          <p className="body-jp mt-3 text-xs text-ink/60">電話番号を公開しない音声連絡の別方式として、<a href="https://mimamoriai.net/" className="link-underline text-moss">みまもりあいステッカー</a>は、記載のフリーダイヤルに電話し、IDを入力すると登録先へ転送する仕組みです。</p>
-          <p className="body-jp mt-3 text-xs text-ink/60">QRコード伝言板の一例である<a href="https://mirai-town.com/product/dokoshiru-briefing/" className="link-underline text-moss">どこシル伝言板の公式案内</a>では、QRコードの読み取り後、発見情報を入力し、ご家族と伝言板でやり取りします。QRコード伝言板すべての機能を一律に示すものではありません。</p>
         </div>
       </section>
 
