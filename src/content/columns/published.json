@@ -3285,18 +3285,18 @@
       "65歳未満",
       "認知症 相談"
     ],
-    "status": "draft",
+    "status": "published",
     "publicationOrigin": "editorial",
     "publishedAt": "2026-11-18",
     "editionDate": "2026-11-18",
-    "publishedTimestamp": "2026-11-18T08:00:00+09:00",
-    "publicationPending": true,
+    "publishedTimestamp": "2026-11-18T00:53:05+09:00",
+    "publicationPending": false,
     "updatedAt": null,
     "reviewedAt": "2026-11-16",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
     "contentRevision": 1,
-    "approvalRevision": null,
+    "approvalRevision": 1,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
       "sourceFile": "src/content/columns/approved/young-onset-dementia.md",
@@ -3444,7 +3444,7 @@
       },
       {
         "check": "release-approved",
-        "passed": false
+        "passed": true
       }
     ],
     "generationRunId": null,

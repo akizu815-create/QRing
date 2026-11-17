@@ -236,9 +236,9 @@ def build(meta, titles):
         article["image"] = SUPPLIED_IMAGES[day].copy()
         next(c for c in article["validationResults"] if c["check"] == "image-supplied")["passed"] = True
     # Nov 17 was explicitly authorized for immediate release by the user.
-    if day == 17:
+    if day in [17, 18]:
         article.update(status='published', publicationPending=False, approvalRevision=1,
-                       publishedTimestamp='2026-11-17T05:57:38+09:00')
+                       publishedTimestamp={17: '2026-11-17T05:57:38+09:00', 18: '2026-11-18T00:53:05+09:00'}[day])
         next(c for c in article['validationResults'] if c['check'] == 'release-approved')['passed'] = True
     return article, edited_text
 
@@ -269,7 +269,7 @@ def main():
     if sync:
         ids = {a['id'] for a in generated}
         REGISTRY.write_text(json.dumps([a for a in records if a['id'] not in ids] + generated, ensure_ascii=False, indent=2) + '\n')
-    print('Nov 17–30: 14 supplied manuscripts projected; Nov 17 release preserved, remaining 13 held drafts; no images substituted.')
+    print('Nov 17–30: 14 supplied manuscripts projected; Nov 17–18 releases preserved, remaining 12 held drafts; no images substituted.')
 
 
 if __name__ == '__main__':
