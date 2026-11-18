@@ -3472,18 +3472,18 @@
       "財布 紛失",
       "暗証番号 管理"
     ],
-    "status": "draft",
+    "status": "published",
     "publicationOrigin": "editorial",
     "publishedAt": "2026-11-19",
     "editionDate": "2026-11-19",
     "publishedTimestamp": "2026-11-19T08:00:00+09:00",
-    "publicationPending": true,
+    "publicationPending": false,
     "updatedAt": null,
     "reviewedAt": "2026-11-16",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
     "contentRevision": 1,
-    "approvalRevision": null,
+    "approvalRevision": 1,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
       "sourceFile": "src/content/columns/approved/wallet-contents-safety.md",
@@ -3621,7 +3621,7 @@
       },
       {
         "check": "release-approved",
-        "passed": false
+        "passed": true
       }
     ],
     "generationRunId": null,
