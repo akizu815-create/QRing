@@ -3455,5 +3455,182 @@
       "height": 720,
       "alt": "認知症の説明資料を手にした女性と、テーブルを挟んで話す眼鏡の男性の水彩イラスト"
     }
+  },
+  {
+    "id": "wallet-contents-safety",
+    "slug": "wallet-contents-safety",
+    "title": "財布に入れてはいけないものってある？紛失時に困らないための整理術",
+    "summary": "財布をなくすと、現金だけでなく、カードや本人確認書類の手続きにも追われます。特にキャッシュカードと暗証番号のメモを一緒に持ち歩くことは避けたい組み合わせです。",
+    "introduction": [
+      "現金、クレジットカード、身分証明書、ポイントカード。毎日必要なものと、使わないまま入れているものを分けることが、紛失したときの被害を抑える備えになります。"
+    ],
+    "seoTitle": "財布に入れてはいけないものは？紛失・盗難に備える持ち物チェック",
+    "metaDescription": "財布に入れておくと危険なものは？キャッシュカードと暗証番号のメモ、使わないカードなど、紛失・盗難の被害を減らすための整理方法を紹介します。",
+    "category": "lost-items",
+    "primaryAudience": "personal",
+    "tags": [
+      "財布 紛失",
+      "暗証番号 管理"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-19",
+    "editionDate": "2026-11-19",
+    "publishedTimestamp": "2026-11-19T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/wallet-contents-safety.md",
+      "sha256": "f611c2da1b2e4f816dc52da51b3f31e6e979a8226ba6dbb0e499b2aa244da463",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "why-we-misplace-things"
+    ],
+    "relatedService": {
+      "href": "/use-cases/belongings/",
+      "label": "落とし物への備え"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/lost-wallet/",
+        "label": "お財布を落としたら？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "card",
+        "label": "金融庁｜あなたのキャッシュカードが狙われています",
+        "href": "https://www.fsa.go.jp/ordinary/card/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "lost",
+        "label": "警察庁｜遺失届とは？遺失届のポイント",
+        "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/loss.html",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "財布には大切な情報が集まっている",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "財布には、本人確認に使われる書類や決済手段など、重要なものが集まりがちです。財布を紛失すると、カードの利用停止や再発行、場合によっては警察への届出など、複数の対応が必要になります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "普段から中身を整理しておけば、万が一の際にも落ち着いて対応しやすくなります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/lost-wallet/",
+            "label": "お財布を落としたら？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "暗証番号のメモは入れない",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "特に避けたいのが、キャッシュカードと暗証番号を書いたメモを同じ財布に入れることです。財布を拾った第三者に、カードと暗証番号の両方が渡ってしまうおそれがあります。また、生年月日など推測されやすい番号を暗証番号に使うことにも注意が必要です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "暗証番号は、カードとは別に安全な方法で管理しましょう。"
+          },
+          {
+            "type": "link",
+            "href": "/column/lost-item-preparation/",
+            "label": "鍵や財布をなくさないために。今日からできる紛失対策",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "使わないカードを持ち歩かない",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "何枚ものクレジットカードや会員証を、毎日持ち歩く必要があるでしょうか。使う機会が少ないカードは、自宅などで安全に保管する方法もあります。財布に入れるカードが少なければ、紛失時に利用停止する手続きも減らせます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、日常生活に必要な身分証明書や医療関係の書類まで、一律に持ち歩かない方がよいわけではありません。自分の生活に合わせて判断することが大切です。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "財布をなくしたときのためにできること",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "財布に何を入れているか、定期的に確認しておきましょう。クレジットカード会社の連絡先などは、財布とは別の安全な場所に控えておくと便利です。また、財布を落とした場合は、必要に応じて警察に遺失届を提出し、カード会社などに連絡しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "紛失した後の負担を減らす整理",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "財布の防犯対策は、なくさないための工夫だけではありません。なくしてしまった場合の被害を小さくすることも大切です。まずは今日、財布の中身を一度見直してみませんか。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "財布 入れてはいけないもの",
+    "primaryKeyword": "財布 入れてはいけないもの",
+    "topicClusterId": "wallet-contents-safety",
+    "claims": [
+      {
+        "text": "財布をなくすと、現金だけでなく、カードや本人確認書類の手続きにも追われます。特にキャッシュカードと暗証番号のメモを一緒に持ち歩くことは避けたい組み合わせです。",
+        "sourceIds": [
+          "card",
+          "lost"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/wallet-contents-safety.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト"
+    }
   }
 ]
