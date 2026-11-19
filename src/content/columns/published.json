@@ -3632,5 +3632,211 @@
       "height": 720,
       "alt": "財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト"
     }
+  },
+  {
+    "id": "qr-code-inventor",
+    "slug": "qr-code-inventor",
+    "title": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+    "summary": "QRコードは1994年、デンソーの原昌宏氏らの開発チームが生み出した日本発の技術です。始まりは、自動車部品などの製造現場で情報を効率よく扱いたいという課題でした。",
+    "introduction": [
+      "買い物の決済、レストランのメニュー、イベントのチケット。いま目にする使い道から少し離れて、発明の背景をたどります。"
+    ],
+    "seoTitle": "QRコードは誰が発明した？1994年に日本で生まれた理由と仕組み",
+    "metaDescription": "QRコードは誰が、いつ発明したのでしょうか？1994年に日本で誕生した背景や、QRの意味、世界中に普及した理由をわかりやすく解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "QRコード 歴史",
+      "QRコード 1994年"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-20",
+    "editionDate": "2026-11-20",
+    "publishedTimestamp": "2026-11-20T04:19:12+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/qr-code-inventor.md",
+      "sha256": "e947a72f1878d843f12ab98d685576a8ac6a8a41699afd540e581745d932a08f",
+      "receivedOn": "2026-11-16",
+      "approvedOn": "2026-11-20"
+    },
+    "relatedArticleIds": [
+      "qr-code-scan-mechanism",
+      "number-private-calls"
+    ],
+    "relatedService": {
+      "href": "/service/",
+      "label": "つながるQRのサービスと利用条件"
+    },
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "history",
+        "label": "デンソーウェーブ｜QRコードの道のり",
+        "href": "https://www.qrcode.com/history/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "qr",
+        "label": "デンソーウェーブ｜QRコードとは？",
+        "href": "https://www.qrcode.com/about/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "QRコードが誕生したのは1994年",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは1994年、デンソーの開発チームによって生まれました。開発の中心となったのは、原昌宏氏らのチームです。当時、自動車部品の製造現場では、多くの情報を効率よく管理する必要がありました。"
+          },
+          {
+            "type": "paragraph",
+            "text": "しかし、従来のバーコードには記録できる情報量に限界がありました。そこで、より多くの情報を、素早く扱える新しいコードの開発が始まったのです。"
+          },
+          {
+            "type": "link",
+            "href": "/column/qr-code-scan-mechanism/",
+            "label": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "QRとは何の略？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRは「Quick Response」の略です。日本語では「素早い応答」という意味になります。その名のとおり、素早く情報を取得できることを目指して開発されました。従来のバーコードが主に横方向に情報を並べるのに対し、QRコードは縦と横の両方向を使って情報を記録します。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そのため、小さな面積にも比較的多くの情報を格納できます。"
+          },
+          {
+            "type": "link",
+            "href": "/column/number-private-calls/",
+            "label": "電話番号を教えずに、声だけでつながる時代へ",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "三つの大きな四角には意味がある",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードの角にある、三つの大きな四角。あの特徴的な模様にも、重要な役割があります。これはコードの位置や向きを認識するための目印です。スマートフォンを少し傾けてもスキャンしやすいのは、こうした設計上の工夫があるからです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "また、QRコードには誤り訂正という仕組みがあり、一部が汚れたり傷ついたりしても、情報を復元できる場合があります。ただし、どれほど損傷しても使えるというわけではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "なぜ世界中に広まったの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは、もともと製造現場のために開発されました。その後、携帯電話やスマートフォンの普及によって、一般の人にも身近な技術になりました。URLを格納すれば、紙に印刷されたコードからウェブサイトへ簡単にアクセスできます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "さらに、決済、商品管理、交通、医療、観光など、さまざまな分野へ活用が広がっています。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "QRコードは人と人をつなぐ技術にも",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "現在では、QRコードは情報を見るためだけのものではありません。例えば「つながるQR」は、QRコードをスキャンすることで、個人の電話番号を知らせずに通話できるサービスです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "もともとは工場の管理業務を便利にするために生まれた技術が、今では人と人のコミュニケーションにも活用されています。"
+          },
+          {
+            "type": "link",
+            "href": "/service/",
+            "label": "つながるQRのサービスと利用条件",
+            "prefix": "利用条件は「",
+            "suffix": "」で確認できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "製造現場から暮らしの中へ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは、日本の製造現場の課題から生まれた技術です。1994年の誕生から約30年。私たちの暮らしの中で、今も新しい使い方が生まれ続けています。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "QRコード 発明者",
+    "primaryKeyword": "QRコード 発明者",
+    "topicClusterId": "qr-code-inventor",
+    "claims": [
+      {
+        "text": "QRコードは1994年、デンソーの原昌宏氏らの開発チームが生み出した日本発の技術です。始まりは、自動車部品などの製造現場で情報を効率よく扱いたいという課題でした。",
+        "sourceIds": [
+          "history",
+          "qr",
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/qr-code-inventor.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト"
+    }
   }
 ]
