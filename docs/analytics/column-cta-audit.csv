@@ -1,0 +1,20 @@
+title,slug,public_at_audit,audience,cta,relatedService,relatedLinks,relatedArticles_public,cta_position,assessment
+離れて暮らす親の見守り、何から始める？,elderly-monitoring,True,personal,none,/use-cases/elderly/,,/column/lost-item-preparation/; /column/elderly-monitoring-contact-system/,本文後の関連サービス,適切・追加不要
+鍵や財布をなくさないために。今日からできる紛失対策,lost-item-preparation,True,personal,none,/use-cases/belongings/,,/column/elderly-monitoring/; /column/lost-wallet/,本文後の関連サービス,適切・追加不要
+高齢者の見守りに、つながる安心を。,elderly-monitoring-contact-system,True,municipal,municipal,/municipalities/,/use-cases/elderly/,/column/elderly-monitoring/; /column/unidentified-elderly/, / 本文後の自治体案内 / ページ末尾CTA,適切・追加不要
+もしも、大切な愛犬が迷子になったら。,lost-dog-preparation,True,personal,none,/service/,/use-cases/pets/,/column/dog-microchip/,本文後の関連サービス,適切・追加不要
+「もしかして認知症？」気になる初期症状をチェック,dementia-early-signs,True,personal,none,,/use-cases/elderly/,/column/dementia-forgetfulness/,本文内の既存リンクを維持,適切・追加不要
+老人ホームって種類が多すぎ！何が違うの？,senior-care-facility-types,True,personal,none,,/use-cases/elderly/,/column/care-insurance-age/,本文内の既存リンクを維持,適切・追加不要
+そういえば、学校の連絡網ってなくなった？,school-contact-list-privacy,True,personal,none,,,/column/photo-location-privacy/,本文内の既存リンクを維持,用途を限定しない記事のため誘導を強制追加しない
+要支援？要介護？いったい何が違うの？,care-levels,True,personal,none,,/use-cases/elderly/,/column/care-insurance-age/,本文内の既存リンクを維持,適切・追加不要
+お財布を落としたら？,lost-wallet,True,personal,none,,/use-cases/belongings/,/column/lost-item-preparation/; /column/lost-property-retention/,本文内の既存リンクを維持,適切・追加不要
+認知症と物忘れ、何が違う？,dementia-forgetfulness,True,personal,none,,/use-cases/elderly/,/column/dementia-early-signs/,本文内の既存リンクを維持,適切・追加不要
+忘れ物はいつまで保管する？,lost-property-retention,True,business,none,,/use-cases/belongings/,/column/lost-wallet/,本文内の既存リンクを維持,適切・追加不要
+写真の位置情報、大丈夫？,photo-location-privacy,True,personal,none,,/service/,/column/school-contact-list-privacy/; /column/unknown-calls/,本文内の既存リンクを維持,適切・追加不要
+身元不明の高齢者、どう探す？,unidentified-elderly,True,municipal,none,,/municipalities/,/column/elderly-monitoring-contact-system/, / 本文後の自治体案内,適切・追加不要
+犬のマイクロチップって何？,dog-microchip,True,personal,none,,/use-cases/pets/,/column/lost-dog-preparation/,本文内の既存リンクを維持,適切・追加不要
+介護保険って何歳から？,care-insurance-age,True,personal,none,,/use-cases/elderly/,/column/senior-care-facility-types/; /column/care-levels/,本文内の既存リンクを維持,適切・追加不要
+知らない番号から電話が来たら、出るべき？,unknown-calls,True,personal,none,,,/column/photo-location-privacy/,本文内の既存リンクを維持,用途を限定しない記事のため誘導を強制追加しない
+犬は飼い主の声を聞き分けられる？声を覚える仕組みとは,dog-owner-voice,True,personal,none,/use-cases/pets/,/column/dog-microchip/,,本文後の関連サービス,適切・追加不要
+認知症は何歳から始まる？若年性認知症の特徴と相談先,young-onset-dementia,True,personal,none,/use-cases/elderly/,/column/dementia-early-signs/,,本文後の関連サービス,適切・追加不要
+財布に入れてはいけないものってある？紛失時に困らないための整理術,wallet-contents-safety,True,personal,none,/use-cases/belongings/,/column/lost-wallet/,,本文後の関連サービス,適切・追加不要

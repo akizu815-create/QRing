@@ -44,6 +44,11 @@ export default function ServicePage() {
                   専用アプリは不要。見つけてくださった方が、画面の『電話をかける』をタップするだけで登録先につながります。
                 </p>
               </div>
+              <div className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-sm">
+                <Link href="/use-cases/elderly/" className="link-underline text-moss">高齢者の外出時の見守り →</Link>
+                <Link href="/use-cases/pets/" className="link-underline text-moss">ペットの迷子対策 →</Link>
+                <Link href="/use-cases/belongings/" className="link-underline text-moss">持ち物の紛失対策 →</Link>
+              </div>
               <p id="use-cases" className="mt-7 scroll-mt-28 text-sm">
                 <Link href="/#use-cases" className="link-underline text-ink/70 transition-colors hover:text-moss">
                   活用シーンはHOMEで見る →

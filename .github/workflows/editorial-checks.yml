@@ -6,6 +6,7 @@ on:
       - 'scripts/seo_ops/**'
       - 'src/lib/columns/**'
       - 'tests/**'
+      - 'integrations/**'
       - 'package*.json'
       - '.github/workflows/editorial-checks.yml'
 permissions:
@@ -27,6 +28,7 @@ jobs:
           python-version: '3.12'
       - run: npm ci
       - run: npm run test:columns
+      - run: npm run test:analytics-prep
       - run: npm run test:seo-ops
       - run: npm run test:editorial
       - run: npm run build
