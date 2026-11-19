@@ -16,7 +16,7 @@
 |`src/lib/columns/publication.ts`、`index.ts`、`navigation.ts`|正常 / 公開フロー変更禁止|承認・改訂・検証・日時の共通判定。HOME・一覧・関連表示で再利用|変更なし|
 |19記事の一覧・関連記事・CTA|正常|全記事の設定を[CSV](column-cta-audit.csv)へ記録。関連サービス・自治体向け導線を既に保持|新しいCTAは追加しない|
 |`src/components/columns/ColumnArticle.tsx`|正常|承認原稿の関連サービスは本文後、関連記事はその後。municipal/contextual CTAも既存実装|変更なし|
-|`src/app/service/page.tsx`|改善候補|仕組み・番号非公開・操作・料金・相談・準備中案内あり。ペット・持ち物の専用ページへはHOME経由|既存説明の下へ3用途の短いリンクだけを追加|
+|`src/app/service/page.tsx`|改善候補|仕組み・番号非公開・操作・料金・相談・準備中案内あり。ペット・持ち物の専用ページへはHOME経由|既存説明の下へ3用途の短いリンクを配置。重複するHOMEリンクを削除し、既存アンカーを移設|
 |`src/app/contact/page.tsx`|正常 / 本番応答は要確認|headの0秒meta refresh、canonicalとOG URLは正式窓口 `https://axb.qring.jp/contact`。フォールバックリンクあり。HTML転送でありHTTP301ではない|既存方式維持|
 |www / 非www / HTTP / HTTPS / 末尾スラッシュ|要確認|静的構成はtrailingSlash、canonicalはwww。配信側の実HTTP応答は通信制限で未取得|ドメイン・Cloudflare設定変更なし|
 |`src/app/layout.tsx`|正常 / アプリ側は要確認|`G-M75FF9RHJ6`のgtagローダー・configは各1つ。成果イベントの既存送信なし|新しいタグは追加しない|
@@ -41,7 +41,7 @@
 
 |変更ファイル|変更前 → 変更後|理由・影響|
 |---|---|---|
-|`src/app/service/page.tsx`|HOME活用シーンへのリンク → それを維持して3用途への短いテキストリンクも配置|専用ページへ直接到達。既存本文・title・description・H1・canonical・機能は維持|
+|`src/app/service/page.tsx`|HOME活用シーンへのリンク → 3用途への短いテキストリンクへ整理（HOMEへの重複リンクは削除）|専用ページへ直接到達。既存本文・title・description・H1・canonical・機能は維持|
 |`integrations/apps-script/qring-ai-traffic.gs`|未存在 → デフォルト無効の独立集計コード|既存更新関数とトリガーは変更しない。サイトには読み込まれない|
 |`integrations/ga4/completion-events.mjs`|未存在 → 成功フック接続前のイベント参照コード|公式サイトからimportしない。クリックを成果にしない|
 |`tests/analytics/*`、`package.json`|未存在 → 17件のモック検証と実行コマンド|実送信・外部アクセスなし|

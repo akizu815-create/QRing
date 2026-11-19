@@ -15,7 +15,7 @@
 |`npm run check:column-navigation`|19記事、通常一覧3ページ、自治体一覧1ページ、孤立記事0。最新表示・相互関連記事成功|
 |`node scripts/test-seo-foundation.mjs`|成功。未取得データと0、実測/ラボ指標、スコープ制限等の既存検証|
 |`python3 scripts/seo-audit.py --check`|38公開ページ、内部リンク切れ0、検査エラー0。問い合わせ・旧SHOPも既存条件を維持|
-|mainとの生成HTML比較|43ページでtitle・description・canonical・見出し・画像・JSON-LDが同一。SERVICEの3リンク以外の本文を維持。その他ページの本文・リンクも同一。robots.txt・sitemap.xmlも同一|
+|mainとの生成HTML比較|43ページでtitle・description・canonical・見出し・画像・JSON-LDが同一。SERVICEの3リンク追加とHOMEへの重複リンク削除を除き、本文を維持。その他ページの本文・リンクも同一。robots.txt・sitemap.xmlも同一|
 |PC・スマートフォン|9ページ × 6幅 = 54ケース。375/390/430/1280/1440/1920pxで横はみ出し0、各main H1は1つ|
 |GA4タグのブラウザ検査|各ケースでgtagローダー1、config1。完了イベント0。実GAへの通信は遮断したため受信検証とは異なる|
 |HEROの維持|同じmainの比較ビルドと6幅でスクリーンショットの画素一致。HERO・画像・フォント・スタイルのソース差分なし|
@@ -32,3 +32,9 @@
 - GitHub CIの実行結果はDraft PR作成後に確認する。ローカル成功とCI成功は区別する。
 
 `.github/workflows/deploy.yml`、記事原稿・画像、公開レジストリ、SEO共通定義、HERO、料金・通話仕様はmainから変更していない。問い合わせ・登録・設定変更・本番デプロイ・mainへのマージは行っていない。
+
+## PR #140 追加修正: SERVICEのリンク整理
+
+比較基点はPR初回コミット`159abc7`。用途別3リンクを維持し、「活用シーンはHOMEで見る」を段落ごと削除。段落固有の余白も消えるため、新しい余白・セクションは追加しない。フッターの`/service/#use-cases`を維持するため、既存IDとスクロール余白を3リンクのコンテナへ移設した。
+
+追加修正後のビルド成功。38公開ページのSEO監査で内部リンク切れ・検査エラー0、19記事のexport・日付・ナビゲーション検査成功。SERVICEの変更前後でtitle・description・canonical・JSON-LD・見出し・画像が一致。375/390/430/1280/1440/1920pxで3リンク・アンカー・表示を検査し、横はみ出しなし。記録は[追加表示検証](service-link-followup.json)。GA4/AI流入準備コード、PR #136・#139の改善、コラム・規約・プライバシーポリシー・画像は追加修正で変更していない。
