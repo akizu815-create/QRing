@@ -1,0 +1,27 @@
+{
+  "article": "dog-owner-voice",
+  "simulation": "local only, no release authorized",
+  "ogp": "passed",
+  "results": [
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "src": "/images/columns/dog-owner-voice.webp",
+      "alt": "公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 342,
+      "displayHeight": 192
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1280,
+      "src": "/images/columns/dog-owner-voice.webp",
+      "alt": "公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 880,
+      "displayHeight": 495
+    }
+  ]
+}

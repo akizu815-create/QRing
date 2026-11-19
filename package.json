@@ -18,7 +18,8 @@
     "check:column-navigation": "python3 scripts/check-column-navigation.py",
     "test:editorial": "python3 -m unittest discover -s tests/editorial -v",
     "editorial:plan": "python3 -m scripts.editorial.cli plan",
-    "editorial:serve": "python3 -m scripts.editorial.server"
+    "editorial:serve": "python3 -m scripts.editorial.server",
+    "test:late-november-columns": "python3 scripts/register-late-november-columns.py && node scripts/test-late-november-columns.cjs"
   },
   "dependencies": {
     "next": "^15.0.0",

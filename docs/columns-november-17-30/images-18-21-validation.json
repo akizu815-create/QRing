@@ -1,0 +1,95 @@
+{
+  "articles": "Nov 18–21",
+  "simulation": "local only, no release authorized",
+  "ogp": "passed",
+  "results": [
+    {
+      "slug": "young-onset-dementia",
+      "width": 390,
+      "scrollWidth": 390,
+      "src": "/images/columns/young-onset-dementia.webp",
+      "alt": "認知症の説明資料を手にした女性と、テーブルを挟んで話す眼鏡の男性の水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 342,
+      "displayHeight": 192
+    },
+    {
+      "slug": "young-onset-dementia",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "src": "/images/columns/young-onset-dementia.webp",
+      "alt": "認知症の説明資料を手にした女性と、テーブルを挟んで話す眼鏡の男性の水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 880,
+      "displayHeight": 495
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "width": 390,
+      "scrollWidth": 390,
+      "src": "/images/columns/wallet-contents-safety.webp",
+      "alt": "財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 342,
+      "displayHeight": 192
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "src": "/images/columns/wallet-contents-safety.webp",
+      "alt": "財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 880,
+      "displayHeight": 495
+    },
+    {
+      "slug": "qr-code-inventor",
+      "width": 390,
+      "scrollWidth": 390,
+      "src": "/images/columns/qr-code-inventor.webp",
+      "alt": "設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 342,
+      "displayHeight": 192
+    },
+    {
+      "slug": "qr-code-inventor",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "src": "/images/columns/qr-code-inventor.webp",
+      "alt": "設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 880,
+      "displayHeight": 495
+    },
+    {
+      "slug": "cat-owner-memory",
+      "width": 390,
+      "scrollWidth": 390,
+      "src": "/images/columns/cat-owner-memory.webp",
+      "alt": "帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 342,
+      "displayHeight": 192
+    },
+    {
+      "slug": "cat-owner-memory",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "src": "/images/columns/cat-owner-memory.webp",
+      "alt": "帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト",
+      "naturalWidth": 1280,
+      "naturalHeight": 720,
+      "displayWidth": 880,
+      "displayHeight": 495
+    }
+  ]
+}

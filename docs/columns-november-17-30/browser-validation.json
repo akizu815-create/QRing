@@ -1,0 +1,285 @@
+{
+  "conditions": "Local release simulation without supplied illustrations; 390px and 1280px; external analytics/fonts blocked; no form submission",
+  "results": [
+    {
+      "slug": "dog-owner-voice",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "young-onset-dementia",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "qr-code-inventor",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "cat-owner-memory",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "elderly-fall-prevention",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "smartphone-emergency-sos",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "phone-number-personal-information",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "pets-earthquake-prediction",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "disaster-family-contact",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "why-we-misplace-things",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "number-private-calls",
+      "viewport": 390,
+      "status": 200,
+      "width": 390,
+      "scrollWidth": 390,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "dog-owner-voice",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "young-onset-dementia",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "qr-code-inventor",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "cat-owner-memory",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "elderly-fall-prevention",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "smartphone-emergency-sos",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "phone-number-personal-information",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "pets-earthquake-prediction",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "disaster-family-contact",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "why-we-misplace-things",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    },
+    {
+      "slug": "number-private-calls",
+      "viewport": 1280,
+      "status": 200,
+      "width": 1280,
+      "scrollWidth": 1280,
+      "h1": 1,
+      "articleImageCount": 0,
+      "errors": []
+    }
+  ]
+}

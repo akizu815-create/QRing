@@ -1,0 +1,50 @@
+[
+  {
+    "case": "held-after-all-dates",
+    "cutoff": "2026-12-01T08:00:00+09:00",
+    "build": "passed",
+    "metadataAndExport": "passed",
+    "navigation": "passed",
+    "internalLinksChecked": 1336
+  },
+  {
+    "case": "nov17-before",
+    "cutoff": "2026-11-17T07:59:59+09:00",
+    "build": "passed",
+    "metadataAndExport": "passed",
+    "navigation": "passed",
+    "internalLinksChecked": 1336
+  },
+  {
+    "case": "nov17-at",
+    "cutoff": "2026-11-17T08:00:00+09:00",
+    "build": "passed",
+    "metadataAndExport": "passed",
+    "navigation": "passed",
+    "internalLinksChecked": 1397
+  },
+  {
+    "case": "nov24-at",
+    "cutoff": "2026-11-24T08:00:00+09:00",
+    "build": "passed",
+    "metadataAndExport": "passed",
+    "navigation": "passed",
+    "internalLinksChecked": 1884
+  },
+  {
+    "case": "nov30-at",
+    "cutoff": "2026-11-30T08:00:00+09:00",
+    "build": "passed",
+    "metadataAndExport": "passed",
+    "navigation": "passed",
+    "internalLinksChecked": 2341
+  },
+  {
+    "case": "restored-held-production",
+    "cutoff": "2026-11-16T20:00:00+09:00",
+    "build": "passed",
+    "metadataAndExport": "passed",
+    "navigation": "passed",
+    "internalLinksChecked": 1336
+  }
+]

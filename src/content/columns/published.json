@@ -3632,5 +3632,2117 @@
       "height": 720,
       "alt": "財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト"
     }
+  },
+  {
+    "id": "qr-code-inventor",
+    "slug": "qr-code-inventor",
+    "title": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+    "summary": "QRコードは1994年、デンソーの原昌宏氏らの開発チームが生み出した日本発の技術です。始まりは、自動車部品などの製造現場で情報を効率よく扱いたいという課題でした。",
+    "introduction": [
+      "買い物の決済、レストランのメニュー、イベントのチケット。いま目にする使い道から少し離れて、発明の背景をたどります。"
+    ],
+    "seoTitle": "QRコードは誰が発明した？1994年に日本で生まれた理由と仕組み",
+    "metaDescription": "QRコードは誰が、いつ発明したのでしょうか？1994年に日本で誕生した背景や、QRの意味、世界中に普及した理由をわかりやすく解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "QRコード 歴史",
+      "QRコード 1994年"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-20",
+    "editionDate": "2026-11-20",
+    "publishedTimestamp": "2026-11-20T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/qr-code-inventor.md",
+      "sha256": "e947a72f1878d843f12ab98d685576a8ac6a8a41699afd540e581745d932a08f",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "qr-code-scan-mechanism",
+      "number-private-calls"
+    ],
+    "relatedService": {
+      "href": "/service/",
+      "label": "つながるQRのサービスと利用条件"
+    },
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "history",
+        "label": "デンソーウェーブ｜QRコードの道のり",
+        "href": "https://www.qrcode.com/history/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "qr",
+        "label": "デンソーウェーブ｜QRコードとは？",
+        "href": "https://www.qrcode.com/about/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "QRコードが誕生したのは1994年",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは1994年、デンソーの開発チームによって生まれました。開発の中心となったのは、原昌宏氏らのチームです。当時、自動車部品の製造現場では、多くの情報を効率よく管理する必要がありました。"
+          },
+          {
+            "type": "paragraph",
+            "text": "しかし、従来のバーコードには記録できる情報量に限界がありました。そこで、より多くの情報を、素早く扱える新しいコードの開発が始まったのです。"
+          },
+          {
+            "type": "link",
+            "href": "/column/qr-code-scan-mechanism/",
+            "label": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "QRとは何の略？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRは「Quick Response」の略です。日本語では「素早い応答」という意味になります。その名のとおり、素早く情報を取得できることを目指して開発されました。従来のバーコードが主に横方向に情報を並べるのに対し、QRコードは縦と横の両方向を使って情報を記録します。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そのため、小さな面積にも比較的多くの情報を格納できます。"
+          },
+          {
+            "type": "link",
+            "href": "/column/number-private-calls/",
+            "label": "電話番号を教えずに、声だけでつながる時代へ",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "三つの大きな四角には意味がある",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードの角にある、三つの大きな四角。あの特徴的な模様にも、重要な役割があります。これはコードの位置や向きを認識するための目印です。スマートフォンを少し傾けてもスキャンしやすいのは、こうした設計上の工夫があるからです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "また、QRコードには誤り訂正という仕組みがあり、一部が汚れたり傷ついたりしても、情報を復元できる場合があります。ただし、どれほど損傷しても使えるというわけではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "なぜ世界中に広まったの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは、もともと製造現場のために開発されました。その後、携帯電話やスマートフォンの普及によって、一般の人にも身近な技術になりました。URLを格納すれば、紙に印刷されたコードからウェブサイトへ簡単にアクセスできます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "さらに、決済、商品管理、交通、医療、観光など、さまざまな分野へ活用が広がっています。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "QRコードは人と人をつなぐ技術にも",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "現在では、QRコードは情報を見るためだけのものではありません。例えば「つながるQR」は、QRコードをスキャンすることで、個人の電話番号を知らせずに通話できるサービスです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "もともとは工場の管理業務を便利にするために生まれた技術が、今では人と人のコミュニケーションにも活用されています。"
+          },
+          {
+            "type": "link",
+            "href": "/service/",
+            "label": "つながるQRのサービスと利用条件",
+            "prefix": "利用条件は「",
+            "suffix": "」で確認できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "製造現場から暮らしの中へ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは、日本の製造現場の課題から生まれた技術です。1994年の誕生から約30年。私たちの暮らしの中で、今も新しい使い方が生まれ続けています。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "QRコード 発明者",
+    "primaryKeyword": "QRコード 発明者",
+    "topicClusterId": "qr-code-inventor",
+    "claims": [
+      {
+        "text": "QRコードは1994年、デンソーの原昌宏氏らの開発チームが生み出した日本発の技術です。始まりは、自動車部品などの製造現場で情報を効率よく扱いたいという課題でした。",
+        "sourceIds": [
+          "history",
+          "qr",
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/qr-code-inventor.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト"
+    }
+  },
+  {
+    "id": "cat-owner-memory",
+    "slug": "cat-owner-memory",
+    "title": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
+    "summary": "猫が飼い主を何日で忘れるのか、すべての猫に当てはまる日数はわかっていません。旅行や出張のあとにそっけなく見えても、それだけで忘れられたとは判断できません。",
+    "introduction": [
+      "一方、飼い主の声を聞き分ける反応は研究されています。記憶が続く期間と、目の前の反応を区別して考えてみます。"
+    ],
+    "seoTitle": "猫は飼い主を何日で忘れる？声やにおいで人を認識する仕組み",
+    "metaDescription": "猫は飼い主を何日くらい覚えているのでしょうか？長期間離れていたときの反応や、声・においによる認識、再会時の接し方を紹介します。",
+    "category": "pets",
+    "primaryAudience": "personal",
+    "tags": [
+      "猫 記憶",
+      "猫 飼い主の声"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-21",
+    "editionDate": "2026-11-21",
+    "publishedTimestamp": "2026-11-21T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/cat-owner-memory.md",
+      "sha256": "2aeddbe67fe0d76679ec58b1607e1a4b645bf6cf27bf6bad61beb3e21e13b817",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "dog-owner-voice"
+    ],
+    "relatedService": {
+      "href": "/use-cases/pets/",
+      "label": "ペットの迷子への備え"
+    },
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "cat",
+        "label": "Saito & Shinozuka (2013)｜Vocal recognition of owners by domestic cats (Felis catus)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/23525707/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "cat-uni",
+        "label": "東京大学｜ツレない猫、答えないけど飼い主の声聞き分ける",
+        "href": "https://www.u-tokyo.ac.jp/focus/ja/press/p01_250327_02.html",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "猫は何日で飼い主を忘れる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "猫が飼い主を何日で忘れるのか、すべての猫に当てはまる日数はわかっていません。「3日で忘れる」「何年経っても絶対に忘れない」といった単純な説明は、科学的に慎重に扱う必要があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "猫の記憶や反応には、これまでの経験や関係性、生活環境などが影響します。"
+          },
+          {
+            "type": "link",
+            "href": "/column/dog-owner-voice/",
+            "label": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "猫は飼い主をどうやって見分ける？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "猫は、においや声、日常の生活パターンなど、複数の情報を手がかりにしています。2013年に発表された研究では、猫が飼い主の声と他人の声を区別して反応することが示されました。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、犬のように駆け寄ってくるとは限りません。耳を動かす、顔を向けるなど、小さな反応にとどまることもあります。反応が控えめだからといって、飼い主を認識していないとは限らないのです。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "久しぶりに会うとそっけないのはなぜ？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "猫は環境の変化に敏感な動物です。長期間離れていた後は、飼い主のにおいや生活のリズムが普段と違っていることもあります。また、猫自身が眠かったり、警戒していたりする場合もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そっけない態度を、すぐに「忘れた証拠」と考える必要はありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "再会したときの接し方",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "久しぶりに会った猫には、無理に抱きつかず、猫のペースで近づいてもらいましょう。いつもの声で話しかけ、落ち着ける場所を確保することが大切です。急に呼びかけへの反応が悪くなった場合は、聴力や体調の変化が関係している可能性もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "気になる変化が続く場合は、獣医師に相談しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "再会は猫のペースに合わせる",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "猫が飼い主を覚えている期間を、日数だけで説明することはできません。声やにおい、毎日の生活の積み重ねが、人を認識する手がかりになっています。久しぶりの再会も、猫自身のペースを大切にしたいですね。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "猫 飼い主 何日 覚えている",
+    "primaryKeyword": "猫 飼い主 何日 覚えている",
+    "topicClusterId": "cat-owner-memory",
+    "claims": [
+      {
+        "text": "猫が飼い主を何日で忘れるのか、すべての猫に当てはまる日数はわかっていません。旅行や出張のあとにそっけなく見えても、それだけで忘れられたとは判断できません。",
+        "sourceIds": [
+          "cat",
+          "cat-uni"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/cat-owner-memory.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト"
+    }
+  },
+  {
+    "id": "elderly-fall-prevention",
+    "slug": "elderly-fall-prevention",
+    "title": "高齢者が転倒しやすいのはなぜ？家の中でできる予防対策",
+    "summary": "高齢者の転倒には、筋力やバランス能力の変化だけでなく、床の段差、照明、体調や薬など複数の要因が関わります。年齢だけの問題として片付けず、住環境と身体の状態を合わせて確認する必要があります。",
+    "introduction": [
+      "「何もないところでつまずく」「以前より歩くのが不安そう」。こうした変化に気づいたら、声をかけるだけでなく家の中も見直してみてください。"
+    ],
+    "seoTitle": "高齢者が転倒しやすい原因とは？家庭でできる転倒予防を解説",
+    "metaDescription": "高齢者はなぜ転倒しやすくなるのでしょうか？筋力やバランス能力の変化、家の中の危険な場所、転倒を防ぐための生活習慣を紹介します。",
+    "category": "family-care",
+    "primaryAudience": "personal",
+    "tags": [
+      "家庭内 転倒",
+      "転倒予防"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-22",
+    "editionDate": "2026-11-22",
+    "publishedTimestamp": "2026-11-22T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/elderly-fall-prevention.md",
+      "sha256": "b17c6b8538ee49ea9fa65a5c5fd026cbdd14dcea3a12298c8ca7be97b9ef85ea",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "monitoring-and-surveillance"
+    ],
+    "relatedService": {
+      "href": "/use-cases/elderly/",
+      "label": "高齢者の見守りへの活用"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/elderly-monitoring/",
+        "label": "離れて暮らす親の見守り、何から始める？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "fall",
+        "label": "消費者庁｜高齢者の事故を防ぐために",
+        "href": "https://www.caa.go.jp/policies/policy/consumer_safety/caution/caution_055/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "fall-check",
+        "label": "国立長寿医療研究センター｜高齢者のための転倒防止セルフチェック",
+        "href": "https://www.ncgg.go.jp/hospital/tento/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "高齢者が転倒しやすくなる理由",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "年齢を重ねると、筋力やバランス能力、視力などが変化することがあります。例えば、足を持ち上げる力が弱くなると、小さな段差でもつまずきやすくなる場合があります。また、姿勢を立て直す反応が遅くなることもあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、転倒は年齢だけで決まるわけではありません。住環境や体調、服用している薬など、複数の要因が関係します。"
+          },
+          {
+            "type": "link",
+            "href": "/column/elderly-monitoring/",
+            "label": "離れて暮らす親の見守り、何から始める？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "実は家の中にも危険がある",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "家の中は慣れた場所ですが、転倒につながる要因が隠れていることがあります。例えば、次のような場所です。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "玄関や廊下の小さな段差",
+              "めくれたカーペットや敷物",
+              "電気コードが通る床",
+              "濡れた浴室",
+              "夜間の暗い通路"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "特に夜間、トイレへ行く際には注意が必要です。足元を照らす照明や、通路の整理など、環境を見直してみましょう。"
+          },
+          {
+            "type": "link",
+            "href": "/column/monitoring-and-surveillance/",
+            "label": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "転ぶのが怖いから、外出しない方がいい？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "転倒が怖いからといって、必要以上に動かなくなることにも注意が必要です。活動量が減ると、筋力やバランス能力が低下する可能性があります。本人の体力に合った運動を、無理のない範囲で続けることが大切です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、すでに転倒を繰り返している場合や、持病がある場合は、医師や理学療法士などに相談しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "薬や体調も関係する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "めまいや立ちくらみ、眠気などは、転倒の原因になる場合があります。服用している薬の影響が疑われる場合もありますが、自己判断で薬を中止してはいけません。医師や薬剤師に相談してください。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "住まいと身体の両面から備える",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "高齢者の転倒予防には、住まいの安全対策と、体力や健康状態への配慮の両方が重要です。「気をつけて歩いてね」と声をかけるだけでなく、転びにくい環境を一緒に整えていきましょう。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "高齢者 転倒 原因 予防",
+    "primaryKeyword": "高齢者 転倒 原因 予防",
+    "topicClusterId": "elderly-fall-prevention",
+    "claims": [
+      {
+        "text": "高齢者の転倒には、筋力やバランス能力の変化だけでなく、床の段差、照明、体調や薬など複数の要因が関わります。年齢だけの問題として片付けず、住環境と身体の状態を合わせて確認する必要があります。",
+        "sourceIds": [
+          "fall",
+          "fall-check"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/elderly-fall-prevention.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "室内の段差でつまずきそうになり、壁の手すりにつかまる高齢女性の水彩イラスト"
+    }
+  },
+  {
+    "id": "smartphone-emergency-sos",
+    "slug": "smartphone-emergency-sos",
+    "title": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+    "summary": "緊急SOSは、スマートフォンから緊急通報につなげるための機能です。機種やOS、地域によって操作や通知の条件が違うため、自分の端末の設定を事前に確認しておく必要があります。",
+    "introduction": [
+      "事故や急病のときに使う機能だからこそ、普段のうちに知っておきたいもの。ただし、確認のために実際の緊急通報を発信することは避けてください。"
+    ],
+    "seoTitle": "スマホの緊急SOS機能とは？iPhone・Androidの設定と注意点",
+    "metaDescription": "スマートフォンの緊急SOS機能をご存じですか？iPhone・Androidでの基本的な仕組みや事前設定、緊急連絡先の登録、誤操作への注意点を解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "iPhone 緊急SOS",
+      "Android 緊急情報"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-23",
+    "editionDate": "2026-11-23",
+    "publishedTimestamp": "2026-11-23T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/smartphone-emergency-sos.md",
+      "sha256": "adce084c6c0ab905a231a35b8ce6330ff3224c47e0a7c8ed92912242a58a50b3",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "disaster-family-contact"
+    ],
+    "relatedService": null,
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "apple",
+        "label": "Apple｜SOSを使ってiPhoneで緊急通報サービスに連絡する",
+        "href": "https://support.apple.com/ja-jp/guide/iphone/iph3c99374c/ios",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "android",
+        "label": "Google｜Androidスマートフォンを使用して緊急時に助けを求める",
+        "href": "https://support.google.com/android/answer/9319337?hl=ja",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "sos-news",
+        "label": "Apple｜日本での衛星経由の緊急SOS提供開始と緊急通報の基本操作",
+        "href": "https://www.apple.com/jp/newsroom/2024/07/emergency-sos-via-satellite-available-today/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "緊急SOS機能とは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "緊急SOSは、スマートフォンから緊急通報につなげるための機能です。機種によっては、特定のボタン操作で緊急通報を開始できるほか、登録した緊急連絡先に通知できる仕組みもあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、対応する機能や操作方法は、機種やOSのバージョン、地域によって異なります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/disaster-family-contact/",
+            "label": "災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "iPhoneではどう使う？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "iPhoneには、緊急SOSの設定があります。対応機種では、サイドボタンと音量ボタンの長押しなどによって、緊急通報の操作を行えます。具体的な手順は機種や設定によって異なるため、Appleの公式サポートで確認してください。"
+          },
+          {
+            "type": "paragraph",
+            "text": "また、ヘルスケアアプリなどで緊急連絡先を登録できる場合があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Androidにも緊急SOSはある？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Androidにも、緊急SOSや緊急情報に関する機能があります。ただし、メーカーや機種によって、設定画面の名称や操作方法が異なります。「設定」から緊急SOSや安全に関する項目を探し、利用できる機能を確認しておきましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "使う前に確認しておきたいこと",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "緊急時に慌てないためには、事前の確認が重要です。まず、自分のスマートフォンで緊急SOSの起動方法を確認します。次に、緊急連絡先が正しく登録されているか、通知や位置情報共有がどのような条件で行われるかを確認しましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "なお、操作の練習として実際に緊急通報を発信することは避けてください。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "スマートフォンだけに頼らない",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "災害や事故の状況によっては、スマートフォンの電池が切れたり、通信が使えなかったりする場合があります。家族の連絡先を紙に控えるなど、複数の備えを持っておくと安心です。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "通報せずに設定と条件を確認する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "緊急SOS機能は、必要になってから調べるのではなく、普段のうちに確認しておきたい機能です。一度、自分のスマートフォンの設定を開いてみませんか。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "スマホ 緊急SOS 設定",
+    "primaryKeyword": "スマホ 緊急SOS 設定",
+    "topicClusterId": "smartphone-emergency-sos",
+    "claims": [
+      {
+        "text": "緊急SOSは、スマートフォンから緊急通報につなげるための機能です。機種やOS、地域によって操作や通知の条件が違うため、自分の端末の設定を事前に確認しておく必要があります。",
+        "sourceIds": [
+          "apple",
+          "android",
+          "sos-news"
+        ],
+        "verified": false
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": false
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/smartphone-emergency-sos.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "救急用品や充電器を用意したテーブルで、スマートフォンの緊急通報設定を確認する女性の水彩イラスト"
+    }
+  },
+  {
+    "id": "phone-number-personal-information",
+    "slug": "phone-number-personal-information",
+    "title": "電話番号から個人情報はどこまでわかる？知られたときのリスクと対策",
+    "summary": "電話番号だけで、誰でも契約者の住所や氏名を正確に調べられるわけではありません。ただし、ウェブサイトやSNSなどで公開した情報と番号が結びついていれば、名前や活動内容を知る手がかりになります。",
+    "introduction": [
+      "初対面の相手に番号を伝える前に、何がわかり得るのか、何には直結しないのかを整理しておきましょう。"
+    ],
+    "seoTitle": "電話番号から住所や名前はわかる？個人情報を守るための注意点",
+    "metaDescription": "電話番号だけで住所や名前は特定されるのでしょうか？SNSとの関連付けや迷惑電話のリスク、電話番号を教えずに連絡する方法を解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "電話番号 特定",
+      "連絡先 プライバシー"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-24",
+    "editionDate": "2026-11-24",
+    "publishedTimestamp": "2026-11-24T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/phone-number-personal-information.md",
+      "sha256": "03ca37ecba4517b6b53cdfbf4e57bf81667b2caf2fda4c47cf285d2345a61cbc",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "number-private-calls"
+    ],
+    "relatedService": {
+      "href": "/service/",
+      "label": "つながるQRのサービスと利用条件"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/unknown-calls/",
+        "label": "知らない番号から電話が来たら、出るべき？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "privacy",
+        "label": "個人情報保護委員会｜携帯電話番号やクレジットカード番号は個人識別符号に該当しますか",
+        "href": "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "contacts",
+        "label": "LINEヘルプセンター｜アドレス帳の情報の利用について",
+        "href": "https://help.line.me/line/?contentId=10002423&lang=ja",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "sms",
+        "label": "IPA｜情報セキュリティ安心相談窓口の相談状況（2025年第1四半期）",
+        "href": "https://www.ipa.go.jp/security/anshin/reports/2025q1outline.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "電話番号だけで住所や名前はわかる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "電話番号を知っているだけで、誰でも契約者の住所や氏名を正確に調べられるわけではありません。ただし、番号がほかの情報と結びついている場合は別です。例えば、店舗のウェブサイトやSNS、過去に公開したプロフィールなどに電話番号が掲載されていれば、そこから名前や活動内容がわかることがあります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/unknown-calls/",
+            "label": "知らない番号から電話が来たら、出るべき？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "SNSとの組み合わせに注意",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "電話番号を公開していなくても、サービスの設定や連絡先同期の仕組みによって、知り合いとのつながりが推測される場合があります。また、仕事用の電話番号を私生活でも使っていると、複数の場面の情報が結びつく可能性があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "公開範囲やプライバシー設定を定期的に確認しましょう。"
+          },
+          {
+            "type": "link",
+            "href": "/column/photo-location-privacy/",
+            "label": "写真の位置情報、大丈夫？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "電話番号を知られると何が起こる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "番号を知られた場合、迷惑電話やSMSが届く可能性があります。ただし、電話番号を知られただけで、スマートフォンの中身がすべて見られるわけではありません。注意したいのは、電話やSMSを使って個人情報を聞き出そうとする行為です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "SMSで届いた認証コードを他人に教えたり、身に覚えのないリンクを開いたりしないようにしましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "電話番号を教えずに連絡する方法もある",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "最近では、個人の電話番号を直接交換せずに連絡する方法もあります。例えば「つながるQR」は、QRコードをスキャンした発見者と登録者が、互いの電話番号を知らせずに通話できるサービスです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "落とし物など、一時的に連絡が必要な場面で利用できます。ただし、相手に電話番号が表示されないことと、サービス提供者が番号を取り扱わないことは別です。利用するサービスの仕組みや個人情報の取り扱いを確認することも重要です。"
+          },
+          {
+            "type": "link",
+            "href": "/service/",
+            "label": "つながるQRのサービスと利用条件",
+            "prefix": "利用条件は「",
+            "suffix": "」で確認できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "番号と公開情報の結び付きを見直す",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "電話番号は便利な連絡先である一方、ほかの情報と結びつく手がかりになる場合があります。必要な相手に、必要な範囲で伝える。そんな意識を持つことが、プライバシーを守る第一歩です。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "電話番号 個人情報 住所 名前",
+    "primaryKeyword": "電話番号 個人情報 住所 名前",
+    "topicClusterId": "phone-number-personal-information",
+    "claims": [
+      {
+        "text": "電話番号だけで、誰でも契約者の住所や氏名を正確に調べられるわけではありません。ただし、ウェブサイトやSNSなどで公開した情報と番号が結びついていれば、名前や活動内容を知る手がかりになります。",
+        "sourceIds": [
+          "privacy",
+          "contacts",
+          "sms",
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/phone-number-personal-information.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "連絡先のプライバシーについて考えながらスマートフォンを見る女性の水彩イラスト"
+    }
+  },
+  {
+    "id": "pets-earthquake-prediction",
+    "slug": "pets-earthquake-prediction",
+    "title": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
+    "summary": "犬や猫の行動から地震の発生を確実に予測する方法は、科学的に確立されていません。「地震の前に犬が吠えた」「猫が急に隠れた」という体験談と、予知に使える根拠は分けて考える必要があります。",
+    "introduction": [
+      "動物の感覚への関心を、防災の判断そのものに置き換えることはできません。研究上の限界を確認し、飼い主ができる備えを見ていきます。"
+    ],
+    "seoTitle": "犬や猫は地震を予知できる？科学的な根拠とペットの防災対策",
+    "metaDescription": "地震の前に犬が吠える、猫が隠れるという話は本当？動物の地震予知に関する科学的な見解と、飼い主ができる防災準備を紹介します。",
+    "category": "pets",
+    "primaryAudience": "personal",
+    "tags": [
+      "ペット 防災",
+      "地震 動物 行動"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-25",
+    "editionDate": "2026-11-25",
+    "publishedTimestamp": "2026-11-25T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/pets-earthquake-prediction.md",
+      "sha256": "6ac7f8521a8973be9a8ed91cd4c2400aeb89a99674b8cad242c3e6f8cdd8a9f8",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "disaster-family-contact"
+    ],
+    "relatedService": {
+      "href": "/use-cases/pets/",
+      "label": "ペットの迷子への備え"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/dog-microchip/",
+        "label": "犬のマイクロチップって何？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "quake",
+        "label": "気象庁｜地震予知について",
+        "href": "https://www.jma.go.jp/jma/kishou/know/faq/faq24.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "pets-disaster",
+        "label": "環境省｜ペットの災害対策",
+        "href": "https://www.env.go.jp/nature/dobutsu/aigo/1_law/disaster.html",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "犬や猫は地震を予知できる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "地震の前に動物の行動が変わったという報告は、昔からあります。犬が落ち着かなくなる、猫が隠れる、鳥が騒ぐなど、さまざまな体験談があります。しかし、こうした行動から地震の発生を確実に予測できる方法は、科学的に確立されていません。"
+          },
+          {
+            "type": "link",
+            "href": "/column/dog-microchip/",
+            "label": "犬のマイクロチップって何？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "動物は人間より敏感なの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬や猫は、人間とは異なる聴覚や感覚を持っています。人間が気づかない音や振動などに反応する可能性はあります。ただし、何かを感じ取ることと、未来の地震を予知できることは別の話です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "地震の直前に起こる現象に反応したとしても、それだけで発生日時や場所を事前に予測できるとは限りません。"
+          },
+          {
+            "type": "link",
+            "href": "/column/lost-dog-preparation/",
+            "label": "もしも、大切な愛犬が迷子になったら。",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "なぜ地震の前の行動が印象に残る？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬や猫は、普段からさまざまな理由で行動を変えます。大きな音、天候の変化、ほかの動物の気配、体調などが原因になることもあります。地震が起きた後で、それ以前の行動を振り返ると、特別な意味があったように感じられる場合があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "科学的に確かめるには、地震が起きたときだけでなく、起きなかったときの行動も含めて継続的に調べる必要があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "本当に大切なのはペットの防災対策",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "地震を予知することよりも、実際に地震が起きたときの備えが重要です。例えば、次のような準備があります。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "キャリーバッグやケージに慣れさせる",
+              "ペット用のフードや水を備蓄する",
+              "迷子札を装着する",
+              "マイクロチップの登録情報を確認する",
+              "避難先でのペットの受け入れ条件を調べる"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "災害時には、驚いたペットが逃げ出すこともあります。日頃から脱走対策を考えておきましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "予知に頼らず避難の準備をする",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬や猫の行動から地震を確実に予知できるわけではありません。不思議な行動に関心を持つことは自然ですが、防災の判断には気象庁や自治体の情報を活用することが大切です。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "犬 猫 地震 予知 根拠",
+    "primaryKeyword": "犬 猫 地震 予知 根拠",
+    "topicClusterId": "pets-earthquake-prediction",
+    "claims": [
+      {
+        "text": "犬や猫の行動から地震の発生を確実に予測する方法は、科学的に確立されていません。「地震の前に犬が吠えた」「猫が急に隠れた」という体験談と、予知に使える根拠は分けて考える必要があります。",
+        "sourceIds": [
+          "quake",
+          "pets-disaster"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/pets-earthquake-prediction.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "揺れる照明に反応する犬と猫を、室内で見つめる高齢の夫婦の水彩イラスト"
+    }
+  },
+  {
+    "id": "monitoring-and-surveillance",
+    "slug": "monitoring-and-surveillance",
+    "title": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える",
+    "summary": "見守りと監視は、機器の種類だけでは分けられません。何のために、誰が、どこまで情報を確認するのか。その目的や使い方、本人の受け止め方によって意味が変わります。",
+    "introduction": [
+      "離れて暮らす親や、帰宅が遅い子どもを心配する気持ちは自然です。その安心のために、本人にどんな負担が生じるかも考えておきたいところです。"
+    ],
+    "seoTitle": "見守りと監視の違いとは？高齢者のプライバシーと安全を両立する方法",
+    "metaDescription": "見守りと監視は何が違うのでしょうか？高齢の親や家族の安全を守りながら、本人の意思とプライバシーを尊重する方法を考えます。",
+    "category": "family-care",
+    "primaryAudience": "personal",
+    "tags": [
+      "高齢者 プライバシー",
+      "見守り 本人の意思"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-26",
+    "editionDate": "2026-11-26",
+    "publishedTimestamp": "2026-11-26T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/monitoring-and-surveillance.md",
+      "sha256": "5df17de1c6b92916e1ec45b6f997481d3c55867816df6b66d5adc35541af301e",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "young-onset-dementia"
+    ],
+    "relatedService": {
+      "href": "/use-cases/elderly/",
+      "label": "高齢者の見守りへの活用"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/elderly-monitoring/",
+        "label": "離れて暮らす親の見守り、何から始める？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "consent",
+        "label": "厚生労働省｜認知症の人の日常生活・社会生活における意思決定支援ガイドライン",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212395.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "privacy",
+        "label": "個人情報保護委員会｜携帯電話番号やクレジットカード番号は個人識別符号に該当しますか",
+        "href": "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "見守りと監視の違いは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "見守りは、本人が安心して生活できるように支えることを目的とします。一方、監視という言葉には、行動を継続的に確認し、管理するという意味合いがあります。ただし、同じ機器を使っていても、目的や使い方によって本人の受け止め方は変わります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "例えば、位置情報を共有することが安心につながる人もいれば、常に居場所を知られることに抵抗を感じる人もいます。"
+          },
+          {
+            "type": "link",
+            "href": "/column/elderly-monitoring/",
+            "label": "離れて暮らす親の見守り、何から始める？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "心配だから全部知りたい？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "家族が心配なときほど、できるだけ多くの情報を知りたくなるものです。しかし、本当に必要な情報は何でしょうか。「帰宅が遅れたときに連絡したい」「困ったときに助けを求められるようにしたい」"
+          },
+          {
+            "type": "paragraph",
+            "text": "目的を具体的にすると、必要な仕組みを選びやすくなります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/elderly-monitoring-contact-system/",
+            "label": "高齢者の見守りに、つながる安心を。",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "本人の意思を尊重する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "見守りの方法を決める際には、可能な限り本人と話し合うことが大切です。どの情報を共有するのか。誰が確認できるのか。いつ、どのような場合に連絡するのか。こうした点を明確にしておくと、安心感につながります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "本人の判断能力や安全面に課題がある場合は、家族だけで抱え込まず、医療・介護などの専門職に相談することも重要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "常に居場所を把握する以外の方法",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "見守りには、GPSによる位置情報の確認だけでなく、定期的な電話や訪問、緊急時の連絡手段など、さまざまな方法があります。例えば「つながるQR」は、QRコードをスキャンした発見者が、登録者と電話番号を知らせずに通話できる仕組みです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "位置を常時追跡するサービスではありませんが、外出先で周囲の人から連絡を受けるための備えとして利用できます。"
+          },
+          {
+            "type": "link",
+            "href": "/use-cases/elderly/",
+            "label": "高齢者の見守りへの活用",
+            "prefix": "利用条件は「",
+            "suffix": "」で確認できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "本人と共有する情報の範囲を決める",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "見守りの目的は、本人の自由を奪うことではありません。安心して生活できる環境を整えることです。家族の心配と本人の気持ち、その両方を大切にしたいですね。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "見守り 監視 違い",
+    "primaryKeyword": "見守り 監視 違い",
+    "topicClusterId": "monitoring-and-surveillance",
+    "claims": [
+      {
+        "text": "見守りと監視は、機器の種類だけでは分けられません。何のために、誰が、どこまで情報を確認するのか。その目的や使い方、本人の受け止め方によって意味が変わります。",
+        "sourceIds": [
+          "consent",
+          "privacy",
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/monitoring-and-surveillance.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "タブレットを一緒に見ながら見守りについて話す高齢女性と家族の水彩イラスト"
+    }
+  },
+  {
+    "id": "qr-code-scan-mechanism",
+    "slug": "qr-code-scan-mechanism",
+    "title": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+    "summary": "QRコードをスキャンすると、スマートフォンが模様に記録された文字列やURLなどを取り出します。コード自体が通信しているのではなく、取り出したURLを端末が開くことでウェブサイトにアクセスします。",
+    "introduction": [
+      "あの四角い模様に何が入っているのか。スキャンの流れを知ると、便利さだけでなく、リンク先を確認する理由も見えてきます。"
+    ],
+    "seoTitle": "QRコードをスキャンするとどうなる？仕組みと安全な使い方を解説",
+    "metaDescription": "QRコードをスキャンするとスマートフォンの中で何が起こるのでしょうか？コードに入っている情報、URLを開く仕組み、安全に利用するための注意点を解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "QRコード URL",
+      "QRコード 安全"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-27",
+    "editionDate": "2026-11-27",
+    "publishedTimestamp": "2026-11-27T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/qr-code-scan-mechanism.md",
+      "sha256": "6c7ebdf5a305abd377c91e1809bd17733104761a7d179649f1735b5d615cfc38",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "qr-code-inventor",
+      "number-private-calls"
+    ],
+    "relatedService": {
+      "href": "/service/",
+      "label": "つながるQRのサービスと利用条件"
+    },
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "qr",
+        "label": "デンソーウェーブ｜QRコードとは？",
+        "href": "https://www.qrcode.com/about/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "qr-safety",
+        "label": "警視庁｜QRコードを利用する時の注意点",
+        "href": "https://www.keishicho.metro.tokyo.lg.jp/kurashi/cyber/notes/qrcord.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "QRコードは情報を記録した模様",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは、白と黒の小さな四角を組み合わせた二次元コードです。四角の配置によって、文字列やURLなどの情報を表しています。スマートフォンでスキャンすると、端末がコードの位置や向きを認識し、記録された情報を取り出します。"
+          },
+          {
+            "type": "link",
+            "href": "/column/qr-code-inventor/",
+            "label": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "QRコード自体が通信しているわけではない",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "紙に印刷されたQRコードが、電波を出しているわけではありません。QRコードには、例えばウェブサイトのURLを記録できます。スマートフォンがそのURLを開くと、インターネットを通じてウェブサイトにアクセスします。"
+          },
+          {
+            "type": "paragraph",
+            "text": "つまり、QRコードは情報への入口として機能しているのです。"
+          },
+          {
+            "type": "link",
+            "href": "/column/number-private-calls/",
+            "label": "電話番号を教えずに、声だけでつながる時代へ",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "三つの大きな四角の役割",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードの角にある三つの大きな四角は、位置や向きを認識するための目印です。これによって、コードが多少傾いていてもスキャンしやすくなります。また、誤り訂正という仕組みによって、一部が汚れていても情報を復元できる場合があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "QRコードをスキャンするだけで危険？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードそのものが必ず危険というわけではありません。ただし、見た目だけではリンク先が安全かどうか判断できないことがあります。悪意のあるウェブサイトへ誘導するQRコードが使われる可能性もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "スキャン後に表示されるURLを確認し、不審なログイン画面や決済要求には注意しましょう。公共の掲示物などでは、別のQRコードのシールが上から貼られていないか確認することも大切です。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "QRコードは連絡手段にもなる",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードの用途は、ウェブサイトの表示だけではありません。例えば「つながるQR」は、QRコードをスキャンし、通話ボタンをタップすることで、発見者と登録者が電話番号を知らせずに通話できるサービスです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "情報を表示するだけでなく、人と人をつなぐ入口としても活用されています。"
+          },
+          {
+            "type": "link",
+            "href": "/service/",
+            "label": "つながるQRのサービスと利用条件",
+            "prefix": "利用条件は「",
+            "suffix": "」で確認できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "スキャン後の表示を確かめる",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは、情報を記録するための技術です。スキャンした後に何が起こるかは、記録された情報や利用するサービスによって異なります。仕組みを知り、表示内容を確認しながら便利に活用しましょう。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "QRコード スキャン 仕組み",
+    "primaryKeyword": "QRコード スキャン 仕組み",
+    "topicClusterId": "qr-code-scan-mechanism",
+    "claims": [
+      {
+        "text": "QRコードをスキャンすると、スマートフォンが模様に記録された文字列やURLなどを取り出します。コード自体が通信しているのではなく、取り出したURLを端末が開くことでウェブサイトにアクセスします。",
+        "sourceIds": [
+          "qr",
+          "qr-safety",
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/qr-code-scan-mechanism.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "店頭のQRコードをスマートフォンでスキャンし、情報ページを確認する女性の水彩イラスト"
+    }
+  },
+  {
+    "id": "disaster-family-contact",
+    "slug": "disaster-family-contact",
+    "title": "災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え",
+    "summary": "災害時に家族へ電話がつながらない場合に備え、災害用伝言ダイヤル171や災害用伝言板など、複数の安否確認方法を知っておきましょう。どれを使うか、連絡できないときにどこへ避難するかは、平時に家族で決めておくと動きやすくなります。",
+    "introduction": [
+      "大きな地震のあとには、通信の集中や設備の被害、停電で電話が使いにくくなることがあります。ふだんの電話だけに頼らない準備を整理します。"
+    ],
+    "seoTitle": "災害時に家族と連絡が取れないときは？171と安否確認の方法",
+    "metaDescription": "地震などの災害時に家族と電話がつながらない場合、どうすればよいのでしょうか？災害用伝言ダイヤル171や安否確認の方法、事前に決めたい家族のルールを紹介します。",
+    "category": "family-care",
+    "primaryAudience": "personal",
+    "tags": [
+      "災害 安否確認",
+      "web171"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-28",
+    "editionDate": "2026-11-28",
+    "publishedTimestamp": "2026-11-28T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/disaster-family-contact.md",
+      "sha256": "5ba45b07b6f067a029c3251db8579a929b6f6764f67db13226a11f4cde62681f",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "smartphone-emergency-sos",
+      "pets-earthquake-prediction"
+    ],
+    "relatedService": null,
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "171",
+        "label": "NTT東日本｜災害用伝言ダイヤル（171）概要とご提供のしくみ",
+        "href": "https://www.ntt-east.co.jp/saigai/voice171s/intro.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "web171",
+        "label": "NTT東日本｜災害用伝言板（web171）",
+        "href": "https://www.ntt-east.co.jp/saigai/web171/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "なぜ災害時は電話がつながらないの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "大きな災害が発生すると、多くの人が一斉に電話をかけます。通信が集中することで、通常より電話がつながりにくくなる場合があります。また、通信設備の被害や停電などが影響することもあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そのため、普段使っている電話だけに頼らない準備が大切です。"
+          },
+          {
+            "type": "link",
+            "href": "/column/smartphone-emergency-sos/",
+            "label": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "災害用伝言ダイヤル「171」とは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "災害用伝言ダイヤル「171」は、災害時に安否情報を音声で登録・確認するためのサービスです。電話番号を手がかりに伝言を残したり、聞いたりできます。ただし、利用できる条件やサービスの提供状況は、災害の規模などによって異なります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "NTTなどの公式案内で、事前に使い方を確認しておきましょう。"
+          },
+          {
+            "type": "link",
+            "href": "/column/pets-earthquake-prediction/",
+            "label": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "災害用伝言板も知っておこう",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "通信事業者などが提供する災害用伝言板も、安否確認の手段の一つです。メッセージアプリやSNSを利用する方法もありますが、通信環境によっては使えない場合があります。一つの方法だけでなく、複数の連絡手段を知っておくことが重要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "家族で決めておきたい三つのこと",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "災害が起きる前に、家族で次のことを話し合っておきましょう。"
+          },
+          {
+            "type": "heading",
+            "text": "① 避難場所"
+          },
+          {
+            "type": "paragraph",
+            "text": "自宅や学校、職場の近くにある避難場所を確認します。"
+          },
+          {
+            "type": "heading",
+            "text": "② 連絡方法"
+          },
+          {
+            "type": "paragraph",
+            "text": "電話がつながらない場合に、どのサービスを使うか決めておきます。"
+          },
+          {
+            "type": "heading",
+            "text": "③ 連絡が取れない場合の行動"
+          },
+          {
+            "type": "paragraph",
+            "text": "まずは自分の安全を確保し、どこへ避難するかを共有します。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "紙のメモも役に立つ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "スマートフォンの電池が切れたり、故障したりすることもあります。家族の連絡先や避難先などを、紙に控えておくことも一つの備えです。個人情報の管理に注意しながら、必要な情報をまとめておきましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "連絡方法と避難先を平時に共有する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "災害時は、いつもの連絡手段が使えるとは限りません。家族と連絡が取れない場合に備え、複数の安否確認方法と避難先を事前に決めておくことが大切です。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "災害 家族 連絡 取れない 171",
+    "primaryKeyword": "災害 家族 連絡 取れない 171",
+    "topicClusterId": "disaster-family-contact",
+    "claims": [
+      {
+        "text": "災害時に家族へ電話がつながらない場合に備え、災害用伝言ダイヤル171や災害用伝言板など、複数の安否確認方法を知っておきましょう。どれを使うか、連絡できないときにどこへ避難するかは、平時に家族で決めておくと動きやすくなります。",
+        "sourceIds": [
+          "171",
+          "web171"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/disaster-family-contact.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "防災用品や地図をそろえ、スマートフォンとメモで家族の連絡方法を確認する女性の水彩イラスト"
+    }
+  },
+  {
+    "id": "why-we-misplace-things",
+    "slug": "why-we-misplace-things",
+    "title": "なぜ人は物をなくすの？脳の仕組みと忘れ物を減らすコツ",
+    "summary": "物をなくす理由は、記憶力の低下だけとは限りません。置いた瞬間に別のことへ注意が向いていて、場所を十分に覚えていないこともあります。",
+    "introduction": [
+      "「さっきまで持っていた鍵が見つからない」「スマートフォンをどこに置いたかわからない」。身近な置き忘れを、注意と記憶の関係から考えます。"
+    ],
+    "seoTitle": "なぜ人は物をなくす？置き忘れが起こる理由と予防する習慣",
+    "metaDescription": "鍵や財布を置いた場所を忘れるのはなぜ？注意力と記憶の関係をわかりやすく解説し、忘れ物や置き忘れを減らすための工夫を紹介します。",
+    "category": "lost-items",
+    "primaryAudience": "personal",
+    "tags": [
+      "忘れ物 予防",
+      "注意と記憶"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-29",
+    "editionDate": "2026-11-29",
+    "publishedTimestamp": "2026-11-29T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/why-we-misplace-things.md",
+      "sha256": "b4cbb3e65cece7915c2ef675e3b4439d3559affe558e277bad9eb5a33f476753",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "wallet-contents-safety"
+    ],
+    "relatedService": {
+      "href": "/use-cases/belongings/",
+      "label": "落とし物への備え"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/lost-item-preparation/",
+        "label": "鍵や財布をなくさないために。今日からできる紛失対策"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "memory",
+        "label": "Craik et al. (1996)｜The effects of divided attention on encoding and retrieval processes in human memory",
+        "href": "https://macal.missouri.edu/assets/doc/pubs/EffectsDividedAttentionEncodingRetrieval.pdf",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "memory-health",
+        "label": "米国国立医学図書館 MedlinePlus｜Memory loss",
+        "href": "https://www.medlineplus.gov/ency/article/003257.htm",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "物を置いた瞬間、覚えていないことがある",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "私たちは、日常生活のすべての出来事を同じように記憶しているわけではありません。急いでいるときや、別のことを考えているときには、目の前の行動に十分な注意を向けられない場合があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "例えば、電話をしながら鍵を置いた場合、鍵を置く動作はできても、その場所を意識して覚えていないことがあります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/wallet-contents-safety/",
+            "label": "財布に入れてはいけないものってある？紛失時に困らないための整理術",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "注意力と記憶は関係している",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "物事を覚えるためには、情報に注意を向けることが重要です。注意がほかのことに向いていると、後から思い出すための情報が十分に残らない場合があります。「覚えたことを忘れた」というより、そもそも十分に覚えていなかった可能性もあるのです。"
+          },
+          {
+            "type": "link",
+            "href": "/column/lost-item-preparation/",
+            "label": "鍵や財布をなくさないために。今日からできる紛失対策",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "同時にいろいろすると忘れやすい？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "料理をしながら電話をする。メッセージを確認しながら荷物を片付ける。こうした場面では、複数の作業に注意を分ける必要があります。その結果、物を置いた場所など、細かな情報に注意を向けにくくなることがあります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "物をなくしにくくする三つの習慣",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "① 定位置を決める"
+          },
+          {
+            "type": "paragraph",
+            "text": "鍵は玄関のトレー、財布はバッグの決まったポケットなど、置く場所を固定します。"
+          },
+          {
+            "type": "heading",
+            "text": "② 置くときに意識する"
+          },
+          {
+            "type": "paragraph",
+            "text": "「鍵は玄関に置いた」と心の中で確認するなど、行動に注意を向けます。"
+          },
+          {
+            "type": "heading",
+            "text": "③ 外出前の確認を習慣にする"
+          },
+          {
+            "type": "paragraph",
+            "text": "鍵、財布、スマートフォンなど、必要なものを短い手順で確認しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "急に物忘れが増えた場合は？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "疲労や睡眠不足、ストレスなどが関係することもあります。ただし、急に物忘れが増えた場合や、日常生活に支障が出ている場合は、単なるうっかりと決めつけないことが大切です。必要に応じて医療機関に相談しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "置くときの注意と定位置を習慣にする",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "物をなくすことは、必ずしも記憶力だけの問題ではありません。注意を向けやすい環境をつくり、物の定位置を決めることが、置き忘れを減らす一歩になります。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "物をなくす 注意 記憶 置き忘れ",
+    "primaryKeyword": "物をなくす 注意 記憶 置き忘れ",
+    "topicClusterId": "why-we-misplace-things",
+    "claims": [
+      {
+        "text": "物をなくす理由は、記憶力の低下だけとは限りません。置いた瞬間に別のことへ注意が向いていて、場所を十分に覚えていないこともあります。",
+        "sourceIds": [
+          "memory",
+          "memory-health"
+        ],
+        "verified": false
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": false
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/why-we-misplace-things.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "鍵とスマートフォンの置き場所を思い出そうとして室内を探す男性の水彩イラスト"
+    }
+  },
+  {
+    "id": "number-private-calls",
+    "slug": "number-private-calls",
+    "title": "電話番号を教えずに、声だけでつながる時代へ",
+    "summary": "個人の電話番号を相手に表示せずに、声で連絡する方法があります。つながるQRは、プライバシー電話番号を介して、QRコードをスキャンした発見者と登録者の通話をつなぐサービスです。",
+    "introduction": [
+      "落とし物の連絡など、その場で話したくても個人の連絡先を直接交換したくない場面があります。相手への非開示と、サービス提供者による番号の取り扱いを分けて確認します。"
+    ],
+    "seoTitle": "電話番号を教えずに通話する方法とは？プライバシーを守る連絡手段",
+    "metaDescription": "電話番号を相手に教えずに通話することはできるのでしょうか？プライバシー電話番号の仕組みや、QRコードを使った新しい連絡方法を紹介します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "プライバシー電話番号",
+      "QRコード 通話"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-30",
+    "editionDate": "2026-11-30",
+    "publishedTimestamp": "2026-11-30T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/number-private-calls.md",
+      "sha256": "9fc9c453d6f6ea640f654de7086d3384cff6b3904acf0a68a7235e6a572bbbde",
+      "receivedOn": "2026-11-16"
+    },
+    "relatedArticleIds": [
+      "phone-number-personal-information",
+      "qr-code-scan-mechanism"
+    ],
+    "relatedService": {
+      "href": "/service/",
+      "label": "つながるQRのサービスと利用条件"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/lost-wallet/",
+        "label": "お財布を落としたら？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "電話番号を教えずに通話することはできる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "はい。専用のサービスを介して通話をつなぐことで、相手に個人の電話番号を表示せずに会話する方法があります。例えば、サービスが提供するプライバシー電話番号を介して通話する仕組みです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "この場合、通話する相手同士が個人の電話番号を直接知る必要はありません。ただし、相手に番号が表示されないことと、サービス提供者が電話番号を取り扱わないことは別です。利用時には、個人情報の取り扱いやサービスの条件を確認することが重要です。"
+          },
+          {
+            "type": "link",
+            "href": "/column/phone-number-personal-information/",
+            "label": "電話番号から個人情報はどこまでわかる？知られたときのリスクと対策",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "どんな場面で役立つ？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "例えば、落とし物を拾ってもらったとき。拾った人が持ち主に連絡したくても、電話番号がわからなければ直接連絡することは難しいでしょう。反対に、持ち主としても、知らない人に自分の電話番号を公開することには抵抗があるかもしれません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そんなとき、番号を直接交換せずに連絡できる仕組みがあれば、双方のプライバシーに配慮しながら会話できます。"
+          },
+          {
+            "type": "link",
+            "href": "/column/qr-code-scan-mechanism/",
+            "label": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "QRコードから声でつながる仕組み",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "「つながるQR」は、QRコードをスキャンした発見者と登録者が、電話番号を知らせずに通話できるサービスです。発見者は、QRコードをスキャンして表示される通話ボタンをタップすることで、登録者と通話できます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "発見者が専用アプリをインストールする必要はありません。落とし物の連絡や、外出先で周囲の人から助けが必要な場合などに、声で直接状況を伝えられる連絡手段として活用できます。なお、位置情報を追跡したり、紛失物の場所を自動的に特定したりするサービスではありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "なぜ「声」でつながることが大切なの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "メッセージは便利ですが、状況によっては文字だけで説明することが難しい場合があります。例えば、落とし物を拾った場所や、受け渡し方法について、その場で質問しながら確認したいときです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "声で会話できれば、相手の説明を聞き、必要なことをすぐに確認できます。もちろん、電話に出られない場合や、通話が適さない環境もあります。大切なのは、状況に応じて連絡方法を選べることです。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "プライバシーとコミュニケーションを両立する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "これまでは、電話で連絡するためには、相手に電話番号を伝えることが一般的でした。しかし、連絡手段が多様化するなかで、必ずしも個人の連絡先を直接交換する必要はなくなってきています。"
+          },
+          {
+            "type": "paragraph",
+            "text": "必要なときだけ、必要な相手とつながる。そんな選択肢が増えることは、安心して人とコミュニケーションを取ることにもつながります。"
+          },
+          {
+            "type": "link",
+            "href": "/service/",
+            "label": "つながるQRのサービスと利用条件",
+            "prefix": "利用条件は「",
+            "suffix": "」で確認できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "相手への非開示と利用条件を確認する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "電話番号を教えずに、声でつながる。それは、プライバシーを守りながら、人と人との連絡を可能にする一つの方法です。個人情報を守ることと、必要なときに助け合うこと。その両方を大切にできる連絡手段が、これからの暮らしを支えていくのかもしれません。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "電話番号 教えず 通話",
+    "primaryKeyword": "電話番号 教えず 通話",
+    "topicClusterId": "number-private-calls",
+    "claims": [
+      {
+        "text": "個人の電話番号を相手に表示せずに、声で連絡する方法があります。つながるQRは、プライバシー電話番号を介して、QRコードをスキャンした発見者と登録者の通話をつなぐサービスです。",
+        "sourceIds": [
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/number-private-calls.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "バッグのQRタグをスキャンする女性と、電話で応じる高齢女性を描いた水彩イラスト"
+    }
   }
 ]
