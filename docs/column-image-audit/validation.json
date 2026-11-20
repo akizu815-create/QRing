@@ -1,0 +1,799 @@
+{
+  "sourceCommit": "ffeff8f17ee28559e4e8258e171ec29a3da6dc36",
+  "build": "npm run build passed with NEXT_TELEMETRY_DISABLED=1",
+  "scope": "docs only",
+  "review": [
+    {
+      "width": 1280,
+      "images": 21,
+      "references": 5,
+      "filters": "passed",
+      "zoom": "passed",
+      "localComparison": "passed without replacing original",
+      "sameFrames": "contain, no crop",
+      "horizontalOverflow": false
+    },
+    {
+      "width": 390,
+      "images": 21,
+      "references": 5,
+      "filters": "passed",
+      "zoom": "passed",
+      "localComparison": "passed without replacing original",
+      "sameFrames": "contain, no crop",
+      "horizontalOverflow": false
+    }
+  ],
+  "site": [
+    {
+      "width": 1280,
+      "list": [
+        {
+          "src": "/images/columns/cat-owner-memory.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/qr-code-inventor.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/wallet-contents-safety.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/young-onset-dementia.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/dog-owner-voice.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/unknown-calls.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/care-insurance-age.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/dog-microchip.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/unidentified-elderly.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/photo-location-privacy.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/lost-property-retention.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/dementia-forgetfulness.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/lost-wallet.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/care-levels.webp",
+          "natural": [
+            1280,
+            853
+          ],
+          "display": [
+            420,
+            279.89
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/lost-dog-preparation.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            420,
+            236.25
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/elderly-monitoring-contact-system.jpg",
+          "natural": [
+            1280,
+            853
+          ],
+          "display": [
+            420,
+            279.89
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/school-contact-list-privacy.webp",
+          "natural": [
+            800,
+            324
+          ],
+          "display": [
+            420,
+            170.09
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/senior-care-facility-types.webp",
+          "natural": [
+            640,
+            384
+          ],
+          "display": [
+            420,
+            252
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/dementia-early-signs.webp",
+          "natural": [
+            640,
+            384
+          ],
+          "display": [
+            420,
+            252
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/qring-column-nov02-illustration.webp",
+          "natural": [
+            1280,
+            421
+          ],
+          "display": [
+            420,
+            138.14
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/qring-column-nov01-illustration.webp",
+          "natural": [
+            1280,
+            421
+          ],
+          "display": [
+            420,
+            138.14
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        }
+      ],
+      "details": [
+        {
+          "number": 1,
+          "natural": [
+            1280,
+            421
+          ],
+          "display": [
+            880,
+            289.44
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 3,
+          "natural": [
+            640,
+            384
+          ],
+          "display": [
+            880,
+            528
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 5,
+          "natural": [
+            800,
+            324
+          ],
+          "display": [
+            880,
+            356.39
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 6,
+          "natural": [
+            1280,
+            853
+          ],
+          "display": [
+            880,
+            586.44
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 7,
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            880,
+            495
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 10,
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            880,
+            495
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 11,
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            880,
+            495
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 14,
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            880,
+            495
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        }
+      ],
+      "assessment": "original aspect ratios preserved; no CSS cropping/overflow observed; list heights differ by source ratio"
+    },
+    {
+      "width": 390,
+      "list": [
+        {
+          "src": "/images/columns/cat-owner-memory.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/qr-code-inventor.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/wallet-contents-safety.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/young-onset-dementia.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/dog-owner-voice.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/unknown-calls.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/care-insurance-age.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/dog-microchip.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/unidentified-elderly.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/photo-location-privacy.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/lost-property-retention.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/dementia-forgetfulness.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/lost-wallet.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/care-levels.webp",
+          "natural": [
+            1280,
+            853
+          ],
+          "display": [
+            342,
+            227.91
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/lost-dog-preparation.webp",
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/elderly-monitoring-contact-system.jpg",
+          "natural": [
+            1280,
+            853
+          ],
+          "display": [
+            342,
+            227.91
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/school-contact-list-privacy.webp",
+          "natural": [
+            800,
+            324
+          ],
+          "display": [
+            342,
+            138.5
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/senior-care-facility-types.webp",
+          "natural": [
+            640,
+            384
+          ],
+          "display": [
+            342,
+            205.19
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/dementia-early-signs.webp",
+          "natural": [
+            640,
+            384
+          ],
+          "display": [
+            342,
+            205.19
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/qring-column-nov02-illustration.webp",
+          "natural": [
+            1280,
+            421
+          ],
+          "display": [
+            342,
+            112.48
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "src": "/images/columns/qring-column-nov01-illustration.webp",
+          "natural": [
+            1280,
+            421
+          ],
+          "display": [
+            342,
+            112.48
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        }
+      ],
+      "details": [
+        {
+          "number": 1,
+          "natural": [
+            1280,
+            421
+          ],
+          "display": [
+            342,
+            112.48
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 3,
+          "natural": [
+            640,
+            384
+          ],
+          "display": [
+            342,
+            205.19
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 5,
+          "natural": [
+            800,
+            324
+          ],
+          "display": [
+            342,
+            138.5
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 6,
+          "natural": [
+            1280,
+            853
+          ],
+          "display": [
+            342,
+            227.91
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 7,
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 10,
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 11,
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        },
+        {
+          "number": 14,
+          "natural": [
+            1280,
+            720
+          ],
+          "display": [
+            342,
+            192.38
+          ],
+          "fit": "fill",
+          "position": "50% 50%"
+        }
+      ],
+      "assessment": "original aspect ratios preserved; no CSS cropping/overflow observed; list heights differ by source ratio"
+    }
+  ]
+}
