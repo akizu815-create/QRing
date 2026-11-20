@@ -102,7 +102,7 @@ def registration(meta):
                 publishedAt=date, editionDate=date, publishedTimestamp=meta.get('publishedTimestamp', date+'T08:00:00+09:00'), publicationPending=False,
                 updatedAt=None, reviewedAt=None, nextReviewAt=None, serviceSpecificationVersion='2026-10-27',
                 contentRevision=2 if meta['day'] in (9,11) else 1, approvalRevision=2 if meta['day'] in (9,11) else 1, contentFormat='approved-manuscript',
-                approvalRecord=dict(sourceFile=str(approved.relative_to(ROOT)), sha256=hashlib.sha256(source.read_bytes()).hexdigest(), receivedOn=CHECKED),
+                approvalRecord=dict(sourceFile=str(approved.relative_to(ROOT)), sha256=hashlib.sha256(source.read_bytes()).hexdigest(), receivedOn=CHECKED, **(dict(receivedRevision=1, revisionHistory=[{'revision': 2, 'change': 'SEOタイトル・meta description・冒頭要約の改訂。本文各節は変更なし。', 'approvalEvidence': 'ユーザーのPR #142確認メッセージで改善方針を了承。承認日は未確定のため記録しない。mainへのマージ・本番公開の承認は含まない。'}]) if meta['slug']=='lost-wallet' else {})),
                 image=dict(src=f'/images/columns/{meta["slug"]}.webp', width=1280, height=853 if meta['day']==8 else 720, alt=meta['alt']),
                 relatedArticleIds=meta['related'], relatedService=None,
                 relatedLinks=[dict(href=meta['service'], label='つながるQRの関連サービスを見る')],

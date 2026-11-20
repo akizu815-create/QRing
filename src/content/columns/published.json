@@ -1854,7 +1854,15 @@
     "approvalRecord": {
       "sourceFile": "src/content/columns/approved/lost-wallet.md",
       "sha256": "dcfdf6ff0306ea83223186594947cff4bc4aa487e33c522a719291caf07df4d7",
-      "receivedOn": "2026-11-07"
+      "receivedOn": "2026-11-07",
+      "receivedRevision": 1,
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "SEOタイトル・meta description・冒頭要約の改訂。本文各節は変更なし。",
+          "approvalEvidence": "ユーザーのPR #142確認メッセージで改善方針を了承。承認日は未確定のため記録しない。mainへのマージ・本番公開の承認は含まない。"
+        }
+      ]
     },
     "image": {
       "src": "/images/columns/lost-wallet.webp",
