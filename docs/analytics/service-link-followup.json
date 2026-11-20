@@ -1,0 +1,150 @@
+{
+  "baseline": "159abc7",
+  "results": [
+    {
+      "width": 375,
+      "overflow": false,
+      "homeLinkRemoved": true,
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "text": "高齢者の外出時の見守り →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/pets/",
+          "text": "ペットの迷子対策 →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/belongings/",
+          "text": "持ち物の紛失対策 →",
+          "visible": true
+        }
+      ],
+      "anchorCount": 1,
+      "footerAnchor": true
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "homeLinkRemoved": true,
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "text": "高齢者の外出時の見守り →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/pets/",
+          "text": "ペットの迷子対策 →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/belongings/",
+          "text": "持ち物の紛失対策 →",
+          "visible": true
+        }
+      ],
+      "anchorCount": 1,
+      "footerAnchor": true
+    },
+    {
+      "width": 430,
+      "overflow": false,
+      "homeLinkRemoved": true,
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "text": "高齢者の外出時の見守り →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/pets/",
+          "text": "ペットの迷子対策 →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/belongings/",
+          "text": "持ち物の紛失対策 →",
+          "visible": true
+        }
+      ],
+      "anchorCount": 1,
+      "footerAnchor": true
+    },
+    {
+      "width": 1280,
+      "overflow": false,
+      "homeLinkRemoved": true,
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "text": "高齢者の外出時の見守り →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/pets/",
+          "text": "ペットの迷子対策 →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/belongings/",
+          "text": "持ち物の紛失対策 →",
+          "visible": true
+        }
+      ],
+      "anchorCount": 1,
+      "footerAnchor": true
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "homeLinkRemoved": true,
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "text": "高齢者の外出時の見守り →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/pets/",
+          "text": "ペットの迷子対策 →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/belongings/",
+          "text": "持ち物の紛失対策 →",
+          "visible": true
+        }
+      ],
+      "anchorCount": 1,
+      "footerAnchor": true
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "homeLinkRemoved": true,
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "text": "高齢者の外出時の見守り →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/pets/",
+          "text": "ペットの迷子対策 →",
+          "visible": true
+        },
+        {
+          "href": "/use-cases/belongings/",
+          "text": "持ち物の紛失対策 →",
+          "visible": true
+        }
+      ],
+      "anchorCount": 1,
+      "footerAnchor": true
+    }
+  ],
+  "externalAnalytics": "blocked"
+}
