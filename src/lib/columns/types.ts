@@ -30,7 +30,7 @@ export type Article = {
   editionDate?: string;
   publishedTimestamp?: string;
   contentFormat?: "approved-manuscript";
-  approvalRecord?: { sourceFile: string; sha256: string; approvedOn?: string; receivedOn?: string };
+  approvalRecord?: { sourceFile: string; sha256: string; approvedOn?: string; receivedOn?: string; receivedRevision?: number; revisionHistory?: { revision: number; change: string; approvalEvidence: string; approvedOn?: string }[] };
   // A supplied approved manuscript awaiting deployment approval, never public by default.
   publicationPending?: boolean;
   audienceDescription?: string;

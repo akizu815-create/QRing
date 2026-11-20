@@ -1,0 +1,244 @@
+{
+  "recordedAtUtc": "2026-11-20T15:26:29Z",
+  "status": "Draft preview only; not merged or published; live change timestamp must be recorded when released",
+  "baseCommit": "4aefccec400cbf70a0058ff6c59c96164e7eb171",
+  "target": "https://www.qring.jp/column/lost-wallet/",
+  "A": {
+    "source": "https://docs.google.com/spreadsheets/d/1y-YF1IBuREwp4HyLZLVL895HCoWI4gW1hp35AEzbUvg/edit",
+    "workbookUpdatedJst": "2026-11-20 23:50:48",
+    "searchConsoleLastDate": "2026-11-17",
+    "period": "2026-11-11..2026-11-17 inclusive",
+    "facts": [
+      "ページ別集計は提示値と一致。対象1,071表示/5クリック/CTR0.46685%/平均9.0719位。公開直後の7日間であり、この記事自体のCTR低下を示す前期間との比較は未取得。",
+      "クエリ別とページ別は別集計。ページ×クエリ、国、端末の内訳がないため、以下のクエリ実績を対象ページの実績とは扱わない。",
+      "本番はWeb取得でH1・導入・全7節・関連記事・サービス導線をコードと照合。curlによる生HTMLは環境プロキシ403で取得できず、本番meta/canonical/JSON-LDの直接照合は未確認。main生成HTMLを検証。"
+    ],
+    "hypotheses": [
+      "短いtitleでは具体的な回答内容が伝わりにくい可能性。冒頭が疑問の列挙で初動をすぐ示していない。順位・クエリ構成・端末やSERP機能の影響もあり、低CTRの原因は特定できない。"
+    ],
+    "queries": [
+      [
+        "財布失くしたとき",
+        42,
+        0,
+        10.6905,
+        "紛失直後の初動・停止先・探し方"
+      ],
+      [
+        "財布無くした時",
+        19,
+        0,
+        10.6316,
+        "表記違い。カード停止・届出・身分証手続き"
+      ],
+      [
+        "財布をなくした",
+        10,
+        0,
+        9.8,
+        "手順の全体像と探す場所"
+      ],
+      [
+        "財布を落としたら",
+        10,
+        0,
+        11,
+        "警察・施設・発見後までの対応"
+      ],
+      [
+        "財布落としたら警察から連絡くる",
+        14,
+        0,
+        8.2857,
+        "連絡の条件・誰から来るか・待つだけでよいか"
+      ],
+      [
+        "財布 無く した 連絡 くる",
+        12,
+        0,
+        6.8333,
+        "連絡の有無と、自分で取るべき行動"
+      ]
+    ],
+    "queryColumns": [
+      "query",
+      "siteWideImpressions",
+      "siteWideClicks",
+      "impressionWeightedPosition",
+      "intent"
+    ],
+    "brandSegmentation": {
+      "scope": "返されたサイト全体の検索語行のみ。匿名化等でページ集計と合計が一致しない。対象記事の指名/非指名内訳は未確認。",
+      "regex": "q[\\s-]*ring|つながるqr (case insensitive)",
+      "brand": {
+        "impressions": 31,
+        "clicks": 17
+      },
+      "nonbrand": {
+        "impressions": 755,
+        "clicks": 4
+      }
+    },
+    "currentAudit": {
+      "title": "お財布を落としたら？",
+      "h1": "お財布を落としたら？",
+      "h2": [
+        "この記事の内容",
+        "最初にすべきことは？",
+        "遺失届を出すとどうなる？",
+        "財布が見つかったら？",
+        "拾った人にお礼は必要？",
+        "3か月経っても持ち主が現れなかったら？",
+        "そもそも、拾った人が連絡できるようにするには？",
+        "まとめ",
+        "参考資料",
+        "あわせて読む"
+      ],
+      "articleBodyH3": "なし（フッターLegalは対象外）",
+      "FAQ": "独立したFAQ/FAQPageなし。疑問形H2と本文で回答済みのため追加しない。",
+      "internalLinks": [
+        "/column/lost-item-preparation/",
+        "/column/lost-property-retention/",
+        "/use-cases/belongings/"
+      ],
+      "canonical": "https://www.qring.jp/column/lost-wallet/",
+      "structuredData": "main生成HTML: Article/WebPage/BreadcrumbList等。共通生成方式を維持。"
+    },
+    "serviceAudit": "本文の課題回答後に紛失前の備えとして紹介。番号非公開の説明は公式活用ページと一致。中間番号の表記なし。新たな技術説明・販売中との表現・料金は追加しない。サービスリンクと既存内部リンクは維持。"
+  },
+  "B": {
+    "conditions": "2026-11-20 UTCに検索ツールで指定6表記を検索。検索プロバイダー・地域・端末・ログイン/パーソナライズ条件は指定・確認できない。Google日本モバイルの実順位とは断定しない。検索返却順を順位として記録しない。",
+    "snippet": "検索ツールのsite検索で表示名は「お財布を落としたら？」。返された抜粋はサービス説明の一文で、設定descriptionとは異なる。Google実SERPのタイトル/スニペットは未確認。",
+    "competitors": [
+      {
+        "url": "https://otoshimono.finds.co.jp/article/wallet-first-steps",
+        "assessment": "初動の数と対象が題名で明確。冒頭に停止・施設問い合わせ・届出を要約。本文に公的出典と具体的な窓口案内がある。QRingは既存内容を冒頭で要約する改善が妥当。"
+      },
+      {
+        "url": "https://cacco.co.jp/frauddetection/media/knowhow/10656/",
+        "assessment": "停止対象や発見後対応を細分化。冒頭で利用停止の行動が分かる。多数の手続き情報があるが、QRingで同等の長文化や断定を再現する必要はない。"
+      },
+      {
+        "url": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/loss.html",
+        "assessment": "届出情報との照合、連絡、捜索制度ではない点を公的に確認できる。現行本文と大筋一致。"
+      },
+      {
+        "url": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/lost-road.html",
+        "assessment": "カード停止、報労金5～20%・施設内の扱い等の一次資料。請求や権利の条件がある。本文の法的説明は変更しない。"
+      }
+    ],
+    "usefulness": "紛失直後→遺失届後の連絡→返還・報労金→紛失前の連絡手段という短い流れを維持。独自の回収率・保証・法的断定を追加しない。"
+  },
+  "C": {
+    "selectedTitle": "財布を落としたら何をする？カード停止・遺失届・見つかった後の対応",
+    "titleLength": 32,
+    "decision": "ユーザー候補の『警察への届出』『見つかった後の手続き』を短く整理し、既存本文の3範囲を明示。実SERPでの省略位置・表示幅は未測定で、文字数だけで表示保証しない。H1は維持。",
+    "introduction": "既存第1・2・3・4節にある行動と説明範囲の要約のみ。順番の厳格な4段階化、巨大カード、重複FAQを追加しない。",
+    "legalProposalsOnly": [
+      "銀行・カード会社から通知される場合があるという具体的な連絡経路の追記は、警察庁lost-road.htmlで根拠があるが事実関係の加筆にあたるため未実装。必要なら別途承認。",
+      "施設内の報労金配分や法条文の詳細化、連絡までの日数、現金が必ず戻る等の保証は追加しない。"
+    ],
+    "preserved": [
+      "本文7節と各段落",
+      "H1",
+      "slug/URL",
+      "公開日/公開時刻",
+      "画像",
+      "関連記事",
+      "法的説明",
+      "予約公開・選択ロジック"
+    ],
+    "validationNote": "既存の完全一致検証は旧SEO・旧導入も固定していたため、対象記事だけの検証正本を改訂原稿に合わせる。staging原稿と他7記事は維持し、全文・ハッシュの検証は緩めない。公開判定・Actions・生成方式は変更しない。",
+    "before": {
+      "seoTitle": "お財布を落としたら？",
+      "metaDescription": "財布をなくしたとき、気になるのは「何をすればいいのか」だけではありません。警察に遺失届を出した後はどうなるのか。財布が見つかったら連絡が来るのか。現金は戻ってくるのか。紛失直後の対応から、発見後の手続きまでを解説します。",
+      "summary": "財布をなくしたとき、気になるのは「何をすればいいのか」だけではありません。警察に遺失届を出した後はどうなるのか。財布が見つかったら連絡が来るのか。現金は戻ってくるのか。紛失直後の対応から、発見後の手続きまでを解説します。"
+    },
+    "after": {
+      "seoTitle": "財布を落としたら何をする？カード停止・遺失届・見つかった後の対応",
+      "metaDescription": "財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。",
+      "summary": "財布をなくしたら、クレジットカード・キャッシュカードの利用停止を優先し、警察への遺失届、駅・店舗への問い合わせ、身分証明書の紛失手続きを進めましょう。この記事では、見つかったときの連絡・返還手続きと、拾得者への報労金の基本も解説します。"
+    },
+    "approvalHistory": {
+      "originalReceipt": {
+        "receivedOn": "2026-11-07",
+        "receivedRevision": 1
+      },
+      "seoRevision": 2,
+      "approvalEvidence": "ユーザーのPR #142確認メッセージで改善方針を了承。承認日は未確定のため記録しない。mainへのマージ・本番公開の承認は含まない。",
+      "approvedOn": null,
+      "note": "nullは本報告上の未確定表示。記事approvalRecordにapprovedOnを設定していない。原稿受領日をSEO改訂の承認日として扱わない。改訂内容の変更日時はGitコミット履歴で確認できる。"
+    }
+  },
+  "D": {
+    "status": "passed locally",
+    "commands": [
+      "npm run test:columns",
+      "npm run test:scheduled-columns",
+      "NEXT_TELEMETRY_DISABLED=1 npm run build",
+      "npm run check:column-export",
+      "npm run check:column-navigation",
+      "python3 -m unittest discover -s tests/publication -v (7 passed)"
+    ],
+    "browser": {
+      "cases": [
+        {
+          "width": 1280,
+          "title": "財布を落としたら何をする？カード停止・遺失届・見つかった後の対応",
+          "canonical": "unchanged",
+          "jsonLd": "valid JSON; article fields consistent",
+          "image": "loaded",
+          "horizontalOverflow": false,
+          "links": "local targets and fragments present"
+        },
+        {
+          "width": 390,
+          "title": "財布を落としたら何をする？カード停止・遺失届・見つかった後の対応",
+          "canonical": "unchanged",
+          "jsonLd": "valid JSON; article fields consistent",
+          "image": "loaded",
+          "horizontalOverflow": false,
+          "links": "local targets and fragments present"
+        }
+      ],
+      "unrelatedMainDom": "unchanged on 3 articles + SERVICE + PRICE",
+      "publicationData": "all 19 other article records unchanged; target dates/sections/image preserved"
+    },
+    "limitations": [
+      "Google Rich Results Test未実施。JSON-LDはJSON構文・Article数・headline/H1・description・日付・画像・URLを生成HTMLで照合。",
+      "本番生HTML/Google実SERPは未確認。Web取得の本文・検索ツールの抜粋と区別。",
+      "原稿・記事URL・公開日時・画像・本文7節・他19記事レコードは維持。予約公開の境界テスト成功。"
+    ]
+  },
+  "E": {
+    "liveReleasedAt": null,
+    "baseline": "提供された11/11～17を参考基準として保存。公開直前の同じ長さの14日/28日データも別途取得し、公開後14日/28日と比較。公開日は移行日として除外。",
+    "metrics": [
+      "impressions",
+      "clicks",
+      "CTR = sum(clicks)/sum(impressions)",
+      "GSC aggregate position（単純な日別平均は使わない）",
+      "page-filtered top queries",
+      "ブランド表記揺れによる指名/非指名",
+      "国・端末・検索タイプを固定"
+    ],
+    "interpretation": "Googleの再クロール・再表示時点を別途確認。検索語構成と順位帯が変わればCTRを同条件で比較。クリックが少ないため変動幅が大きく、因果や有意な改善を断定しない。勝手な定期タスクやGAタグは追加しない。"
+  },
+  "F": [
+    {
+      "priority": 1,
+      "page": "/column/lost-property-retention/",
+      "reason": "540表示/1クリック/0.19%。保管者と落とし主の意図、施設・警察の保管期間の区別を次回調査。未変更。"
+    },
+    {
+      "priority": 2,
+      "page": "/column/lost-item-preparation/",
+      "reason": "398表示/4クリック/1.01%。紛失予防を担当し、紛失直後対応との検索意図競合をクエリ×ページで確認。未変更。"
+    },
+    {
+      "priority": 3,
+      "page": "/column/elderly-monitoring/",
+      "reason": "243表示/4クリック/1.65%、平均15.6位。CTR単独より順位・検索意図の改善余地を優先調査。未変更。"
+    }
+  ]
+}

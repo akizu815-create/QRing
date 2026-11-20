@@ -61,6 +61,9 @@ BATCH = [
 
 def registration(meta):
     source = STAGING / f'2026-11-{meta["day"]:02}-{meta["file"]}.md'
+    # Targeted SEO copy revision; publication dates and selection are unchanged.
+    if meta['slug'] == 'lost-wallet':
+        source = ROOT / 'src/content/columns/approved/lost-wallet.md'
     chunks = re.split(r'^## (.+)\n', source.read_text(), flags=re.M)
     lead = chunks[0].strip().split('\n\n')
     assert lead[0].startswith('# ')
@@ -94,19 +97,19 @@ def registration(meta):
     approved = ROOT / f'src/content/columns/approved/{meta["slug"]}.md'
     sources = [dict(id=f'source-{i+1}', label=label, href=href, checkedAt=CHECKED) for i, (label, href) in enumerate(meta['sources'])]
     return dict(id=meta['slug'], slug=meta['slug'], title=title, summary=intro[0], introduction=intro[1:],
-                seoTitle=title, metaDescription=intro[0], category=meta['category'], primaryAudience=meta['audience'], tags=[],
+                seoTitle='財布を落としたら何をする？カード停止・遺失届・見つかった後の対応' if meta['slug']=='lost-wallet' else title, metaDescription='財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。' if meta['slug']=='lost-wallet' else intro[0], category=meta['category'], primaryAudience=meta['audience'], tags=[],
                 status='published', publicationOrigin='editorial',
                 publishedAt=date, editionDate=date, publishedTimestamp=meta.get('publishedTimestamp', date+'T08:00:00+09:00'), publicationPending=False,
                 updatedAt=None, reviewedAt=None, nextReviewAt=None, serviceSpecificationVersion='2026-10-27',
-                contentRevision=2 if meta['day']==11 else 1, approvalRevision=2 if meta['day']==11 else 1, contentFormat='approved-manuscript',
-                approvalRecord=dict(sourceFile=str(approved.relative_to(ROOT)), sha256=hashlib.sha256(source.read_bytes()).hexdigest(), receivedOn=CHECKED),
+                contentRevision=2 if meta['day'] in (9,11) else 1, approvalRevision=2 if meta['day'] in (9,11) else 1, contentFormat='approved-manuscript',
+                approvalRecord=dict(sourceFile=str(approved.relative_to(ROOT)), sha256=hashlib.sha256(source.read_bytes()).hexdigest(), receivedOn=CHECKED, **(dict(receivedRevision=1, revisionHistory=[{'revision': 2, 'change': 'SEOタイトル・meta description・冒頭要約の改訂。本文各節は変更なし。', 'approvalEvidence': 'ユーザーのPR #142確認メッセージで改善方針を了承。承認日は未確定のため記録しない。mainへのマージ・本番公開の承認は含まない。'}]) if meta['slug']=='lost-wallet' else {})),
                 image=dict(src=f'/images/columns/{meta["slug"]}.webp', width=1280, height=853 if meta['day']==8 else 720, alt=meta['alt']),
                 relatedArticleIds=meta['related'], relatedService=None,
                 relatedLinks=[dict(href=meta['service'], label='つながるQRの関連サービスを見る')],
                 **({} if meta['day']==8 else dict(manuscriptReferences=True)),
                 sources=sources, sections=sections, cta='none', searchIntent=intro[0], primaryKeyword=title,
                 topicClusterId=meta['category'], claims=[],
-                validationResults=[dict(check='supplied-pr130-manuscript-exact-text',passed=True),dict(check='source-review-complete',passed=True)],
+                validationResults=[dict(check='seo-introduction-revision-exact-text' if meta['day']==9 else 'supplied-pr130-manuscript-exact-text',passed=True),dict(check='source-review-complete',passed=True)],
                 generationRunId=None,promptVersion=None)
 
 
@@ -116,7 +119,8 @@ def main():
     if '--sync' in sys.argv:
         for meta, article in zip(BATCH,expected):
             source = STAGING / f'2026-11-{meta["day"]:02}-{meta["file"]}.md'
-            (ROOT / article['approvalRecord']['sourceFile']).write_bytes(source.read_bytes())
+            if meta['slug'] != 'lost-wallet':
+                (ROOT / article['approvalRecord']['sourceFile']).write_bytes(source.read_bytes())
         batch_ids = {a['id'] for a in expected}
         records = [a for a in records if a['id'] not in batch_ids] + expected
         REGISTRY.write_text(json.dumps(records,ensure_ascii=False,indent=2)+'\n')
