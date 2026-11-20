@@ -3846,5 +3846,175 @@
       "height": 720,
       "alt": "設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト"
     }
+  },
+  {
+    "id": "cat-owner-memory",
+    "slug": "cat-owner-memory",
+    "title": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
+    "summary": "猫が飼い主を何日で忘れるのか、すべての猫に当てはまる日数はわかっていません。旅行や出張のあとにそっけなく見えても、それだけで忘れられたとは判断できません。",
+    "introduction": [
+      "一方、飼い主の声を聞き分ける反応は研究されています。記憶が続く期間と、目の前の反応を区別して考えてみます。"
+    ],
+    "seoTitle": "猫は飼い主を何日で忘れる？声やにおいで人を認識する仕組み",
+    "metaDescription": "猫は飼い主を何日くらい覚えているのでしょうか？長期間離れていたときの反応や、声・においによる認識、再会時の接し方を紹介します。",
+    "category": "pets",
+    "primaryAudience": "personal",
+    "tags": [
+      "猫 記憶",
+      "猫 飼い主の声"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-21",
+    "editionDate": "2026-11-21",
+    "publishedTimestamp": "2026-11-21T02:39:20+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/cat-owner-memory.md",
+      "sha256": "2aeddbe67fe0d76679ec58b1607e1a4b645bf6cf27bf6bad61beb3e21e13b817",
+      "receivedOn": "2026-11-16",
+      "approvedOn": "2026-11-21"
+    },
+    "relatedArticleIds": [
+      "dog-owner-voice"
+    ],
+    "relatedService": {
+      "href": "/use-cases/pets/",
+      "label": "ペットの迷子への備え"
+    },
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "cat",
+        "label": "Saito & Shinozuka (2013)｜Vocal recognition of owners by domestic cats (Felis catus)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/23525707/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "cat-uni",
+        "label": "東京大学｜ツレない猫、答えないけど飼い主の声聞き分ける",
+        "href": "https://www.u-tokyo.ac.jp/focus/ja/press/p01_250327_02.html",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "猫は何日で飼い主を忘れる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "猫が飼い主を何日で忘れるのか、すべての猫に当てはまる日数はわかっていません。「3日で忘れる」「何年経っても絶対に忘れない」といった単純な説明は、科学的に慎重に扱う必要があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "猫の記憶や反応には、これまでの経験や関係性、生活環境などが影響します。"
+          },
+          {
+            "type": "link",
+            "href": "/column/dog-owner-voice/",
+            "label": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "猫は飼い主をどうやって見分ける？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "猫は、においや声、日常の生活パターンなど、複数の情報を手がかりにしています。2013年に発表された研究では、猫が飼い主の声と他人の声を区別して反応することが示されました。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、犬のように駆け寄ってくるとは限りません。耳を動かす、顔を向けるなど、小さな反応にとどまることもあります。反応が控えめだからといって、飼い主を認識していないとは限らないのです。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "久しぶりに会うとそっけないのはなぜ？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "猫は環境の変化に敏感な動物です。長期間離れていた後は、飼い主のにおいや生活のリズムが普段と違っていることもあります。また、猫自身が眠かったり、警戒していたりする場合もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そっけない態度を、すぐに「忘れた証拠」と考える必要はありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "再会したときの接し方",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "久しぶりに会った猫には、無理に抱きつかず、猫のペースで近づいてもらいましょう。いつもの声で話しかけ、落ち着ける場所を確保することが大切です。急に呼びかけへの反応が悪くなった場合は、聴力や体調の変化が関係している可能性もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "気になる変化が続く場合は、獣医師に相談しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "再会は猫のペースに合わせる",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "猫が飼い主を覚えている期間を、日数だけで説明することはできません。声やにおい、毎日の生活の積み重ねが、人を認識する手がかりになっています。久しぶりの再会も、猫自身のペースを大切にしたいですね。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "猫 飼い主 何日 覚えている",
+    "primaryKeyword": "猫 飼い主 何日 覚えている",
+    "topicClusterId": "cat-owner-memory",
+    "claims": [
+      {
+        "text": "猫が飼い主を何日で忘れるのか、すべての猫に当てはまる日数はわかっていません。旅行や出張のあとにそっけなく見えても、それだけで忘れられたとは判断できません。",
+        "sourceIds": [
+          "cat",
+          "cat-uni"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/cat-owner-memory.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト"
+    }
   }
 ]
