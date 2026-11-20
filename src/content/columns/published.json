@@ -1831,10 +1831,10 @@
     "id": "lost-wallet",
     "slug": "lost-wallet",
     "title": "お財布を落としたら？",
-    "summary": "財布をなくしたとき、気になるのは「何をすればいいのか」だけではありません。警察に遺失届を出した後はどうなるのか。財布が見つかったら連絡が来るのか。現金は戻ってくるのか。紛失直後の対応から、発見後の手続きまでを解説します。",
+    "summary": "財布をなくしたら、クレジットカード・キャッシュカードの利用停止を優先し、警察への遺失届、駅・店舗への問い合わせ、身分証明書の紛失手続きを進めましょう。この記事では、見つかったときの連絡・返還手続きと、拾得者への報労金の基本も解説します。",
     "introduction": [],
-    "seoTitle": "お財布を落としたら？",
-    "metaDescription": "財布をなくしたとき、気になるのは「何をすればいいのか」だけではありません。警察に遺失届を出した後はどうなるのか。財布が見つかったら連絡が来るのか。現金は戻ってくるのか。紛失直後の対応から、発見後の手続きまでを解説します。",
+    "seoTitle": "財布を落としたら何をする？カード停止・遺失届・見つかった後の対応",
+    "metaDescription": "財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。",
     "category": "lost-items",
     "primaryAudience": "personal",
     "tags": [],
@@ -1848,12 +1848,12 @@
     "reviewedAt": null,
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
       "sourceFile": "src/content/columns/approved/lost-wallet.md",
-      "sha256": "232662feb932904aa2f83c0ddb22bcb44a826f696a7c88e4a0fba477f7f291e1",
+      "sha256": "dcfdf6ff0306ea83223186594947cff4bc4aa487e33c522a719291caf07df4d7",
       "receivedOn": "2026-11-07"
     },
     "image": {
@@ -1954,13 +1954,13 @@
       }
     ],
     "cta": "none",
-    "searchIntent": "財布をなくしたとき、気になるのは「何をすればいいのか」だけではありません。警察に遺失届を出した後はどうなるのか。財布が見つかったら連絡が来るのか。現金は戻ってくるのか。紛失直後の対応から、発見後の手続きまでを解説します。",
+    "searchIntent": "財布をなくしたら、クレジットカード・キャッシュカードの利用停止を優先し、警察への遺失届、駅・店舗への問い合わせ、身分証明書の紛失手続きを進めましょう。この記事では、見つかったときの連絡・返還手続きと、拾得者への報労金の基本も解説します。",
     "primaryKeyword": "お財布を落としたら？",
     "topicClusterId": "lost-items",
     "claims": [],
     "validationResults": [
       {
-        "check": "supplied-pr130-manuscript-exact-text",
+        "check": "seo-introduction-revision-exact-text",
         "passed": true
       },
       {
