@@ -4016,5 +4016,193 @@
       "height": 720,
       "alt": "帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト"
     }
+  },
+  {
+    "id": "elderly-fall-prevention",
+    "slug": "elderly-fall-prevention",
+    "title": "高齢者が転倒しやすいのはなぜ？家の中でできる予防対策",
+    "summary": "高齢者の転倒には、筋力やバランス能力の変化だけでなく、床の段差、照明、体調や薬など複数の要因が関わります。年齢だけの問題として片付けず、住環境と身体の状態を合わせて確認する必要があります。",
+    "introduction": [
+      "「何もないところでつまずく」「以前より歩くのが不安そう」。こうした変化に気づいたら、声をかけるだけでなく家の中も見直してみてください。"
+    ],
+    "seoTitle": "高齢者が転倒しやすい原因とは？家庭でできる転倒予防を解説",
+    "metaDescription": "高齢者はなぜ転倒しやすくなるのでしょうか？筋力やバランス能力の変化、家の中の危険な場所、転倒を防ぐための生活習慣を紹介します。",
+    "category": "family-care",
+    "primaryAudience": "personal",
+    "tags": [
+      "家庭内 転倒",
+      "転倒予防"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-22",
+    "editionDate": "2026-11-22",
+    "publishedTimestamp": "2026-11-22T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/elderly-fall-prevention.md",
+      "sha256": "b17c6b8538ee49ea9fa65a5c5fd026cbdd14dcea3a12298c8ca7be97b9ef85ea",
+      "receivedOn": "2026-11-16",
+      "approvedOn": "2026-11-22"
+    },
+    "relatedArticleIds": [
+      "monitoring-and-surveillance"
+    ],
+    "relatedService": {
+      "href": "/use-cases/elderly/",
+      "label": "高齢者の見守りへの活用"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/elderly-monitoring/",
+        "label": "離れて暮らす親の見守り、何から始める？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "fall",
+        "label": "消費者庁｜高齢者の事故を防ぐために",
+        "href": "https://www.caa.go.jp/policies/policy/consumer_safety/caution/caution_055/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "fall-check",
+        "label": "国立長寿医療研究センター｜高齢者のための転倒防止セルフチェック",
+        "href": "https://www.ncgg.go.jp/hospital/tento/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "高齢者が転倒しやすくなる理由",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "年齢を重ねると、筋力やバランス能力、視力などが変化することがあります。例えば、足を持ち上げる力が弱くなると、小さな段差でもつまずきやすくなる場合があります。また、姿勢を立て直す反応が遅くなることもあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、転倒は年齢だけで決まるわけではありません。住環境や体調、服用している薬など、複数の要因が関係します。"
+          },
+          {
+            "type": "link",
+            "href": "/column/elderly-monitoring/",
+            "label": "離れて暮らす親の見守り、何から始める？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "実は家の中にも危険がある",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "家の中は慣れた場所ですが、転倒につながる要因が隠れていることがあります。例えば、次のような場所です。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "玄関や廊下の小さな段差",
+              "めくれたカーペットや敷物",
+              "電気コードが通る床",
+              "濡れた浴室",
+              "夜間の暗い通路"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "特に夜間、トイレへ行く際には注意が必要です。足元を照らす照明や、通路の整理など、環境を見直してみましょう。"
+          },
+          {
+            "type": "link",
+            "href": "/column/monitoring-and-surveillance/",
+            "label": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "転ぶのが怖いから、外出しない方がいい？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "転倒が怖いからといって、必要以上に動かなくなることにも注意が必要です。活動量が減ると、筋力やバランス能力が低下する可能性があります。本人の体力に合った運動を、無理のない範囲で続けることが大切です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、すでに転倒を繰り返している場合や、持病がある場合は、医師や理学療法士などに相談しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "薬や体調も関係する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "めまいや立ちくらみ、眠気などは、転倒の原因になる場合があります。服用している薬の影響が疑われる場合もありますが、自己判断で薬を中止してはいけません。医師や薬剤師に相談してください。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "住まいと身体の両面から備える",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "高齢者の転倒予防には、住まいの安全対策と、体力や健康状態への配慮の両方が重要です。「気をつけて歩いてね」と声をかけるだけでなく、転びにくい環境を一緒に整えていきましょう。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "高齢者 転倒 原因 予防",
+    "primaryKeyword": "高齢者 転倒 原因 予防",
+    "topicClusterId": "elderly-fall-prevention",
+    "claims": [
+      {
+        "text": "高齢者の転倒には、筋力やバランス能力の変化だけでなく、床の段差、照明、体調や薬など複数の要因が関わります。年齢だけの問題として片付けず、住環境と身体の状態を合わせて確認する必要があります。",
+        "sourceIds": [
+          "fall",
+          "fall-check"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/elderly-fall-prevention.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "室内の段差でつまずきそうになり、壁の手すりにつかまる高齢女性の水彩イラスト"
+    }
   }
 ]
