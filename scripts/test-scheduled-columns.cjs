@@ -13,9 +13,9 @@ try {
   const {selectPublishedArticles, validateArticle} = require(path.join(tmp,'publication.js'));
   const {latestArticles, relatedArticles, columnPageCount} = require(path.join(tmp,'navigation.js'));
   const records = JSON.parse(fs.readFileSync('src/content/columns/published.json','utf8'));
-  // Snapshot of the seven complete records at base 75100f5; works in shallow checkouts.
+  // Seven-record snapshot; only images 01/02 updated to the user-approved 16:9 files.
   assert.equal(crypto.createHash('sha256').update(JSON.stringify(records.slice(0,7))).digest('hex'),
-    '8a72354d599450f2011a856c8d2b5853c98d0b577e0e179dc9d8865218a74b39',
+    'fb4525cbf74adf2879bb3706420fcb8e7996520b31c234a256f6cdafe976d9b0',
     'Existing article data/SEO must remain unchanged');
   const batch = records.filter(a=>a.publishedTimestamp?.match(/^2026-11-(?:0[89]|1[0-5])T/));
   assert.equal(batch.length,8);
