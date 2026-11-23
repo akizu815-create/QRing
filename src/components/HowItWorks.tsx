@@ -1,204 +1,59 @@
-"use client";
-
-import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState, type CSSProperties } from "react";
-import Reveal from "@/components/Reveal";
 
-const STEPS = [
-  {
-    no: "01",
-    title: "登録してつける",
-    body: "QRコードに連絡先を登録し、身近なものに取り付けます。",
-    image: "/images/how-it-works-step-01.png",
-    imageAlt: "バッグに取り付けられたQRチャームの線画",
-  },
-  {
-    no: "02",
-    title: "見つけた人がスキャンする",
-    body: "発見した方がQRコードをスキャンします。",
-    image: "/images/how-it-works-step-02.png",
-    imageAlt: "スマートフォンでQRコードをスキャンする線画",
-  },
-  {
-    no: "03",
-    title: "電話をかける",
-    body: "画面の『電話をかける』をタップすると、登録先につながります。",
-    image: "/images/how-it-works-step-03.png",
-    imageAlt: "スマートフォンから必要な相手へつながる線画",
-  },
-] as const;
+type Step = { title: string; detail?: string };
 
-const arrowProps = {
-  fill: "none",
-  stroke: "currentColor",
-  strokeWidth: 1.4,
-  strokeLinecap: "round" as const,
-  strokeLinejoin: "round" as const,
-};
+const REGISTER_STEPS: Step[] = [
+  { title: "QRコードをスキャン", detail: "「登録者の方」を選択" },
+  { title: "必要事項を登録", detail: "電話番号・アカウント情報など" },
+  { title: "取り付ける" },
+];
+const FINDER_STEPS: Step[] = [
+  { title: "QRコードをスキャン" },
+  { title: "「電話をかける」をタップ" },
+];
 
-function StepArtwork({ image, alt }: { image: string; alt: string }) {
-  return (
-    <div className="relative h-[210px] w-full md:h-[230px]">
-      <Image
-        src={image}
-        alt={alt}
-        fill
-        sizes="(min-width: 1280px) 360px, (min-width: 1024px) 28vw, 80vw"
-        className="object-contain"
-      />
-    </div>
-  );
-}
-
-const motionClassName =
-  "transition-[opacity,transform] duration-[600ms] ease-out motion-reduce:translate-y-0 motion-reduce:opacity-100 motion-reduce:transition-none";
-
-function FlowArrow({
-  visible,
-  delay,
-}: {
-  visible: boolean;
-  delay: number;
-}) {
-  return (
-    <div
-      className={`${motionClassName} flex items-center justify-center py-7 lg:h-[230px] lg:py-0 ${
-        visible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
-      }`}
-      style={{ transitionDelay: `${delay}ms` }}
-      aria-hidden="true"
-    >
-      <svg viewBox="0 0 24 58" className="h-12 w-5 text-moss/60 lg:hidden">
-        <path d="M12 3v46M5 43l7 8 7-8" {...arrowProps} />
-      </svg>
-      <svg viewBox="0 0 60 24" className="hidden h-5 w-12 text-moss/60 lg:block">
-        <path d="M3 12h48M44 5l8 7-8 7" {...arrowProps} />
-      </svg>
-    </div>
-  );
-}
-
-function Step({
-  step,
-  visible,
-  delay,
-}: {
-  step: (typeof STEPS)[number];
-  visible: boolean;
-  delay: number;
-}) {
-  return (
-    <article
-      className={`${motionClassName} flex min-w-0 flex-col items-center text-center ${
-        visible ? "translate-y-0 opacity-100" : "translate-y-5 opacity-0"
-      }`}
-      style={{ transitionDelay: `${delay}ms` } as CSSProperties}
-    >
-      <StepArtwork image={step.image} alt={step.imageAlt} />
-      <p className="mt-5 text-[11px] font-medium tracking-[0.32em] text-ink/60 md:mt-6">
-        STEP {step.no}
-      </p>
-      <span className="mt-4 h-px w-8 bg-moss/55" aria-hidden="true" />
-      <h3 className="mt-5 font-serif text-[26px] font-light leading-snug md:text-[clamp(24px,2vw,30px)]">
-        {step.title}
-      </h3>
-      <p className="body-jp mt-4 max-w-sm text-sm leading-[2] text-ink/70 xl:text-[15px]">
-        {step.body}
-      </p>
-    </article>
-  );
+function StepList({ steps }: { steps: Step[] }) {
+  return <ol className={`mt-6 grid gap-5 md:gap-8 lg:mt-0 ${steps.length === 3 ? "md:grid-cols-3" : "md:grid-cols-2"}`}>
+    {steps.map((step, index) => <li key={step.title} className="flex min-w-0 items-start gap-4 md:block">
+      <p className="font-serif text-3xl font-light leading-none tabular-nums text-moss/80 md:text-4xl" aria-hidden="true">{String(index + 1).padStart(2, "0")}</p>
+      <div className="min-w-0 md:mt-4">
+        <p className="text-balance font-serif text-lg font-light leading-relaxed md:text-xl">{step.title}</p>
+        {step.detail && <p className="mt-2 text-xs leading-7 text-ink/60">{step.detail}</p>}
+      </div>
+    </li>)}
+  </ol>;
 }
 
 export default function HowItWorks() {
-  const stepsRef = useRef<HTMLDivElement | null>(null);
-  const [stepsVisible, setStepsVisible] = useState(false);
-
-  useEffect(() => {
-    const element = stepsRef.current;
-    if (!element || stepsVisible) return;
-
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (reducedMotion.matches) {
-      setStepsVisible(true);
-      return;
-    }
-
-    let observer: IntersectionObserver | null = null;
-    let frame = 0;
-
-    const reveal = () => {
-      setStepsVisible(true);
-      observer?.disconnect();
-      window.removeEventListener("scroll", scheduleCheck);
-      window.removeEventListener("resize", scheduleCheck);
-    };
-
-    const checkPosition = () => {
-      frame = 0;
-      if (element.getBoundingClientRect().top <= window.innerHeight * 0.88) {
-        reveal();
-      }
-    };
-
-    const scheduleCheck = () => {
-      if (!frame) frame = window.requestAnimationFrame(checkPosition);
-    };
-
-    observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) reveal();
-      },
-      { threshold: 0.1 }
-    );
-
-    observer.observe(element);
-    window.addEventListener("scroll", scheduleCheck, { passive: true });
-    window.addEventListener("resize", scheduleCheck);
-    checkPosition();
-
-    return () => {
-      observer?.disconnect();
-      window.removeEventListener("scroll", scheduleCheck);
-      window.removeEventListener("resize", scheduleCheck);
-      if (frame) window.cancelAnimationFrame(frame);
-    };
-  }, [stepsVisible]);
-
-  return (
-    <section id="how-it-works" className="scroll-mt-20 bg-ivory py-12 md:scroll-mt-24 md:py-32">
-      <div className="container-wide">
-        <div className="mx-auto max-w-6xl text-center">
-          <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">
-              How it works
-            </p>
-            <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />
-          </Reveal>
-          <Reveal delay={100}>
-            <h2 className="mt-8 font-serif text-[clamp(34px,4.2vw,64px)] font-light leading-[1.3] tracking-tight md:whitespace-nowrap">
-              使い方は、<span className="inline-block text-moss">3つのステップ。</span>
-            </h2>
-          </Reveal>
-          <Reveal delay={180}>
-            <p className="body-jp mx-auto mt-7 max-w-3xl text-sm leading-[2] text-ink/70 md:text-base">
-              登録から連絡まで、3つのステップ。
-            </p>
-          </Reveal>
-        </div>
-
-        <div
-          ref={stepsRef}
-          className="mx-auto mt-10 grid max-w-[1280px] grid-cols-1 md:mt-12 lg:grid-cols-[minmax(0,1fr)_48px_minmax(0,1fr)_48px_minmax(0,1fr)] lg:items-start lg:gap-x-3 xl:grid-cols-[minmax(0,1fr)_56px_minmax(0,1fr)_56px_minmax(0,1fr)] xl:gap-x-8"
-        >
-          <Step step={STEPS[0]} visible={stepsVisible} delay={0} />
-          <FlowArrow visible={stepsVisible} delay={150} />
-          <Step step={STEPS[1]} visible={stepsVisible} delay={300} />
-          <FlowArrow visible={stepsVisible} delay={450} />
-          <Step step={STEPS[2]} visible={stepsVisible} delay={600} />
-        </div>
-        <p className="mt-10 text-center"><Link href="/service/" className="link-underline inline-flex min-h-11 items-center text-sm text-moss">サービスの仕組みを詳しく見る →</Link></p>
+  return <section id="how-it-works" className="scroll-mt-20 bg-ivory py-12 md:scroll-mt-24 md:py-24" aria-labelledby="home-how-heading">
+    <div className="container-wide">
+      <div className="mx-auto max-w-5xl text-center">
+        <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">How it works</p>
+        <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />
+        <h2 id="home-how-heading" className="mt-7 font-serif text-[clamp(28px,3.8vw,48px)] font-light leading-[1.5] tracking-tight">
+          <span className="inline-block">登録も、使い方も。</span><span className="inline-block text-moss">かんたん。</span>
+        </h2>
       </div>
-    </section>
-  );
+
+      <div className="mx-auto mt-8 max-w-6xl md:mt-12">
+        <section className="py-6 md:py-8 lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10" aria-labelledby="home-register-heading">
+          <div>
+            <h3 id="home-register-heading" className="font-serif text-2xl font-light leading-relaxed">登録する方</h3>
+            <p className="body-jp mt-3 text-sm text-ink/70">最初に設定して、備えておくだけ。</p>
+          </div>
+          <StepList steps={REGISTER_STEPS} />
+        </section>
+
+        <section className="border-t border-ink/15 py-6 md:py-8 lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10" aria-labelledby="home-finder-heading">
+          <div>
+            <h3 id="home-finder-heading" className="font-serif text-2xl font-light leading-relaxed">見つけた方</h3>
+            <p className="body-jp mt-3 text-sm text-ink/70">専用アプリ不要。電話番号やIDの入力も不要。</p>
+          </div>
+          <StepList steps={FINDER_STEPS} />
+        </section>
+      </div>
+
+      <p className="mt-6 text-center"><Link href="/service/#how" className="link-underline inline-flex min-h-11 items-center py-2 text-sm text-moss">詳しい使い方を見る</Link></p>
+    </div>
+  </section>;
 }
