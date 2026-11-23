@@ -4204,5 +4204,199 @@
       "height": 720,
       "alt": "室内の段差でつまずきそうになり、壁の手すりにつかまる高齢女性の水彩イラスト"
     }
+  },
+  {
+    "id": "smartphone-emergency-sos",
+    "slug": "smartphone-emergency-sos",
+    "title": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+    "summary": "緊急SOSは、スマートフォンから緊急通報につなげるための機能です。機種やOS、地域によって操作や通知の条件が違うため、自分の端末の設定を事前に確認しておく必要があります。",
+    "introduction": [
+      "事故や急病のときに使う機能だからこそ、普段のうちに知っておきたいもの。ただし、確認のために実際の緊急通報を発信することは避けてください。"
+    ],
+    "seoTitle": "スマホの緊急SOS機能とは？iPhone・Androidの設定と注意点",
+    "metaDescription": "スマートフォンの緊急SOS機能をご存じですか？iPhone・Androidでの基本的な仕組みや事前設定、緊急連絡先の登録、誤操作への注意点を解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "iPhone 緊急SOS",
+      "Android 緊急情報"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-23",
+    "editionDate": "2026-11-23",
+    "publishedTimestamp": "2026-11-23T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-23",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/smartphone-emergency-sos.md",
+      "sha256": "adce084c6c0ab905a231a35b8ce6330ff3224c47e0a7c8ed92912242a58a50b3",
+      "receivedOn": "2026-11-16",
+      "approvedOn": "2026-11-23"
+    },
+    "relatedArticleIds": [
+      "disaster-family-contact"
+    ],
+    "relatedService": null,
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "apple",
+        "label": "Apple｜SOSを使ってiPhoneで緊急通報サービスに連絡する",
+        "href": "https://support.apple.com/ja-jp/guide/iphone/iph3c99374c/ios",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "android",
+        "label": "Google｜Androidスマートフォンを使用して緊急時に助けを求める",
+        "href": "https://support.google.com/android/answer/9319337?hl=ja",
+        "checkedAt": "2026-11-23"
+      },
+      {
+        "id": "sos-news",
+        "label": "Apple｜日本での衛星経由の緊急SOS提供開始と緊急通報の基本操作",
+        "href": "https://www.apple.com/jp/newsroom/2024/07/emergency-sos-via-satellite-available-today/",
+        "checkedAt": "2026-11-23"
+      },
+      {
+        "id": "apple-safety",
+        "label": "Apple｜Apple デバイスの安心機能",
+        "href": "https://support.apple.com/ja-jp/safety-features",
+        "checkedAt": "2026-11-23"
+      },
+      {
+        "id": "apple-medical-id",
+        "label": "Apple｜iPhoneのヘルスケアアプリでメディカルIDを設定する",
+        "href": "https://support.apple.com/ja-jp/105072",
+        "checkedAt": "2026-11-23"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "緊急SOS機能とは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "緊急SOSは、スマートフォンから緊急通報につなげるための機能です。機種によっては、特定のボタン操作で緊急通報を開始できるほか、登録した緊急連絡先に通知できる仕組みもあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、対応する機能や操作方法は、機種やOSのバージョン、地域によって異なります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/disaster-family-contact/",
+            "label": "災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "iPhoneではどう使う？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "iPhoneには、緊急SOSの設定があります。対応機種では、サイドボタンと音量ボタンの長押しなどによって、緊急通報の操作を行えます。具体的な手順は機種や設定によって異なるため、Appleの公式サポートで確認してください。"
+          },
+          {
+            "type": "paragraph",
+            "text": "また、ヘルスケアアプリなどで緊急連絡先を登録できる場合があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "Androidにも緊急SOSはある？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Androidにも、緊急SOSや緊急情報に関する機能があります。ただし、メーカーや機種によって、設定画面の名称や操作方法が異なります。「設定」から緊急SOSや安全に関する項目を探し、利用できる機能を確認しておきましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "使う前に確認しておきたいこと",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "緊急時に慌てないためには、事前の確認が重要です。まず、自分のスマートフォンで緊急SOSの起動方法を確認します。次に、緊急連絡先が正しく登録されているか、通知や位置情報共有がどのような条件で行われるかを確認しましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "なお、操作の練習として実際に緊急通報を発信することは避けてください。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "スマートフォンだけに頼らない",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "災害や事故の状況によっては、スマートフォンの電池が切れたり、通信が使えなかったりする場合があります。家族の連絡先を紙に控えるなど、複数の備えを持っておくと安心です。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "通報せずに設定と条件を確認する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "緊急SOS機能は、必要になってから調べるのではなく、普段のうちに確認しておきたい機能です。一度、自分のスマートフォンの設定を開いてみませんか。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "スマホ 緊急SOS 設定",
+    "primaryKeyword": "スマホ 緊急SOS 設定",
+    "topicClusterId": "smartphone-emergency-sos",
+    "claims": [
+      {
+        "text": "緊急SOSは、スマートフォンから緊急通報につなげるための機能です。機種やOS、地域によって操作や通知の条件が違うため、自分の端末の設定を事前に確認しておく必要があります。",
+        "sourceIds": [
+          "apple",
+          "android",
+          "sos-news",
+          "apple-safety",
+          "apple-medical-id"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/smartphone-emergency-sos.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "救急用品や充電器を用意したテーブルで、スマートフォンの緊急通報設定を確認する女性の水彩イラスト"
+    }
   }
 ]
