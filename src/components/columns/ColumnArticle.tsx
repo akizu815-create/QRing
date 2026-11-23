@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PetSurveyLink from "@/components/PetSurveyLink";
 import { SITE_URL } from "@/lib/seo";
 import Image from "next/image";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
@@ -56,6 +57,10 @@ export default function ColumnArticle({ article: a, related }: { article: Articl
       </section>}
       {a.manuscriptReferences && <section className="container-narrow border-t border-ink/15 py-10" aria-labelledby="article-sources"><h2 id="article-sources" className="font-serif text-2xl font-light">参考資料</h2><ul className="mt-6 space-y-4 text-sm leading-7 text-moss">{a.sources.map((source) => <li key={source.id}><a className="underline underline-offset-4" href={source.href}>{source.label}</a></li>)}</ul></section>}
     </article>
+    {!a.publicationPending && ["lost-dog-preparation", "dog-microchip"].includes(a.slug) && <aside className="container-narrow border-t border-ink/15 py-8 text-sm leading-7 text-ink/70" aria-label="ペット向け商品アンケート" data-pet-survey>
+      <p>つながるQRでは、ペット向け商品についてのアンケートを実施しています。皆さまのご意見をぜひお聞かせください。</p>
+      <PetSurveyLink placement="column" className="link-underline mt-2 inline-block py-2 text-moss hover:text-ink">ペット向けアンケートはこちら</PetSurveyLink>
+    </aside>}
     {a.primaryAudience === "municipal" && <div className="container-narrow py-8" data-municipal-article-return><Link href="/municipalities/" className="link-underline inline-block py-2 text-sm text-moss">自治体向けサービスについて →</Link></div>}
     {(related.length > 0 || Boolean(a.relatedLinks?.length)) && <section className="py-14 md:py-20" aria-labelledby="article-related"><div className="container-narrow"><h2 id="article-related" className="font-serif text-2xl font-light">あわせて読む</h2><ul className="mt-6 space-y-4 text-sm leading-7 text-moss">{related.map((r) => <li key={r.id}><Link className="underline underline-offset-4" href={articlePath(r.slug)}>{r.title}</Link></li>)}{a.relatedLinks?.map((link) => <li key={link.href}><Link className="underline underline-offset-4" href={link.href}>{link.label}</Link></li>)}</ul></div></section>}
     {a.cta === "municipal" && <section className="border-t border-ink/15 py-16" aria-labelledby="article-next"><div className="container-narrow"><h2 id="article-next" className="font-serif text-2xl font-light">自治体・公共機関の皆さまへ</h2><p className="body-jp mt-6 text-sm">地域の見守りや実証実験に関するご相談を受け付けています。</p><div className="mt-6 flex flex-col items-start gap-5 text-sm text-moss"><a href="https://axb.qring.jp/contact" className="link-underline">見守り・実証実験について相談する →</a><Link href="/municipalities/" className="link-underline">自治体向けサービスについて →</Link></div></div></section>}

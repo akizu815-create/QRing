@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import PageStructuredData from "@/components/PageStructuredData";
+import PetSurveyLink from "@/components/PetSurveyLink";
 
 export const metadata = pageMetadata("pets");
 
@@ -88,6 +89,16 @@ export default function PetsPage() {
           </div>
           <p className="body-jp mt-6 text-xs text-ink/60">つながるQRは、法令上必要な所有者明示やマイクロチップに関する手続き・義務を代替するものではありません。</p>
           <p className="body-jp mt-3 text-xs text-ink/60">参考：<a href="https://www.env.go.jp/nature/dobutsu/aigo/shuyo/how.html" className="link-underline text-moss">環境省「迷子にさせないために」</a></p>
+        </div>
+      </section>
+
+      <section className="bg-moss/5 py-10 md:py-14" aria-labelledby="pet-survey-heading" data-pet-survey>
+        <div className="container-narrow">
+          <h2 id="pet-survey-heading" className="font-serif text-2xl font-light leading-relaxed md:text-3xl">ペットとの暮らしに、もっと安心を。</h2>
+          <p className="body-jp mt-5 max-w-3xl text-sm text-ink/75">つながるQRでは、ペット向けの商品について、皆さまのご意見を募集しています。迷子札の形やデザイン、使いやすさなど、ぜひご希望をお聞かせください。</p>
+          <PetSurveyLink placement="pets" className="mt-6 inline-flex min-h-11 items-center justify-center border border-moss/40 px-6 py-3 text-sm text-moss transition-colors hover:bg-moss/10">アンケートに回答する</PetSurveyLink>
+          <p className="mt-4 text-xs leading-7 text-ink/60">ご回答は商品づくりの参考にさせていただきます。</p>
+          <p className="mt-1 text-xs leading-7 text-ink/60">ご回答は任意です。</p>
         </div>
       </section>
 

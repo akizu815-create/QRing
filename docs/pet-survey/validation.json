@@ -1,0 +1,90 @@
+{
+  "allExportedPagesCompared": true,
+  "existingMainExceptNotices": "identical",
+  "metadataAndStructuredData": "identical",
+  "actualGoogleForm": "unverified: network access restricted",
+  "liveGa4Receipt": "unverified: test requests blocked",
+  "screenshotsCreated": false,
+  "results": [
+    {
+      "path": "/",
+      "width": 1280,
+      "surveyLinks": 1,
+      "overflow": false,
+      "clickEventOnce": true,
+      "keyboardEventOnce": true,
+      "withoutGtag": "passed",
+      "externalNavigation": "mocked target verified"
+    },
+    {
+      "path": "/use-cases/pets/",
+      "width": 1280,
+      "surveyLinks": 1,
+      "overflow": false,
+      "clickEventOnce": true,
+      "keyboardEventOnce": true,
+      "withoutGtag": "passed",
+      "externalNavigation": "mocked target verified"
+    },
+    {
+      "path": "/column/lost-dog-preparation/",
+      "width": 1280,
+      "surveyLinks": 1,
+      "overflow": false,
+      "clickEventOnce": true,
+      "keyboardEventOnce": true,
+      "withoutGtag": "passed",
+      "externalNavigation": "mocked target verified"
+    },
+    {
+      "path": "/column/dog-microchip/",
+      "width": 1280,
+      "surveyLinks": 1,
+      "overflow": false,
+      "clickEventOnce": true,
+      "keyboardEventOnce": true,
+      "withoutGtag": "passed",
+      "externalNavigation": "mocked target verified"
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "surveyLinks": 1,
+      "overflow": false,
+      "clickEventOnce": true,
+      "keyboardEventOnce": true,
+      "withoutGtag": "passed",
+      "externalNavigation": "mocked target verified"
+    },
+    {
+      "path": "/use-cases/pets/",
+      "width": 390,
+      "surveyLinks": 1,
+      "overflow": false,
+      "clickEventOnce": true,
+      "keyboardEventOnce": true,
+      "withoutGtag": "passed",
+      "externalNavigation": "mocked target verified"
+    },
+    {
+      "path": "/column/lost-dog-preparation/",
+      "width": 390,
+      "surveyLinks": 1,
+      "overflow": false,
+      "clickEventOnce": true,
+      "keyboardEventOnce": true,
+      "withoutGtag": "passed",
+      "externalNavigation": "mocked target verified"
+    },
+    {
+      "path": "/column/dog-microchip/",
+      "width": 390,
+      "surveyLinks": 1,
+      "overflow": false,
+      "clickEventOnce": true,
+      "keyboardEventOnce": true,
+      "withoutGtag": "passed",
+      "externalNavigation": "mocked target verified"
+    }
+  ]
+}
