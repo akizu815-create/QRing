@@ -85,10 +85,10 @@
       },
       "description": {
         "x": 20,
-        "y": 242.171875,
-        "w": 140.28125,
-        "h": 88.171875,
-        "bottom": 330.34375
+        "y": 240.171875,
+        "w": 149.59375,
+        "h": 93.5625,
+        "bottom": 333.734375
       },
       "notice": {
         "x": 20,
@@ -109,8 +109,8 @@
         "x": 0,
         "y": 0,
         "w": 320,
-        "h": 690.984375,
-        "bottom": 690.984375
+        "h": 582.65625,
+        "bottom": 582.65625
       },
       "photo": {
         "x": 0,
@@ -120,20 +120,20 @@
         "bottom": 582.65625
       },
       "description": {
-        "x": 20,
-        "y": 596.65625,
-        "w": 274.484375,
-        "h": 41.390625,
-        "bottom": 638.046875
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
       },
       "notice": {
-        "x": 20,
-        "y": 651.4375,
-        "w": 280,
-        "h": 19.546875,
-        "bottom": 670.984375
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
       },
-      "concernsTop": 690.984375,
+      "concernsTop": 582.65625,
       "overflow": false,
       "fonts": "loaded"
     },
@@ -157,10 +157,10 @@
       },
       "description": {
         "x": 20,
-        "y": 253.796875,
-        "w": 166.140625,
-        "h": 88.171875,
-        "bottom": 341.96875
+        "y": 251.796875,
+        "w": 176,
+        "h": 93.5625,
+        "bottom": 345.359375
       },
       "notice": {
         "x": 20,
@@ -181,8 +181,8 @@
         "x": 0,
         "y": 0,
         "w": 375,
-        "h": 764.328125,
-        "bottom": 764.328125
+        "h": 656,
+        "bottom": 656
       },
       "photo": {
         "x": 0,
@@ -192,20 +192,20 @@
         "bottom": 656
       },
       "description": {
-        "x": 20,
-        "y": 670,
-        "w": 274.484375,
-        "h": 41.390625,
-        "bottom": 711.390625
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
       },
       "notice": {
-        "x": 20,
-        "y": 724.78125,
-        "w": 335,
-        "h": 19.546875,
-        "bottom": 744.328125
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
       },
-      "concernsTop": 764.328125,
+      "concernsTop": 656,
       "overflow": false,
       "fonts": "loaded"
     },
@@ -229,10 +229,10 @@
       },
       "description": {
         "x": 20,
-        "y": 257.265625,
-        "w": 177.90625,
-        "h": 88.171875,
-        "bottom": 345.4375
+        "y": 255.265625,
+        "w": 183.1875,
+        "h": 93.5625,
+        "bottom": 348.828125
       },
       "notice": {
         "x": 20,
@@ -253,8 +253,8 @@
         "x": 0,
         "y": 0,
         "w": 390,
-        "h": 784.328125,
-        "bottom": 784.328125
+        "h": 676,
+        "bottom": 676
       },
       "photo": {
         "x": 0,
@@ -264,20 +264,20 @@
         "bottom": 676
       },
       "description": {
-        "x": 20,
-        "y": 690,
-        "w": 274.484375,
-        "h": 41.390625,
-        "bottom": 731.390625
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
       },
       "notice": {
-        "x": 20,
-        "y": 744.78125,
-        "w": 350,
-        "h": 19.546875,
-        "bottom": 764.328125
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
       },
-      "concernsTop": 784.328125,
+      "concernsTop": 676,
       "overflow": false,
       "fonts": "loaded"
     },
@@ -301,10 +301,10 @@
       },
       "description": {
         "x": 20,
-        "y": 259.578125,
-        "w": 196.421875,
-        "h": 88.171875,
-        "bottom": 347.75
+        "y": 257.578125,
+        "w": 202.390625,
+        "h": 93.5625,
+        "bottom": 351.140625
       },
       "notice": {
         "x": 20,
@@ -325,8 +325,8 @@
         "x": 0,
         "y": 0,
         "w": 430,
-        "h": 837.65625,
-        "bottom": 837.65625
+        "h": 729.328125,
+        "bottom": 729.328125
       },
       "photo": {
         "x": 0,
@@ -336,20 +336,20 @@
         "bottom": 729.328125
       },
       "description": {
-        "x": 20,
-        "y": 743.328125,
-        "w": 274.484375,
-        "h": 41.390625,
-        "bottom": 784.71875
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
       },
       "notice": {
-        "x": 20,
-        "y": 798.109375,
-        "w": 390,
-        "h": 19.546875,
-        "bottom": 817.65625
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0,
+        "bottom": 0
       },
-      "concernsTop": 837.65625,
+      "concernsTop": 729.328125,
       "overflow": false,
       "fonts": "loaded"
     },
@@ -372,11 +372,11 @@
         "bottom": 608
       },
       "description": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0,
-        "bottom": 0
+        "x": 42.234375,
+        "y": 244.46875,
+        "w": 368.625,
+        "h": 45.59375,
+        "bottom": 290.0625
       },
       "notice": {
         "x": 42.234375,
@@ -408,11 +408,11 @@
         "bottom": 608
       },
       "description": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0,
-        "bottom": 0
+        "x": 42.234375,
+        "y": 244.46875,
+        "w": 368.625,
+        "h": 45.59375,
+        "bottom": 290.0625
       },
       "notice": {
         "x": 42.234375,
@@ -444,11 +444,11 @@
         "bottom": 949.328125
       },
       "description": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0,
-        "bottom": 0
+        "x": 70.390625,
+        "y": 330.640625,
+        "w": 614.390625,
+        "h": 60.78125,
+        "bottom": 391.421875
       },
       "notice": {
         "x": 70.390625,
@@ -480,11 +480,11 @@
         "bottom": 949.328125
       },
       "description": {
-        "x": 0,
-        "y": 0,
-        "w": 0,
-        "h": 0,
-        "bottom": 0
+        "x": 70.390625,
+        "y": 330.640625,
+        "w": 614.390625,
+        "h": 60.78125,
+        "bottom": 391.421875
       },
       "notice": {
         "x": 70.390625,
@@ -497,5 +497,51 @@
       "overflow": false,
       "fonts": "loaded"
     }
-  ]
+  ],
+  "reviewRevision": [
+    {
+      "width": 320,
+      "photoAndTitle": "unchanged from previous PR154 preview",
+      "desktopOrTablet": "not applicable",
+      "heroBefore": 690.984375,
+      "heroAfter": 582.65625
+    },
+    {
+      "width": 375,
+      "photoAndTitle": "unchanged from previous PR154 preview",
+      "desktopOrTablet": "not applicable",
+      "heroBefore": 764.328125,
+      "heroAfter": 656
+    },
+    {
+      "width": 390,
+      "photoAndTitle": "unchanged from previous PR154 preview",
+      "desktopOrTablet": "not applicable",
+      "heroBefore": 784.328125,
+      "heroAfter": 676
+    },
+    {
+      "width": 430,
+      "photoAndTitle": "unchanged from previous PR154 preview",
+      "desktopOrTablet": "not applicable",
+      "heroBefore": 837.65625,
+      "heroAfter": 729.328125
+    },
+    {
+      "width": 768,
+      "photoAndTitle": "unchanged from previous PR154 preview",
+      "desktopOrTablet": "identical geometry",
+      "heroBefore": 608,
+      "heroAfter": 608
+    },
+    {
+      "width": 1280,
+      "photoAndTitle": "unchanged from previous PR154 preview",
+      "desktopOrTablet": "identical geometry",
+      "heroBefore": 949.328125,
+      "heroAfter": 949.328125
+    }
+  ],
+  "mobileHeroDescription": "removed; desktop preserved",
+  "availabilityNotice": "visible in existing price/personal-use guidance; hidden in mobile HERO"
 }

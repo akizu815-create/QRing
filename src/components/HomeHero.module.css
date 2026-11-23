@@ -17,11 +17,8 @@
   .heroBrand { font-size: 12.5px; line-height: 1.6; letter-spacing: .04em; }
   .heroTitle { margin-top: 10px; font-size: clamp(26px, 7.2vw, 30px); line-height: 1.4; }
   .heroTitle > span { white-space: nowrap; }
-  /* 説明・提供状況は写真の下の通常フローに置き、被写体と重ねない。 */
-  .heroCopy .heroDetails { width: 100%; padding: 12px 20px 20px; }
-  .heroSubcopy { width: auto; margin-top: 0; font-size: 13px; line-height: 1.8; }
-  .heroFeatures, .heroActions { display: none; }
-  .heroNotice { position: static; max-width: none; margin-top: 10px; font-size: 11.5px; line-height: 1.7; }
+  /* スマートフォンは写真から困りごとへ。提供状況は料金・利用案内で表示する。 */
+  .heroCopy .heroDetails { display: none; }
 }
 
 /* PC: 写真は通常フローに置かず、同一ステージの背景レイヤーに固定する。 */
