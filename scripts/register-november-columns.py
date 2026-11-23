@@ -29,6 +29,9 @@ BATCH = [
     dict(day=11, file='lost-property', slug='lost-property-retention', category='lost-items', audience='business',
          # User explicitly approved immediate publication on Nov 11, before 08:00 JST.
          publishedTimestamp='2026-11-11T00:03:38+09:00',
+         # User-approved PR #149 B metadata; manuscript and approval history unchanged.
+         seoTitle='忘れ物はいつまで保管する？店舗・警察の扱いと届出のルール',
+         metaDescription='店舗の忘れ物の扱いは、施設の種類や管理体制で異なります。警察への提出、持ち主への返還、拾得者の権利や報労金の基本を整理し、店舗での管理上の注意点も解説します。',
          alt='店舗の遺失物取扱所で、担当者と忘れ物の届出を確認する高齢女性の水彩イラスト',
          service='/use-cases/belongings/', related=['lost-wallet'],
          sources=[LOST, ('石川県警察｜落とし物・忘れ物（施設占有者の方へ）', 'https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html')]),
@@ -97,7 +100,7 @@ def registration(meta):
     approved = ROOT / f'src/content/columns/approved/{meta["slug"]}.md'
     sources = [dict(id=f'source-{i+1}', label=label, href=href, checkedAt=CHECKED) for i, (label, href) in enumerate(meta['sources'])]
     return dict(id=meta['slug'], slug=meta['slug'], title=title, summary=intro[0], introduction=intro[1:],
-                seoTitle='財布を落としたら何をする？カード停止・遺失届・見つかった後の対応' if meta['slug']=='lost-wallet' else title, metaDescription='財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。' if meta['slug']=='lost-wallet' else intro[0], category=meta['category'], primaryAudience=meta['audience'], tags=[],
+                seoTitle='財布を落としたら何をする？カード停止・遺失届・見つかった後の対応' if meta['slug']=='lost-wallet' else meta.get('seoTitle', title), metaDescription='財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。' if meta['slug']=='lost-wallet' else meta.get('metaDescription', intro[0]), category=meta['category'], primaryAudience=meta['audience'], tags=[],
                 status='published', publicationOrigin='editorial',
                 publishedAt=date, editionDate=date, publishedTimestamp=meta.get('publishedTimestamp', date+'T08:00:00+09:00'), publicationPending=False,
                 updatedAt=None, reviewedAt=None, nextReviewAt=None, serviceSpecificationVersion='2026-10-27',
