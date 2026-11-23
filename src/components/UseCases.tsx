@@ -1,29 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import PetSurveyLink from "@/components/PetSurveyLink";
 
 const USE_CASES = [
   {
     no: "01",
-    title: "高齢者の外出時の見守りに",
-    body: "外出先で困っている方を発見した際、ご家族への連絡に。",
+    title: "外出先で家族が道に迷ったとき。",
+    body: "声をかけてくれた方から、家族に連絡してもらうには。",
     linkLabel: "高齢者の見守り・迷子対策を見る",
     image: "/images/use-case-family.png",
     imageAlt: "緑道を歩きながら会話する高齢女性と家族",
   },
   {
     no: "02",
-    title: "ペットの迷子対策に",
-    body: "迷子のペットを保護した方から、飼い主への連絡に。",
+    title: "迷子のペットを保護してもらえたとき。",
+    body: "飼い主に連絡してほしい。でも、迷子札に電話番号は書きたくない。",
     linkLabel: "電話番号を公開しないQR迷子札を見る",
     image: "/images/use-case-pet.png",
     imageAlt: "QRタグを身につけた犬と見つめ合う女性",
   },
   {
     no: "03",
-    title: "鍵・財布などの落とし物対策に",
-    body: "バッグや鍵などを見つけた方から、持ち主への連絡に。",
+    title: "大切な鍵や財布を落としたとき。",
+    body: "拾ってくれた方が、持ち主に連絡できる手段があったら。",
     linkLabel: "落とし物・忘れ物対策を見る",
     image: "/images/use-case-belongings.png",
     imageAlt: "バッグに取り付けられたQRタグ",
@@ -57,10 +56,6 @@ function UseCase({ item }: { item: (typeof USE_CASES)[number] }) {
             </Link>
           </div>
         )}
-        {item.no === "02" && <div className="mt-6 text-xs leading-7 text-ink/65" data-pet-survey>
-          <p>ペット向け商品について、皆さまのご意見を募集しています。</p>
-          <PetSurveyLink placement="home" className="link-underline mt-1 inline-block py-2 text-moss hover:text-ink">ペット向けアンケートに回答する</PetSurveyLink>
-        </div>}
       </div>
     </article>
   );
@@ -68,24 +63,23 @@ function UseCase({ item }: { item: (typeof USE_CASES)[number] }) {
 
 export default function UseCases() {
   return (
-    <section id="use-cases" className="bg-white py-16 md:py-24">
+    <section id="use-cases" className="scroll-mt-24 bg-white py-16 md:py-24" aria-labelledby="home-concerns-heading">
       <div className="container-wide">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">
-              Use cases
+              In your everyday life
             </p>
             <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />
           </Reveal>
           <Reveal delay={100}>
-            <h2 className="mt-8 font-serif text-[clamp(34px,4vw,58px)] font-light leading-[1.3] tracking-tight">
-              こんな「<span className="text-moss">もしも</span>」に、
-              <span className="whitespace-nowrap">役立ちます。</span>
+            <h2 id="home-concerns-heading" className="mt-8 font-serif text-[clamp(32px,4vw,54px)] font-light leading-[1.5] tracking-tight">
+              こんな心配、<span className="inline-block">ありませんか？</span>
             </h2>
           </Reveal>
           <Reveal delay={180}>
             <p className="body-jp mx-auto mt-7 max-w-2xl text-sm text-ink/70 md:text-base">
-              見守り、迷子、紛失など、日常の困りごとに備えるための活用例です。
+              大切な人やペット、持ち物のこと。<br />「見つかったあと、連絡がついたら」と思う場面があります。
             </p>
           </Reveal>
         </div>
@@ -100,16 +94,6 @@ export default function UseCases() {
           </div>
         </Reveal>
 
-        <Reveal delay={320}>
-          <div className="mt-16 text-center md:mt-12">
-            <Link
-              href="/service"
-              className="inline-block text-xs tracking-[0.22em] text-ink transition-colors duration-300 hover:text-moss link-underline"
-            >
-              詳しい活用例を見る →
-            </Link>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

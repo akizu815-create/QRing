@@ -1,0 +1,134 @@
+{
+  "baseline": "main 5240b9d; previous approved preview 65cf0722",
+  "comparedHtmlPages": 48,
+  "heroStage": "identical",
+  "imagesAndAlt": "identical",
+  "otherPages": "identical",
+  "metadataAndStructuredData": "identical",
+  "screenshotsCreated": false,
+  "measurements": [
+    {
+      "width": 1280,
+      "sectionOrder": [
+        {
+          "id": "",
+          "heading": "番号を知らせず、QRから声でつながる。"
+        },
+        {
+          "id": "use-cases",
+          "heading": "こんな心配、ありませんか？"
+        },
+        {
+          "id": "home-solution",
+          "heading": "その「もしも」に、つながるQR。"
+        },
+        {
+          "id": "how-it-works",
+          "heading": "使い方は、3つのステップ。"
+        },
+        {
+          "id": "price",
+          "heading": "備えるだけなら、月額0円。"
+        },
+        {
+          "id": "for-business",
+          "heading": "新しい安心を、ともに。"
+        },
+        {
+          "id": "column",
+          "heading": "暮らしと地域の安心を考えるコラム。"
+        },
+        {
+          "id": "",
+          "heading": "Recent."
+        }
+      ],
+      "overflow": false,
+      "photosLoaded": true,
+      "anchorTop": 105.328125,
+      "petSurveyEvents": 1
+    },
+    {
+      "width": 390,
+      "sectionOrder": [
+        {
+          "id": "",
+          "heading": "番号を知らせず、QRから声でつながる。"
+        },
+        {
+          "id": "use-cases",
+          "heading": "こんな心配、ありませんか？"
+        },
+        {
+          "id": "home-solution",
+          "heading": "その「もしも」に、つながるQR。"
+        },
+        {
+          "id": "how-it-works",
+          "heading": "使い方は、3つのステップ。"
+        },
+        {
+          "id": "price",
+          "heading": "備えるだけなら、月額0円。"
+        },
+        {
+          "id": "for-business",
+          "heading": "新しい安心を、ともに。"
+        },
+        {
+          "id": "column",
+          "heading": "暮らしと地域の安心を考えるコラム。"
+        },
+        {
+          "id": "",
+          "heading": "Recent."
+        }
+      ],
+      "overflow": false,
+      "photosLoaded": true,
+      "anchorTop": 110,
+      "petSurveyEvents": 1
+    },
+    {
+      "width": 360,
+      "sectionOrder": [
+        {
+          "id": "",
+          "heading": "番号を知らせず、QRから声でつながる。"
+        },
+        {
+          "id": "use-cases",
+          "heading": "こんな心配、ありませんか？"
+        },
+        {
+          "id": "home-solution",
+          "heading": "その「もしも」に、つながるQR。"
+        },
+        {
+          "id": "how-it-works",
+          "heading": "使い方は、3つのステップ。"
+        },
+        {
+          "id": "price",
+          "heading": "備えるだけなら、月額0円。"
+        },
+        {
+          "id": "for-business",
+          "heading": "新しい安心を、ともに。"
+        },
+        {
+          "id": "column",
+          "heading": "暮らしと地域の安心を考えるコラム。"
+        },
+        {
+          "id": "",
+          "heading": "Recent."
+        }
+      ],
+      "overflow": false,
+      "photosLoaded": true,
+      "anchorTop": 110,
+      "petSurveyEvents": 1
+    }
+  ]
+}

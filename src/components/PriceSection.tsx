@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import PetSurveyLink from "@/components/PetSurveyLink";
+import { CONSUMER_SERVICE } from "@/config/consumerService";
 
 export default function PriceSection() {
   return (
@@ -75,6 +77,16 @@ export default function PriceSection() {
             </Link>
           </Reveal>
           <p className="mt-5"><Link href="/faq/" className="link-underline inline-flex min-h-12 items-center text-sm text-moss">料金・お支払いのよくあるご質問 →</Link></p>
+          <div className="mt-10 border-t border-ink/15 pt-8" aria-labelledby="home-personal-contact">
+            <h3 id="home-personal-contact" className="font-serif text-xl font-light leading-relaxed md:text-2xl">ご自身やご家族での利用をお考えの方へ</h3>
+            <p className="body-jp mt-4 text-sm text-ink/70">利用について気になることは、お問い合わせください。</p>
+            <a href="https://axb.qring.jp/contact" className="mt-5 inline-flex min-h-12 items-center justify-center border border-moss/40 px-6 py-3 text-sm text-moss transition-colors hover:bg-moss/10">個人での利用について問い合わせる →</a>
+            <p className="mt-4 text-xs leading-7 text-ink/65">{CONSUMER_SERVICE.notice}</p>
+          </div>
+          <div className="mt-8 text-xs leading-7 text-ink/65" data-pet-survey>
+            <p>ペット向け商品について、皆さまのご意見を募集しています。</p>
+            <PetSurveyLink placement="home" className="link-underline mt-1 inline-block py-2 text-moss hover:text-ink">ペット向けアンケートに回答する</PetSurveyLink>
+          </div>
         </div>
       </div>
     </section>
