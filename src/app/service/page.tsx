@@ -43,8 +43,8 @@ export default function ServicePage() {
                 <p>
                   QRコードに連絡先の電話番号を表示する方法とは異なり、プライバシー電話番号で通話を接続します。発見した方は、登録者の電話番号を知らなくても、画面からそのまま電話をかけられます。
                 </p>
+                <p className="font-serif text-lg font-light leading-relaxed text-ink/85 md:text-xl">特許技術を活用した、独自の通話接続方式。</p>
               </div>
-              <p className="mt-6 font-serif text-lg font-light leading-relaxed text-ink/85 md:text-xl">特許技術を活用した、独自の通話接続方式。</p>
               <p id="use-cases" className="mt-7 scroll-mt-28 text-sm">
                 <Link href="/#use-cases" className="link-underline text-ink/70 transition-colors hover:text-moss">
                   活用シーンはHOMEで見る →
