@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+import PetSurveyLink from "@/components/PetSurveyLink";
 
 const USE_CASES = [
   {
@@ -56,6 +57,10 @@ function UseCase({ item }: { item: (typeof USE_CASES)[number] }) {
             </Link>
           </div>
         )}
+        {item.no === "02" && <div className="mt-6 text-xs leading-7 text-ink/65" data-pet-survey>
+          <p>ペット向け商品について、皆さまのご意見を募集しています。</p>
+          <PetSurveyLink placement="home" className="link-underline mt-1 inline-block py-2 text-moss hover:text-ink">ペット向けアンケートに回答する</PetSurveyLink>
+        </div>}
       </div>
     </article>
   );
