@@ -61,7 +61,6 @@ export default function Home() {
             </div>
             <div className={`${heroStyles.heroDetails} col-start-1 row-start-2 px-6 pb-7 pt-5`}>
               <p className={`${heroStyles.heroSubcopy} mt-0 text-sm leading-[1.9] text-ink/80 md:mt-5 md:text-[clamp(12px,1.12vw,17px)]`}>
-                <span className="md:hidden" data-mobile-hero-subcopy>QRコードをスキャンして、発信するだけ。<br />お互いの電話番号を公開せずに、通話ができます。</span>
                 <span className="hidden md:inline">QRコードをスキャンして、発信するだけ。<br />お互いの電話番号を公開せずに、通話ができます。</span>
               </p>
               <ul className={`${heroStyles.heroFeatures} mt-4 flex flex-wrap gap-x-4 gap-y-2 text-xs leading-relaxed text-deepmoss md:mt-5 md:text-sm`}>
@@ -75,9 +74,6 @@ export default function Home() {
             </div>
           </div>
 
-        </div>
-        <div className="container-wide pb-4 text-center">
-          <a href="#use-cases" className="inline-flex min-h-11 items-center gap-3 text-xs tracking-[0.08em] text-moss underline decoration-moss/30 underline-offset-4">暮らしの「もしも」から見る<span aria-hidden="true">↓</span></a>
         </div>
       </section>
 
