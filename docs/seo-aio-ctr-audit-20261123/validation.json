@@ -1,0 +1,218 @@
+{
+  "sourceCommit": "7aa5c3390c30f9fe0f0a4140c8162b2e84048457",
+  "applicationChanged": false,
+  "method": "既存の最新main静的生成HTMLを読み取り確認。今回はdocsのみのため再ビルド・スクリーンショットは実施しない。Google Rich Results Test、本番生HTML直接照合、SERP確認は未実施。",
+  "articles": [
+    {
+      "slug": "elderly-monitoring",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "lost-item-preparation",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "lost-dog-preparation",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "dementia-early-signs",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "senior-care-facility-types",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "care-levels",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "lost-wallet",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "dementia-forgetfulness",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "lost-property-retention",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "photo-location-privacy",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "unidentified-elderly",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "dog-microchip",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "care-insurance-age",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "unknown-calls",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "dog-owner-voice",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "young-onset-dementia",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "qr-code-inventor",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "cat-owner-memory",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "elderly-fall-prevention",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    },
+    {
+      "slug": "smartphone-emergency-sos",
+      "titleDescriptionCanonicalH1": "passed",
+      "jsonLd": "parsed; Article/WebPage/BreadcrumbList present",
+      "internalLinkTargets": "passed",
+      "indexable": "no noindex observed",
+      "mainTextHasSummary": true
+    }
+  ],
+  "dataChecks": [
+    "23記事の一意性",
+    "4期間の包含日数7/7/28/28",
+    "CTR再計算",
+    "表示回数加重順位",
+    "ページ×検索語未取得の明示",
+    "公開後のデータ未取得3記事を0で補完しない",
+    "全23記事の前28日比較を公開前として扱う"
+  ],
+  "sourceDataUntouched": true,
+  "reviewHtml": {
+    "widths": [
+      1280,
+      390
+    ],
+    "articleCount": 23,
+    "priorityFilterCounts": {
+      "A": 1,
+      "B": 3,
+      "C": 18,
+      "D": 1
+    },
+    "pageHorizontalOverflow": false,
+    "screenshotsCreated": false,
+    "status": "passed"
+  },
+  "applicationFilesChanged": []
+}

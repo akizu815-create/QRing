@@ -1,0 +1,4131 @@
+{
+  "scope": "監査・提案のみ。公開中23記事。記事/SEO/公開管理/GA/GSC設定は変更しない。",
+  "baseCommit": "7aa5c3390c30f9fe0f0a4140c8162b2e84048457",
+  "auditDateJst": "2026-11-23",
+  "source": {
+    "url": "https://docs.google.com/spreadsheets/d/1y-YF1IBuREwp4HyLZLVL895HCoWI4gW1hp35AEzbUvg/edit",
+    "updatedAtJst": "2026-11-23 09:42:30",
+    "gscLastDate": "2026-11-20",
+    "ga4LastDate": "2026-11-22",
+    "availableDimensions": [
+      "日付×ページ",
+      "日付×検索語（サイト全体）",
+      "サイト日別合計",
+      "GA4日付×チャネル",
+      "GA4日付×ページ（チャネルと非結合）"
+    ],
+    "unavailable": [
+      "ページ×検索語",
+      "デバイス",
+      "国・地域",
+      "検索タイプの明示",
+      "Google実SERPのタイトル/スニペット",
+      "GSC日界の明示",
+      "記事→サービス→問い合わせのセッション連携・完了イベント",
+      "AI検索での引用/推薦実績"
+    ],
+    "rawDataHandling": "元データは変更しない。全サイトの生データをリポジトリへ複製せず、コラム集計と明示した関連語候補だけを記録。"
+  },
+  "periods": {
+    "current7": {
+      "start": "2026-11-14",
+      "end": "2026-11-20",
+      "days": 7
+    },
+    "previous7": {
+      "start": "2026-11-07",
+      "end": "2026-11-13",
+      "days": 7
+    },
+    "current28": {
+      "start": "2026-10-24",
+      "end": "2026-11-20",
+      "days": 28
+    },
+    "previous28": {
+      "start": "2026-09-26",
+      "end": "2026-10-23",
+      "days": 28
+    }
+  },
+  "methodology": [
+    "CTRはクリック合計÷表示合計。日別CTRの単純平均は使用しない。",
+    "平均順位は各行の表示回数を重みに集計。順位差・CTR差には検索語構成変化も含まれる。",
+    "公開前の期間は未取得/比較不可としてnull。公開済みで資料に行がない場合は資料内観測0とし、CTR・順位はnull。検索未登録とは断定しない。",
+    "7日比較は公開途中の記事では露出日数が違う。全記事の前28日期間は公開前のため28日前期との成長率を算出しない。",
+    "最終取得日基準の直近であり、監査当日までの直近ではない。未取得日を0で補完しない。",
+    "公開経過日は日付差（公開当日0）であり、完全な24時間数ではない。",
+    "GSC日界が資料に明記されず、JSTの公開時刻と厳密には揃わない。特にPR #142の変更効果は未判定。",
+    "優先度は運用上の暫定区分。低CTRの原因を順位か意図不一致かに因果分解できるデータはない。"
+  ],
+  "priorityCounts": {
+    "B": 3,
+    "D": 1,
+    "C": 18,
+    "A": 1
+  },
+  "brandDefinition": "q[\\s-]*ring|つながる\\s*qr|つながるキューアール",
+  "brandSegmentation": {
+    "current7": {
+      "brand": {
+        "impressions": 29,
+        "clicks": 19,
+        "ctrPercent": 65.517241,
+        "position": 1.275862,
+        "observedDays": 7,
+        "observation": "observed"
+      },
+      "nonBrand": {
+        "impressions": 943,
+        "clicks": 5,
+        "ctrPercent": 0.530223,
+        "position": 14.803818,
+        "observedDays": 7,
+        "observation": "observed"
+      },
+      "queryTotal": {
+        "impressions": 972,
+        "clicks": 24,
+        "ctrPercent": 2.469136,
+        "position": 14.400206,
+        "observedDays": 7,
+        "observation": "observed"
+      },
+      "siteTotal": {
+        "impressions": 3408,
+        "clicks": 52,
+        "ctrPercent": 1.525822,
+        "position": 9.815434,
+        "observedDays": 7,
+        "observation": "observed"
+      },
+      "scope": "検索語が返されたサイト全体の行だけ。匿名化・省略等でサイト合計とは一致しない。対象記事の指名/非指名内訳ではない。"
+    },
+    "previous7": {
+      "brand": {
+        "impressions": 41,
+        "clicks": 22,
+        "ctrPercent": 53.658537,
+        "position": 1.634146,
+        "observedDays": 7,
+        "observation": "observed"
+      },
+      "nonBrand": {
+        "impressions": 401,
+        "clicks": 4,
+        "ctrPercent": 0.997506,
+        "position": 13.763092,
+        "observedDays": 7,
+        "observation": "observed"
+      },
+      "queryTotal": {
+        "impressions": 442,
+        "clicks": 26,
+        "ctrPercent": 5.882353,
+        "position": 12.638009,
+        "observedDays": 7,
+        "observation": "observed"
+      },
+      "siteTotal": {
+        "impressions": 1732,
+        "clicks": 40,
+        "ctrPercent": 2.309469,
+        "position": 8.95843,
+        "observedDays": 7,
+        "observation": "observed"
+      },
+      "scope": "検索語が返されたサイト全体の行だけ。匿名化・省略等でサイト合計とは一致しない。対象記事の指名/非指名内訳ではない。"
+    },
+    "current28": {
+      "brand": {
+        "impressions": 158,
+        "clicks": 83,
+        "ctrPercent": 52.531646,
+        "position": 1.481013,
+        "observedDays": 28,
+        "observation": "observed"
+      },
+      "nonBrand": {
+        "impressions": 1518,
+        "clicks": 11,
+        "ctrPercent": 0.724638,
+        "position": 14.774045,
+        "observedDays": 28,
+        "observation": "observed"
+      },
+      "queryTotal": {
+        "impressions": 1676,
+        "clicks": 94,
+        "ctrPercent": 5.608592,
+        "position": 13.520883,
+        "observedDays": 28,
+        "observation": "observed"
+      },
+      "siteTotal": {
+        "impressions": 6007,
+        "clicks": 167,
+        "ctrPercent": 2.78009,
+        "position": 9.395705,
+        "observedDays": 28,
+        "observation": "observed"
+      },
+      "scope": "検索語が返されたサイト全体の行だけ。匿名化・省略等でサイト合計とは一致しない。対象記事の指名/非指名内訳ではない。"
+    },
+    "previous28": {
+      "brand": {
+        "impressions": 120,
+        "clicks": 35,
+        "ctrPercent": 29.166667,
+        "position": 1.691667,
+        "observedDays": 24,
+        "observation": "observed"
+      },
+      "nonBrand": {
+        "impressions": 71,
+        "clicks": 1,
+        "ctrPercent": 1.408451,
+        "position": 8.366197,
+        "observedDays": 24,
+        "observation": "observed"
+      },
+      "queryTotal": {
+        "impressions": 191,
+        "clicks": 36,
+        "ctrPercent": 18.848168,
+        "position": 4.172775,
+        "observedDays": 27,
+        "observation": "observed"
+      },
+      "siteTotal": {
+        "impressions": 641,
+        "clicks": 119,
+        "ctrPercent": 18.564743,
+        "position": 4.822153,
+        "observedDays": 28,
+        "observation": "observed"
+      },
+      "scope": "検索語が返されたサイト全体の行だけ。匿名化・省略等でサイト合計とは一致しない。対象記事の指名/非指名内訳ではない。"
+    }
+  },
+  "existingChanges": [
+    {
+      "pr": 142,
+      "state": "merged",
+      "releaseObservedAtJst": "2026-11-21 02:40:07",
+      "scope": "lost-wallet SEO title/description/冒頭と承認履歴",
+      "decision": "現在の改善値を再提案せず、十分な改訂後期間を待つ。"
+    },
+    {
+      "pr": 140,
+      "state": "draft",
+      "scope": "GA4成果イベント/AI流入集計準備とSERVICE導線",
+      "decision": "未接続・未受信の準備コードを現行本番計測として扱わない。今回導入しない。"
+    },
+    {
+      "pr": 144,
+      "state": "draft",
+      "scope": "画像監査・制作ガイド",
+      "decision": "画像監査提案を今回実装しない。"
+    },
+    {
+      "pr": 134,
+      "state": "draft",
+      "scope": "未公開コラムの一括原稿",
+      "decision": "対象はmainの公開23記事のみ。未公開原稿・公開承認は変更しない。"
+    },
+    {
+      "prs": [
+        146,
+        148
+      ],
+      "state": "merged",
+      "scope": "画像01/02・11/5/8の差し替え",
+      "decision": "最新mainの画像を維持し、今回変更しない。"
+    }
+  ],
+  "conversionAudit": {
+    "known": "用途別リンク・自治体向け問い合わせCTAをコードと生成HTMLで監査。一般向けは正式リリース準備中。",
+    "unknown": "クリックからサービス閲覧・問い合わせ完了への経路、自然検索セッションでの成果、AI引用。GA4ページ集計/チャネル集計を結合して経路を推定しない。",
+    "decision": "読者の問題解決後に関連する既存リンクを維持。問い合わせ・登録は実行せず、タグ・イベントを追加しない。"
+  },
+  "recommendations": [
+    {
+      "order": 1,
+      "slug": "lost-property-retention",
+      "action": "B案のSEO title/descriptionを承認対象として検討。本文の保管/提出の主語・期限の説明と整合させる。実装しない。"
+    },
+    {
+      "order": 2,
+      "slugs": [
+        "elderly-monitoring",
+        "dementia-early-signs",
+        "dementia-forgetfulness"
+      ],
+      "action": "順位・専門性/出典・ページ×検索語を調査。タイトル変更だけの改善としない。"
+    },
+    {
+      "order": 3,
+      "slug": "lost-wallet",
+      "action": "PR #142の変更後14/28日を観測。今回の旧期間値で新タイトルの失敗と判断しない。"
+    },
+    {
+      "order": 4,
+      "slug": "care-levels",
+      "action": "少数表示でCTR改善効果は未確定。descriptionが会話だけである点の改善案を保留提示。"
+    },
+    {
+      "order": 5,
+      "slug": "lost-item-preparation",
+      "action": "相対的改善が見られるため現状維持。失くす前の予防を担当し、lost-walletの紛失直後対応と混ぜない。"
+    }
+  ],
+  "articles": [
+    {
+      "article": "離れて暮らす親の見守り、何から始める？",
+      "url": "https://www.qring.jp/column/elderly-monitoring/",
+      "slug": "elderly-monitoring",
+      "publishedAt": "2026-10-28",
+      "publishedTimestamp": "2026-10-28T00:58:01+09:00",
+      "ageAtAuditCalendarDays": 26,
+      "ageAtDataEndCalendarDays": 23,
+      "current": {
+        "seoTitle": "離れて暮らす親の見守り方法｜安否確認・センサー・GPSの選び方",
+        "description": "離れて暮らす親の見守り、何から始める？電話やメッセージによる安否確認、センサー・カメラ・GPSなどの特徴と、本人の負担を抑えた選び方を紹介します。",
+        "h1": "離れて暮らす親の見守り、何から始める？",
+        "summary": "離れて暮らす親が年齢を重ねるにつれて、「最近、元気にしているかな」「一人で暮らしていて大丈夫かな」と気になることが増えるかもしれません。",
+        "introduction": [
+          "とはいえ、毎日電話をかけたり、頻繁に様子を見に行ったりするのは難しいものです。",
+          "高齢の親を見守る方法は、カメラやセンサーなどの機器だけではありません。日々の連絡の取り方を工夫したり、必要に応じて見守りサービスを取り入れたりする方法もあります。",
+          "大切なのは、親の暮らし方や気持ちに合った方法を選ぶことです。"
+        ],
+        "headings": [
+          "まずは、普段の様子を知ることから",
+          "見守りサービスにはどんな種類がある？",
+          "親が嫌がらない見守り方法を選ぶ",
+          "外出時の安心も考えておく",
+          "無理なく続けられる方法を"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 273,
+          "clicks": 3,
+          "ctrPercent": 1.098901,
+          "position": 15.285714,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 139,
+          "clicks": 2,
+          "ctrPercent": 1.438849,
+          "position": 16.395683,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 508,
+          "clicks": 6,
+          "ctrPercent": 1.181102,
+          "position": 16.899606,
+          "observedDays": 23,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": true,
+        "impressions": 134,
+        "clicks": 1,
+        "ctrPercentagePoints": -0.339948,
+        "position": -1.109969,
+        "impressionsPercent": 96.403,
+        "clicksPercent": 50.0,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "高齢者 見守り",
+          "impressions": 12,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 17.416667,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        {
+          "query": "親の安否確認",
+          "impressions": 8,
+          "clicks": 1,
+          "ctrPercent": 12.5,
+          "position": 12.0,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "親の安否確認方法",
+          "impressions": 8,
+          "clicks": 1,
+          "ctrPercent": 12.5,
+          "position": 8.0,
+          "observedDays": 5,
+          "observation": "observed"
+        },
+        {
+          "query": "親 安否確認",
+          "impressions": 7,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.857143,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "親の見守り",
+          "impressions": 7,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 17.428571,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "離れて暮らす親 見守り",
+          "impressions": 6,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 15.666667,
+          "observedDays": 6,
+          "observation": "observed"
+        }
+      ],
+      "priority": "B",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "平均15.29位で順位要因を先に調査。一般的な安否確認と外出時連絡を分け、機器の特徴を裏付ける公的資料の不足を点検する。",
+      "titleDecision": "既存タイトルは安否確認・機器選びという本文と合致。タイトルだけで順位改善は期待しにくいため維持。",
+      "proposals": {
+        "A": {
+          "title": "離れて暮らす親の見守り方法｜安否確認・センサー・GPSの選び方",
+          "description": "離れて暮らす親の見守り、何から始める？電話やメッセージによる安否確認、センサー・カメラ・GPSなどの特徴と、本人の負担を抑えた選び方を紹介します。",
+          "reason": "既存タイトルは安否確認・機器選びという本文と合致。タイトルだけで順位改善は期待しにくいため維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "離れて暮らす親の見守り、何から始める？電話やメッセージによる安否確認、センサー・カメラ・GPSなどの特徴と、本人の負担を抑えた選び方を紹介します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "冒頭は心配の提示、直接回答は最初の節にある。今後、承認後に本文既存の選び方を冒頭へ要約する案はあるが、今回は未変更。",
+      "firstAnswerEvidence": {
+        "heading": "まずは、普段の様子を知ることから",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "離れて暮らしていると、親の生活の小さな変化には気づきにくいものです。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "高齢者の外出時の見守りに、つながるQR",
+          "href": "https://www.qring.jp/use-cases/elderly/",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "label": "高齢者の外出時の見守りに、つながるQR"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/elderly/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/elderly-monitoring/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "鍵や財布をなくさないために。今日からできる紛失対策",
+      "url": "https://www.qring.jp/column/lost-item-preparation/",
+      "slug": "lost-item-preparation",
+      "publishedAt": "2026-10-28",
+      "publishedTimestamp": "2026-10-28T00:58:01+09:00",
+      "ageAtAuditCalendarDays": 26,
+      "ageAtDataEndCalendarDays": 23,
+      "current": {
+        "seoTitle": "鍵・財布の紛失対策｜なくさない工夫と見つかった後の備え",
+        "description": "鍵や財布をなくさないために、今日からできる紛失対策をご紹介。置き場所や外出前の確認習慣、紛失防止タグの特徴、拾った方から連絡を受ける方法まで解説します。",
+        "h1": "鍵や財布をなくさないために。今日からできる紛失対策",
+        "summary": "「鍵が見つからない」「財布をどこに置いたか思い出せない」。",
+        "introduction": [
+          "急いでいるときに限って、必要なものが見つからず困った経験はありませんか？",
+          "鍵や財布などの小さな持ち物は、毎日使うものだからこそ、置き忘れや紛失が起こりやすいものです。",
+          "大切なのは、なくしてから探すだけでなく、普段からなくしにくい工夫をしておくこと。",
+          "今回は、今日から取り入れられる身近な紛失対策と、万が一なくしてしまった場合の備えをご紹介します。"
+        ],
+        "headings": [
+          "鍵や財布の置き場所を決める",
+          "外出前に持ち物を確認する習慣を",
+          "紛失防止タグを活用する方法も",
+          "なくしてしまった後のことも考えておく",
+          "毎日の小さな工夫が安心につながる"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 461,
+          "clicks": 8,
+          "ctrPercent": 1.735358,
+          "position": 7.661605,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 285,
+          "clicks": 4,
+          "ctrPercent": 1.403509,
+          "position": 7.670175,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 1059,
+          "clicks": 17,
+          "ctrPercent": 1.605288,
+          "position": 7.96034,
+          "observedDays": 23,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": true,
+        "impressions": 176,
+        "clicks": 4,
+        "ctrPercentagePoints": 0.331849,
+        "position": -0.00857,
+        "impressionsPercent": 61.754,
+        "clicksPercent": 100.0,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "財布無くさない方法",
+          "impressions": 27,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 7.37037,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        {
+          "query": "財布を無くさない方法",
+          "impressions": 17,
+          "clicks": 1,
+          "ctrPercent": 5.882353,
+          "position": 7.294118,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        {
+          "query": "物を無くさないようにするには",
+          "impressions": 12,
+          "clicks": 1,
+          "ctrPercent": 8.333333,
+          "position": 6.666667,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "財布 無くさない 工夫",
+          "impressions": 10,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 6.6,
+          "observedDays": 5,
+          "observation": "observed"
+        },
+        {
+          "query": "財布 無くさない方法",
+          "impressions": 10,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 6.3,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "なくさないように",
+          "impressions": 7,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 6.0,
+          "observedDays": 5,
+          "observation": "observed"
+        }
+      ],
+      "priority": "D",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "クリック4→8、CTR1.40→1.74%、順位はほぼ同じ。相対的に良好だが少数クリックのため優位性は未確立。",
+      "titleDecision": "予防の検索意図・本文に合致し改善傾向。紛失直後を扱うlost-walletとの役割を維持。",
+      "proposals": {
+        "A": {
+          "title": "鍵・財布の紛失対策｜なくさない工夫と見つかった後の備え",
+          "description": "鍵や財布をなくさないために、今日からできる紛失対策をご紹介。置き場所や外出前の確認習慣、紛失防止タグの特徴、拾った方から連絡を受ける方法まで解説します。",
+          "reason": "予防の検索意図・本文に合致し改善傾向。紛失直後を扱うlost-walletとの役割を維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "鍵や財布をなくさないために、今日からできる紛失対策をご紹介。置き場所や外出前の確認習慣、紛失防止タグの特徴、拾った方から連絡を受ける方法まで解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "導入は共感型で長めだが各見出しに行動が具体化。サービス導線は本文解決後に既存。",
+      "firstAnswerEvidence": {
+        "heading": "鍵や財布の置き場所を決める",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "最も手軽に始められるのは、持ち物の定位置を決めることです。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "落とし物・忘れ物対策に、つながるQR",
+          "href": "https://www.qring.jp/use-cases/belongings/",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/belongings/",
+          "label": "落とし物・忘れ物対策に、つながるQR"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/belongings/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/lost-item-preparation/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "高齢者の見守りに、つながる安心を。",
+      "url": "https://www.qring.jp/column/elderly-monitoring-contact-system/",
+      "slug": "elderly-monitoring-contact-system",
+      "publishedAt": "2026-11-06",
+      "publishedTimestamp": "2026-11-06T09:33:41+09:00",
+      "ageAtAuditCalendarDays": 17,
+      "ageAtDataEndCalendarDays": 14,
+      "current": {
+        "seoTitle": "高齢者の見守りとQRコード｜発見後の連絡を支える仕組み",
+        "description": "高齢者の見守りには、日常の安否確認だけでなく、外出先で困ったときの連絡手段も大切です。地域の見守り活動を補完する、電話番号を知らせずに声でつながるQRコードの仕組みをご紹介します。",
+        "h1": "高齢者の見守りに、つながる安心を。",
+        "summary": "高齢者が住み慣れた地域で安心して暮らし続けるために、各自治体では地域の実情に応じたさまざまな見守り施策が進められています。",
+        "introduction": [
+          "地域住民による声かけや関係機関との連携、外出時の見守りなど、その取り組みは多岐にわたります。",
+          "こうした地域の見守り活動において、一つの課題となり得るのが、外出先で困っている高齢者を発見した際の連絡方法です。",
+          "発見した方が家族や支援者の連絡先を知らない場合でも、円滑に連絡できる方法があれば、地域の見守りを支える新たな選択肢になります。"
+        ],
+        "headings": [
+          "地域の見守りと発見後の連絡",
+          "電話番号を知らせずに声でつながるQRコード",
+          "既存の見守り活動を補完する連絡手段として",
+          "まとめ"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 48,
+          "clicks": 1,
+          "ctrPercent": 2.083333,
+          "position": 5.958333,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 74,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 5.054054,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 122,
+          "clicks": 1,
+          "ctrPercent": 0.819672,
+          "position": 5.409836,
+          "observedDays": 14,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": true,
+        "impressions": -26,
+        "clicks": 1,
+        "ctrPercentagePoints": 2.083333,
+        "position": 0.904279,
+        "impressionsPercent": -35.135,
+        "clicksPercent": null,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "高齢者 見守り",
+          "impressions": 12,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 17.416667,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        {
+          "query": "高齢の親 見守り",
+          "impressions": 5,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 17.4,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "高齢 親 見守り",
+          "impressions": 4,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 21.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "高齢親 見守り",
+          "impressions": 3,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 23.666667,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "高齢の親の見守り",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 19.5,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "高齢者 遠距離 見守り",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 29.5,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開初期または少数表示。CTRの小差・1クリックの違いを過大評価しない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "高齢者の見守りとQRコード｜発見後の連絡を支える仕組み",
+          "description": "高齢者の見守りには、日常の安否確認だけでなく、外出先で困ったときの連絡手段も大切です。地域の見守り活動を補完する、電話番号を知らせずに声でつながるQRコードの仕組みをご紹介します。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "高齢者の見守りには、日常の安否確認だけでなく、外出先で困ったときの連絡手段も大切です。地域の見守り活動を補完する、電話番号を知らせずに声でつながるQRコードの仕組みをご紹介します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "地域の見守りと発見後の連絡",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "高齢者の見守りには、日常の声かけ、安否確認、外出時の支援など、さまざまな取り組みがあります。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "つながるQRのサービス紹介",
+          "href": "https://www.qring.jp/service/",
+          "checkedAt": "2026-11-06"
+        },
+        {
+          "id": "mhlw-community-watch",
+          "label": "厚生労働省：認知症施策の取組事例（地域の見守り体制整備）",
+          "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000167804.html",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/municipalities/",
+          "label": "自治体向けサービス案内"
+        },
+        {
+          "href": "/use-cases/elderly/",
+          "label": "高齢者の外出時の見守りに、つながるQR"
+        },
+        {
+          "href": "/service/",
+          "label": "つながるQRのサービス紹介"
+        },
+        {
+          "href": "https://axb.qring.jp/contact",
+          "label": "自治体向け問い合わせCTA（既存）"
+        }
+      ],
+      "expectedServiceDestination": "/municipalities/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/elderly-monitoring-contact-system/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "もしも、大切な愛犬が迷子になったら。",
+      "url": "https://www.qring.jp/column/lost-dog-preparation/",
+      "slug": "lost-dog-preparation",
+      "publishedAt": "2026-11-07",
+      "publishedTimestamp": null,
+      "ageAtAuditCalendarDays": 16,
+      "ageAtDataEndCalendarDays": 13,
+      "current": {
+        "seoTitle": "犬が迷子になったら？探し方と事前にできる対策｜つながるQR",
+        "description": "愛犬が迷子になったら、まず何をすればいい？探すときの行動や警察・保健所への連絡、迷子札・マイクロチップによる備え、電話番号を公開せずに連絡を受ける方法をご紹介します。",
+        "h1": "もしも、大切な愛犬が迷子になったら。",
+        "summary": "いつもそばにいる、大切な愛犬。",
+        "introduction": [
+          "お散歩中にリードが外れたり、玄関のドアが開いた隙に飛び出してしまったり。ほんの一瞬の出来事で、愛犬が迷子になってしまうことがあります。",
+          "もしもそんなことが起きたら、どこを探し、誰に連絡すればよいのでしょうか。",
+          "今回は、愛犬が迷子になったときの対処法と、普段からできる備えをご紹介します。"
+        ],
+        "headings": [
+          "愛犬がいなくなったら、まず何をする？",
+          "写真やSNSも捜索の手がかりに",
+          "知っておきたい、愛犬の迷子対策",
+          "発見してくれた方と、声でつながる方法も",
+          "大切な愛犬のために、今日からできること"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 90,
+          "clicks": 1,
+          "ctrPercent": 1.111111,
+          "position": 9.3,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 73,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.589041,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 163,
+          "clicks": 1,
+          "ctrPercent": 0.613497,
+          "position": 9.429448,
+          "observedDays": 13,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": true,
+        "impressions": 17,
+        "clicks": 1,
+        "ctrPercentagePoints": 1.111111,
+        "position": -0.289041,
+        "impressionsPercent": 23.288,
+        "clicksPercent": null,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "犬が迷子になったら",
+          "impressions": 12,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 5.166667,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        {
+          "query": "犬 迷子 探し方",
+          "impressions": 5,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 10.0,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        {
+          "query": "犬 迷子",
+          "impressions": 4,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 31.75,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "犬 迷子札 qrコード",
+          "impressions": 4,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 13.25,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "犬の迷子",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 15.0,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "犬 迷子 探し 方",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 11.0,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開初期または少数表示。CTRの小差・1クリックの違いを過大評価しない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "犬が迷子になったら？探し方と事前にできる対策｜つながるQR",
+          "description": "愛犬が迷子になったら、まず何をすればいい？探すときの行動や警察・保健所への連絡、迷子札・マイクロチップによる備え、電話番号を公開せずに連絡を受ける方法をご紹介します。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "愛犬が迷子になったら、まず何をすればいい？探すときの行動や警察・保健所への連絡、迷子札・マイクロチップによる備え、電話番号を公開せずに連絡を受ける方法をご紹介します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "愛犬がいなくなったら、まず何をする？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "まずは、最後に姿を見た場所や時間を確認しましょう。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "環境省｜迷子にさせてしまったら",
+          "href": "https://www.env.go.jp/nature/dobutsu/aigo/shuyo/if.html",
+          "checkedAt": "2026-11-06"
+        },
+        {
+          "id": "source-2",
+          "label": "環境省｜犬と猫のマイクロチップ情報登録について",
+          "href": "https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/service/",
+          "label": "つながるQRのサービス紹介"
+        },
+        {
+          "href": "/use-cases/pets/",
+          "label": "つながるQRで、ペットの迷子時の連絡に備える"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/pets/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/lost-dog-preparation/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "「もしかして認知症？」気になる初期症状をチェック",
+      "url": "https://www.qring.jp/column/dementia-early-signs/",
+      "slug": "dementia-early-signs",
+      "publishedAt": "2026-11-07",
+      "publishedTimestamp": null,
+      "ageAtAuditCalendarDays": 16,
+      "ageAtDataEndCalendarDays": 13,
+      "current": {
+        "seoTitle": "認知症の初期症状チェック｜物忘れとの違いと相談先",
+        "description": "認知症の初期症状にはどのようなものがある？物忘れとの違いや、家族が気づきたい日常の変化をチェック形式で紹介。気になったときの相談先も解説します。",
+        "h1": "「もしかして認知症？」気になる初期症状をチェック",
+        "summary": "「最近、同じことを何度も聞くようになった」「以前より物忘れが増えた気がする」。",
+        "introduction": [
+          "親や家族のちょっとした変化に、気になることはありませんか？",
+          "年齢を重ねると物忘れが増えることがありますが、認知症による変化とはどのような違いがあるのでしょうか。"
+        ],
+        "headings": [
+          "年齢による物忘れと認知症の違い",
+          "気になる変化をチェック",
+          "気になるときは、どこに相談する？",
+          "本人の気持ちも大切に",
+          "参考資料"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 49,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 55.816327,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 9,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 56.444444,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 58,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 55.913793,
+          "observedDays": 10,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": true,
+        "impressions": 40,
+        "clicks": 0,
+        "ctrPercentagePoints": 0.0,
+        "position": -0.628117,
+        "impressionsPercent": 444.444,
+        "clicksPercent": null,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "認知症 症状",
+          "impressions": 9,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 27.111111,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        {
+          "query": "認知症 チェック",
+          "impressions": 4,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 35.75,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "認知症 物忘れ",
+          "impressions": 3,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 48.333333,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        {
+          "query": "初期の認知症の症状",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 81.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "認知症 初期症状",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 76.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "70代 認知症の初期症状は",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 54.0,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "B",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "49表示・平均55.82位。CTR0%だけでタイトルを原因にしない。少数のため順位課題も暫定評価。",
+      "titleDecision": "タイトルは症状・物忘れ・相談という本文に合致。順位と専門性・公的根拠の評価を先に確認。",
+      "proposals": {
+        "A": {
+          "title": "認知症の初期症状チェック｜物忘れとの違いと相談先",
+          "description": "認知症の初期症状にはどのようなものがある？物忘れとの違いや、家族が気づきたい日常の変化をチェック形式で紹介。気になったときの相談先も解説します。",
+          "reason": "タイトルは症状・物忘れ・相談という本文に合致。順位と専門性・公的根拠の評価を先に確認。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "認知症の初期症状にはどのようなものがある？物忘れとの違いや、家族が気づきたい日常の変化をチェック形式で紹介。気になったときの相談先も解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "診断を確定するセルフチェックではない旨を維持。症状例・生活変化・相談先の対応はある。",
+      "firstAnswerEvidence": {
+        "heading": "年齢による物忘れと認知症の違い",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "例えば、昨日の夕食で何を食べたか思い出せないのは、加齢による物忘れでも見られます。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "政府広報オンライン｜知っておきたい認知症の基本",
+          "href": "https://www.gov-online.go.jp/article/202501/entry-7013.html",
+          "checkedAt": "2026-11-06"
+        },
+        {
+          "id": "source-2",
+          "label": "厚生労働省｜認知症に関する相談について",
+          "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "label": "つながるQRで、高齢者の外出時の連絡に備える"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/elderly/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/dementia-early-signs/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "老人ホームって種類が多すぎ！何が違うの？",
+      "url": "https://www.qring.jp/column/senior-care-facility-types/",
+      "slug": "senior-care-facility-types",
+      "publishedAt": "2026-11-07",
+      "publishedTimestamp": null,
+      "ageAtAuditCalendarDays": 16,
+      "ageAtDataEndCalendarDays": 13,
+      "current": {
+        "seoTitle": "高齢者向け施設の種類と違い｜サ高住・特養・グループホーム",
+        "description": "老人ホームや高齢者向け施設にはどんな種類がある？サ高住、特養、グループホーム、デイサービスなどの違いと、それぞれの役割や選び方を分かりやすく解説します。",
+        "h1": "老人ホームって種類が多すぎ！何が違うの？",
+        "summary": "親の介護や今後の暮らしについて考え始めると、「サ高住」「特養」「グループホーム」「デイサービス」など、さまざまな名前を耳にします。",
+        "introduction": [
+          "どれも高齢者を支える仕組みですが、実は役割が大きく異なります。",
+          "まずは、住む場所なのか、通って利用するサービスなのかを区別すると、違いが分かりやすくなります。"
+        ],
+        "headings": [
+          "住まいとして利用する施設",
+          "自宅で暮らしながら利用するサービス",
+          "どの施設・サービスを選べばいい？",
+          "参考資料"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 26,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 12.576923,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 9,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 7.0,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 35,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 11.142857,
+          "observedDays": 9,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": true,
+        "impressions": 17,
+        "clicks": 0,
+        "ctrPercentagePoints": 0.0,
+        "position": 5.576923,
+        "impressionsPercent": 188.889,
+        "clicksPercent": null,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開初期または少数表示。CTRの小差・1クリックの違いを過大評価しない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "高齢者向け施設の種類と違い｜サ高住・特養・グループホーム",
+          "description": "老人ホームや高齢者向け施設にはどんな種類がある？サ高住、特養、グループホーム、デイサービスなどの違いと、それぞれの役割や選び方を分かりやすく解説します。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "老人ホームや高齢者向け施設にはどんな種類がある？サ高住、特養、グループホーム、デイサービスなどの違いと、それぞれの役割や選び方を分かりやすく解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "住まいとして利用する施設",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "サービス付き高齢者向け住宅（サ高住）"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "厚生労働省｜介護保険サービスの解説",
+          "href": "https://www.kaigokensaku.mhlw.go.jp/commentary/service.html",
+          "checkedAt": "2026-11-06"
+        },
+        {
+          "id": "source-2",
+          "label": "厚生労働省｜サービス付き高齢者向け住宅について",
+          "href": "https://www.kaigokensaku.mhlw.go.jp/publish_sumai/",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "label": "高齢者の外出時の連絡手段として、つながるQRを知る"
+        }
+      ],
+      "expectedServiceDestination": null,
+      "funnelAssessment": "記事テーマとの関連を優先し、サービスリンクを無理に追加しない。",
+      "canonicalExpected": "https://www.qring.jp/column/senior-care-facility-types/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "そういえば、学校の連絡網ってなくなった？",
+      "url": "https://www.qring.jp/column/school-contact-list-privacy/",
+      "slug": "school-contact-list-privacy",
+      "publishedAt": "2026-11-07",
+      "publishedTimestamp": null,
+      "ageAtAuditCalendarDays": 16,
+      "ageAtDataEndCalendarDays": 13,
+      "current": {
+        "seoTitle": "学校の連絡網が減った理由｜個人情報とプライバシーの変化",
+        "description": "昔は当たり前だった学校の連絡網や住所録は、なぜ見かけなくなったのでしょうか。個人情報保護への意識の変化、連絡手段のデジタル化、プライバシーとの付き合い方を解説します。",
+        "h1": "そういえば、学校の連絡網ってなくなった？",
+        "summary": "昔は、学校から配られるクラスの連絡網に、友達の家の電話番号がずらりと並んでいました。",
+        "introduction": [
+          "卒業アルバムには住所や電話番号が載り、町内会の名簿にも近所の人の連絡先が書かれていることがありました。",
+          "ところが今では、こうした情報を見かける機会が少なくなっています。",
+          "私たちの個人情報に対する考え方は、どのように変わってきたのでしょうか。"
+        ],
+        "headings": [
+          "昔は当たり前だった「連絡先の共有」",
+          "なぜ連絡網は減っていったの？",
+          "卒業アルバムや町内会の名簿も変化",
+          "デジタル化で便利になった一方、新しい課題も",
+          "大切なのは、情報を隠すことだけではない",
+          "参考資料"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 76,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 6.921053,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 40,
+          "clicks": 1,
+          "ctrPercent": 2.5,
+          "position": 8.1,
+          "observedDays": 5,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 116,
+          "clicks": 1,
+          "ctrPercent": 0.862069,
+          "position": 7.327586,
+          "observedDays": 12,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": true,
+        "impressions": 36,
+        "clicks": -1,
+        "ctrPercentagePoints": -2.5,
+        "position": -1.178947,
+        "impressionsPercent": 90.0,
+        "clicksPercent": -100.0,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "学校 連絡網 廃止 いつから",
+          "impressions": 13,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 8.307692,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        {
+          "query": "連絡網 廃止",
+          "impressions": 7,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.0,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "連絡網廃止",
+          "impressions": 4,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.25,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "学校連絡網",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 2.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "小学校 連絡網 廃止",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 10.0,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "連絡網 いつからなくなった",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 8.0,
+          "observedDays": 2,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "76表示・0クリック・平均6.92位だが少数。学校/地域/保護者の意図をページ×検索語で確認する必要がある。",
+      "titleDecision": "既存タイトルは理由とプライバシーという主題に一致。法律で一律廃止との断定は本文で避けており維持。",
+      "proposals": {
+        "A": {
+          "title": "学校の連絡網が減った理由｜個人情報とプライバシーの変化",
+          "description": "昔は当たり前だった学校の連絡網や住所録は、なぜ見かけなくなったのでしょうか。個人情報保護への意識の変化、連絡手段のデジタル化、プライバシーとの付き合い方を解説します。",
+          "reason": "既存タイトルは理由とプライバシーという主題に一致。法律で一律廃止との断定は本文で避けており維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "昔は当たり前だった学校の連絡網や住所録は、なぜ見かけなくなったのでしょうか。個人情報保護への意識の変化、連絡手段のデジタル化、プライバシーとの付き合い方を解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "つながるQRを具体的に説明する記事ではない。無理な学校向け導入実績・販売訴求を足さない。",
+      "firstAnswerEvidence": {
+        "heading": "昔は当たり前だった「連絡先の共有」",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "携帯電話やインターネットが普及する前は、学校の緊急連絡や地域の連絡事項を伝えるために、電話番号を共有することが便利な方法でした。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "個人情報保護委員会｜名簿の作成・配布に関するQ&A",
+          "href": "https://www.ppc.go.jp/all_faq_index/faq1-q4-18/",
+          "checkedAt": "2026-11-06"
+        },
+        {
+          "id": "source-2",
+          "label": "個人情報保護委員会｜公式サイト",
+          "href": "https://www.ppc.go.jp/",
+          "checkedAt": "2026-11-06"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [],
+      "expectedServiceDestination": null,
+      "funnelAssessment": "本文はプライバシー一般の話題。サービス説明の必要性を確認してから既存FAQ/SERVICEへの1導線を検討する余地はあるが、現時点では追加しない。",
+      "canonicalExpected": "https://www.qring.jp/column/school-contact-list-privacy/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "要支援？要介護？いったい何が違うの？",
+      "url": "https://www.qring.jp/column/care-levels/",
+      "slug": "care-levels",
+      "publishedAt": "2026-11-08",
+      "publishedTimestamp": "2026-11-08T08:00:00+09:00",
+      "ageAtAuditCalendarDays": 15,
+      "ageAtDataEndCalendarDays": 12,
+      "current": {
+        "seoTitle": "要支援？要介護？いったい何が違うの？",
+        "description": "「母は要支援2になったらしい」「父は要介護1から2に変わったんだって」",
+        "h1": "要支援？要介護？いったい何が違うの？",
+        "summary": "「母は要支援2になったらしい」「父は要介護1から2に変わったんだって」",
+        "introduction": [
+          "そんな話を聞いても、介護に関わったことがなければ、何が違うのか分からないですよね。",
+          "そもそも要支援と要介護って何？ 数字が大きくなるとどうなるの？",
+          "今回は、介護保険の基本を分かりやすく解説します。"
+        ],
+        "headings": [
+          "そもそも「要支援」「要介護」って何？",
+          "要支援1・2、要介護1〜5の違い",
+          "要支援2と要介護1は、何が違う？",
+          "認定されると何が変わる？",
+          "誰が、どうやって決めるの？",
+          "迷ったら、まずは相談を",
+          "関連記事",
+          "参考資料"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 5,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 10.6,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 6,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 4.333333,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 11,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 7.181818,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "impressions": -1,
+        "clicks": 0,
+        "ctrPercentagePoints": 0.0,
+        "position": 6.266667,
+        "impressionsPercent": -16.667,
+        "clicksPercent": null,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "要介護1 要支援2 違い",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 20.0,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "5表示ではCTR差の評価不可。descriptionが会話例だけで、学べる内容を示していない点はコード上確認できる。",
+      "titleDecision": "親しみやすい問いは本文と一致。タイトル変更を急がず、承認後のdescription改善を小さな候補とする。",
+      "proposals": {
+        "A": {
+          "title": "要支援？要介護？いったい何が違うの？",
+          "description": "「母は要支援2になったらしい」「父は要介護1から2に変わったんだって」",
+          "reason": "親しみやすい問いは本文と一致。タイトル変更を急がず、承認後のdescription改善を小さな候補とする。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "要支援と要介護は何が違うのでしょうか。要支援1・2、要介護1〜5の区分、利用できる支援やサービス、認定までの流れと相談先を分かりやすく解説します。",
+        "bodyCrossCheck": "本文の認定区分、認定されると何が変わるか、誰がどう決めるか、相談先の各節に対応。タイトルはA案維持。descriptionのみ承認後の候補。"
+      },
+      "aioAssessment": "導入の答えは後続節にある。認定区分と支援内容は本文で説明。",
+      "firstAnswerEvidence": {
+        "heading": "そもそも「要支援」「要介護」って何？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "要支援・要介護とは、日常生活でどのくらい支援や介護が必要なのかを表す、介護保険の認定区分です。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "厚生労働省｜要介護認定はどのように行われるか",
+          "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-2",
+          "label": "厚生労働省｜介護サービス情報公表システム",
+          "href": "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-3",
+          "label": "厚生労働省｜介護保険制度について",
+          "href": "https://www.mhlw.go.jp/content/12300000/000362938.pdf",
+          "checkedAt": "2026-11-07"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "label": "つながるQRの関連サービスを見る"
+        },
+        {
+          "href": "/column/senior-care-facility-types/",
+          "label": "老人ホームって種類が多すぎ！何が違うの？"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/elderly/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/care-levels/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "お財布を落としたら？",
+      "url": "https://www.qring.jp/column/lost-wallet/",
+      "slug": "lost-wallet",
+      "publishedAt": "2026-11-09",
+      "publishedTimestamp": "2026-11-09T08:00:00+09:00",
+      "ageAtAuditCalendarDays": 14,
+      "ageAtDataEndCalendarDays": 11,
+      "current": {
+        "seoTitle": "財布を落としたら何をする？カード停止・遺失届・見つかった後の対応",
+        "description": "財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。",
+        "h1": "お財布を落としたら？",
+        "summary": "財布をなくしたら、クレジットカード・キャッシュカードの利用停止を優先し、警察への遺失届、駅・店舗への問い合わせ、身分証明書の紛失手続きを進めましょう。この記事では、見つかったときの連絡・返還手続きと、拾得者への報労金の基本も解説します。",
+        "introduction": [],
+        "headings": [
+          "最初にすべきことは？",
+          "遺失届を出すとどうなる？",
+          "財布が見つかったら？",
+          "拾った人にお礼は必要？",
+          "3か月経っても持ち主が現れなかったら？",
+          "そもそも、拾った人が連絡できるようにするには？",
+          "まとめ"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 1182,
+          "clicks": 4,
+          "ctrPercent": 0.338409,
+          "position": 9.040609,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 594,
+          "clicks": 4,
+          "ctrPercent": 0.673401,
+          "position": 9.058923,
+          "observedDays": 5,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 1776,
+          "clicks": 8,
+          "ctrPercent": 0.45045,
+          "position": 9.046734,
+          "observedDays": 12,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "impressions": 588,
+        "clicks": 0,
+        "ctrPercentagePoints": -0.334992,
+        "position": -0.018314,
+        "impressionsPercent": 98.99,
+        "clicksPercent": 0.0,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "財布落としたら警察から連絡くる",
+          "impressions": 27,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 7.962963,
+          "observedDays": 5,
+          "observation": "observed"
+        },
+        {
+          "query": "財布失くしたとき",
+          "impressions": 20,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 10.65,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        {
+          "query": "財布無くした時",
+          "impressions": 17,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 10.588235,
+          "observedDays": 6,
+          "observation": "observed"
+        },
+        {
+          "query": "お財布なくしたとき",
+          "impressions": 9,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.666667,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "お財布を落としたら",
+          "impressions": 9,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 10.444444,
+          "observedDays": 5,
+          "observation": "observed"
+        },
+        {
+          "query": "財布 落とした 電話 くる",
+          "impressions": 8,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 6.875,
+          "observedDays": 6,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "表示594→1182、クリック4→4、CTR0.673→0.338%、順位9.06→9.04。露出増と低CTRは観測事実だが、検索語構成不明で原因は未特定。",
+      "titleDecision": "PR #142でSEOタイトル・description・冒頭を改訂済み。改訂後の完了した評価期間がなく、連続変更を避ける。",
+      "proposals": {
+        "A": {
+          "title": "財布を落としたら何をする？カード停止・遺失届・見つかった後の対応",
+          "description": "財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。",
+          "reason": "PR #142でSEOタイトル・description・冒頭を改訂済み。改訂後の完了した評価期間がなく、連続変更を避ける。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "冒頭に初動と扱う範囲を明示。連絡・返還・報労金も既存本文にあり、重複FAQは不要。",
+      "firstAnswerEvidence": {
+        "heading": "最初にすべきことは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "財布が見つからない場合は、被害の拡大を防ぐため、クレジットカードやキャッシュカードの利用停止を優先しましょう。カード会社や金融機関の公式窓口に連絡し、停止・再発行の手続きを確認します。運転免許証やマイナンバーカードなどが入っていた場合も、それぞれの紛失手続きが必要です。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "警察庁｜落とし物・忘れ物",
+          "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+          "checkedAt": "2026-11-07"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/belongings/",
+          "label": "つながるQRの関連サービスを見る"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/belongings/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/lost-wallet/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "認知症と物忘れ、何が違う？",
+      "url": "https://www.qring.jp/column/dementia-forgetfulness/",
+      "slug": "dementia-forgetfulness",
+      "publishedAt": "2026-11-10",
+      "publishedTimestamp": "2026-11-10T08:00:00+09:00",
+      "ageAtAuditCalendarDays": 13,
+      "ageAtDataEndCalendarDays": 10,
+      "current": {
+        "seoTitle": "認知症と物忘れ、何が違う？",
+        "description": "「昨日の夕食を思い出せない」「同じ話を何度もする」。こうした変化があったとき、単なる物忘れなのか、認知症なのか、不安になる方もいるでしょう。大切なのは、症状の違いを知るだけでなく、どこで相談し、どのような検査を受けられるかを知ることです。",
+        "h1": "認知症と物忘れ、何が違う？",
+        "summary": "「昨日の夕食を思い出せない」「同じ話を何度もする」。こうした変化があったとき、単なる物忘れなのか、認知症なのか、不安になる方もいるでしょう。大切なのは、症状の違いを知るだけでなく、どこで相談し、どのような検査を受けられるかを知ることです。",
+        "introduction": [],
+        "headings": [
+          "年齢による物忘れとの違い",
+          "認知症が心配なときは何科を受診する？",
+          "長谷川式認知症スケールとは？",
+          "CTやMRIも受けるの？",
+          "受診前に準備しておくとよいこと",
+          "まとめ"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 14,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 56.785714,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 0,
+          "clicks": 0,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "no_rows_in_supplied_export"
+        },
+        "current28": {
+          "impressions": 14,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 56.785714,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "impressions": 14,
+        "clicks": 0,
+        "ctrPercentagePoints": null,
+        "position": null,
+        "impressionsPercent": null,
+        "clicksPercent": null,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "認知症 物忘れ",
+          "impressions": 3,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 48.333333,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        {
+          "query": "認知症 物忘れ 違い",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 80.0,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "B",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "14表示・平均56.79位。まず順位・対象クエリを確認する。母数は小さく断定不可。",
+      "titleDecision": "物忘れとの違いと受診相談という本文に合致。タイトル変更で済む問題とは判断しない。",
+      "proposals": {
+        "A": {
+          "title": "認知症と物忘れ、何が違う？",
+          "description": "「昨日の夕食を思い出せない」「同じ話を何度もする」。こうした変化があったとき、単なる物忘れなのか、認知症なのか、不安になる方もいるでしょう。大切なのは、症状の違いを知るだけでなく、どこで相談し、どのような検査を受けられるかを知ることです。",
+          "reason": "物忘れとの違いと受診相談という本文に合致。タイトル変更で済む問題とは判断しない。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "「昨日の夕食を思い出せない」「同じ話を何度もする」。こうした変化があったとき、単なる物忘れなのか、認知症なのか、不安になる方もいるでしょう。大切なのは、症状の違いを知るだけでなく、どこで相談し、どのような検査を受けられるかを知ることです。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "検査数値や診断に関する例外を切り落とさず、公的・学会資料と対応付けを再確認する候補。",
+      "firstAnswerEvidence": {
+        "heading": "年齢による物忘れとの違い",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "年齢を重ねると、名前や予定を思い出すまでに時間がかかることがあります。例えば、夕食の献立を忘れても、食事をしたこと自体は覚えている場合があります。一方、認知症では、食事をしたこと自体を覚えていなかったり、慣れた場所で道に迷ったり、金銭管理が難しくなったりすることがあります。ただし、忘れ方だけで認知症と判断することはできません。重要なのは、以前と比べた変化と、日常生活への影響です。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "日本老年医学会｜認知機能の評価法と認知症の診断",
+          "href": "https://www.jpn-geriat-soc.or.jp/tool/tool_02",
+          "checkedAt": "2026-11-07"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "label": "つながるQRの関連サービスを見る"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/elderly/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/dementia-forgetfulness/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "忘れ物はいつまで保管する？",
+      "url": "https://www.qring.jp/column/lost-property-retention/",
+      "slug": "lost-property-retention",
+      "publishedAt": "2026-11-11",
+      "publishedTimestamp": "2026-11-11T00:03:38+09:00",
+      "ageAtAuditCalendarDays": 12,
+      "ageAtDataEndCalendarDays": 9,
+      "current": {
+        "seoTitle": "忘れ物はいつまで保管する？",
+        "description": "店舗やホテル、商業施設で預かった忘れ物。「持ち主が取りに来ない場合、いつまで保管すればいいの？」という疑問を持つ方もいるでしょう。また、自分が落とし物を拾った場合、持ち主が現れなければ、その物はどうなるのでしょうか。遺失物法の基本的なルールを確認します。",
+        "h1": "忘れ物はいつまで保管する？",
+        "summary": "店舗やホテル、商業施設で預かった忘れ物。「持ち主が取りに来ない場合、いつまで保管すればいいの？」という疑問を持つ方もいるでしょう。また、自分が落とし物を拾った場合、持ち主が現れなければ、その物はどうなるのでしょうか。遺失物法の基本的なルールを確認します。",
+        "introduction": [],
+        "headings": [
+          "店舗の忘れ物は何日間保管する？",
+          "拾った人はいつまでに届ける？",
+          "持ち主が現れなかったら？",
+          "お礼は何％もらえる？",
+          "店舗が気をつけたい個人情報",
+          "持ち主への連絡手段を増やすには？",
+          "まとめ"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 652,
+          "clicks": 1,
+          "ctrPercent": 0.153374,
+          "position": 7.825153,
+          "observedDays": 7,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 186,
+          "clicks": 1,
+          "ctrPercent": 0.537634,
+          "position": 8.913978,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        "current28": {
+          "impressions": 838,
+          "clicks": 2,
+          "ctrPercent": 0.238663,
+          "position": 8.066826,
+          "observedDays": 11,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "impressions": 466,
+        "clicks": 0,
+        "ctrPercentagePoints": -0.38426,
+        "position": -1.088825,
+        "impressionsPercent": 250.538,
+        "clicksPercent": 0.0,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "財布拾ったら",
+          "impressions": 17,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.705882,
+          "observedDays": 5,
+          "observation": "observed"
+        },
+        {
+          "query": "パチ屋 忘れ物 いつまで",
+          "impressions": 7,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 7.714286,
+          "observedDays": 5,
+          "observation": "observed"
+        },
+        {
+          "query": "財布 拾ったら",
+          "impressions": 7,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.285714,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "拾得物 何日以内に届ける",
+          "impressions": 6,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 5.666667,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "拾得物 保管期間 店舗",
+          "impressions": 4,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 11.0,
+          "observedDays": 4,
+          "observation": "observed"
+        },
+        {
+          "query": "お店 忘れ物 保管期間",
+          "impressions": 3,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 10.333333,
+          "observedDays": 2,
+          "observation": "observed"
+        }
+      ],
+      "priority": "A",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "652表示に対して1クリック。平均7.83位でも、店舗・警察・拾得者・落とし主の検索意図が混在する可能性。前7日は公開途中で露出日数が違う。",
+      "titleDecision": "現行の問い自体は自然。対象読者と、保管・警察提出の違いを示す余地がありB案を比較候補にする。",
+      "proposals": {
+        "A": {
+          "title": "忘れ物はいつまで保管する？",
+          "description": "店舗やホテル、商業施設で預かった忘れ物。「持ち主が取りに来ない場合、いつまで保管すればいいの？」という疑問を持つ方もいるでしょう。また、自分が落とし物を拾った場合、持ち主が現れなければ、その物はどうなるのでしょうか。遺失物法の基本的なルールを確認します。",
+          "reason": "現行の問い自体は自然。対象読者と、保管・警察提出の違いを示す余地がありB案を比較候補にする。"
+        },
+        "B": {
+          "title": "忘れ物はいつまで保管する？店舗・警察の扱いと届出のルール",
+          "description": "店舗の忘れ物の扱いは、施設の種類や管理体制で異なります。警察への提出、持ち主への返還、拾得者の権利や報労金の基本を整理し、店舗での管理上の注意点も解説します。",
+          "reason": "店舗での管理と警察提出の違いを具体化。本文にある範囲だけを示す。"
+        },
+        "C": {
+          "title": "店舗の忘れ物、いつまで預かる？警察への提出と保管の違い",
+          "description": "店舗の忘れ物の扱いは、施設の種類や管理体制で異なります。警察への提出、持ち主への返還、拾得者の権利や報労金の基本を整理し、店舗での管理上の注意点も解説します。",
+          "reason": "読者の問いを保ち、制度を知る意味を示す。煽りや一律の期限を入れない。"
+        },
+        "recommended": "B",
+        "recommendedDescription": "店舗の忘れ物の扱いは、施設の種類や管理体制で異なります。警察への提出、持ち主への返還、拾得者の権利や報労金の基本を整理し、店舗での管理上の注意点も解説します。",
+        "bodyCrossCheck": "第1節「店舗の忘れ物は何日間保管する？」、拾得者の権利、報労金、個人情報管理の各節に対応。新しい法解釈・数値を約束しない。"
+      },
+      "aioAssessment": "本文第1節には施設ごとに異なるという回答があるが、冒頭は問いの列挙。法的期限や起算日・例外を一律の数字へ短縮しない。",
+      "firstAnswerEvidence": {
+        "heading": "店舗の忘れ物は何日間保管する？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "忘れ物の扱いは、施設の種類や管理体制によって異なります。店舗などの施設占有者は、拾得物を速やかに落とした方へ返還するか、警察へ提出する必要があります。また、一般的な施設占有者は、拾得物の交付を受けた日、または自ら拾った日から1週間以内に警察へ提出しないと、報労金を請求する権利や所有権を取得する権利などを失います。ただし、一定の要件を満たす特例施設占有者には、所定の手続きを経て自ら保管できる仕組みがあります。そのため、「すべての店舗で3か月間保管する」といった一律の説明は正確ではありません。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "警察庁｜落とし物・忘れ物",
+          "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-2",
+          "label": "石川県警察｜落とし物・忘れ物（施設占有者の方へ）",
+          "href": "https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html",
+          "checkedAt": "2026-11-07"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/belongings/",
+          "label": "つながるQRの関連サービスを見る"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/belongings/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/lost-property-retention/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "写真の位置情報、大丈夫？",
+      "url": "https://www.qring.jp/column/photo-location-privacy/",
+      "slug": "photo-location-privacy",
+      "publishedAt": "2026-11-12",
+      "publishedTimestamp": "2026-11-12T05:52:51+09:00",
+      "ageAtAuditCalendarDays": 11,
+      "ageAtDataEndCalendarDays": 8,
+      "current": {
+        "seoTitle": "写真の位置情報、大丈夫？",
+        "description": "SNSに投稿した何気ない写真から、自宅や撮影場所が推測されることがあります。位置情報を公開していなくても、電柱や道路標識、マンホール、建物の形などが手がかりになる場合があるのです。写真に潜む位置情報のリスクと、投稿前に確認したいことを紹介します。",
+        "h1": "写真の位置情報、大丈夫？",
+        "summary": "SNSに投稿した何気ない写真から、自宅や撮影場所が推測されることがあります。位置情報を公開していなくても、電柱や道路標識、マンホール、建物の形などが手がかりになる場合があるのです。写真に潜む位置情報のリスクと、投稿前に確認したいことを紹介します。",
+        "introduction": [],
+        "headings": [
+          "写真に位置情報が保存される？",
+          "電柱1本から場所がわかる？",
+          "位置情報を消せば安全？",
+          "SNSでは位置情報が消える？",
+          "投稿前に確認したいこと",
+          "まとめ"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 47,
+          "clicks": 1,
+          "ctrPercent": 2.12766,
+          "position": 6.042553,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 0,
+          "clicks": 0,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "no_rows_in_supplied_export"
+        },
+        "current28": {
+          "impressions": 47,
+          "clicks": 1,
+          "ctrPercent": 2.12766,
+          "position": 6.042553,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "impressions": 47,
+        "clicks": 1,
+        "ctrPercentagePoints": null,
+        "position": null,
+        "impressionsPercent": null,
+        "clicksPercent": null,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "sns 写真 位置情報",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 7.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "x 写真 位置情報",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 6.0,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開初期または少数表示。CTRの小差・1クリックの違いを過大評価しない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "写真の位置情報、大丈夫？",
+          "description": "SNSに投稿した何気ない写真から、自宅や撮影場所が推測されることがあります。位置情報を公開していなくても、電柱や道路標識、マンホール、建物の形などが手がかりになる場合があるのです。写真に潜む位置情報のリスクと、投稿前に確認したいことを紹介します。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "SNSに投稿した何気ない写真から、自宅や撮影場所が推測されることがあります。位置情報を公開していなくても、電柱や道路標識、マンホール、建物の形などが手がかりになる場合があるのです。写真に潜む位置情報のリスクと、投稿前に確認したいことを紹介します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "写真に位置情報が保存される？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "スマートフォンで撮影した写真には、撮影日時やカメラの情報に加え、GPSによる撮影場所が記録される場合があります。こうした情報は、写真のメタデータと呼ばれます。旅行写真の整理には便利ですが、写真を共有する際には注意が必要です。位置情報を削除せずに写真ファイルを送ると、受け取った人が撮影場所を確認できる場合があります。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "IPA｜情報セキュリティ10大脅威 用語と仕組み（写真の位置情報）",
+          "href": "https://www.ipa.go.jp/security/10threats/ps6vr7000000auzz-att/yougoyashikumi_2022.pdf",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-2",
+          "label": "岡山県｜写真をSNSにアップしてもいいですか？",
+          "href": "https://www.pref.okayama.jp/uploaded/attachment/233419.pdf",
+          "checkedAt": "2026-11-07"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/service/",
+          "label": "つながるQRの関連サービスを見る"
+        }
+      ],
+      "expectedServiceDestination": null,
+      "funnelAssessment": "記事テーマとの関連を優先し、サービスリンクを無理に追加しない。",
+      "canonicalExpected": "https://www.qring.jp/column/photo-location-privacy/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "身元不明の高齢者、どう探す？",
+      "url": "https://www.qring.jp/column/unidentified-elderly/",
+      "slug": "unidentified-elderly",
+      "publishedAt": "2026-11-13",
+      "publishedTimestamp": "2026-11-13T07:46:47+09:00",
+      "ageAtAuditCalendarDays": 10,
+      "ageAtDataEndCalendarDays": 7,
+      "current": {
+        "seoTitle": "身元不明の高齢者、どう探す？",
+        "description": "認知症などによって行方がわからなくなった高齢者。多くの方は比較的早く発見されますが、なかには保護された後も、名前や住所、家族がわからないまま生活している方がいます。行方不明者の人数だけでは見えない「身元不明のまま保護される」という問題を考えます。",
+        "h1": "身元不明の高齢者、どう探す？",
+        "summary": "認知症などによって行方がわからなくなった高齢者。多くの方は比較的早く発見されますが、なかには保護された後も、名前や住所、家族がわからないまま生活している方がいます。行方不明者の人数だけでは見えない「身元不明のまま保護される」という問題を考えます。",
+        "introduction": [],
+        "headings": [
+          "認知症による行方不明者は年間何人？",
+          "保護されても、身元がわからない人がいる",
+          "身元不明のままの人は何人いる？",
+          "何年も身元がわからないことはある？",
+          "家族を探すにはどうする？",
+          "発見した人が家族へ連絡できる備え",
+          "まとめ"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 8,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 7.875,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": 0,
+          "clicks": 0,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "no_rows_in_supplied_export"
+        },
+        "current28": {
+          "impressions": 8,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 7.875,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "impressions": 8,
+        "clicks": 0,
+        "ctrPercentagePoints": null,
+        "position": null,
+        "impressionsPercent": null,
+        "clicksPercent": null,
+        "note": "CTR差はポイント差。順位差はマイナスが改善。比較期間中の新規公開・検索語構成の変化を含むため施策効果とは扱わない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開初期または少数表示。CTRの小差・1クリックの違いを過大評価しない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "身元不明の高齢者、どう探す？",
+          "description": "認知症などによって行方がわからなくなった高齢者。多くの方は比較的早く発見されますが、なかには保護された後も、名前や住所、家族がわからないまま生活している方がいます。行方不明者の人数だけでは見えない「身元不明のまま保護される」という問題を考えます。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "認知症などによって行方がわからなくなった高齢者。多くの方は比較的早く発見されますが、なかには保護された後も、名前や住所、家族がわからないまま生活している方がいます。行方不明者の人数だけでは見えない「身元不明のまま保護される」という問題を考えます。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "認知症による行方不明者は年間何人？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "警察庁によると、2025年に届け出があった認知症またはその疑いに係る行方不明者は、全国で17,345人でした。これは行方不明者全体の約2割に当たります。この数字は届出に基づくものであり、65歳以上の人だけを集計したものではありません。また、同じ人が複数回届け出られる場合があります。警察庁は、認知症に係る行方不明者の約95％が、届出受理から3日以内に生存して発見されていると説明しています。一方、発見までの期間が長くなると、生存確認が難しくなる傾向も指摘されています。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "警察庁｜令和7年における行方不明者届受理等の状況",
+          "href": "https://www.npa.go.jp/news/release/2026/20260625001.html",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-2",
+          "label": "国家公安委員会｜2026年6月25日記者会見要旨",
+          "href": "https://www.npsc.go.jp/pressconf_2026/06_25.htm",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-3",
+          "label": "厚生労働省｜行方のわからない認知症高齢者等をお探しの方へ",
+          "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000052978.html",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-4",
+          "label": "岡山県｜身元不明の認知症高齢者等に関する情報",
+          "href": "https://www.pref.okayama.jp/page/407947.html",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-5",
+          "label": "岐阜県｜身元不明で保護されている高齢者等に関する情報",
+          "href": "https://www.pref.gifu.lg.jp/page/13791.html",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-6",
+          "label": "千葉県｜認知症と思われる身元不明者について",
+          "href": "https://www.pref.chiba.lg.jp/koufuku/shien/ninchishou/mimotohumei.html",
+          "checkedAt": "2026-11-07"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/municipalities/",
+          "label": "つながるQRの関連サービスを見る"
+        }
+      ],
+      "expectedServiceDestination": "/municipalities/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/unidentified-elderly/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "犬のマイクロチップって何？",
+      "url": "https://www.qring.jp/column/dog-microchip/",
+      "slug": "dog-microchip",
+      "publishedAt": "2026-11-14",
+      "publishedTimestamp": "2026-11-14T02:22:05+09:00",
+      "ageAtAuditCalendarDays": 9,
+      "ageAtDataEndCalendarDays": 6,
+      "current": {
+        "seoTitle": "犬のマイクロチップって何？",
+        "description": "犬が迷子になったとき、飼い主を確認する手がかりになるマイクロチップ。ペットショップなどで購入した犬への装着が義務化され、身近な存在になっています。しかし、実際にはどれくらい普及しているのでしょうか。また、GPSのように犬の居場所を探せるのでしょうか。",
+        "h1": "犬のマイクロチップって何？",
+        "summary": "犬が迷子になったとき、飼い主を確認する手がかりになるマイクロチップ。ペットショップなどで購入した犬への装着が義務化され、身近な存在になっています。しかし、実際にはどれくらい普及しているのでしょうか。また、GPSのように犬の居場所を探せるのでしょうか。",
+        "introduction": [],
+        "headings": [
+          "マイクロチップの仕組み",
+          "装着率は何％？",
+          "GPSとは何が違う？",
+          "装着は義務なの？",
+          "引っ越したらどうする？",
+          "迷子札も必要？",
+          "まとめ"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 20,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.45,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": 20,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.45,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "マイクロチップ",
+          "impressions": 3,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 14.333333,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "マイクロチップ 犬",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 13.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "犬 マイクロチップ gps",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 11.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "犬 マイクロチップ 読み取り スマホ",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 11.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "犬のマイクロチップ",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 8.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "犬マイクロチップ",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 11.0,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開初期または少数表示。CTRの小差・1クリックの違いを過大評価しない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "犬のマイクロチップって何？",
+          "description": "犬が迷子になったとき、飼い主を確認する手がかりになるマイクロチップ。ペットショップなどで購入した犬への装着が義務化され、身近な存在になっています。しかし、実際にはどれくらい普及しているのでしょうか。また、GPSのように犬の居場所を探せるのでしょうか。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "犬が迷子になったとき、飼い主を確認する手がかりになるマイクロチップ。ペットショップなどで購入した犬への装着が義務化され、身近な存在になっています。しかし、実際にはどれくらい普及しているのでしょうか。また、GPSのように犬の居場所を探せるのでしょうか。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "マイクロチップの仕組み",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "マイクロチップは、犬や猫の体内に装着する小さな識別器具です。専用の読み取り機を使うと、個体ごとに割り当てられた識別番号を確認できます。その番号を登録情報と照合することで、飼い主の確認につながります。マイクロチップそのものに、住所や電話番号などの個人情報が直接記録されているわけではありません。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "日本愛玩動物協会｜令和7年度全国愛玩動物飼養管理士の日の活動結果報告",
+          "href": "https://www.jpc.or.jp/pdf/r7_02_report.pdf",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-2",
+          "label": "環境省｜犬と猫のマイクロチップ情報登録について",
+          "href": "https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-3",
+          "label": "環境省｜令和7年版環境白書 第2部第2章第5節",
+          "href": "https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html",
+          "checkedAt": "2026-11-07"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/pets/",
+          "label": "つながるQRの関連サービスを見る"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/pets/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/dog-microchip/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "介護保険って何歳から？",
+      "url": "https://www.qring.jp/column/care-insurance-age/",
+      "slug": "care-insurance-age",
+      "publishedAt": "2026-11-15",
+      "publishedTimestamp": "2026-11-15T00:30:27+09:00",
+      "ageAtAuditCalendarDays": 8,
+      "ageAtDataEndCalendarDays": 5,
+      "current": {
+        "seoTitle": "介護保険って何歳から？",
+        "description": "介護保険は何歳から加入するのでしょうか。そして、毎月いくら支払うのでしょうか。介護保険は40歳から加入する制度ですが、保険料を払うことと、介護サービスを利用できることは別です。年齢による違いと、気になるお金の仕組みを解説します。",
+        "h1": "介護保険って何歳から？",
+        "summary": "介護保険は何歳から加入するのでしょうか。そして、毎月いくら支払うのでしょうか。介護保険は40歳から加入する制度ですが、保険料を払うことと、介護サービスを利用できることは別です。年齢による違いと、気になるお金の仕組みを解説します。",
+        "introduction": [],
+        "headings": [
+          "介護保険は40歳から",
+          "介護保険料はいくら？",
+          "65歳になれば誰でも使える？",
+          "サービスを使うと毎月いくら？",
+          "自己負担が高額になったら？",
+          "申請はどこでする？",
+          "まとめ"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 13,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 32.230769,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": 13,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 32.230769,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "介護保険 何歳まで",
+          "impressions": 3,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 31.333333,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "介護保険何歳から",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 38.5,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "介護保険 いつから",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 16.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "介護保険 何歳",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 36.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "介護保険 何歳から使える",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 31.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "介護保険 何歳まで払う",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 28.0,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開初期または少数表示。CTRの小差・1クリックの違いを過大評価しない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "介護保険って何歳から？",
+          "description": "介護保険は何歳から加入するのでしょうか。そして、毎月いくら支払うのでしょうか。介護保険は40歳から加入する制度ですが、保険料を払うことと、介護サービスを利用できることは別です。年齢による違いと、気になるお金の仕組みを解説します。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "介護保険は何歳から加入するのでしょうか。そして、毎月いくら支払うのでしょうか。介護保険は40歳から加入する制度ですが、保険料を払うことと、介護サービスを利用できることは別です。年齢による違いと、気になるお金の仕組みを解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "介護保険は40歳から",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "日本の公的介護保険制度では、40歳から64歳までの医療保険加入者が第2号被保険者、65歳以上の方が第1号被保険者となります。40歳から64歳までの方は、原則として医療保険料とあわせて介護保険料を支払います。65歳以上になると、市区町村が定める介護保険料を負担します。ただし、保険料を支払っているだけで、誰でも介護サービスを利用できるわけではありません。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "厚生労働省｜介護保険制度について",
+          "href": "https://www.mhlw.go.jp/content/12300000/000362938.pdf",
+          "checkedAt": "2026-11-07"
+        },
+        {
+          "id": "source-2",
+          "label": "厚生労働省｜第9期介護保険の第1号保険料等",
+          "href": "https://www.mhlw.go.jp/stf/newpage_40211.html",
+          "checkedAt": "2026-11-07"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "label": "つながるQRの関連サービスを見る"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/elderly/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/care-insurance-age/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "知らない番号から電話が来たら、出るべき？",
+      "url": "https://www.qring.jp/column/unknown-calls/",
+      "slug": "unknown-calls",
+      "publishedAt": "2026-11-16",
+      "publishedTimestamp": "2026-11-16T00:57:00+09:00",
+      "ageAtAuditCalendarDays": 7,
+      "ageAtDataEndCalendarDays": 4,
+      "current": {
+        "seoTitle": "知らない番号から電話が来たら出るべき？安全な対処法と詐欺対策",
+        "description": "知らない番号から電話が来たら出るべき？警察を装った詐欺電話や国際電話の注意点、折り返す前の確認方法、家族でできる防犯対策を解説します。",
+        "h1": "知らない番号から電話が来たら、出るべき？",
+        "summary": "スマートフォンに突然、知らない番号からの着信。 「仕事の連絡かもしれない」「宅配便かな？」「大切な用事だったらどうしよう」。そんなふうに迷った経験はありませんか？",
+        "introduction": [
+          "スマートフォンに突然、知らない番号からの着信。",
+          "「仕事の連絡かもしれない」「宅配便かな？」「大切な用事だったらどうしよう」。そんなふうに迷った経験はありませんか？",
+          "最近では、警察官や金融機関を装った詐欺電話も問題になっています。では、知らない番号から電話がかかってきたとき、どう対応するのが安全なのでしょうか。"
+        ],
+        "headings": [
+          "知らない番号からの電話は、出なくても大丈夫",
+          "電話番号が表示されていても安心とは限らない",
+          "「＋」から始まる電話番号には注意",
+          "知らない番号から着信があったら、どうする？",
+          "もし電話に出てしまったら？",
+          "家族で決めておきたい電話のルール",
+          "まとめ｜電話に出ないことも、自分を守る選択"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 0,
+          "clicks": 0,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "no_rows_in_supplied_export"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": 0,
+          "clicks": 0,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "no_rows_in_supplied_export"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "資料に該当ページ行なし。0と検索未登録を同一視しない。",
+      "titleDecision": "現行タイトルは対処法を示している。指名/非指名の対象ページ実績がないため維持。",
+      "proposals": {
+        "A": {
+          "title": "知らない番号から電話が来たら出るべき？安全な対処法と詐欺対策",
+          "description": "知らない番号から電話が来たら出るべき？警察を装った詐欺電話や国際電話の注意点、折り返す前の確認方法、家族でできる防犯対策を解説します。",
+          "reason": "現行タイトルは対処法を示している。指名/非指名の対象ページ実績がないため維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "知らない番号から電話が来たら出るべき？警察を装った詐欺電話や国際電話の注意点、折り返す前の確認方法、家族でできる防犯対策を解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "summaryとintroductionに同じ着信・迷いの文が重複。コード上の編集候補として記録するが、今回は本文を変更しない。",
+      "firstAnswerEvidence": {
+        "heading": "知らない番号からの電話は、出なくても大丈夫",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "結論からいうと、知らない番号からの電話に、無理に出る必要はありません。警察庁も特殊詐欺対策として、知らない番号からの着信に安易に応答しないよう呼びかけています。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "source-1",
+          "label": "警察庁｜固定電話の番号表示・非通知拒否サービス",
+          "href": "https://www.npa.go.jp/bureau/safetylife/sos47/case/service/",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "id": "source-2",
+          "label": "警察庁｜警察に偽装した電話番号に注意",
+          "href": "https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/250325/01.html",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "id": "source-3",
+          "label": "政府広報オンライン｜電話の向こうの「警察官」はホンモノ？",
+          "href": "https://www.gov-online.go.jp/article/202610/entry-11718.html",
+          "checkedAt": "2026-11-14"
+        },
+        {
+          "id": "source-4",
+          "label": "警察庁｜架空料金請求詐欺",
+          "href": "https://www.npa.go.jp/bureau/safetylife/sos47/case/fictitious-billing/",
+          "checkedAt": "2026-11-14"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [],
+      "expectedServiceDestination": null,
+      "funnelAssessment": "詐欺対処が目的で、商品で防げると誤認させるCTAを足さない。",
+      "canonicalExpected": "https://www.qring.jp/column/unknown-calls/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+      "url": "https://www.qring.jp/column/dog-owner-voice/",
+      "slug": "dog-owner-voice",
+      "publishedAt": "2026-11-17",
+      "publishedTimestamp": "2026-11-17T05:57:38+09:00",
+      "ageAtAuditCalendarDays": 6,
+      "ageAtDataEndCalendarDays": 3,
+      "current": {
+        "seoTitle": "犬は飼い主の声を聞き分けられる？犬の聴覚と声の認識を解説",
+        "description": "犬は飼い主の声を覚えているのでしょうか？声の聞き分け方や言葉の理解、録音した声への反応など、犬の聴覚とコミュニケーションを解説します。",
+        "h1": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+        "summary": "犬は声の特徴を手がかりに、飼い主とほかの人を聞き分けられると考えられています。同じ呼びかけでも、誰が話すかで反応が違って見えるのは、顔やにおい以外の情報も使っているからです。",
+        "introduction": [
+          "声を覚えることと、言葉の意味を理解することは同じではありません。研究でわかったことと、日々の接し方を分けて見ていきます。"
+        ],
+        "headings": [
+          "犬は飼い主の声を認識できる？",
+          "犬は言葉の意味も理解している？",
+          "録音した飼い主の声にも反応する？",
+          "犬への声かけで大切なこと",
+          "声かけを日々のやり取りに生かす"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 0,
+          "clicks": 0,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "no_rows_in_supplied_export"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": 0,
+          "clicks": 0,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "no_rows_in_supplied_export"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開初期または少数表示。CTRの小差・1クリックの違いを過大評価しない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "犬は飼い主の声を聞き分けられる？犬の聴覚と声の認識を解説",
+          "description": "犬は飼い主の声を覚えているのでしょうか？声の聞き分け方や言葉の理解、録音した声への反応など、犬の聴覚とコミュニケーションを解説します。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "犬は飼い主の声を覚えているのでしょうか？声の聞き分け方や言葉の理解、録音した声への反応など、犬の聴覚とコミュニケーションを解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "犬は飼い主の声を認識できる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬は、声の特徴を手がかりに飼い主を認識できると考えられています。2022年に発表された研究では、犬が飼い主の声を、声に含まれる音響的な特徴から識別できることが示されました。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "dog",
+          "label": "Gábor et al. (2022)｜The acoustic bases of human voice identity processing in dogs（Animal Cognition）",
+          "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/pets/",
+          "label": "ペットの迷子への備え"
+        },
+        {
+          "href": "/column/dog-microchip/",
+          "label": "犬のマイクロチップって何？"
+        },
+        {
+          "href": "/column/cat-owner-memory/",
+          "label": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/pets/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/dog-owner-voice/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "認知症は何歳から始まる？若年性認知症の特徴と相談先",
+      "url": "https://www.qring.jp/column/young-onset-dementia/",
+      "slug": "young-onset-dementia",
+      "publishedAt": "2026-11-18",
+      "publishedTimestamp": "2026-11-18T00:53:05+09:00",
+      "ageAtAuditCalendarDays": 5,
+      "ageAtDataEndCalendarDays": 2,
+      "current": {
+        "seoTitle": "認知症は何歳から始まる？若年性認知症の症状と早期相談のポイント",
+        "description": "認知症は何歳から発症するのでしょうか？65歳未満で発症する若年性認知症の特徴や初期の変化、医療機関・相談窓口について解説します。",
+        "h1": "認知症は何歳から始まる？若年性認知症の特徴と相談先",
+        "summary": "認知症は65歳未満でも発症することがあり、その場合は「若年性認知症」と呼ばれます。何歳なら心配ない、と年齢だけで判断することはできません。",
+        "introduction": [
+          "働いている時期の発症では、医療に加えて仕事や家計、家族の生活への支援も必要になります。以前との変化が続くときの相談先を整理します。"
+        ],
+        "headings": [
+          "認知症は何歳から始まる？",
+          "若年性認知症ではどんな変化が起こる？",
+          "なぜ気づくのが難しい？",
+          "どこに相談すればいい？",
+          "年齢だけで判断せず相談する"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 19,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 47.052632,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": 19,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 47.052632,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "若年性アルツハイマー",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 71.0,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "認知症 何歳から",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 20.0,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "認知症 若年性",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 38.0,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "アルツハイマー 若年性",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 77.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "アルツハイマー若年性",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 78.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "若年性認知症",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 72.0,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開11/18、19表示・平均47.05位。3暦日相当の初期データであり順位/CTRを確定評価しない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "認知症は何歳から始まる？若年性認知症の症状と早期相談のポイント",
+          "description": "認知症は何歳から発症するのでしょうか？65歳未満で発症する若年性認知症の特徴や初期の変化、医療機関・相談窓口について解説します。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "認知症は何歳から発症するのでしょうか？65歳未満で発症する若年性認知症の特徴や初期の変化、医療機関・相談窓口について解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "認知症は何歳から始まる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "認知症は、特定の年齢になったら突然始まる病気ではありません。一般に、65歳未満で発症した認知症を「若年性認知症」と呼びます。認知症の原因となる病気には、アルツハイマー病や血管性認知症など、さまざまなものがあります。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "young",
+          "label": "厚生労働省｜主な認知症施策について（若年性認知症施策）",
+          "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00006.html",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "id": "young-support",
+          "label": "厚生労働省｜若年性認知症のガイドライン・取組事例",
+          "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000167853.html",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "label": "高齢者の見守りへの活用"
+        },
+        {
+          "href": "/column/dementia-early-signs/",
+          "label": "「もしかして認知症？」気になる初期症状をチェック"
+        },
+        {
+          "href": "/column/dementia-forgetfulness/",
+          "label": "認知症と物忘れ、何が違う？"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/elderly/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/young-onset-dementia/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "財布に入れてはいけないものってある？紛失時に困らないための整理術",
+      "url": "https://www.qring.jp/column/wallet-contents-safety/",
+      "slug": "wallet-contents-safety",
+      "publishedAt": "2026-11-19",
+      "publishedTimestamp": "2026-11-19T08:00:00+09:00",
+      "ageAtAuditCalendarDays": 4,
+      "ageAtDataEndCalendarDays": 1,
+      "current": {
+        "seoTitle": "財布に入れてはいけないものは？紛失・盗難に備える持ち物チェック",
+        "description": "財布に入れておくと危険なものは？キャッシュカードと暗証番号のメモ、使わないカードなど、紛失・盗難の被害を減らすための整理方法を紹介します。",
+        "h1": "財布に入れてはいけないものってある？紛失時に困らないための整理術",
+        "summary": "財布をなくすと、現金だけでなく、カードや本人確認書類の手続きにも追われます。特にキャッシュカードと暗証番号のメモを一緒に持ち歩くことは避けたい組み合わせです。",
+        "introduction": [
+          "現金、クレジットカード、身分証明書、ポイントカード。毎日必要なものと、使わないまま入れているものを分けることが、紛失したときの被害を抑える備えになります。"
+        ],
+        "headings": [
+          "財布には大切な情報が集まっている",
+          "暗証番号のメモは入れない",
+          "使わないカードを持ち歩かない",
+          "財布をなくしたときのためにできること",
+          "紛失した後の負担を減らす整理"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 26,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 5.576923,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": 26,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 5.576923,
+          "observedDays": 3,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "財布に入れては いけない もの",
+          "impressions": 6,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 3.666667,
+          "observedDays": 2,
+          "observation": "observed"
+        },
+        {
+          "query": "財布 中身抜いて届ける",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 38.5,
+          "observedDays": 2,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開11/19、26表示・0クリック。順位5.58位でも2暦日相当のためC。descriptionの「危険」は次回に穏やかな表現を検討できるが、現段階では追加の不安喚起をしない。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "財布に入れてはいけないものは？紛失・盗難に備える持ち物チェック",
+          "description": "財布に入れておくと危険なものは？キャッシュカードと暗証番号のメモ、使わないカードなど、紛失・盗難の被害を減らすための整理方法を紹介します。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "財布に入れておくと危険なものは？キャッシュカードと暗証番号のメモ、使わないカードなど、紛失・盗難の被害を減らすための整理方法を紹介します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "財布には大切な情報が集まっている",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "財布には、本人確認に使われる書類や決済手段など、重要なものが集まりがちです。財布を紛失すると、カードの利用停止や再発行、場合によっては警察への届出など、複数の対応が必要になります。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "card",
+          "label": "金融庁｜あなたのキャッシュカードが狙われています",
+          "href": "https://www.fsa.go.jp/ordinary/card/",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "id": "lost",
+          "label": "警察庁｜遺失届とは？遺失届のポイント",
+          "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/loss.html",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/belongings/",
+          "label": "落とし物への備え"
+        },
+        {
+          "href": "/column/lost-wallet/",
+          "label": "お財布を落としたら？"
+        },
+        {
+          "href": "/column/lost-item-preparation/",
+          "label": "鍵や財布をなくさないために。今日からできる紛失対策"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/belongings/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/wallet-contents-safety/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+      "url": "https://www.qring.jp/column/qr-code-inventor/",
+      "slug": "qr-code-inventor",
+      "publishedAt": "2026-11-20",
+      "publishedTimestamp": "2026-11-20T04:19:12+09:00",
+      "ageAtAuditCalendarDays": 3,
+      "ageAtDataEndCalendarDays": 0,
+      "current": {
+        "seoTitle": "QRコードは誰が発明した？1994年に日本で生まれた理由と仕組み",
+        "description": "QRコードは誰が、いつ発明したのでしょうか？1994年に日本で誕生した背景や、QRの意味、世界中に普及した理由をわかりやすく解説します。",
+        "h1": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+        "summary": "QRコードは1994年、デンソーの原昌宏氏らの開発チームが生み出した日本発の技術です。始まりは、自動車部品などの製造現場で情報を効率よく扱いたいという課題でした。",
+        "introduction": [
+          "買い物の決済、レストランのメニュー、イベントのチケット。いま目にする使い道から少し離れて、発明の背景をたどります。"
+        ],
+        "headings": [
+          "QRコードが誕生したのは1994年",
+          "QRとは何の略？",
+          "三つの大きな四角には意味がある",
+          "なぜ世界中に広まったの？",
+          "QRコードは人と人をつなぐ技術にも",
+          "製造現場から暮らしの中へ"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": 26,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 6.923077,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": 26,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 6.923077,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [
+        {
+          "query": "qrコード 発明",
+          "impressions": 2,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 9.5,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "qr 発明者",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 10.0,
+          "observedDays": 1,
+          "observation": "observed"
+        },
+        {
+          "query": "qrコード 発明者",
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPercent": 0.0,
+          "position": 7.0,
+          "observedDays": 1,
+          "observation": "observed"
+        }
+      ],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "公開11/20、26表示・0クリック。取得最終日当日の公開で評価期間不足。",
+      "titleDecision": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "QRコードは誰が発明した？1994年に日本で生まれた理由と仕組み",
+          "description": "QRコードは誰が、いつ発明したのでしょうか？1994年に日本で誕生した背景や、QRの意味、世界中に普及した理由をわかりやすく解説します。",
+          "reason": "既存タイトルと本文の主題は一致。十分なページ別・検索語別データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "QRコードは誰が、いつ発明したのでしょうか？1994年に日本で誕生した背景や、QRの意味、世界中に普及した理由をわかりやすく解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "主題と見出しの対応、根拠とサービスの役割を維持。新たな数値・断定・重複FAQを追加しない。",
+      "firstAnswerEvidence": {
+        "heading": "QRコードが誕生したのは1994年",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは1994年、デンソーの開発チームによって生まれました。開発の中心となったのは、原昌宏氏らのチームです。当時、自動車部品の製造現場では、多くの情報を効率よく管理する必要がありました。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "history",
+          "label": "デンソーウェーブ｜QRコードの道のり",
+          "href": "https://www.qrcode.com/history/",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "id": "qr",
+          "label": "デンソーウェーブ｜QRコードとは？",
+          "href": "https://www.qrcode.com/about/",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "id": "service",
+          "label": "株式会社QRing｜つながるQR サービス紹介",
+          "href": "https://www.qring.jp/service/",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/service/",
+          "label": "つながるQRのサービスと利用条件"
+        },
+        {
+          "href": "/column/qr-code-scan-mechanism/",
+          "label": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説"
+        },
+        {
+          "href": "/column/number-private-calls/",
+          "label": "電話番号を教えずに、声だけでつながる時代へ"
+        }
+      ],
+      "expectedServiceDestination": null,
+      "funnelAssessment": "記事テーマとの関連を優先し、サービスリンクを無理に追加しない。",
+      "canonicalExpected": "https://www.qring.jp/column/qr-code-inventor/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
+      "url": "https://www.qring.jp/column/cat-owner-memory/",
+      "slug": "cat-owner-memory",
+      "publishedAt": "2026-11-21",
+      "publishedTimestamp": "2026-11-21T02:39:20+09:00",
+      "ageAtAuditCalendarDays": 2,
+      "ageAtDataEndCalendarDays": null,
+      "current": {
+        "seoTitle": "猫は飼い主を何日で忘れる？声やにおいで人を認識する仕組み",
+        "description": "猫は飼い主を何日くらい覚えているのでしょうか？長期間離れていたときの反応や、声・においによる認識、再会時の接し方を紹介します。",
+        "h1": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
+        "summary": "猫が飼い主を何日で忘れるのか、すべての猫に当てはまる日数はわかっていません。旅行や出張のあとにそっけなく見えても、それだけで忘れられたとは判断できません。",
+        "introduction": [
+          "一方、飼い主の声を聞き分ける反応は研究されています。記憶が続く期間と、目の前の反応を区別して考えてみます。"
+        ],
+        "headings": [
+          "猫は何日で飼い主を忘れる？",
+          "猫は飼い主をどうやって見分ける？",
+          "久しぶりに会うとそっけないのはなぜ？",
+          "再会したときの接し方",
+          "再会は猫のペースに合わせる"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "取得最終日より後の公開で今回の検索データは未取得。",
+      "titleDecision": "問いに対し冒頭で一律の日数は不明と回答。日数を約束する表現に変えない。",
+      "proposals": {
+        "A": {
+          "title": "猫は飼い主を何日で忘れる？声やにおいで人を認識する仕組み",
+          "description": "猫は飼い主を何日くらい覚えているのでしょうか？長期間離れていたときの反応や、声・においによる認識、再会時の接し方を紹介します。",
+          "reason": "問いに対し冒頭で一律の日数は不明と回答。日数を約束する表現に変えない。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "猫は飼い主を何日くらい覚えているのでしょうか？長期間離れていたときの反応や、声・においによる認識、再会時の接し方を紹介します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "声の識別と記憶期間を区別し、研究の射程を維持。",
+      "firstAnswerEvidence": {
+        "heading": "猫は何日で飼い主を忘れる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "猫が飼い主を何日で忘れるのか、すべての猫に当てはまる日数はわかっていません。「3日で忘れる」「何年経っても絶対に忘れない」といった単純な説明は、科学的に慎重に扱う必要があります。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "cat",
+          "label": "Saito & Shinozuka (2013)｜Vocal recognition of owners by domestic cats (Felis catus)",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/23525707/",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "id": "cat-uni",
+          "label": "東京大学｜ツレない猫、答えないけど飼い主の声聞き分ける",
+          "href": "https://www.u-tokyo.ac.jp/focus/ja/press/p01_250327_02.html",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/pets/",
+          "label": "ペットの迷子への備え"
+        },
+        {
+          "href": "/column/dog-owner-voice/",
+          "label": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/pets/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/cat-owner-memory/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "高齢者が転倒しやすいのはなぜ？家の中でできる予防対策",
+      "url": "https://www.qring.jp/column/elderly-fall-prevention/",
+      "slug": "elderly-fall-prevention",
+      "publishedAt": "2026-11-22",
+      "publishedTimestamp": "2026-11-22T08:00:00+09:00",
+      "ageAtAuditCalendarDays": 1,
+      "ageAtDataEndCalendarDays": null,
+      "current": {
+        "seoTitle": "高齢者が転倒しやすい原因とは？家庭でできる転倒予防を解説",
+        "description": "高齢者はなぜ転倒しやすくなるのでしょうか？筋力やバランス能力の変化、家の中の危険な場所、転倒を防ぐための生活習慣を紹介します。",
+        "h1": "高齢者が転倒しやすいのはなぜ？家の中でできる予防対策",
+        "summary": "高齢者の転倒には、筋力やバランス能力の変化だけでなく、床の段差、照明、体調や薬など複数の要因が関わります。年齢だけの問題として片付けず、住環境と身体の状態を合わせて確認する必要があります。",
+        "introduction": [
+          "「何もないところでつまずく」「以前より歩くのが不安そう」。こうした変化に気づいたら、声をかけるだけでなく家の中も見直してみてください。"
+        ],
+        "headings": [
+          "高齢者が転倒しやすくなる理由",
+          "実は家の中にも危険がある",
+          "転ぶのが怖いから、外出しない方がいい？",
+          "薬や体調も関係する",
+          "住まいと身体の両面から備える"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "取得最終日より後の公開で今回の検索データは未取得。",
+      "titleDecision": "原因と住環境の予防という本文と合致。データが揃うまで維持。",
+      "proposals": {
+        "A": {
+          "title": "高齢者が転倒しやすい原因とは？家庭でできる転倒予防を解説",
+          "description": "高齢者はなぜ転倒しやすくなるのでしょうか？筋力やバランス能力の変化、家の中の危険な場所、転倒を防ぐための生活習慣を紹介します。",
+          "reason": "原因と住環境の予防という本文と合致。データが揃うまで維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "高齢者はなぜ転倒しやすくなるのでしょうか？筋力やバランス能力の変化、家の中の危険な場所、転倒を防ぐための生活習慣を紹介します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "関連サービスは転倒検知/予防の機能と誤認させない表現が必要。現状は本文の健康情報とサービスを混同していない。",
+      "firstAnswerEvidence": {
+        "heading": "高齢者が転倒しやすくなる理由",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "年齢を重ねると、筋力やバランス能力、視力などが変化することがあります。例えば、足を持ち上げる力が弱くなると、小さな段差でもつまずきやすくなる場合があります。また、姿勢を立て直す反応が遅くなることもあります。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "fall",
+          "label": "消費者庁｜高齢者の事故を防ぐために",
+          "href": "https://www.caa.go.jp/policies/policy/consumer_safety/caution/caution_055/",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "id": "fall-check",
+          "label": "国立長寿医療研究センター｜高齢者のための転倒防止セルフチェック",
+          "href": "https://www.ncgg.go.jp/hospital/tento/",
+          "checkedAt": "2026-11-16"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/use-cases/elderly/",
+          "label": "高齢者の見守りへの活用"
+        },
+        {
+          "href": "/column/elderly-monitoring/",
+          "label": "離れて暮らす親の見守り、何から始める？"
+        },
+        {
+          "href": "/column/monitoring-and-surveillance/",
+          "label": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える"
+        }
+      ],
+      "expectedServiceDestination": "/use-cases/elderly/",
+      "funnelAssessment": "既存の関連先あり。重複追加不要。",
+      "canonicalExpected": "https://www.qring.jp/column/elderly-fall-prevention/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    },
+    {
+      "article": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+      "url": "https://www.qring.jp/column/smartphone-emergency-sos/",
+      "slug": "smartphone-emergency-sos",
+      "publishedAt": "2026-11-23",
+      "publishedTimestamp": "2026-11-23T08:00:00+09:00",
+      "ageAtAuditCalendarDays": 0,
+      "ageAtDataEndCalendarDays": null,
+      "current": {
+        "seoTitle": "スマホの緊急SOS機能とは？iPhone・Androidの設定と注意点",
+        "description": "スマートフォンの緊急SOS機能をご存じですか？iPhone・Androidでの基本的な仕組みや事前設定、緊急連絡先の登録、誤操作への注意点を解説します。",
+        "h1": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+        "summary": "緊急SOSは、スマートフォンから緊急通報につなげるための機能です。機種やOS、地域によって操作や通知の条件が違うため、自分の端末の設定を事前に確認しておく必要があります。",
+        "introduction": [
+          "事故や急病のときに使う機能だからこそ、普段のうちに知っておきたいもの。ただし、確認のために実際の緊急通報を発信することは避けてください。"
+        ],
+        "headings": [
+          "緊急SOS機能とは？",
+          "iPhoneではどう使う？",
+          "Androidにも緊急SOSはある？",
+          "使う前に確認しておきたいこと",
+          "スマートフォンだけに頼らない",
+          "通報せずに設定と条件を確認する"
+        ]
+      },
+      "metrics": {
+        "current7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "previous7": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "current28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        },
+        "previous28": {
+          "impressions": null,
+          "clicks": null,
+          "ctrPercent": null,
+          "position": null,
+          "observedDays": 0,
+          "observation": "article_not_yet_published_by_period_end"
+        }
+      },
+      "changes7": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "changes28": {
+        "comparable": false,
+        "reason": "公開前または未取得。ゼロに置換しない。"
+      },
+      "pageQueryMetrics": null,
+      "mainQueries": "対象ページ×検索語は未確認。下記はサイト全体で観測された関連語候補。",
+      "relatedSiteQueryCandidates": [],
+      "priority": "C",
+      "facts": [
+        "観測値はmetricsに記載。集計値のみでCTR低下の原因は確定しない。"
+      ],
+      "problemOrHypothesis": "取得最終日より後の公開で今回の検索データは未取得。",
+      "titleDecision": "設定と注意点という本文と合致。最新公開記事のため維持。",
+      "proposals": {
+        "A": {
+          "title": "スマホの緊急SOS機能とは？iPhone・Androidの設定と注意点",
+          "description": "スマートフォンの緊急SOS機能をご存じですか？iPhone・Androidでの基本的な仕組みや事前設定、緊急連絡先の登録、誤操作への注意点を解説します。",
+          "reason": "設定と注意点という本文と合致。最新公開記事のため維持。"
+        },
+        "B": null,
+        "C": null,
+        "recommended": "A",
+        "recommendedDescription": "スマートフォンの緊急SOS機能をご存じですか？iPhone・Androidでの基本的な仕組みや事前設定、緊急連絡先の登録、誤操作への注意点を解説します。",
+        "bodyCrossCheck": "現行の冒頭・見出し・本文と照合。変更なし。"
+      },
+      "aioAssessment": "機種・OS・地域の条件、実際の通報を練習しない注意、公式資料を維持。無関係な商品CTAは不要。",
+      "firstAnswerEvidence": {
+        "heading": "緊急SOS機能とは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "緊急SOSは、スマートフォンから緊急通報につなげるための機能です。機種によっては、特定のボタン操作で緊急通報を開始できるほか、登録した緊急連絡先に通知できる仕組みもあります。"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "apple",
+          "label": "Apple｜SOSを使ってiPhoneで緊急通報サービスに連絡する",
+          "href": "https://support.apple.com/ja-jp/guide/iphone/iph3c99374c/ios",
+          "checkedAt": "2026-11-16"
+        },
+        {
+          "id": "android",
+          "label": "Google｜Androidスマートフォンを使用して緊急時に助けを求める",
+          "href": "https://support.google.com/android/answer/9319337?hl=ja",
+          "checkedAt": "2026-11-23"
+        },
+        {
+          "id": "sos-news",
+          "label": "Apple｜日本での衛星経由の緊急SOS提供開始と緊急通報の基本操作",
+          "href": "https://www.apple.com/jp/newsroom/2024/07/emergency-sos-via-satellite-available-today/",
+          "checkedAt": "2026-11-23"
+        },
+        {
+          "id": "apple-safety",
+          "label": "Apple｜Apple デバイスの安心機能",
+          "href": "https://support.apple.com/ja-jp/safety-features",
+          "checkedAt": "2026-11-23"
+        },
+        {
+          "id": "apple-medical-id",
+          "label": "Apple｜iPhoneのヘルスケアアプリでメディカルIDを設定する",
+          "href": "https://support.apple.com/ja-jp/105072",
+          "checkedAt": "2026-11-23"
+        }
+      ],
+      "sourceAudit": "参照先の設置と主題との対応をコードで確認。全出典の最新性・主張ごとの裏付けを今回再検証したわけではなく未確認。",
+      "links": [
+        {
+          "href": "/column/disaster-family-contact/",
+          "label": "災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え"
+        }
+      ],
+      "expectedServiceDestination": null,
+      "funnelAssessment": "緊急通報機能とつながるQRを同等の代替手段として扱わない。現状のCTAなしを維持。",
+      "canonicalExpected": "https://www.qring.jp/column/smartphone-emergency-sos/",
+      "schemaExpected": "WebPage / Article / BreadcrumbList。Article.headlineはH1、WebPage.nameはSEO title。共通生成方式を維持。",
+      "serviceTermAudit": {
+        "中間番号": false,
+        "プライバシー電話番号": false,
+        "note": "名称は本文に未使用。番号非公開の既存説明はある。名称がないだけを理由に重複説明を追加しない。"
+      }
+    }
+  ]
+}
