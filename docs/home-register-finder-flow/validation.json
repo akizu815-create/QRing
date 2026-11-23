@@ -1,0 +1,78 @@
+{
+  "base": "605c15c",
+  "comparedHtmlPages": 48,
+  "homeOutsideHow": "identical",
+  "otherPagesIncludingService": "identical",
+  "metadataAndStructuredData": "identical",
+  "newImageFiles": 0,
+  "imagesGenerated": false,
+  "registrationLiveFlow": "unverified; public app URL blocked by network proxy",
+  "results": [
+    {
+      "width": 320,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "vertical",
+      "noOverflow": true,
+      "imagesSvgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 375,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "vertical",
+      "noOverflow": true,
+      "imagesSvgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "vertical",
+      "noOverflow": true,
+      "imagesSvgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 430,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "vertical",
+      "noOverflow": true,
+      "imagesSvgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 768,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "horizontal",
+      "noOverflow": true,
+      "imagesSvgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "horizontal",
+      "noOverflow": true,
+      "imagesSvgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    }
+  ]
+}
