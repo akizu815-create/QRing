@@ -4,8 +4,8 @@ import Image from "next/image";
 type Step = { title: string; detail?: string; image: string; alt: string };
 
 const REGISTER_STEPS: Step[] = [
-  { title: "QRコードをスキャン", detail: "「登録者の方」を選択", image: "/images/how-register-scan-a870f12eb6ca.jpg", alt: "手に持った丸型QRタグをスマートフォンで読み取る登録操作のイメージ" },
-  { title: "必要事項を登録", detail: "電話番号・アカウント情報など", image: "/images/how-register-account-4226bab9bcda.jpg", alt: "新規登録の入力欄と登録ボタンを操作するスマートフォンのイメージ" },
+  { title: "QRコードをスキャン", detail: "「登録者の方」を選択", image: "/images/how-register-scan-5e4c222644e6.jpg", alt: "手に持った丸型QRタグをスマートフォンで読み取る登録操作のイメージ" },
+  { title: "必要事項を登録", detail: "電話番号・アカウント情報など", image: "/images/how-register-account-2d0e5f0d6f76.jpg", alt: "新規登録の入力欄と登録ボタンを操作するスマートフォンのイメージ" },
   { title: "取り付ける", detail: "バッグや身近な持ち物などに取り付けます。", image: "/images/how-it-works-step-01.png", alt: "バッグに丸型QRキーホルダーが取り付けられているイラスト" },
 ];
 const FINDER_STEPS: Step[] = [

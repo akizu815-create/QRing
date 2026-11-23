@@ -1,0 +1,370 @@
+{
+  "base": "db34e53",
+  "comparedHtmlPages": 48,
+  "homeOutsideHow": "identical",
+  "otherPagesIncludingService": "identical",
+  "metadataAndStructuredData": "identical",
+  "newImageFiles": 2,
+  "imagesGenerated": false,
+  "registrationLiveFlow": "unverified; public app URL blocked by network proxy",
+  "results": [
+    {
+      "width": 320,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "vertical",
+      "noOverflow": true,
+      "specifiedImages": 5,
+      "svgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 375,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "vertical",
+      "noOverflow": true,
+      "specifiedImages": 5,
+      "svgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "vertical",
+      "noOverflow": true,
+      "specifiedImages": 5,
+      "svgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 430,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "vertical",
+      "noOverflow": true,
+      "specifiedImages": 5,
+      "svgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 768,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "horizontal",
+      "noOverflow": true,
+      "specifiedImages": 5,
+      "svgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "registerSteps": 3,
+      "finderSteps": 2,
+      "groups": "registration then finder",
+      "stepsLayout": "horizontal",
+      "noOverflow": true,
+      "specifiedImages": 5,
+      "svgAndPlaceholders": 0,
+      "serviceLink": "passed",
+      "errors": []
+    }
+  ],
+  "onlyImplementationChange": "two registration image URLs",
+  "originalFiles": "byte-identical",
+  "viewports": [
+    {
+      "width": 320,
+      "sectionHeight": 2011,
+      "noOverflow": true,
+      "images": [
+        {
+          "src": "/images/how-register-scan-5e4c222644e6.jpg",
+          "naturalWidth": 1280,
+          "naturalHeight": 853,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-register-account-2d0e5f0d6f76.jpg",
+          "naturalWidth": 1169,
+          "naturalHeight": 1280,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-01.png",
+          "naturalWidth": 410,
+          "naturalHeight": 325,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-02.png",
+          "naturalWidth": 420,
+          "naturalHeight": 330,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-03.png",
+          "naturalWidth": 446,
+          "naturalHeight": 315,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "sectionHeight": 1949,
+      "noOverflow": true,
+      "images": [
+        {
+          "src": "/images/how-register-scan-5e4c222644e6.jpg",
+          "naturalWidth": 1280,
+          "naturalHeight": 853,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-register-account-2d0e5f0d6f76.jpg",
+          "naturalWidth": 1169,
+          "naturalHeight": 1280,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-01.png",
+          "naturalWidth": 410,
+          "naturalHeight": 325,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-02.png",
+          "naturalWidth": 420,
+          "naturalHeight": 330,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-03.png",
+          "naturalWidth": 446,
+          "naturalHeight": 315,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "sectionHeight": 1949,
+      "noOverflow": true,
+      "images": [
+        {
+          "src": "/images/how-register-scan-5e4c222644e6.jpg",
+          "naturalWidth": 1280,
+          "naturalHeight": 853,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-register-account-2d0e5f0d6f76.jpg",
+          "naturalWidth": 1169,
+          "naturalHeight": 1280,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-01.png",
+          "naturalWidth": 410,
+          "naturalHeight": 325,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-02.png",
+          "naturalWidth": 420,
+          "naturalHeight": 330,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-03.png",
+          "naturalWidth": 446,
+          "naturalHeight": 315,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "sectionHeight": 1949,
+      "noOverflow": true,
+      "images": [
+        {
+          "src": "/images/how-register-scan-5e4c222644e6.jpg",
+          "naturalWidth": 1280,
+          "naturalHeight": 853,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-register-account-2d0e5f0d6f76.jpg",
+          "naturalWidth": 1169,
+          "naturalHeight": 1280,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-01.png",
+          "naturalWidth": 410,
+          "naturalHeight": 325,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-02.png",
+          "naturalWidth": 420,
+          "naturalHeight": 330,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-03.png",
+          "naturalWidth": 446,
+          "naturalHeight": 315,
+          "frameWidth": 250,
+          "frameHeight": 160,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "sectionHeight": 1337,
+      "noOverflow": true,
+      "images": [
+        {
+          "src": "/images/how-register-scan-5e4c222644e6.jpg",
+          "naturalWidth": 1280,
+          "naturalHeight": 853,
+          "frameWidth": 208,
+          "frameHeight": 176,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-register-account-2d0e5f0d6f76.jpg",
+          "naturalWidth": 1169,
+          "naturalHeight": 1280,
+          "frameWidth": 208,
+          "frameHeight": 176,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-01.png",
+          "naturalWidth": 410,
+          "naturalHeight": 325,
+          "frameWidth": 208,
+          "frameHeight": 176,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-02.png",
+          "naturalWidth": 420,
+          "naturalHeight": 330,
+          "frameWidth": 250,
+          "frameHeight": 176,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-03.png",
+          "naturalWidth": 446,
+          "naturalHeight": 315,
+          "frameWidth": 250,
+          "frameHeight": 176,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "sectionHeight": 1151,
+      "noOverflow": true,
+      "images": [
+        {
+          "src": "/images/how-register-scan-5e4c222644e6.jpg",
+          "naturalWidth": 1280,
+          "naturalHeight": 853,
+          "frameWidth": 250,
+          "frameHeight": 176,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-register-account-2d0e5f0d6f76.jpg",
+          "naturalWidth": 1169,
+          "naturalHeight": 1280,
+          "frameWidth": 250,
+          "frameHeight": 176,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-01.png",
+          "naturalWidth": 410,
+          "naturalHeight": 325,
+          "frameWidth": 250,
+          "frameHeight": 176,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-02.png",
+          "naturalWidth": 420,
+          "naturalHeight": 330,
+          "frameWidth": 250,
+          "frameHeight": 176,
+          "fit": "contain"
+        },
+        {
+          "src": "/images/how-it-works-step-03.png",
+          "naturalWidth": 446,
+          "naturalHeight": 315,
+          "frameWidth": 250,
+          "frameHeight": 176,
+          "fit": "contain"
+        }
+      ]
+    }
+  ]
+}
