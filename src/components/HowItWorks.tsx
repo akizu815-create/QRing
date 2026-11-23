@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import Reveal from "@/components/Reveal";
 
@@ -176,9 +177,7 @@ export default function HowItWorks() {
           </Reveal>
           <Reveal delay={100}>
             <h2 className="mt-8 font-serif text-[clamp(34px,4.2vw,64px)] font-light leading-[1.3] tracking-tight md:whitespace-nowrap">
-              もしものとき、
-              <br className="md:hidden" />
-              QRから<span className="text-moss">つながる</span>。
+              使い方は、<span className="inline-block text-moss">3つのステップ。</span>
             </h2>
           </Reveal>
           <Reveal delay={180}>
@@ -198,6 +197,7 @@ export default function HowItWorks() {
           <FlowArrow visible={stepsVisible} delay={450} />
           <Step step={STEPS[2]} visible={stepsVisible} delay={600} />
         </div>
+        <p className="mt-10 text-center"><Link href="/service/" className="link-underline inline-flex min-h-11 items-center text-sm text-moss">サービスの仕組みを詳しく見る →</Link></p>
       </div>
     </section>
   );

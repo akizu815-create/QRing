@@ -9,6 +9,7 @@ import Link from "next/link";
 import HeroVisual from "@/components/HeroVisual";
 import HowItWorks from "@/components/HowItWorks";
 import UseCases from "@/components/UseCases";
+import HomeSolution from "@/components/HomeSolution";
 import PriceSection from "@/components/PriceSection";
 import ForBusiness from "@/components/ForBusiness";
 import SectionTitle from "@/components/SectionTitle";
@@ -75,11 +76,16 @@ export default function Home() {
           </div>
 
         </div>
+        <div className="container-wide pb-4 text-center">
+          <a href="#use-cases" className="inline-flex min-h-11 items-center gap-3 text-xs tracking-[0.08em] text-moss underline decoration-moss/30 underline-offset-4">暮らしの「もしも」から見る<span aria-hidden="true">↓</span></a>
+        </div>
       </section>
 
-      <HowItWorks />
-
       <UseCases />
+
+      <HomeSolution />
+
+      <HowItWorks />
 
       <PriceSection />
 
