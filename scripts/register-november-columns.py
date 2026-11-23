@@ -16,7 +16,7 @@ MHLW = ('厚生労働省｜介護保険制度について', 'https://www.mhlw.go
 LOST = ('警察庁｜落とし物・忘れ物', 'https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/')
 BATCH = [
     dict(day=8, file='care-levels', slug='care-levels', category='family-care', audience='personal',
-         alt='要支援・要介護の認定区分とサービス例を、高齢の夫婦に説明する女性の水彩イラスト',
+         alt='高齢女性と家族が窓口の相談員と資料を見ながら話す水彩イラスト', image_src='/images/columns/care-levels-4eff2d4e8937.jpg',
          service='/use-cases/elderly/', related=[],
          sources=[('厚生労働省｜要介護認定はどのように行われるか', 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html'), ('厚生労働省｜介護サービス情報公表システム', 'https://www.mhlw.go.jp/stf/kaigo-kouhyou.html'), MHLW]),
     dict(day=9, file='lost-wallet', slug='lost-wallet', category='lost-items', audience='personal',
@@ -103,7 +103,7 @@ def registration(meta):
                 updatedAt=None, reviewedAt=None, nextReviewAt=None, serviceSpecificationVersion='2026-10-27',
                 contentRevision=2 if meta['day'] in (9,11) else 1, approvalRevision=2 if meta['day'] in (9,11) else 1, contentFormat='approved-manuscript',
                 approvalRecord=dict(sourceFile=str(approved.relative_to(ROOT)), sha256=hashlib.sha256(source.read_bytes()).hexdigest(), receivedOn=CHECKED, **(dict(receivedRevision=1, revisionHistory=[{'revision': 2, 'change': 'SEOタイトル・meta description・冒頭要約の改訂。本文各節は変更なし。', 'approvalEvidence': 'ユーザーのPR #142確認メッセージで改善方針を了承。承認日は未確定のため記録しない。mainへのマージ・本番公開の承認は含まない。'}]) if meta['slug']=='lost-wallet' else {})),
-                image=dict(src=f'/images/columns/{meta["slug"]}.webp', width=1280, height=853 if meta['day']==8 else 720, alt=meta['alt']),
+                image=dict(src=meta.get('image_src', f'/images/columns/{meta["slug"]}.webp'), width=1280, height=720, alt=meta['alt']),
                 relatedArticleIds=meta['related'], relatedService=None,
                 relatedLinks=[dict(href=meta['service'], label='つながるQRの関連サービスを見る')],
                 **({} if meta['day']==8 else dict(manuscriptReferences=True)),
