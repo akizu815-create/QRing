@@ -1,0 +1,96 @@
+{
+  "base": "dd735a0",
+  "comparedHtmlPages": 48,
+  "metadataAndStructuredData": "identical",
+  "imagesAndExistingLinks": "identical; one HOME technology anchor added",
+  "homeOutsideSolution": "identical including HERO/HowItWorks",
+  "serviceOutsideIntroAndPrivacyLead": "identical including procedures/diagram/session/CTA",
+  "otherPages": "identical",
+  "screenshotsFonts": "existing fallback; external web fonts blocked",
+  "results": [
+    {
+      "width": 320,
+      "path": "/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 320,
+      "path": "/service/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 375,
+      "path": "/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 375,
+      "path": "/service/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "path": "/service/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 430,
+      "path": "/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 430,
+      "path": "/service/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 768,
+      "path": "/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 768,
+      "path": "/service/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 1280,
+      "path": "/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    },
+    {
+      "width": 1280,
+      "path": "/service/",
+      "noOverflow": true,
+      "copyAndLinks": "passed",
+      "pageErrors": []
+    }
+  ]
+}
