@@ -13,7 +13,7 @@ const USE_CASES = [
   },
   {
     no: "02",
-    title: "迷子のペットを保護してもらえたとき。",
+    title: <><span className="inline-block">迷子のペットを</span><span className="inline-block">保護してもらえたとき。</span></>,
     body: "飼い主に連絡してほしい。でも、迷子札に電話番号は書きたくない。",
     linkLabel: "電話番号を公開しないQR迷子札を見る",
     image: "/images/use-case-pet.png",
@@ -41,17 +41,17 @@ function UseCase({ item }: { item: (typeof USE_CASES)[number] }) {
           className="object-cover transition-transform duration-[1500ms] ease-out hover:scale-[1.025]"
         />
       </div>
-      <div className="pt-7 md:pt-8">
+      <div className="pt-5 md:pt-8">
         <p className="text-[10px] font-medium tracking-[0.32em] text-ink/60">
           USE CASE {item.no}
         </p>
-        <h3 className="mt-4 font-serif text-2xl font-light leading-snug lg:text-[28px]">
+        <h3 className="mt-3 text-balance font-serif text-[22px] font-light leading-relaxed md:mt-4 md:text-2xl md:leading-snug lg:text-[28px]">
           {item.title}
         </h3>
-        <p className="body-jp mt-5 text-sm text-ink/70">{item.body}</p>
+        <p className="body-jp mt-3 text-sm text-ink/70 md:mt-5">{item.body}</p>
         {(
-          <div className="mt-6 text-right">
-            <Link href={item.no === "01" ? "/use-cases/elderly/" : item.no === "02" ? "/use-cases/pets/" : "/use-cases/belongings/"} className="link-underline inline-block text-xs tracking-[0.12em] text-moss transition-colors duration-300 hover:text-ink">
+          <div className="mt-3 text-right md:mt-6">
+            <Link href={item.no === "01" ? "/use-cases/elderly/" : item.no === "02" ? "/use-cases/pets/" : "/use-cases/belongings/"} className="link-underline inline-flex min-h-11 items-center py-2 text-xs tracking-[0.08em] text-moss transition-colors duration-300 hover:text-ink md:min-h-0 md:py-0 md:tracking-[0.12em]">
               {item.linkLabel} →
             </Link>
           </div>
@@ -63,29 +63,29 @@ function UseCase({ item }: { item: (typeof USE_CASES)[number] }) {
 
 export default function UseCases() {
   return (
-    <section id="use-cases" className="scroll-mt-24 bg-white py-16 md:py-24" aria-labelledby="home-concerns-heading">
+    <section id="use-cases" className="scroll-mt-24 bg-white py-10 md:py-24" aria-labelledby="home-concerns-heading">
       <div className="container-wide">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
             <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">
               In your everyday life
             </p>
-            <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />
+            <span className="mx-auto mt-4 block h-px w-9 bg-moss/55 md:mt-5" aria-hidden="true" />
           </Reveal>
           <Reveal delay={100}>
-            <h2 id="home-concerns-heading" className="mt-8 font-serif text-[clamp(32px,4vw,54px)] font-light leading-[1.5] tracking-tight">
+            <h2 id="home-concerns-heading" className="mt-5 font-serif text-[clamp(28px,4vw,54px)] font-light leading-[1.5] tracking-tight md:mt-8">
               こんな心配、<span className="inline-block">ありませんか？</span>
             </h2>
           </Reveal>
           <Reveal delay={180}>
-            <p className="body-jp mx-auto mt-7 max-w-2xl text-sm text-ink/70 md:text-base">
-              大切な人やペット、持ち物のこと。<br />「見つかったあと、連絡がついたら」と思う場面があります。
+            <p className="body-jp mx-auto mt-5 max-w-2xl text-sm text-ink/70 md:mt-7 md:text-base">
+              大切な人やペット、持ち物のこと。もしものとき、連絡できる手段はありますか？
             </p>
           </Reveal>
         </div>
 
         <Reveal delay={240}>
-          <div className="mt-10 grid grid-cols-1 gap-y-14 md:mt-12 lg:grid-cols-[minmax(0,1fr)_1px_minmax(0,1fr)_1px_minmax(0,1fr)] lg:gap-x-10">
+          <div className="mt-8 grid grid-cols-1 gap-y-10 md:mt-12 md:gap-y-14 lg:grid-cols-[minmax(0,1fr)_1px_minmax(0,1fr)_1px_minmax(0,1fr)] lg:gap-x-10">
             <UseCase item={USE_CASES[0]} />
             <span className="hidden h-full w-px bg-ink/10 lg:block" aria-hidden="true" />
             <UseCase item={USE_CASES[1]} />

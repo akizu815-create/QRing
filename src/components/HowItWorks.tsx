@@ -166,7 +166,7 @@ export default function HowItWorks() {
   }, [stepsVisible]);
 
   return (
-    <section id="how-it-works" className="scroll-mt-20 bg-ivory py-24 md:scroll-mt-24 md:py-32">
+    <section id="how-it-works" className="scroll-mt-20 bg-ivory py-12 md:scroll-mt-24 md:py-32">
       <div className="container-wide">
         <div className="mx-auto max-w-6xl text-center">
           <Reveal>
