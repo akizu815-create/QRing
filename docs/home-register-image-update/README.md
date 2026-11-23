@@ -4,12 +4,12 @@
 
 | 対象 | 旧参照 | 新参照 | 新しい原本 |
 | --- | --- | --- | --- |
-| 登録STEP 01 | `how-register-scan-a870f12eb6ca.jpg` | `how-register-scan-5e4c222644e6.jpg` | `1-写真1.jpg`、1280×853、71,149 bytes |
-| 登録STEP 02 | `how-register-account-4226bab9bcda.jpg` | `how-register-account-2d0e5f0d6f76.jpg` | `2-写真2.jpg`、1169×1280、90,631 bytes |
+| 登録STEP 01 | `how-register-scan-a870f12eb6ca.jpg` | `how-register-scan-479d85a78ee1.jpg` | `1-写真1.jpg`、1280×853、64,700 bytes |
+| 登録STEP 02 | `how-register-account-4226bab9bcda.jpg` | `how-register-account-9a67a5009767.jpg` | `2-写真2.jpg`、1280×853、74,128 bytes |
 
-保存先はすべて `public/images/`。旧ファイルは保持し、新しい内容ハッシュ付きファイル名により旧キャッシュと区別する。添付原本のコピーのみで、生成・加工・色調変更・トリミング・形式変換・圧縮はしない。
+保存先はすべて `public/images/`。mainの旧ファイルは保持し、新しい内容ハッシュ付きファイル名により旧キャッシュと区別する。添付原本のコピーのみで、生成・加工・色調変更・トリミング・形式変換・圧縮はしない。
 
-STEP 02は縦長の原本。既存の共通表示枠と `object-fit: contain` で比率を保持し、被写体を切り取らない。他3画像・文章・alt・CSS・SERVICE・SEO・仕様は変更しない。実装ファイルは画像URL2箇所のみであることをmainとの差分で確認する。
+今回の2枚はいずれも1280×853の原本。既存の共通表示枠と `object-fit: contain` で比率を保持し、被写体を切り取らない。他3画像・文章・alt・CSS・SERVICE・SEO・仕様は変更しない。実装ファイルは画像URL2箇所のみであることをmainとの差分で確認する。
 
 ## 検証
 
