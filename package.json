@@ -18,7 +18,8 @@
     "check:column-navigation": "python3 scripts/check-column-navigation.py",
     "test:editorial": "python3 -m unittest discover -s tests/editorial -v",
     "editorial:plan": "python3 -m scripts.editorial.cli plan",
-    "editorial:serve": "python3 -m scripts.editorial.server"
+    "editorial:serve": "python3 -m scripts.editorial.server",
+    "test:analytics-prep": "node tests/analytics/ai-traffic.test.cjs && node tests/analytics/completion-events.test.mjs"
   },
   "dependencies": {
     "next": "^15.0.0",

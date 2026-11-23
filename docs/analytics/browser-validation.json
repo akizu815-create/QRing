@@ -1,0 +1,555 @@
+{
+  "results": [
+    {
+      "width": 375,
+      "path": "/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 375,
+      "path": "/service/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 375,
+      "path": "/price/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 375,
+      "path": "/column/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 375,
+      "path": "/use-cases/elderly/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 375,
+      "path": "/use-cases/pets/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 375,
+      "path": "/use-cases/belongings/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 375,
+      "path": "/municipalities/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 375,
+      "path": "/collaboration/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 390,
+      "path": "/service/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 390,
+      "path": "/price/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 390,
+      "path": "/column/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 390,
+      "path": "/use-cases/elderly/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 390,
+      "path": "/use-cases/pets/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 390,
+      "path": "/use-cases/belongings/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 390,
+      "path": "/municipalities/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 390,
+      "path": "/collaboration/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 430,
+      "path": "/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 430,
+      "path": "/service/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 430,
+      "path": "/price/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 430,
+      "path": "/column/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 430,
+      "path": "/use-cases/elderly/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 430,
+      "path": "/use-cases/pets/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 430,
+      "path": "/use-cases/belongings/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 430,
+      "path": "/municipalities/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 430,
+      "path": "/collaboration/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1280,
+      "path": "/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1280,
+      "path": "/service/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1280,
+      "path": "/price/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1280,
+      "path": "/column/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1280,
+      "path": "/use-cases/elderly/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1280,
+      "path": "/use-cases/pets/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1280,
+      "path": "/use-cases/belongings/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1280,
+      "path": "/municipalities/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1280,
+      "path": "/collaboration/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1440,
+      "path": "/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1440,
+      "path": "/service/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1440,
+      "path": "/price/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1440,
+      "path": "/column/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1440,
+      "path": "/use-cases/elderly/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1440,
+      "path": "/use-cases/pets/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1440,
+      "path": "/use-cases/belongings/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1440,
+      "path": "/municipalities/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1440,
+      "path": "/collaboration/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1920,
+      "path": "/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1920,
+      "path": "/service/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1920,
+      "path": "/price/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1920,
+      "path": "/column/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1920,
+      "path": "/use-cases/elderly/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1920,
+      "path": "/use-cases/pets/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1920,
+      "path": "/use-cases/belongings/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1920,
+      "path": "/municipalities/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    },
+    {
+      "width": 1920,
+      "path": "/collaboration/",
+      "overflow": false,
+      "h1": 1,
+      "gaLoaders": 1,
+      "gaConfig": 1,
+      "completionEvents": 0,
+      "fonts": "loaded"
+    }
+  ],
+  "externalAnalyticsRequests": "blocked",
+  "realForms": "not_submitted",
+  "heroPixelComparison": {
+    "375": true,
+    "390": true,
+    "430": true,
+    "1280": true,
+    "1440": true,
+    "1920": true
+  },
+  "fontVerification": "Google Fonts CSS and original font files fetched to temporary cache for browser requests; Noto Sans JP loaded; no site font changes"
+}
