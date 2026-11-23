@@ -13,9 +13,9 @@ try {
   const {selectPublishedArticles, validateArticle} = require(path.join(tmp,'publication.js'));
   const {latestArticles, relatedArticles, columnPageCount} = require(path.join(tmp,'navigation.js'));
   const records = JSON.parse(fs.readFileSync('src/content/columns/published.json','utf8'));
-  // Seven-record snapshot; only images 01/02 and Nov 5 updated to the user-approved 16:9 files.
+  // Seven-record snapshot; only images 01/02 and Nov 3–5 updated to the user-approved 16:9 files.
   assert.equal(crypto.createHash('sha256').update(JSON.stringify(records.slice(0,7))).digest('hex'),
-    '4f0ecc623cb65364665998fa1aa9a51ecd539ea9cf58b34517ff741f4ce4d49b',
+    'c56c4bde39e172e1fc461f8359b9a093e45331954f98fd5d3dd266a2e03933ba',
     'Existing article data/SEO must remain unchanged');
   const batch = records.filter(a=>a.publishedTimestamp?.match(/^2026-11-(?:0[89]|1[0-5])T/));
   assert.equal(batch.length,8);
