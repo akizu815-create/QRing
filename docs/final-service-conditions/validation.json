@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "homeHeroImagesLinksSeoPreserved": true,
+      "domesticNoticeOnceInPrice": true,
+      "priceAndFaqConfirmedPolicy": "passed",
+      "faqDisplayAndExistingSchema": "passed",
+      "unknownUnlimitedRuleUnchanged": true,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "homeHeroImagesLinksSeoPreserved": true,
+      "domesticNoticeOnceInPrice": true,
+      "priceAndFaqConfirmedPolicy": "passed",
+      "faqDisplayAndExistingSchema": "passed",
+      "unknownUnlimitedRuleUnchanged": true,
+      "overflow": false
+    }
+  ],
+  "policyEvidence": "User confirmed QRing operating specification on 2026-11-24",
+  "backendCode": "not inspected",
+  "legalDocuments": "unchanged",
+  "screenshots": false
+}
