@@ -67,7 +67,16 @@ for page in pages|pages_m:
 home=html('/')
 block=re.search(r'<section[^>]*id="column".*?</section>',home,re.S)
 assert block,'Home COLUMN section missing'
-assert seo.Page('<main>'+block[0]+'</main>').links==['/column/',*[path(a) for a in articles[:3]]],'Home newest articles/order or empty cards'
+picks=json.loads(Path('src/config/homeColumnPicks.json').read_text())
+selected=[]
+for slug in picks:
+    candidate=next((a for a in articles if a['slug']==slug and not a.get('publicationPending')),None)
+    if candidate and candidate not in selected:selected.append(candidate)
+    if len(selected)==3:break
+for a in articles:
+    if len(selected)==3:break
+    if not a.get('publicationPending') and a not in selected:selected.append(a)
+assert seo.Page('<main>'+block[0]+'</main>').links==['/column/',*[path(a) for a in selected]],'Home picks/fallback/order or empty cards'
 assert home.index('id="for-business"')<block.start()<home.index('最新のお知らせ'),'Incorrect HOME section placement'
 for label in ['メインナビゲーション','モバイルナビゲーション']:
     nav=re.search(r'<nav[^>]*aria-label="'+label+r'".*?</nav>',home,re.S)[0]

@@ -118,3 +118,6 @@ try {
   assert(!('sections' in card) && !('approvalRevision' in card));
   console.log('Column publication guards: all assertions passed (statuses, future date, revision approval, checks, independent audience/category, duplicates, safe content, client projection).');
 } finally { fs.rmSync(tmp, { recursive: true, force: true }); }
+
+// Keep HOME selection and footer guidance guards in the existing CI test command.
+require("./test-column-journey.cjs");
