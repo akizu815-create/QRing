@@ -30,5 +30,17 @@
     }
   ],
   "licenseScope": "unverified",
-  "screenshots": false
+  "screenshots": false,
+  "metadataComparison": {
+    "htmlFiles": 48,
+    "expectedFallbackOgChanges": {
+      "shop/index.html": [
+        "ogDescription"
+      ],
+      "404/index.html": [
+        "ogDescription"
+      ]
+    },
+    "pageSpecificMetadataUnchanged": true
+  }
 }

@@ -35,4 +35,4 @@ src/app/page.tsxのHERO外の表示、src/components/Footer.tsx、src/app/layout
 
 390/1280pxで文字サイズ、リンクの到達、コントラスト、フォーカス、タップ領域、HERO/画像/各ページ固有OG等の維持を確認する。ビルドとコラム出力・導線検査を実施。既知のmainのSERVICE Service.description不一致は今回触らない。スクリーンショットなし。
 
-実測：390/1280pxで14px、表示リンク44px、前景rgba(31,26,20,.8)／背景rgb(247,244,238)、コントラスト8.57:1。HERO DOM・全画像・HOME固有OG等は変更前と一致。既存SERVICE #privacy-callへ遷移し、フォーカス表示あり、横スクロールなし。静的出力全HTMLのtitle/description/canonical/OG descriptionも変更前と比較し差分なし（共通OGフォールバックは各ページ固有値で上書きされるため）。ビルド・コラム出力/導線検査成功。結果はvalidation.json。
+実測：390/1280pxで14px、表示リンク44px、前景rgba(31,26,20,.8)／背景rgb(247,244,238)、コントラスト8.57:1。HERO DOM・全画像・HOME固有OG等は変更前と一致。既存SERVICE #privacy-callへ遷移し、フォーカス表示あり、横スクロールなし。静的出力48HTMLのtitle/description/canonicalは維持。OG descriptionは固有値のない旧SHOP（料金転送・noindex）と404で共通フォールバックの修正が反映される。ページ固有のOG descriptionはすべて維持。ビルド・コラム出力/導線検査成功。結果はvalidation.json。
