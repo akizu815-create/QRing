@@ -31,19 +31,21 @@ export default function ServicePage() {
                 <br />
                 大きな<span className="text-moss">安心</span>を。
               </h2>
-              <p className="mt-5 text-[11px] tracking-[0.16em] text-ink/50">
-                活用技術：特許第7460140号
-              </p>
             </Reveal>
             <Reveal delay={120}>
-              <div className="body-jp mt-10 space-y-5 text-base md:text-lg">
-                <p>
-                  つながるQRは、電話番号を教えずに、見つけてくださった方と直接話せるサービスです。
-                </p>
-                <p>
-                  QRコードに連絡先の電話番号を表示する方法とは異なり、プライバシー電話番号で通話を接続します。発見した方は、登録者の電話番号を知らなくても、画面からそのまま電話をかけられます。
-                </p>
-                <p className="font-serif text-lg font-light leading-relaxed text-ink/85 md:text-xl">特許技術を活用した、独自の通話接続方式。</p>
+              <div className="mt-10">
+                <h3 className="font-serif text-2xl font-light leading-relaxed text-ink md:text-[28px]">電話番号を教えずに、<span className="inline-block text-moss">直接話せる。</span></h3>
+                <div className="body-jp mt-5 space-y-3 text-base text-ink/75 md:text-lg">
+                  <p>QRコードに連絡先の電話番号を表示する方法とは異なり、プライバシー電話番号で通話を接続します。</p>
+                  <p>発見した方は、登録者の電話番号を知らなくても、画面からそのまま電話をかけられます。</p>
+                </div>
+                <div className="mt-7 border-t border-ink/15 pt-5">
+                  <h3 className="font-serif font-light leading-relaxed">
+                    <span className="block font-sans text-sm text-ink/60">特許技術を活用した、</span>
+                    <span className="mt-1 block text-2xl text-ink md:text-[28px]">独自の通話接続方式。</span>
+                  </h3>
+                  <p className="mt-3 text-xs leading-7 tracking-[0.08em] text-ink/60">活用技術：特許第7460140号</p>
+                </div>
               </div>
               <p id="use-cases" className="mt-7 scroll-mt-28 text-sm">
                 <Link href="/#use-cases" className="link-underline text-ink/70 transition-colors hover:text-moss">

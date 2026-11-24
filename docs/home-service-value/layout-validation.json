@@ -1,0 +1,176 @@
+{
+  "baseMain": "965a78e",
+  "baseline": "previous PR158 copy and layout after latest main integration",
+  "comparedHtmlPages": 49,
+  "metadataAndStructuredData": "identical",
+  "allImageMarkup": "identical",
+  "allExistingLinks": "identical",
+  "homeOutsideSolution": "identical",
+  "serviceOutsideIntro": "identical",
+  "screenshotsCreated": false,
+  "externalWebFonts": "blocked; existing fallback",
+  "results": [
+    {
+      "width": 320,
+      "path": "/",
+      "noOverflow": true,
+      "hierarchy": {
+        "title": 22,
+        "main": 30,
+        "operation": 18,
+        "body": 14,
+        "technology": 24,
+        "technologyBorder": 1,
+        "mainFirstLineBoxes": 1,
+        "height": 941.875
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 320,
+      "path": "/service/",
+      "noOverflow": true,
+      "hierarchy": {
+        "heading": 24,
+        "body": 16,
+        "technology": 24
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 375,
+      "path": "/",
+      "noOverflow": true,
+      "hierarchy": {
+        "title": 22,
+        "main": 30,
+        "operation": 18,
+        "body": 14,
+        "technology": 24,
+        "technologyBorder": 1,
+        "mainFirstLineBoxes": 1,
+        "height": 878.6875
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 375,
+      "path": "/service/",
+      "noOverflow": true,
+      "hierarchy": {
+        "heading": 24,
+        "body": 16,
+        "technology": 24
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "noOverflow": true,
+      "hierarchy": {
+        "title": 22,
+        "main": 30,
+        "operation": 18,
+        "body": 14,
+        "technology": 24,
+        "technologyBorder": 1,
+        "mainFirstLineBoxes": 1,
+        "height": 858.6875
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "path": "/service/",
+      "noOverflow": true,
+      "hierarchy": {
+        "heading": 24,
+        "body": 16,
+        "technology": 24
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 430,
+      "path": "/",
+      "noOverflow": true,
+      "hierarchy": {
+        "title": 22,
+        "main": 30,
+        "operation": 18,
+        "body": 14,
+        "technology": 24,
+        "technologyBorder": 1,
+        "mainFirstLineBoxes": 1,
+        "height": 822.6875
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 430,
+      "path": "/service/",
+      "noOverflow": true,
+      "hierarchy": {
+        "heading": 24,
+        "body": 16,
+        "technology": 24
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 768,
+      "path": "/",
+      "noOverflow": true,
+      "hierarchy": {
+        "title": 22,
+        "main": 33.792,
+        "operation": 20,
+        "body": 16,
+        "technology": 28,
+        "technologyBorder": 1,
+        "mainFirstLineBoxes": 1,
+        "height": 794.0625
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 768,
+      "path": "/service/",
+      "noOverflow": true,
+      "hierarchy": {
+        "heading": 28,
+        "body": 18,
+        "technology": 28
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 1280,
+      "path": "/",
+      "noOverflow": true,
+      "hierarchy": {
+        "title": 30,
+        "main": 54,
+        "operation": 20,
+        "body": 16,
+        "technology": 28,
+        "technologyBorder": 1,
+        "mainFirstLineBoxes": 1,
+        "height": 867.5
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 1280,
+      "path": "/service/",
+      "noOverflow": true,
+      "hierarchy": {
+        "heading": 28,
+        "body": 18,
+        "technology": 28
+      },
+      "pageErrors": []
+    }
+  ]
+}
