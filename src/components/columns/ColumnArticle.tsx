@@ -1,3 +1,5 @@
+import ColumnServiceLink from "./ColumnServiceLink";
+import { additionalServiceCta, articleCtaKind } from "@/lib/columns/serviceCta";
 import Link from "next/link";
 import PetSurveyLink from "@/components/PetSurveyLink";
 import { SITE_URL } from "@/lib/seo";
@@ -28,6 +30,8 @@ function ContentBlock({ block }: { block: Block }) {
 }
 export default function ColumnArticle({ article: a, related }: { article: Article; related: Article[] }) {
   const sections = visibleArticleSections(a, getPublishedArticles());
+  const additionalCta = additionalServiceCta(a);
+  const serviceLink = (href: string, label: string, placement: string, className = "link-underline text-moss") => <ColumnServiceLink href={href} slug={a.slug} category={a.category} placement={placement} kind={articleCtaKind(a)} className={className}>{label}</ColumnServiceLink>;
   return <>
     <ColumnStructuredData path={articlePath(a.slug)} title={a.seoTitle} description={a.metaDescription} article={a} />
     <article data-approved-manuscript={a.contentFormat === "approved-manuscript" ? a.approvalRecord?.sha256 : undefined}>
@@ -52,22 +56,25 @@ export default function ColumnArticle({ article: a, related }: { article: Articl
       </div></section>}
       {a.contentFormat === "approved-manuscript" && a.relatedService && <section className="container-narrow border-t border-ink/15 py-10" data-approved-related-service>
         <p className="text-sm"><strong>関連サービス</strong></p>
-        <p className="mt-5 text-sm leading-7"><Link href={a.relatedService.href} className="link-underline text-moss">{a.relatedService.label}</Link></p>
-        {!a.manuscriptReferences && <p className="mt-3 break-all text-sm leading-7"><Link href={a.relatedService.href} className="underline underline-offset-4 text-moss">{SITE_URL}{a.relatedService.href}</Link></p>}
+        <p className="mt-5 text-sm leading-7">{serviceLink(a.relatedService.href, a.relatedService.label, "related-service")}</p>
+        {!a.manuscriptReferences && <p className="mt-3 break-all text-sm leading-7">{serviceLink(a.relatedService.href, SITE_URL + a.relatedService.href, "related-service-url", "underline underline-offset-4 text-moss")}</p>}
       </section>}
       {a.manuscriptReferences && <section className="container-narrow border-t border-ink/15 py-10" aria-labelledby="article-sources"><h2 id="article-sources" className="font-serif text-2xl font-light">参考資料</h2><ul className="mt-6 space-y-4 text-sm leading-7 text-moss">{a.sources.map((source) => <li key={source.id}><a className="underline underline-offset-4" href={source.href}>{source.label}</a></li>)}</ul></section>}
     </article>
+    {additionalCta && <aside className="container-narrow border-t border-ink/15 py-8" aria-label="関連するサービス" data-column-service-cta>
+      <ColumnServiceLink href={additionalCta.href} slug={a.slug} category={a.category} placement="article-end" kind={additionalCta.kind} className="link-underline inline-flex min-h-12 items-center py-2 text-sm leading-7 text-moss">{additionalCta.label}</ColumnServiceLink>
+    </aside>}
     {!a.publicationPending && ["lost-dog-preparation", "dog-microchip"].includes(a.slug) && <aside className="container-narrow border-t border-ink/15 py-8 text-sm leading-7 text-ink/70" aria-label="ペット向け商品アンケート" data-pet-survey>
       <p>つながるQRでは、ペット向け商品についてのアンケートを実施しています。皆さまのご意見をぜひお聞かせください。</p>
       <PetSurveyLink placement="column" className="link-underline mt-2 inline-block py-2 text-moss hover:text-ink">ペット向けアンケートはこちら</PetSurveyLink>
     </aside>}
     {a.primaryAudience === "municipal" && <div className="container-narrow py-8" data-municipal-article-return><Link href="/municipalities/" className="link-underline inline-block py-2 text-sm text-moss">自治体向けサービスについて →</Link></div>}
-    {(related.length > 0 || Boolean(a.relatedLinks?.length)) && <section className="py-14 md:py-20" aria-labelledby="article-related"><div className="container-narrow"><h2 id="article-related" className="font-serif text-2xl font-light">あわせて読む</h2><ul className="mt-6 space-y-4 text-sm leading-7 text-moss">{related.map((r) => <li key={r.id}><Link className="underline underline-offset-4" href={articlePath(r.slug)}>{r.title}</Link></li>)}{a.relatedLinks?.map((link) => <li key={link.href}><Link className="underline underline-offset-4" href={link.href}>{link.label}</Link></li>)}</ul></div></section>}
+    {(related.length > 0 || Boolean(a.relatedLinks?.length)) && <section className="py-14 md:py-20" aria-labelledby="article-related"><div className="container-narrow"><h2 id="article-related" className="font-serif text-2xl font-light">あわせて読む</h2><ul className="mt-6 space-y-4 text-sm leading-7 text-moss">{related.map((r) => <li key={r.id}><Link className="underline underline-offset-4" href={articlePath(r.slug)}>{r.title}</Link></li>)}{a.relatedLinks?.map((link) => <li key={link.href}>{serviceLink(link.href, link.label, "related-links", "underline underline-offset-4")}</li>)}</ul></div></section>}
     {a.cta === "municipal" && <section className="border-t border-ink/15 py-16" aria-labelledby="article-next"><div className="container-narrow"><h2 id="article-next" className="font-serif text-2xl font-light">自治体・公共機関の皆さまへ</h2><p className="body-jp mt-6 text-sm">地域の見守りや実証実験に関するご相談を受け付けています。</p><div className="mt-6 flex flex-col items-start gap-5 text-sm text-moss"><a href="https://axb.qring.jp/contact" className="link-underline">見守り・実証実験について相談する →</a><Link href="/municipalities/" className="link-underline">自治体向けサービスについて →</Link></div></div></section>}
     {a.cta === "contextual" && <section className="py-20 md:py-28" aria-labelledby="article-next"><div className="container-narrow">
       <h2 id="article-next" className="font-serif text-2xl font-light leading-relaxed md:text-3xl">発見した方から、電話番号を公開せず連絡。</h2>
       <p className="body-jp mt-6 text-sm md:text-base">つながるQRは、見つけた方とご家族・持ち主が、番号を公開せず通話できる連絡サービスです。</p>
-      <div className="mt-8 flex flex-col items-start gap-5 text-sm text-moss">{a.relatedService && <Link href={a.relatedService.href} className="link-underline leading-7">{a.relatedService.label} →</Link>}<Link href="/price/" className="link-underline">料金・利用条件を見る →</Link></div>
+      <div className="mt-8 flex flex-col items-start gap-5 text-sm text-moss">{a.relatedService && serviceLink(a.relatedService.href, a.relatedService.label + " →", "contextual", "link-underline leading-7")}<Link href="/price/" className="link-underline">料金・利用条件を見る →</Link></div>
       <p className="mt-8 text-xs leading-7 text-ink/65">{CONSUMER_SERVICE.notice} {CONSUMER_SERVICE.announcement}</p><Link href={CONSUMER_SERVICE.cta.href} className="link-underline mt-4 text-sm text-moss">{CONSUMER_SERVICE.cta.label}</Link>
     </div></section>}
   </>;
