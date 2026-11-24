@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "width": 390,
+      "links": [
+        "/column/elderly-monitoring/",
+        "/column/lost-dog-preparation/",
+        "/column/lost-item-preparation/"
+      ],
+      "dates": 0,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "links": [
+        "/column/elderly-monitoring/",
+        "/column/lost-dog-preparation/",
+        "/column/lost-item-preparation/"
+      ],
+      "dates": 0,
+      "overflow": false
+    }
+  ]
+}

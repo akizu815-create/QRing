@@ -1,0 +1,167 @@
+{
+  "source": {
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1y-YF1IBuREwp4HyLZLVL895HCoWI4gW1hp35AEzbUvg/edit",
+    "tab": "GSC_ページ",
+    "metadataTab": "更新状況",
+    "sheetUpdatedAtJst": "2026-11-24 09:42:31",
+    "gscLastDate": "2026-11-21",
+    "period": {
+      "start": "2026-10-25",
+      "end": "2026-11-21"
+    },
+    "aggregation": "Sum clicks and impressions; CTR=clicks/impressions; position weighted by impressions. No page/query join or service conversion attribution."
+  },
+  "picks": [
+    "elderly-monitoring",
+    "lost-dog-preparation",
+    "lost-item-preparation"
+  ],
+  "candidates": [
+    {
+      "slug": "elderly-monitoring",
+      "title": "離れて暮らす親の見守り、何から始める？",
+      "url": "https://www.qring.jp/column/elderly-monitoring/",
+      "selected": true,
+      "publishedAt": "2026-10-28",
+      "metrics": {
+        "slug": "elderly-monitoring",
+        "impressions": 539,
+        "clicks": 6,
+        "ctrPercent": 1.1131725417439704,
+        "position": 16.57699443413729,
+        "observedDays": 24
+      },
+      "observation": "observed"
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "title": "高齢者の見守りに、つながる安心を。",
+      "url": "https://www.qring.jp/column/elderly-monitoring-contact-system/",
+      "selected": false,
+      "publishedAt": "2026-11-06",
+      "metrics": {
+        "slug": "elderly-monitoring-contact-system",
+        "impressions": 127,
+        "clicks": 1,
+        "ctrPercent": 0.7874015748031497,
+        "position": 5.393700787401575,
+        "observedDays": 15
+      },
+      "observation": "observed"
+    },
+    {
+      "slug": "dementia-early-signs",
+      "title": "「もしかして認知症？」気になる初期症状をチェック",
+      "url": "https://www.qring.jp/column/dementia-early-signs/",
+      "selected": false,
+      "publishedAt": "2026-11-07",
+      "metrics": {
+        "slug": "dementia-early-signs",
+        "impressions": 70,
+        "clicks": 0,
+        "ctrPercent": 0,
+        "position": 54.371428571428574,
+        "observedDays": 11
+      },
+      "observation": "observed"
+    },
+    {
+      "slug": "lost-dog-preparation",
+      "title": "もしも、大切な愛犬が迷子になったら。",
+      "url": "https://www.qring.jp/column/lost-dog-preparation/",
+      "selected": true,
+      "publishedAt": "2026-11-07",
+      "metrics": {
+        "slug": "lost-dog-preparation",
+        "impressions": 176,
+        "clicks": 1,
+        "ctrPercent": 0.5681818181818182,
+        "position": 9.329545454545455,
+        "observedDays": 14
+      },
+      "observation": "observed"
+    },
+    {
+      "slug": "dog-microchip",
+      "title": "犬のマイクロチップって何？",
+      "url": "https://www.qring.jp/column/dog-microchip/",
+      "selected": false,
+      "publishedAt": "2026-11-14",
+      "metrics": {
+        "slug": "dog-microchip",
+        "impressions": 39,
+        "clicks": 0,
+        "ctrPercent": 0,
+        "position": 8.384615384615385,
+        "observedDays": 3
+      },
+      "observation": "observed"
+    },
+    {
+      "slug": "dog-owner-voice",
+      "title": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+      "url": "https://www.qring.jp/column/dog-owner-voice/",
+      "selected": false,
+      "publishedAt": "2026-11-17",
+      "metrics": null,
+      "observation": "no returned rows; not zero-filled"
+    },
+    {
+      "slug": "pets-earthquake-prediction",
+      "title": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
+      "url": "https://www.qring.jp/column/pets-earthquake-prediction/",
+      "selected": false,
+      "publishedAt": "2026-11-25",
+      "metrics": null,
+      "observation": "no returned rows; not zero-filled"
+    },
+    {
+      "slug": "lost-item-preparation",
+      "title": "鍵や財布をなくさないために。今日からできる紛失対策",
+      "url": "https://www.qring.jp/column/lost-item-preparation/",
+      "selected": true,
+      "publishedAt": "2026-10-28",
+      "metrics": {
+        "slug": "lost-item-preparation",
+        "impressions": 1128,
+        "clicks": 17,
+        "ctrPercent": 1.5070921985815602,
+        "position": 7.914007092198582,
+        "observedDays": 24
+      },
+      "observation": "observed"
+    },
+    {
+      "slug": "lost-wallet",
+      "title": "お財布を落としたら？",
+      "url": "https://www.qring.jp/column/lost-wallet/",
+      "selected": false,
+      "publishedAt": "2026-11-09",
+      "metrics": {
+        "slug": "lost-wallet",
+        "impressions": 1974,
+        "clicks": 10,
+        "ctrPercent": 0.5065856129685917,
+        "position": 8.983789260385006,
+        "observedDays": 13
+      },
+      "observation": "observed"
+    },
+    {
+      "slug": "lost-property-retention",
+      "title": "忘れ物はいつまで保管する？",
+      "url": "https://www.qring.jp/column/lost-property-retention/",
+      "selected": false,
+      "publishedAt": "2026-11-11",
+      "metrics": {
+        "slug": "lost-property-retention",
+        "impressions": 942,
+        "clicks": 2,
+        "ctrPercent": 0.21231422505307856,
+        "position": 8.023354564755838,
+        "observedDays": 12
+      },
+      "observation": "observed"
+    }
+  ]
+}
