@@ -13,7 +13,7 @@ export default function UseCaseFaq({
   return (
     <section className="bg-cream py-20 md:py-28" aria-labelledby={id}>
       <div className="container-narrow">
-        <p className="text-[10px] font-medium tracking-[0.3em] text-ink/60">QUESTIONS</p>
+        <p className="text-[10px] font-medium tracking-[0.3em] text-ink/65">QUESTIONS</p>
         <h2 id={id} className="mt-6 font-serif text-[clamp(26px,3.5vw,44px)] font-light leading-[1.6]">{title}</h2>
         <div className="mt-10 border-t border-ink/15">
           {questions.map(({ question, answer, link }) => (

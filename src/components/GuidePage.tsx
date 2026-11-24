@@ -29,13 +29,13 @@ export default function GuidePage({
       <article>
         <header className="bg-cream pb-16 pt-36 md:pb-24 md:pt-48">
           <div className="container-narrow">
-            <nav aria-label="パンくず" className="text-xs leading-7 text-ink/60">
+            <nav aria-label="パンくず" className="text-xs leading-7 text-ink/65">
               <Link href="/" className="hover:text-moss">ホーム</Link><span aria-hidden="true"> / </span><Link href="/column/" className="hover:text-moss">見守り・紛失対策の選び方</Link>
             </nav>
             <p className="eyebrow mt-8">GUIDE</p>
             <h1 className="mt-7 font-serif text-[clamp(28px,4.2vw,48px)] font-light leading-[1.6]">{title}</h1>
             <p className="body-jp mt-8 text-sm md:text-base">{introduction}</p>
-            <p className="mt-7 text-xs leading-7 text-ink/60">株式会社QRing　掲載日：<time dateTime="2026-10-27">2026年10月27日</time></p>
+            <p className="mt-7 text-xs leading-7 text-ink/65">株式会社QRing　掲載日：<time dateTime="2026-10-27">2026年10月27日</time></p>
           </div>
         </header>
         <div className="container-narrow py-8 md:py-12">{children}</div>

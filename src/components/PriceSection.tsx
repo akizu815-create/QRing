@@ -29,7 +29,7 @@ export default function PriceSection() {
         <Reveal delay={240}>
           <div className="mx-auto mt-10 grid max-w-4xl grid-cols-[minmax(0,1fr)_1px_minmax(0,1fr)] border-y border-ink/10 md:mt-12">
             <div className="flex min-w-0 flex-col items-center justify-center px-3 py-10 text-center md:px-10 md:py-12">
-              <p className="min-h-10 text-[11px] leading-relaxed tracking-[0.08em] text-ink/60 md:min-h-0 md:text-sm">
+              <p className="min-h-10 text-[11px] leading-relaxed tracking-[0.08em] text-ink/65 md:min-h-0 md:text-sm">
                 登録料・月額基本料
               </p>
               <p className="mt-4 font-serif text-[clamp(58px,8vw,104px)] font-light leading-none tracking-tight text-ink/60">
@@ -40,16 +40,16 @@ export default function PriceSection() {
             <span className="h-full w-px bg-ink/10" aria-hidden="true" />
 
             <div className="flex min-w-0 flex-col items-center justify-center px-3 py-10 text-center md:px-10 md:py-12">
-              <p className="min-h-10 text-[11px] leading-relaxed tracking-[0.08em] text-ink/60 md:min-h-0 md:text-sm">
+              <p className="min-h-10 text-[11px] leading-relaxed tracking-[0.08em] text-ink/65 md:min-h-0 md:text-sm">
                 通話が成立したとき
               </p>
               <p className="mt-5 whitespace-nowrap font-serif text-[clamp(38px,5.8vw,76px)] font-light leading-none tracking-tight text-ink">
                 880<span className="ml-1 text-[0.38em]">円（税込）</span>
               </p>
-              <p className="mt-3 text-[10px] tracking-[0.12em] text-ink/60 md:text-xs">
+              <p className="mt-3 text-[10px] tracking-[0.12em] text-ink/65 md:text-xs">
                 1回のご利用（1セッション）につき
               </p>
-              <p className="mt-2 text-[10px] tracking-[0.18em] text-ink/50 md:text-xs">
+              <p className="mt-2 text-[10px] tracking-[0.18em] text-ink/65 md:text-xs">
                 通話成立時・後払い
               </p>
             </div>

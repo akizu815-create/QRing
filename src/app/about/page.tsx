@@ -29,7 +29,7 @@ export default function AboutPage() {
       <section id="vision" className="scroll-mt-24 bg-ivory pb-20 pt-12 md:pb-24 md:pt-16" aria-labelledby="philosophy-heading">
         <div className="container-wide grid items-center gap-12 md:grid-cols-12 md:gap-10 lg:gap-20">
           <div className="md:col-span-6">
-            <p className={eyebrow}>PHILOSOPHY<span className="ml-5 tracking-[0.12em] text-ink/55">企業理念</span></p>
+            <p className={eyebrow}>PHILOSOPHY<span className="ml-5 tracking-[0.12em] text-ink/65">企業理念</span></p>
             <h2 id="philosophy-heading" className="mt-8 font-serif text-[clamp(36px,5.2vw,74px)] font-light leading-[1.55] tracking-tight">
               人の善意を、<br /><span className="text-moss">行動につなぐ。</span>
             </h2>
@@ -52,7 +52,7 @@ export default function AboutPage() {
 
       <section id="message" className="scroll-mt-24 py-20 md:py-24" aria-labelledby="message-heading">
         <div className="container-wide grid gap-9 md:grid-cols-12 md:gap-12">
-          <div className="md:col-span-4"><h2 id="message-heading" className="text-sm font-medium leading-8 tracking-[0.08em]"><span className="text-ink/60">MESSAGE</span><span className="mx-3 text-ink/30">｜</span>代表挨拶</h2></div>
+          <div className="md:col-span-4"><h2 id="message-heading" className="text-sm font-medium leading-8 tracking-[0.08em]"><span className="text-ink/65">MESSAGE</span><span className="mx-3 text-ink/30">｜</span>代表挨拶</h2></div>
           <div className="body-jp space-y-6 text-sm text-ink/75 md:col-span-8 md:max-w-2xl md:text-base">
             <p>技術だけで、人を助けることはできません。</p>
             <p>人を動かすのは、一人ひとりの中にある優しさや思いやりだと考えています。</p>
@@ -66,7 +66,7 @@ export default function AboutPage() {
         <div className="container-wide grid gap-10 md:grid-cols-12 md:gap-12">
           <div className="md:col-span-4"><p className={eyebrow}>COMPANY</p><h2 id="company-heading" className="mt-6 font-serif text-3xl font-light leading-relaxed md:text-4xl">会社概要</h2></div>
           <dl className="min-w-0 border-b border-ink/10 md:col-span-8">
-            {COMPANY.map((row) => <div key={row.k} className="grid gap-3 border-t border-ink/10 py-6 sm:grid-cols-[7rem_minmax(0,1fr)] sm:gap-6"><dt className="text-xs leading-7 tracking-[0.12em] text-ink/60">{row.k}</dt><dd className="break-words text-sm leading-7 text-ink/80 md:text-base">{row.v}</dd></div>)}
+            {COMPANY.map((row) => <div key={row.k} className="grid gap-3 border-t border-ink/10 py-6 sm:grid-cols-[7rem_minmax(0,1fr)] sm:gap-6"><dt className="text-xs leading-7 tracking-[0.12em] text-ink/65">{row.k}</dt><dd className="break-words text-sm leading-7 text-ink/80 md:text-base">{row.v}</dd></div>)}
           </dl>
         </div>
       </section>

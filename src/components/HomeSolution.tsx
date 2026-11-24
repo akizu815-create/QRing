@@ -18,7 +18,7 @@ export default function HomeSolution() {
         </ul>
         <div className="mt-8 grid gap-4 border-t border-moss/25 pt-6 md:mt-10 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-8">
           <h3 className="font-serif font-light leading-relaxed">
-            <span className="block font-sans text-sm text-ink/60">特許技術を活用した、</span>
+            <span className="block font-sans text-sm text-ink/65">特許技術を活用した、</span>
             <span className="mt-1 block text-2xl text-ink md:text-[28px]">独自の通話接続方式。</span>
           </h3>
           <div>
@@ -26,7 +26,7 @@ export default function HomeSolution() {
             <Link href="/service/#privacy-call" className="link-underline mt-3 inline-flex min-h-11 items-center py-2 text-sm leading-7 text-moss">電話番号を公開しない仕組みを見る</Link>
           </div>
         </div>
-        <p className="body-jp mt-6 text-[13px] leading-7 text-ink/60">GPSによる位置追跡や、紛失そのものを防ぐサービスではありません。見つけてくださった方からの連絡を支えます。</p>
+        <p className="body-jp mt-6 text-[13px] leading-7 text-ink/65">GPSによる位置追跡や、紛失そのものを防ぐサービスではありません。見つけてくださった方からの連絡を支えます。</p>
       </Reveal>
     </div>
   </section>;

@@ -99,7 +99,7 @@ export default function NewsPage() {
               <li>
                 <details className="group border-t border-ink/10">
                   <summary className="grid cursor-pointer list-none items-baseline gap-4 py-8 md:grid-cols-12 md:gap-10 md:py-10">
-                    <div className="flex items-baseline gap-4 md:col-span-3 md:flex-col md:items-start md:gap-3"><time dateTime={NEWMARKET_SUPPORT.publishedOn} className="font-serif text-base text-ink/60">{NEWMARKET_SUPPORT.publishedOn.replaceAll("-", ".")}</time><span className="text-[10px] uppercase tracking-[0.3em] text-ink/60">NEWS</span></div>
+                    <div className="flex items-baseline gap-4 md:col-span-3 md:flex-col md:items-start md:gap-3"><time dateTime={NEWMARKET_SUPPORT.publishedOn} className="font-serif text-base text-ink/65">{NEWMARKET_SUPPORT.publishedOn.replaceAll("-", ".")}</time><span className="text-[10px] uppercase tracking-[0.3em] text-ink/65">NEWS</span></div>
                     <h2 className="font-serif text-xl leading-tight text-ink transition-colors duration-300 group-hover:text-moss md:col-span-8 md:text-2xl">{NEWMARKET_SUPPORT.title}</h2>
                     <div className="flex justify-end md:col-span-1"><span className="font-serif text-2xl text-moss transition-transform duration-500 group-open:rotate-45" aria-hidden="true">+</span></div>
                   </summary>
@@ -112,8 +112,8 @@ export default function NewsPage() {
                 <details id={`news-${n.date.replaceAll(".", "")}`} className="group scroll-mt-28 border-t border-ink/10 last:border-b">
                   <summary className="grid md:grid-cols-12 gap-4 md:gap-10 py-8 md:py-10 cursor-pointer list-none items-baseline">
                     <div className="md:col-span-3 flex md:flex-col gap-4 md:gap-3 items-baseline md:items-start">
-                      <p className="font-serif text-base text-ink/60">{n.date}</p>
-                      <span className="text-[10px] tracking-[0.3em] uppercase text-ink/60">
+                      <p className="font-serif text-base text-ink/65">{n.date}</p>
+                      <span className="text-[10px] tracking-[0.3em] uppercase text-ink/65">
                         {n.cat}
                       </span>
                     </div>
