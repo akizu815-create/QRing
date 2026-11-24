@@ -47,7 +47,7 @@ export default function PriceSection() {
                 880<span className="ml-1 text-[0.38em]">円（税込）</span>
               </p>
               <p className="mt-3 text-[10px] tracking-[0.12em] text-ink/60 md:text-xs">
-                1セッションあたり
+                1回のご利用（1セッション）につき
               </p>
               <p className="mt-2 text-[10px] tracking-[0.18em] text-ink/50 md:text-xs">
                 通話成立時・後払い
@@ -56,17 +56,21 @@ export default function PriceSection() {
           </div>
         </Reveal>
 
+        <p className="mx-auto mt-5 max-w-2xl text-center text-sm leading-7 text-ink/70">QRタグ・シールなどの商品代金は別途必要です。サービス利用料には含まれません。</p>
+
         <div className="mx-auto mt-8 max-w-2xl text-center md:mt-10">
           <Reveal delay={300}>
             <p className="font-serif text-xl font-light leading-relaxed md:text-2xl">
-              QRコードをスキャンするだけでは、利用料はかかりません。
+              QRコードのスキャンだけでは、サービス利用料はかかりません。
             </p>
           </Reveal>
           <Reveal delay={360}>
             <p className="body-jp mt-5 text-xs text-ink/55 md:text-sm">
-              通話が成立した場合、登録者に1セッション880円（税込）の利用料が発生します。通常の電話料金は発信した方に別途かかります。
+              通話が成立した場合、登録者に1回のご利用（1セッション）につき880円（税込）のサービス利用料が発生します。発見者にはサービス利用料はかかりません。
             </p>
-            <p className="mt-3 text-xs leading-relaxed text-ink/55">※通話時間が5秒未満の場合、サービス利用料は発生しません。</p>
+            <p className="mt-3 text-sm leading-7 text-ink/70">QRコードのスキャンから1時間以内は、同じ登録者と発見者の組み合わせで再通話・折り返しができます。同一セッション内では追加のサービス利用料はかかりません。1回の通話は最大3分です。</p>
+            <p className="mt-3 text-xs leading-relaxed text-ink/55">※通話時間が5秒未満の場合、登録者のサービス利用料は発生しません。</p>
+            <p className="mt-3 text-sm leading-7 text-ink/70">電話をかける方には、ご契約の通信会社・料金プランに応じた通常の通話料が別途かかります。上記の5秒未満の免除は、通常の通話料には適用されません。</p>
           </Reveal>
           <Reveal delay={420}>
             <Link
@@ -76,16 +80,16 @@ export default function PriceSection() {
               料金について詳しく見る →
             </Link>
           </Reveal>
-          <p className="mt-5"><Link href="/faq/" className="link-underline inline-flex min-h-12 items-center text-sm text-moss">料金・お支払いのよくあるご質問 →</Link></p>
+          <p className="mt-5"><Link href="/faq/" className="link-underline inline-flex min-h-12 items-center text-sm text-ink/65 hover:text-moss focus-visible:text-moss focus-visible:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss">料金・お支払いのよくあるご質問 →</Link></p>
           <div className="mt-8 border-t border-ink/15 pt-6 md:mt-10 md:pt-8" aria-labelledby="home-personal-contact">
-            <h3 id="home-personal-contact" className="font-serif text-xl font-light leading-relaxed md:text-2xl">つながるQRを使ってみたい方へ</h3>
-            <p className="body-jp mt-4 text-sm text-ink/70">ペットやご家族、持ち物への利用をお考えですか？サービスについてのご質問や、利用開始に関するお問い合わせを受け付けています。</p>
+            <h3 id="home-personal-contact" className="font-serif text-xl font-light leading-relaxed md:text-2xl">商品の入手・利用開始について</h3>
+            <p className="body-jp mt-4 text-sm text-ink/70">専用QRタグ・シールなどの入手方法や、利用開始についてのご質問は、お問い合わせ窓口へご相談ください。</p>
+            <p className="mt-4 text-sm leading-7 text-ink/70">{CONSUMER_SERVICE.notice} 開始のお知らせは<Link href="/news/" className="link-underline text-moss">NEWS</Link>でご案内します。</p>
             <a href="https://axb.qring.jp/contact" className="mt-5 inline-flex min-h-12 items-center justify-center border border-moss/40 px-6 py-3 text-sm text-moss transition-colors hover:bg-moss/10">利用について問い合わせる</a>
-            <p className="mt-4 text-xs leading-7 text-ink/65">{CONSUMER_SERVICE.notice}</p>
           </div>
           <div className="mt-8 text-xs leading-7 text-ink/65" data-pet-survey>
             <p>ペット向け商品について、皆さまのご意見を募集しています。</p>
-            <PetSurveyLink placement="home" className="link-underline mt-1 inline-block py-2 text-moss hover:text-ink">ペット向けアンケートに回答する</PetSurveyLink>
+            <PetSurveyLink placement="home" className="link-underline mt-1 inline-flex min-h-11 items-center py-2 text-ink/65 hover:text-moss focus-visible:text-moss focus-visible:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss">ペット向けアンケートに回答する</PetSurveyLink>
           </div>
         </div>
       </div>

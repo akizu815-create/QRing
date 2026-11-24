@@ -1,0 +1,21 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "seoHeroImagesPreserved": true,
+      "newsAnchors": "present, below fixed header, original disclosure operable",
+      "faqTapTargetAndFocus": "passed",
+      "petSurveyClick": "single original event",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "seoHeroImagesPreserved": true,
+      "newsAnchors": "present, below fixed header, original disclosure operable",
+      "faqTapTargetAndFocus": "passed",
+      "petSurveyClick": "single original event",
+      "overflow": false
+    }
+  ],
+  "screenshots": false
+}

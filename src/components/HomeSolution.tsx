@@ -22,7 +22,7 @@ export default function HomeSolution() {
             <span className="mt-1 block text-2xl text-ink md:text-[28px]">独自の通話接続方式。</span>
           </h3>
           <div>
-            <p className="body-jp text-sm text-ink/70">このシンプルな操作を支えているのが、プライバシー電話番号を利用する仕組みです。</p>
+            <p className="body-jp text-sm text-ink/70">プライバシー電話番号は、お互いの電話番号を相手に公開せずに、通話をつなぐための番号です。</p>
             <Link href="/service/#privacy-call" className="link-underline mt-3 inline-flex min-h-11 items-center py-2 text-sm leading-7 text-moss">電話番号を公開しない仕組みを見る</Link>
           </div>
         </div>

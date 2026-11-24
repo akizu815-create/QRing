@@ -42,8 +42,8 @@ export const metadata = pageMetadata("home");
 
 export default function Home() {
   const newsItems = isNewmarketSupportActive()
-    ? [{ date: NEWMARKET_SUPPORT.publishedOn.replaceAll("-", "."), cat: "NEWS", title: NEWMARKET_SUPPORT.title, href: NEWMARKET_SUPPORT.path }, ...NEWS.slice(0, 2).map((item) => ({ ...item, href: "/news/" }))]
-    : NEWS.slice(0, 3).map((item) => ({ ...item, href: "/news/" }));
+    ? [{ date: NEWMARKET_SUPPORT.publishedOn.replaceAll("-", "."), cat: "NEWS", title: NEWMARKET_SUPPORT.title, href: NEWMARKET_SUPPORT.path }, ...NEWS.slice(0, 2).map((item) => ({ ...item, href: `/news/#news-${item.date.replaceAll(".", "")}` }))]
+    : NEWS.slice(0, 3).map((item) => ({ ...item, href: `/news/#news-${item.date.replaceAll(".", "")}` }));
   return (
     <>
       <PageStructuredData page="home" />
@@ -76,6 +76,8 @@ export default function Home() {
 
         </div>
       </section>
+
+      <p className="bg-ivory px-4 py-3 text-center text-xs leading-6 tracking-wide text-ink/65">特許技術を活用<span className="px-2 text-moss" aria-hidden="true">｜</span><span className="whitespace-nowrap">特許第7460140号</span></p>
 
       <UseCases />
 

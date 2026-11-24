@@ -1,0 +1,54 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "beforePriceHeight": 1469.875,
+      "afterPriceHeight": 1864.875,
+      "overflow": false,
+      "seoHeroImagesUnchanged": true,
+      "login": "passed"
+    },
+    {
+      "width": 375,
+      "beforePriceHeight": 1361.875,
+      "afterPriceHeight": 1700.375,
+      "overflow": false,
+      "seoHeroImagesUnchanged": true,
+      "login": "passed"
+    },
+    {
+      "width": 390,
+      "beforePriceHeight": 1345.875,
+      "afterPriceHeight": 1700.375,
+      "overflow": false,
+      "seoHeroImagesUnchanged": true,
+      "login": "passed"
+    },
+    {
+      "width": 430,
+      "beforePriceHeight": 1301.6875,
+      "afterPriceHeight": 1593.6875,
+      "overflow": false,
+      "seoHeroImagesUnchanged": true,
+      "login": "passed"
+    },
+    {
+      "width": 768,
+      "beforePriceHeight": 1348.734375,
+      "afterPriceHeight": 1512.734375,
+      "overflow": false,
+      "seoHeroImagesUnchanged": true,
+      "login": "passed"
+    },
+    {
+      "width": 1280,
+      "beforePriceHeight": 1400.796875,
+      "afterPriceHeight": 1564.796875,
+      "overflow": false,
+      "seoHeroImagesUnchanged": true,
+      "login": "passed"
+    }
+  ],
+  "screenshotsCreated": false,
+  "externalLoginAndContactSubmission": "unverified"
+}

@@ -109,7 +109,7 @@ export default function NewsPage() {
             )}
             {NEWS.map((n, i) => (
               <Reveal as="li" key={n.title} delay={i * 60}>
-                <details className="group border-t border-ink/10 last:border-b">
+                <details id={`news-${n.date.replaceAll(".", "")}`} className="group scroll-mt-28 border-t border-ink/10 last:border-b">
                   <summary className="grid md:grid-cols-12 gap-4 md:gap-10 py-8 md:py-10 cursor-pointer list-none items-baseline">
                     <div className="md:col-span-3 flex md:flex-col gap-4 md:gap-3 items-baseline md:items-start">
                       <p className="font-serif text-base text-ink/60">{n.date}</p>
