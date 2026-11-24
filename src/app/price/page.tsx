@@ -222,8 +222,13 @@ export default function PricePage() {
         <div className="container-narrow">
           <SectionHeading id="payment-title" en="PAYMENT & INFORMATION">お支払いについて</SectionHeading>
           <p className="body-jp text-sm md:text-base">サービス利用料が発生した場合、登録者へSMSとメールでお支払いをご案内します。案内に記載された決済ページから、クレジットカードでお支払いください。</p>
-          <p className="mt-6 border-l-2 border-moss pl-4 text-sm leading-relaxed md:text-base">お支払い期限：サービス利用料が発生した通話日の2日後、23時59分まで（日本時間）</p>
-          <p className="mt-3 text-xs leading-relaxed text-ink/65 md:text-sm">お支払い期限を過ぎた未払いが1回でも発生した場合、サービスを停止します。</p>
+          <p className="mt-6 border-l-2 border-moss pl-4 text-sm leading-relaxed md:text-base">お支払い期限：通話成立日の2日後、23時59分まで（日本時間）</p>
+          <div className="mt-6 space-y-3 text-sm leading-7 text-ink/80" aria-labelledby="payment-suspension-title">
+            <h3 id="payment-suspension-title" className="font-medium">未払い時の利用停止・再開</h3>
+            <p>支払期限までにお支払いが完了しない場合、期限経過後ただちにサービスを停止します。</p>
+            <p>停止前には支払期限と、期限までにお支払いがなければ利用停止となる旨をメールで通知します。停止後にも、サービスを停止した旨をメールで通知します。</p>
+            <p>停止中にQRコードを読み取った方には、利用停止中である旨をご案内します。未払い分のお支払いが完了すると、自動的にサービスの利用を再開します。</p>
+          </div>
           <ol className="mt-12 grid gap-7 border-y border-ink/15 py-8 md:grid-cols-3 md:gap-10">
             {["通話成立", "SMS・メールでお支払い案内", "クレジットカードで決済"].map((step, i) => <li key={step}><span className={label}>STEP 0{i + 1}</span><p className="mt-3 font-serif text-lg">{step}</p></li>)}
           </ol>

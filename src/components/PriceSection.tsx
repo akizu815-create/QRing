@@ -55,7 +55,6 @@ export default function PriceSection() {
             </div>
             <div className="col-span-3 border-t border-ink/10 px-4 py-5 text-center text-sm leading-7 text-ink/80">
               <p className="font-medium">登録者のみのお支払いです。見つけた方に、つながるQRのサービス利用料はかかりません。</p>
-              <p className="mt-2">※発信した方の通常の通話料は別途かかります。</p>
             </div>
           </div>
         </Reveal>
@@ -70,10 +69,11 @@ export default function PriceSection() {
           <Reveal delay={360}>
             <dl className="mt-7 grid gap-4 text-left text-sm leading-7 text-ink/80 md:grid-cols-2 md:gap-x-8 md:gap-y-6">
               <div><dt className="inline font-medium after:content-['：']">登録者</dt><dd className="inline">通話が成立したとき、1回のご利用（1セッション）につき880円（税込）。後払いです。</dd></div>
-              <div><dt className="inline font-medium after:content-['：']">見つけた方</dt><dd className="inline">つながるQRのサービス利用料はかかりません。電話をかける際は、ご契約の通信会社・料金プランに応じた通常の通話料がかかります。</dd></div>
+              <div><dt className="inline font-medium after:content-['：']">見つけた方</dt><dd className="inline">つながるQRのサービス利用料はかかりません。通常の通話料は、電話をかけた方に、ご契約の通信会社・料金プランに応じてかかります。</dd></div>
               <div><dt className="inline font-medium after:content-['：']">かけ直し</dt><dd className="inline">QRコードのスキャンから1時間以内は、同じ登録者と発見者の組み合わせで再通話・折り返しができます。同一セッション内では追加のサービス利用料はかかりません。1回の通話は最大3分です。</dd></div>
-              <div><dt className="inline font-medium after:content-['：']">5秒未満の通話</dt><dd className="inline">※通話時間が5秒未満の場合、登録者のサービス利用料は発生しません。上記の5秒未満の免除は、通常の通話料には適用されません。</dd></div>
+              <div><dt className="inline font-medium after:content-['：']">5秒未満の通話</dt><dd className="inline">通話が5秒未満のときは、登録者のサービス利用料はかかりません。この免除は、通常の通話料には適用されません。</dd></div>
             </dl>
+            <p className="mt-5 text-left text-sm leading-7 text-ink/70">本サービスの通話機能は、日本国内でのみご利用いただけます。</p>
           </Reveal>
           <Reveal delay={420}>
             <Link

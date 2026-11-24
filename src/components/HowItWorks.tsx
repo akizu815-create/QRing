@@ -10,7 +10,7 @@ const REGISTER_STEPS: Step[] = [
 ];
 const FINDER_STEPS: Step[] = [
   { title: "QRコードをスキャン", image: "/images/how-it-works-step-02.png", alt: "持ち物に付いたQRタグをスマートフォンでスキャンする発見者の操作イメージ" },
-  { title: "「電話をかける」をタップ", detail: "登録先へ電話をかけられます。", image: "/images/how-it-works-step-03.png", alt: "スマートフォンを持つ女性と通話先の人物を描いたイラスト" },
+  { title: "「電話をかける」をタップ", detail: "登録先へ電話をかけられます。お互いの電話番号は表示されません。", image: "/images/how-it-works-step-03.png", alt: "スマートフォンを持つ女性と通話先の人物を描いたイラスト" },
 ];
 
 function StepList({ steps }: { steps: Step[] }) {
