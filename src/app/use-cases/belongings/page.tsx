@@ -79,7 +79,7 @@ export default function BelongingsPage() {
               </li>
             ))}
           </ol>
-          <p className="mt-7 text-[11px] leading-relaxed text-ink/55">※図解・画面は操作のイメージです。図解内のQRコードはご利用いただけません。</p>
+          <p className="mt-7 text-[11px] leading-relaxed text-ink/65">※図解・画面は操作のイメージです。図解内のQRコードはご利用いただけません。</p>
           <p className="body-jp mt-5 text-sm text-ink/75">専用アプリや、発見者による電話番号の手入力は不要です。</p>
           <div className="mt-5 flex flex-wrap gap-x-7 gap-y-2">
             <Link href="/service/" className={linkClass}>サービスの仕組みを見る →</Link>
@@ -108,8 +108,8 @@ export default function BelongingsPage() {
             <h3 className="font-serif text-xl font-light leading-relaxed">バッグ・持ち歩き用品</h3>
             <p className="body-jp mt-2 text-sm text-ink/75 md:mt-0">外出先での忘れ物や落とし物への備えに。</p>
           </div>
-          <p className="body-jp mt-6 text-xs text-ink/60">※写真は利用イメージです。販売中の商品を示すものではなく、写真内のQRコードはご利用いただけません。</p>
-          <p className="body-jp mt-3 text-xs text-ink/60">事前にQRコードを取り付け、発見後の連絡に備える仕組みです。位置を追跡する機能はなく、返還を保証するものではありません。通話機能は日本国内でのみご利用いただけます。</p>
+          <p className="body-jp mt-6 text-xs text-ink/65">※写真は利用イメージです。販売中の商品を示すものではなく、写真内のQRコードはご利用いただけません。</p>
+          <p className="body-jp mt-3 text-xs text-ink/65">事前にQRコードを取り付け、発見後の連絡に備える仕組みです。位置を追跡する機能はなく、返還を保証するものではありません。通話機能は日本国内でのみご利用いただけます。</p>
         </div>
       </section>
 

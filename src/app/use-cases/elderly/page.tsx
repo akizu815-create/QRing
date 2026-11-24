@@ -68,7 +68,7 @@ export default function ElderlyPage() {
               <p>だからこそ、見つけてくださった方がすぐに行動できる、わかりやすい案内があることも大切です。</p>
             </div>
             <div className="mt-7 border-l border-moss/30 pl-5">
-              <p className="text-xs font-medium tracking-[0.08em] text-ink/60">シールの案内文イメージ（正式な商品文言ではありません）</p>
+              <p className="text-xs font-medium tracking-[0.08em] text-ink/65">シールの案内文イメージ（正式な商品文言ではありません）</p>
               <ul className="body-jp mt-3 space-y-1 text-sm text-ink/80"><li>迷子になっている可能性があります。</li><li>見守りが必要な方です。</li><li>こちらにご連絡ください。</li></ul>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function ElderlyPage() {
                 </li>
               ))}
             </ol>
-            <p className="mt-6 text-[11px] leading-relaxed text-ink/55">※図解・画面は操作のイメージです。図解内のQRコードはご利用いただけません。</p>
+            <p className="mt-6 text-[11px] leading-relaxed text-ink/65">※図解・画面は操作のイメージです。図解内のQRコードはご利用いただけません。</p>
             <p className="body-jp mt-4 text-sm text-ink/75">QRコードを身につけるご本人のスマートフォン操作は不要です。専用アプリや、発見者による電話番号の手入力も必要ありません。連絡には、発見者によるスキャンと発信、登録先の応答が必要です。</p>
             <Link href="/service/" className={`${linkClass} mt-5`}>サービスの仕組みを見る →</Link>
           </div>
@@ -104,7 +104,7 @@ export default function ElderlyPage() {
           <p className="body-jp mt-6 text-sm text-ink/70 md:text-base">毎年、多くの認知症高齢者が行方不明として届け出されています。<br />見守りの必要性は、今後さらに高まることが見込まれます。</p>
           <figure className="mt-12 md:mt-16" aria-labelledby="chart-caption" aria-describedby="chart-notes">
             <figcaption id="chart-caption" className="text-sm leading-7 text-ink/70">認知症またはその疑いに係る行方不明者の届出状況</figcaption>
-            <p className="mt-3 text-xs text-ink/55">単位：人（延べ人数）／棒の基点は0</p>
+            <p className="mt-3 text-xs text-ink/65">単位：人（延べ人数）／棒の基点は0</p>
             <div className={styles.chart}>
               <div aria-hidden="true" className={styles.ticks}>
                 {[chartMax, chartMax / 2, 0].map((tick) => <div key={tick} className={styles.tick}><span>{tick.toLocaleString("ja-JP")}</span></div>)}
@@ -119,7 +119,7 @@ export default function ElderlyPage() {
                 ))}
               </ol>
             </div>
-            <div id="chart-notes" className="body-jp mt-8 space-y-2 text-xs text-ink/60">
+            <div id="chart-notes" className="body-jp mt-8 space-y-2 text-xs text-ink/65">
               <p>※届出が出された者の延べ人数であり、実人数ではありません。認知症またはその疑いを含み、65歳以上に限定した統計ではありません。</p>
               <p>出典：<a href={statistics.documentUrl} className="link-underline text-moss">警察庁『{statistics.title}』</a>および過年度資料をもとに株式会社QRing作成</p>
             </div>
@@ -128,9 +128,9 @@ export default function ElderlyPage() {
             <h3 id="projection-heading" className="font-serif text-2xl font-light leading-relaxed md:text-3xl">これからの見守りに、さらなる備えを。</h3>
             <div className="body-jp mt-6 space-y-3 text-sm text-ink/70"><p>認知症のある65歳以上の人の数は、今後さらに増加すると見込まれています。</p></div>
             <dl className="mt-8 grid grid-cols-2 divide-x divide-ink/10 border-y border-ink/10 py-7 md:py-9">
-              {projections.map((item) => <div key={item.year} className="min-w-0 px-3 text-center md:px-8"><dt className="text-xs leading-6 text-ink/60 md:text-sm">{item.year}<span className="ml-2 inline-block">{item.label}</span></dt><dd className="mt-4 whitespace-nowrap font-sans text-[clamp(28px,6vw,48px)] font-light tabular-nums"><span className="text-sm text-ink/65">約</span>{item.value}<span className="ml-1 text-sm text-ink/65 md:text-base">万人</span></dd></div>)}
+              {projections.map((item) => <div key={item.year} className="min-w-0 px-3 text-center md:px-8"><dt className="text-xs leading-6 text-ink/65 md:text-sm">{item.year}<span className="ml-2 inline-block">{item.label}</span></dt><dd className="mt-4 whitespace-nowrap font-sans text-[clamp(28px,6vw,48px)] font-light tabular-nums"><span className="text-sm text-ink/65">約</span>{item.value}<span className="ml-1 text-sm text-ink/65 md:text-base">万人</span></dd></div>)}
             </dl>
-            <div className="body-jp mt-5 space-y-1 text-xs text-ink/55"><p>※認知症のある65歳以上の人の数の推計であり、行方不明者届の人数を予測したものではありません。</p><p>※性年齢階級別の有病率が一定と仮定した推計です。</p><p>※出典：<a href="https://www8.cao.go.jp/kourei/whitepaper/w-2026/zenbun/pdf/1s2s_02.pdf" className="link-underline text-moss">内閣府「令和8年版高齢社会白書」</a></p></div>
+            <div className="body-jp mt-5 space-y-1 text-xs text-ink/65"><p>※認知症のある65歳以上の人の数の推計であり、行方不明者届の人数を予測したものではありません。</p><p>※性年齢階級別の有病率が一定と仮定した推計です。</p><p>※出典：<a href="https://www8.cao.go.jp/kourei/whitepaper/w-2026/zenbun/pdf/1s2s_02.pdf" className="link-underline text-moss">内閣府「令和8年版高齢社会白書」</a></p></div>
           </div>
         </div>
       </section>
@@ -140,7 +140,7 @@ export default function ElderlyPage() {
           <p className={eyebrowClass}>COMPARISON</p>
           <h2 id="options-heading" className={`${headingClass} mt-6`}>見守りの方法は、<span className="inline-block">一つではありません。</span></h2>
           <p className="body-jp mt-6 text-sm text-ink/70 md:text-base">見守りサービスには、それぞれ役割があります。<br />つながるQRは、発見後にご家族へつながる手段として活用できます。</p>
-          <p id="comparison-help" className="mt-7 text-xs text-ink/55 md:hidden">表は横にスクロールしてご覧いただけます。</p>
+          <p id="comparison-help" className="mt-7 text-xs text-ink/65 md:hidden">表は横にスクロールしてご覧いただけます。</p>
           <div className="mt-4 overflow-x-auto overscroll-x-contain focus-visible:outline focus-visible:outline-2 focus-visible:outline-moss md:mt-9" role="region" aria-label="見守り方法の比較表" aria-describedby="comparison-help" tabIndex={0}>
             <table className="w-full min-w-[760px] table-fixed border-collapse text-left text-sm leading-7">
               <caption className="sr-only">見守り方法の基本機能と発見後の連絡方法の比較</caption>
@@ -149,8 +149,8 @@ export default function ElderlyPage() {
               <tbody>{comparison.map(([label, qring, gps, board]) => <tr key={label} className="border-b border-ink/10"><th scope="row" className="p-5 font-medium text-ink/80">{label}</th><td className="p-5 text-ink/75">{qring}</td><td className="p-5 text-ink/75">{gps}</td><td className="p-5 text-ink/75">{board}</td></tr>)}</tbody>
             </table>
           </div>
-          <div className="body-jp mt-6 space-y-1 text-xs text-ink/55"><p>※GPS見守り・QRコード伝言板は、公式資料で確認した仕組みの例です。各サービスの機能を一律に示すものではありません。</p><p>※サービスごとに機能や運用方法は異なります。</p><p>※それぞれ役割が異なるため、併用も考えられます。</p><p>参考：<a href="https://www.city.shibuya.tokyo.jp/kenko/ninchisho/ninchisho-shien/itizyohotansakusabisu.html" className="link-underline text-moss">渋谷区のGPS位置情報探索サービス</a>、<a href="https://www.city.kurashiki.okayama.jp/fukushi/elderly/1004100/1012661/1004131.html" className="link-underline text-moss">倉敷市のQRコード伝言板による連絡支援</a></p></div>
-          <p className="body-jp mt-3 text-xs text-ink/60">つながるQRには、位置追跡や転倒の自動検知を行う機能はありません。</p>
+          <div className="body-jp mt-6 space-y-1 text-xs text-ink/65"><p>※GPS見守り・QRコード伝言板は、公式資料で確認した仕組みの例です。各サービスの機能を一律に示すものではありません。</p><p>※サービスごとに機能や運用方法は異なります。</p><p>※それぞれ役割が異なるため、併用も考えられます。</p><p>参考：<a href="https://www.city.shibuya.tokyo.jp/kenko/ninchisho/ninchisho-shien/itizyohotansakusabisu.html" className="link-underline text-moss">渋谷区のGPS位置情報探索サービス</a>、<a href="https://www.city.kurashiki.okayama.jp/fukushi/elderly/1004100/1012661/1004131.html" className="link-underline text-moss">倉敷市のQRコード伝言板による連絡支援</a></p></div>
+          <p className="body-jp mt-3 text-xs text-ink/65">つながるQRには、位置追跡や転倒の自動検知を行う機能はありません。</p>
         </div>
       </section>
 
@@ -164,7 +164,7 @@ export default function ElderlyPage() {
             <Link href="/price/" className={linkClass}>料金について →</Link>
             <Link id="elderly-questions" href="/faq/" className={linkClass}>よくあるご質問 →</Link>
           </div>
-          <p className="mt-5"><Link href="/municipalities/" className="link-underline inline-block text-xs leading-7 text-ink/60 transition-colors duration-300 hover:text-moss">自治体での見守りへの活用はこちら →</Link></p>
+          <p className="mt-5"><Link href="/municipalities/" className="link-underline inline-block text-xs leading-7 text-ink/65 transition-colors duration-300 hover:text-moss">自治体での見守りへの活用はこちら →</Link></p>
         </div>
       </section>
       <UseCaseFaq id="elderly-qr-faq" title="高齢者の見守りQRについて" questions={elderlyQuestions} />

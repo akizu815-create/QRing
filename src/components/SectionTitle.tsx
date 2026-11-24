@@ -22,7 +22,7 @@ export default function SectionTitle({
       {eyebrow && (
         <span
           className={`eyebrow mb-6 ${
-            invert ? "text-softgold" : "text-ink/60"
+            invert ? "text-softgold" : "text-ink/65"
           }`}
         >
           {eyebrow}
@@ -36,7 +36,7 @@ export default function SectionTitle({
       {jp && (
         <p
           className={`mt-5 text-sm md:text-base tracking-[0.2em] ${
-            invert ? "text-ivory/70" : "text-ink/60"
+            invert ? "text-ivory/70" : "text-ink/65"
           }`}
         >
           {jp}

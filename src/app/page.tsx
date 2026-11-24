@@ -119,10 +119,10 @@ export default function Home() {
                     href={n.href}
                     className="group grid grid-cols-12 gap-4 py-7 border-t border-ink/10 last:border-b items-baseline"
                   >
-                    <span className="col-span-3 font-serif text-sm text-ink/60">
+                    <span className="col-span-3 font-serif text-sm text-ink/65">
                       {n.date}
                     </span>
-                    <span className="col-span-3 md:col-span-2 text-[10px] tracking-[0.3em] uppercase text-ink/60">
+                    <span className="col-span-3 md:col-span-2 text-[10px] tracking-[0.3em] uppercase text-ink/65">
                       {n.cat}
                     </span>
                     <span className="col-span-12 md:col-span-7 text-sm md:text-base text-ink group-hover:text-moss transition-colors duration-300">

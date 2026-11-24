@@ -32,7 +32,7 @@ export default function PageHeader({ eyebrow, en, jp, heading }: Props) {
           </h1>
         )}
         {jp && (
-          <p className="mt-6 text-sm md:text-base tracking-[0.25em] text-ink/60">
+          <p className="mt-6 text-sm md:text-base tracking-[0.25em] text-ink/65">
             {jp}
           </p>
         )}

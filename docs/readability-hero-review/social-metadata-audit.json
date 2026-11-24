@@ -1,0 +1,308 @@
+[
+  {
+    "path": "/news/newmarket-support/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/use-cases/belongings/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/use-cases/pets/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/use-cases/elderly/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/about/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/service/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/audience/municipal/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/price/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/news/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/faq/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/municipalities/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/collaboration/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/terms/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/privacy/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/law/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/page/2/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/page/3/",
+    "twitterCard": "summary",
+    "images": [],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/phone-number-personal-information/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/phone-number-personal-information.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/smartphone-emergency-sos/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/smartphone-emergency-sos.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/elderly-fall-prevention/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/elderly-fall-prevention.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/cat-owner-memory/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/cat-owner-memory.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/qr-code-inventor/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/qr-code-inventor.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/wallet-contents-safety/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/wallet-contents-safety.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/young-onset-dementia/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/young-onset-dementia.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/dog-owner-voice/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/dog-owner-voice.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/unknown-calls/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/unknown-calls.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/care-insurance-age/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/care-insurance-age.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/dog-microchip/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/dog-microchip.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/unidentified-elderly/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/unidentified-elderly.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/photo-location-privacy/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/photo-location-privacy.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/lost-property-retention/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/lost-property-retention.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/dementia-forgetfulness/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/dementia-forgetfulness.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/lost-wallet/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/lost-wallet.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/care-levels/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/care-levels-4eff2d4e8937.jpg"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/lost-dog-preparation/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/lost-dog-preparation.webp"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/elderly-monitoring-contact-system/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/elderly-monitoring-contact-system.jpg"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/school-contact-list-privacy/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/school-contact-list-privacy-2545e6604a1f.jpg"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/senior-care-facility-types/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/senior-care-facility-types-98d3b63c37f1.jpg"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/dementia-early-signs/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/dementia-early-signs-ac0d4195991d.jpg"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/lost-item-preparation/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/lost-item-preparation-633d92196383.jpg"
+    ],
+    "titleDescriptionConsistent": true
+  },
+  {
+    "path": "/column/elderly-monitoring/",
+    "twitterCard": "summary_large_image",
+    "images": [
+      "https://www.qring.jp/images/columns/elderly-monitoring-0afb6c1f3e48.jpg"
+    ],
+    "titleDescriptionConsistent": true
+  }
+]

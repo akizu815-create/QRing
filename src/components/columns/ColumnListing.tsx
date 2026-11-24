@@ -25,7 +25,7 @@ export default function ColumnListing({ municipal = false, pageNumber = 1 }: { m
   return <>
     <ColumnStructuredData path={path} title={pageNumber > 1 ? `${seo.title}｜${pageNumber}ページ目` : seo.title} description={description} articles={articles.slice((pageNumber - 1) * COLUMN_PAGE_SIZE, pageNumber * COLUMN_PAGE_SIZE)} />
     <section className="bg-cream pb-20 pt-36 md:pb-28 md:pt-48"><div className="container-narrow">
-      {municipal && <nav aria-label="パンくず" className="text-xs leading-7 text-ink/60"><Link href="/">ホーム</Link> / <Link href="/column/">コラム</Link></nav>}
+      {municipal && <nav aria-label="パンくず" className="text-xs leading-7 text-ink/65"><Link href="/">ホーム</Link> / <Link href="/column/">コラム</Link></nav>}
       <p className={`eyebrow ${municipal ? "mt-8" : ""}`}>{municipal ? "FOR MUNICIPALITIES" : "COLUMN"}</p>
       <h1 className="mt-8 font-serif text-[clamp(30px,4.2vw,52px)] font-light leading-[1.6]">{municipal ? "自治体・公共機関の皆さまへ。" : <>見守りと、暮らしの安心を<br />考えるコラム。</>}</h1>
       <p className="body-jp mt-8 text-sm md:text-base">{municipal ? "地域の見守りや安全、行政DX、実証実験を検討する際に、課題の整理と施策の選択に役立つ情報をお届けします。" : "ご本人とご家族、自治体・公共機関、企業・施設の皆さまへ。見守りや紛失対策、プライバシーについて、課題と備えの選び方をお届けします。"}</p>

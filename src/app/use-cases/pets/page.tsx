@@ -72,7 +72,7 @@ export default function PetsPage() {
               </li>
             ))}
           </ol>
-          <p className="mt-7 text-[11px] leading-relaxed text-ink/55">※図解・画面は操作のイメージです。図解内のQRコードはご利用いただけません。</p>
+          <p className="mt-7 text-[11px] leading-relaxed text-ink/65">※図解・画面は操作のイメージです。図解内のQRコードはご利用いただけません。</p>
           <p className="body-jp mt-5 text-sm text-ink/75">専用アプリや、発見者による電話番号の手入力は不要です。</p>
           <Link href="/service/" className={`${linkClass} mt-5`}>サービスの仕組みを見る →</Link>
         </div>
@@ -87,8 +87,8 @@ export default function PetsPage() {
             <p>つながるQRは、見つけてくださった方から飼い主へ直接連絡できる手段です。</p>
             <p>それぞれの役割に合わせて、組み合わせて備えることもできます。</p>
           </div>
-          <p className="body-jp mt-6 text-xs text-ink/60">つながるQRは、法令上必要な所有者明示やマイクロチップに関する手続き・義務を代替するものではありません。</p>
-          <p className="body-jp mt-3 text-xs text-ink/60">参考：<a href="https://www.env.go.jp/nature/dobutsu/aigo/shuyo/how.html" className="link-underline text-moss">環境省「迷子にさせないために」</a></p>
+          <p className="body-jp mt-6 text-xs text-ink/65">つながるQRは、法令上必要な所有者明示やマイクロチップに関する手続き・義務を代替するものではありません。</p>
+          <p className="body-jp mt-3 text-xs text-ink/65">参考：<a href="https://www.env.go.jp/nature/dobutsu/aigo/shuyo/how.html" className="link-underline text-moss">環境省「迷子にさせないために」</a></p>
         </div>
       </section>
 
@@ -97,8 +97,8 @@ export default function PetsPage() {
           <h2 id="pet-survey-heading" className="font-serif text-2xl font-light leading-relaxed md:text-3xl">ペットとの暮らしに、もっと安心を。</h2>
           <p className="body-jp mt-5 max-w-3xl text-sm text-ink/75">つながるQRでは、ペット向けの商品について、皆さまのご意見を募集しています。迷子札の形やデザイン、使いやすさなど、ぜひご希望をお聞かせください。</p>
           <PetSurveyLink placement="pets" className="mt-6 inline-flex min-h-11 items-center justify-center border border-moss/40 px-6 py-3 text-sm text-moss transition-colors hover:bg-moss/10">アンケートに回答する</PetSurveyLink>
-          <p className="mt-4 text-xs leading-7 text-ink/60">ご回答は商品づくりの参考にさせていただきます。</p>
-          <p className="mt-1 text-xs leading-7 text-ink/60">ご回答は任意です。</p>
+          <p className="mt-4 text-xs leading-7 text-ink/65">ご回答は商品づくりの参考にさせていただきます。</p>
+          <p className="mt-1 text-xs leading-7 text-ink/65">ご回答は任意です。</p>
         </div>
       </section>
 

@@ -139,7 +139,7 @@ export default function PricePage() {
                     <h3 id={`session-case-${item.number}`} className="mt-3 scroll-mt-24 font-serif text-2xl font-light leading-relaxed md:scroll-mt-28 md:text-[1.7rem]"><SessionCaseTitle title={item.title} /></h3>
                   </header>
                   <p className="body-jp mt-4 text-sm md:text-base">{item.description}</p>
-                  <p className="mt-5 font-sans text-xl font-medium leading-relaxed tabular-nums text-ink/60 md:text-2xl">{item.price}</p>
+                  <p className="mt-5 font-sans text-xl font-medium leading-relaxed tabular-nums text-ink/65 md:text-2xl">{item.price}</p>
                 </div>
                 <figure className={`mx-auto w-full md:col-start-1 md:row-start-1 md:self-center ${item.number === "02" ? "max-w-[420px] overflow-hidden aspect-[5/4]" : "max-w-[420px]"}`}>
                   <Image src={item.image} alt={item.imageAlt} width={item.imageWidth} height={item.imageHeight} sizes="(min-width: 768px) 420px, 100vw" className={item.number === "02" ? "h-full w-full object-cover object-center mix-blend-darken" : "h-auto w-full mix-blend-darken"} />

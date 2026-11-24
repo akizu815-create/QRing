@@ -41,10 +41,10 @@ export default function ServicePage() {
                 </div>
                 <div className="mt-7 border-t border-ink/15 pt-5">
                   <h3 className="font-serif font-light leading-relaxed">
-                    <span className="block font-sans text-sm text-ink/60">特許技術を活用した、</span>
+                    <span className="block font-sans text-sm text-ink/65">特許技術を活用した、</span>
                     <span className="mt-1 block text-2xl text-ink md:text-[28px]">独自の通話接続方式。</span>
                   </h3>
-                  <p className="mt-3 text-xs leading-7 tracking-[0.08em] text-ink/60">活用技術：特許第7460140号</p>
+                  <p className="mt-3 text-xs leading-7 tracking-[0.08em] text-ink/65">活用技術：特許第7460140号</p>
                 </div>
               </div>
               <p id="use-cases" className="mt-7 scroll-mt-28 text-sm">

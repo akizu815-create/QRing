@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "heroFramePhotoCopyUnchanged": true,
+      "candidateAddedHeight": 41.1875,
+      "overflow": false,
+      "petSurveyAndColumnServiceClick": "one event each"
+    },
+    {
+      "width": 1280,
+      "heroFramePhotoCopyUnchanged": true,
+      "candidateAddedHeight": 0,
+      "overflow": false,
+      "petSurveyAndColumnServiceClick": "one event each"
+    }
+  ],
+  "mainHeroNotSelected": true,
+  "screenshotViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "screenshots": [
+    "screenshots/hero-before-390.png",
+    "screenshots/hero-a-390.png"
+  ],
+  "staticHtmlComparison": {
+    "files": 49,
+    "visibleTextHeadingsImagesLinksIdsSeoAndSchemas": "unchanged"
+  },
+  "contrast": {
+    "pages": 43,
+    "widths": [
+      390,
+      1280
+    ],
+    "failedMeasuredTextAfter": 0,
+    "scope": "visible text on solid backgrounds; excludes photos/gradients/aria-hidden decorations"
+  }
+}

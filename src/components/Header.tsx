@@ -67,7 +67,7 @@ export default function Header() {
         <nav aria-label="メインナビゲーション" className="hidden items-center gap-5 xl:flex 2xl:gap-7">
           {NAV.map((item) => (
             <Link key={item.href} href={item.href} className={`flex min-h-12 flex-col items-center justify-center gap-1 whitespace-nowrap transition-colors hover:text-moss ${focusStyle}`}>
-              <span className="text-[10px] tracking-[0.16em] text-ink/60">{item.label}</span>
+              <span className="text-[10px] tracking-[0.16em] text-ink/65">{item.label}</span>
               <span className="text-[13px] text-ink">{item.jp}</span>
             </Link>
           ))}
@@ -84,7 +84,7 @@ export default function Header() {
       <div ref={panelRef} id="mobile-navigation" role={open ? "dialog" : undefined} aria-modal={open ? true : undefined} aria-label="サイトメニュー" aria-hidden={!open} inert={!open} hidden={!open} className="fixed inset-x-0 bottom-0 top-20 overflow-y-auto overscroll-contain bg-ivory md:top-24 xl:hidden">
         <div className="container-wide max-w-2xl pb-10 pt-3">
           <div className="flex items-center justify-between border-b border-ink/15">
-            <span className="text-xs tracking-widest text-ink/60">MENU</span>
+            <span className="text-xs tracking-widest text-ink/65">MENU</span>
             <button type="button" onClick={() => setOpen(false)} className={`min-h-12 px-3 text-sm ${focusStyle}`}>閉じる ×</button>
           </div>
           <nav aria-label="モバイルナビゲーション">

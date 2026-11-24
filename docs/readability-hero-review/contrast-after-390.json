@@ -1,0 +1,174 @@
+[
+  {
+    "route": "/news/newmarket-support/",
+    "failures": []
+  },
+  {
+    "route": "/",
+    "failures": []
+  },
+  {
+    "route": "/use-cases/belongings/",
+    "failures": []
+  },
+  {
+    "route": "/use-cases/pets/",
+    "failures": []
+  },
+  {
+    "route": "/use-cases/elderly/",
+    "failures": []
+  },
+  {
+    "route": "/about/",
+    "failures": []
+  },
+  {
+    "route": "/service/",
+    "failures": []
+  },
+  {
+    "route": "/column/",
+    "failures": []
+  },
+  {
+    "route": "/column/audience/municipal/",
+    "failures": []
+  },
+  {
+    "route": "/price/",
+    "failures": []
+  },
+  {
+    "route": "/news/",
+    "failures": []
+  },
+  {
+    "route": "/faq/",
+    "failures": []
+  },
+  {
+    "route": "/municipalities/",
+    "failures": []
+  },
+  {
+    "route": "/collaboration/",
+    "failures": []
+  },
+  {
+    "route": "/terms/",
+    "failures": []
+  },
+  {
+    "route": "/privacy/",
+    "failures": []
+  },
+  {
+    "route": "/law/",
+    "failures": []
+  },
+  {
+    "route": "/column/page/2/",
+    "failures": []
+  },
+  {
+    "route": "/column/page/3/",
+    "failures": []
+  },
+  {
+    "route": "/column/phone-number-personal-information/",
+    "failures": []
+  },
+  {
+    "route": "/column/smartphone-emergency-sos/",
+    "failures": []
+  },
+  {
+    "route": "/column/elderly-fall-prevention/",
+    "failures": []
+  },
+  {
+    "route": "/column/cat-owner-memory/",
+    "failures": []
+  },
+  {
+    "route": "/column/qr-code-inventor/",
+    "failures": []
+  },
+  {
+    "route": "/column/wallet-contents-safety/",
+    "failures": []
+  },
+  {
+    "route": "/column/young-onset-dementia/",
+    "failures": []
+  },
+  {
+    "route": "/column/dog-owner-voice/",
+    "failures": []
+  },
+  {
+    "route": "/column/unknown-calls/",
+    "failures": []
+  },
+  {
+    "route": "/column/care-insurance-age/",
+    "failures": []
+  },
+  {
+    "route": "/column/dog-microchip/",
+    "failures": []
+  },
+  {
+    "route": "/column/unidentified-elderly/",
+    "failures": []
+  },
+  {
+    "route": "/column/photo-location-privacy/",
+    "failures": []
+  },
+  {
+    "route": "/column/lost-property-retention/",
+    "failures": []
+  },
+  {
+    "route": "/column/dementia-forgetfulness/",
+    "failures": []
+  },
+  {
+    "route": "/column/lost-wallet/",
+    "failures": []
+  },
+  {
+    "route": "/column/care-levels/",
+    "failures": []
+  },
+  {
+    "route": "/column/lost-dog-preparation/",
+    "failures": []
+  },
+  {
+    "route": "/column/elderly-monitoring-contact-system/",
+    "failures": []
+  },
+  {
+    "route": "/column/school-contact-list-privacy/",
+    "failures": []
+  },
+  {
+    "route": "/column/senior-care-facility-types/",
+    "failures": []
+  },
+  {
+    "route": "/column/dementia-early-signs/",
+    "failures": []
+  },
+  {
+    "route": "/column/lost-item-preparation/",
+    "failures": []
+  },
+  {
+    "route": "/column/elderly-monitoring/",
+    "failures": []
+  }
+]

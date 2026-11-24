@@ -78,7 +78,7 @@ export default function CollaborationPage() {
               </article>
             ))}
           </div>
-          <p className="mt-7 text-xs leading-relaxed text-ink/55">※写真は協業商品の提案例です。販売中の商品や導入実績を示すものではなく、写真内のQRコードはご利用いただけません。</p>
+          <p className="mt-7 text-xs leading-relaxed text-ink/65">※写真は協業商品の提案例です。販売中の商品や導入実績を示すものではなく、写真内のQRコードはご利用いただけません。</p>
         </div>
       </section>
 
@@ -92,11 +92,11 @@ export default function CollaborationPage() {
                 <p className="eyebrow">{plan.en}</p>
                 <h3 className="mt-3 font-serif text-2xl font-light">{plan.title}</h3>
                 <p className="body-jp mb-5 mt-5 text-sm text-ink/75">{plan.description}</p>
-                <p className="mt-auto text-xs leading-relaxed text-ink/60">{plan.note}</p>
+                <p className="mt-auto text-xs leading-relaxed text-ink/65">{plan.note}</p>
               </article>
             ))}
           </div>
-          <p className="mt-5 text-xs leading-relaxed text-ink/60">※対応範囲・費用・数量・納期などは個別にご相談ください。</p>
+          <p className="mt-5 text-xs leading-relaxed text-ink/65">※対応範囲・費用・数量・納期などは個別にご相談ください。</p>
         </div>
       </section>
 
