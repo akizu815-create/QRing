@@ -1,0 +1,44 @@
+{
+  "rows": [
+    {
+      "width": 390,
+      "beforeHeight": 1707.875,
+      "afterHeight": 1881.875,
+      "details": {
+        "labels": [
+          "登録者",
+          "見つけた方",
+          "かけ直し",
+          "5秒未満の通話"
+        ],
+        "font": "14px",
+        "color": "rgba(31, 26, 20, 0.8)",
+        "bg": "rgb(239, 233, 221)"
+      },
+      "contrastRatio": 8.05,
+      "heroImagesLinksHomeSeoUnchanged": true,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "beforeHeight": 1572.296875,
+      "afterHeight": 1649.796875,
+      "details": {
+        "labels": [
+          "登録者",
+          "見つけた方",
+          "かけ直し",
+          "5秒未満の通話"
+        ],
+        "font": "14px",
+        "color": "rgba(31, 26, 20, 0.8)",
+        "bg": "rgb(239, 233, 221)"
+      },
+      "contrastRatio": 8.05,
+      "heroImagesLinksHomeSeoUnchanged": true,
+      "overflow": false
+    }
+  ],
+  "screenshots": false,
+  "backend": "unverified"
+}

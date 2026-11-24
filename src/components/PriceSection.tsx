@@ -20,8 +20,8 @@ export default function PriceSection() {
             </h2>
           </Reveal>
           <Reveal delay={180}>
-            <p className="mt-6 text-sm tracking-[0.12em] text-ink/70 md:text-base">
-              ベーシックプランは、通話が成立したときに登録者が支払う仕組みです。
+            <p className="mt-6 text-sm leading-7 text-ink/80 md:text-base">
+              登録料・月額基本料は0円。通話が成立したときだけ、登録者が支払います。QRタグ・シールなどの商品代金は別途かかります。
             </p>
           </Reveal>
         </div>
@@ -53,10 +53,13 @@ export default function PriceSection() {
                 通話成立時・後払い
               </p>
             </div>
+            <div className="col-span-3 border-t border-ink/10 px-4 py-5 text-center text-sm leading-7 text-ink/80">
+              <p className="font-medium">登録者のみのお支払いです。見つけた方に、つながるQRのサービス利用料はかかりません。</p>
+              <p className="mt-2">※発信した方の通常の通話料は別途かかります。</p>
+            </div>
           </div>
         </Reveal>
 
-        <p className="mx-auto mt-5 max-w-2xl text-center text-sm leading-7 text-ink/70">QRタグ・シールなどの商品代金は別途必要です。サービス利用料には含まれません。</p>
 
         <div className="mx-auto mt-8 max-w-2xl text-center md:mt-10">
           <Reveal delay={300}>
@@ -65,12 +68,12 @@ export default function PriceSection() {
             </p>
           </Reveal>
           <Reveal delay={360}>
-            <p className="body-jp mt-5 text-xs text-ink/55 md:text-sm">
-              通話が成立した場合、登録者に1回のご利用（1セッション）につき880円（税込）のサービス利用料が発生します。発見者にはサービス利用料はかかりません。
-            </p>
-            <p className="mt-3 text-sm leading-7 text-ink/70">QRコードのスキャンから1時間以内は、同じ登録者と発見者の組み合わせで再通話・折り返しができます。同一セッション内では追加のサービス利用料はかかりません。1回の通話は最大3分です。</p>
-            <p className="mt-3 text-xs leading-relaxed text-ink/55">※通話時間が5秒未満の場合、登録者のサービス利用料は発生しません。</p>
-            <p className="mt-3 text-sm leading-7 text-ink/70">電話をかける方には、ご契約の通信会社・料金プランに応じた通常の通話料が別途かかります。上記の5秒未満の免除は、通常の通話料には適用されません。</p>
+            <dl className="mt-7 grid gap-4 text-left text-sm leading-7 text-ink/80 md:grid-cols-2 md:gap-x-8 md:gap-y-6">
+              <div><dt className="inline font-medium after:content-['：']">登録者</dt><dd className="inline">通話が成立したとき、1回のご利用（1セッション）につき880円（税込）。後払いです。</dd></div>
+              <div><dt className="inline font-medium after:content-['：']">見つけた方</dt><dd className="inline">つながるQRのサービス利用料はかかりません。電話をかける際は、ご契約の通信会社・料金プランに応じた通常の通話料がかかります。</dd></div>
+              <div><dt className="inline font-medium after:content-['：']">かけ直し</dt><dd className="inline">QRコードのスキャンから1時間以内は、同じ登録者と発見者の組み合わせで再通話・折り返しができます。同一セッション内では追加のサービス利用料はかかりません。1回の通話は最大3分です。</dd></div>
+              <div><dt className="inline font-medium after:content-['：']">5秒未満の通話</dt><dd className="inline">※通話時間が5秒未満の場合、登録者のサービス利用料は発生しません。上記の5秒未満の免除は、通常の通話料には適用されません。</dd></div>
+            </dl>
           </Reveal>
           <Reveal delay={420}>
             <Link
