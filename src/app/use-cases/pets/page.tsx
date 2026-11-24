@@ -25,7 +25,7 @@ export default function PetsPage() {
           <div className="relative z-10">
             <p className={eyebrowClass}>PET CARE</p>
             <h1 id="pets-heading" className="mt-5 font-serif text-[clamp(30px,3.2vw,46px)] font-light leading-[1.6] tracking-tight">
-              大切な家族が、<br />いつでもつながる<span className="inline-block"><span className="text-moss">安心</span>を。</span>
+              大切な家族の迷子に、<br /><span className="text-moss">声でつながる</span>備えを。
             </h1>
             <div className="body-jp mt-6 max-w-xl space-y-3 text-sm text-ink/75 md:text-base">
               <p>もしものときに、見つけてくださった方から飼い主へ。</p>

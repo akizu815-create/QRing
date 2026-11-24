@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
-import PetSurveyLink from "@/components/PetSurveyLink";
 import { CONSUMER_SERVICE } from "@/config/consumerService";
 
 export default function PriceSection() {
@@ -89,10 +88,6 @@ export default function PriceSection() {
             <p className="body-jp mt-4 text-sm text-ink/70">専用QRタグ・シールなどの入手方法や、利用開始についてのご質問は、お問い合わせ窓口へご相談ください。</p>
             <p className="mt-4 text-sm leading-7 text-ink/70">{CONSUMER_SERVICE.notice} 開始のお知らせは<Link href="/news/" className="link-underline text-moss">NEWS</Link>でご案内します。</p>
             <a href="https://axb.qring.jp/contact" className="mt-5 inline-flex min-h-12 items-center justify-center border border-moss/40 px-6 py-3 text-sm text-moss transition-colors hover:bg-moss/10">利用について問い合わせる</a>
-          </div>
-          <div className="mt-8 text-xs leading-7 text-ink/65" data-pet-survey>
-            <p>ペット向け商品について、皆さまのご意見を募集しています。</p>
-            <PetSurveyLink placement="home" className="link-underline mt-1 inline-flex min-h-11 items-center py-2 text-ink/65 hover:text-moss focus-visible:text-moss focus-visible:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss">ペット向けアンケートに回答する</PetSurveyLink>
           </div>
         </div>
       </div>

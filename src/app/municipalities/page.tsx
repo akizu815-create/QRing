@@ -76,7 +76,7 @@ export default function MunicipalitiesPage() {
       <section className={`${sectionClass} bg-ivory`} aria-labelledby="implementation-title">
         <div className="container-wide"><SectionHeading en="EASY IMPLEMENTATION" title="新しい見守りを、無理のない導入から。" id="implementation-title" />
           <ol className="grid gap-6 md:grid-cols-4">{steps.map((item, i) => <li key={item.title} className="border-t border-moss/40 pt-5"><p className="text-xs tracking-[0.16em] text-ink/65">STEP {i + 1}</p><h3 className="mt-4 font-serif text-xl font-light leading-relaxed">{item.title}</h3><p className="body-jp mt-3 text-sm text-ink/70">{item.body}</p></li>)}</ol>
-          <p className="body-jp mt-8 text-sm text-ink/70">住民向け説明動画や配布資料、職員向けマニュアルなど、導入負担を抑える支援体制の整備も進めています。</p>
+          <p className="body-jp mt-8 text-sm text-ink/70">導入時には、配布方法や住民への案内、職員の運用負担などについて、自治体の状況に応じてご相談いただけます。</p>
           <div className="mt-8 border-t border-ink/15 pt-6"><h3 id="price-title" className="scroll-mt-24 text-sm font-medium text-ink">料金・管理について</h3><ul className="body-jp mt-4 space-y-2 text-sm text-ink/70"><li>自治体負担・住民負担などの費用負担方式は個別にご相談ください。</li><li>登録・通話状況、料金・請求状況を確認する管理機能は実装済みです。自治体向けの提供範囲・権限を確認のうえご案内します。</li><li>具体的な料金・契約条件は個別相談です。一般向け料金がそのまま自治体の契約価格となるものではありません。</li></ul><Link href="/price/" className={`${linkClass} mt-4`}>一般向けの料金条件を見る →</Link><div className="mt-4 flex flex-wrap gap-x-6 gap-y-3"><Link href="/service/" className={linkClass}>サービスの仕組みを見る →</Link><Link href="/use-cases/elderly/" className={linkClass}>高齢者の見守りについて詳しく見る →</Link></div></div>
         </div>
       </section>

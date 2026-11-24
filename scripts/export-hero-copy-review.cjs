@@ -5,9 +5,10 @@ const env = process.env;
 const isBranchPreview = env.CF_PAGES === '1' && Boolean(env.CF_PAGES_BRANCH) && env.CF_PAGES_BRANCH !== 'main';
 const enabled = env.CF_PAGES_BRANCH !== 'main' && (isBranchPreview || env.QRING_HERO_REVIEW === '1');
 const dest = path.join('out', 'review', 'hero-copy');
-if (!enabled) {
+const approvedCopyIsLive = fs.readFileSync('out/index.html', 'utf8').includes('data-home-hero-purpose');
+if (!enabled || approvedCopyIsLive) {
   fs.rmSync(dest, { recursive: true, force: true });
-  console.log('HERO comparison: skipped (not a branch preview/local review).');
+  console.log('HERO comparison: skipped (not a branch preview/local review, or approved copy is already implemented).');
 } else {
   const original = fs.readFileSync('out/index.html', 'utf8');
   const marker = original.indexOf('aria-labelledby="home-hero-title"');
