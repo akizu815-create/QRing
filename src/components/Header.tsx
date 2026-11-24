@@ -72,12 +72,9 @@ export default function Header() {
             </Link>
           ))}
           <a href={CONTACT} className={`inline-flex min-h-12 items-center border border-moss/50 px-4 text-sm text-deepmoss hover:bg-moss/5 ${focusStyle}`} aria-label="CONTACT お問い合わせ">お問い合わせ</a>
-          <a href={MY_PAGE} className={`inline-flex min-h-12 items-center bg-ink px-4 text-sm text-ivory ${focusStyle}`}>マイページ</a>
+          <a href={MY_PAGE} className={`inline-flex min-h-12 items-center px-2 text-xs text-ink/65 underline-offset-4 hover:text-moss hover:underline ${focusStyle}`}>マイページ</a>
         </nav>
         <div className="flex items-center gap-2 md:gap-3 xl:hidden">
-          <a href={MY_PAGE} className={`inline-flex min-h-11 items-center gap-1.5 whitespace-nowrap rounded-[3px] border border-[#B5A183] bg-[#FBFAF6] px-3 text-xs text-[#514333] max-[374px]:gap-1 max-[374px]:px-2 md:min-h-12 md:gap-0 md:rounded-none md:border-0 md:bg-transparent md:px-0 md:text-sm md:text-ink ${focusStyle}`}>
-            マイページ
-          </a>
           <button ref={toggleRef} type="button" aria-label={open ? "メニューを閉じる" : "メニューを開く"} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)} className={`flex h-12 w-12 flex-col items-center justify-center gap-1.5 ${focusStyle}`}>
             <span className={`h-px w-6 bg-ink transition-transform ${open ? "translate-y-1 rotate-45" : ""}`} />
             <span className={`h-px w-6 bg-ink transition-transform ${open ? "-translate-y-1 -rotate-45" : ""}`} />
@@ -94,6 +91,9 @@ export default function Header() {
             {NAV.map((item) => <Link key={item.href} href={item.href} onClick={() => setOpen(false)} className={`flex min-h-16 items-center justify-between gap-4 border-b border-ink/10 py-3 ${focusStyle}`}><span className="text-base">{item.jp}</span><span className="text-[10px] tracking-widest text-ink/55">{item.label}</span></Link>)}
             <a href={CONTACT} onClick={() => setOpen(false)} className={`mt-6 flex min-h-12 items-center justify-center border border-moss/50 text-sm text-deepmoss ${focusStyle}`}>お問い合わせ →</a>
           </nav>
+          <a href={MY_PAGE} onClick={() => setOpen(false)} className={`mt-5 flex min-h-12 items-center justify-between border-t border-ink/10 pt-3 text-sm text-ink/70 ${focusStyle}`}>
+            <span>登録済みの方</span><span>マイページにログイン</span>
+          </a>
           <nav aria-label="補助ナビゲーション" className="mt-5 flex gap-6 border-t border-ink/10 pt-3">
             {AUXILIARY.map((item) => <Link key={item.href} href={item.href} onClick={() => setOpen(false)} className={`inline-flex min-h-12 items-center text-sm text-ink/75 ${focusStyle}`}>{item.label}</Link>)}
           </nav>
