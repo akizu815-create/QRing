@@ -80,13 +80,10 @@ listing_grid = listing.split('role="status"', 1)[1]
 listing_times = Times(listing_grid).values
 home_slugs=re.findall(r'href="/column/([^/]+)/"', home_section)
 assert len(home_slugs)==len(set(home_slugs)) and len(home_slugs)==min(3,len(articles)), 'Duplicate or missing HOME picks'
-expected_home_times=[]
 for slug in home_slugs:
     article=next((a for a in articles if a['slug']==slug),None)
     assert article and not article.get('publicationPending'), 'HOME pick is not publicly released'
-    day=article.get("editionDate", article["publishedAt"])
-    expected_home_times.append([day, display_date(day)])
-assert home_times == expected_home_times, 'HOME pick dates differ from registry'
+assert not home_times, 'HOME picks should not display article dates'
 all_listing_times = list(listing_times)
 pages = sorted((p for p in (root / 'column/page').glob('*/index.html') if p.parent.name.isdigit() and int(p.parent.name) > 1), key=lambda p: int(p.parent.name))
 for page in pages:
