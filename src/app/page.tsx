@@ -77,6 +77,8 @@ export default function Home() {
         </div>
       </section>
 
+      <p className="bg-ivory px-4 py-3 text-center text-xs leading-6 tracking-wide text-ink/65">特許技術を活用<span className="px-2 text-moss" aria-hidden="true">｜</span><span className="whitespace-nowrap">特許第7460140号</span></p>
+
       <UseCases />
 
       <HomeSolution />

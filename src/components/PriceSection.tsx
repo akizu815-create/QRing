@@ -47,7 +47,7 @@ export default function PriceSection() {
                 880<span className="ml-1 text-[0.38em]">円（税込）</span>
               </p>
               <p className="mt-3 text-[10px] tracking-[0.12em] text-ink/60 md:text-xs">
-                1セッションあたり
+                1回のご利用（1セッション）につき
               </p>
               <p className="mt-2 text-[10px] tracking-[0.18em] text-ink/50 md:text-xs">
                 通話成立時・後払い
@@ -66,8 +66,9 @@ export default function PriceSection() {
           </Reveal>
           <Reveal delay={360}>
             <p className="body-jp mt-5 text-xs text-ink/55 md:text-sm">
-              通話が成立した場合、登録者に1セッション880円（税込）のサービス利用料が発生します。発見者にはサービス利用料はかかりません。
+              通話が成立した場合、登録者に1回のご利用（1セッション）につき880円（税込）のサービス利用料が発生します。発見者にはサービス利用料はかかりません。
             </p>
+            <p className="mt-3 text-sm leading-7 text-ink/70">QRコードのスキャンから1時間以内は、同じ登録者と発見者の組み合わせで再通話・折り返しができます。同一セッション内では追加のサービス利用料はかかりません。1回の通話は最大3分です。</p>
             <p className="mt-3 text-xs leading-relaxed text-ink/55">※通話時間が5秒未満の場合、登録者のサービス利用料は発生しません。</p>
             <p className="mt-3 text-sm leading-7 text-ink/70">電話をかける方には、ご契約の通信会社・料金プランに応じた通常の通話料が別途かかります。上記の5秒未満の免除は、通常の通話料には適用されません。</p>
           </Reveal>

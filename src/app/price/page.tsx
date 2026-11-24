@@ -117,18 +117,18 @@ export default function PricePage() {
             <div className="border-t border-ink/15 py-10 md:py-12">
               <p className="text-sm text-ink/70">つながるQRサービス利用料</p>
               <p className="mt-4 font-serif text-[clamp(3.5rem,9vw,6rem)] font-light leading-none text-moss">880<span className="ml-2 text-[0.45em] text-ink">円（税込）</span></p>
-              <p className="mt-4 text-sm font-medium text-ink">1セッションあたり・通話成立時・後払い</p>
+              <p className="mt-4 text-sm font-medium text-ink">1回のご利用（1セッション）につき・通話成立時・後払い</p>
             </div>
           </div>
-          <p id="charge-conditions" className="body-jp mt-8 scroll-mt-28 text-sm md:text-base">QRコードをスキャンするだけでは、サービス利用料は発生しません。通話が成立した場合、登録者に1セッション880円（税込）が発生します。</p>
+          <p id="charge-conditions" className="body-jp mt-8 scroll-mt-28 text-sm md:text-base">QRコードをスキャンするだけでは、サービス利用料は発生しません。通話が成立した場合、登録者に1回のご利用（1セッション）につき880円（税込）が発生します。</p>
           <p className="mt-3 text-xs leading-relaxed text-ink/65">※通話時間が5秒未満の場合、サービス利用料は発生しません。</p>
         </div>
       </section>
 
       <section className="bg-cream py-24 md:py-32" aria-labelledby="session-title">
         <div className="container-narrow">
-          <SectionHeading id="session-title" en="SESSION">セッションとは？</SectionHeading>
-          <p className="body-jp max-w-3xl text-sm md:text-base">同じ相手との1時間以内の通話を、1セッションとします。1回の通話は最大3分です。</p>
+          <SectionHeading id="session-title" en="SESSION">1回のご利用（セッション）とは？</SectionHeading>
+          <p className="body-jp max-w-3xl text-sm md:text-base">QRコードのスキャンから1時間以内の、同じ登録者と発見者の組み合わせでの通話を、1回のご利用（1セッション）として扱います。この時間内は再通話・折り返しができ、同一セッション内では追加のサービス利用料はかかりません。1回の通話は最大3分です。</p>
           <p className="mt-4 text-xs leading-relaxed text-ink/65 md:text-sm">1時間はQRコードのスキャン時から数えます。1時間を過ぎると、そのセッションのプライバシー電話番号は利用できなくなります。</p>
           <div className="mt-12 md:mt-16">
             {SESSION_CASES.map((item) => (
