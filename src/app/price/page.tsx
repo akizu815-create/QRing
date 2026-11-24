@@ -67,12 +67,12 @@ function PrivacyPhoneIllustration() {
 const SESSION_CASES = [
   {
     number: "01",
-    title: "同じ相手なら、1時間以内は何度でも。",
+    title: "1時間以内のかけ直しは、追加のサービス利用料なし。",
     image: "/images/session-same-caller.png",
     imageAlt: "同じ相手との通話・再通話・折り返しを表す線画",
     imageWidth: 1774,
     imageHeight: 887,
-    description: "同じ相手との再通話・折り返しは、1時間以内なら追加のサービス利用料はかかりません。",
+    description: "QRコードのスキャンから1時間以内は、同じ登録者と発見者の組み合わせで再通話・折り返しができます。同じ1回のご利用（1セッション）として扱われ、追加のサービス利用料はかかりません。通常の通話料は、電話をかけた方に別途かかります。",
     price: "1セッション 880円（税込）",
   },
   {
