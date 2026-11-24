@@ -23,7 +23,7 @@ export default function PageHeader({ eyebrow, en, jp, heading }: Props) {
       </div>
       <div className="container-wide relative z-10">
         <span className="eyebrow">{eyebrow}</span>
-        <DisplayTag className="display page-header-title mt-8 text-5xl md:text-7xl lg:text-8xl">
+        <DisplayTag className="display page-header-title break-words mt-8 text-5xl md:text-7xl lg:text-8xl">
           {en}
         </DisplayTag>
         {heading && (

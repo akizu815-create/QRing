@@ -14,7 +14,7 @@ const COMPANY = [
   { k: "主要取引銀行", v: "三井住友銀行" },
 ];
 
-const eyebrow = "text-[10px] font-medium tracking-[0.28em] text-ink/60 md:text-[11px]";
+const eyebrow = "eyebrow";
 
 export const metadata = pageMetadata("about");
 
@@ -23,7 +23,7 @@ export default function AboutPage() {
     <>
       <PageStructuredData page="about" />
       <div className="[&>section]:pb-12 md:[&>section]:pb-16">
-        <PageHeader eyebrow="— About" en="About" jp="私たちについて" />
+        <PageHeader eyebrow="ABOUT" en="ABOUT" jp="私たちについて" />
       </div>
 
       <section id="vision" className="scroll-mt-24 bg-ivory pb-20 pt-12 md:pb-24 md:pt-16" aria-labelledby="philosophy-heading">

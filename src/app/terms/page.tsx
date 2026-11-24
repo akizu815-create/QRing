@@ -7,5 +7,5 @@ import paragraphs from "@/content/legal/terms.json";
 export const metadata = pageMetadata("terms");
 
 export default function TermsPage() {
-  return <><PageStructuredData page="terms" /><LegalDocument englishTitle="Terms of Service." paragraphs={paragraphs} /></>;
+  return <><PageStructuredData page="terms" /><LegalDocument englishTitle="TERMS OF SERVICE" paragraphs={paragraphs} /></>;
 }

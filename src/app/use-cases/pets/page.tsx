@@ -9,7 +9,7 @@ export const metadata = pageMetadata("pets");
 
 const linkClass = "link-underline inline-block text-sm leading-7 tracking-[0.08em] text-moss transition-colors duration-300 hover:text-ink";
 const headingClass = "font-serif text-[clamp(26px,3vw,40px)] font-light leading-[1.6]";
-const eyebrowClass = "font-serif text-[11px] tracking-[0.24em] text-ink/60";
+const eyebrowClass = "eyebrow";
 const steps = [
   { title: "QRコードをスキャン", body: "見つけた方が、首輪などのQRコードをスキャンします。", image: "/images/how-it-works-step-02.png", alt: "QRタグをスマートフォンでスキャンする操作のイメージ" },
   { title: "電話をかける", body: "画面の「電話をかける」をタップします。", image: "/images/how-to-app-screen.png", alt: "「電話をかける」ボタンがあるつながるQRの案内画面" },

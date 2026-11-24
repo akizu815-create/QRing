@@ -4,7 +4,7 @@ import PageStructuredData from "@/components/PageStructuredData";
 import { pageMetadata } from "@/lib/seo";
 
 const CONTACT_URL = "https://axb.qring.jp/contact";
-const label = "font-serif text-[11px] tracking-[0.24em] text-moss";
+const label = "eyebrow";
 const sectionHeading = "mt-4 font-serif text-[clamp(25px,2.7vw,36px)] font-light leading-[1.6]";
 
 const PRODUCTS = [
@@ -89,7 +89,7 @@ export default function CollaborationPage() {
           <div className="mt-8 grid gap-6 md:grid-cols-2">
             {PLANS.map((plan) => (
               <article key={plan.en} className="flex h-full flex-col border border-ink/10 bg-white/40 p-7 md:p-9">
-                <p className="font-serif text-[10px] tracking-[0.16em] text-moss">{plan.en}</p>
+                <p className="eyebrow">{plan.en}</p>
                 <h3 className="mt-3 font-serif text-2xl font-light">{plan.title}</h3>
                 <p className="body-jp mb-5 mt-5 text-sm text-ink/75">{plan.description}</p>
                 <p className="mt-auto text-xs leading-relaxed text-ink/60">{plan.note}</p>

@@ -13,7 +13,7 @@ type BusinessCardData = {
 
 const BUSINESS_CARDS: BusinessCardData[] = [
   {
-    label: "For Municipalities",
+    label: "FOR MUNICIPALITIES",
     title: "自治体・地域の見守り",
     body: "認知症高齢者の見守りをはじめ、地域の安心を支える新たな連絡手段をご提案します。",
     image: "/images/business-pilot-project.png",
@@ -21,7 +21,7 @@ const BUSINESS_CARDS: BusinessCardData[] = [
     href: "/municipalities/",
   },
   {
-    label: "Collaboration",
+    label: "COLLABORATION",
     title: "コラボ製品パートナー",
     body: "ブランドやメーカーとともに、つながるQRを活用した新しい製品を。",
     image: "/images/business-collaboration.png",
@@ -73,8 +73,8 @@ export default function ForBusiness() {
       <div className="container-wide">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">
-              For business
+            <p className="eyebrow">
+              FOR BUSINESS
             </p>
             <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />
           </Reveal>

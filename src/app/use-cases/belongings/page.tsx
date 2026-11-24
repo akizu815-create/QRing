@@ -8,7 +8,7 @@ export const metadata = pageMetadata("belongings");
 
 const linkClass = "link-underline inline-block text-sm leading-7 tracking-[0.08em] text-moss transition-colors duration-300 hover:text-ink";
 const headingClass = "font-serif text-[clamp(26px,3vw,40px)] font-light leading-[1.6]";
-const eyebrowClass = "font-serif text-[11px] tracking-[0.24em] text-ink/60";
+const eyebrowClass = "eyebrow";
 const photoMask = {
   maskImage: "linear-gradient(to right, transparent, black 9%, black 91%, transparent), linear-gradient(to bottom, transparent, black 10%, black 89%, transparent)",
   WebkitMaskImage: "linear-gradient(to right, transparent, black 9%, black 91%, transparent), linear-gradient(to bottom, transparent, black 10%, black 89%, transparent)",
