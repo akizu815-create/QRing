@@ -67,12 +67,12 @@ function PrivacyPhoneIllustration() {
 const SESSION_CASES = [
   {
     number: "01",
-    title: "同じ相手なら、1時間以内は何度でも。",
+    title: "1時間以内のかけ直しは、追加のサービス利用料なし。",
     image: "/images/session-same-caller.png",
     imageAlt: "同じ相手との通話・再通話・折り返しを表す線画",
     imageWidth: 1774,
     imageHeight: 887,
-    description: "同じ相手との再通話・折り返しは、1時間以内なら追加のサービス利用料はかかりません。",
+    description: "QRコードのスキャンから1時間以内は、同じ登録者と発見者の組み合わせで再通話・折り返しができます。同じ1回のご利用（1セッション）として扱われ、追加のサービス利用料はかかりません。通常の通話料は、電話をかけた方に別途かかります。",
     price: "1セッション 880円（税込）",
   },
   {
@@ -127,7 +127,7 @@ export default function PricePage() {
 
       <section className="bg-cream py-24 md:py-32" aria-labelledby="session-title">
         <div className="container-narrow">
-          <SectionHeading id="session-title" en="SESSION">1回のご利用（セッション）とは？</SectionHeading>
+          <SectionHeading id="session-title" en="SESSION"><SessionCaseTitle title="1回のご利用（セッション）とは？" /></SectionHeading>
           <p className="body-jp max-w-3xl text-sm md:text-base">QRコードのスキャンから1時間以内の、同じ登録者と発見者の組み合わせでの通話を、1回のご利用（1セッション）として扱います。この時間内は再通話・折り返しができ、同一セッション内では追加のサービス利用料はかかりません。1回の通話は最大3分です。</p>
           <p className="mt-4 text-xs leading-relaxed text-ink/65 md:text-sm">1時間はQRコードのスキャン時から数えます。1時間を過ぎると、そのセッションのプライバシー電話番号は利用できなくなります。</p>
           <div className="mt-12 md:mt-16">

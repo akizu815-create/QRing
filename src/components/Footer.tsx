@@ -18,7 +18,7 @@ const SITE_LINKS = [
   ] },
   { en: "PRICE", href: "/price/", children: [
     { label: "料金のご案内", href: "/price/#pricing-title" },
-    { label: "セッションについて", href: "/price/#session-title" },
+    { label: "1回のご利用について", href: "/price/#session-title" },
     { label: "通常の電話料金", href: "/price/#call-charges-title" },
     { label: "お支払いについて", href: "/price/#payment-title" },
   ] },
