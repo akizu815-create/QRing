@@ -85,9 +85,9 @@ export default function PriceSection() {
           <p className="mt-5"><Link href="/faq/" className="link-underline inline-flex min-h-12 items-center text-sm text-ink/65 hover:text-moss focus-visible:text-moss focus-visible:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss">料金・お支払いのよくあるご質問 →</Link></p>
           <div className="mt-8 border-t border-ink/15 pt-6 md:mt-10 md:pt-8" aria-labelledby="home-personal-contact">
             <h3 id="home-personal-contact" className="font-serif text-xl font-light leading-relaxed md:text-2xl">商品の入手・利用開始について</h3>
-            <p className="body-jp mt-4 text-sm text-ink/70">専用QRタグ・シールなどの入手方法や、利用開始についてのご質問は、お問い合わせ窓口へご相談ください。</p>
-            <p className="mt-4 text-sm leading-7 text-ink/70">{CONSUMER_SERVICE.notice} 開始のお知らせは<Link href="/news/" className="link-underline text-moss">NEWS</Link>でご案内します。</p>
-            <a href="https://axb.qring.jp/contact" className="mt-5 inline-flex min-h-12 items-center justify-center border border-moss/40 px-6 py-3 text-sm text-moss transition-colors hover:bg-moss/10">利用について問い合わせる</a>
+            <p className="body-jp mt-4 text-sm text-ink/70">専用QRタグ・シールなどの入手方法や利用開始についてのご質問、サービス開始のお知らせをご希望の方は、お問い合わせ窓口へご相談ください。</p>
+            <p className="mt-4 text-sm leading-7 text-ink/70">{CONSUMER_SERVICE.notice} {CONSUMER_SERVICE.announcement}</p>
+            <a href="https://axb.qring.jp/contact" className="mt-5 inline-flex min-h-12 items-center justify-center border border-moss/40 px-6 py-3 text-sm text-moss transition-colors hover:bg-moss/10">開始のお知らせ・利用について問い合わせる</a>
           </div>
         </div>
       </div>
