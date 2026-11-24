@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "width": 390,
+      "baselineConcernsTop": 825,
+      "a": {
+        "text": "高齢者・ペット・落とし物に。",
+        "display": "block",
+        "height": 41.1875,
+        "font": "14px"
+      },
+      "b": {
+        "text": "高齢者・ペット・落とし物に。QRコードをスキャンして発信するだけ。お互いの電話番号は公開されません。",
+        "display": "block",
+        "height": 66.375,
+        "font": "14px"
+      },
+      "aConcernsTop": 866.1875,
+      "bConcernsTop": 891.375,
+      "heroFramePhotoFitAndPositionUnchanged": true,
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "baselineConcernsTop": 1170.328125,
+      "a": {
+        "text": "高齢者・ペット・落とし物に。",
+        "display": "none",
+        "height": 0,
+        "font": "16px"
+      },
+      "b": {
+        "text": "高齢者・ペット・落とし物に。QRコードをスキャンして発信するだけ。お互いの電話番号は公開されません。",
+        "display": "none",
+        "height": 0,
+        "font": "16px"
+      },
+      "aConcernsTop": 1170.328125,
+      "bConcernsTop": 1170.328125,
+      "heroFramePhotoFitAndPositionUnchanged": true,
+      "overflow": false
+    }
+  ],
+  "recommended": "A (not selected for production)",
+  "screenshots": false
+}
