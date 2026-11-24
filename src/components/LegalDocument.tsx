@@ -9,7 +9,7 @@ type Props = {
 export default function LegalDocument({ englishTitle, paragraphs }: Props) {
   return (
     <>
-      <PageHeader eyebrow="— Legal" en={englishTitle} jp={paragraphs[0]} />
+      <PageHeader eyebrow="LEGAL" en={englishTitle} jp={paragraphs[0]} />
       <article aria-label={paragraphs[0]} className="container-narrow py-16 md:py-24">
         {paragraphs.slice(1).map((paragraph, index) => (
           /^第\d+条（/.test(paragraph) ? (

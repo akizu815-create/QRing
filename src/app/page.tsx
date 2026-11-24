@@ -12,7 +12,6 @@ import UseCases from "@/components/UseCases";
 import HomeSolution from "@/components/HomeSolution";
 import PriceSection from "@/components/PriceSection";
 import ForBusiness from "@/components/ForBusiness";
-import SectionTitle from "@/components/SectionTitle";
 import Reveal from "@/components/Reveal";
 
 const NEWS = [
@@ -98,7 +97,8 @@ export default function Home() {
         <div className="container-wide grid md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
             <Reveal>
-              <SectionTitle eyebrow="— News" en="Recent." jp="最新のお知らせ" />
+              <p className="eyebrow">NEWS</p>
+              <h2 className="mt-6 font-serif text-3xl font-light leading-relaxed md:text-4xl">最新のお知らせ</h2>
             </Reveal>
             <Reveal delay={120}>
               <Link

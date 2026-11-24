@@ -7,5 +7,5 @@ import paragraphs from "@/content/legal/privacy.json";
 export const metadata = pageMetadata("privacy");
 
 export default function PrivacyPage() {
-  return <><PageStructuredData page="privacy" /><LegalDocument englishTitle="Privacy Policy." paragraphs={paragraphs} /></>;
+  return <><PageStructuredData page="privacy" /><LegalDocument englishTitle="PRIVACY POLICY" paragraphs={paragraphs} /></>;
 }

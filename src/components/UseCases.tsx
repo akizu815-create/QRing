@@ -67,8 +67,8 @@ export default function UseCases() {
       <div className="container-wide">
         <div className="mx-auto max-w-4xl text-center">
           <Reveal>
-            <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">
-              In your everyday life
+            <p className="eyebrow">
+              USE CASES
             </p>
             <span className="mx-auto mt-4 block h-px w-9 bg-moss/55 md:mt-5" aria-hidden="true" />
           </Reveal>

@@ -16,8 +16,8 @@ export default function ServicePage() {
     <>
       <PageStructuredData page="service" />
       <PageHeader
-        eyebrow="— Service"
-        en="Service"
+        eyebrow="SERVICE"
+        en="SERVICE"
         heading="つながるQRについて"
       />
 
@@ -76,7 +76,7 @@ export default function ServicePage() {
         <div className="container-wide">
           <div className="mx-auto max-w-4xl text-center">
             <Reveal>
-              <p className="text-[11px] font-medium tracking-[0.38em] text-ink/60">
+              <p className="eyebrow">
                 Privacy Call
               </p>
             </Reveal>

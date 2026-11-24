@@ -48,8 +48,8 @@ export default function LawPage() {
     <>
       <PageStructuredData page="law" />
       <PageHeader
-        eyebrow="— Legal"
-        en="Specified Commercial Transactions."
+        eyebrow="LEGAL"
+        en="SPECIFIED COMMERCIAL TRANSACTIONS"
         jp="特定商取引法に基づく表記"
       />
 
@@ -57,8 +57,8 @@ export default function LawPage() {
         <div className="container-wide">
           <Reveal>
             <SectionTitle
-              eyebrow="— 法令に基づく表記"
-              en="Disclosure."
+              eyebrow="法令に基づく表記"
+              en="DISCLOSURE"
               jp="事業者情報・取引条件"
             />
           </Reveal>

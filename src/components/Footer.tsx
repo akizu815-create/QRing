@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
 
           <nav aria-label="フッターナビゲーション" className="lg:col-span-12 lg:row-start-2">
-            <h2 className="eyebrow mb-5">Site</h2>
+            <h2 className="eyebrow mb-5">SITE</h2>
             <ul className="divide-y divide-ink/10 border-y border-ink/10 lg:grid lg:grid-cols-6 lg:gap-6 lg:divide-y-0 lg:border-0">
               {SITE_LINKS.map((item) => (
                 <li key={item.en}>
@@ -106,7 +106,7 @@ export default function Footer() {
           </nav>
 
           <div className="lg:col-span-7 lg:col-start-6 lg:row-start-1">
-            <h2 className="eyebrow mb-4">Company</h2>
+            <h2 className="eyebrow mb-4">COMPANY</h2>
             <p className="font-serif text-base text-ink">株式会社QRing</p>
             <address className="mt-3 not-italic text-sm leading-7 text-ink/75">
               〒170-0005 東京都豊島区南大塚2丁目37番5号
@@ -119,7 +119,7 @@ export default function Footer() {
               <p className="text-xs text-ink/60">受付時間 10:00 – 18:00（土日祝休）</p>
             </div>
             <nav aria-label="法務情報" className="mt-5 border-t border-ink/10 pt-4">
-              <h3 className="eyebrow mb-2">Legal</h3>
+              <h3 className="eyebrow mb-2">LEGAL</h3>
               <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm">
                 <Link href="/terms/" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">利用規約</Link>
                 <Link href="/privacy/" className="inline-flex min-h-11 items-center text-ink/75 hover:text-moss">プライバシーポリシー</Link>

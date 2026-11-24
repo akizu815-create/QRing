@@ -13,7 +13,7 @@ export const metadata = pageMetadata("elderly");
 
 const linkClass = "link-underline inline-block text-sm leading-7 tracking-[0.08em] text-moss transition-colors duration-300 hover:text-ink";
 const headingClass = "font-serif text-[clamp(26px,3vw,40px)] font-light leading-[1.6]";
-const eyebrowClass = "font-serif text-[11px] tracking-[0.24em] text-ink/60";
+const eyebrowClass = "eyebrow";
 // 内閣府 令和8年版高齢社会白書 図1-2-2-6：443.2万人・584.2万人を概数表示。
 // https://www8.cao.go.jp/kourei/whitepaper/w-2026/zenbun/pdf/1s2s_02.pdf
 const projections = [{ year: "2022年", value: "443", label: "推計" }, { year: "2040年", value: "584", label: "将来推計" }];

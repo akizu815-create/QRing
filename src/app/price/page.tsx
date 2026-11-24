@@ -8,7 +8,7 @@ import styles from "./CallFlow.module.css";
 
 
 const heading = "text-3xl font-light leading-relaxed md:text-4xl";
-const label = "text-[11px] font-medium tracking-[0.32em] text-ink/60";
+const label = "eyebrow";
 
 function SectionHeading({ en, id, children }: { en: string; id: string; children: React.ReactNode }) {
   return (
@@ -103,7 +103,7 @@ export default function PricePage() {
   return (
     <>
       <PageStructuredData page="price" />
-      <PageHeader eyebrow="— PRICE" en="PRICE" heading="料金について" />
+      <PageHeader eyebrow="PRICE" en="PRICE" heading="料金について" />
 
       <section className="py-24 md:py-32" aria-labelledby="pricing-title">
         <div className="container-narrow">

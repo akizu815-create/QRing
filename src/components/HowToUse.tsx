@@ -30,8 +30,8 @@ export default function HowToUse() {
     <section id="how" className="bg-cream py-24 md:py-40">
       <div className="container-wide">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-[11px] font-medium tracking-[0.38em] text-ink/60">
-            How to Use
+          <p className="eyebrow">
+            HOW TO USE
           </p>
           <h2 className="mt-7 font-serif text-3xl font-light leading-[1.35] md:text-5xl">
             ご利用方法

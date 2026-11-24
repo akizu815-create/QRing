@@ -1,0 +1,215 @@
+{
+  "rows": [
+    {
+      "width": 390,
+      "route": "/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/service/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/price/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/use-cases/elderly/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/use-cases/pets/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/use-cases/belongings/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/municipalities/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/collaboration/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/column/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/news/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/about/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/faq/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/law/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/terms/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 390,
+      "route": "/privacy/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/service/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/price/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/use-cases/elderly/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/use-cases/pets/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/use-cases/belongings/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/municipalities/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/collaboration/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/column/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/news/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/about/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/faq/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/law/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/terms/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    },
+    {
+      "width": 1280,
+      "route": "/privacy/",
+      "metadataIdsLinksImagesUnchanged": true,
+      "overflow": false,
+      "labelStyle": "11px/24px, .3em, uppercase"
+    }
+  ],
+  "screenshots": false
+}

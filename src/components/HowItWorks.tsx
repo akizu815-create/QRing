@@ -32,7 +32,7 @@ export default function HowItWorks() {
   return <section id="how-it-works" className="scroll-mt-20 bg-white py-12 md:scroll-mt-24 md:py-24" aria-labelledby="home-how-heading">
     <div className="container-wide">
       <div className="mx-auto max-w-5xl text-center">
-        <p className="text-[11px] font-medium uppercase tracking-[0.38em] text-ink/60">How it works</p>
+        <p className="eyebrow">HOW IT WORKS</p>
         <span className="mx-auto mt-5 block h-px w-9 bg-moss/55" aria-hidden="true" />
         <h2 id="home-how-heading" className="mt-7 font-serif text-[clamp(28px,3.8vw,48px)] font-light leading-[1.5] tracking-tight">
           <span className="inline-block">登録も、使い方も。</span><span className="inline-block text-moss">かんたん。</span>

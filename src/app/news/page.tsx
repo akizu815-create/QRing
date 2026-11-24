@@ -87,8 +87,8 @@ export default function NewsPage() {
     <>
       <PageStructuredData page="news" />
       <PageHeader
-        eyebrow="— News"
-        en="News & Updates."
+        eyebrow="NEWS"
+        en="NEWS & UPDATES"
         jp="お知らせ・更新情報"
       />
 
