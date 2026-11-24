@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.qring.jp"),
   openGraph: {
     title: "QRing｜つながるQR",
-    description: "電話番号を教えずに、つながる。特許取得済の安心通話サービス。",
+    description: "電話番号を教えずに、つながる。特許技術を活用した通話サービス。",
     locale: "ja_JP",
     type: "website",
   },

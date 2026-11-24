@@ -76,7 +76,9 @@ export default function Home() {
         </div>
       </section>
 
-      <p className="bg-ivory px-4 py-3 text-center text-xs leading-6 tracking-wide text-ink/65">特許技術を活用<span className="px-2 text-moss" aria-hidden="true">｜</span><span className="whitespace-nowrap">特許第7460140号</span></p>
+      <p className="bg-ivory px-4 py-1 text-center text-sm leading-7 text-ink/80">
+        <Link href="/service/#privacy-call" className="inline-flex min-h-11 flex-wrap items-center justify-center underline decoration-ink/30 underline-offset-4 transition-colors hover:text-moss focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss" aria-label="特許技術を活用した通話接続方式の仕組みを見る（特許第7460140号）">特許技術を活用<span className="hidden md:inline">した通話接続方式</span><span aria-hidden="true">｜</span><span className="whitespace-nowrap">特許第7460140号</span><span className="hidden md:inline">｜仕組みを見る</span></Link>
+      </p>
 
       <UseCases />
 

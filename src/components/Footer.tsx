@@ -60,7 +60,7 @@ export default function Footer() {
             <p className="body-jp mt-5 max-w-sm text-sm">
               電話番号を教えずに、つながる。
               <br />
-              特許取得済の通話技術『つながるQR』で、
+              特許技術を活用した通話サービス『つながるQR』で、
               <br />
               安心と利便性を両立した新しいコミュニケーションを。
             </p>
