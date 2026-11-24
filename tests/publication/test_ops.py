@@ -24,7 +24,7 @@ def load(name):
 
 prepare = load('prepare-column-build')
 live = load('check-live-columns')
-from column_export_support import published_articles
+from column_export_support import published_articles, home_column_picks
 
 
 class PublicationOps(unittest.TestCase):
@@ -59,7 +59,11 @@ class PublicationOps(unittest.TestCase):
             public = published_articles(records)
         public.sort(key=lambda a: a.get('publishedTimestamp', a['publishedAt']), reverse=True)
         paths = ['/column/'+a['slug']+'/' for a in public]
-        pages = {'/': ''.join(paths[:3]), '/column/': ''.join(paths),
+        picks = json.loads((ROOT/'src/config/homeColumnPicks.json').read_text())
+        selected = home_column_picks(public, picks)
+        home = '<section id="column"><a href="/column/">All</a>'+''.join(
+            '<a href="/column/'+a['slug']+'/">'+a['title']+'</a>' for a in selected)+'</section>'
+        pages = {'/': home, '/column/': ''.join(paths),
                  '/sitemap.xml': '<urlset>'+''.join('<url><loc>'+live.BASE+p+'</loc></url>' for p in paths)+'</urlset>'}
         for article in public:
             pages['/column/'+article['slug']+'/'] = article['title']+''.join(paths)
@@ -88,6 +92,43 @@ class PublicationOps(unittest.TestCase):
         stale['/'] += '/column/lost-wallet/'
         with self.assertRaisesRegex(AssertionError, 'Future article leaked'):
             live.verify(records, dt.datetime.fromisoformat(before), stale.__getitem__)
+
+    def test_newest_article_need_not_be_a_home_pick_but_must_be_published(self):
+        stamp = '2026-11-24T12:00:00+09:00'
+        records, public, pages = self.fixture(stamp)
+        newest = '/column/'+public[0]['slug']+'/'
+        self.assertNotIn(newest, pages['/'])
+        report = live.verify(records, dt.datetime.fromisoformat(stamp), pages.__getitem__)
+        self.assertEqual(report['homePicks'], ['elderly-monitoring', 'lost-dog-preparation', 'lost-item-preparation'])
+        self.assertEqual(report['latest'], newest)
+        pages['/column/'] = pages['/column/'].replace(newest, '')
+        with self.assertRaisesRegex(AssertionError, 'Missing due list entry'):
+            live.verify(records, dt.datetime.fromisoformat(stamp), pages.__getitem__)
+
+    def test_home_pick_must_appear_in_column_section_not_elsewhere(self):
+        stamp = '2026-11-24T12:00:00+09:00'
+        records, _, pages = self.fixture(stamp)
+        pages['/'] = pages['/'].replace('href="/column/elderly-monitoring/"', 'href="/column/lost-wallet/"')
+        pages['/'] += '<a href="/column/elderly-monitoring/">Other section</a>'
+        with self.assertRaisesRegex(AssertionError, 'HOME column picks'):
+            live.verify(records, dt.datetime.fromisoformat(stamp), pages.__getitem__)
+
+    def test_unavailable_and_duplicate_picks_fall_back_without_future_exposure(self):
+        stamp = '2026-11-09T07:59:00+09:00'
+        records, public, pages = self.fixture(stamp)
+        picks = ['lost-wallet', 'deleted-slug', 'elderly-monitoring', 'elderly-monitoring']
+        # On this boundary, lost-wallet is not due; the next two display dates
+        # after the explicit pick are Nov 8 and Nov 7.
+        expected = ['elderly-monitoring', 'care-levels', 'lost-dog-preparation']
+        pages['/'] = '<section id="column"><a href="/column/">All</a>'+''.join(
+            '<a href="/column/'+slug+'/">Article</a>' for slug in expected)+'</section>'
+        report = live.verify(records, dt.datetime.fromisoformat(stamp), pages.__getitem__, picks=picks)
+        self.assertEqual(report['homePicks'], expected)
+        # A revised display date affects only HOME fallback, not eligibility.
+        eligible = [dict(a) for a in public]
+        oldest = min(eligible, key=lambda a: a['publishedAt'])
+        oldest['editionDate'] = '2026-12-01'
+        self.assertEqual(home_column_picks(eligible, [])[0]['id'], oldest['id'])
 
     def test_wrong_latest_page_and_missing_related_fail(self):
         stamp = '2026-11-15T08:00:00+09:00'
