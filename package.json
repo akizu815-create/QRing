@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/export-hero-copy-review.cjs",
+    "review:hero": "node scripts/export-hero-copy-review.cjs",
+    "test:hero-review": "node scripts/test-hero-copy-review.cjs",
     "start": "next start",
     "lint": "next lint",
     "test:columns": "node scripts/test-column-publication.cjs && python3 scripts/check-column-migration.py && python3 scripts/approved-column-manuscripts.py",
