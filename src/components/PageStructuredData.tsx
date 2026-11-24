@@ -34,7 +34,7 @@ export default function PageStructuredData({ page: key }: { page: SeoPage }) {
     graph[0].mainEntity = { "@id": `${url}#service` };
     graph.push({
       "@type": "Service", "@id": `${url}#service`, name: "つながるQR", url,
-      description: "つながるQRは、QRコードを通じて、お互いの電話番号を公開せずに通話できるサービスです。",
+      description: "プライバシー電話番号が通話をつなぎ、双方の電話番号を相手へ公開せずに、直接会話できます。",
       provider: { "@id": organizationId }, areaServed: { "@type": "Country", name: "日本" },
     });
   }
