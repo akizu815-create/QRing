@@ -74,6 +74,7 @@ export default function Home() {
           </div>
 
         </div>
+        <p data-home-hero-purpose className="m-0 px-6 pb-3 pt-1 text-center text-sm leading-7 text-ink/80 md:hidden">高齢者・ペット・落とし物に。</p>
       </section>
 
       <p className="bg-ivory px-4 py-1 text-center text-sm leading-7 text-ink/80">

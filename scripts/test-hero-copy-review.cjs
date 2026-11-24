@@ -20,5 +20,10 @@ try {
   assert.equal(fs.readFileSync(path.join(tmp,'out/index.html'),'utf8'),original);
   run({CF_PAGES:'1',CF_PAGES_BRANCH:'main',QRING_HERO_REVIEW:'1'});assert(!fs.existsSync(dest),'main must never emit review snapshots');
   run({QRING_HERO_REVIEW:'1'});assert(fs.existsSync(dest));
+  const approved = original.replace('</section>', '<p data-home-hero-purpose>高齢者・ペット・落とし物に。</p></section>');
+  fs.writeFileSync(path.join(tmp,'out/index.html'), approved);
+  run({CF_PAGES:'1',CF_PAGES_BRANCH:'review/test'});
+  assert(!fs.existsSync(dest), 'obsolete A/B snapshots must not duplicate approved HERO copy');
+  assert.equal(fs.readFileSync(path.join(tmp,'out/index.html'),'utf8'), approved);
   console.log('HERO comparison: no main export, no root HTML mutation, no scripts, noindex, both candidates passed');
 } finally {fs.rmSync(tmp,{recursive:true,force:true});}

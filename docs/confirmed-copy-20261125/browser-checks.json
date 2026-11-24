@@ -1,0 +1,293 @@
+{
+  "checks": "passed",
+  "results": [
+    {
+      "state": "before",
+      "width": 320,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 156,
+        "width": 320,
+        "height": 426.65625
+      },
+      "photoSrc": "http://127.0.0.1:8173/images/hero-mobile-woman-dog.webp",
+      "photoFit": "contain",
+      "photoPosition": "50% 0%",
+      "title": {
+        "x": 20,
+        "y": 130,
+        "width": 280,
+        "height": 72.78125
+      },
+      "purposeVisible": false,
+      "homeDates": 0,
+      "homeSurvey": true
+    },
+    {
+      "state": "before",
+      "width": 375,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 156,
+        "width": 375,
+        "height": 500
+      },
+      "photoSrc": "http://127.0.0.1:8173/images/hero-mobile-woman-dog.webp",
+      "photoFit": "contain",
+      "photoPosition": "50% 0%",
+      "title": {
+        "x": 20,
+        "y": 130,
+        "width": 335,
+        "height": 75.59375
+      },
+      "purposeVisible": false,
+      "homeDates": 0,
+      "homeSurvey": true
+    },
+    {
+      "state": "before",
+      "width": 390,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 156,
+        "width": 390,
+        "height": 520
+      },
+      "photoSrc": "http://127.0.0.1:8173/images/hero-mobile-woman-dog.webp",
+      "photoFit": "contain",
+      "photoPosition": "50% 0%",
+      "title": {
+        "x": 20,
+        "y": 130,
+        "width": 350,
+        "height": 78.59375
+      },
+      "purposeVisible": false,
+      "homeDates": 0,
+      "homeSurvey": true
+    },
+    {
+      "state": "before",
+      "width": 430,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 156,
+        "width": 430,
+        "height": 573.328125
+      },
+      "photoSrc": "http://127.0.0.1:8173/images/hero-mobile-woman-dog.webp",
+      "photoFit": "contain",
+      "photoPosition": "50% 0%",
+      "title": {
+        "x": 20,
+        "y": 130,
+        "width": 390,
+        "height": 84
+      },
+      "purposeVisible": false,
+      "homeDates": 0,
+      "homeSurvey": true
+    },
+    {
+      "state": "before",
+      "width": 768,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 96,
+        "width": 768,
+        "height": 512
+      },
+      "photoSrc": "http://127.0.0.1:8173/images/hero-clean.avif",
+      "photoFit": "cover",
+      "photoPosition": "50% 50%",
+      "title": {
+        "x": 42.234375,
+        "y": 157.90625,
+        "width": 368.625,
+        "height": 72.5625
+      },
+      "purposeVisible": false,
+      "homeDates": 0,
+      "homeSurvey": true
+    },
+    {
+      "state": "before",
+      "width": 1280,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 96,
+        "width": 1280,
+        "height": 853.328125
+      },
+      "photoSrc": "http://127.0.0.1:8173/images/hero-clean.avif",
+      "photoFit": "cover",
+      "photoPosition": "50% 50%",
+      "title": {
+        "x": 70.390625,
+        "y": 187.703125,
+        "width": 614.390625,
+        "height": 120.9375
+      },
+      "purposeVisible": false,
+      "homeDates": 0,
+      "homeSurvey": true
+    },
+    {
+      "state": "after",
+      "width": 320,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 156,
+        "width": 320,
+        "height": 426.65625
+      },
+      "photoSrc": "http://127.0.0.1:8174/images/hero-mobile-woman-dog.webp",
+      "photoFit": "contain",
+      "photoPosition": "50% 0%",
+      "title": {
+        "x": 20,
+        "y": 130,
+        "width": 280,
+        "height": 72.78125
+      },
+      "purposeVisible": true,
+      "homeDates": 0,
+      "homeSurvey": false
+    },
+    {
+      "state": "after",
+      "width": 375,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 156,
+        "width": 375,
+        "height": 500
+      },
+      "photoSrc": "http://127.0.0.1:8174/images/hero-mobile-woman-dog.webp",
+      "photoFit": "contain",
+      "photoPosition": "50% 0%",
+      "title": {
+        "x": 20,
+        "y": 130,
+        "width": 335,
+        "height": 75.59375
+      },
+      "purposeVisible": true,
+      "homeDates": 0,
+      "homeSurvey": false
+    },
+    {
+      "state": "after",
+      "width": 390,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 156,
+        "width": 390,
+        "height": 520
+      },
+      "photoSrc": "http://127.0.0.1:8174/images/hero-mobile-woman-dog.webp",
+      "photoFit": "contain",
+      "photoPosition": "50% 0%",
+      "title": {
+        "x": 20,
+        "y": 130,
+        "width": 350,
+        "height": 78.59375
+      },
+      "purposeVisible": true,
+      "homeDates": 0,
+      "homeSurvey": false
+    },
+    {
+      "state": "after",
+      "width": 430,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 156,
+        "width": 430,
+        "height": 573.328125
+      },
+      "photoSrc": "http://127.0.0.1:8174/images/hero-mobile-woman-dog.webp",
+      "photoFit": "contain",
+      "photoPosition": "50% 0%",
+      "title": {
+        "x": 20,
+        "y": 130,
+        "width": 390,
+        "height": 84
+      },
+      "purposeVisible": true,
+      "homeDates": 0,
+      "homeSurvey": false
+    },
+    {
+      "state": "after",
+      "width": 768,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 96,
+        "width": 768,
+        "height": 512
+      },
+      "photoSrc": "http://127.0.0.1:8174/images/hero-clean.avif",
+      "photoFit": "cover",
+      "photoPosition": "50% 50%",
+      "title": {
+        "x": 42.234375,
+        "y": 157.90625,
+        "width": 368.625,
+        "height": 72.5625
+      },
+      "purposeVisible": false,
+      "homeDates": 0,
+      "homeSurvey": false
+    },
+    {
+      "state": "after",
+      "width": 1280,
+      "route": "/",
+      "overflow": false,
+      "photo": {
+        "x": 0,
+        "y": 96,
+        "width": 1280,
+        "height": 853.328125
+      },
+      "photoSrc": "http://127.0.0.1:8174/images/hero-clean.avif",
+      "photoFit": "cover",
+      "photoPosition": "50% 50%",
+      "title": {
+        "x": 70.390625,
+        "y": 187.703125,
+        "width": 614.390625,
+        "height": 120.9375
+      },
+      "purposeVisible": false,
+      "homeDates": 0,
+      "homeSurvey": false
+    }
+  ]
+}
