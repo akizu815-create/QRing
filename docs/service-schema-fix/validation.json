@@ -1,0 +1,28 @@
+{
+  "baselineMain": "54404e66a4ecba7e0591ca7003118642ddd874bc",
+  "htmlFilesCompared": 49,
+  "visibleMainHeadingsLinksImagesIdsTitleDescriptionCanonical": "unchanged",
+  "schemaDifferences": [
+    {
+      "path": "service/index.html",
+      "property": "Service.description",
+      "before": "つながるQRは、QRコードを通じて、お互いの電話番号を公開せずに通話できるサービスです。",
+      "after": "プライバシー電話番号が通話をつなぎ、双方の電話番号を相手へ公開せずに、直接会話できます。"
+    }
+  ],
+  "allOtherSchemaPropertiesAndPages": "unchanged",
+  "beforeSeoAudit": {
+    "publicPages": 43,
+    "brokenInternalLinks": [],
+    "errors": [
+      "service: Service must match visible content"
+    ]
+  },
+  "afterSeoAudit": {
+    "publicPages": 43,
+    "brokenInternalLinks": [],
+    "errors": []
+  },
+  "externalGoogleRichResultsAndSearchConsole": "not checked",
+  "screenshots": false
+}

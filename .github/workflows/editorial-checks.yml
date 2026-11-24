@@ -2,6 +2,8 @@ name: Private editorial checks
 on:
   pull_request:
     paths:
+      - 'src/components/PageStructuredData.tsx'
+      - 'src/app/service/page.tsx'
       - 'scripts/editorial/**'
       - 'scripts/seo_ops/**'
       - 'src/lib/columns/**'
