@@ -4597,5 +4597,193 @@
       "height": 720,
       "alt": "連絡先のプライバシーについて考えながらスマートフォンを見る女性の水彩イラスト"
     }
+  },
+  {
+    "id": "pets-earthquake-prediction",
+    "slug": "pets-earthquake-prediction",
+    "title": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
+    "summary": "犬や猫の行動から地震の発生を確実に予測する方法は、科学的に確立されていません。「地震の前に犬が吠えた」「猫が急に隠れた」という体験談と、予知に使える根拠は分けて考える必要があります。",
+    "introduction": [
+      "動物の感覚への関心を、防災の判断そのものに置き換えることはできません。研究上の限界を確認し、飼い主ができる備えを見ていきます。"
+    ],
+    "seoTitle": "犬や猫は地震を予知できる？科学的な根拠とペットの防災対策",
+    "metaDescription": "地震の前に犬が吠える、猫が隠れるという話は本当？動物の地震予知に関する科学的な見解と、飼い主ができる防災準備を紹介します。",
+    "category": "pets",
+    "primaryAudience": "personal",
+    "tags": [
+      "ペット 防災",
+      "地震 動物 行動"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-25",
+    "editionDate": "2026-11-25",
+    "publishedTimestamp": "2026-11-25T00:41:57+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/pets-earthquake-prediction.md",
+      "sha256": "6ac7f8521a8973be9a8ed91cd4c2400aeb89a99674b8cad242c3e6f8cdd8a9f8",
+      "receivedOn": "2026-11-16",
+      "approvedOn": "2026-11-25"
+    },
+    "relatedArticleIds": [
+      "disaster-family-contact"
+    ],
+    "relatedService": {
+      "href": "/use-cases/pets/",
+      "label": "ペットの迷子への備え"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/dog-microchip/",
+        "label": "犬のマイクロチップって何？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "quake",
+        "label": "気象庁｜地震予知について",
+        "href": "https://www.jma.go.jp/jma/kishou/know/faq/faq24.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "pets-disaster",
+        "label": "環境省｜ペットの災害対策",
+        "href": "https://www.env.go.jp/nature/dobutsu/aigo/1_law/disaster.html",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "犬や猫は地震を予知できる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "地震の前に動物の行動が変わったという報告は、昔からあります。犬が落ち着かなくなる、猫が隠れる、鳥が騒ぐなど、さまざまな体験談があります。しかし、こうした行動から地震の発生を確実に予測できる方法は、科学的に確立されていません。"
+          },
+          {
+            "type": "link",
+            "href": "/column/dog-microchip/",
+            "label": "犬のマイクロチップって何？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "動物は人間より敏感なの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬や猫は、人間とは異なる聴覚や感覚を持っています。人間が気づかない音や振動などに反応する可能性はあります。ただし、何かを感じ取ることと、未来の地震を予知できることは別の話です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "地震の直前に起こる現象に反応したとしても、それだけで発生日時や場所を事前に予測できるとは限りません。"
+          },
+          {
+            "type": "link",
+            "href": "/column/lost-dog-preparation/",
+            "label": "もしも、大切な愛犬が迷子になったら。",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "なぜ地震の前の行動が印象に残る？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬や猫は、普段からさまざまな理由で行動を変えます。大きな音、天候の変化、ほかの動物の気配、体調などが原因になることもあります。地震が起きた後で、それ以前の行動を振り返ると、特別な意味があったように感じられる場合があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "科学的に確かめるには、地震が起きたときだけでなく、起きなかったときの行動も含めて継続的に調べる必要があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "本当に大切なのはペットの防災対策",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "地震を予知することよりも、実際に地震が起きたときの備えが重要です。例えば、次のような準備があります。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "キャリーバッグやケージに慣れさせる",
+              "ペット用のフードや水を備蓄する",
+              "迷子札を装着する",
+              "マイクロチップの登録情報を確認する",
+              "避難先でのペットの受け入れ条件を調べる"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "災害時には、驚いたペットが逃げ出すこともあります。日頃から脱走対策を考えておきましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "予知に頼らず避難の準備をする",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "犬や猫の行動から地震を確実に予知できるわけではありません。不思議な行動に関心を持つことは自然ですが、防災の判断には気象庁や自治体の情報を活用することが大切です。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "犬 猫 地震 予知 根拠",
+    "primaryKeyword": "犬 猫 地震 予知 根拠",
+    "topicClusterId": "pets-earthquake-prediction",
+    "claims": [
+      {
+        "text": "犬や猫の行動から地震の発生を確実に予測する方法は、科学的に確立されていません。「地震の前に犬が吠えた」「猫が急に隠れた」という体験談と、予知に使える根拠は分けて考える必要があります。",
+        "sourceIds": [
+          "quake",
+          "pets-disaster"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/pets-earthquake-prediction.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "揺れる照明に反応する犬と猫を、室内で見つめる高齢の夫婦の水彩イラスト"
+    }
   }
 ]
