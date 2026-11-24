@@ -4398,5 +4398,204 @@
       "height": 720,
       "alt": "救急用品や充電器を用意したテーブルで、スマートフォンの緊急通報設定を確認する女性の水彩イラスト"
     }
+  },
+  {
+    "id": "phone-number-personal-information",
+    "slug": "phone-number-personal-information",
+    "title": "電話番号から個人情報はどこまでわかる？知られたときのリスクと対策",
+    "summary": "電話番号だけで、誰でも契約者の住所や氏名を正確に調べられるわけではありません。ただし、ウェブサイトやSNSなどで公開した情報と番号が結びついていれば、名前や活動内容を知る手がかりになります。",
+    "introduction": [
+      "初対面の相手に番号を伝える前に、何がわかり得るのか、何には直結しないのかを整理しておきましょう。"
+    ],
+    "seoTitle": "電話番号から住所や名前はわかる？個人情報を守るための注意点",
+    "metaDescription": "電話番号だけで住所や名前は特定されるのでしょうか？SNSとの関連付けや迷惑電話のリスク、電話番号を教えずに連絡する方法を解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "電話番号 特定",
+      "連絡先 プライバシー"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-24",
+    "editionDate": "2026-11-24",
+    "publishedTimestamp": "2026-11-24T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/phone-number-personal-information.md",
+      "sha256": "03ca37ecba4517b6b53cdfbf4e57bf81667b2caf2fda4c47cf285d2345a61cbc",
+      "receivedOn": "2026-11-16",
+      "approvedOn": "2026-11-24"
+    },
+    "relatedArticleIds": [
+      "number-private-calls"
+    ],
+    "relatedService": {
+      "href": "/service/",
+      "label": "つながるQRのサービスと利用条件"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/unknown-calls/",
+        "label": "知らない番号から電話が来たら、出るべき？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "privacy",
+        "label": "個人情報保護委員会｜携帯電話番号やクレジットカード番号は個人識別符号に該当しますか",
+        "href": "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "contacts",
+        "label": "LINEヘルプセンター｜アドレス帳の情報の利用について",
+        "href": "https://help.line.me/line/?contentId=10002423&lang=ja",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "sms",
+        "label": "IPA｜情報セキュリティ安心相談窓口の相談状況（2025年第1四半期）",
+        "href": "https://www.ipa.go.jp/security/anshin/reports/2025q1outline.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "電話番号だけで住所や名前はわかる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "電話番号を知っているだけで、誰でも契約者の住所や氏名を正確に調べられるわけではありません。ただし、番号がほかの情報と結びついている場合は別です。例えば、店舗のウェブサイトやSNS、過去に公開したプロフィールなどに電話番号が掲載されていれば、そこから名前や活動内容がわかることがあります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/unknown-calls/",
+            "label": "知らない番号から電話が来たら、出るべき？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "SNSとの組み合わせに注意",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "電話番号を公開していなくても、サービスの設定や連絡先同期の仕組みによって、知り合いとのつながりが推測される場合があります。また、仕事用の電話番号を私生活でも使っていると、複数の場面の情報が結びつく可能性があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "公開範囲やプライバシー設定を定期的に確認しましょう。"
+          },
+          {
+            "type": "link",
+            "href": "/column/photo-location-privacy/",
+            "label": "写真の位置情報、大丈夫？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "電話番号を知られると何が起こる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "番号を知られた場合、迷惑電話やSMSが届く可能性があります。ただし、電話番号を知られただけで、スマートフォンの中身がすべて見られるわけではありません。注意したいのは、電話やSMSを使って個人情報を聞き出そうとする行為です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "SMSで届いた認証コードを他人に教えたり、身に覚えのないリンクを開いたりしないようにしましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "電話番号を教えずに連絡する方法もある",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "最近では、個人の電話番号を直接交換せずに連絡する方法もあります。例えば「つながるQR」は、QRコードをスキャンした発見者と登録者が、互いの電話番号を知らせずに通話できるサービスです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "落とし物など、一時的に連絡が必要な場面で利用できます。ただし、相手に電話番号が表示されないことと、サービス提供者が番号を取り扱わないことは別です。利用するサービスの仕組みや個人情報の取り扱いを確認することも重要です。"
+          },
+          {
+            "type": "link",
+            "href": "/service/",
+            "label": "つながるQRのサービスと利用条件",
+            "prefix": "利用条件は「",
+            "suffix": "」で確認できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "番号と公開情報の結び付きを見直す",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "電話番号は便利な連絡先である一方、ほかの情報と結びつく手がかりになる場合があります。必要な相手に、必要な範囲で伝える。そんな意識を持つことが、プライバシーを守る第一歩です。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "電話番号 個人情報 住所 名前",
+    "primaryKeyword": "電話番号 個人情報 住所 名前",
+    "topicClusterId": "phone-number-personal-information",
+    "claims": [
+      {
+        "text": "電話番号だけで、誰でも契約者の住所や氏名を正確に調べられるわけではありません。ただし、ウェブサイトやSNSなどで公開した情報と番号が結びついていれば、名前や活動内容を知る手がかりになります。",
+        "sourceIds": [
+          "privacy",
+          "contacts",
+          "sms",
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/phone-number-personal-information.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "連絡先のプライバシーについて考えながらスマートフォンを見る女性の水彩イラスト"
+    }
   }
 ]
