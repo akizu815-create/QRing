@@ -1,0 +1,36 @@
+# つながるQR（株式会社QRing）
+
+> つながるQRは、QRコードをスキャンして「電話をかける」をタップするだけで、お互いの電話番号を公開せずに通話できるサービスです。専用アプリは不要です。高齢者の見守り、ペットの迷子対策、落とし物の連絡などに利用できます。一般向けサービスは正式リリースに向けて準備中です。通話の接続方式には、特許第7460140号の技術を活用しています。
+
+## サービスについて
+
+- [つながるQR 公式サイト](https://www.qring.jp/): サービスの概要、活用シーン、料金、最新情報
+- [サービス](https://www.qring.jp/service/): 仕組み、番号を公開しない通話（プライバシーコール）、登録と使い方
+- [料金](https://www.qring.jp/price/): 登録料・月額基本料は0円。通話が成立したときのみ、1回のご利用（1セッション）につき880円（税込）
+- [よくあるご質問](https://www.qring.jp/faq/): サービス内容、登録・QRコード、通話・セッション、料金とお支払いについてのQ&A
+- [会社概要](https://www.qring.jp/about/): 株式会社QRingについて
+- [お知らせ](https://www.qring.jp/news/): ニュースとイベント情報
+
+## 活用シーン
+
+- [高齢者の見守り](https://www.qring.jp/use-cases/elderly/): 離れて暮らす家族の見守りや、認知症高齢者の外出時の連絡手段
+- [ペットの迷子対策](https://www.qring.jp/use-cases/pets/): 迷子札の代わりに、飼い主の電話番号を公開せずに連絡を受けられる仕組み
+- [落とし物・忘れ物対策](https://www.qring.jp/use-cases/belongings/): 鍵や財布などに取り付けて、拾った人から連絡を受けられる仕組み
+
+## 自治体・法人向け
+
+- [自治体・地域の見守り](https://www.qring.jp/municipalities/): 認知症高齢者の見守りをはじめ、地域の安心を支える連絡手段の提案
+- [コラボ製品パートナー](https://www.qring.jp/collaboration/): ブランドやメーカーとの製品コラボレーション
+
+## コラム
+
+- [コラム一覧](https://www.qring.jp/column/): 暮らしと地域の安心を考える読み物
+- [財布を落としたら何をする？](https://www.qring.jp/column/lost-wallet/): カード停止・遺失届・見つかった後の対応
+- [忘れ物はいつまで保管する？](https://www.qring.jp/column/lost-property-retention/): 店舗・警察の扱いと届出のルール
+- [鍵・財布の紛失対策](https://www.qring.jp/column/lost-item-preparation/): なくさない工夫と見つかった後の備え
+
+## 法務情報
+
+- [利用規約](https://www.qring.jp/terms/)
+- [プライバシーポリシー](https://www.qring.jp/privacy/)
+- [特定商取引法に基づく表記](https://www.qring.jp/law/)

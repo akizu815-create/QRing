@@ -1,4 +1,5 @@
 import { SEO_PAGES, SITE_URL, type SeoPage } from "@/lib/seo";
+import { FAQ_CATEGORIES } from "@/app/faq/faqData";
 
 export default function PageStructuredData({ page: key }: { page: SeoPage }) {
   const page = SEO_PAGES[key];
@@ -36,6 +37,20 @@ export default function PageStructuredData({ page: key }: { page: SeoPage }) {
       "@type": "Service", "@id": `${url}#service`, name: "つながるQR", url,
       description: "プライバシー電話番号が通話をつなぎ、双方の電話番号を相手へ公開せずに、直接会話できます。",
       provider: { "@id": organizationId }, areaServed: { "@type": "Country", name: "日本" },
+    });
+  }
+  if (key === "faq") {
+    // FAQページに表示しているQ&Aの実データ（faqData.ts）を、そのままFAQPageとして出力する。
+    const faqId = `${url}#faq`;
+    graph[0].mainEntity = { "@id": faqId };
+    graph.push({
+      "@type": "FAQPage", "@id": faqId, url, inLanguage: "ja-JP",
+      mainEntity: FAQ_CATEGORIES.flatMap((category) =>
+        category.items.map((item) => ({
+          "@type": "Question", name: item.question,
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
+        })),
+      ),
     });
   }
   const json = JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c");
