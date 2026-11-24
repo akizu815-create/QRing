@@ -42,8 +42,8 @@ export const metadata = pageMetadata("home");
 
 export default function Home() {
   const newsItems = isNewmarketSupportActive()
-    ? [{ date: NEWMARKET_SUPPORT.publishedOn.replaceAll("-", "."), cat: "NEWS", title: NEWMARKET_SUPPORT.title, href: NEWMARKET_SUPPORT.path }, ...NEWS.slice(0, 2).map((item) => ({ ...item, href: "/news/" }))]
-    : NEWS.slice(0, 3).map((item) => ({ ...item, href: "/news/" }));
+    ? [{ date: NEWMARKET_SUPPORT.publishedOn.replaceAll("-", "."), cat: "NEWS", title: NEWMARKET_SUPPORT.title, href: NEWMARKET_SUPPORT.path }, ...NEWS.slice(0, 2).map((item) => ({ ...item, href: `/news/#news-${item.date.replaceAll(".", "")}` }))]
+    : NEWS.slice(0, 3).map((item) => ({ ...item, href: `/news/#news-${item.date.replaceAll(".", "")}` }));
   return (
     <>
       <PageStructuredData page="home" />

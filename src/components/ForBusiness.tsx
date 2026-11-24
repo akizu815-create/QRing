@@ -51,8 +51,8 @@ function BusinessCard({ card }: { card: BusinessCardData }) {
         </h3>
         <p className="body-jp mt-5 text-sm text-ink/70 md:max-w-md">{card.body}</p>
         {card.href ? (
-          <Link href={card.href} className="link-underline mt-8 self-end text-xs tracking-[0.18em] text-moss">
-            詳しく見る →
+          <Link href={card.href} className="link-underline mt-8 inline-flex min-h-11 items-center self-end text-sm text-ink/70 hover:text-moss focus-visible:text-moss focus-visible:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss">
+            {card.href === "/municipalities/" ? "自治体向けの活用を見る →" : "製品コラボについて見る →"}
           </Link>
         ) : (
           <span

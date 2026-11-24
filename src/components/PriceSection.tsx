@@ -80,7 +80,7 @@ export default function PriceSection() {
               料金について詳しく見る →
             </Link>
           </Reveal>
-          <p className="mt-5"><Link href="/faq/" className="link-underline inline-flex min-h-12 items-center text-sm text-moss">料金・お支払いのよくあるご質問 →</Link></p>
+          <p className="mt-5"><Link href="/faq/" className="link-underline inline-flex min-h-12 items-center text-sm text-ink/65 hover:text-moss focus-visible:text-moss focus-visible:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss">料金・お支払いのよくあるご質問 →</Link></p>
           <div className="mt-8 border-t border-ink/15 pt-6 md:mt-10 md:pt-8" aria-labelledby="home-personal-contact">
             <h3 id="home-personal-contact" className="font-serif text-xl font-light leading-relaxed md:text-2xl">商品の入手・利用開始について</h3>
             <p className="body-jp mt-4 text-sm text-ink/70">専用QRタグ・シールなどの入手方法や、利用開始についてのご質問は、お問い合わせ窓口へご相談ください。</p>
@@ -89,7 +89,7 @@ export default function PriceSection() {
           </div>
           <div className="mt-8 text-xs leading-7 text-ink/65" data-pet-survey>
             <p>ペット向け商品について、皆さまのご意見を募集しています。</p>
-            <PetSurveyLink placement="home" className="link-underline mt-1 inline-block py-2 text-moss hover:text-ink">ペット向けアンケートに回答する</PetSurveyLink>
+            <PetSurveyLink placement="home" className="link-underline mt-1 inline-flex min-h-11 items-center py-2 text-ink/65 hover:text-moss focus-visible:text-moss focus-visible:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-moss">ペット向けアンケートに回答する</PetSurveyLink>
           </div>
         </div>
       </div>
