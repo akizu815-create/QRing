@@ -127,7 +127,7 @@ export default function PricePage() {
 
       <section className="bg-cream py-24 md:py-32" aria-labelledby="session-title">
         <div className="container-narrow">
-          <SectionHeading id="session-title" en="SESSION">1回のご利用（セッション）とは？</SectionHeading>
+          <SectionHeading id="session-title" en="SESSION"><SessionCaseTitle title="1回のご利用（セッション）とは？" /></SectionHeading>
           <p className="body-jp max-w-3xl text-sm md:text-base">QRコードのスキャンから1時間以内の、同じ登録者と発見者の組み合わせでの通話を、1回のご利用（1セッション）として扱います。この時間内は再通話・折り返しができ、同一セッション内では追加のサービス利用料はかかりません。1回の通話は最大3分です。</p>
           <p className="mt-4 text-xs leading-relaxed text-ink/65 md:text-sm">1時間はQRコードのスキャン時から数えます。1時間を過ぎると、そのセッションのプライバシー電話番号は利用できなくなります。</p>
           <div className="mt-12 md:mt-16">
