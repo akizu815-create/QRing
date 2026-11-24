@@ -7,12 +7,33 @@ import time
 from pathlib import Path
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
-from column_export_support import published_articles
+from html.parser import HTMLParser
+from column_export_support import published_articles, home_column_picks
 
 BASE = 'https://www.qring.jp'
 
 
-def verify(records, now, fetch):
+class HomeColumnLinks(HTMLParser):
+    """Read links only in the HOME COLUMN section, not unrelated navigation."""
+    def __init__(self):
+        super().__init__()
+        self.depth = 0
+        self.links = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'section':
+            if self.depth or attrs.get('id') == 'column':
+                self.depth += 1
+        if self.depth and tag == 'a':
+            self.links.append(attrs.get('href'))
+
+    def handle_endtag(self, tag):
+        if tag == 'section' and self.depth:
+            self.depth -= 1
+
+
+def verify(records, now, fetch, picks=None):
     # The live expectation uses verification time, so a build just before a
     # deadline cannot silently pass after that deadline with yesterday's export.
     original = os.environ.get('COLUMN_BUILD_AT')
@@ -35,10 +56,15 @@ def verify(records, now, fetch):
                              if url.startswith(BASE+'/column/page/'))
     for article in public:
         assert paths[article['id']] in lists, f'Missing due list entry: {article["slug"]}'
+    if picks is None:
+        picks = json.loads(Path('src/config/homeColumnPicks.json').read_text())
+    selected = home_column_picks(public, picks)
+    home_links = HomeColumnLinks()
+    home_links.feed(home)
+    assert home_links.links == ['/column/', *[paths[a['id']] for a in selected]], 'HOME column picks/fallback/order mismatch'
     if public:
         latest = public[0]
         path = paths[latest['id']]
-        assert path in home, 'Latest due article missing from HOME'
         html = fetch(path)
         assert latest['title'] in html, 'Latest due individual page missing/wrong'
         for related in public:
@@ -51,6 +77,7 @@ def verify(records, now, fetch):
             path = paths[article['id']]
             assert BASE+path not in locations and path not in home+lists+html, f'Future article leaked: {article["slug"]}'
     return {'verifiedAt': now.isoformat(), 'publicArticles': len(public),
+            'homePicks': [a['slug'] for a in selected],
             'latest': paths[public[0]['id']] if public else None, 'live': 'passed'}
 
 

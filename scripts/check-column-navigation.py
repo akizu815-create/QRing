@@ -13,17 +13,8 @@ spec=importlib.util.spec_from_file_location('seo',Path(__file__).with_name('seo-
 root=Path('out')
 records=json.loads(Path('src/content/columns/published.json').read_text())
 today=dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).date().isoformat()
-from column_export_support import published_articles
+from column_export_support import published_articles, publication_order, home_column_picks
 articles=published_articles(records)
-def publication_order(a,b):
-    da,db=a.get('editionDate',a['publishedAt']),b.get('editionDate',b['publishedAt'])
-    if da!=db:return -1 if da>db else 1
-    if a['publishedAt'] != b['publishedAt']:return -1 if a['publishedAt'] > b['publishedAt'] else 1
-    if bool(a.get('publishedTimestamp')) != bool(b.get('publishedTimestamp')):return -1 if a.get('publishedTimestamp') else 1
-    if a.get('publishedTimestamp') and b.get('publishedTimestamp'):
-        ta,tb=dt.datetime.fromisoformat(a['publishedTimestamp']),dt.datetime.fromisoformat(b['publishedTimestamp'])
-        if ta!=tb:return -1 if ta>tb else 1
-    return (a['slug']>b['slug'])-(a['slug']<b['slug'])
 articles.sort(key=cmp_to_key(publication_order))
 path=lambda a:'/column/'+a['slug']+'/'
 html=lambda route:(root/route.strip('/')/'index.html').read_text()
@@ -68,14 +59,7 @@ home=html('/')
 block=re.search(r'<section[^>]*id="column".*?</section>',home,re.S)
 assert block,'Home COLUMN section missing'
 picks=json.loads(Path('src/config/homeColumnPicks.json').read_text())
-selected=[]
-for slug in picks:
-    candidate=next((a for a in articles if a['slug']==slug and not a.get('publicationPending')),None)
-    if candidate and candidate not in selected:selected.append(candidate)
-    if len(selected)==3:break
-for a in articles:
-    if len(selected)==3:break
-    if not a.get('publicationPending') and a not in selected:selected.append(a)
+selected=home_column_picks(articles, picks)
 assert seo.Page('<main>'+block[0]+'</main>').links==['/column/',*[path(a) for a in selected]],'Home picks/fallback/order or empty cards'
 assert home.index('id="for-business"')<block.start()<home.index('最新のお知らせ'),'Incorrect HOME section placement'
 for label in ['メインナビゲーション','モバイルナビゲーション']:

@@ -6,6 +6,10 @@ on:
       - 'src/app/service/page.tsx'
       - 'scripts/editorial/**'
       - 'scripts/seo_ops/**'
+      - 'scripts/check-live-columns.py'
+      - 'scripts/column_export_support.py'
+      - 'scripts/check-column-navigation.py'
+      - '.github/workflows/deploy.yml'
       - 'src/lib/columns/**'
       - 'tests/**'
       - 'package*.json'
@@ -29,6 +33,7 @@ jobs:
           python-version: '3.12'
       - run: npm ci
       - run: npm run test:columns
+      - run: python3 -m unittest discover -s tests/publication -v
       - run: npm run test:seo-ops
       - run: npm run test:editorial
       - run: npm run build

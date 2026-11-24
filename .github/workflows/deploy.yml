@@ -52,6 +52,9 @@ jobs:
           path: ./out
 
   deploy:
+    outputs:
+      deployment: ${{ steps.deployment.outcome }}
+      verification: ${{ steps.verification.outcome }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -63,6 +66,7 @@ jobs:
       - uses: actions/deploy-pages@v4
         id: deployment
       - name: Verify the live due articles and exclude future articles
+        id: verification
         run: python3 scripts/check-live-columns.py
 
   publication-status:
@@ -78,8 +82,11 @@ jobs:
           CUTOFF: ${{ needs.build.outputs.cutoff }}
           BUILD_RESULT: ${{ needs.build.result }}
           DEPLOY_RESULT: ${{ needs.deploy.result }}
+          PAGES_RESULT: ${{ needs.deploy.outputs.deployment }}
+          LIVE_RESULT: ${{ needs.deploy.outputs.verification }}
         run: |
           printf '## Column publication\n\nEvent: %s\n\nCron: %s\n\nCutoff: %s\n\nBuild: %s\n\nDeploy/live verification: %s\n' "$EVENT" "$SCHEDULE" "$CUTOFF" "$BUILD_RESULT" "$DEPLOY_RESULT" >> "$GITHUB_STEP_SUMMARY"
+          printf '\nPages upload: %s\n\nLive publication verification: %s\n' "$PAGES_RESULT" "$LIVE_RESULT" >> "$GITHUB_STEP_SUMMARY"
           if [ "$BUILD_RESULT" != success ] || [ "$DEPLOY_RESULT" != success ]; then
             echo '::error::Column publication failed. Inspect build/deploy logs; the next scheduled run retries from main.'
             exit 1
