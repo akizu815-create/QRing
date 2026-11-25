@@ -8,6 +8,7 @@ import PageStructuredData from "@/components/PageStructuredData";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
+import NewsHashTarget from "@/components/NewsHashTarget";
 
 
 type NewsItem = {
@@ -89,6 +90,7 @@ export default function NewsPage() {
   return (
     <>
       <PageStructuredData page="news" />
+      <NewsHashTarget />
       <PageHeader
         eyebrow="NEWS"
         en="NEWS & UPDATES"
