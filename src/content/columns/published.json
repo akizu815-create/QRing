@@ -4785,5 +4785,201 @@
       "height": 720,
       "alt": "揺れる照明に反応する犬と猫を、室内で見つめる高齢の夫婦の水彩イラスト"
     }
+  },
+  {
+    "id": "monitoring-and-surveillance",
+    "slug": "monitoring-and-surveillance",
+    "title": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える",
+    "summary": "見守りと監視は、機器の種類だけでは分けられません。何のために、誰が、どこまで情報を確認するのか。その目的や使い方、本人の受け止め方によって意味が変わります。",
+    "introduction": [
+      "離れて暮らす親や、帰宅が遅い子どもを心配する気持ちは自然です。その安心のために、本人にどんな負担が生じるかも考えておきたいところです。"
+    ],
+    "seoTitle": "見守りと監視の違いとは？高齢者のプライバシーと安全を両立する方法",
+    "metaDescription": "見守りと監視は何が違うのでしょうか？高齢の親や家族の安全を守りながら、本人の意思とプライバシーを尊重する方法を考えます。",
+    "category": "family-care",
+    "primaryAudience": "personal",
+    "tags": [
+      "高齢者 プライバシー",
+      "見守り 本人の意思"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-26",
+    "editionDate": "2026-11-26",
+    "publishedTimestamp": "2026-11-26T02:03:45+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/monitoring-and-surveillance.md",
+      "sha256": "5df17de1c6b92916e1ec45b6f997481d3c55867816df6b66d5adc35541af301e",
+      "receivedOn": "2026-11-16",
+      "approvedOn": "2026-11-26"
+    },
+    "relatedArticleIds": [
+      "young-onset-dementia"
+    ],
+    "relatedService": {
+      "href": "/use-cases/elderly/",
+      "label": "高齢者の見守りへの活用"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/elderly-monitoring/",
+        "label": "離れて暮らす親の見守り、何から始める？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "consent",
+        "label": "厚生労働省｜認知症の人の日常生活・社会生活における意思決定支援ガイドライン",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212395.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "privacy",
+        "label": "個人情報保護委員会｜携帯電話番号やクレジットカード番号は個人識別符号に該当しますか",
+        "href": "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "見守りと監視の違いは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "見守りは、本人が安心して生活できるように支えることを目的とします。一方、監視という言葉には、行動を継続的に確認し、管理するという意味合いがあります。ただし、同じ機器を使っていても、目的や使い方によって本人の受け止め方は変わります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "例えば、位置情報を共有することが安心につながる人もいれば、常に居場所を知られることに抵抗を感じる人もいます。"
+          },
+          {
+            "type": "link",
+            "href": "/column/elderly-monitoring/",
+            "label": "離れて暮らす親の見守り、何から始める？",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "心配だから全部知りたい？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "家族が心配なときほど、できるだけ多くの情報を知りたくなるものです。しかし、本当に必要な情報は何でしょうか。「帰宅が遅れたときに連絡したい」「困ったときに助けを求められるようにしたい」"
+          },
+          {
+            "type": "paragraph",
+            "text": "目的を具体的にすると、必要な仕組みを選びやすくなります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/elderly-monitoring-contact-system/",
+            "label": "高齢者の見守りに、つながる安心を。",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "本人の意思を尊重する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "見守りの方法を決める際には、可能な限り本人と話し合うことが大切です。どの情報を共有するのか。誰が確認できるのか。いつ、どのような場合に連絡するのか。こうした点を明確にしておくと、安心感につながります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "本人の判断能力や安全面に課題がある場合は、家族だけで抱え込まず、医療・介護などの専門職に相談することも重要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "常に居場所を把握する以外の方法",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "見守りには、GPSによる位置情報の確認だけでなく、定期的な電話や訪問、緊急時の連絡手段など、さまざまな方法があります。例えば「つながるQR」は、QRコードをスキャンした発見者が、登録者と電話番号を知らせずに通話できる仕組みです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "位置を常時追跡するサービスではありませんが、外出先で周囲の人から連絡を受けるための備えとして利用できます。"
+          },
+          {
+            "type": "link",
+            "href": "/use-cases/elderly/",
+            "label": "高齢者の見守りへの活用",
+            "prefix": "利用条件は「",
+            "suffix": "」で確認できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "本人と共有する情報の範囲を決める",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "見守りの目的は、本人の自由を奪うことではありません。安心して生活できる環境を整えることです。家族の心配と本人の気持ち、その両方を大切にしたいですね。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "見守り 監視 違い",
+    "primaryKeyword": "見守り 監視 違い",
+    "topicClusterId": "monitoring-and-surveillance",
+    "claims": [
+      {
+        "text": "見守りと監視は、機器の種類だけでは分けられません。何のために、誰が、どこまで情報を確認するのか。その目的や使い方、本人の受け止め方によって意味が変わります。",
+        "sourceIds": [
+          "consent",
+          "privacy",
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/monitoring-and-surveillance.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "タブレットを一緒に見ながら見守りについて話す高齢女性と家族の水彩イラスト"
+    }
   }
 ]
