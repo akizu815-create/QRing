@@ -15,7 +15,6 @@ export default function NewsHashTarget() {
       target.open = true;
       // Scroll after expansion and Next.js navigation have committed their layout.
       frame = requestAnimationFrame(() => {
-        target.querySelector("summary")?.focus({ preventScroll: true });
         target.scrollIntoView({ block: "start", behavior: "instant" });
       });
     };
