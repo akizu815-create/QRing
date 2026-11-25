@@ -1,3 +1,4 @@
+import { SERVICE_MAINTENANCE_NOTICE } from "@/content/serviceMaintenance";
 import heroStyles from "@/components/HomeHero.module.css";
 import HomeColumns from "@/components/columns/HomeColumns";
 import NewmarketSupportPlacement from "@/components/NewmarketSupportPlacement";
@@ -40,9 +41,12 @@ const HERO_FEATURES = ["専用アプリ不要", "高齢者・ペット・落と�
 export const metadata = pageMetadata("home");
 
 export default function Home() {
-  const newsItems = isNewmarketSupportActive()
-    ? [{ date: NEWMARKET_SUPPORT.publishedOn.replaceAll("-", "."), cat: "NEWS", title: NEWMARKET_SUPPORT.title, href: NEWMARKET_SUPPORT.path }, ...NEWS.slice(0, 2).map((item) => ({ ...item, href: `/news/#news-${item.date.replaceAll(".", "")}` }))]
-    : NEWS.slice(0, 3).map((item) => ({ ...item, href: `/news/#news-${item.date.replaceAll(".", "")}` }));
+  const newsItems = [
+    { ...SERVICE_MAINTENANCE_NOTICE, href: `/news/#news-${SERVICE_MAINTENANCE_NOTICE.date.replaceAll(".", "")}` },
+    ...(isNewmarketSupportActive()
+      ? [{ date: NEWMARKET_SUPPORT.publishedOn.replaceAll("-", "."), cat: "NEWS", title: NEWMARKET_SUPPORT.title, href: NEWMARKET_SUPPORT.path }, ...NEWS.slice(0, 1).map((item) => ({ ...item, href: `/news/#news-${item.date.replaceAll(".", "")}` }))]
+      : NEWS.slice(0, 2).map((item) => ({ ...item, href: `/news/#news-${item.date.replaceAll(".", "")}` }))),
+  ];
   return (
     <>
       <PageStructuredData page="home" />

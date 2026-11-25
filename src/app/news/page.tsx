@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+import { SERVICE_MAINTENANCE_NOTICE } from "@/content/serviceMaintenance";
 import Link from "next/link";
 import NewmarketSupportCopy from "@/components/NewmarketSupportCopy";
 import { NEWMARKET_SUPPORT, isNewmarketSupportActive } from "@/content/newmarketSupport";
@@ -18,6 +20,7 @@ type NewsItem = {
 };
 
 const NEWS: NewsItem[] = [
+  SERVICE_MAINTENANCE_NOTICE,
   {
     date: "2026.09.26",
     cat: "MEDIA",
@@ -95,69 +98,71 @@ export default function NewsPage() {
       <section className="py-24 md:py-32">
         <div className="container-wide max-w-5xl">
           <ul>
-            {isNewmarketSupportActive() && (
-              <li>
-                <details className="group border-t border-ink/10">
-                  <summary className="grid cursor-pointer list-none items-baseline gap-4 py-8 md:grid-cols-12 md:gap-10 md:py-10">
-                    <div className="flex items-baseline gap-4 md:col-span-3 md:flex-col md:items-start md:gap-3"><time dateTime={NEWMARKET_SUPPORT.publishedOn} className="font-serif text-base text-ink/65">{NEWMARKET_SUPPORT.publishedOn.replaceAll("-", ".")}</time><span className="text-[10px] uppercase tracking-[0.3em] text-ink/65">NEWS</span></div>
-                    <h2 className="font-serif text-xl leading-tight text-ink transition-colors duration-300 group-hover:text-moss md:col-span-8 md:text-2xl">{NEWMARKET_SUPPORT.title}</h2>
-                    <div className="flex justify-end md:col-span-1"><span className="font-serif text-2xl text-moss transition-transform duration-500 group-open:rotate-45" aria-hidden="true">+</span></div>
-                  </summary>
-                  <div className="pb-8 pr-6 md:ml-[25%] md:pr-10"><NewmarketSupportCopy /><Link href={NEWMARKET_SUPPORT.path} className="link-underline mt-6 inline-block text-sm text-moss">記事の詳細を見る →</Link></div>
-                </details>
-              </li>
-            )}
             {NEWS.map((n, i) => (
-              <Reveal as="li" key={n.title} delay={i * 60}>
-                <details id={`news-${n.date.replaceAll(".", "")}`} className="group scroll-mt-28 border-t border-ink/10 last:border-b">
-                  <summary className="grid md:grid-cols-12 gap-4 md:gap-10 py-8 md:py-10 cursor-pointer list-none items-baseline">
-                    <div className="md:col-span-3 flex md:flex-col gap-4 md:gap-3 items-baseline md:items-start">
-                      <p className="font-serif text-base text-ink/65">{n.date}</p>
-                      <span className="text-[10px] tracking-[0.3em] uppercase text-ink/65">
-                        {n.cat}
-                      </span>
-                    </div>
-                    <div className="md:col-span-8 flex items-baseline gap-4">
-                      <h2 className="font-serif text-xl md:text-2xl leading-tight text-ink group-hover:text-moss transition-colors duration-300">
-                        {n.title}
-                      </h2>
-                    </div>
-                    <div className="md:col-span-1 flex justify-end items-center">
-                      <span className="font-serif text-2xl text-moss transition-transform duration-500 group-open:rotate-45">
-                        +
-                      </span>
-                    </div>
-                  </summary>
-                  <div className="md:col-span-9 md:ml-[25%] pb-8 pr-6 md:pr-10">
-                    <p className="body-jp text-sm md:text-base whitespace-pre-line">{n.body}</p>
-                    {n.images && n.images.length > 0 && (
-                      <div className="mt-6 flex flex-col gap-4">
-                        {n.images.map((src, idx) => (
-                          <div key={idx} className="relative aspect-[4/3] max-w-lg overflow-hidden">
-                            <Image
-                              src={src}
-                              alt={`${n.title} ${idx + 1}`}
-                              fill
-                              sizes="(min-width: 768px) 512px, 100vw"
-                              className="object-cover"
-                            />
-                          </div>
-                        ))}
+              <Fragment key={n.title}>
+                <Reveal as="li" delay={i * 60}>
+                  <details id={`news-${n.date.replaceAll(".", "")}`} className="group scroll-mt-28 border-t border-ink/10 last:border-b">
+                    <summary className="grid md:grid-cols-12 gap-4 md:gap-10 py-8 md:py-10 cursor-pointer list-none items-baseline">
+                      <div className="md:col-span-3 flex md:flex-col gap-4 md:gap-3 items-baseline md:items-start">
+                        <p className="font-serif text-base text-ink/65">{n.date}</p>
+                        <span className="text-[10px] tracking-[0.3em] uppercase text-ink/65">
+                          {n.cat}
+                        </span>
                       </div>
-                    )}
-                    {n.link && (
-                      <a
-                        href={n.link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-4 inline-block text-sm text-moss link-underline"
-                      >
-                        {n.link.label} →
-                      </a>
-                    )}
-                  </div>
-                </details>
-              </Reveal>
+                      <div className="md:col-span-8 flex items-baseline gap-4">
+                        <h2 className="font-serif text-xl md:text-2xl leading-tight text-ink group-hover:text-moss transition-colors duration-300">
+                          {n.title}
+                        </h2>
+                      </div>
+                      <div className="md:col-span-1 flex justify-end items-center">
+                        <span className="font-serif text-2xl text-moss transition-transform duration-500 group-open:rotate-45">
+                          +
+                        </span>
+                      </div>
+                    </summary>
+                    <div className="md:col-span-9 md:ml-[25%] pb-8 pr-6 md:pr-10">
+                      <p className="body-jp text-sm md:text-base whitespace-pre-line">{n.body}</p>
+                      {n.images && n.images.length > 0 && (
+                        <div className="mt-6 flex flex-col gap-4">
+                          {n.images.map((src, idx) => (
+                            <div key={idx} className="relative aspect-[4/3] max-w-lg overflow-hidden">
+                              <Image
+                                src={src}
+                                alt={`${n.title} ${idx + 1}`}
+                                fill
+                                sizes="(min-width: 768px) 512px, 100vw"
+                                className="object-cover"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      {n.link && (
+                        <a
+                          href={n.link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-4 inline-block text-sm text-moss link-underline"
+                        >
+                          {n.link.label} →
+                        </a>
+                      )}
+                    </div>
+                  </details>
+                </Reveal>
+                {i === 0 && isNewmarketSupportActive() && (
+                  <li>
+                    <details className="group border-t border-ink/10">
+                      <summary className="grid cursor-pointer list-none items-baseline gap-4 py-8 md:grid-cols-12 md:gap-10 md:py-10">
+                        <div className="flex items-baseline gap-4 md:col-span-3 md:flex-col md:items-start md:gap-3"><time dateTime={NEWMARKET_SUPPORT.publishedOn} className="font-serif text-base text-ink/65">{NEWMARKET_SUPPORT.publishedOn.replaceAll("-", ".")}</time><span className="text-[10px] uppercase tracking-[0.3em] text-ink/65">NEWS</span></div>
+                        <h2 className="font-serif text-xl leading-tight text-ink transition-colors duration-300 group-hover:text-moss md:col-span-8 md:text-2xl">{NEWMARKET_SUPPORT.title}</h2>
+                        <div className="flex justify-end md:col-span-1"><span className="font-serif text-2xl text-moss transition-transform duration-500 group-open:rotate-45" aria-hidden="true">+</span></div>
+                      </summary>
+                      <div className="pb-8 pr-6 md:ml-[25%] md:pr-10"><NewmarketSupportCopy /><Link href={NEWMARKET_SUPPORT.path} className="link-underline mt-6 inline-block text-sm text-moss">記事の詳細を見る →</Link></div>
+                    </details>
+                  </li>
+                )}
+              </Fragment>
             ))}
           </ul>
         </div>
