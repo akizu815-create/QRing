@@ -16,6 +16,7 @@ MHLW = ('厚生労働省｜介護保険制度について', 'https://www.mhlw.go
 LOST = ('警察庁｜落とし物・忘れ物', 'https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/')
 BATCH = [
     dict(day=8, file='care-levels', slug='care-levels', category='family-care', audience='personal',
+         metaDescription='要支援と要介護は何が違うのでしょうか。要支援1・2、要介護1〜5の区分、利用できる支援やサービス、認定までの流れと相談先を分かりやすく解説します。',
          alt='高齢女性と家族が窓口の相談員と資料を見ながら話す水彩イラスト', image_src='/images/columns/care-levels-4eff2d4e8937.jpg',
          service='/use-cases/elderly/', related=[],
          sources=[('厚生労働省｜要介護認定はどのように行われるか', 'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html'), ('厚生労働省｜介護サービス情報公表システム', 'https://www.mhlw.go.jp/stf/kaigo-kouhyou.html'), MHLW]),
