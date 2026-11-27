@@ -5179,5 +5179,206 @@
       "height": 720,
       "alt": "店頭のQRコードをスマートフォンでスキャンし、情報ページを確認する女性の水彩イラスト"
     }
+  },
+  {
+    "id": "disaster-family-contact",
+    "slug": "disaster-family-contact",
+    "title": "災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え",
+    "summary": "災害時に家族へ電話がつながらない場合に備え、災害用伝言ダイヤル171や災害用伝言板など、複数の安否確認方法を知っておきましょう。どれを使うか、連絡できないときにどこへ避難するかは、平時に家族で決めておくと動きやすくなります。",
+    "introduction": [
+      "大きな地震のあとには、通信の集中や設備の被害、停電で電話が使いにくくなることがあります。ふだんの電話だけに頼らない準備を整理します。"
+    ],
+    "seoTitle": "災害時に家族と連絡が取れないときは？171と安否確認の方法",
+    "metaDescription": "地震などの災害時に家族と電話がつながらない場合、どうすればよいのでしょうか？災害用伝言ダイヤル171や安否確認の方法、事前に決めたい家族のルールを紹介します。",
+    "category": "family-care",
+    "primaryAudience": "personal",
+    "tags": [
+      "災害 安否確認",
+      "web171"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-28",
+    "editionDate": "2026-11-28",
+    "publishedTimestamp": "2026-11-28T04:58:01+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/disaster-family-contact.md",
+      "sha256": "5ba45b07b6f067a029c3251db8579a929b6f6764f67db13226a11f4cde62681f",
+      "receivedOn": "2026-11-16",
+      "approvedOn": "2026-11-28"
+    },
+    "relatedArticleIds": [
+      "smartphone-emergency-sos",
+      "pets-earthquake-prediction"
+    ],
+    "relatedService": null,
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "171",
+        "label": "NTT東日本｜災害用伝言ダイヤル（171）概要とご提供のしくみ",
+        "href": "https://www.ntt-east.co.jp/saigai/voice171s/intro.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "web171",
+        "label": "NTT東日本｜災害用伝言板（web171）",
+        "href": "https://www.ntt-east.co.jp/saigai/web171/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "なぜ災害時は電話がつながらないの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "大きな災害が発生すると、多くの人が一斉に電話をかけます。通信が集中することで、通常より電話がつながりにくくなる場合があります。また、通信設備の被害や停電などが影響することもあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そのため、普段使っている電話だけに頼らない準備が大切です。"
+          },
+          {
+            "type": "link",
+            "href": "/column/smartphone-emergency-sos/",
+            "label": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "災害用伝言ダイヤル「171」とは？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "災害用伝言ダイヤル「171」は、災害時に安否情報を音声で登録・確認するためのサービスです。電話番号を手がかりに伝言を残したり、聞いたりできます。ただし、利用できる条件やサービスの提供状況は、災害の規模などによって異なります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "NTTなどの公式案内で、事前に使い方を確認しておきましょう。"
+          },
+          {
+            "type": "link",
+            "href": "/column/pets-earthquake-prediction/",
+            "label": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "災害用伝言板も知っておこう",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "通信事業者などが提供する災害用伝言板も、安否確認の手段の一つです。メッセージアプリやSNSを利用する方法もありますが、通信環境によっては使えない場合があります。一つの方法だけでなく、複数の連絡手段を知っておくことが重要です。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "家族で決めておきたい三つのこと",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "災害が起きる前に、家族で次のことを話し合っておきましょう。"
+          },
+          {
+            "type": "heading",
+            "text": "① 避難場所"
+          },
+          {
+            "type": "paragraph",
+            "text": "自宅や学校、職場の近くにある避難場所を確認します。"
+          },
+          {
+            "type": "heading",
+            "text": "② 連絡方法"
+          },
+          {
+            "type": "paragraph",
+            "text": "電話がつながらない場合に、どのサービスを使うか決めておきます。"
+          },
+          {
+            "type": "heading",
+            "text": "③ 連絡が取れない場合の行動"
+          },
+          {
+            "type": "paragraph",
+            "text": "まずは自分の安全を確保し、どこへ避難するかを共有します。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "紙のメモも役に立つ",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "スマートフォンの電池が切れたり、故障したりすることもあります。家族の連絡先や避難先などを、紙に控えておくことも一つの備えです。個人情報の管理に注意しながら、必要な情報をまとめておきましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "連絡方法と避難先を平時に共有する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "災害時は、いつもの連絡手段が使えるとは限りません。家族と連絡が取れない場合に備え、複数の安否確認方法と避難先を事前に決めておくことが大切です。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "災害 家族 連絡 取れない 171",
+    "primaryKeyword": "災害 家族 連絡 取れない 171",
+    "topicClusterId": "disaster-family-contact",
+    "claims": [
+      {
+        "text": "災害時に家族へ電話がつながらない場合に備え、災害用伝言ダイヤル171や災害用伝言板など、複数の安否確認方法を知っておきましょう。どれを使うか、連絡できないときにどこへ避難するかは、平時に家族で決めておくと動きやすくなります。",
+        "sourceIds": [
+          "171",
+          "web171"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/disaster-family-contact.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "防災用品や地図をそろえ、スマートフォンとメモで家族の連絡方法を確認する女性の水彩イラスト"
+    }
   }
 ]
