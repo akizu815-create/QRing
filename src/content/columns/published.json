@@ -4981,5 +4981,203 @@
       "height": 720,
       "alt": "タブレットを一緒に見ながら見守りについて話す高齢女性と家族の水彩イラスト"
     }
+  },
+  {
+    "id": "qr-code-scan-mechanism",
+    "slug": "qr-code-scan-mechanism",
+    "title": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+    "summary": "QRコードをスキャンすると、スマートフォンが模様に記録された文字列やURLなどを取り出します。コード自体が通信しているのではなく、取り出したURLを端末が開くことでウェブサイトにアクセスします。",
+    "introduction": [
+      "あの四角い模様に何が入っているのか。スキャンの流れを知ると、便利さだけでなく、リンク先を確認する理由も見えてきます。"
+    ],
+    "seoTitle": "QRコードをスキャンするとどうなる？仕組みと安全な使い方を解説",
+    "metaDescription": "QRコードをスキャンするとスマートフォンの中で何が起こるのでしょうか？コードに入っている情報、URLを開く仕組み、安全に利用するための注意点を解説します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "QRコード URL",
+      "QRコード 安全"
+    ],
+    "status": "published",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-27",
+    "editionDate": "2026-11-27",
+    "publishedTimestamp": "2026-11-27T08:00:00+09:00",
+    "publicationPending": false,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-16",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 1,
+    "approvalRevision": 1,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/qr-code-scan-mechanism.md",
+      "sha256": "6c7ebdf5a305abd377c91e1809bd17733104761a7d179649f1735b5d615cfc38",
+      "receivedOn": "2026-11-16",
+      "approvedOn": "2026-11-27"
+    },
+    "relatedArticleIds": [
+      "qr-code-inventor",
+      "number-private-calls"
+    ],
+    "relatedService": {
+      "href": "/service/",
+      "label": "つながるQRのサービスと利用条件"
+    },
+    "relatedLinks": [],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "qr",
+        "label": "デンソーウェーブ｜QRコードとは？",
+        "href": "https://www.qrcode.com/about/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "qr-safety",
+        "label": "警視庁｜QRコードを利用する時の注意点",
+        "href": "https://www.keishicho.metro.tokyo.lg.jp/kurashi/cyber/notes/qrcord.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "QRコードは情報を記録した模様",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは、白と黒の小さな四角を組み合わせた二次元コードです。四角の配置によって、文字列やURLなどの情報を表しています。スマートフォンでスキャンすると、端末がコードの位置や向きを認識し、記録された情報を取り出します。"
+          },
+          {
+            "type": "link",
+            "href": "/column/qr-code-inventor/",
+            "label": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "QRコード自体が通信しているわけではない",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "紙に印刷されたQRコードが、電波を出しているわけではありません。QRコードには、例えばウェブサイトのURLを記録できます。スマートフォンがそのURLを開くと、インターネットを通じてウェブサイトにアクセスします。"
+          },
+          {
+            "type": "paragraph",
+            "text": "つまり、QRコードは情報への入口として機能しているのです。"
+          },
+          {
+            "type": "link",
+            "href": "/column/number-private-calls/",
+            "label": "電話番号を教えずに、声だけでつながる時代へ",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "三つの大きな四角の役割",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードの角にある三つの大きな四角は、位置や向きを認識するための目印です。これによって、コードが多少傾いていてもスキャンしやすくなります。また、誤り訂正という仕組みによって、一部が汚れていても情報を復元できる場合があります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "QRコードをスキャンするだけで危険？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードそのものが必ず危険というわけではありません。ただし、見た目だけではリンク先が安全かどうか判断できないことがあります。悪意のあるウェブサイトへ誘導するQRコードが使われる可能性もあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "スキャン後に表示されるURLを確認し、不審なログイン画面や決済要求には注意しましょう。公共の掲示物などでは、別のQRコードのシールが上から貼られていないか確認することも大切です。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "QRコードは連絡手段にもなる",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードの用途は、ウェブサイトの表示だけではありません。例えば「つながるQR」は、QRコードをスキャンし、通話ボタンをタップすることで、発見者と登録者が電話番号を知らせずに通話できるサービスです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "情報を表示するだけでなく、人と人をつなぐ入口としても活用されています。"
+          },
+          {
+            "type": "link",
+            "href": "/service/",
+            "label": "つながるQRのサービスと利用条件",
+            "prefix": "利用条件は「",
+            "suffix": "」で確認できます。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "スキャン後の表示を確かめる",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "QRコードは、情報を記録するための技術です。スキャンした後に何が起こるかは、記録された情報や利用するサービスによって異なります。仕組みを知り、表示内容を確認しながら便利に活用しましょう。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "QRコード スキャン 仕組み",
+    "primaryKeyword": "QRコード スキャン 仕組み",
+    "topicClusterId": "qr-code-scan-mechanism",
+    "claims": [
+      {
+        "text": "QRコードをスキャンすると、スマートフォンが模様に記録された文字列やURLなどを取り出します。コード自体が通信しているのではなく、取り出したURLを端末が開くことでウェブサイトにアクセスします。",
+        "sourceIds": [
+          "qr",
+          "qr-safety",
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": true
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/qr-code-scan-mechanism.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "店頭のQRコードをスマートフォンでスキャンし、情報ページを確認する女性の水彩イラスト"
+    }
   }
 ]
