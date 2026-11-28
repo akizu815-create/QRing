@@ -12,12 +12,12 @@
     "status": "published",
     "publicationOrigin": "editorial",
     "publishedAt": "2026-10-28",
-    "updatedAt": "2026-11-06",
-    "reviewedAt": "2026-11-06",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 3,
-    "approvalRevision": 3,
+    "contentRevision": 4,
+    "approvalRevision": 4,
     "relatedArticleIds": [
       "lost-item-preparation"
     ],
@@ -31,6 +31,12 @@
         "label": "高齢者の外出時の見守りに、つながるQR",
         "href": "https://www.qring.jp/use-cases/elderly/",
         "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "review-2",
+        "label": "厚生労働省｜認知症の人の日常生活・社会生活における意思決定支援ガイドライン",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212395.html",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -57,6 +63,14 @@
           {
             "type": "paragraph",
             "text": "見守りを特別なこととして始めるよりも、普段のコミュニケーションの延長として取り入れる方が、お互いの負担を抑えやすくなります。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "まず本人に、連絡の頻度と気になることを聞く。連絡が取れないときの対応も一緒に決めます。",
+              "電話だけでは生活の様子が分かりにくいときは、訪問できる家族や地域の相談先を確認します。",
+              "使う機器は本人が操作・充電できるか、誰が通知に対応するかまで考えて選びます。"
+            ]
           }
         ]
       },
@@ -66,55 +80,47 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "家族だけで様子を確認することが難しい場合は、見守りサービスを利用する方法もあります。"
-          },
-          {
-            "type": "paragraph",
-            "text": "目的によって、適した仕組みは異なります。"
+            "text": "見守りは、確認したい場面によって向く方法が異なります。日常の安否確認、外出中の位置確認、見つかった後の連絡を分けると選びやすくなります。"
           },
           {
             "type": "table",
-            "caption": "見守りサービスにはどんな種類がある？",
+            "caption": "見守り方法と選ぶときの確認点",
             "headers": [
               "方法",
-              "特徴",
-              "向いている場面"
+              "できること",
+              "確認したい条件"
             ],
             "rows": [
               [
                 "電話・メッセージ",
-                "本人と直接やり取りできる",
-                "日常の安否確認"
+                "定期的に本人とやり取りする",
+                "返事がないときに誰が確認するか"
               ],
               [
-                "見守りセンサー",
-                "室内の動きなどから生活の様子を把握する",
-                "一人暮らしの生活確認"
+                "訪問",
+                "会って体調や住まいの変化に気づく",
+                "訪問の頻度と本人の希望"
               ],
               [
-                "見守りカメラ",
-                "映像で室内の様子を確認する",
-                "本人が同意し、映像確認が必要な場合"
+                "センサー・カメラ",
+                "機器に応じて生活の動きなどを確認する",
+                "検知できる範囲、通信環境、撮影への同意"
               ],
               [
                 "GPS端末",
-                "対応する端末で位置情報を確認する",
-                "外出先の居場所が気になる場合"
+                "条件に応じて外出中の位置を確認する",
+                "携帯・充電・通信、位置情報を見る人"
               ],
               [
-                "見守りQRコード",
-                "発見した方から家族などへ連絡できる",
-                "外出先で困ったときの連絡手段"
+                "連絡用QRコード",
+                "発見者から家族など登録先へ連絡する",
+                "タグの携帯、発見者の操作、登録先が応答できること"
               ]
             ]
           },
           {
             "type": "paragraph",
-            "text": "それぞれに役割があり、一つの方法ですべてを補えるわけではありません。"
-          },
-          {
-            "type": "paragraph",
-            "text": "例えば、自宅での生活が心配な場合はセンサー、外出先の居場所が気になる場合はGPS端末など、気になる場面に合わせて選ぶことが大切です。"
+            "text": "QRコードはGPSによる追跡や自動的な異変の検知を行うものではありません。機器の通知だけで対応が完了するわけでもないため、本人と家族の暮らしに合わせて組み合わせます。"
           }
         ]
       },
@@ -167,13 +173,6 @@
           {
             "type": "paragraph",
             "text": "GPSのように居場所を追跡するものではなく、困ったときに家族などへ連絡するための選択肢です。"
-          },
-          {
-            "type": "link",
-            "label": "高齢者の外出時の見守りに、つながるQR",
-            "href": "/use-cases/elderly/",
-            "prefix": "詳しくは「",
-            "suffix": "」をご覧ください。"
           }
         ]
       },
@@ -227,9 +226,16 @@
       "大切なのは、親の暮らし方や気持ちに合った方法を選ぶことです。"
     ],
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/elderly-monitoring.md",
-      "sha256": "1915ca0ed66ee5213af813df0c89735645a852138e79b240fa2d49a3dcf88d74",
-      "approvedOn": "2026-11-06"
+      "sourceFile": "src/content/columns/approved/elderly-monitoring-reviewed.md",
+      "sha256": "8c53ac7c6445efa446133391f8914f0b83f200560f9bc51c800d766469cf2e5b",
+      "approvedOn": "2026-11-06",
+      "revisionHistory": [
+        {
+          "revision": 4,
+          "change": "方法比較に訪問・対応条件を追加。日常確認／位置確認／発見後連絡を分離し、本人の希望と通知後の担当を具体化。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "editionDate": "2026-11-01",
     "contentFormat": "approved-manuscript",
@@ -239,7 +245,9 @@
       "width": 1280,
       "height": 720,
       "alt": "離れて暮らす高齢の母親とスマートフォンで連絡を取る女性の水彩イラスト"
-    }
+    },
+    "relatedLinks": [],
+    "manuscriptReferences": true
   },
   {
     "id": "lost-item-preparation",
@@ -254,12 +262,12 @@
     "status": "published",
     "publicationOrigin": "editorial",
     "publishedAt": "2026-10-28",
-    "updatedAt": "2026-11-06",
-    "reviewedAt": "2026-11-06",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 3,
-    "approvalRevision": 3,
+    "contentRevision": 4,
+    "approvalRevision": 4,
     "relatedArticleIds": [
       "elderly-monitoring"
     ],
@@ -273,6 +281,12 @@
         "label": "落とし物・忘れ物対策に、つながるQR",
         "href": "https://www.qring.jp/use-cases/belongings/",
         "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "review-2",
+        "label": "警察庁｜落とし物・忘れ物への対応",
+        "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -330,23 +344,38 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "鍵や財布をよく探してしまう方は、紛失防止タグを取り付ける方法もあります。"
+            "text": "置き忘れへの備えには、音を鳴らして探すタグや、位置情報を確認する端末もあります。名称に「紛失防止」とあっても、なくすこと自体を防げるとは限りません。製品ごとの条件を確認しましょう。"
           },
           {
-            "type": "paragraph",
-            "text": "紛失防止タグには、スマートフォンから音を鳴らして探せるものや、対応するネットワークを通じて位置情報を確認できるものがあります。"
-          },
-          {
-            "type": "paragraph",
-            "text": "ただし、すべての製品が同じ機能を備えているわけではありません。"
-          },
-          {
-            "type": "paragraph",
-            "text": "購入する際は、使用しているスマートフォンとの対応状況、電池の持ち、位置確認ができる条件などを確認しましょう。"
-          },
-          {
-            "type": "paragraph",
-            "text": "また、タグを付けていても、必ず持ち物が見つかるとは限りません。"
+            "type": "table",
+            "caption": "持ち物への備えの役割",
+            "headers": [
+              "備え",
+              "主な役割",
+              "選ぶときの注意"
+            ],
+            "rows": [
+              [
+                "定位置・持ち物チェック",
+                "置き忘れを減らす",
+                "帰宅時と出発時に続けられる方法にする"
+              ],
+              [
+                "Bluetoothタグ",
+                "近くで音を鳴らす、対応ネットワークで探す",
+                "対応端末、電池、検出できる環境は製品による"
+              ],
+              [
+                "GPS端末",
+                "通信可能な条件で位置を確認する",
+                "通信料、充電、屋内などの受信条件"
+              ],
+              [
+                "連絡用QRコード",
+                "拾った方から登録先へ連絡する",
+                "発見者の操作と通信が必要。位置追跡はしない"
+              ]
+            ]
           }
         ]
       },
@@ -381,13 +410,6 @@
           {
             "type": "paragraph",
             "text": "位置を追跡する機能はありませんが、発見してくれた方と直接話せる連絡手段として活用できます。"
-          },
-          {
-            "type": "link",
-            "label": "落とし物・忘れ物対策に、つながるQR",
-            "href": "/use-cases/belongings/",
-            "prefix": "詳しくは「",
-            "suffix": "」をご覧ください。"
           }
         ]
       },
@@ -418,6 +440,16 @@
           {
             "type": "paragraph",
             "text": "その両方を考えておくことで、毎日の暮らしに少し安心を増やせるかもしれません。"
+          },
+          {
+            "type": "link",
+            "href": "/column/lost-wallet/",
+            "label": "すでに財布をなくしたときの手続き"
+          },
+          {
+            "type": "link",
+            "href": "/column/wallet-contents-safety/",
+            "label": "財布に残すもの・別に保管するものを整理する"
           }
         ]
       }
@@ -450,9 +482,16 @@
       "今回は、今日から取り入れられる身近な紛失対策と、万が一なくしてしまった場合の備えをご紹介します。"
     ],
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/lost-item-preparation.md",
-      "sha256": "36297abc53402dc7c313d58585ff0497226ac049b05649fb4397a48ad2c13af2",
-      "approvedOn": "2026-11-06"
+      "sourceFile": "src/content/columns/approved/lost-item-preparation-reviewed.md",
+      "sha256": "03f992e85bc3556960e5e54762ac1f8de56e58df5138c9e3050dedd8b33d5e39",
+      "approvedOn": "2026-11-06",
+      "revisionHistory": [
+        {
+          "revision": 4,
+          "change": "予防・探索・発見後連絡の比較に置換。紛失直後と財布の中身の記事への役割別リンクを追加。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "editionDate": "2026-11-02",
     "contentFormat": "approved-manuscript",
@@ -462,7 +501,9 @@
       "width": 1280,
       "height": 720,
       "alt": "鍵と財布、QRコード付きキーホルダー、持ち物チェックリストの水彩イラスト"
-    }
+    },
+    "relatedLinks": [],
+    "manuscriptReferences": true
   },
   {
     "id": "elderly-monitoring-contact-system",
@@ -477,12 +518,12 @@
     "status": "published",
     "publicationOrigin": "editorial",
     "publishedAt": "2026-11-06",
-    "updatedAt": "2026-11-06",
-    "reviewedAt": "2026-11-06",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": "2027-02-06",
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 2,
-    "approvalRevision": 2,
+    "contentRevision": 3,
+    "approvalRevision": 3,
     "relatedArticleIds": [
       "elderly-monitoring"
     ],
@@ -511,19 +552,11 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "高齢者の見守りには、日常の声かけ、安否確認、外出時の支援など、さまざまな取り組みがあります。"
+            "text": "地域で困っている方を見つけても、名前や連絡先が分からず、その後の対応に時間がかかることがあります。見守り施策は「発見する仕組み」と「発見後に連絡をつなぐ仕組み」を分けて考えると、課題を整理しやすくなります。"
           },
           {
             "type": "paragraph",
-            "text": "一方、外出先で道に迷った方や、家族への連絡が難しい方を見かけた場合、発見者が連絡先を把握しているとは限りません。"
-          },
-          {
-            "type": "paragraph",
-            "text": "本人が携帯電話を持っていない場合や、操作が難しい場合も考えられます。"
-          },
-          {
-            "type": "paragraph",
-            "text": "こうした場面で、発見者と家族・支援者をつなぐ連絡手段を用意しておくことは、既存の見守り活動を補完する方法の一つです。"
+            "text": "まず安全を確認し、けがや体調不良があれば救急・警察などへ連絡します。家族への連絡方法は、この初動を置き換えるものではありません。"
           }
         ]
       },
@@ -533,40 +566,60 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "株式会社QRingの「つながるQR」は、QRコードをスキャンして発信することで、発見者と登録者が互いの電話番号を知らせずに通話できる仕組みです。"
+            "text": "つながるQRは、発見者がQRコードをスキャンし、画面の「電話をかける」をタップすると、登録先へ電話をかけられる仕組みです。プライバシー電話番号を使い、双方の本来の電話番号を相手に表示せず通話します。専用アプリや発見者による電話番号の入力は不要です。"
+          },
+          {
+            "type": "table",
+            "caption": "地域の連絡手段の比較",
+            "headers": [
+              "方式",
+              "得意な場面",
+              "導入時に確認する条件"
+            ],
+            "rows": [
+              [
+                "GPS端末",
+                "外出中の位置確認",
+                "携帯・充電・通信、確認担当と対応時間"
+              ],
+              [
+                "電話番号を記した名札",
+                "発見者からの直接連絡",
+                "番号の公開範囲、番号変更時の更新"
+              ],
+              [
+                "受付窓口・コールセンター",
+                "窓口を通じた照会と取次ぎ",
+                "受付時間、本人確認、窓口外の対応"
+              ],
+              [
+                "連絡用QRコード",
+                "発見者から登録先への連絡",
+                "タグの携帯、読取り・通信環境、登録先の不応答時対応"
+              ]
+            ]
           },
           {
             "type": "paragraph",
-            "text": "専用アプリは不要で、バッグや持ち物などにQRコードを付けておくことで、外出先で困った際の連絡手段として活用が考えられます。"
-          },
-          {
-            "type": "paragraph",
-            "text": "GPSによる位置追跡や自動検知とは異なり、発見後の連絡を支えることに特化しています。"
-          },
-          {
-            "type": "link",
-            "href": "/service/",
-            "label": "つながるQRのサービス紹介",
-            "prefix": "詳しい仕組みは「",
-            "suffix": "」をご覧ください。"
+            "text": "QRコードによる連絡は、GPS追跡や自動検知ではありません。サービスによって接続方法は異なるため、QRコード一般の機能と、つながるQRの通話方式を区別して説明します。"
           }
         ]
       },
       {
         "id": "complementary-contact",
-        "title": "既存の見守り活動を補完する連絡手段として",
+        "title": "導入前に決めたい運用と評価項目",
         "blocks": [
           {
-            "type": "paragraph",
-            "text": "つながるQRは、自治体や地域の関係者による既存の見守り活動に置き換わるものではありません。"
+            "type": "list",
+            "items": [
+              "利用前：本人への説明と意思の確認、登録情報を管理する部署・閲覧権限を決める。",
+              "運用中：登録先の更新、夜間や不応答時の連絡順、警察・救急につなぐ条件を決める。",
+              "見直し：連絡成立までの時間、不応答件数、更新漏れ、担当者の作業時間を記録する。"
+            ]
           },
           {
             "type": "paragraph",
-            "text": "地域の方が困っている高齢者を見かけたとき、登録された連絡先へ電話でつながる手段を提供するものです。"
-          },
-          {
-            "type": "paragraph",
-            "text": "自治体ごとに見守り施策や地域の連携体制は異なります。つながるQRは、そうした既存の取り組みの中で、必要に応じて活用を検討いただける選択肢の一つです。"
+            "text": "これらは導入を評価するための指標案です。改善率や連絡成功率など、QRingの導入実績を示す数値ではありません。収集項目と保存期間は、目的に必要な範囲で検討します。"
           }
         ]
       },
@@ -576,15 +629,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "高齢者の見守りには、地域の方々による日々の気づきや支え合いが欠かせません。"
-          },
-          {
-            "type": "paragraph",
-            "text": "つながるQRは、その取り組みを支える「発見後の連絡」という場面に着目したサービスです。"
-          },
-          {
-            "type": "paragraph",
-            "text": "電話番号を知らせずに声でつながる仕組みが、地域の安心を支える新たな選択肢となることを目指しています。"
+            "text": "地域の見守りでは、機器の選択だけでなく、誰がどの時間帯に対応するかが重要です。現状の発見・連絡の流れを整理したうえで、地域に合う連絡方法をご相談ください。"
           }
         ]
       }
@@ -623,7 +668,21 @@
         "href": "/use-cases/elderly/",
         "label": "高齢者の外出時の見守りに、つながるQR"
       }
-    ]
+    ],
+    "manuscriptReferences": true,
+    "approvalRecord": {
+      "receivedOn": "2026-11-28",
+      "sourceFile": "src/content/columns/approved/elderly-monitoring-contact-system-reviewed.md",
+      "revisionHistory": [
+        {
+          "revision": 3,
+          "change": "「補完」の反復を運用比較・不応答対応・評価指標案に置換。数値は実績ではなく提案と明記し、相談CTAを維持。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ],
+      "sha256": "3d445df11b24535ff7e066ba4ed18d67b3b6293ef4b1a1a8e0d28a3b973718b0"
+    },
+    "contentFormat": "approved-manuscript"
   },
   {
     "id": "lost-dog-preparation",
@@ -646,17 +705,24 @@
     "editionDate": "2026-11-07",
     "publishedAt": "2026-11-07",
     "publicationPending": false,
-    "updatedAt": "2026-11-07",
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 2,
-    "approvalRevision": 2,
+    "contentRevision": 3,
+    "approvalRevision": 3,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/lost-dog-preparation.md",
-      "sha256": "ea880f688c537d1aa1e89bfca38c2603e348bb7a953ba42210e71041f4af654c",
-      "receivedOn": "2026-11-06"
+      "sourceFile": "src/content/columns/approved/lost-dog-preparation-reviewed.md",
+      "sha256": "58b0970bf8409ecd7486f335cfe006d9ee31d4a0c0bd59b2fa3b8336e85138f6",
+      "receivedOn": "2026-11-06",
+      "revisionHistory": [
+        {
+          "revision": 3,
+          "change": "捜索を時系列の行動と連絡事項に整理。管轄差、発見後の更新、SNSの個人情報を具体化。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [],
     "relatedService": {
@@ -685,27 +751,16 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "まずは、最後に姿を見た場所や時間を確認しましょう。"
-          },
-          {
-            "type": "paragraph",
-            "text": "自宅周辺やいつものお散歩コース、公園など、愛犬が慣れている場所を探します。ただし、怖がっている犬を慌てて追いかけると、さらに逃げてしまうこともあるため注意が必要です。"
-          },
-          {
-            "type": "paragraph",
-            "text": "捜索と並行して、次の機関にも早めに連絡しておきましょう。"
+            "text": "愛犬が見当たらないときは、逃げた場所と時刻を確認し、安全に周囲を探すとともに、警察と自治体の動物愛護センター・保健所などへ連絡しましょう。受付窓口や管轄は地域で異なります。別の地域に移動している可能性も考え、近隣の窓口にも確認します。"
           },
           {
             "type": "list",
             "items": [
-              "警察署・交番：保護された犬の情報が届いている場合があります。",
-              "保健所・動物愛護管理センター：地域で保護・収容された犬の情報を確認できます。",
-              "近隣の動物病院：保護した方が連れてきている可能性があります。"
+              "まず確認：自宅内・敷地内、最後に見た場所、首輪やリードの状態。道路へ飛び出したり、追い立てたりしない。",
+              "並行して連絡：警察、自治体の動物関係窓口、近隣の動物病院へ、保護情報がないか問い合わせる。",
+              "伝える情報：写真、犬種・毛色・体格、首輪、名前、いなくなった日時と場所、マイクロチップ番号などをまとめる。",
+              "見つかった後：連絡した窓口や掲示先へ発見を知らせ、捜索情報を更新する。"
             ]
-          },
-          {
-            "type": "paragraph",
-            "text": "自治体によって担当窓口が異なるため、近隣地域も含めて確認するとよいでしょう。"
           }
         ]
       },
@@ -728,6 +783,10 @@
           {
             "type": "paragraph",
             "text": "ただし、SNSに自宅住所や電話番号を公開する際は、個人情報の取り扱いに注意しましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "SNSでは写真や地域・日時を伝えつつ、自宅の詳細な住所、家族の個人情報、発見者の連絡先を無断で公開しないようにします。似た犬の情報だけで断定せず、特徴を照合しましょう。"
           }
         ]
       },
@@ -875,32 +934,39 @@
     "editionDate": "2026-11-03",
     "publishedAt": "2026-11-07",
     "publicationPending": false,
-    "updatedAt": "2026-11-07",
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 2,
-    "approvalRevision": 2,
+    "contentRevision": 3,
+    "approvalRevision": 3,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/dementia-early-signs.md",
-      "sha256": "da0a13285baf31630ba9dd7964b0a612ce39eb8f087c475964b0e7f193fadf9d",
-      "receivedOn": "2026-11-06"
+      "sourceFile": "src/content/columns/approved/dementia-early-signs-reviewed.md",
+      "sha256": "c190566d1acb825897a540a5baa26421b9c9c18e1bfbe482ca476b5554d17582",
+      "receivedOn": "2026-11-06",
+      "revisionHistory": [
+        {
+          "revision": 3,
+          "change": "初期の気づきに主題を限定。鑑別・服薬の注意、相談に使える観察メモを補足。検査の詳細は10日記事へ。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [],
     "relatedService": null,
     "sources": [
       {
-        "id": "source-1",
-        "label": "政府広報オンライン｜知っておきたい認知症の基本",
-        "href": "https://www.gov-online.go.jp/article/202501/entry-7013.html",
-        "checkedAt": "2026-11-06"
-      },
-      {
         "id": "source-2",
         "label": "厚生労働省｜認知症に関する相談について",
         "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html",
         "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "review-3",
+        "label": "日本老年医学会｜認知機能の評価法と認知症の診断",
+        "href": "https://www.jpn-geriat-soc.or.jp/tool/tool_02",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -919,6 +985,17 @@
           {
             "type": "paragraph",
             "text": "ただし、こうした違いだけで認知症かどうかを判断することはできません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "似た変化は、うつ状態、睡眠不足、薬の影響や身体の病気でも起こります。原因を見分けるには診察が必要です。薬が気になっても自己判断で中止せず、服薬内容を医師に伝えてください。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.jpn-geriat-soc.or.jp/tool/tool_02",
+            "label": "日本老年医学会の診断に関する解説",
+            "prefix": "原因の見分け方は、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -956,6 +1033,18 @@
           {
             "type": "paragraph",
             "text": "このチェック項目は診断を目的としたものではありません。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "いつから：急に始まったのか、少しずつ増えたのか。",
+              "どんな場面で：買い物、支払い、約束、道順など、具体例を記録します。",
+              "生活への影響：本人が困っていること、家族の手助けが増えたことを整理します。"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "この記録は診断用の採点表ではありません。気づいた変化を相談時に伝えるためのメモです。突然の意識の変化や麻痺などがあれば、通常の受診予約を待たず救急対応が必要です。"
           }
         ]
       },
@@ -974,6 +1063,11 @@
           {
             "type": "paragraph",
             "text": "家族が変化を感じた場合は、いつ頃から、どのような場面で気になったのかをメモしておくと、相談時に役立ちます。"
+          },
+          {
+            "type": "link",
+            "href": "/column/dementia-forgetfulness/",
+            "label": "受診先・認知機能検査・受診前の準備について"
           }
         ]
       },
@@ -996,30 +1090,6 @@
           {
             "type": "paragraph",
             "text": "小さな変化に気づくことは、本人を決めつけることではなく、必要な支援につながる第一歩です。"
-          }
-        ]
-      },
-      {
-        "id": "section-5",
-        "title": "参考資料",
-        "blocks": [
-          {
-            "type": "link",
-            "href": "https://www.gov-online.go.jp/article/202501/entry-7013.html",
-            "label": "政府広報オンライン｜知っておきたい認知症の基本"
-          },
-          {
-            "type": "paragraph",
-            "text": "https://www.gov-online.go.jp/article/202501/entry-7013.html"
-          },
-          {
-            "type": "link",
-            "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html",
-            "label": "厚生労働省｜認知症に関する相談について"
-          },
-          {
-            "type": "paragraph",
-            "text": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html"
           }
         ]
       }
@@ -1047,12 +1117,8 @@
       "height": 720,
       "alt": "高齢女性と家族が自宅でチェック用紙を一緒に確認する水彩イラスト"
     },
-    "relatedLinks": [
-      {
-        "href": "/use-cases/elderly/",
-        "label": "つながるQRで、高齢者の外出時の連絡に備える"
-      }
-    ]
+    "relatedLinks": [],
+    "manuscriptReferences": true
   },
   {
     "id": "senior-care-facility-types",
@@ -1065,7 +1131,7 @@
     ],
     "seoTitle": "高齢者向け施設の種類と違い｜サ高住・特養・グループホーム",
     "metaDescription": "老人ホームや高齢者向け施設にはどんな種類がある？サ高住、特養、グループホーム、デイサービスなどの違いと、それぞれの役割や選び方を分かりやすく解説します。",
-    "category": "business-safety",
+    "category": "family-care",
     "primaryAudience": "personal",
     "tags": [],
     "status": "published",
@@ -1073,32 +1139,57 @@
     "editionDate": "2026-11-04",
     "publishedAt": "2026-11-07",
     "publicationPending": false,
-    "updatedAt": "2026-11-07",
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 2,
-    "approvalRevision": 2,
+    "contentRevision": 3,
+    "approvalRevision": 3,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/senior-care-facility-types.md",
-      "sha256": "74fd65253d23f56b8f51b3ce2868b1bdecb76e5a01a4bd9446aef7b6581e641f",
-      "receivedOn": "2026-11-06"
+      "sourceFile": "src/content/columns/approved/senior-care-facility-types-reviewed.md",
+      "sha256": "dd720ba0d63733517a8b136719bd0250206b27059c3af4a0c6c885e18b5e357a",
+      "receivedOn": "2026-11-06",
+      "revisionHistory": [
+        {
+          "revision": 3,
+          "change": "住まい4種の対象・費用比較と見学チェックを追加。個人の住まい選びに合わせカテゴリを企業・施設から家族の見守り・介護へ訂正。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [],
     "relatedService": null,
     "sources": [
       {
         "id": "source-1",
-        "label": "厚生労働省｜介護保険サービスの解説",
-        "href": "https://www.kaigokensaku.mhlw.go.jp/commentary/service.html",
-        "checkedAt": "2026-11-06"
+        "label": "厚生労働省｜介護サービス情報公表システム",
+        "href": "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html",
+        "checkedAt": "2026-11-28"
       },
       {
         "id": "source-2",
-        "label": "厚生労働省｜サービス付き高齢者向け住宅について",
-        "href": "https://www.kaigokensaku.mhlw.go.jp/publish_sumai/",
-        "checkedAt": "2026-11-06"
+        "label": "厚生労働省｜介護保険制度の概要",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/gaiyo/index.html",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-3",
+        "label": "厚生労働省｜主な認知症施策（グループホーム等）",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00006.html",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-4",
+        "label": "厚生労働省｜介護保険サービスの流れ",
+        "href": "https://www.mhlw.go.jp/content/11909000/001512330.pdf",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-5",
+        "label": "厚生労働省｜高齢期の住まい",
+        "href": "https://www.mhlw.go.jp/content/12300000/001481759.pdf",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -1153,6 +1244,37 @@
           {
             "type": "paragraph",
             "text": "原則として要支援2以上で認知症の診断がある方が対象となり、地域密着型サービスとして住所地などの利用条件があります。"
+          },
+          {
+            "type": "table",
+            "caption": "住まいを選ぶ際に確認する違い",
+            "headers": [
+              "住まいの種類",
+              "主な対象・特徴",
+              "費用・介護体制の確認"
+            ],
+            "rows": [
+              [
+                "特別養護老人ホーム",
+                "常時の介護が必要な方。新規入所は原則要介護3以上で例外あり",
+                "介護保険の自己負担のほか、食費・居住費等を確認"
+              ],
+              [
+                "有料老人ホーム",
+                "介護付き・住宅型などでサービスが異なる",
+                "入居時費用、月額費用、介護サービスの契約・別料金"
+              ],
+              [
+                "サービス付き高齢者向け住宅",
+                "安否確認・生活相談のある住まい",
+                "家賃・共益費、生活支援費、必要な介護サービスを別々に確認"
+              ],
+              [
+                "認知症グループホーム",
+                "認知症の診断がある要支援2・要介護の方など。地域密着型",
+                "自治体の対象条件、医療対応、家賃・食費・介護費を確認"
+              ]
+            ]
           }
         ]
       },
@@ -1261,30 +1383,18 @@
           {
             "type": "paragraph",
             "text": "施設の名前だけで判断せず、「どこで、どのような暮らしをしたいか」から考えることが大切です。"
-          }
-        ]
-      },
-      {
-        "id": "section-4",
-        "title": "参考資料",
-        "blocks": [
+          },
           {
-            "type": "link",
-            "href": "https://www.kaigokensaku.mhlw.go.jp/commentary/service.html",
-            "label": "厚生労働省｜介護保険サービスの解説"
+            "type": "list",
+            "items": [
+              "夜間の職員体制と、介助・医療処置が必要になった場合の対応を聞く。",
+              "月額の表示だけで比べず、食費、日用品、通院の付き添いなどを含めて確認する。",
+              "見学では本人の過ごし方、面会、外出、退去条件も確認する。"
+            ]
           },
           {
             "type": "paragraph",
-            "text": "https://www.kaigokensaku.mhlw.go.jp/commentary/service.html"
-          },
-          {
-            "type": "link",
-            "href": "https://www.kaigokensaku.mhlw.go.jp/publish_sumai/",
-            "label": "厚生労働省｜サービス付き高齢者向け住宅について"
-          },
-          {
-            "type": "paragraph",
-            "text": "https://www.kaigokensaku.mhlw.go.jp/publish_sumai/"
+            "text": "デイサービスやショートステイは、自宅での暮らしを支える通い・短期宿泊のサービスです。住み替え先と同じ一覧で選ばず、いまの生活を続けられるかも含めて相談しましょう。"
           }
         ]
       }
@@ -1292,7 +1402,7 @@
     "cta": "none",
     "searchIntent": "老人ホームや高齢者向け施設にはどんな種類がある？サ高住、特養、グループホーム、デイサービスなどの違いと、それぞれの役割や選び方を分かりやすく解説します。",
     "primaryKeyword": "高齢者向け施設の種類と違い",
-    "topicClusterId": "business-safety",
+    "topicClusterId": "family-care",
     "claims": [],
     "validationResults": [
       {
@@ -1312,12 +1422,8 @@
       "height": 720,
       "alt": "高齢女性と家族が介護施設の入口で職員の説明を受ける水彩イラスト"
     },
-    "relatedLinks": [
-      {
-        "href": "/use-cases/elderly/",
-        "label": "高齢者の外出時の連絡手段として、つながるQRを知る"
-      }
-    ]
+    "relatedLinks": [],
+    "manuscriptReferences": true
   },
   {
     "id": "school-contact-list-privacy",
@@ -1339,17 +1445,24 @@
     "editionDate": "2026-11-05",
     "publishedAt": "2026-11-07",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/school-contact-list-privacy.md",
-      "sha256": "5f56370031dda461b55ba1bec6993983988dc8e450411b6fd6fc770a54e38192",
-      "receivedOn": "2026-11-06"
+      "sourceFile": "src/content/columns/approved/school-contact-list-privacy-reviewed.md",
+      "sha256": "db16af4b6a2814e66f9aa6dc7b2b73a1ba5306974b64462e4c6f6ab9f0a2b9c8",
+      "receivedOn": "2026-11-06",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "全国一律禁止と誤認させないよう、公立・私立のルールと学校ごとの運用を分離。共有しない家庭も含む実務チェック追加。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [],
     "relatedService": null,
@@ -1361,10 +1474,10 @@
         "checkedAt": "2026-11-06"
       },
       {
-        "id": "source-2",
-        "label": "個人情報保護委員会｜公式サイト",
-        "href": "https://www.ppc.go.jp/",
-        "checkedAt": "2026-11-06"
+        "id": "review-2",
+        "label": "文部科学省｜教育データの利活用に係る留意事項・公立学校編（第4版）",
+        "href": "https://www.mext.go.jp/content/20260423-mxt_syoto01-000028144_01.pdf",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -1404,11 +1517,15 @@
           },
           {
             "type": "paragraph",
-            "text": "ただし、個人情報保護法によって学校の連絡網が一律に禁止されたわけではありません。"
+            "text": "個人情報保護法によって、学校の連絡網が全国一律に禁止されたわけではありません。私立学校などが名簿を第三者へ提供する場合の同意のルールと、公立学校などに適用される行政機関等のルールは区別する必要があります。個別の運用は学校・教育委員会へ確認してください。"
           },
           {
-            "type": "paragraph",
-            "text": "現在でも、利用目的や提供先を明示し、必要な同意を得るなど、適切な手続きを踏んで作成・配布することは可能です。"
+            "type": "list",
+            "items": [
+              "誰に、何のために共有するのかを説明する。",
+              "連絡先を共有しない家庭にも、学校からの連絡が届く方法を用意する。",
+              "掲載項目、配布先、保管・廃棄、連絡先変更時の手順を決める。"
+            ]
           }
         ]
       },
@@ -1481,30 +1598,6 @@
             "text": "便利さと安心のバランスを、これからも見直していきたいですね。"
           }
         ]
-      },
-      {
-        "id": "section-6",
-        "title": "参考資料",
-        "blocks": [
-          {
-            "type": "link",
-            "href": "https://www.ppc.go.jp/all_faq_index/faq1-q4-18/",
-            "label": "個人情報保護委員会｜名簿の作成・配布に関するQ&A"
-          },
-          {
-            "type": "paragraph",
-            "text": "https://www.ppc.go.jp/all_faq_index/faq1-q4-18/"
-          },
-          {
-            "type": "link",
-            "href": "https://www.ppc.go.jp/",
-            "label": "個人情報保護委員会｜公式サイト"
-          },
-          {
-            "type": "paragraph",
-            "text": "https://www.ppc.go.jp/"
-          }
-        ]
       }
     ],
     "cta": "none",
@@ -1525,7 +1618,8 @@
       "width": 1280,
       "height": 720,
       "alt": "親子が自宅のテーブルでタブレットを一緒に確認する水彩イラスト"
-    }
+    },
+    "manuscriptReferences": true
   },
   {
     "id": "care-levels",
@@ -1548,17 +1642,24 @@
     "editionDate": "2026-11-08",
     "publishedTimestamp": "2026-11-08T08:00:00+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/care-levels.md",
-      "sha256": "52a7e9966d98c64a4845b49bd51db45ff9f5af5d9c6f5ed6d8af67194a60aaa8",
-      "receivedOn": "2026-11-07"
+      "sourceFile": "src/content/columns/approved/care-levels-reviewed.md",
+      "sha256": "f46cb98b7e412505d277c996d2b6a6125e94fb76307c6b2fa5c12e0e330dfcff",
+      "receivedOn": "2026-11-07",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "7区分の表を自己判定に使わない説明を追加。認定の手順を申請前後の行動に整理し、30日の例外を明記。採用済みdescription維持。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "image": {
       "src": "/images/columns/care-levels-4eff2d4e8937.jpg",
@@ -1568,12 +1669,7 @@
     },
     "relatedArticleIds": [],
     "relatedService": null,
-    "relatedLinks": [
-      {
-        "href": "/use-cases/elderly/",
-        "label": "つながるQRの関連サービスを見る"
-      }
-    ],
+    "relatedLinks": [],
     "sources": [
       {
         "id": "source-1",
@@ -1589,9 +1685,15 @@
       },
       {
         "id": "source-3",
-        "label": "厚生労働省｜介護保険制度について",
-        "href": "https://www.mhlw.go.jp/content/12300000/000362938.pdf",
-        "checkedAt": "2026-11-07"
+        "label": "厚生労働省｜介護保険制度の概要",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/gaiyo/index.html",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-4",
+        "label": "厚生労働省｜介護保険サービスの流れ",
+        "href": "https://www.mhlw.go.jp/content/11909000/001512330.pdf",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -1665,7 +1767,14 @@
           },
           {
             "type": "paragraph",
-            "text": "※これは一般的な目安です。実際の認定は、身体の状態だけでなく、認知機能や介護に必要な手間なども考慮して決まります。"
+            "text": "表の状態像は認定結果を予測するための基準ではありません。歩行や食事の状態が似ていても、認知機能、見守りや介護に必要な手間によって区分が異なります。要介護認定等基準時間も、家庭で介護した実測時間や利用できるサービス時間をそのまま示すものではありません。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html",
+            "label": "厚生労働省の要介護認定の説明",
+            "prefix": "判定の考え方は、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -1723,35 +1832,19 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "要支援・要介護の区分は、市区町村が審査を経て認定します。"
+            "text": "申請は市区町村の介護保険窓口などへ行います。認定調査の結果と主治医意見書をもとに、一次判定と介護認定審査会の審査・判定を経て、市区町村が認定します。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "申請時：保険証など必要書類、主治医、窓口や代行申請の方法を確認する。",
+              "調査前：普段の生活で困ることや介助の内容を、具体例として整理する。",
+              "結果後：区分だけで判断せず、地域包括支援センターやケアマネジャーと利用する支援を相談する。"
+            ]
           },
           {
             "type": "paragraph",
-            "text": "流れは次のとおりです。"
-          },
-          {
-            "type": "paragraph",
-            "text": "1. 市区町村に申請する"
-          },
-          {
-            "type": "paragraph",
-            "text": "2. 認定調査を受ける"
-          },
-          {
-            "type": "paragraph",
-            "text": "3. 主治医の意見書を作成してもらう"
-          },
-          {
-            "type": "paragraph",
-            "text": "4. 介護認定審査会などで審査・判定される"
-          },
-          {
-            "type": "paragraph",
-            "text": "5. 認定結果が通知される"
-          },
-          {
-            "type": "paragraph",
-            "text": "申請から認定結果の通知までは、原則30日以内とされています。"
+            "text": "認定通知は原則として申請から30日以内ですが、調査などに時間がかかる場合があります。遅れる場合の理由や見込み、結果を待つ間に必要な支援は、申請先へ確認してください。"
           }
         ]
       },
@@ -1780,33 +1873,6 @@
             "text": "まずは言葉の意味を知ることから、介護について考えてみませんか。"
           }
         ]
-      },
-      {
-        "id": "section-7",
-        "title": "関連記事",
-        "blocks": [
-          {
-            "type": "link",
-            "label": "老人ホームって種類が多すぎ！何が違うの？",
-            "href": "/column/senior-care-facility-types/"
-          }
-        ]
-      },
-      {
-        "id": "section-8",
-        "title": "参考資料",
-        "blocks": [
-          {
-            "type": "link",
-            "label": "厚生労働省｜要介護認定はどのように行われるか",
-            "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html"
-          },
-          {
-            "type": "link",
-            "label": "厚生労働省｜介護サービス情報公表システム",
-            "href": "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html"
-          }
-        ]
       }
     ],
     "cta": "none",
@@ -1825,7 +1891,8 @@
       }
     ],
     "generationRunId": null,
-    "promptVersion": null
+    "promptVersion": null,
+    "manuscriptReferences": true
   },
   {
     "id": "lost-wallet",
@@ -1844,16 +1911,16 @@
     "editionDate": "2026-11-09",
     "publishedTimestamp": "2026-11-09T08:00:00+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 2,
-    "approvalRevision": 2,
+    "contentRevision": 3,
+    "approvalRevision": 3,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/lost-wallet.md",
-      "sha256": "dcfdf6ff0306ea83223186594947cff4bc4aa487e33c522a719291caf07df4d7",
+      "sourceFile": "src/content/columns/approved/lost-wallet-reviewed.md",
+      "sha256": "c2a9372248c7bfe9561d8871627bb36208113d456b75cb6ad1e43e6d09711023",
       "receivedOn": "2026-11-07",
       "receivedRevision": 1,
       "revisionHistory": [
@@ -1861,6 +1928,11 @@
           "revision": 2,
           "change": "SEOタイトル・meta description・冒頭要約の改訂。本文各節は変更なし。",
           "approvalEvidence": "ユーザーのPR #142確認メッセージで改善方針を了承。承認日は未確定のため記録しない。mainへのマージ・本番公開の承認は含まない。"
+        },
+        {
+          "revision": 3,
+          "change": "カード停止・遺失届・施設照会を行動表に。3か月の起点を公告に訂正。承認済みSEOタイトル・descriptionを維持。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
         }
       ]
     },
@@ -1887,6 +1959,12 @@
         "label": "警察庁｜落とし物・忘れ物",
         "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
         "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "review-2",
+        "label": "警察庁｜遺失物法等の解釈運用基準",
+        "href": "https://www.npa.go.jp/laws/notification/kanbou/kaikei/20231222ishitsu-kaishakuunyoukijyun.pdf",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -1896,7 +1974,37 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "財布が見つからない場合は、被害の拡大を防ぐため、クレジットカードやキャッシュカードの利用停止を優先しましょう。カード会社や金融機関の公式窓口に連絡し、停止・再発行の手続きを確認します。運転免許証やマイナンバーカードなどが入っていた場合も、それぞれの紛失手続きが必要です。"
+            "text": "財布がないと気づいたら、カード類の利用停止と警察への遺失届、立ち寄った施設への問い合わせを進めましょう。財布が戻るのを待ってから停止するのではなく、不正利用への対応を先に行います。盗難が疑われる場合は、その事情も警察へ伝えてください。"
+          },
+          {
+            "type": "table",
+            "caption": "財布をなくしたときの連絡先と対応",
+            "headers": [
+              "対象",
+              "まずすること",
+              "注意点"
+            ],
+            "rows": [
+              [
+                "クレジット・キャッシュカード",
+                "発行会社・金融機関の公式窓口で停止",
+                "利用履歴を確認し、覚えのない利用を申し出る"
+              ],
+              [
+                "財布全体",
+                "警察へ遺失届、利用した店・交通機関へ問い合わせ",
+                "届出だけではカードの利用は止まらない"
+              ],
+              [
+                "運転免許証・本人確認書類",
+                "発行元の紛失・再交付案内を確認",
+                "書類ごとに停止や再交付の手続きが異なる"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "連絡先を検索するときは、広告や届いたSMSのリンクだけを頼らず、発行元の公式サイト・公式アプリなどで確かめます。"
           }
         ]
       },
@@ -1936,7 +2044,12 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "警察に提出された落とし物について、原則3か月以内に持ち主が判明しなかった場合、一定の条件を満たす拾得者が所有権を取得できることがあります。ただし、すべての物が対象ではありません。運転免許証やキャッシュカードなど、個人情報に関わる物には例外があります。また、拾得者が権利を取得した場合でも、所定の引取期間内に受け取らなければ権利を失うことがあります。"
+            "text": "一般の遺失物は、警察の公告後3か月以内に持ち主が判明しない場合、条件を満たす拾得者が所有権を取得することがあります。起点は、落とした日や店へ届けた日ではありません。個人情報を含む物などの例外や、権利の放棄・喪失、引取り期限にも注意が必要です。"
+          },
+          {
+            "type": "link",
+            "href": "/column/lost-property-retention/",
+            "label": "店舗と警察の保管・届出ルールを確認する"
           }
         ]
       },
@@ -1996,17 +2109,24 @@
     "editionDate": "2026-11-10",
     "publishedTimestamp": "2026-11-10T08:00:00+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/dementia-forgetfulness.md",
-      "sha256": "460928d6861b83c99af84bc17673c9818bfe4699464926e1cd86e3aa0e899cf7",
-      "receivedOn": "2026-11-07"
+      "sourceFile": "src/content/columns/approved/dementia-forgetfulness-reviewed.md",
+      "sha256": "c83860330358b0af4208cbbfc495bdd73f0e6644524a880766f8372c07255d37",
+      "receivedOn": "2026-11-07",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "学会資料とHDS-Rの9項目・30点・20点以下の目安を照合。所要時間の記載を削減し、診断の限界と受診準備を強化。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "image": {
       "src": "/images/columns/dementia-forgetfulness.webp",
@@ -2018,12 +2138,7 @@
       "dementia-early-signs"
     ],
     "relatedService": null,
-    "relatedLinks": [
-      {
-        "href": "/use-cases/elderly/",
-        "label": "つながるQRの関連サービスを見る"
-      }
-    ],
+    "relatedLinks": [],
     "manuscriptReferences": true,
     "sources": [
       {
@@ -2060,7 +2175,18 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "認知機能を調べる検査の一つに、改訂長谷川式認知症スケール（HDS-R）があります。年齢や日付、場所の確認、単語の記憶、計算、数字を逆から言う課題など、9項目で構成されています。30点満点で、一般に20点以下が認知症を疑う目安とされています。検査時間はおおむね6〜10分です。ただし、20点以下だから必ず認知症というわけではなく、21点以上なら問題がないという意味でもありません。聴力や体調、教育歴などの影響も考慮し、医師が総合的に判断します。"
+            "text": "認知機能を調べる検査の一つに、改訂長谷川式認知症スケール（HDS-R）があります。年齢や日付、場所の確認、単語の記憶、計算、数字を逆から言う課題など、9項目で構成されています。30点満点で、一般に20点以下が認知症を疑う目安とされています。ただし、20点以下だから必ず認知症というわけではなく、21点以上なら問題がないという意味でもありません。聴力や体調、教育歴などの影響も考慮し、医師が総合的に判断します。"
+          },
+          {
+            "type": "paragraph",
+            "text": "HDS-Rは認知機能のスクリーニング検査であり、原因となる病気を単独で特定する検査ではありません。自宅で問題を暗記して受検を繰り返すより、普段の生活の変化を医師へ伝えることを優先しましょう。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.jpn-geriat-soc.or.jp/tool/tool_02",
+            "label": "日本老年医学会の認知機能検査の解説",
+            "prefix": "検査の位置付けは、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -2081,6 +2207,14 @@
           {
             "type": "paragraph",
             "text": "本人や家族が気づいた変化を、具体的に記録しておくと診察に役立ちます。例えば、「先月から同じ質問が増えた」「以前はできていた支払いが難しくなった」といった情報です。服用中の薬や、過去の病気についても伝えられるようにしておきましょう。急激な意識の変化や、突然の言語障害・麻痺などがある場合は、通常のもの忘れ外来の予約を待たず、緊急の医療対応が必要です。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "変化の始まった時期と、家事・支払い・仕事などで困る具体的な場面。",
+              "お薬手帳、持病、睡眠や気分の変化、視力・聴力の状況。",
+              "本人が知りたいこと、家族が相談したいこと。可能なら本人の同意を得て家族も同席します。"
+            ]
           }
         ]
       },
@@ -2130,17 +2264,24 @@
     "editionDate": "2026-11-11",
     "publishedTimestamp": "2026-11-11T00:03:38+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 2,
-    "approvalRevision": 2,
+    "contentRevision": 3,
+    "approvalRevision": 3,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/lost-property-retention.md",
-      "sha256": "74f11df549a483c9243007661f4c3d7b25b4bd5c02e0cea9de7c26dda99d4b93",
-      "receivedOn": "2026-11-07"
+      "sourceFile": "src/content/columns/approved/lost-property-retention-reviewed.md",
+      "sha256": "7580bf211855ea2291f9d2790b4b2e29c0acc0ee1df898ee829bb8ab1da3d322",
+      "receivedOn": "2026-11-07",
+      "revisionHistory": [
+        {
+          "revision": 3,
+          "change": "速やかな返還・提出義務と権利喪失期限を分離。3か月は公告起点へ訂正し、主体別の比較表と所有権取得の例外を追加。採用済みSEO維持。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "image": {
       "src": "/images/columns/lost-property-retention.webp",
@@ -2171,6 +2312,18 @@
         "label": "石川県警察｜落とし物・忘れ物（施設占有者の方へ）",
         "href": "https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html",
         "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "review-3",
+        "label": "警察庁｜遺失物法等の解釈運用基準",
+        "href": "https://www.npa.go.jp/laws/notification/kanbou/kaikei/20231222ishitsu-kaishakuunyoukijyun.pdf",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-5",
+        "label": "e-Gov法令検索｜遺失物法（13・17・34〜36条）",
+        "href": "https://laws.e-gov.go.jp/law/418AC0000000073",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -2180,7 +2333,49 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "忘れ物の扱いは、施設の種類や管理体制によって異なります。店舗などの施設占有者は、拾得物を速やかに落とした方へ返還するか、警察へ提出する必要があります。また、一般的な施設占有者は、拾得物の交付を受けた日、または自ら拾った日から1週間以内に警察へ提出しないと、報労金を請求する権利や所有権を取得する権利などを失います。ただし、一定の要件を満たす特例施設占有者には、所定の手続きを経て自ら保管できる仕組みがあります。そのため、「すべての店舗で3か月間保管する」といった一律の説明は正確ではありません。"
+            "text": "店舗の忘れ物に「どの店も3か月保管」という一律のルールはありません。遺失物法13条により、施設占有者は速やかに持ち主へ返還するか、警察署長へ提出することが基本です。一定の要件を満たす特例施設占有者には、法17条に基づく届出をして保管できる仕組みがあります。"
+          },
+          {
+            "type": "table",
+            "caption": "拾った場所・立場による手続きの違い",
+            "headers": [
+              "立場",
+              "基本の対応",
+              "権利に関する期間・例外"
+            ],
+            "rows": [
+              [
+                "道路などで拾った方",
+                "速やかに持ち主へ返還するか警察へ提出",
+                "拾得から7日以内の提出をしないと、報労金・所有権取得等の権利を失う"
+              ],
+              [
+                "駅・店などの施設内で拾った方",
+                "速やかに施設占有者へ交付",
+                "拾得から24時間以内に交付しないと、拾得者の権利を失う"
+              ],
+              [
+                "一般の施設占有者",
+                "速やかに持ち主へ返還するか警察へ提出",
+                "交付・拾得から1週間以内に提出しないと、施設占有者の権利を失う"
+              ],
+              [
+                "特例施設占有者",
+                "所定の届出・保管手続き",
+                "保管できる物件には条件がある。危険物や高額な物などの例外は警察へ確認"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "7日・24時間・1週間は、遺失物法34条の権利喪失に関する期間です。その期間まで対応せず待ってよい、という意味ではありません。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.npa.go.jp/laws/notification/kanbou/kaikei/20231222ishitsu-kaishakuunyoukijyun.pdf",
+            "label": "警察庁の遺失物法等の解釈運用基準",
+            "prefix": "提出と権利の期間は、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -2190,7 +2385,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "道路などで拾った場合、拾得者の権利を維持するには、原則として拾得から7日以内に警察へ提出する必要があります。一方、駅や店舗など管理者のいる施設で拾った場合は、原則24時間以内に施設の管理者へ届け出る必要があります。期限を過ぎると、報労金や所有権取得などの権利を失うことがあります。"
+            "text": "拾った方は、施設内ならまず施設の管理者へ、路上などなら警察へ速やかに届けます。提出・交付時には、日時・場所・品物の特徴を伝え、受領の記録を受け取りましょう。施設占有者は、受領日と拾得日、持ち主への返還、警察への提出を記録しておくと、対応状況を確認できます。"
           }
         ]
       },
@@ -2200,7 +2395,11 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "警察に提出された落とし物について、原則3か月以内に持ち主が判明しなければ、拾得者が所有権を取得できる場合があります。ただし、拾得者が権利を放棄している場合や、個人情報を含む物などは例外です。また、所有権を取得できる場合でも、警察が指定する期間内に引き取る必要があります。「拾って届けたから、3か月後には必ず自分の物になる」というわけではありません。"
+            "text": "民法240条では、公告後3か月以内に持ち主が判明しない場合に、拾得者が所有権を取得する仕組みを定めています。「店舗で3か月保管すれば処分できる」という意味ではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "遺失物法35条は、身分証明書や個人情報が記録された物など、拾得者が所有権を取得できない物を定めています。取得できる物でも、法36条により取得から2か月以内に引き取らないと所有権を失います。個別の品物の扱いは、提出先の警察へ確認してください。"
           }
         ]
       },
@@ -2230,7 +2429,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "持ち物に連絡用のQRコードが付いていれば、拾った方が持ち主に連絡できる可能性があります。株式会社QRingの「つながるQR」は、QRコードをスキャンして、互いの電話番号を知らせずに通話できるサービスです。店舗や施設での忘れ物対応において、持ち主への連絡を補助する手段として考えられます。ただし、遺失物法に基づく管理や警察への提出を代替するものではありません。"
+            "text": "持ち物に連絡用のQRコードが付いていれば、拾った方が持ち主に連絡できる可能性があります。株式会社QRingの「つながるQR」は、QRコードをスキャンし、画面の「電話をかける」をタップして、互いの本来の電話番号を相手に表示せずに通話できるサービスです。店舗や施設での忘れ物対応において、持ち主への連絡を補助する手段として考えられます。ただし、遺失物法に基づく管理や警察への提出を代替するものではありません。"
           }
         ]
       },
@@ -2280,17 +2479,24 @@
     "editionDate": "2026-11-12",
     "publishedTimestamp": "2026-11-12T05:52:51+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/photo-location-privacy.md",
-      "sha256": "2868e2cb3a91c8b29a729f32cd72dc22386478810bb743e408163b7a5306702c",
-      "receivedOn": "2026-11-07"
+      "sourceFile": "src/content/columns/approved/photo-location-privacy-reviewed.md",
+      "sha256": "2eb2387aafd3c3e224e8d554388f4cf46c3e207b9c7059bee5c4cc2ef1c4f934",
+      "receivedOn": "2026-11-07",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "将来の記録停止と既存写真の削除を分離。OS・アプリ差、Google フォトのカメラ記録情報の制約を具体化。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "image": {
       "src": "/images/columns/photo-location-privacy.webp",
@@ -2317,10 +2523,16 @@
         "checkedAt": "2026-11-07"
       },
       {
-        "id": "source-2",
-        "label": "岡山県｜写真をSNSにアップしてもいいですか？",
-        "href": "https://www.pref.okayama.jp/uploaded/attachment/233419.pdf",
-        "checkedAt": "2026-11-07"
+        "id": "review-3",
+        "label": "Google フォト ヘルプ｜写真の撮影場所の情報を確認、編集する",
+        "href": "https://support.google.com/photos/answer/6153599?hl=ja",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-4",
+        "label": "Apple｜写真とプライバシー（位置情報の削除・共有）",
+        "href": "https://www.apple.com/jp/legal/privacy/data/ja/photos/",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -2351,6 +2563,18 @@
           {
             "type": "paragraph",
             "text": "写真に記録されたGPS情報を削除しても、背景から場所が推測される可能性は残ります。特に、自宅の窓から見える景色や、マンションの共用部分、近所の店舗などは注意したい対象です。また、同じ場所で撮影した写真を何度も投稿すると、生活圏や行動パターンが推測されやすくなる場合があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "これから撮る写真に位置情報を記録しない設定と、すでに撮った写真から位置情報を除く操作は別です。設定をオフにしても、過去の写真の情報が自動的に消えるわけではありません。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "iPhone：カメラの位置情報へのアクセス設定を確認します。既存の写真は「写真」アプリで情報を開き、位置情報の調整・削除や共有時の位置情報の設定を確認します。表示名はOSにより異なります。",
+              "Android：カメラアプリの位置情報・撮影場所の記録設定を確認します。メーカーごとに場所や名称が異なるため、端末の公式案内を参照してください。",
+              "Google フォト：推定された撮影場所の編集と、カメラが記録した位置情報の削除は同じではありません。Google フォトではカメラが自動追加した撮影場所を編集・削除できない場合があります。共有先での表示も確認します。"
+            ]
           }
         ]
       },
@@ -2420,17 +2644,24 @@
     "editionDate": "2026-11-13",
     "publishedTimestamp": "2026-11-13T07:46:47+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/unidentified-elderly.md",
-      "sha256": "fa14c23e9470188c4f030d78f645986511347602b51e8b3c6c10b648aad72d37",
-      "receivedOn": "2026-11-07"
+      "sourceFile": "src/content/columns/approved/unidentified-elderly-reviewed.md",
+      "sha256": "1990310bbbdf8f45d11c6ef965fc96b7646ace7a04a24022e3a276bf49676ae5",
+      "receivedOn": "2026-11-07",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "更新時点が混在する自治体別人数の羅列を削減。届出統計と保護後の身元不明を区別する読み方・家族の具体的行動へ置換。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "image": {
       "src": "/images/columns/unidentified-elderly.webp",
@@ -2495,6 +2726,13 @@
           {
             "type": "paragraph",
             "text": "警察庁によると、2025年に届け出があった認知症またはその疑いに係る行方不明者は、全国で17,345人でした。これは行方不明者全体の約2割に当たります。この数字は届出に基づくものであり、65歳以上の人だけを集計したものではありません。また、同じ人が複数回届け出られる場合があります。警察庁は、認知症に係る行方不明者の約95％が、届出受理から3日以内に生存して発見されていると説明しています。一方、発見までの期間が長くなると、生存確認が難しくなる傾向も指摘されています。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.npa.go.jp/news/release/2026/R07yukuefumeisha.pdf",
+            "label": "警察庁の2025年の行方不明者届受理等の統計",
+            "prefix": "人数と対象の定義は、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -2514,7 +2752,19 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "全国で何人が身元不明のまま保護されているのか、最新の統一された人数を示す資料は、今回確認した範囲では見つかりませんでした。ただし、自治体ごとの公表例があります。岡山県では、2025年11月1日時点で、身元不明のまま保護されている方が9人と公表されています。なお、この9人については、認知症またはその疑いはないとされています。岐阜県では、2025年12月末時点で、施設などで保護されている身元不明の方が3人と公表されています。一方、千葉県では、2026年9月1日時点で、県内で保護されている認知症によると思われる身元不明高齢者は0人と公表されています。これらは対象者の定義や調査時点が異なるため、単純に足して全国の人数を推計することはできません。"
+            "text": "「行方不明者届の人数」と「保護後も身元が判明しない方の人数」は別の統計です。自治体の身元不明者情報も、対象者の範囲や公表時点が異なるため、そのまま足して全国の人数にはできません。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "対象：認知症またはその疑いのある方に限定しているか、他の身元不明者も含むか。",
+              "時点：何年何月時点の人数か。現在の掲載人数と過去の調査結果を混同していないか。",
+              "状況：行方を探している方なのか、すでに保護されて身元確認中の方なのか。"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "家族を探す際は、厚生労働省の案内から各自治体の最新の公開情報を確認します。公開されていない情報もあるため、掲載がないことだけで保護されていないとは判断できません。"
           }
         ]
       },
@@ -2535,6 +2785,14 @@
           {
             "type": "paragraph",
             "text": "行方がわからなくなった家族を探す場合は、速やかに警察へ相談します。加えて、自治体の高齢者福祉担当窓口や、厚生労働省が案内する身元不明者情報を確認する方法があります。身元不明の方を保護している自治体では、公開可能な範囲で本人の特徴などを掲載し、心当たりのある方からの問い合わせを受け付けている場合があります。個人情報や本人の尊厳に配慮しながら、関係機関が連携することが重要です。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "警察へ：最近の写真、最後に見た日時・場所、服装、持ち物、持病や必要な配慮を伝える。",
+              "自治体へ：高齢者福祉担当などに、地域の捜索・照会の仕組みを確認する。",
+              "情報発信：写真や病歴などを広く公開する前に、警察・自治体と必要な範囲を相談する。"
+            ]
           }
         ]
       },
@@ -2544,7 +2802,7 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "本人が連絡先を説明できない場合に備え、持ち物に連絡手段を用意しておく方法があります。ただし、氏名・住所・電話番号を誰でも見られる形で表示することには、プライバシー上の懸念があります。株式会社QRingの「つながるQR」は、QRコードをスキャンした方が、互いの電話番号を知らせずに通話できるサービスです。本人の持ち物から家族や登録先へ連絡するための補助的な手段として活用が考えられます。ただし、GPSによる位置追跡や身元の公的な証明を行うものではありません。"
+            "text": "本人が連絡先を説明できない場合に備え、持ち物に連絡手段を用意しておく方法があります。ただし、氏名・住所・電話番号を誰でも見られる形で表示することには、プライバシー上の懸念があります。株式会社QRingの「つながるQR」は、QRコードをスキャンした方が、画面の「電話をかける」をタップすると、互いの本来の電話番号を相手に表示せずに通話できるサービスです。本人の持ち物から家族や登録先へ連絡するための補助的な手段として活用が考えられます。ただし、GPSによる位置追跡や身元の公的な証明を行うものではありません。"
           }
         ]
       },
@@ -2594,17 +2852,24 @@
     "editionDate": "2026-11-14",
     "publishedTimestamp": "2026-11-14T02:22:05+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/dog-microchip.md",
-      "sha256": "e7370a3b6dba2986a40d8426a3f3b273997a7a82abc0c769a358925b26014b35",
-      "receivedOn": "2026-11-07"
+      "sourceFile": "src/content/columns/approved/dog-microchip-reviewed.md",
+      "sha256": "891eff5c9588931fee59bde1c93dcb4240e164a7f847bc1da734b026011b4ba1",
+      "receivedOn": "2026-11-07",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "2,331件の調査母数と頭数の違いを補足。装着努力義務・登録／変更を区別し、各手段の役割比較を追加。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "image": {
       "src": "/images/columns/dog-microchip.webp",
@@ -2661,6 +2926,17 @@
           {
             "type": "paragraph",
             "text": "2025年度の日本愛玩動物協会の調査では、犬・猫の飼い主などから得た有効回答2,331件のうち、48.0％が「すべての犬・猫に装着している」と回答しました。「一部の犬・猫に装着している」は9.2％、「全く装着していない」は42.7％でした。つまり、回答者の約57％が、飼育する犬・猫の少なくとも一部にマイクロチップを装着していると答えています。ただし、これは調査対象者の回答割合であり、犬だけの全国装着率を示す数字ではありません。環境省によると、2024年度末時点で、制度に基づく犬・猫の飼い主などの登録情報は190万頭を超えています。登録頭数と装着率は異なるため、混同しないことが重要です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "この調査の単位は、犬の頭数ではなく回答件数です。「すべてに装着」と「一部に装着」を足しても、犬の何％に装着されているかは算出できません。環境省の登録数も犬・猫を含む制度上の登録の集計で、国内すべての犬の装着率とは比較できません。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.jpc.or.jp/pdf/r7_02_report.pdf",
+            "label": "日本愛玩動物協会の2025年度調査・表6",
+            "prefix": "回答件数と割合は、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -2681,6 +2957,10 @@
           {
             "type": "paragraph",
             "text": "2022年6月1日から、ブリーダーやペットショップなどで販売される犬・猫について、マイクロチップの装着と登録が義務化されました。購入した飼い主は、所有者情報を自分の情報へ変更登録する必要があります。一方、それ以前から飼育している犬などについては、すべての飼い主に新たな装着が一律に義務付けられているわけではありません。装着済みの犬を譲り受けた場合や、新たに装着した場合には、必要な登録手続きを確認しましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "装着・登録が義務となる販売業者と、一般の飼い主の装着の努力義務は区別します。すでに装着された犬・猫を迎えた場合は変更登録、新たに装着した場合は登録が必要です。環境省の登録制度と、犬の登録・狂犬病予防などの手続きも区別し、必要な手続きを自治体や獣医師へ確認しましょう。"
           }
         ]
       },
@@ -2701,6 +2981,32 @@
           {
             "type": "paragraph",
             "text": "マイクロチップの読み取りには専用機器が必要です。そのため、一般の方が犬を発見しても、その場ですぐに飼い主を確認できるとは限りません。首輪や迷子札は、発見者が連絡先などを確認するための補助的な手段です。ただし、首輪が外れる可能性もあります。マイクロチップ、迷子札、必要に応じた位置確認手段などを組み合わせて備えることが大切です。"
+          },
+          {
+            "type": "table",
+            "caption": "マイクロチップと迷子対策の役割",
+            "headers": [
+              "方法",
+              "発見前に探す",
+              "保護された後"
+            ],
+            "rows": [
+              [
+                "マイクロチップ",
+                "位置の追跡はできない",
+                "専用読取り機と登録情報の照合"
+              ],
+              [
+                "GPS端末",
+                "通信・電池等の条件で位置確認",
+                "端末を携帯していることが前提"
+              ],
+              [
+                "迷子札・連絡用QRコード",
+                "位置の追跡はしない",
+                "発見者が表示・読取りをして連絡。QRの機能はサービスによる"
+              ]
+            ]
           }
         ]
       },
@@ -2750,17 +3056,24 @@
     "editionDate": "2026-11-15",
     "publishedTimestamp": "2026-11-15T00:30:27+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": null,
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/care-insurance-age.md",
-      "sha256": "2b845b4839717e9b240f67f65fbd011924a4a0a239af3911ac678bcb18275e54",
-      "receivedOn": "2026-11-07"
+      "sourceFile": "src/content/columns/approved/care-insurance-age-reviewed.md",
+      "sha256": "c41759528f72a3115c9c77fb2ef7b22961cd3d194f098b4552c635a8ba9d1d44",
+      "receivedOn": "2026-11-07",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "加入年齢・受給条件を表で対照し、保険料と利用者負担を明確化。認定手順は8日記事へ案内。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "image": {
       "src": "/images/columns/care-insurance-age.webp",
@@ -2773,25 +3086,26 @@
       "senior-care-facility-types"
     ],
     "relatedService": null,
-    "relatedLinks": [
-      {
-        "href": "/use-cases/elderly/",
-        "label": "つながるQRの関連サービスを見る"
-      }
-    ],
+    "relatedLinks": [],
     "manuscriptReferences": true,
     "sources": [
       {
         "id": "source-1",
-        "label": "厚生労働省｜介護保険制度について",
-        "href": "https://www.mhlw.go.jp/content/12300000/000362938.pdf",
-        "checkedAt": "2026-11-07"
+        "label": "厚生労働省｜介護保険制度の概要",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/gaiyo/index.html",
+        "checkedAt": "2026-11-28"
       },
       {
         "id": "source-2",
         "label": "厚生労働省｜第9期介護保険の第1号保険料等",
         "href": "https://www.mhlw.go.jp/stf/newpage_40211.html",
         "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "review-3",
+        "label": "厚生労働省｜介護保険サービスの流れ",
+        "href": "https://www.mhlw.go.jp/content/11909000/001512330.pdf",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -2802,6 +3116,27 @@
           {
             "type": "paragraph",
             "text": "日本の公的介護保険制度では、40歳から64歳までの医療保険加入者が第2号被保険者、65歳以上の方が第1号被保険者となります。40歳から64歳までの方は、原則として医療保険料とあわせて介護保険料を支払います。65歳以上になると、市区町村が定める介護保険料を負担します。ただし、保険料を支払っているだけで、誰でも介護サービスを利用できるわけではありません。"
+          },
+          {
+            "type": "table",
+            "caption": "介護保険の加入年齢と利用条件",
+            "headers": [
+              "区分",
+              "対象",
+              "介護保険サービスの利用条件"
+            ],
+            "rows": [
+              [
+                "第1号被保険者",
+                "65歳以上",
+                "原因を問わず、要支援・要介護の認定等の条件を満たす場合"
+              ],
+              [
+                "第2号被保険者",
+                "40〜64歳の医療保険加入者",
+                "加齢に伴う特定疾病が原因で、要支援・要介護と認定された場合"
+              ]
+            ]
           }
         ]
       },
@@ -2812,6 +3147,13 @@
           {
             "type": "paragraph",
             "text": "65歳以上の方の介護保険料は、市区町村や本人・世帯の所得状況によって異なります。2024〜2026年度の全国平均の基準額は、月額6,225円です。年間に換算すると74,700円になります。ただし、これは全国平均の基準額であり、すべての人が同じ金額を支払うわけではありません。所得段階によって、基準額より低くなる人も、高くなる人もいます。40〜64歳の方の保険料は、加入する医療保険や報酬などによって異なります。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.mhlw.go.jp/stf/newpage_40211.html",
+            "label": "厚生労働省の第9期介護保険の第1号保険料",
+            "prefix": "基準額と対象期間は、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -2858,6 +3200,10 @@
           {
             "type": "paragraph",
             "text": "ただし、これは計算をわかりやすくするための例です。実際には、要介護度ごとの区分支給限度基準額、利用するサービスの種類、各種加算などによって支払額が変わります。また、施設での食費・居住費など、保険給付の対象外となる費用が発生することもあります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "毎月納める介護保険料と、サービス利用時の自己負担は別です。自己負担割合だけで家計負担を決めず、支給限度額を超える利用、食費・居住費、その他の費用も含めて見積もりを確認しましょう。"
           }
         ]
       },
@@ -2878,6 +3224,11 @@
           {
             "type": "paragraph",
             "text": "介護サービスの利用を希望する場合は、市区町村の介護保険担当窓口などに相談します。要介護・要支援認定の申請後、認定調査や主治医意見書などをもとに審査が行われます。認定結果に応じて、利用できるサービスを検討します。「まだ介護が必要かわからない」という段階なら、地域包括支援センターに相談することもできます。"
+          },
+          {
+            "type": "link",
+            "href": "/column/care-levels/",
+            "label": "要支援・要介護の区分と認定の流れを確認する"
           }
         ]
       },
@@ -2914,11 +3265,9 @@
     "id": "unknown-calls",
     "slug": "unknown-calls",
     "title": "知らない番号から電話が来たら、出るべき？",
-    "summary": "スマートフォンに突然、知らない番号からの着信。 「仕事の連絡かもしれない」「宅配便かな？」「大切な用事だったらどうしよう」。そんなふうに迷った経験はありませんか？",
+    "summary": "心当たりのない番号には、無理に出たり折り返したりする必要はありません。留守番電話などで用件を確かめ、必要なら自分で調べた公式窓口へ連絡しましょう。",
     "introduction": [
-      "スマートフォンに突然、知らない番号からの着信。",
-      "「仕事の連絡かもしれない」「宅配便かな？」「大切な用事だったらどうしよう」。そんなふうに迷った経験はありませんか？",
-      "最近では、警察官や金融機関を装った詐欺電話も問題になっています。では、知らない番号から電話がかかってきたとき、どう対応するのが安全なのでしょうか。"
+      "仕事や配送の連絡かもしれないと思うと、着信に迷うことがあります。番号の表示だけで相手を信用せず、用件と連絡先を別々に確かめる手順を紹介します。"
     ],
     "seoTitle": "知らない番号から電話が来たら出るべき？安全な対処法と詐欺対策",
     "metaDescription": "知らない番号から電話が来たら出るべき？警察を装った詐欺電話や国際電話の注意点、折り返す前の確認方法、家族でできる防犯対策を解説します。",
@@ -2931,12 +3280,12 @@
     "editionDate": "2026-11-16",
     "publishedTimestamp": "2026-11-16T00:57:00+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-14",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "relatedArticleIds": [
       "photo-location-privacy"
@@ -2955,12 +3304,6 @@
         "id": "source-2",
         "label": "警察庁｜警察に偽装した電話番号に注意",
         "href": "https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/250325/01.html",
-        "checkedAt": "2026-11-14"
-      },
-      {
-        "id": "source-3",
-        "label": "政府広報オンライン｜電話の向こうの「警察官」はホンモノ？",
-        "href": "https://www.gov-online.go.jp/article/202610/entry-11718.html",
         "checkedAt": "2026-11-14"
       },
       {
@@ -3022,20 +3365,13 @@
         "title": "知らない番号から着信があったら、どうする？",
         "blocks": [
           {
-            "type": "paragraph",
-            "text": "① まずは着信履歴を確認する。番号に見覚えがあるか、最近連絡を待っている相手がいないかを考えます。"
-          },
-          {
-            "type": "paragraph",
-            "text": "② 留守番電話やSMSを確認する。用件が残っていれば、相手を判断する手がかりになります。ただし、SMSに書かれたURLや電話番号が安全とは限りません。"
-          },
-          {
-            "type": "paragraph",
-            "text": "③ 公式サイトなどで連絡先を調べる。銀行や配送業者などを名乗る場合は、相手が伝えた番号ではなく、自分で確認した公式窓口を利用しましょう。"
-          },
-          {
-            "type": "paragraph",
-            "text": "④ 不審な番号には折り返さない。特に、身に覚えのない国際電話や、お金を要求する不審な連絡には注意が必要です。"
+            "type": "list",
+            "items": [
+              "心当たりを確認する：病院や配送など、連絡を待つ相手がいるか考える。",
+              "用件を確認する：留守番電話やSMSを見る。ただし、記載のURLや番号だけで信用しない。",
+              "公式窓口を調べる：銀行・警察などを名乗る相手には、公式サイトなどで調べた番号から確認する。",
+              "確認できなければ折り返さない：お金や認証コードを求められたときは、一度切って相談する。"
+            ]
           }
         ]
       },
@@ -3064,6 +3400,15 @@
           {
             "type": "paragraph",
             "text": "固定電話では番号表示や非通知着信の拒否、スマートフォンでは迷惑電話対策機能なども活用できます。"
+          },
+          {
+            "type": "paragraph",
+            "text": "連絡用サービスのプライバシー電話番号から着信する場合も、番号を表示しない仕組みが相手の身元や用件を保証するわけではありません。名乗りと用件を確認し、暗証番号や認証コードを伝えない基本は同じです。"
+          },
+          {
+            "type": "link",
+            "href": "/column/phone-number-personal-information/",
+            "label": "電話番号と個人情報の関係を確認する"
           }
         ]
       },
@@ -3102,9 +3447,16 @@
       "alt": "知らない番号からの着信に戸惑う高齢女性と、警察や銀行を装う電話への注意を示す水彩イラスト"
     },
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/unknown-calls.md",
-      "sha256": "8a97fb4773318c2e000a2ae2e42726dd8741aaf07a8094c2577a17bcd1881e35",
-      "receivedOn": "2026-11-14"
+      "sourceFile": "src/content/columns/approved/unknown-calls-reviewed.md",
+      "sha256": "67af8427fb83c52d0ae947a595b8621dc54e7f918ac763ce8ceed2b6bcbf7eec",
+      "receivedOn": "2026-11-14",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "要約と冒頭の逐語重複をデータ側で解消。4段階の確認をリストにし、プライバシー番号も安全保証ではないと整理。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     }
   },
   {
@@ -3129,25 +3481,29 @@
     "editionDate": "2026-11-17",
     "publishedTimestamp": "2026-11-17T05:57:38+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/dog-owner-voice.md",
-      "sha256": "41d245c618a21e9dc86ba847f01c0ef24aa48a116fd3f9811f99757a1d647338",
-      "receivedOn": "2026-11-16"
+      "sourceFile": "src/content/columns/approved/dog-owner-voice-reviewed.md",
+      "sha256": "48aecaf5aff0ce971649db4b218c7966e483d08c9dd3f5a77114be04f8246056",
+      "receivedOn": "2026-11-16",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "一次論文の所属・2022年・28頭・方法・82％と選抜条件を追加。録音での識別を電話・捜索効果へ外挿しないよう明記。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "cat-owner-memory"
     ],
-    "relatedService": {
-      "href": "/use-cases/pets/",
-      "label": "ペットの迷子への備え"
-    },
+    "relatedService": null,
     "relatedLinks": [
       {
         "href": "/column/dog-microchip/",
@@ -3170,18 +3526,22 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "犬は、声の特徴を手がかりに飼い主を認識できると考えられています。2022年に発表された研究では、犬が飼い主の声を、声に含まれる音響的な特徴から識別できることが示されました。"
+            "text": "2022年、ハンガリーのエトヴェシュ・ロラーンド大学などのGábor氏らは、飼い主と面識のない人の録音音声を用いて、犬が飼い主の声を選べるかを調べました。テスト対象は家庭犬28頭です。"
           },
           {
             "type": "paragraph",
-            "text": "つまり、犬は飼い主の顔やにおいだけでなく、声も手がかりにしているのです。ただし、すべての犬が同じように反応するわけではありません。年齢や経験、周囲の環境によっても反応は異なります。"
+            "text": "犬は、ついたての後ろから再生される声を聞いて選択し、テストで飼い主の声を選んだ割合は82％でした。音声の特徴を手がかりに、人を聞き分けることを支持する結果です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "ただし、課題の練習を経てテストに参加できた犬の結果であり、すべての犬に当てはまる成功率ではありません。特定の実験条件での音声の識別を、言葉の意味の理解や、迷子になった犬の行動へそのまま広げることもできません。"
           },
           {
             "type": "link",
-            "href": "/column/cat-owner-memory/",
-            "label": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
-            "prefix": "関連する内容として「",
-            "suffix": "」も参考になります。"
+            "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/",
+            "label": "Gábor氏らの原論文（2022年）",
+            "prefix": "対象・方法・結果は、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -3208,11 +3568,11 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "スマートフォンから飼い主の声を流すと、首をかしげたり、音のする方向を探したりする犬もいます。しかし、録音された声と実際の飼い主の声では、聞こえ方や周囲の情報が異なります。"
+            "text": "この研究は録音した声を使っていますが、電話越しに呼びかけたときの効果を検証した研究ではありません。端末からの音、音量、雑音、犬の状態が異なるため、「電話で飼い主の声を聞けば落ち着く」「声を聞けば戻る」とは結論できません。"
           },
           {
             "type": "paragraph",
-            "text": "反応しなかったからといって、飼い主を忘れたわけではありません。"
+            "text": "日常で録音音声に反応しなくても、それだけで飼い主を忘れたとは判断できません。"
           }
         ]
       },
@@ -3299,25 +3659,29 @@
     "editionDate": "2026-11-18",
     "publishedTimestamp": "2026-11-18T00:53:05+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/young-onset-dementia.md",
-      "sha256": "3f92eca2c8f75c284c5ce19ba19f181fc8754c6bd25bdede59bc05678d882600",
-      "receivedOn": "2026-11-16"
+      "sourceFile": "src/content/columns/approved/young-onset-dementia-reviewed.md",
+      "sha256": "2345ce5aa13fb9e033d460af52eb0ae5d9589a1bc5882e0473e073e1514620cc",
+      "receivedOn": "2026-11-16",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "発症年齢と診断年齢を区別。高齢者一般の記事と異なる就労・家計・家族支援の相談準備を補足。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "monitoring-and-surveillance"
     ],
-    "relatedService": {
-      "href": "/use-cases/elderly/",
-      "label": "高齢者の見守りへの活用"
-    },
+    "relatedService": null,
     "relatedLinks": [
       {
         "href": "/column/dementia-early-signs/",
@@ -3358,6 +3722,10 @@
             "label": "「もしかして認知症？」気になる初期症状をチェック",
             "prefix": "関連する内容として「",
             "suffix": "」も参考になります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "「65歳未満」は診断を受けた年齢ではなく、発症した年齢を指します。いつから変化があったかが分かりにくい場合もあるため、本人や家族だけで線引きせず医師へ相談します。"
           }
         ]
       },
@@ -3413,6 +3781,18 @@
           {
             "type": "paragraph",
             "text": "まずは、かかりつけ医や専門の医療機関に相談する方法があります。自治体の相談窓口や、若年性認知症支援コーディネーターなども相談先です。若年性認知症では、医療だけでなく、仕事の継続、経済面、家族の生活など、幅広い支援が必要になることがあります。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "受診：仕事や生活で起きた変化と時期、服薬、睡眠・気分の変化を具体的に伝える。",
+              "仕事：本人の意向を踏まえ、業務の調整や職場の相談先を検討する。診断だけを理由に退職を急がない。",
+              "暮らし：収入、家族の役割、利用できる制度を、若年性認知症支援コーディネーターなどへ相談する。"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "利用できる制度には年齢・加入・認定などの条件があります。支援が一律に受けられると決めつけず、相談窓口で個別に確認しましょう。"
           }
         ]
       },
@@ -3486,17 +3866,24 @@
     "editionDate": "2026-11-19",
     "publishedTimestamp": "2026-11-19T08:00:00+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/wallet-contents-safety.md",
-      "sha256": "f611c2da1b2e4f816dc52da51b3f31e6e979a8226ba6dbb0e499b2aa244da463",
-      "receivedOn": "2026-11-16"
+      "sourceFile": "src/content/columns/approved/wallet-contents-safety-reviewed.md",
+      "sha256": "49abb0494610ee6be934e517cf90beafa4e99fd2e1c7b797e2c01789952e55a8",
+      "receivedOn": "2026-11-16",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "必要／別保管／不要の実用表を追加。免許証等の携帯が必要な場面を尊重し、紛失後の詳細は9日記事へ。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "why-we-misplace-things"
@@ -3580,6 +3967,36 @@
           {
             "type": "paragraph",
             "text": "ただし、日常生活に必要な身分証明書や医療関係の書類まで、一律に持ち歩かない方がよいわけではありません。自分の生活に合わせて判断することが大切です。"
+          },
+          {
+            "type": "table",
+            "caption": "財布の中身を整理する目安",
+            "headers": [
+              "分け方",
+              "例",
+              "判断すること"
+            ],
+            "rows": [
+              [
+                "その日に必要なもの",
+                "支払い用カード、必要な本人確認書類",
+                "目的・支払い方法に合わせ、必要数を選ぶ"
+              ],
+              [
+                "財布と分けておく情報",
+                "カード会社の紛失窓口、手続きに必要な控え",
+                "安全な場所に保管し、財布紛失時にも確認できるようにする"
+              ],
+              [
+                "持ち歩かないもの",
+                "暗証番号のメモ、不要なレシート・期限切れカード",
+                "番号とカードを一緒に失わない。個人情報のある紙は適切に処分する"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "免許証などは、運転・手続きの予定によって携帯が必要です。「本人確認書類はすべて自宅へ」と一律に減らすのではなく、その日の必要性で決めましょう。"
           }
         ]
       },
@@ -3590,6 +4007,11 @@
           {
             "type": "paragraph",
             "text": "財布に何を入れているか、定期的に確認しておきましょう。クレジットカード会社の連絡先などは、財布とは別の安全な場所に控えておくと便利です。また、財布を落とした場合は、必要に応じて警察に遺失届を提出し、カード会社などに連絡しましょう。"
+          },
+          {
+            "type": "link",
+            "href": "/column/lost-wallet/",
+            "label": "なくした直後のカード停止・遺失届の手順"
           }
         ]
       },
@@ -3663,27 +4085,31 @@
     "editionDate": "2026-11-20",
     "publishedTimestamp": "2026-11-20T04:19:12+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/qr-code-inventor.md",
-      "sha256": "e947a72f1878d843f12ab98d685576a8ac6a8a41699afd540e581745d932a08f",
+      "sourceFile": "src/content/columns/approved/qr-code-inventor-reviewed.md",
+      "sha256": "73e103872588511d259db2fcf49f06a5e07bec853a2ac80a5b9821f0f84806d6",
       "receivedOn": "2026-11-16",
-      "approvedOn": "2026-11-20"
+      "approvedOn": "2026-11-20",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "歴史を中心に標準化・特許権不行使・商標を区別。QR自体とサービスの技術を分け、仕組みは27日記事へ。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "qr-code-scan-mechanism",
       "number-private-calls"
     ],
-    "relatedService": {
-      "href": "/service/",
-      "label": "つながるQRのサービスと利用条件"
-    },
+    "relatedService": null,
     "relatedLinks": [],
     "manuscriptReferences": true,
     "sources": [
@@ -3704,6 +4130,12 @@
         "label": "株式会社QRing｜つながるQR サービス紹介",
         "href": "https://www.qring.jp/service/",
         "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "review-4",
+        "label": "特許庁｜QRコードの開発と普及",
+        "href": "https://www.jpo.go.jp/news/koho/innovation/01_qrcode.html",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -3774,27 +4206,25 @@
           {
             "type": "paragraph",
             "text": "さらに、決済、商品管理、交通、医療、観光など、さまざまな分野へ活用が広がっています。"
+          },
+          {
+            "type": "paragraph",
+            "text": "普及には、読み取り機器やスマートフォンの広がりに加え、規格化と利用しやすい仕組みが関わっています。デンソーウェーブは標準化されたQRコードに関する特許権を行使しない方針を示していますが、QRコードという名称は同社の登録商標です。「誰でも使える」と「権利が存在しない」は同じではありません。"
+          },
+          {
+            "type": "link",
+            "href": "/column/qr-code-scan-mechanism/",
+            "label": "QRコードの模様を読み取る仕組みについて"
           }
         ]
       },
       {
         "id": "section-5",
-        "title": "QRコードは人と人をつなぐ技術にも",
+        "title": "発明されたコードと、その先のサービス",
         "blocks": [
           {
             "type": "paragraph",
-            "text": "現在では、QRコードは情報を見るためだけのものではありません。例えば「つながるQR」は、QRコードをスキャンすることで、個人の電話番号を知らせずに通話できるサービスです。"
-          },
-          {
-            "type": "paragraph",
-            "text": "もともとは工場の管理業務を便利にするために生まれた技術が、今では人と人のコミュニケーションにも活用されています。"
-          },
-          {
-            "type": "link",
-            "href": "/service/",
-            "label": "つながるQRのサービスと利用条件",
-            "prefix": "利用条件は「",
-            "suffix": "」で確認できます。"
+            "text": "QRコードが担うのは、記録された文字列などを読み取る入口です。読み取った後に情報を表示するか、通話や決済へ進むかは、記録内容と接続先のサービスによって変わります。QRコードの発明と、それを利用する個別のサービスの技術は区別して考えます。"
           }
         ]
       },
@@ -3856,7 +4286,7 @@
       "一方、飼い主の声を聞き分ける反応は研究されています。記憶が続く期間と、目の前の反応を区別して考えてみます。"
     ],
     "seoTitle": "猫は飼い主を何日で忘れる？声やにおいで人を認識する仕組み",
-    "metaDescription": "猫は飼い主を何日くらい覚えているのでしょうか？長期間離れていたときの反応や、声・においによる認識、再会時の接し方を紹介します。",
+    "metaDescription": "猫は何日で飼い主を忘れるのでしょうか。20匹の猫を対象にした飼い主の声の識別研究と、その結果からは分からない記憶の期間を区別し、再会時の接し方を紹介します。",
     "category": "pets",
     "primaryAudience": "personal",
     "tags": [
@@ -3869,26 +4299,30 @@
     "editionDate": "2026-11-21",
     "publishedTimestamp": "2026-11-21T02:39:20+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/cat-owner-memory.md",
-      "sha256": "2aeddbe67fe0d76679ec58b1607e1a4b645bf6cf27bf6bad61beb3e21e13b817",
+      "sourceFile": "src/content/columns/approved/cat-owner-memory-reviewed.md",
+      "sha256": "7e6bb3241dffb3740b5242ec9646a6946c6f58d8f0a0ea734a0c3c580065f4f9",
       "receivedOn": "2026-11-16",
-      "approvedOn": "2026-11-21"
+      "approvedOn": "2026-11-21",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "東大発表と一次論文要旨を照合し20匹・録音・反応・限界を追加。日数の答えを約束しないdescriptionへ。全文入手未確認は資料に明記。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "dog-owner-voice"
     ],
-    "relatedService": {
-      "href": "/use-cases/pets/",
-      "label": "ペットの迷子への備え"
-    },
+    "relatedService": null,
     "relatedLinks": [],
     "manuscriptReferences": true,
     "sources": [
@@ -3933,11 +4367,22 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "猫は、においや声、日常の生活パターンなど、複数の情報を手がかりにしています。2013年に発表された研究では、猫が飼い主の声と他人の声を区別して反応することが示されました。"
+            "text": "東京大学の齋藤慈子氏・篠塚一貴氏が2013年に発表した研究では、家庭の猫20匹を対象に、名前を呼ぶ飼い主と他人の録音音声への反応を調べました。複数の他人の声を聞かせた後、飼い主の声を聞かせる方法です。"
           },
           {
             "type": "paragraph",
-            "text": "ただし、犬のように駆け寄ってくるとは限りません。耳を動かす、顔を向けるなど、小さな反応にとどまることもあります。反応が控えめだからといって、飼い主を認識していないとは限らないのです。"
+            "text": "猫は飼い主の声を区別し、耳や頭を動かすなどの反応を示しました。鳴いたり近づいたりする反応が乏しいことと、声を識別していないことは同じではありません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "これは声の識別の研究であり、飼い主と何日離れると忘れるかを測った研究ではありません。また、この実験だけで、においによる認識や猫の記憶全般の持続期間を説明することもできません。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.u-tokyo.ac.jp/focus/ja/press/p01_250327_02.html",
+            "label": "東京大学の研究発表と原論文への案内",
+            "prefix": "実験方法と反応の評価は、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -4039,18 +4484,25 @@
     "editionDate": "2026-11-22",
     "publishedTimestamp": "2026-11-22T08:00:00+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/elderly-fall-prevention.md",
-      "sha256": "b17c6b8538ee49ea9fa65a5c5fd026cbdd14dcea3a12298c8ca7be97b9ef85ea",
+      "sourceFile": "src/content/columns/approved/elderly-fall-prevention-reviewed.md",
+      "sha256": "2855e70ca5c47e8034eb71bfa80cac2c1daec5724ad9e63a85a4fa88a756056b",
       "receivedOn": "2026-11-16",
-      "approvedOn": "2026-11-22"
+      "approvedOn": "2026-11-22",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "消費者庁の環境・身体要因に沿う確認表と、運動・服薬・転倒後対応の注意を補足。QRの検知・救急保証を否定。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "monitoring-and-surveillance"
@@ -4130,6 +4582,14 @@
             "label": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える",
             "prefix": "関連する内容として「",
             "suffix": "」も参考になります。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "動線：床のコードや物、めくれた敷物を片づける。夜間のトイレまでの照明も確認する。",
+              "足元：濡れた床や段差に気づけるか、かかとの合う靴を履いているか確認する。",
+              "身体：立ち上がりや歩行が不安なときは、手すりや補助具を専門職に相談する。"
+            ]
           }
         ]
       },
@@ -4144,6 +4604,10 @@
           {
             "type": "paragraph",
             "text": "ただし、すでに転倒を繰り返している場合や、持病がある場合は、医師や理学療法士などに相談しましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "運動は痛みや持病、体力に合わせて選びます。転倒後に強い痛みがある場合や、ふらつきが増えた場合は、無理に続けず医療機関へ相談してください。薬を自己判断で減らすことも避けましょう。"
           }
         ]
       },
@@ -4154,6 +4618,10 @@
           {
             "type": "paragraph",
             "text": "めまいや立ちくらみ、眠気などは、転倒の原因になる場合があります。服用している薬の影響が疑われる場合もありますが、自己判断で薬を中止してはいけません。医師や薬剤師に相談してください。"
+          },
+          {
+            "type": "paragraph",
+            "text": "転んだ後に意識がおかしい、頭を打った後に具合が悪い、立てないほど痛いなどの場合は、無理に動かさず救急相談・救急要請を検討します。連絡用QRコードは転倒の自動検知や救急通報を行う仕組みではありません。"
           }
         ]
       },
@@ -4227,18 +4695,25 @@
     "editionDate": "2026-11-23",
     "publishedTimestamp": "2026-11-23T08:00:00+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-23",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/smartphone-emergency-sos.md",
-      "sha256": "adce084c6c0ab905a231a35b8ce6330ff3224c47e0a7c8ed92912242a58a50b3",
+      "sourceFile": "src/content/columns/approved/smartphone-emergency-sos-reviewed.md",
+      "sha256": "d2b58e0a7700f93853d819da6e483e1270d3f260c940414f471ad9e53128216b",
       "receivedOn": "2026-11-16",
-      "approvedOn": "2026-11-23"
+      "approvedOn": "2026-11-23",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "Apple/Googleの設定と機種差、家族通知と公的通報の違いを具体化。試験通報禁止と衛星機能の条件を明確化。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "disaster-family-contact"
@@ -4247,12 +4722,6 @@
     "relatedLinks": [],
     "manuscriptReferences": true,
     "sources": [
-      {
-        "id": "apple",
-        "label": "Apple｜SOSを使ってiPhoneで緊急通報サービスに連絡する",
-        "href": "https://support.apple.com/ja-jp/guide/iphone/iph3c99374c/ios",
-        "checkedAt": "2026-11-16"
-      },
       {
         "id": "android",
         "label": "Google｜Androidスマートフォンを使用して緊急時に助けを求める",
@@ -4272,10 +4741,10 @@
         "checkedAt": "2026-11-23"
       },
       {
-        "id": "apple-medical-id",
-        "label": "Apple｜iPhoneのヘルスケアアプリでメディカルIDを設定する",
-        "href": "https://support.apple.com/ja-jp/105072",
-        "checkedAt": "2026-11-23"
+        "id": "review-4",
+        "label": "Apple｜SOSを使ってiPhoneで緊急通報サービスに連絡する（機種・OSを確認）",
+        "href": "https://support.apple.com/ja-jp/guide/iphone/iph3c99374c/27/ios/27",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -4311,6 +4780,17 @@
           {
             "type": "paragraph",
             "text": "また、ヘルスケアアプリなどで緊急連絡先を登録できる場合があります。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "「設定」の「緊急SOS」で、サイドボタンと音量ボタンの操作、ボタンを5回押す操作など、端末で有効な発信方法を確認する。",
+              "「ヘルスケア」のメディカルIDで緊急連絡先を確認する。家族への通知と110・119等への緊急通報は別の機能です。"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "ボタン操作後の発信条件やキャンセル方法は設定・機種で異なります。衛星経由の緊急SOSも、対応機種・地域・利用条件があり、すべてのiPhoneで常時使えるわけではありません。"
           }
         ]
       },
@@ -4321,6 +4801,10 @@
           {
             "type": "paragraph",
             "text": "Androidにも、緊急SOSや緊急情報に関する機能があります。ただし、メーカーや機種によって、設定画面の名称や操作方法が異なります。「設定」から緊急SOSや安全に関する項目を探し、利用できる機能を確認しておきましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "Googleの案内では、対応端末で「設定」から「安全性と緊急情報」→「緊急SOS」を確認できます。電源ボタンを5回以上押す操作などがありますが、確認操作の要否や自動発信、連絡先への共有は設定・メーカーで異なります。自分の端末の説明で確認してください。"
           }
         ]
       },
@@ -4335,6 +4819,10 @@
           {
             "type": "paragraph",
             "text": "なお、操作の練習として実際に緊急通報を発信することは避けてください。"
+          },
+          {
+            "type": "paragraph",
+            "text": "確認は設定画面や公式ヘルプで行い、110・119へ試しに発信しないでください。命や身体に危険があるときは公的な緊急通報を優先し、一般の連絡サービスを代わりに使おうとしないことが大切です。"
           }
         ]
       },
@@ -4367,11 +4855,9 @@
       {
         "text": "緊急SOSは、スマートフォンから緊急通報につなげるための機能です。機種やOS、地域によって操作や通知の条件が違うため、自分の端末の設定を事前に確認しておく必要があります。",
         "sourceIds": [
-          "apple",
           "android",
           "sos-news",
-          "apple-safety",
-          "apple-medical-id"
+          "apple-safety"
         ],
         "verified": true
       }
@@ -4421,18 +4907,25 @@
     "editionDate": "2026-11-24",
     "publishedTimestamp": "2026-11-24T08:00:00+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/phone-number-personal-information.md",
-      "sha256": "03ca37ecba4517b6b53cdfbf4e57bf81667b2caf2fda4c47cf285d2345a61cbc",
+      "sourceFile": "src/content/columns/approved/phone-number-personal-information-reviewed.md",
+      "sha256": "8327ef2148974df48426656264cc62e808a025d4e3447fe5a3b747b32036c179",
       "receivedOn": "2026-11-16",
-      "approvedOn": "2026-11-24"
+      "approvedOn": "2026-11-24",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "PPCの個人識別符号と個人情報の違いを明記。番号だけの追跡と情報照合・連絡先同期を分け、LINE現行ヘルプに限定して説明。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "number-private-calls"
@@ -4489,6 +4982,21 @@
             "label": "知らない番号から電話が来たら、出るべき？",
             "prefix": "関連する内容として「",
             "suffix": "」も参考になります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "携帯電話番号は、個人情報保護法上の「個人識別符号」には位置付けられていません。ただし、氏名などと容易に照合でき、特定の個人を識別できる場合は個人情報に該当します。「個人識別符号ではない」ことを「個人情報ではない」と読み替えないようにします。"
+          },
+          {
+            "type": "paragraph",
+            "text": "電話番号だけを入力すれば、誰でも契約者の住所や現在地を正確に追跡できる、という仕組みではありません。公開情報との結び付き、サービスの連絡先検索、詐欺による聞き出しは、それぞれ別のリスクです。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/",
+            "label": "個人情報保護委員会FAQ・Q1-25",
+            "prefix": "個人識別符号と個人情報の違いは、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -4510,6 +5018,10 @@
             "label": "写真の位置情報、大丈夫？",
             "prefix": "関連する内容として「",
             "suffix": "」も参考になります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "LINEでは、利用者の設定に応じてアドレス帳の電話番号を友だちの追加に利用する仕組みがあります。電話番号が相手へそのまま表示されることとは別です。サービスごとの「友だち自動追加」などの設定、連絡先へのアクセス権限、公開プロフィールを確認しましょう。"
           }
         ]
       },
@@ -4524,6 +5036,11 @@
           {
             "type": "paragraph",
             "text": "SMSで届いた認証コードを他人に教えたり、身に覚えのないリンクを開いたりしないようにしましょう。"
+          },
+          {
+            "type": "link",
+            "href": "/column/unknown-calls/",
+            "label": "知らない番号から着信したときの確認手順"
           }
         ]
       },
@@ -4538,13 +5055,6 @@
           {
             "type": "paragraph",
             "text": "落とし物など、一時的に連絡が必要な場面で利用できます。ただし、相手に電話番号が表示されないことと、サービス提供者が番号を取り扱わないことは別です。利用するサービスの仕組みや個人情報の取り扱いを確認することも重要です。"
-          },
-          {
-            "type": "link",
-            "href": "/service/",
-            "label": "つながるQRのサービスと利用条件",
-            "prefix": "利用条件は「",
-            "suffix": "」で確認できます。"
           }
         ]
       },
@@ -4620,26 +5130,30 @@
     "editionDate": "2026-11-25",
     "publishedTimestamp": "2026-11-25T00:41:57+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/pets-earthquake-prediction.md",
-      "sha256": "6ac7f8521a8973be9a8ed91cd4c2400aeb89a99674b8cad242c3e6f8cdd8a9f8",
+      "sourceFile": "src/content/columns/approved/pets-earthquake-prediction-reviewed.md",
+      "sha256": "e3952b3f374dcea5ccecde304bf54e5b7c6ef7937da23928ff28c5a4052ca4a3",
       "receivedOn": "2026-11-16",
-      "approvedOn": "2026-11-25"
+      "approvedOn": "2026-11-25",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "予知・揺れへの反応・報知音への反応を区別。気象庁の限界説明と同行避難の意味、具体的準備に集約。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "disaster-family-contact"
     ],
-    "relatedService": {
-      "href": "/use-cases/pets/",
-      "label": "ペットの迷子への備え"
-    },
+    "relatedService": null,
     "relatedLinks": [
       {
         "href": "/column/dog-microchip/",
@@ -4697,6 +5211,17 @@
             "label": "もしも、大切な愛犬が迷子になったら。",
             "prefix": "関連する内容として「",
             "suffix": "」も参考になります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "地震前に気づいたように見える行動、揺れが始まってからの反応、緊急地震速報などの音への反応は分けて考える必要があります。気象庁は、動物の通常と異なる行動の理由を、地震の前兆として科学的に説明できていないとしています。行動から日時・場所・規模を予測できるとはいえません。"
+          },
+          {
+            "type": "link",
+            "href": "https://www.jma.go.jp/jma/kishou/know/faq/faq24.html",
+            "label": "気象庁の地震予知に関する解説",
+            "prefix": "動物の行動と地震予知の限界は、",
+            "suffix": "をご確認ください。"
           }
         ]
       },
@@ -4735,6 +5260,18 @@
           {
             "type": "paragraph",
             "text": "災害時には、驚いたペットが逃げ出すこともあります。日頃から脱走対策を考えておきましょう。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "普段から：キャリーに慣らし、首輪・迷子札、マイクロチップの登録情報を確認する。",
+              "持ち出す物：フード・水、薬、トイレ用品、写真や健康・連絡先の記録を準備する。",
+              "避難先：自治体の受入条件、ペットの居場所、必要な用品と管理方法を確認する。"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "「同行避難」は、ペットと一緒に安全な場所まで避難することを指し、避難所で同じ部屋に滞在できる保証ではありません。避難先のルールを事前に確認しましょう。"
           }
         ]
       },
@@ -4808,18 +5345,25 @@
     "editionDate": "2026-11-26",
     "publishedTimestamp": "2026-11-26T02:03:45+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/monitoring-and-surveillance.md",
-      "sha256": "5df17de1c6b92916e1ec45b6f997481d3c55867816df6b66d5adc35541af301e",
+      "sourceFile": "src/content/columns/approved/monitoring-and-surveillance-reviewed.md",
+      "sha256": "f7ca9397b636e3eb1e4ddf4d639019ab9cc74a389614806898bdf00f88149153",
       "receivedOn": "2026-11-16",
-      "approvedOn": "2026-11-26"
+      "approvedOn": "2026-11-26",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "目的・範囲・頻度・閲覧者・保存・不応答を決める表を追加。GPS等を一律に否定しない。論点と関係の薄いPPC引用を削減。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "young-onset-dementia"
@@ -4840,12 +5384,6 @@
         "id": "consent",
         "label": "厚生労働省｜認知症の人の日常生活・社会生活における意思決定支援ガイドライン",
         "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212395.html",
-        "checkedAt": "2026-11-16"
-      },
-      {
-        "id": "privacy",
-        "label": "個人情報保護委員会｜携帯電話番号やクレジットカード番号は個人識別符号に該当しますか",
-        "href": "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/",
         "checkedAt": "2026-11-16"
       },
       {
@@ -4909,6 +5447,40 @@
           {
             "type": "paragraph",
             "text": "本人の判断能力や安全面に課題がある場合は、家族だけで抱え込まず、医療・介護などの専門職に相談することも重要です。"
+          },
+          {
+            "type": "table",
+            "caption": "家族で確認する見守りのルール",
+            "headers": [
+              "項目",
+              "話し合うこと"
+            ],
+            "rows": [
+              [
+                "目的",
+                "どんな場面で、どのような支援が必要か"
+              ],
+              [
+                "情報の範囲",
+                "位置・映像・連絡履歴など、必要な情報だけを選ぶ"
+              ],
+              [
+                "頻度・閲覧者",
+                "常時見るのか、必要時のみか。誰が閲覧するか"
+              ],
+              [
+                "保存と見直し",
+                "いつまで残し、いつ削除するか。本人の希望が変わったらどうするか"
+              ],
+              [
+                "連絡が取れないとき",
+                "次に連絡する人、訪問や公的機関への相談の目安"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "例えば、外出を続けたい本人と心配な家族で、まず定時の電話を試し、必要なら位置確認を追加するなど、状況に合わせて見直します。GPSやカメラが必ず監視になるわけではなく、目的・使い方・本人の意向が重要です。"
           }
         ]
       },
@@ -4923,13 +5495,6 @@
           {
             "type": "paragraph",
             "text": "位置を常時追跡するサービスではありませんが、外出先で周囲の人から連絡を受けるための備えとして利用できます。"
-          },
-          {
-            "type": "link",
-            "href": "/use-cases/elderly/",
-            "label": "高齢者の見守りへの活用",
-            "prefix": "利用条件は「",
-            "suffix": "」で確認できます。"
           }
         ]
       },
@@ -4953,7 +5518,6 @@
         "text": "見守りと監視は、機器の種類だけでは分けられません。何のために、誰が、どこまで情報を確認するのか。その目的や使い方、本人の受け止め方によって意味が変わります。",
         "sourceIds": [
           "consent",
-          "privacy",
           "service"
         ],
         "verified": true
@@ -5004,18 +5568,25 @@
     "editionDate": "2026-11-27",
     "publishedTimestamp": "2026-11-27T08:00:00+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/qr-code-scan-mechanism.md",
-      "sha256": "6c7ebdf5a305abd377c91e1809bd17733104761a7d179649f1735b5d615cfc38",
+      "sourceFile": "src/content/columns/approved/qr-code-scan-mechanism-reviewed.md",
+      "sha256": "c3b00bc465569fb78e3b7d6c8350e7564b65426352de1900a511c3a8adaaa91b",
       "receivedOn": "2026-11-16",
-      "approvedOn": "2026-11-27"
+      "approvedOn": "2026-11-27",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "URL・電話番号・サービス接続の比較を追加。読み取りと発信を区別し、27日は技術、20日は発明史に役割分担。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "qr-code-inventor",
@@ -5083,6 +5654,36 @@
             "label": "電話番号を教えずに、声だけでつながる時代へ",
             "prefix": "関連する内容として「",
             "suffix": "」も参考になります。"
+          },
+          {
+            "type": "table",
+            "caption": "スキャンした後に起こることの違い",
+            "headers": [
+              "記録内容・方式",
+              "読み取り後の動作",
+              "電話番号との関係"
+            ],
+            "rows": [
+              [
+                "URLを記録したQRコード",
+                "ウェブページを開く操作へ進む",
+                "表示内容は接続先による"
+              ],
+              [
+                "電話番号を記録したQRコード",
+                "電話アプリや発信確認画面へ進む",
+                "記録された番号を読み取る方式"
+              ],
+              [
+                "つながるQR",
+                "サービス画面で「電話をかける」をタップし登録先へ発信",
+                "プライバシー電話番号を使い、双方の本来の番号を相手に表示しない"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "コードの読み取り、ウェブページへのアクセス、電話の発信は別の操作です。つながるQRも、スキャンしただけで自動的に通話が始まる仕組みではありません。"
           }
         ]
       },
@@ -5107,6 +5708,10 @@
           {
             "type": "paragraph",
             "text": "スキャン後に表示されるURLを確認し、不審なログイン画面や決済要求には注意しましょう。公共の掲示物などでは、別のQRコードのシールが上から貼られていないか確認することも大切です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "正しく読み取れることと、接続先が安全であることは別です。アクセス先のドメインや表示内容を確認し、心当たりのないログイン・送金・アプリの導入要求には応じないようにしましょう。"
           }
         ]
       },
@@ -5121,13 +5726,6 @@
           {
             "type": "paragraph",
             "text": "情報を表示するだけでなく、人と人をつなぐ入口としても活用されています。"
-          },
-          {
-            "type": "link",
-            "href": "/service/",
-            "label": "つながるQRのサービスと利用条件",
-            "prefix": "利用条件は「",
-            "suffix": "」で確認できます。"
           }
         ]
       },
@@ -5202,18 +5800,25 @@
     "editionDate": "2026-11-28",
     "publishedTimestamp": "2026-11-28T04:58:01+09:00",
     "publicationPending": false,
-    "updatedAt": null,
-    "reviewedAt": "2026-11-16",
+    "updatedAt": "2026-11-28",
+    "reviewedAt": "2026-11-28",
     "nextReviewAt": null,
     "serviceSpecificationVersion": "2026-10-27",
-    "contentRevision": 1,
-    "approvalRevision": 1,
+    "contentRevision": 2,
+    "approvalRevision": 2,
     "contentFormat": "approved-manuscript",
     "approvalRecord": {
-      "sourceFile": "src/content/columns/approved/disaster-family-contact.md",
-      "sha256": "5ba45b07b6f067a029c3251db8579a929b6f6764f67db13226a11f4cde62681f",
+      "sourceFile": "src/content/columns/approved/disaster-family-contact-reviewed.md",
+      "sha256": "0e2969d4a40fe989743df64607bb0cafda712a58c22ec6d4db8f6113d65dbae6",
       "receivedOn": "2026-11-16",
-      "approvedOn": "2026-11-28"
+      "approvedOn": "2026-11-28",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "171の録音1・再生2とweb171の違い、体験日、家族の確認事項を具体化。171直後のペット記事リンクを準備の末尾へ移動。災害接続保証なし。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
     },
     "relatedArticleIds": [
       "smartphone-emergency-sos",
@@ -5234,6 +5839,12 @@
         "label": "NTT東日本｜災害用伝言板（web171）",
         "href": "https://www.ntt-east.co.jp/saigai/web171/",
         "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "review-3",
+        "label": "NTT東日本｜災害用伝言ダイヤル（171）体験利用",
+        "href": "https://www.ntt-east.co.jp/saigai/voice171s/howto.html",
+        "checkedAt": "2026-11-28"
       }
     ],
     "sections": [
@@ -5264,18 +5875,19 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "災害用伝言ダイヤル「171」は、災害時に安否情報を音声で登録・確認するためのサービスです。電話番号を手がかりに伝言を残したり、聞いたりできます。ただし、利用できる条件やサービスの提供状況は、災害の規模などによって異なります。"
+            "text": "災害用伝言ダイヤル「171」は、被災地などの電話番号を手がかりに、音声の伝言を録音・再生するサービスです。提供開始や対象番号、利用条件は災害時のNTTの案内で確認します。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "録音：171へ電話し、音声案内に従って「1」を選び、伝言のキーにする電話番号を入力する。",
+              "再生：171へ電話し、「2」を選び、録音時と同じ電話番号を入力する。",
+              "家族で決める：どの電話番号をキーにするか、市外局番を含めて控えておく。暗証番号を使う場合の手順は公式案内で確認する。"
+            ]
           },
           {
             "type": "paragraph",
-            "text": "NTTなどの公式案内で、事前に使い方を確認しておきましょう。"
-          },
-          {
-            "type": "link",
-            "href": "/column/pets-earthquake-prediction/",
-            "label": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
-            "prefix": "関連する内容として「",
-            "suffix": "」も参考になります。"
+            "text": "毎月1日・15日などには体験利用の機会があります。災害時に初めて操作するのではなく、公式の体験利用日に家族で確認しましょう。提供中の番号・伝言などの条件は、平常時の体験と災害時で異なることがあります。"
           }
         ]
       },
@@ -5285,7 +5897,38 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "通信事業者などが提供する災害用伝言板も、安否確認の手段の一つです。メッセージアプリやSNSを利用する方法もありますが、通信環境によっては使えない場合があります。一つの方法だけでなく、複数の連絡手段を知っておくことが重要です。"
+            "text": "web171は、インターネットから電話番号をキーにして安否などの伝言を登録・確認する災害用伝言板です。音声で操作する171と、ウェブ画面で操作するweb171を分けて覚えると使いやすくなります。"
+          },
+          {
+            "type": "table",
+            "caption": "家族への連絡方法を複数用意する",
+            "headers": [
+              "方法",
+              "使う場面",
+              "注意点"
+            ],
+            "rows": [
+              [
+                "171",
+                "電話で音声の伝言を録音・再生",
+                "提供条件とキーにする電話番号を確認"
+              ],
+              [
+                "web171",
+                "ネット接続で伝言を登録・確認",
+                "通信と端末が必要。公式サイトを控える"
+              ],
+              [
+                "SMS・メッセージアプリ",
+                "短い安否・避難先を伝える",
+                "通信障害では届かないこともある。到着や返信を前提にしない"
+              ],
+              [
+                "紙の連絡先・集合場所",
+                "電池切れや通信停止に備える",
+                "持ち歩く情報と公開範囲に気を付ける"
+              ]
+            ]
           }
         ]
       },
@@ -5294,32 +5937,12 @@
         "title": "家族で決めておきたい三つのこと",
         "blocks": [
           {
-            "type": "paragraph",
-            "text": "災害が起きる前に、家族で次のことを話し合っておきましょう。"
-          },
-          {
-            "type": "heading",
-            "text": "① 避難場所"
-          },
-          {
-            "type": "paragraph",
-            "text": "自宅や学校、職場の近くにある避難場所を確認します。"
-          },
-          {
-            "type": "heading",
-            "text": "② 連絡方法"
-          },
-          {
-            "type": "paragraph",
-            "text": "電話がつながらない場合に、どのサービスを使うか決めておきます。"
-          },
-          {
-            "type": "heading",
-            "text": "③ 連絡が取れない場合の行動"
-          },
-          {
-            "type": "paragraph",
-            "text": "まずは自分の安全を確保し、どこへ避難するかを共有します。"
+            "type": "list",
+            "items": [
+              "集合先：災害に応じた避難場所と避難先を確認する。連絡が取れなくても、まず自分の安全を確保する。",
+              "伝えること：無事か、いまいる場所、次に向かう場所を短くまとめる。",
+              "次の確認：どのサービスを使い、どの番号をキーにし、いつ再確認するか決める。"
+            ]
           }
         ]
       },
@@ -5330,6 +5953,10 @@
           {
             "type": "paragraph",
             "text": "スマートフォンの電池が切れたり、故障したりすることもあります。家族の連絡先や避難先などを、紙に控えておくことも一つの備えです。個人情報の管理に注意しながら、必要な情報をまとめておきましょう。"
+          },
+          {
+            "type": "paragraph",
+            "text": "連絡用QRコードも通信や相手の応答を必要とするため、災害時の接続を保証するものではありません。緊急の救助が必要な場合の110・119などの公的通報と、家族の安否連絡も分けて備えます。"
           }
         ]
       },
@@ -5340,6 +5967,11 @@
           {
             "type": "paragraph",
             "text": "災害時は、いつもの連絡手段が使えるとは限りません。家族と連絡が取れない場合に備え、複数の安否確認方法と避難先を事前に決めておくことが大切です。"
+          },
+          {
+            "type": "link",
+            "href": "/column/pets-earthquake-prediction/",
+            "label": "ペットもいる家庭での避難準備"
           }
         ]
       }

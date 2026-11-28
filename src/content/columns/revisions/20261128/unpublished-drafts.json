@@ -1,0 +1,420 @@
+[
+  {
+    "id": "why-we-misplace-things",
+    "slug": "why-we-misplace-things",
+    "title": "なぜ人は物をなくすの？脳の仕組みと忘れ物を減らすコツ",
+    "summary": "物をなくす理由は、記憶力の低下だけとは限りません。置いた瞬間に別のことへ注意が向いていて、場所を十分に覚えていないこともあります。",
+    "introduction": [
+      "「さっきまで持っていた鍵が見つからない」「スマートフォンをどこに置いたかわからない」。身近な置き忘れを、注意と記憶の関係から考えます。"
+    ],
+    "seoTitle": "なぜ人は物をなくす？置き忘れが起こる理由と予防する習慣",
+    "metaDescription": "鍵や財布を置いた場所を忘れるのはなぜ？注意力と記憶の関係をわかりやすく解説し、忘れ物や置き忘れを減らすための工夫を紹介します。",
+    "category": "lost-items",
+    "primaryAudience": "personal",
+    "tags": [
+      "忘れ物 予防",
+      "注意と記憶"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-29",
+    "editionDate": "2026-11-29",
+    "publishedTimestamp": "2026-11-29T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-28",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 2,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/why-we-misplace-things-reviewed.md",
+      "sha256": "8286c40f9439d88da7b3df2eccfa2cc215d29b22bcae36891f181f9d497faafd",
+      "receivedOn": "2026-11-16",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "未公開維持。一次論文要旨の4実験と注意分散の結果を限定して説明。PDF全文の再検証は未完了とし、日常の工夫を実験効果と混同しない。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
+    },
+    "relatedArticleIds": [
+      "wallet-contents-safety"
+    ],
+    "relatedService": {
+      "href": "/use-cases/belongings/",
+      "label": "落とし物への備え"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/lost-item-preparation/",
+        "label": "鍵や財布をなくさないために。今日からできる紛失対策"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "memory",
+        "label": "Craik et al. (1996)｜The effects of divided attention on encoding and retrieval processes in human memory",
+        "href": "https://macal.missouri.edu/assets/doc/pubs/EffectsDividedAttentionEncodingRetrieval.pdf",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "memory-health",
+        "label": "米国国立医学図書館 MedlinePlus｜Memory loss",
+        "href": "https://www.medlineplus.gov/ency/article/003257.htm",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "review-3",
+        "label": "PubMed｜Craik et al. (1996) 原論文要旨",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/8683192/",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "物を置いた瞬間、覚えていないことがある",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "私たちは、日常生活のすべての出来事を同じように記憶しているわけではありません。急いでいるときや、別のことを考えているときには、目の前の行動に十分な注意を向けられない場合があります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "例えば、電話をしながら鍵を置いた場合、鍵を置く動作はできても、その場所を意識して覚えていないことがあります。"
+          },
+          {
+            "type": "link",
+            "href": "/column/wallet-contents-safety/",
+            "label": "財布に入れてはいけないものってある？紛失時に困らないための整理術",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "注意力と記憶は関係している",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Craik氏らが1996年に発表した研究では、記憶するときと、思い出すときに別の課題へ注意を分ける影響を、再生・再認など4つの実験で検討しました。原論文の要旨では、とくに記憶するときの注意の分散が記憶成績を低下させたと報告されています。"
+          },
+          {
+            "type": "paragraph",
+            "text": "これは実験課題における記憶の研究であり、日常の鍵の置き忘れを直接測った結果ではありません。ただ、「置いた瞬間に注意を向ける」という工夫を考える手がかりになります。物をなくす人の性格や、病気の有無をこの研究から判断することはできません。"
+          },
+          {
+            "type": "link",
+            "href": "https://pubmed.ncbi.nlm.nih.gov/8683192/",
+            "label": "Craik氏らの原論文要旨（1996年）",
+            "prefix": "研究の要旨は、",
+            "suffix": "をご確認ください。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "同時にいろいろすると忘れやすい？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "料理をしながら電話をする。メッセージを確認しながら荷物を片付ける。こうした場面では、複数の作業に注意を分ける必要があります。その結果、物を置いた場所など、細かな情報に注意を向けにくくなることがあります。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "物をなくしにくくする三つの習慣",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "置き忘れに気づく回数が多いときは、記憶力だけを責めず、置くときの動作と環境を見直してみましょう。"
+          },
+          {
+            "type": "list",
+            "items": [
+              "置くときに手を止める：「鍵を玄関のトレーへ置いた」と場所に注意を向ける。",
+              "定位置を絞る：収納を増やす前に、帰宅・外出の動線に合う場所を決める。",
+              "一緒に行う動作を減らす：電話や別の用事をしながら大切な物を移動しない。"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "これらは日常で試す工夫で、上記研究が効果を保証した手順ではありません。繰り返し困る場合は生活状況を見直し、急な変化や生活への支障がある場合は医療機関へ相談します。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "急に物忘れが増えた場合は？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "疲労や睡眠不足、ストレスなどが関係することもあります。ただし、急に物忘れが増えた場合や、日常生活に支障が出ている場合は、単なるうっかりと決めつけないことが大切です。必要に応じて医療機関に相談しましょう。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "置くときの注意と定位置を習慣にする",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "物をなくすことは、必ずしも記憶力だけの問題ではありません。注意を向けやすい環境をつくり、物の定位置を決めることが、置き忘れを減らす一歩になります。"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "物をなくす 注意 記憶 置き忘れ",
+    "primaryKeyword": "物をなくす 注意 記憶 置き忘れ",
+    "topicClusterId": "why-we-misplace-things",
+    "claims": [
+      {
+        "text": "物をなくす理由は、記憶力の低下だけとは限りません。置いた瞬間に別のことへ注意が向いていて、場所を十分に覚えていないこともあります。",
+        "sourceIds": [
+          "memory",
+          "memory-health"
+        ],
+        "verified": false
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": false
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/why-we-misplace-things.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "鍵とスマートフォンの置き場所を思い出そうとして室内を探す男性の水彩イラスト"
+    }
+  },
+  {
+    "id": "number-private-calls",
+    "slug": "number-private-calls",
+    "title": "電話番号を教えずに、声だけでつながる時代へ",
+    "summary": "個人の電話番号を相手に表示せずに、声で連絡する方法があります。つながるQRは、プライバシー電話番号を介して、QRコードをスキャンした発見者と登録者の通話をつなぐサービスです。",
+    "introduction": [
+      "落とし物の連絡など、その場で話したくても個人の連絡先を直接交換したくない場面があります。相手への非開示と、サービス提供者による番号の取り扱いを分けて確認します。"
+    ],
+    "seoTitle": "電話番号を教えずに通話する方法とは？プライバシーを守る連絡手段",
+    "metaDescription": "電話番号を相手に教えずに通話することはできるのでしょうか？プライバシー電話番号の仕組みや、QRコードを使った新しい連絡方法を紹介します。",
+    "category": "privacy-life",
+    "primaryAudience": "personal",
+    "tags": [
+      "プライバシー電話番号",
+      "QRコード 通話"
+    ],
+    "status": "draft",
+    "publicationOrigin": "editorial",
+    "publishedAt": "2026-11-30",
+    "editionDate": "2026-11-30",
+    "publishedTimestamp": "2026-11-30T08:00:00+09:00",
+    "publicationPending": true,
+    "updatedAt": null,
+    "reviewedAt": "2026-11-28",
+    "nextReviewAt": null,
+    "serviceSpecificationVersion": "2026-10-27",
+    "contentRevision": 2,
+    "approvalRevision": null,
+    "contentFormat": "approved-manuscript",
+    "approvalRecord": {
+      "sourceFile": "src/content/columns/approved/number-private-calls-reviewed.md",
+      "sha256": "4be1390e3ba3b656e823fc0edeae7168cbeb0ffff481eb82553f325b0218bd8d",
+      "receivedOn": "2026-11-16",
+      "revisionHistory": [
+        {
+          "revision": 2,
+          "change": "未公開維持。操作・正式名称・非公開の範囲を整理。匿名性・通信安全性・本人確認・自動発信の保証と誤認させない。",
+          "approvalEvidence": "ユーザー提供「2026年11月公式コラム 全記事品質改善・SEO／AEO最適化指示書」による改訂作業の承認。Draft PRでの確認まで。本番公開・マージの承認を含まない。"
+        }
+      ]
+    },
+    "relatedArticleIds": [
+      "phone-number-personal-information",
+      "qr-code-scan-mechanism"
+    ],
+    "relatedService": {
+      "href": "/service/",
+      "label": "つながるQRのサービスと利用条件"
+    },
+    "relatedLinks": [
+      {
+        "href": "/column/lost-wallet/",
+        "label": "お財布を落としたら？"
+      }
+    ],
+    "manuscriptReferences": true,
+    "sources": [
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "電話番号を教えずに通話することはできる？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "はい。専用のサービスを介して通話をつなぐことで、相手に個人の電話番号を表示せずに会話する方法があります。例えば、サービスが提供するプライバシー電話番号を介して通話する仕組みです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "この場合、通話する相手同士が個人の電話番号を直接知る必要はありません。ただし、相手に番号が表示されないことと、サービス提供者が電話番号を取り扱わないことは別です。利用時には、個人情報の取り扱いやサービスの条件を確認することが重要です。"
+          },
+          {
+            "type": "link",
+            "href": "/column/phone-number-personal-information/",
+            "label": "電話番号から個人情報はどこまでわかる？知られたときのリスクと対策",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-2",
+        "title": "どんな場面で役立つ？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "例えば、落とし物を拾ってもらったとき。拾った人が持ち主に連絡したくても、電話番号がわからなければ直接連絡することは難しいでしょう。反対に、持ち主としても、知らない人に自分の電話番号を公開することには抵抗があるかもしれません。"
+          },
+          {
+            "type": "paragraph",
+            "text": "そんなとき、番号を直接交換せずに連絡できる仕組みがあれば、双方のプライバシーに配慮しながら会話できます。"
+          },
+          {
+            "type": "link",
+            "href": "/column/qr-code-scan-mechanism/",
+            "label": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+            "prefix": "関連する内容として「",
+            "suffix": "」も参考になります。"
+          }
+        ]
+      },
+      {
+        "id": "section-3",
+        "title": "QRコードから声でつながる仕組み",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "つながるQRでは、あらかじめ登録先を設定したQRコードを、発見者がスマートフォンでスキャンします。表示された画面の「電話をかける」をタップすると、登録先へ発信できます。専用アプリや発見者による電話番号・IDの入力は不要です。"
+          },
+          {
+            "type": "paragraph",
+            "text": "プライバシー電話番号とは、お互いの本来の電話番号を相手に表示せず、通話をつなぐために使用する番号です。電話番号を記録したQRコードをそのまま読み取る方式とは異なります。"
+          },
+          {
+            "type": "paragraph",
+            "text": "スキャンしただけで自動発信されるわけではありません。また、サービス提供者が接続に必要な情報を扱わない、通話内容から本人が推測されない、相手の身元や安全性が保証される、という意味でもありません。"
+          }
+        ]
+      },
+      {
+        "id": "section-4",
+        "title": "なぜ「声」でつながることが大切なの？",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "メッセージは便利ですが、状況によっては文字だけで説明することが難しい場合があります。例えば、落とし物を拾った場所や、受け渡し方法について、その場で質問しながら確認したいときです。"
+          },
+          {
+            "type": "paragraph",
+            "text": "声で会話できれば、相手の説明を聞き、必要なことをすぐに確認できます。もちろん、電話に出られない場合や、通話が適さない環境もあります。大切なのは、状況に応じて連絡方法を選べることです。"
+          }
+        ]
+      },
+      {
+        "id": "section-5",
+        "title": "プライバシーとコミュニケーションを両立する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "これまでは、電話で連絡するためには、相手に電話番号を伝えることが一般的でした。しかし、連絡手段が多様化するなかで、必ずしも個人の連絡先を直接交換する必要はなくなってきています。"
+          },
+          {
+            "type": "paragraph",
+            "text": "必要なときだけ、必要な相手とつながる。そんな選択肢が増えることは、安心して人とコミュニケーションを取ることにもつながります。"
+          }
+        ]
+      },
+      {
+        "id": "section-6",
+        "title": "相手への非開示と利用条件を確認する",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "番号の非公開は、電話番号を相手に表示しないための仕組みです。必要のない氏名・住所などを会話で伝えないことや、相手の用件を確認することも大切です。利用に際しては、提供状況・料金・通話条件と個人情報の取り扱いを公式案内で確認してください。"
+          },
+          {
+            "type": "link",
+            "href": "/column/phone-number-personal-information/",
+            "label": "電話番号と個人情報の関係"
+          },
+          {
+            "type": "link",
+            "href": "/column/qr-code-scan-mechanism/",
+            "label": "QRコードの読み取りと発信の違い"
+          }
+        ]
+      }
+    ],
+    "cta": "none",
+    "searchIntent": "電話番号 教えず 通話",
+    "primaryKeyword": "電話番号 教えず 通話",
+    "topicClusterId": "number-private-calls",
+    "claims": [
+      {
+        "text": "個人の電話番号を相手に表示せずに、声で連絡する方法があります。つながるQRは、プライバシー電話番号を介して、QRコードをスキャンした発見者と登録者の通話をつなぐサービスです。",
+        "sourceIds": [
+          "service"
+        ],
+        "verified": true
+      }
+    ],
+    "validationResults": [
+      {
+        "check": "source-review-complete",
+        "passed": true
+      },
+      {
+        "check": "image-supplied",
+        "passed": true
+      },
+      {
+        "check": "release-approved",
+        "passed": false
+      }
+    ],
+    "generationRunId": null,
+    "promptVersion": null,
+    "image": {
+      "src": "/images/columns/number-private-calls.webp",
+      "width": 1280,
+      "height": 720,
+      "alt": "バッグのQRタグをスキャンする女性と、電話で応じる高齢女性を描いた水彩イラスト"
+    }
+  }
+]
