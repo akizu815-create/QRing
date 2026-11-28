@@ -1,0 +1,31 @@
+[
+  {
+    "slug": "why-we-misplace-things",
+    "version": 2,
+    "changedFields": [
+      "approvalRevision",
+      "claims",
+      "publicationPending",
+      "status",
+      "validationResults"
+    ],
+    "sourceFile": "src/content/columns/approved/why-we-misplace-things-reviewed.md",
+    "manuscriptSha256": "8286c40f9439d88da7b3df2eccfa2cc215d29b22bcae36891f181f9d497faafd",
+    "imageSha256": "ef049c42dc6b88d1a3f3aa2c5af0230e0b56669f4784cb79aadfe4a3934ec434",
+    "existing28Unchanged": true
+  },
+  {
+    "slug": "number-private-calls",
+    "version": 2,
+    "changedFields": [
+      "approvalRevision",
+      "publicationPending",
+      "status",
+      "validationResults"
+    ],
+    "sourceFile": "src/content/columns/approved/number-private-calls-reviewed.md",
+    "manuscriptSha256": "4be1390e3ba3b656e823fc0edeae7168cbeb0ffff481eb82553f325b0218bd8d",
+    "imageSha256": "95e1d2615ac17927116802ed0d8d91a3e90151da1d731c6cf4ebc7a4287879d6",
+    "existing28Unchanged": true
+  }
+]
