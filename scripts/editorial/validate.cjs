@@ -4,6 +4,7 @@ const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'qring-editorial-'));
 try {
     for (const name of ['types', 'publication'])
         fs.writeFileSync(path.join(tmp, name + '.js'), ts.transpileModule(fs.readFileSync(path.join(__dirname, '../../src/lib/columns', name + '.ts'), 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText);
+fs.copyFileSync(path.join(__dirname, '../../src/lib/columns/releasePolicy.js'), path.join(tmp, 'releasePolicy.js'));
     const { validateArticle, selectPublishedArticles } = require(path.join(tmp, 'publication.js'));
     if (process.argv[2] === '--options') {
         const { CATEGORIES, AUDIENCES } = require(path.join(tmp, 'types.js'));

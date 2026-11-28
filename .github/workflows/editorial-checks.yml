@@ -7,6 +7,10 @@ on:
       - 'scripts/editorial/**'
       - 'scripts/seo_ops/**'
       - 'scripts/check-live-columns.py'
+      - 'scripts/*column*'
+      - 'scripts/build-site.cjs'
+      - 'scripts/check-publication-watchdog.cjs'
+      - '.github/workflows/publication-watchdog.yml'
       - 'scripts/column_export_support.py'
       - 'scripts/check-column-navigation.py'
       - '.github/workflows/deploy.yml'
@@ -33,10 +37,12 @@ jobs:
           python-version: '3.12'
       - run: npm ci
       - run: npm run test:columns
+      - run: npm run test:scheduled-columns
       - run: python3 -m unittest discover -s tests/publication -v
       - run: npm run test:seo-ops
       - run: npm run test:editorial
       - run: npm run build
+      - run: npm run test:publication-matrix
       - run: npm run check:column-export
       - run: npm run check:column-navigation
       - run: node scripts/test-seo-foundation.mjs

@@ -69,16 +69,37 @@ def verify_revision(a):
     assert a['reviewedAt'] == '2026-11-28'
 
 
+def verify_archived_transition(active, draft):
+    """A historical held snapshot must not permanently forbid an approved release.
+
+    This validates fields/receipts, not human authorization; the release still
+    requires the repository's review/merge approval. Never mutate either record.
+    """
+    assert active['id'] == draft['id'] and active['slug'] == draft['slug']
+    assert active['contentRevision'] >= draft['contentRevision']
+    if active['contentRevision'] == draft['contentRevision']:
+        for key in ['title', 'summary', 'introduction', 'sections', 'seoTitle',
+                    'metaDescription', 'image', 'publishedAt', 'publishedTimestamp']:
+            assert active.get(key) == draft.get(key), f'{active["slug"]}: revise before changing {key}'
+    if active['status'] in ['published', 'scheduled']:
+        assert active['approvalRevision'] == active['contentRevision']
+        assert active.get('publicationPending') is False
+        receipt = active['approvalRecord']
+        assert hashlib.sha256((ROOT / receipt['sourceFile']).read_bytes()).hexdigest() == receipt['sha256']
+
+
 def main():
     public = json.loads((ROOT / 'src/content/columns/published.json').read_text())
     drafts = json.loads((REVISION_DIR / 'unpublished-drafts.json').read_text())
     assert len(drafts) == 2
-    reviewed_public = [a for a in public if a['slug'] in REVISIONS]
+    reviewed_public = [a for a in public if a['slug'] in REVISIONS and REVISIONS[a['slug']]['protected']['status'] == 'published']
     assert len(reviewed_public) == 28
-    assert {a['slug'] for a in public}.isdisjoint({a['slug'] for a in drafts})
+    for draft in drafts:
+        active = next((a for a in public if a['id'] == draft['id']), None)
+        if active is not None: verify_archived_transition(active, draft)
     assert {a['slug'] for a in reviewed_public + drafts} == set(REVISIONS)
     for a in reviewed_public + drafts: verify_revision(a)
-    print('November revision receipts, exact manuscript text, protected publication history/images and two unpublished drafts: passed (30 articles).')
+    print('November revision receipts, exact manuscript text, protected history/images and archived draft transitions: passed (30 reviewed records).')
 
 
 if __name__ == '__main__': main()

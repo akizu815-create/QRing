@@ -65,7 +65,7 @@ print('Static export: existing URLs/content/metadata/schema/anchors preserved; m
 # Scan the built payloads too, so an accidental future import fails closed.
 draft_file = Path('src/content/columns/revisions/20261128/unpublished-drafts.json')
 if draft_file.exists():
- drafts = json.loads(draft_file.read_text())
+ drafts = [a for a in json.loads(draft_file.read_text()) if not any(p['id'] == a['id'] for p in published)]
  for file in root.rglob('*'):
   if file.is_file() and file.suffix in {'.html', '.txt', '.json', '.js', '.xml'}:
    payload = file.read_text(errors='ignore')
@@ -73,4 +73,4 @@ if draft_file.exists():
     assert a['title'] not in payload and '/column/' + a['slug'] + '/' not in payload, f'Reviewed future draft leaked: {file}: {a["slug"]}'
  for a in drafts:
   assert not (root / 'column' / a['slug']).exists()
- print('Reviewed Nov29/30 drafts: absent from routes, HTML, RSC, JavaScript and XML.')
+ print(f'Still-held reviewed drafts: {len(drafts)} absent from routes, HTML, RSC, JavaScript and XML.')

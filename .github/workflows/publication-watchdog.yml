@@ -1,0 +1,27 @@
+name: Column publication watchdog
+on:
+  schedule:
+    - cron: "29 * * * *"
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: read
+concurrency:
+  group: publication-watchdog
+  cancel-in-progress: false
+jobs:
+  heartbeat:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const {checkHeartbeat} = require('./scripts/check-publication-watchdog.cjs');
+            const runs = await github.rest.actions.listWorkflowRuns({
+              ...context.repo, workflow_id: 'deploy.yml', branch: 'main', per_page: 100
+            });
+            const report = checkHeartbeat(runs.data.workflow_runs, Date.now());
+            await core.summary.addHeading('Publication heartbeat').addCodeBlock(JSON.stringify(report)).write();

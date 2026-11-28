@@ -9,6 +9,7 @@ try {
   for (const name of ['types', 'publication', 'navigation']) {
     fs.writeFileSync(path.join(tmp, name + '.js'), ts.transpileModule(fs.readFileSync(path.join('src/lib/columns', name + '.ts'), 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText);
   }
+fs.copyFileSync('src/lib/columns/releasePolicy.js', path.join(tmp, 'releasePolicy.js'));
   const { selectPublishedArticles, toArticleCard, validateArticle } = require(path.join(tmp, 'publication.js'));
   const { latestArticles, columnPageCount, columnListPath, relatedArticles } = require(path.join(tmp, 'navigation.js'));
   assert.equal(columnPageCount(23), 3);
@@ -70,7 +71,7 @@ try {
   const clone = () => structuredClone(records[0]);
   assert.equal(CATEGORIES.length, 7); assert.equal(AUDIENCES.length, 3);
   assert.deepEqual(new Set(selectPublishedArticles(records, now).map(a => a.slug)), new Set(['elderly-monitoring', 'lost-item-preparation']));
-  for (const status of ['draft', 'review', 'approved', 'scheduled', 'needs_revision', 'archived']) {
+  for (const status of ['draft', 'review', 'approved', 'needs_revision', 'archived']) {
     const a = { ...clone(), id: status, slug: status, status };
     assert.equal(selectPublishedArticles([a], now).length, 0, status);
   }

@@ -8,6 +8,7 @@ import subprocess
 import tempfile
 import contextlib
 import io
+import html
 import unittest
 from unittest.mock import patch
 
@@ -63,10 +64,22 @@ class PublicationOps(unittest.TestCase):
         selected = home_column_picks(public, picks)
         home = '<section id="column"><a href="/column/">All</a>'+''.join(
             '<a href="/column/'+a['slug']+'/">'+a['title']+'</a>' for a in selected)+'</section>'
-        pages = {'/': home, '/column/': ''.join(paths),
+        pages = {'/': home, '/column/': ''.join('<a href="'+p+'">Article</a>' for p in paths),
                  '/sitemap.xml': '<urlset>'+''.join('<url><loc>'+live.BASE+p+'</loc></url>' for p in paths)+'</urlset>'}
         for article in public:
-            pages['/column/'+article['slug']+'/'] = article['title']+''.join(paths)
+            texts=[article['summary'],*article.get('introduction',[])]
+            for section in article['sections']:
+                texts.append(section['title'])
+                for b in section['blocks']:
+                    texts.extend([b['text']] if b['type'] in ('paragraph','heading') else b['items'] if b['type']=='list' else [v for row in [b['headers'],*b['rows']] for v in row] if b['type']=='table' else [])
+            node={'@type':'Article','headline':article['title'],'datePublished':article.get('publishedTimestamp',article['publishedAt'])}
+            markup='<title>'+html.escape(article['seoTitle'])+'</title><link rel="canonical" href="'+live.BASE+'/column/'+article['slug']+'/"><h1>'+html.escape(article['title'])+'</h1>'
+            markup+='<meta name="description" content="'+html.escape(article['metaDescription'],quote=True)+'"><meta property="og:title" content="'+html.escape(article['seoTitle'],quote=True)+'"><meta property="og:type" content="article">'
+            markup+=''.join('<p>'+html.escape(t)+'</p>' for t in texts)+''.join('<a href="'+p+'">Related</a>' for p in paths)
+            if article.get('image'):
+                image=article['image'];markup+='<meta property="og:image" content="'+live.BASE+image['src']+'"><img src="'+image['src']+'" alt="'+html.escape(image['alt'],quote=True)+'">'
+                pages[image['src']]=(ROOT/'public'/image['src'].lstrip('/')).read_bytes()
+            pages['/column/'+article['slug']+'/']=markup+'<script type="application/ld+json">'+json.dumps(node)+'</script>'
         return records, public, pages
 
     def test_required_boundaries_and_live_surfaces(self):
@@ -135,22 +148,23 @@ class PublicationOps(unittest.TestCase):
         records, public, pages = self.fixture(stamp)
         latest = public[0]
         path = '/column/'+latest['slug']+'/'
-        pages[path] = latest['title']
+        pages[path] = pages[path].replace('href="/column/'+latest['relatedArticleIds'][0]+'/"','href="/column/missing/"')
         with self.assertRaisesRegex(AssertionError, 'Due related link missing'):
             live.verify(records, dt.datetime.fromisoformat(stamp), pages.__getitem__)
         pages[path] = 'wrong page'
         with self.assertRaisesRegex(AssertionError, 'individual page'):
             live.verify(records, dt.datetime.fromisoformat(stamp), pages.__getitem__)
 
-    def test_workflow_keeps_three_daily_attempts_and_main_guard(self):
+    def test_workflow_has_all_day_recovery_and_main_guard(self):
         workflow = (ROOT/'.github/workflows/deploy.yml').read_text()
         self.assertIn('cron: "50 22 * * *"', workflow)
-        self.assertIn('cron: "15,45 23 * * *"', workflow)
-        self.assertNotIn('cron: "0 23 * * *"', workflow)
+        self.assertIn('cron: "13,43 * * * *"', workflow)
         self.assertIn("if: github.ref == 'refs/heads/main'", workflow)
         self.assertIn('cancel-in-progress: false', workflow)
         self.assertIn('run: python3 scripts/check-live-columns.py', workflow)
         self.assertIn('if: always()', workflow)
+        self.assertIn('needs.plan.outputs.source', workflow)
+        self.assertIn('main changed during the build', workflow)
 
     def test_live_network_failure_retries_and_fails_job(self):
         with patch.object(live,'urlopen',side_effect=OSError('unreachable')) as request, \
