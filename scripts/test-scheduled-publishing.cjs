@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
 const {selectReleased,publicationInstant,timestamp}=require('../src/lib/columns/releasePolicy.js');
-const {checkPacket}=require('./column-month.cjs');
+const {checkPacket,monthlyInventory}=require('./column-month.cjs');
 const {checkHeartbeat}=require('./check-publication-watchdog.cjs');
 const existing=JSON.parse(fs.readFileSync('src/content/columns/published.json'));
 for(const a of existing)if(a.image){
@@ -36,12 +36,16 @@ const two=[article(1),article(1,99)];assert.equal(selectReleased(two,timestamp('
 assert.equal(selectReleased([article(1)],timestamp('2026-12-02T09:00:00+09:00')).length,1,'Catch yesterday\'s missed article');
 assert.throws(()=>selectReleased([article(1),article(1)],Date.parse('2027-01-01')),/duplicate/);
 const month=Array.from({length:31},(_,i)=>article(i+1));
-assert.deepEqual(checkPacket(month,'2026-12',existing),{month:'2026-12',articles:31,dates:31,reviewFieldsConsistent:true});
+assert.deepEqual(checkPacket(month,'2026-12',existing),{month:'2026-12',articles:31,dates:31,images:31,uniqueImages:1,approvedArticles:31,scheduledArticles:31,missingDates:[],duplicateDates:[],missingTimestamps:[],duplicateTimestamps:[],nonDefaultTimes:[],reviewFieldsConsistent:true});
 assert.throws(()=>checkPacket([{...month[0],image:{...month[0].image,width:1}},...month.slice(1)],'2026-12',existing),/Image dimensions/);
 assert.throws(()=>checkPacket(month.slice(1),'2026-12',existing),/Missing scheduled/);
 assert.throws(()=>checkPacket([{...month[0],status:'draft'},...month.slice(1)],'2026-12',existing),/scheduled/);
 assert.throws(()=>checkPacket([{...month[0],approvalRevision:null},...month.slice(1)],'2026-12',existing),/Unapproved/);
 assert.throws(()=>checkPacket([month[0],...month],'2026-12',existing),/Duplicate/);
+assert.throws(()=>checkPacket([...month,article(1,99)],'2026-12',existing),/duplicate\/non-08:00/);
+assert.throws(()=>checkPacket([{...month[0],publishedTimestamp:'2026-12-01T09:00:00+09:00'},...month.slice(1)],'2026-12',existing),/non-08:00/);
+const inventory=monthlyInventory([{...month[0],image:undefined,approvalRevision:null,publicationPending:true,publishedTimestamp:undefined},...month.slice(1)],'2026-12');
+assert.equal(inventory.images,30);assert.equal(inventory.approvedArticles,30);assert.equal(inventory.scheduledArticles,30);assert.equal(inventory.missingTimestamps.length,1);
 const now=Date.parse('2026-12-01T01:00:00Z');const run={id:1,path:'.github/workflows/deploy.yml',head_branch:'main',event:'schedule',conclusion:'success',updated_at:'2026-12-01T00:30:00Z'};
 assert.equal(checkHeartbeat([run],now).lastVerifiedRun,1);
 for(const runs of [[],[{...run,conclusion:'failure'}],[{...run,head_branch:'other'}],[{...run,updated_at:'2026-11-30T01:00:00Z'}]])assert.throws(()=>checkHeartbeat(runs,now),/No successful/);
