@@ -2,6 +2,7 @@
 
 Default: verify the registration. --sync: update only this batch's records/copies.
 """
+from column_revision_support import reviewed_expected, verify_revision, REVISIONS
 import hashlib
 import json
 import re
@@ -119,7 +120,9 @@ def registration(meta):
 
 def main():
     records = json.loads(REGISTRY.read_text())
-    expected = [registration(meta) for meta in BATCH]
+    expected = [reviewed_expected(meta['slug'], registration(meta), full=True) for meta in BATCH]
+    if '--sync' in sys.argv and any(a['slug'] in REVISIONS for a in expected):
+        raise SystemExit('Reviewed revisions exist; legacy --sync would discard them. Amend the revision record instead.')
     if '--sync' in sys.argv:
         for meta, article in zip(BATCH,expected):
             source = STAGING / f'2026-11-{meta["day"]:02}-{meta["file"]}.md'
@@ -132,7 +135,8 @@ def main():
         actual = next(a for a in records if a['id']==article['id'])
         assert actual == article, f'{article["slug"]}: registration differs'
         assert hashlib.sha256((ROOT/article['approvalRecord']['sourceFile']).read_bytes()).hexdigest()==article['approvalRecord']['sha256']
-    print('PR #130: all eight titles, paragraphs, tables, numbered steps and references registered from supplied text and the authorized Nov 11 correction; all eight ready for scheduled builds after merge approval.')
+        verify_revision(actual)
+    print('PR #130: eight historical registrations plus explicit November quality amendments match; publication history and image receipts verified.')
 
 
 if __name__ == '__main__':

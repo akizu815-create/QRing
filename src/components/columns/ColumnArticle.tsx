@@ -19,18 +19,21 @@ function ContentBlock({ block }: { block: Block }) {
       const link = <Link href={block.href} className="link-underline text-moss">{block.label}</Link>;
       return block.prefix || block.suffix ? <p>{block.prefix}{link}{block.suffix}</p> : link;
     }
-    case "table": return <div className="overflow-x-auto overscroll-x-contain focus-visible:outline focus-visible:outline-2 focus-visible:outline-moss" role="region" aria-label={block.caption} tabIndex={0}>
-      <table className="w-full min-w-[640px] border-collapse text-left text-sm leading-7">
+    case "table": return <div>{block.headers.length > 2 && <p className="mb-3 text-sm text-ink/70 md:hidden">表は横にスクロールして確認できます。</p>}<div className="overflow-x-auto overscroll-x-contain focus-visible:outline focus-visible:outline-2 focus-visible:outline-moss" role="region" aria-label={block.caption} tabIndex={0}>
+      <table className={`w-full ${block.headers.length > 2 ? "min-w-[640px] " : ""}border-collapse text-left text-sm leading-7`}>
         <caption className="sr-only">{block.caption}</caption>
         <thead><tr className="border-y border-ink/20">{block.headers.map((h) => <th scope="col" key={h} className="p-4 font-medium">{h}</th>)}</tr></thead>
         <tbody>{block.rows.map((row, i) => <tr key={i} className="border-b border-ink/10">{row.map((cell, j) => j === 0 ? <th scope="row" key={j} className="p-4 font-medium">{cell}</th> : <td key={j} className="p-4">{cell}</td>)}</tr>)}</tbody>
       </table>
-    </div>;
+    </div></div>;
   }
 }
 export default function ColumnArticle({ article: a, related }: { article: Article; related: Article[] }) {
   const sections = visibleArticleSections(a, getPublishedArticles());
   const additionalCta = additionalServiceCta(a);
+  const bodyLinks = new Set(sections.flatMap(s => s.blocks.flatMap(b => b.type === "link" ? [b.href.replace(/^https:\/\/www\.qring\.jp/, "")] : [])));
+  const footerRelated = related.filter(r => !bodyLinks.has(articlePath(r.slug)));
+  const footerLinks = a.relatedLinks?.filter(l => !bodyLinks.has(l.href) && !related.some(r => articlePath(r.slug) === l.href));
   const serviceLink = (href: string, label: string, placement: string, className = "link-underline text-moss") => <ColumnServiceLink href={href} slug={a.slug} category={a.category} placement={placement} kind={articleCtaKind(a)} className={className}>{label}</ColumnServiceLink>;
   return <>
     <ColumnStructuredData path={articlePath(a.slug)} title={a.seoTitle} description={a.metaDescription} article={a} />
@@ -43,7 +46,7 @@ export default function ColumnArticle({ article: a, related }: { article: Articl
         <p data-approved-introduction={a.contentFormat === "approved-manuscript" ? true : undefined} className="body-jp mt-8 text-sm md:text-base">{a.summary}</p>
         {a.introduction?.map((text, i) => <p key={i} data-approved-introduction={a.contentFormat === "approved-manuscript" ? true : undefined} className="body-jp mt-6 text-sm md:text-base">{text}</p>)}
         {a.image && <Image src={a.image.src} width={a.image.width} height={a.image.height} alt={a.image.alt} className="mt-10 h-auto w-full rounded-sm" sizes="(max-width: 768px) 100vw, 768px" priority />}
-        <p className="mt-7 text-xs leading-7 text-ink/65">株式会社QRing　{a.editionDate && <>記事日：<time dateTime={articleDisplayDate(a)}>{formatDate(articleDisplayDate(a))}</time>　</>}{a.publicationPending ? <>公開前プレビュー</> : <>公開日：<time dateTime={articlePublishedTime(a)}>{formatDate(a.publishedAt)}</time></>}{a.updatedAt && <>　更新日：<time dateTime={a.updatedAt}>{formatDate(a.updatedAt)}</time></>}</p>
+        <p className="mt-7 text-xs leading-7 text-ink/65"><Link href="/about/" className="underline underline-offset-4">株式会社QRing</Link>　{a.editionDate && <>記事日：<time dateTime={articleDisplayDate(a)}>{formatDate(articleDisplayDate(a))}</time>　</>}{a.publicationPending ? <>公開前プレビュー</> : <>公開日：<time dateTime={articlePublishedTime(a)}>{formatDate(a.publishedAt)}</time></>}{a.updatedAt && <>　更新日：<time dateTime={a.updatedAt}>{formatDate(a.updatedAt)}</time></>}</p>
       </div></header>
       <div className="container-narrow py-8 md:py-12">
         <nav aria-labelledby="article-toc" className="pb-10 pt-3"><h2 id="article-toc" className="font-serif text-xl font-light">この記事の内容</h2><ol className="mt-5 space-y-3 text-sm leading-7 text-moss">{a.sections.map((s) => <li key={s.id}><a className="underline underline-offset-4" href={`#${s.id}`}>{s.title}</a></li>)}</ol></nav>
@@ -68,9 +71,9 @@ export default function ColumnArticle({ article: a, related }: { article: Articl
       <p>つながるQRでは、ペット向け商品についてのアンケートを実施しています。皆さまのご意見をぜひお聞かせください。</p>
       <PetSurveyLink placement="column" className="link-underline mt-2 inline-block py-2 text-moss hover:text-ink">ペット向けアンケートはこちら</PetSurveyLink>
     </aside>}
-    {a.primaryAudience === "municipal" && <div className="container-narrow py-8" data-municipal-article-return><Link href="/municipalities/" className="link-underline inline-block py-2 text-sm text-moss">自治体向けサービスについて →</Link></div>}
-    {(related.length > 0 || Boolean(a.relatedLinks?.length)) && <section className="py-14 md:py-20" aria-labelledby="article-related"><div className="container-narrow"><h2 id="article-related" className="font-serif text-2xl font-light">あわせて読む</h2><ul className="mt-6 space-y-4 text-sm leading-7 text-moss">{related.map((r) => <li key={r.id}><Link className="underline underline-offset-4" href={articlePath(r.slug)}>{r.title}</Link></li>)}{a.relatedLinks?.map((link) => <li key={link.href}>{serviceLink(link.href, link.label, "related-links", "underline underline-offset-4")}</li>)}</ul></div></section>}
-    {a.cta === "municipal" && <section className="border-t border-ink/15 py-16" aria-labelledby="article-next"><div className="container-narrow"><h2 id="article-next" className="font-serif text-2xl font-light">自治体・公共機関の皆さまへ</h2><p className="body-jp mt-6 text-sm">地域の見守りや実証実験に関するご相談を受け付けています。</p><div className="mt-6 flex flex-col items-start gap-5 text-sm text-moss"><a href="https://axb.qring.jp/contact" className="link-underline">見守り・実証実験について相談する →</a><Link href="/municipalities/" className="link-underline">自治体向けサービスについて →</Link></div></div></section>}
+    {a.primaryAudience === "municipal" && a.cta !== "municipal" && <div className="container-narrow py-8" data-municipal-article-return><Link href="/municipalities/" className="link-underline inline-block py-2 text-sm text-moss">自治体向けサービスについて →</Link></div>}
+    {(footerRelated.length > 0 || Boolean(footerLinks?.length)) && <section className="py-14 md:py-20" aria-labelledby="article-related"><div className="container-narrow"><h2 id="article-related" className="font-serif text-2xl font-light">あわせて読む</h2><ul className="mt-6 space-y-4 text-sm leading-7 text-moss">{footerRelated.map((r) => <li key={r.id}><Link className="underline underline-offset-4" href={articlePath(r.slug)}>{r.title}</Link></li>)}{footerLinks?.map((link) => <li key={link.href}>{serviceLink(link.href, link.label, "related-links", "underline underline-offset-4")}</li>)}</ul></div></section>}
+    {a.cta === "municipal" && <section className="border-t border-ink/15 py-16" aria-labelledby="article-next" data-municipal-article-return><div className="container-narrow"><h2 id="article-next" className="font-serif text-2xl font-light">自治体・公共機関の皆さまへ</h2><p className="body-jp mt-6 text-sm">地域の見守りや実証実験に関するご相談を受け付けています。</p><div className="mt-6 flex flex-col items-start gap-5 text-sm text-moss"><a href="https://axb.qring.jp/contact" className="link-underline">見守り・実証実験について相談する →</a><Link href="/municipalities/" className="link-underline">自治体向けサービスについて →</Link></div></div></section>}
     {a.cta === "contextual" && <section className="py-20 md:py-28" aria-labelledby="article-next"><div className="container-narrow">
       <h2 id="article-next" className="font-serif text-2xl font-light leading-relaxed md:text-3xl">発見した方から、電話番号を公開せず連絡。</h2>
       <p className="body-jp mt-6 text-sm md:text-base">つながるQRは、見つけた方とご家族・持ち主が、番号を公開せず通話できる連絡サービスです。</p>
