@@ -10,6 +10,7 @@ try {
   for (const name of ['types', 'publication', 'navigation']) {
     fs.writeFileSync(path.join(tmp, name + '.js'), ts.transpileModule(fs.readFileSync('src/lib/columns/' + name + '.ts', 'utf8'), {compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText);
   }
+fs.copyFileSync('src/lib/columns/releasePolicy.js', path.join(tmp, 'releasePolicy.js'));
   const {selectPublishedArticles, validateArticle} = require(path.join(tmp,'publication.js'));
   const {latestArticles, relatedArticles, columnPageCount} = require(path.join(tmp,'navigation.js'));
   const records = JSON.parse(fs.readFileSync('src/content/columns/published.json','utf8'));

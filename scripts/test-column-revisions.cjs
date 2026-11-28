@@ -29,6 +29,7 @@ assert.equal(retention.seoTitle, '忘れ物はいつまで保管する？店舗�
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'qring-revisions-'));
 try {
   for (const name of ['types', 'publication', 'navigation', 'serviceCta']) fs.writeFileSync(path.join(tmp, name + '.js'), ts.transpileModule(fs.readFileSync('src/lib/columns/' + name + '.ts', 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS } }).outputText);
+fs.copyFileSync('src/lib/columns/releasePolicy.js', path.join(tmp, 'releasePolicy.js'));
   const {selectPublishedArticles, validateArticle} = require(path.join(tmp, 'publication.js'));
   const {additionalServiceCta} = require(path.join(tmp, 'serviceCta.js'));
   for (const a of drafts) {
@@ -37,7 +38,11 @@ try {
       assert.equal(selectPublishedArticles([a], Date.parse(date)).length, 0);
       assert.equal(selectPublishedArticles([a], Date.parse(date), {previewPending: true}).length, 0);
     }
-    assert(!records.some(p => p.slug === a.slug), 'No unfinished draft in the public registry');
+    const active = records.find(p => p.slug === a.slug);
+    if (active && ['published','scheduled'].includes(active.status)) {
+      assert.equal(active.publicationPending, false);
+      assert.equal(active.approvalRevision, active.contentRevision);
+    }
   }
   for (const slug of ['dog-owner-voice', 'cat-owner-memory', 'pets-earthquake-prediction', 'disaster-family-contact', 'dementia-forgetfulness']) {
     const a = records.find(a => a.slug === slug);

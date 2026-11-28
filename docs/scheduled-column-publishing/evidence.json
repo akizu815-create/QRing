@@ -1,0 +1,304 @@
+{
+  "checkedOn": "2026-11-28",
+  "baseCommit": "387b82733e510b2bf990f9e2987fbaec1e12929d",
+  "repo": {
+    "default_branch": "main",
+    "public": true,
+    "has_pages": true
+  },
+  "runs": [
+    {
+      "id": 46121256491,
+      "event": "push",
+      "head": "387b82733e510b2bf990f9e2987fbaec1e12929d",
+      "status": "in_progress",
+      "conclusion": null,
+      "createdAt": "2026-11-28T07:26:57Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/46121256491"
+    },
+    {
+      "id": 46108814002,
+      "event": "schedule",
+      "head": "cfe1298eda1317112796fe301178410c8c5462aa",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-28T04:42:50Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/46108814002"
+    },
+    {
+      "id": 46106932543,
+      "event": "schedule",
+      "head": "cfe1298eda1317112796fe301178410c8c5462aa",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-28T04:18:39Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/46106932543"
+    },
+    {
+      "id": 46060969443,
+      "event": "push",
+      "head": "cfe1298eda1317112796fe301178410c8c5462aa",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-27T20:03:28Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/46060969443"
+    },
+    {
+      "id": 45942953740,
+      "event": "schedule",
+      "head": "e3b6b8913050d64fd55a0ed195b5f403997f09c4",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-27T04:57:56Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45942953740"
+    },
+    {
+      "id": 45940803813,
+      "event": "schedule",
+      "head": "e3b6b8913050d64fd55a0ed195b5f403997f09c4",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-27T04:35:09Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45940803813"
+    },
+    {
+      "id": 45931526951,
+      "event": "push",
+      "head": "e3b6b8913050d64fd55a0ed195b5f403997f09c4",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-27T02:59:35Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45931526951"
+    },
+    {
+      "id": 45758512823,
+      "event": "schedule",
+      "head": "3f090b145a0ef84fb271c3ee0828b5d22f22f727",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-26T04:58:08Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45758512823"
+    },
+    {
+      "id": 45755522123,
+      "event": "schedule",
+      "head": "3f090b145a0ef84fb271c3ee0828b5d22f22f727",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-26T04:29:26Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45755522123"
+    },
+    {
+      "id": 45661149131,
+      "event": "push",
+      "head": "3f090b145a0ef84fb271c3ee0828b5d22f22f727",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-25T17:06:23Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45661149131"
+    },
+    {
+      "id": 45578517716,
+      "event": "push",
+      "head": "2941576c27fe6a8740251351493127696107b806",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-25T08:41:36Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45578517716"
+    },
+    {
+      "id": 45577306581,
+      "event": "push",
+      "head": "c46cb9cb37b5973e4dd4614d457fdb4c5033d625",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-25T08:33:20Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45577306581"
+    },
+    {
+      "id": 45576425664,
+      "event": "push",
+      "head": "f104c3819fafa26f3c803487097aeba0616a13d2",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-25T08:27:27Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45576425664"
+    },
+    {
+      "id": 45553322635,
+      "event": "schedule",
+      "head": "eda3eaa788e5b2a15dd0fa17ac2b126132215caa",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-25T05:24:09Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45553322635"
+    },
+    {
+      "id": 45550925843,
+      "event": "schedule",
+      "head": "eda3eaa788e5b2a15dd0fa17ac2b126132215caa",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-25T05:03:28Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45550925843"
+    },
+    {
+      "id": 45446807015,
+      "event": "push",
+      "head": "eda3eaa788e5b2a15dd0fa17ac2b126132215caa",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-24T17:16:55Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45446807015"
+    },
+    {
+      "id": 45438519798,
+      "event": "push",
+      "head": "8516de8891426855c4b0f3b2c89dd076368cb14b",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-24T16:33:30Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45438519798"
+    },
+    {
+      "id": 45436637430,
+      "event": "push",
+      "head": "7845bb730907c03abbfd65ba5ae1e337357fb0b2",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-24T16:23:52Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45436637430"
+    },
+    {
+      "id": 45433751631,
+      "event": "push",
+      "head": "f7b72135ce5fbee79b5b2fa74d204e25905b2e45",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-24T16:09:08Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45433751631"
+    },
+    {
+      "id": 45430872990,
+      "event": "push",
+      "head": "150097f24ef471489002542d06a849d8e9515f99",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-24T15:54:22Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45430872990"
+    },
+    {
+      "id": 45428784354,
+      "event": "push",
+      "head": "ed9302399680e16ff8883508651547f0e0ed107a",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-24T15:43:21Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45428784354"
+    },
+    {
+      "id": 45355828589,
+      "event": "push",
+      "head": "f18305e3385dfe9b65028ff8ba352bc059cc0e8b",
+      "status": "completed",
+      "conclusion": "success",
+      "createdAt": "2026-11-24T08:24:25Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45355828589"
+    },
+    {
+      "id": 45352792736,
+      "event": "push",
+      "head": "a393f3505414c6efddc18e0a36c2ceb69433cf0e",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-24T08:03:14Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45352792736"
+    },
+    {
+      "id": 45344952214,
+      "event": "push",
+      "head": "8b3dbfc1041d95c0d00cc631f4215470b540eae5",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-24T07:02:45Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45344952214"
+    },
+    {
+      "id": 45344925597,
+      "event": "push",
+      "head": "638ffd79b60e050ca307290c514ac9e2ccb91c64",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-24T07:02:32Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45344925597"
+    },
+    {
+      "id": 45344102978,
+      "event": "schedule",
+      "head": "ef38c7ddfa3eee2ac4ec744b65b4020ee32d6500",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-24T06:55:50Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45344102978"
+    },
+    {
+      "id": 45340762607,
+      "event": "schedule",
+      "head": "ef38c7ddfa3eee2ac4ec744b65b4020ee32d6500",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-24T06:28:54Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45340762607"
+    },
+    {
+      "id": 45309859492,
+      "event": "push",
+      "head": "ef38c7ddfa3eee2ac4ec744b65b4020ee32d6500",
+      "status": "completed",
+      "conclusion": "failure",
+      "createdAt": "2026-11-24T02:05:55Z",
+      "url": "https://github.com/akizu815-create/QRing/actions/runs/45309859492"
+    }
+  ],
+  "logExcerpts": [
+    {
+      "job": 140867514182,
+      "lines": [
+        "2026-11-28T04:43:15.1048060Z   COLUMN_SCHEDULE: 15,45 23 * * *",
+        "2026-11-28T04:43:15.1326134Z {\"event\": \"schedule\", \"schedule\": \"15,45 23 * * *\", \"startedAt\": \"2026-11-28T04:43:15.132248+00:00\", \"waitSeconds\": 0}",
+        "2026-11-28T04:43:15.1327475Z {\"event\": \"schedule\", \"schedule\": \"15,45 23 * * *\", \"COLUMN_BUILD_AT\": \"2026-11-28T04:43:15+00:00\"}",
+        "2026-11-28T04:43:15.1460283Z   COLUMN_BUILD_AT: 2026-11-28T04:43:15+00:00",
+        "2026-11-28T04:43:41.8805850Z   COLUMN_BUILD_AT: 2026-11-28T04:43:15+00:00",
+        "2026-11-28T04:43:42.3830189Z   COLUMN_BUILD_AT: 2026-11-28T04:43:15+00:00",
+        "2026-11-28T04:43:42.8844876Z   COLUMN_BUILD_AT: 2026-11-28T04:43:15+00:00",
+        "2026-11-28T04:43:42.8980019Z   COLUMN_BUILD_AT: 2026-11-28T04:43:15+00:00",
+        "2026-11-28T04:43:42.9853629Z   COLUMN_BUILD_AT: 2026-11-28T04:43:15+00:00"
+      ]
+    },
+    {
+      "job": 140867731732,
+      "lines": [
+        "2026-11-28T04:43:58.1713221Z Created deployment for cfe1298eda1317112796fe301178410c8c5462aa, ID: cfe1298eda1317112796fe301178410c8c5462aa",
+        "2026-11-28T04:44:04.1224257Z {\"verifiedAt\": \"2026-11-28T04:44:03.397959+00:00\", \"publicArticles\": 28, \"homePicks\": [\"elderly-monitoring\", \"lost-dog-preparation\", \"lost-item-preparation\"], \"latest\": \"/column/disaster-family-contact/\", \"live\": \"passed\"}",
+        "2026-11-28T04:44:04.3321487Z Evaluated environment url: https://www.qring.jp/"
+      ]
+    },
+    {
+      "job": 138999374267,
+      "lines": [
+        "2026-11-25T05:24:32.1281037Z     assert actual == article, f'{article[\"slug\"]}: registration differs'",
+        "2026-11-25T05:24:32.1283022Z AssertionError: care-levels: registration differs"
+      ]
+    },
+    {
+      "job": 138274703457,
+      "lines": [
+        "2026-11-24T06:56:49.2862684Z Created deployment for ef38c7ddfa3eee2ac4ec744b65b4020ee32d6500, ID: ef38c7ddfa3eee2ac4ec744b65b4020ee32d6500",
+        "2026-11-24T06:56:55.1807370Z Attempt 1: Latest due article missing from HOME",
+        "2026-11-24T06:57:05.3150684Z Attempt 2: Latest due article missing from HOME",
+        "2026-11-24T06:57:15.4609111Z Attempt 3: Latest due article missing from HOME",
+        "2026-11-24T06:57:15.7144317Z Evaluated environment url: https://www.qring.jp/"
+      ]
+    }
+  ]
+}

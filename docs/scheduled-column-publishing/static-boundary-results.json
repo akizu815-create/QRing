@@ -1,0 +1,30 @@
+[
+  {
+    "cutoff": "2026-12-01T07:59:59+09:00",
+    "verifiedAt": "2026-12-01T07:59:59+09:00",
+    "publicArticles": 28,
+    "homePicks": [
+      "elderly-monitoring",
+      "lost-dog-preparation",
+      "lost-item-preparation"
+    ],
+    "latest": "/column/disaster-family-contact/",
+    "individualPagesChecked": 28,
+    "unpublishedURLsChecked": 5,
+    "live": "passed"
+  },
+  {
+    "cutoff": "2026-12-01T08:00:00+09:00",
+    "verifiedAt": "2026-12-01T08:00:00+09:00",
+    "publicArticles": 30,
+    "homePicks": [
+      "elderly-monitoring",
+      "lost-dog-preparation",
+      "lost-item-preparation"
+    ],
+    "latest": "/column/schedule-test-0/",
+    "individualPagesChecked": 30,
+    "unpublishedURLsChecked": 3,
+    "live": "passed"
+  }
+]

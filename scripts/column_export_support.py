@@ -50,10 +50,14 @@ def publication_now():
 
 
 def published_articles(records):
-    now = publication_now()
-    return [a for a in records if a.get('status') == 'published'
-            and not a.get('publicationPending')
-            and a.get('approvalRevision') == a['contentRevision']
-            and all(c['verified'] for c in a['claims'])
-            and a['validationResults'] and all(c['passed'] for c in a['validationResults'])
-            and dt.datetime.fromisoformat(a.get('publishedTimestamp', a['publishedAt']+'T00:00:00+09:00').replace('Z', '+00:00')) <= now]
+    # A single JS policy defines dates, scheduled/published eligibility and approval.
+    # Node is available on the site's build and deployment runners; no npm install
+    # or TypeScript compiler is needed for this read-only call.
+    import json
+    import subprocess
+    from pathlib import Path
+    script = Path(__file__).with_name('column-release-indices.cjs')
+    result = subprocess.run(['node', str(script)], input=json.dumps({
+        'records': records, 'now': publication_now().isoformat()
+    }), text=True, capture_output=True, check=True)
+    return [records[i] for i in json.loads(result.stdout)]
