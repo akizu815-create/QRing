@@ -55,7 +55,8 @@ class RecoveryTests(unittest.TestCase):
     def test_future_direct_url_even_soft_200_is_an_error(self):
         a=copy.deepcopy(self.records[0]);a.update(id='future-test',slug='future-test',title='PRIVATE_FUTURE_TEST',status='scheduled',publishedAt='2026-12-01',publishedTimestamp='2026-12-01T08:00:00+09:00')
         records=self.records+[a]
-        self.assertEqual(live.verify(records,self.now,self.fetch)['unpublishedURLsChecked'],1)
+        baseline=live.verify(self.records,self.now,self.fetch)['unpublishedURLsChecked']
+        self.assertEqual(live.verify(records,self.now,self.fetch)['unpublishedURLsChecked'],baseline+1)
         self.pages['/column/future-test/']='<h1>404 Not Found</h1>'
         with self.assertRaisesRegex(AssertionError,'direct URL'):live.verify(records,self.now,self.fetch)
     def test_future_sitemap_leak_fails(self):
