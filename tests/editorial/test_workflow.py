@@ -30,7 +30,7 @@ class WorkflowTests(unittest.TestCase):
         self.db.close(); self.tmp.cleanup()
     def draft(self): return core.create_draft(self.db,self.article,self.evidence,'editor')
     def approved(self):
-        a=self.draft(); self.step('submit'); self.step('verify',attested=True); return self.step('approve')
+        a=self.draft(); self.step('submit'); self.step('verify',attested=True,policy_attested=True,policy_note='Synthetic public-source classification; full publication-surface review fixture.',representative_approval='synthetic-source-classification-decision'); return self.step('approve')
     def step(self,action,**kwargs):
         a=core.get(self.db,self.article['id'])['article']; return core.transition(self.db,a['id'],a['contentRevision'],action,'reviewer',**kwargs)
     def test_revision_approval_history_and_stale_save(self):
@@ -49,14 +49,14 @@ class WorkflowTests(unittest.TestCase):
     def test_missing_source_and_overlap_hold(self):
         self.draft(); self.step('submit')
         with self.db: self.db.execute('UPDATE editorial_articles SET evidence_json=?',('[]',))
-        with self.assertRaises(ValueError): self.step('verify',attested=True)
+        with self.assertRaises(ValueError): self.step('verify',attested=True,policy_attested=True,policy_note='Synthetic public-source classification; full publication-surface review fixture.',representative_approval='synthetic-source-classification-decision')
         a=copy.deepcopy(self.article); a['id']='other'; a['slug']='other'; core.create_draft(self.db,a,self.evidence,'editor')
         self.assertIn('other',core.check_conflicts(self.db,self.article))
     def test_publish_snapshot_separate_from_article_approval(self):
         published_before = copy.deepcopy(core.published())
         self.draft()
         with self.assertRaises(ValueError): core.prepare_release(self.db,'publisher',[{'id':self.article['id'],'revision':1}])
-        self.step('submit'); self.step('verify',attested=True); self.step('approve')
+        self.step('submit'); self.step('verify',attested=True,policy_attested=True,policy_note='Synthetic public-source classification; full publication-surface review fixture.',representative_approval='synthetic-source-classification-decision'); self.step('approve')
         r=core.prepare_release(self.db,'publisher',[{'id':self.article['id'],'revision':1}])
         self.assertFalse(r['deploymentApproved']); self.assertEqual(core.published(),published_before)
         export=export_release(self.db,r['id'],'operator'); self.assertTrue(Path(export['path']).is_file())

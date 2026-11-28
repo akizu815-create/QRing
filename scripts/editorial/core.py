@@ -135,11 +135,12 @@ def quality(db, a, evidence):
             errors.append('90日を超えた出典を再確認してください。')
     return errors
 
-def transition(db, article_id, expected, action, actor, note='', attested=False):
+def transition(db, article_id, expected, action, actor, note='', attested=False, policy_attested=False, policy_note='', representative_approval=''):
     db.execute('BEGIN IMMEDIATE')
     try:
         row, a = locked(db, article_id, expected)
         validate(a)
+        policy_review = None
         if action == 'submit':
             if a['status'] not in ['draft', 'needs_revision']: raise ValueError('Only drafts can be submitted')
             a['status'] = 'review'
@@ -147,12 +148,14 @@ def transition(db, article_id, expected, action, actor, note='', attested=False)
             if a['status'] != 'review' or not attested: raise ValueError('Explicit source, claim and service-specification review required')
             errors = quality(db, a, row['evidence'])
             if errors: raise ValueError(' / '.join(errors))
+            from . import naming_policy
+            policy_review = naming_policy.review_record(a, policy_attested, policy_note, representative_approval, related=all_articles(db))
             a['claims'] = [{**c, 'verified': True} for c in a['claims']]
-            a['validationResults'] = [{'check': 'human-sources-claims-service-specification', 'passed': True}]
+            a['validationResults'] = [{'check': 'human-sources-claims-service-specification', 'passed': True}, {'check': naming_policy.CHECK, 'passed': True}]
             a['reviewedAt'] = today()
             db.execute('UPDATE editorial_articles SET review_revision=? WHERE id=?', (expected, article_id))
         elif action == 'approve':
-            if a['status'] != 'review' or row['reviewRevision'] != expected or quality(db, a, row['evidence']): raise ValueError('Current revision must pass explicit human review')
+            if a['status'] != 'review' or row['reviewRevision'] != expected or not policy_reviewed(a) or quality(db, a, row['evidence']): raise ValueError('Current revision must pass explicit human review')
             a.update(status='approved', approvalRevision=expected)
         elif action == 'return':
             if not note.strip(): raise ValueError('Revision reason required')
@@ -161,9 +164,13 @@ def transition(db, article_id, expected, action, actor, note='', attested=False)
             db.execute('UPDATE editorial_articles SET review_revision=NULL WHERE id=?', (article_id,))
         else: raise ValueError('Unknown transition')
         db.execute('UPDATE editorial_articles SET status=?,article_json=?,updated_at=? WHERE id=?', (a['status'], encode(a), utcnow(), article_id))
-        audit(db, actor, action, a, {'note': note[:2000], 'snapshot': a})
+        audit(db, actor, action, a, {'note': note[:2000], 'snapshot': a, **({'namingPolicyReview': policy_review} if policy_review else {})})
         db.commit(); return a
     except Exception: db.rollback(); raise
+
+def policy_reviewed(article):
+    from .naming_policy import CHECK
+    return any(r.get('check') == CHECK and r.get('passed') is True for r in article['validationResults'])
 
 def seo_context(db):
     articles = published(); report = analyze(db, articles)
@@ -185,7 +192,7 @@ def prepare_release(db, actor, selections):
         base = published(); merged = {a['id']: a for a in base}; now = today()
         for selection in selections:
             row, a = locked(db, selection['id'], selection['revision'])
-            if a['status'] != 'approved' or a['approvalRevision'] != a['contentRevision'] or row['reviewRevision'] != a['contentRevision'] or quality(db, a, row['evidence']): raise ValueError('Only current verified approvals may be prepared')
+            if a['status'] != 'approved' or a['approvalRevision'] != a['contentRevision'] or row['reviewRevision'] != a['contentRevision'] or not policy_reviewed(a) or quality(db, a, row['evidence']): raise ValueError('Only current verified approvals may be prepared')
             if a['publishedAt'] > now: raise ValueError('Publication date has not arrived')
             a['status'] = 'published'; merged[a['id']] = a
         snapshot = list(merged.values())
