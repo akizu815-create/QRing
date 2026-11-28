@@ -1,0 +1,92 @@
+[
+  {
+    "route": "/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/faq/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/news/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/terms/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/municipalities/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/price/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/collaboration/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/404/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/service/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/about/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/law/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/contact/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/privacy/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/shop/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/news/newmarket-support/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/use-cases/elderly/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": false
+  },
+  {
+    "route": "/use-cases/belongings/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": true
+  },
+  {
+    "route": "/use-cases/pets/",
+    "metadataUnchanged": true,
+    "bodyTextUnchanged": false
+  }
+]

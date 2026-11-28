@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "why-we-misplace-things",
+    "existingPR134Image": "public/images/columns/why-we-misplace-things.webp",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 177724,
+    "copiedToPublic": false
+  },
+  {
+    "slug": "number-private-calls",
+    "existingPR134Image": "public/images/columns/number-private-calls.webp",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "bytes": 178046,
+    "copiedToPublic": false
+  }
+]

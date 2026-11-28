@@ -1,0 +1,89 @@
+{
+  "note": "All-article checks were followed by final verification of the two articles whose repeated caveats were consolidated.",
+  "results": [
+    {
+      "slug": "school-contact-list-privacy",
+      "width": 320,
+      "pageWidth": 320,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "care-levels",
+      "width": 320,
+      "pageWidth": 320,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "width": 375,
+      "pageWidth": 375,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "care-levels",
+      "width": 375,
+      "pageWidth": 375,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "width": 390,
+      "pageWidth": 390,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "care-levels",
+      "width": 390,
+      "pageWidth": 390,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "width": 430,
+      "pageWidth": 430,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "care-levels",
+      "width": 430,
+      "pageWidth": 430,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "width": 768,
+      "pageWidth": 768,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "care-levels",
+      "width": 768,
+      "pageWidth": 768,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "width": 1280,
+      "pageWidth": 1280,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    },
+    {
+      "slug": "care-levels",
+      "width": 1280,
+      "pageWidth": 1280,
+      "minBodyContrast": 5.049944196259715,
+      "minBodyFont": 14
+    }
+  ]
+}

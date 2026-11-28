@@ -1,0 +1,1729 @@
+{
+  "environment": "Local Chromium; external requests blocked (no analytics events)",
+  "screenshots": [
+    "/tmp/qring-quality-lost-property-retention-390-after.png",
+    "/tmp/qring-quality-lost-property-retention-390-before.png",
+    "/tmp/qring-quality-unknown-calls-390-after.png",
+    "/tmp/qring-quality-unknown-calls-390-before.png",
+    "/tmp/qring-quality-disaster-family-contact-390-after.png",
+    "/tmp/qring-quality-disaster-family-contact-390-before.png",
+    "/tmp/qring-quality-lost-property-retention-1280-after.png",
+    "/tmp/qring-quality-lost-property-retention-1280-before.png",
+    "/tmp/qring-quality-unknown-calls-1280-after.png",
+    "/tmp/qring-quality-unknown-calls-1280-before.png",
+    "/tmp/qring-quality-disaster-family-contact-1280-after.png",
+    "/tmp/qring-quality-disaster-family-contact-1280-before.png"
+  ],
+  "results": [
+    {
+      "slug": "elderly-monitoring",
+      "width": 390,
+      "status": 200,
+      "title": "離れて暮らす親の見守り、何から始める？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "離れて暮らす高齢の母親とスマートフォンで連絡を取る女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "lost-item-preparation",
+      "width": 390,
+      "status": 200,
+      "title": "鍵や財布をなくさないために。今日からできる紛失対策",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "鍵と財布、QRコード付きキーホルダー、持ち物チェックリストの水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "width": 390,
+      "status": 200,
+      "title": "高齢者の見守りに、つながる安心を。",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 853,
+        "width": 342,
+        "height": 227.90625,
+        "alt": "QRコードを付けたバッグを持つ高齢女性と、スマートフォンで連絡する女性のイラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "lost-dog-preparation",
+      "width": 390,
+      "status": 200,
+      "title": "もしも、大切な愛犬が迷子になったら。",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "QRコード付きの迷子札を付けた愛犬と飼い主の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "dementia-early-signs",
+      "width": 390,
+      "status": 200,
+      "title": "「もしかして認知症？」気になる初期症状をチェック",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "高齢女性と家族が自宅でチェック用紙を一緒に確認する水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "senior-care-facility-types",
+      "width": 390,
+      "status": 200,
+      "title": "老人ホームって種類が多すぎ！何が違うの？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "高齢女性と家族が介護施設の入口で職員の説明を受ける水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "width": 390,
+      "status": 200,
+      "title": "そういえば、学校の連絡網ってなくなった？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "親子が自宅のテーブルでタブレットを一緒に確認する水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "care-levels",
+      "width": 390,
+      "status": 200,
+      "title": "要支援？要介護？いったい何が違うの？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "高齢女性と家族が窓口の相談員と資料を見ながら話す水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "lost-wallet",
+      "width": 390,
+      "status": 200,
+      "title": "お財布を落としたら？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "なくした財布を思い浮かべ、警察への相談を考える高齢男性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "dementia-forgetfulness",
+      "width": 390,
+      "status": 200,
+      "title": "認知症と物忘れ、何が違う？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "認知症や物忘れについて、診察室で医師に相談する高齢女性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "lost-property-retention",
+      "width": 390,
+      "status": 200,
+      "title": "忘れ物はいつまで保管する？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "店舗の遺失物取扱所で、担当者と忘れ物の届出を確認する高齢女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "photo-location-privacy",
+      "width": 390,
+      "status": 200,
+      "title": "写真の位置情報、大丈夫？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "スマートフォンの写真に写った電柱や街並みから撮影場所が推測されることを示す水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "unidentified-elderly",
+      "width": 390,
+      "status": 200,
+      "title": "身元不明の高齢者、どう探す？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "身元を確認するため、高齢男性に警察官と女性が声をかける水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "dog-microchip",
+      "width": 390,
+      "status": 200,
+      "title": "犬のマイクロチップって何？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "犬をなでる女性と、マイクロチップおよび専用読み取り機を示す水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "care-insurance-age",
+      "width": 390,
+      "status": 200,
+      "title": "介護保険って何歳から？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "介護サービスの利用の流れについて、窓口の担当者に相談する高齢女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        },
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "unknown-calls",
+      "width": 390,
+      "status": 200,
+      "title": "知らない番号から電話が来たら、出るべき？",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "知らない番号からの着信に戸惑う高齢女性と、警察や銀行を装う電話への注意を示す水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "dog-owner-voice",
+      "width": 390,
+      "status": 200,
+      "title": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "young-onset-dementia",
+      "width": 390,
+      "status": 200,
+      "title": "認知症は何歳から始まる？若年性認知症の特徴と相談先",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "認知症の説明資料を手にした女性と、テーブルを挟んで話す眼鏡の男性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "width": 390,
+      "status": 200,
+      "title": "財布に入れてはいけないものってある？紛失時に困らないための整理術",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "qr-code-inventor",
+      "width": 390,
+      "status": 200,
+      "title": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "cat-owner-memory",
+      "width": 390,
+      "status": 200,
+      "title": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "elderly-fall-prevention",
+      "width": 390,
+      "status": 200,
+      "title": "高齢者が転倒しやすいのはなぜ？家の中でできる予防対策",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "室内の段差でつまずきそうになり、壁の手すりにつかまる高齢女性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "smartphone-emergency-sos",
+      "width": 390,
+      "status": 200,
+      "title": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "救急用品や充電器を用意したテーブルで、スマートフォンの緊急通報設定を確認する女性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "phone-number-personal-information",
+      "width": 390,
+      "status": 200,
+      "title": "電話番号から個人情報はどこまでわかる？知られたときのリスクと対策",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "連絡先のプライバシーについて考えながらスマートフォンを見る女性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "pets-earthquake-prediction",
+      "width": 390,
+      "status": 200,
+      "title": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "揺れる照明に反応する犬と猫を、室内で見つめる高齢の夫婦の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "width": 390,
+      "status": 200,
+      "title": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "タブレットを一緒に見ながら見守りについて話す高齢女性と家族の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "width": 390,
+      "status": 200,
+      "title": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "店頭のQRコードをスマートフォンでスキャンし、情報ページを確認する女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "disaster-family-contact",
+      "width": 390,
+      "status": 200,
+      "title": "災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え",
+      "h1Count": 1,
+      "viewport": 390,
+      "pageWidth": 390,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 342,
+        "height": 192.375,
+        "alt": "防災用品や地図をそろえ、スマートフォンとメモで家族の連絡方法を確認する女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": true,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "elderly-monitoring",
+      "width": 1280,
+      "status": 200,
+      "title": "離れて暮らす親の見守り、何から始める？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "離れて暮らす高齢の母親とスマートフォンで連絡を取る女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "lost-item-preparation",
+      "width": 1280,
+      "status": 200,
+      "title": "鍵や財布をなくさないために。今日からできる紛失対策",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "鍵と財布、QRコード付きキーホルダー、持ち物チェックリストの水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "width": 1280,
+      "status": 200,
+      "title": "高齢者の見守りに、つながる安心を。",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 853,
+        "width": 880,
+        "height": 586.4375,
+        "alt": "QRコードを付けたバッグを持つ高齢女性と、スマートフォンで連絡する女性のイラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "lost-dog-preparation",
+      "width": 1280,
+      "status": 200,
+      "title": "もしも、大切な愛犬が迷子になったら。",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "QRコード付きの迷子札を付けた愛犬と飼い主の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "dementia-early-signs",
+      "width": 1280,
+      "status": 200,
+      "title": "「もしかして認知症？」気になる初期症状をチェック",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "高齢女性と家族が自宅でチェック用紙を一緒に確認する水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "senior-care-facility-types",
+      "width": 1280,
+      "status": 200,
+      "title": "老人ホームって種類が多すぎ！何が違うの？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "高齢女性と家族が介護施設の入口で職員の説明を受ける水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "width": 1280,
+      "status": 200,
+      "title": "そういえば、学校の連絡網ってなくなった？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "親子が自宅のテーブルでタブレットを一緒に確認する水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "care-levels",
+      "width": 1280,
+      "status": 200,
+      "title": "要支援？要介護？いったい何が違うの？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "高齢女性と家族が窓口の相談員と資料を見ながら話す水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "lost-wallet",
+      "width": 1280,
+      "status": 200,
+      "title": "お財布を落としたら？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "なくした財布を思い浮かべ、警察への相談を考える高齢男性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "dementia-forgetfulness",
+      "width": 1280,
+      "status": 200,
+      "title": "認知症と物忘れ、何が違う？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "認知症や物忘れについて、診察室で医師に相談する高齢女性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "lost-property-retention",
+      "width": 1280,
+      "status": 200,
+      "title": "忘れ物はいつまで保管する？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "店舗の遺失物取扱所で、担当者と忘れ物の届出を確認する高齢女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "photo-location-privacy",
+      "width": 1280,
+      "status": 200,
+      "title": "写真の位置情報、大丈夫？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "スマートフォンの写真に写った電柱や街並みから撮影場所が推測されることを示す水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "unidentified-elderly",
+      "width": 1280,
+      "status": 200,
+      "title": "身元不明の高齢者、どう探す？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "身元を確認するため、高齢男性に警察官と女性が声をかける水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "dog-microchip",
+      "width": 1280,
+      "status": 200,
+      "title": "犬のマイクロチップって何？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "犬をなでる女性と、マイクロチップおよび専用読み取り機を示す水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "care-insurance-age",
+      "width": 1280,
+      "status": 200,
+      "title": "介護保険って何歳から？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "介護サービスの利用の流れについて、窓口の担当者に相談する高齢女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        },
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "unknown-calls",
+      "width": 1280,
+      "status": 200,
+      "title": "知らない番号から電話が来たら、出るべき？",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "知らない番号からの着信に戸惑う高齢女性と、警察や銀行を装う電話への注意を示す水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "dog-owner-voice",
+      "width": 1280,
+      "status": 200,
+      "title": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "公園で声をかける飼い主の女性と、その声に耳を傾けるゴールデンレトリバーの水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "young-onset-dementia",
+      "width": 1280,
+      "status": 200,
+      "title": "認知症は何歳から始まる？若年性認知症の特徴と相談先",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "認知症の説明資料を手にした女性と、テーブルを挟んで話す眼鏡の男性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "width": 1280,
+      "status": 200,
+      "title": "財布に入れてはいけないものってある？紛失時に困らないための整理術",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "財布のカード類と暗証番号を書いたメモを確認して整理する女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "qr-code-inventor",
+      "width": 1280,
+      "status": 200,
+      "title": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "設計図や自動車部品のある設計室で、QRコードの模様を検討する技術者の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "cat-owner-memory",
+      "width": 1280,
+      "status": 200,
+      "title": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "帰宅した飼い主の女性が差し出す手に顔を寄せる猫の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "elderly-fall-prevention",
+      "width": 1280,
+      "status": 200,
+      "title": "高齢者が転倒しやすいのはなぜ？家の中でできる予防対策",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "室内の段差でつまずきそうになり、壁の手すりにつかまる高齢女性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "smartphone-emergency-sos",
+      "width": 1280,
+      "status": 200,
+      "title": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "救急用品や充電器を用意したテーブルで、スマートフォンの緊急通報設定を確認する女性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "phone-number-personal-information",
+      "width": 1280,
+      "status": 200,
+      "title": "電話番号から個人情報はどこまでわかる？知られたときのリスクと対策",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "連絡先のプライバシーについて考えながらスマートフォンを見る女性の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "pets-earthquake-prediction",
+      "width": 1280,
+      "status": 200,
+      "title": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "揺れる照明に反応する犬と猫を、室内で見つめる高齢の夫婦の水彩イラスト"
+      },
+      "tableRegions": [],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "width": 1280,
+      "status": 200,
+      "title": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "タブレットを一緒に見ながら見守りについて話す高齢女性と家族の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "width": 1280,
+      "status": 200,
+      "title": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "店頭のQRコードをスマートフォンでスキャンし、情報ページを確認する女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "disaster-family-contact",
+      "width": 1280,
+      "status": 200,
+      "title": "災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え",
+      "h1Count": 1,
+      "viewport": 1280,
+      "pageWidth": 1280,
+      "image": {
+        "naturalWidth": 1280,
+        "naturalHeight": 720,
+        "width": 880,
+        "height": 495,
+        "alt": "防災用品や地図をそろえ、スマートフォンとメモで家族の連絡方法を確認する女性の水彩イラスト"
+      },
+      "tableRegions": [
+        {
+          "scrollable": false,
+          "labeled": true,
+          "focusable": true
+        }
+      ],
+      "brokenAnchors": [],
+      "minBodyFont": 14,
+      "plainBodyColor": "rgba(31, 26, 20, 0.8)",
+      "authorLink": true,
+      "sourcesSections": 1
+    },
+    {
+      "slug": "elderly-monitoring",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-item-preparation",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "senior-care-facility-types",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "care-levels",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-wallet",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-property-retention",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "dog-microchip",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "care-insurance-age",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "disaster-family-contact",
+      "width": 320,
+      "pageWidth": 320,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "elderly-monitoring",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-item-preparation",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "senior-care-facility-types",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "care-levels",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-wallet",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-property-retention",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "dog-microchip",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "care-insurance-age",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "disaster-family-contact",
+      "width": 375,
+      "pageWidth": 375,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "elderly-monitoring",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-item-preparation",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "senior-care-facility-types",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "care-levels",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-wallet",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-property-retention",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "dog-microchip",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "care-insurance-age",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "disaster-family-contact",
+      "width": 430,
+      "pageWidth": 430,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "elderly-monitoring",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-item-preparation",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "senior-care-facility-types",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "care-levels",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-wallet",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "lost-property-retention",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "dog-microchip",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "care-insurance-age",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    },
+    {
+      "slug": "disaster-family-contact",
+      "width": 768,
+      "pageWidth": 768,
+      "tableLayout": "passed"
+    }
+  ]
+}
