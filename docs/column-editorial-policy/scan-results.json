@@ -1,0 +1,803 @@
+{
+  "policyVersion": "column-naming-policy-20261128-v1",
+  "checkedAt": "2026-11-28T13:42:34.399985+00:00",
+  "records": 30,
+  "humanReviewRequired": true,
+  "articles": [
+    {
+      "slug": "elderly-monitoring",
+      "title": "離れて暮らす親の見守り、何から始める？",
+      "status": "published",
+      "revision": 4,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "lost-item-preparation",
+      "title": "鍵や財布をなくさないために。今日からできる紛失対策",
+      "status": "published",
+      "revision": 4,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "title": "高齢者の見守りに、つながる安心を。",
+      "status": "published",
+      "revision": 3,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "lost-dog-preparation",
+      "title": "もしも、大切な愛犬が迷子になったら。",
+      "status": "published",
+      "revision": 3,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "dementia-early-signs",
+      "title": "「もしかして認知症？」気になる初期症状をチェック",
+      "status": "published",
+      "revision": 3,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [
+        {
+          "kind": "source-owner-review",
+          "field": "sections[0].blocks[4].href",
+          "value": "https://www.jpn-geriat-soc.or.jp/tool/tool_02"
+        },
+        {
+          "kind": "source-owner-review",
+          "field": "sources[1].href",
+          "value": "https://www.jpn-geriat-soc.or.jp/tool/tool_02"
+        }
+      ],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "senior-care-facility-types",
+      "title": "老人ホームって種類が多すぎ！何が違うの？",
+      "status": "published",
+      "revision": 3,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "title": "そういえば、学校の連絡網ってなくなった？",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "care-levels",
+      "title": "要支援？要介護？いったい何が違うの？",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "lost-wallet",
+      "title": "お財布を落としたら？",
+      "status": "published",
+      "revision": 3,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "dementia-forgetfulness",
+      "title": "認知症と物忘れ、何が違う？",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [
+        {
+          "kind": "source-owner-review",
+          "field": "sections[2].blocks[2].href",
+          "value": "https://www.jpn-geriat-soc.or.jp/tool/tool_02"
+        },
+        {
+          "kind": "source-owner-review",
+          "field": "sources[0].href",
+          "value": "https://www.jpn-geriat-soc.or.jp/tool/tool_02"
+        }
+      ],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "lost-property-retention",
+      "title": "忘れ物はいつまで保管する？",
+      "status": "published",
+      "revision": 3,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "photo-location-privacy",
+      "title": "写真の位置情報、大丈夫？",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [
+        {
+          "kind": "restricted-name",
+          "field": "sections[2].blocks[2].items[0]",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[2].blocks[2].items[1]",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[2].blocks[2].items[2]",
+          "value": "Google"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[1].label",
+          "value": "Google"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[1].href",
+          "value": "https://support.google.com/photos/answer/6153599?hl=ja"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[2].label",
+          "value": "Apple"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[2].href",
+          "value": "https://www.apple.com/jp/legal/privacy/data/ja/photos/"
+        }
+      ],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "unidentified-elderly",
+      "title": "身元不明の高齢者、どう探す？",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "dog-microchip",
+      "title": "犬のマイクロチップって何？",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [
+        {
+          "kind": "source-owner-review",
+          "field": "sections[1].blocks[2].href",
+          "value": "https://www.jpc.or.jp/pdf/r7_02_report.pdf"
+        },
+        {
+          "kind": "source-owner-review",
+          "field": "sources[0].href",
+          "value": "https://www.jpc.or.jp/pdf/r7_02_report.pdf"
+        }
+      ],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "care-insurance-age",
+      "title": "介護保険って何歳から？",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "unknown-calls",
+      "title": "知らない番号から電話が来たら、出るべき？",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "dog-owner-voice",
+      "title": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "young-onset-dementia",
+      "title": "認知症は何歳から始まる？若年性認知症の特徴と相談先",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "title": "財布に入れてはいけないものってある？紛失時に困らないための整理術",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "qr-code-inventor",
+      "title": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [
+        {
+          "kind": "restricted-name",
+          "field": "summary",
+          "value": "デンソー"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[0].blocks[0].text",
+          "value": "デンソー"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[3].blocks[2].text",
+          "value": "デンソーウェーブ"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[3].blocks[2].text",
+          "value": "デンソー"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[0].label",
+          "value": "デンソーウェーブ"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[0].label",
+          "value": "デンソー"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[0].href",
+          "value": "https://www.qrcode.com/history/"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[1].label",
+          "value": "デンソーウェーブ"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[1].label",
+          "value": "デンソー"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[1].href",
+          "value": "https://www.qrcode.com/about/"
+        }
+      ],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "cat-owner-memory",
+      "title": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "elderly-fall-prevention",
+      "title": "高齢者が転倒しやすいのはなぜ？家の中でできる予防対策",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "smartphone-emergency-sos",
+      "title": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [
+        {
+          "kind": "restricted-name",
+          "field": "seoTitle",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "seoTitle",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "metaDescription",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "metaDescription",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[1].title",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[1].blocks[0].text",
+          "value": "Apple"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[1].blocks[0].text",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[1].blocks[3].text",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[2].title",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[2].blocks[0].text",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sections[2].blocks[1].text",
+          "value": "Google"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[0].id",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[0].label",
+          "value": "Google"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[0].label",
+          "value": "Android"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[0].href",
+          "value": "https://support.google.com/android/answer/9319337?hl=ja"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[1].label",
+          "value": "Apple"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[1].href",
+          "value": "https://www.apple.com/jp/newsroom/2024/07/emergency-sos-via-satellite-available-today/"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[2].id",
+          "value": "Apple"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[2].label",
+          "value": "Apple"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[2].href",
+          "value": "https://support.apple.com/ja-jp/safety-features"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[3].label",
+          "value": "Apple"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[3].label",
+          "value": "iPhone"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[3].href",
+          "value": "https://support.apple.com/ja-jp/guide/iphone/iph3c99374c/27/ios/27"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "tags[0]",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "tags[1]",
+          "value": "Android"
+        }
+      ],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "phone-number-personal-information",
+      "title": "電話番号から個人情報はどこまでわかる？知られたときのリスクと対策",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [
+        {
+          "kind": "restricted-name",
+          "field": "sections[1].blocks[3].text",
+          "value": "LINE"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[1].label",
+          "value": "LINE"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[1].href",
+          "value": "https://help.line.me/line/?contentId=10002423&lang=ja"
+        }
+      ],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "pets-earthquake-prediction",
+      "title": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "title": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "title": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [
+        {
+          "kind": "restricted-name",
+          "field": "sources[0].label",
+          "value": "デンソーウェーブ"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "sources[0].label",
+          "value": "デンソー"
+        },
+        {
+          "kind": "private-source",
+          "field": "sources[0].href",
+          "value": "https://www.qrcode.com/about/"
+        }
+      ],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "disaster-family-contact",
+      "title": "災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え",
+      "status": "published",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [
+        {
+          "kind": "public-infrastructure-context",
+          "field": "sections[1].blocks[0].text",
+          "value": "NTT"
+        },
+        {
+          "kind": "public-infrastructure-context",
+          "field": "sources[0].label",
+          "value": "NTT"
+        },
+        {
+          "kind": "public-infrastructure-context",
+          "field": "sources[0].href",
+          "value": "https://www.ntt-east.co.jp/saigai/voice171s/intro.html"
+        },
+        {
+          "kind": "public-infrastructure-context",
+          "field": "sources[1].label",
+          "value": "NTT"
+        },
+        {
+          "kind": "public-infrastructure-context",
+          "field": "sources[1].href",
+          "value": "https://www.ntt-east.co.jp/saigai/web171/"
+        },
+        {
+          "kind": "public-infrastructure-context",
+          "field": "sources[2].label",
+          "value": "NTT"
+        },
+        {
+          "kind": "public-infrastructure-context",
+          "field": "sources[2].href",
+          "value": "https://www.ntt-east.co.jp/saigai/voice171s/howto.html"
+        }
+      ],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "why-we-misplace-things",
+      "title": "なぜ人は物をなくすの？脳の仕組みと忘れ物を減らすコツ",
+      "status": "scheduled",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    },
+    {
+      "slug": "number-private-calls",
+      "title": "電話番号を教えずに、声だけでつながる時代へ",
+      "status": "scheduled",
+      "revision": 2,
+      "policyVersion": "column-naming-policy-20261128-v1",
+      "humanReviewRequired": true,
+      "findings": [],
+      "limits": [
+        "Known-name/domain matches only; not exhaustive entity recognition",
+        "Image pixels/logos, live redirects, factual causality and public-interest necessity require human review",
+        "OGP/JSON-LD generated from article metadata and shared layout require rendered-output review"
+      ],
+      "imageReview": "required: open original file and inspect text/logos",
+      "metadataReview": "OGP title/description/image and Article JSON-LD use these fields; shared layout needs separate review"
+    }
+  ],
+  "inputSha256": "911e4a149b6959ebf2de4540be16a1cda50aba5902d323b55b416ea71b8efa3f"
+}

@@ -1,0 +1,423 @@
+{
+  "date": "2026-11-28",
+  "renderedArticles": 28,
+  "reservedNotRendered": 2,
+  "rows": [
+    {
+      "slug": "elderly-monitoring",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "lost-item-preparation",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "elderly-monitoring-contact-system",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "lost-dog-preparation",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "dementia-early-signs",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "senior-care-facility-types",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "school-contact-list-privacy",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "care-levels",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "lost-wallet",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "dementia-forgetfulness",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "lost-property-retention",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "photo-location-privacy",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "unidentified-elderly",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "dog-microchip",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "care-insurance-age",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "unknown-calls",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "dog-owner-voice",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "young-onset-dementia",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "wallet-contents-safety",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "qr-code-inventor",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "cat-owner-memory",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "elderly-fall-prevention",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "smartphone-emergency-sos",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "restricted-name",
+          "field": "seoTitle",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "seoTitle",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "metaDescription",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "metaDescription",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "openGraph.og:title",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "openGraph.og:title",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "openGraph.og:description",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "openGraph.og:description",
+          "value": "iPhone"
+        },
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "structuredData[0].@graph[0].name",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "structuredData[0].@graph[0].name",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "structuredData[0].@graph[0].description",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "structuredData[0].@graph[0].description",
+          "value": "iPhone"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "structuredData[0].@graph[2].description",
+          "value": "Android"
+        },
+        {
+          "kind": "restricted-name",
+          "field": "structuredData[0].@graph[2].description",
+          "value": "iPhone"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "phone-number-personal-information",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "pets-earthquake-prediction",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "monitoring-and-surveillance",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "qr-code-scan-mechanism",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "disaster-family-contact",
+      "rendered": true,
+      "metadataFindings": [
+        {
+          "kind": "source-owner-review",
+          "field": "structuredData[0].@context",
+          "value": "https://schema.org"
+        }
+      ],
+      "sharedTrademarkNoticePresent": true
+    },
+    {
+      "slug": "why-we-misplace-things",
+      "rendered": false,
+      "reason": "Future reservation: not in current public export; Article/OGP template and source fields reviewed"
+    },
+    {
+      "slug": "number-private-calls",
+      "rendered": false,
+      "reason": "Future reservation: not in current public export; Article/OGP template and source fields reviewed"
+    }
+  ]
+}

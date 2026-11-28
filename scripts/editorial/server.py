@@ -10,7 +10,7 @@ import secrets
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import unquote, urlsplit
-from . import core
+from . import core, naming_policy
 from .cli import import_external
 from .manual import packet as manual_packet
 
@@ -80,6 +80,7 @@ class Handler(BaseHTTPRequestHandler):
                         row = {'article':a,'evidence':[],'readOnly':True}
                     current = next((a for a in core.published() if a['id'] == article_id),None)
                     return self.respond(200,{**row,'checks':[] if row.get('readOnly') else core.quality(db,row['article'],row['evidence']),
+                        'namingPolicy':{**naming_policy.scan(row['article'],core.all_articles(db)), 'currentRevisionReviewed':core.policy_reviewed(row['article']) and row.get('reviewRevision') == row['article']['contentRevision']},
                         'publication':{'state':'public_snapshot' if current else 'not_public','revision':current['contentRevision'] if current else None,'notice':'リポジトリの公開用スナップショットです。本番デプロイの実測状況は未取得です。'},
                         'history':[{**dict(r),'detail':json.loads(r['detail_json'])} for r in db.execute('SELECT id,actor,action,revision,created_at,detail_json FROM editorial_events WHERE article_id=? ORDER BY id DESC LIMIT 100',(article_id,))]})
                 return self.respond(404,{'error':'Not found'})
@@ -98,12 +99,12 @@ class Handler(BaseHTTPRequestHandler):
                 if required not in roles: raise PermissionError('Editorial permission required')
                 if action == 'fork': result = core.fork(db,article_id,actor)
                 elif action == 'save': result = core.update(db,article_id,data['revision'],data['patch'],actor)
-                else: result = core.transition(db,article_id,data['revision'],action,actor,data.get('note',''),data.get('attested') is True)
+                else: result = core.transition(db,article_id,data['revision'],action,actor,data.get('note',''),data.get('attested') is True, policy_attested=data.get('policyAttested') is True, policy_note=data.get('policyNote',''), representative_approval=data.get('representativeApproval',''))
                 return self.respond(200,{'article':result})
             self.respond(404,{'error':'Not found'})
         except PermissionError as e: self.respond(403,{'error':str(e)})
         except core.Conflict as e: self.respond(409,{'error':str(e)})
-        except (ValueError, KeyError, TypeError): self.respond(400,{'error':'入力または操作を確認してください。更新競合時は再読込し、出典確認・状態・リビジョンを確認してください。'})
+        except (ValueError, KeyError, TypeError): self.respond(400,{'error':'入力または操作を確認してください。更新競合時は再読込し、出典・名称掲載方針・画像／ロゴ確認・代表者判断の記録・状態・リビジョンを確認してください。'})
         except Exception: self.respond(500,{'error':'Private editorial operation failed; no deployment performed'})
         finally:
             if db: db.close()

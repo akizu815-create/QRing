@@ -178,6 +178,8 @@ async function openArticle(id, scroll = true) {
         el('h3', '確認対象の主張', root);
         a.claims.forEach(claim => el('p', `${claim.verified ? '確認済み' : '未確認'}：${claim.text}`, root));
         dump('検査結果', current.checks, root);
+        dump('名称・出典・時事情報の掲載方針チェック（人による画像／ロゴ確認も必要）', current.namingPolicy, root);
+        if (a.image) el('p', `画像原本を別途開いて確認：${a.image.src} ／ alt：${a.image.alt}`, root).style.overflowWrap = 'anywhere';
         dump('修正・承認履歴（旧版の全文を含む）', current.history, root);
         if (current.readOnly) {
             button('改訂用の下書きを作成', () => perform(async () => { await api('/api/articles/' + encodeURIComponent(id), { action: 'fork' }); message('公開用データを維持し、非公開の改訂下書きを作成しました。'); }), root, !state.roles.includes('editor'));
@@ -227,16 +229,24 @@ async function openArticle(id, scroll = true) {
             const check = el('input', undefined, attestation);
             check.type = 'checkbox';
             attestation.append(document.createTextNode('出典原文、本文の主張、サービス仕様、重複テーマを確認しました。'));
+            const policyLabel = el('label', undefined, root);
+            const policyCheck = el('input', undefined, policyLabel); policyCheck.type = 'checkbox';
+            policyLabel.append(document.createTextNode('名称掲載方針を、タイトル・SEO・本文・出典・内外リンク・画像内文字／ロゴ・alt・OGP・構造化データまで確認し、時事情報の事実区分と因果関係も確認しました。'));
+            const policyNote = field('掲載方針の確認記録（公共性・出典区分・要判断箇所）', '', root, true);
+            const representativeApproval = field('例外・出典区分が未確定の場合の代表者判断の参照先（対象記事・版）', '', root);
+            el('p', 'チェックや参照先の入力だけで例外を承認したことにはなりません。実際の代表者承認を確認できない場合は差し戻してください。', root);
             const note = field('差し戻し理由', '', root, true);
             const actions = el('div', undefined, root);
             actions.className = 'actions';
             const act = (action, extra = {}) => perform(async () => { await api('/api/articles/' + encodeURIComponent(id), { action, revision: a.contentRevision, ...extra }); message('操作を記録しました。本番には反映していません。'); });
             button('確認依頼', () => act('submit'), actions, !state.roles.includes('editor') || !['draft', 'needs_revision'].includes(a.status));
-            button('確認を記録', () => act('verify', { attested: check.checked }), actions, !state.roles.includes('reviewer') || a.status !== 'review');
+            button('確認を記録', () => act('verify', { attested: check.checked, policyAttested: policyCheck.checked, policyNote: policyNote.value, representativeApproval: representativeApproval.value }), actions, !state.roles.includes('reviewer') || a.status !== 'review');
             button('差し戻し', () => act('return', { note: note.value }), actions, !state.roles.includes('reviewer'));
-            button('記事を承認', () => act('approve'), actions, !state.roles.includes('reviewer') || a.status !== 'review' || current.reviewRevision !== a.contentRevision || current.checks.length > 0).className = 'primary';
+            button('記事を承認', () => act('approve'), actions, !state.roles.includes('reviewer') || a.status !== 'review' || current.reviewRevision !== a.contentRevision || !current.namingPolicy?.currentRevisionReviewed || current.checks.length > 0).className = 'primary';
+            if (a.status === 'approved' && !current.namingPolicy?.currentRevisionReviewed)
+                el('p', '現版を名称掲載方針で再確認してから、公開準備してください。必要なら差し戻して確認を記録します。', root);
             if (a.status === 'approved')
-                button('公開用スナップショットを準備', () => perform(async () => { const r = await api('/api/releases', { selections: [{ id: a.id, revision: a.contentRevision }] }); message('公開準備を記録しました。ID: ' + r.id + '\n本番反映には、この版を検証したうえで別途デプロイ承認が必要です。'); }), root, !state.roles.includes('publisher'));
+                button('公開用スナップショットを準備', () => perform(async () => { const r = await api('/api/releases', { selections: [{ id: a.id, revision: a.contentRevision }] }); message('公開準備を記録しました。ID: ' + r.id + '\n本番反映には、この版を検証したうえで別途デプロイ承認が必要です。'); }), root, !state.roles.includes('publisher') || !current.namingPolicy?.currentRevisionReviewed);
         }
         if (scroll)
             root.scrollIntoView({ behavior: 'smooth' });

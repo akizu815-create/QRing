@@ -52,7 +52,7 @@ class ManualImportTests(unittest.TestCase):
         path='/api/articles/'+a['id']
         self.assertEqual(self.post({'action':'submit','revision':1},path=path)[0],200)
         self.assertEqual(self.post({'action':'approve','revision':1},actor='reviewer',path=path)[0],400)
-        self.assertEqual(self.post({'action':'verify','revision':1,'attested':True},actor='reviewer',path=path)[0],200)
+        self.assertEqual(self.post({'action':'verify','revision':1,'attested':True,'policyAttested':True,'policyNote':'Synthetic fixture source classification and complete policy review','representativeApproval':'synthetic-source-classification-decision'},actor='reviewer',path=path)[0],200)
         self.assertEqual(self.post({'action':'approve','revision':1},actor='reviewer',path=path)[0],200)
         status,edited=self.post({'action':'save','revision':1,'patch':{'summary':'取込後に修正した検証用の導入文です。'}},path=path)
         self.assertEqual(status,200);self.assertEqual(edited['article']['status'],'draft');self.assertIsNone(edited['article']['approvalRevision'])

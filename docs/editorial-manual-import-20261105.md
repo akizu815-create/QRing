@@ -1,5 +1,7 @@
 # ChatGPT原稿の管理画面取込
 
+現行の名称・出典・時事情報の編集基準は [恒久編集方針](column-editorial-policy/README.md) を参照。以下の過去実装記録だけで掲載可否を判断しない。
+
 2026年11月5日。main `bcef904` から `feat/editorial-manual-import` を作成。スマホHEROのPR #115は未マージのまま保持し、本変更は独立したPRにする。
 
 ## 今回完成した範囲
