@@ -3,6 +3,8 @@ import json
 import unittest
 import subprocess
 import tempfile
+from unittest.mock import patch
+import scripts.editorial.generate as generator
 from pathlib import Path
 from scripts.editorial import naming_policy as policy
 import test_workflow as fixtures
@@ -92,3 +94,17 @@ class PolicyIntegrationTests(unittest.TestCase):
         a=self.step('approve');a['validationResults']=[r for r in a['validationResults'] if r['check']!=policy.CHECK]
         with self.db:self.db.execute('UPDATE editorial_articles SET article_json=? WHERE id=?',(core.encode(a),a['id']))
         with self.assertRaises(ValueError):core.prepare_release(self.db,'publisher',[{'id':a['id'],'revision':1}])
+
+    def test_planning_defers_private_brand_queries_without_rewriting_search_data(self):
+        observations=[{'audience':'personal','categories':['privacy-life'],'query':'AirTagの比較'},
+                      {'audience':'personal','categories':['privacy-life'],'query':'個人情報の保護と連絡方法'}]
+        with patch.object(generator,'AUDIENCE_ROTATION',['personal']*10),patch.object(generator,'seo_context',return_value={'actions':{'nextArticles':observations}}):
+            r=generator.plan(self.db,'2026-11-28')
+        self.assertEqual(r['keyword'],observations[1]['query']);self.assertEqual(r['namingPolicyCandidatesDeferred'],1)
+        self.assertEqual(r['seo']['nextArticles'],observations)
+    def test_brand_topic_is_rejected_before_api_or_budget_reservation(self):
+        packet={'keyword':'ChatGPTのサービス比較','sources':self.article['sources'],'evidence':self.evidence,'serviceSpecification':{'version':'fixture'}}
+        with fixtures.WorkflowTests.ai_env(self),patch.object(generator,'plan',return_value={'keyword':None}):
+            with self.assertRaisesRegex(ValueError,'general theme'):
+                generator.generate(self.db,packet,'synthetic-worker',send=lambda _:self.fail('Unapproved topic must not call paid API'))
+        self.assertEqual(self.db.execute('SELECT count(*) FROM usage_ledger').fetchone()[0],0)

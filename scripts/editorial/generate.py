@@ -11,7 +11,7 @@ from .topics import candidates
 from ..seo_ops.ai import MODEL, INPUT_RATE, OUTPUT_RATE
 
 PROMPT_VERSION = 'column-draft-v3-naming-20261128'
-from .naming_policy import GENERATION_RULES
+from .naming_policy import GENERATION_RULES, restricted_topic
 PRICE_VERSION = 'inherited-seo-ai-rate-v1-20261105'
 OUTPUT_LIMIT = 10000
 AUDIENCE_ROTATION = ['personal','municipal','personal','business','personal','municipal','personal','business','personal','municipal']
@@ -21,10 +21,12 @@ def plan(db, day):
     index = (dt.date.fromisoformat(day)-dt.date(2026, 1, 1)).days
     audience = AUDIENCE_ROTATION[index % 10]
     context = seo_context(db)
-    candidate = next((q for q in context['actions']['nextArticles'] if q['audience'] == audience), None)
+    eligible = [q for q in context['actions']['nextArticles'] if not restricted_topic(q['query'])]
+    candidate = next((q for q in eligible if q['audience'] == audience), None)
     category = candidate['categories'][0] if candidate else list(KEYWORDS)[index % len(KEYWORDS)]
     return {'day': day, 'audience': audience, 'category': category,
             'keyword': candidate['query'] if candidate else None,
+            'namingPolicyCandidatesDeferred': len(context['actions']['nextArticles'])-len(eligible),
             'selectionBasis': 'gsc_observed_query' if candidate else 'editorial_rotation_requires_research',
             'themeCandidates': candidates(all_articles(db),context['actions']['nextArticles']),
             'seo': context['actions'], 'existing': [{'id':a['id'],'title':a['title'],'slug':a['slug'],'searchIntent':a.get('searchIntent',''),'primaryAudience':a['primaryAudience']} for a in all_articles(db)]}
@@ -48,6 +50,7 @@ def generate(db, packet, actor, send=None, retry=False):
     day = today(); selection = plan(db, day)
     evidence = packet.get('evidence'); sources = packet.get('sources'); keyword = selection['keyword'] or packet.get('keyword')
     if not isinstance(sources, list) or not sources or not keyword: raise ValueError('Researched sources and keyword required')
+    if restricted_topic(keyword): raise ValueError('Choose a general theme instead of a company/product/service-focused keyword')
     probe = {'id':'probe', 'title':'probe', 'slug':'probe', 'searchIntent':'probe', 'sources':sources, 'claims':[{'text':'probe'}]}
     if quality(db, probe, evidence): raise ValueError('Current primary/trusted evidence excerpts required')
     allowed = ['/column/'+a['slug']+'/' for a in published() if a['publishedAt'] <= day]

@@ -87,3 +87,7 @@ def review_record(article, attested, note='', representative_reference='', relat
     return {'policyVersion':VERSION,'revision':article['contentRevision'],'note':note.strip(),
             'representativeApprovalReference':representative_reference.strip(),'findings':report['findings'],
             'authorizationNotice':'Human reviewer records the evidence reference; this is not authenticated representative approval'}
+
+
+def restricted_topic(text):
+    return any(f['kind'] in ('restricted-name','company-owner-review','private-source') for f in scan({'title':text})['findings'])
