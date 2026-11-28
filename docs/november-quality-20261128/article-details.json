@@ -1,0 +1,2496 @@
+[
+  {
+    "date": "2026-11-01",
+    "slug": "elderly-monitoring",
+    "title": "離れて暮らす親の見守り、何から始める？",
+    "url": "https://www.qring.jp/column/elderly-monitoring/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "方法比較に訪問・対応条件を追加。日常確認／位置確認／発見後連絡を分離し、本人の希望と通知後の担当を具体化。",
+    "reason": "方法比較に訪問・対応条件を追加。日常確認／位置確認／発見後連絡を分離し、本人の希望と通知後の担当を具体化。",
+    "changedFields": {
+      "relatedLinks": {
+        "before": null,
+        "after": []
+      },
+      "updatedAt": {
+        "before": "2026-11-06",
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-06",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "離れて暮らす親の見守り方法｜安否確認・センサー・GPSの選び方",
+      "after": "離れて暮らす親の見守り方法｜安否確認・センサー・GPSの選び方",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "離れて暮らす親の見守り、何から始める？電話やメッセージによる安否確認、センサー・カメラ・GPSなどの特徴と、本人の負担を抑えた選び方を紹介します。",
+      "after": "離れて暮らす親の見守り、何から始める？電話やメッセージによる安否確認、センサー・カメラ・GPSなどの特徴と、本人の負担を抑えた選び方を紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-10-28",
+      "publishedAtAfter": "2026-10-28",
+      "timestampBefore": "2026-10-28T00:58:01+09:00",
+      "timestampAfter": "2026-10-28T00:58:01+09:00",
+      "updatedAtBefore": "2026-11-06",
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "高齢者の外出時の見守りに、つながるQR",
+        "href": "https://www.qring.jp/use-cases/elderly/",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "review-2",
+        "label": "厚生労働省｜認知症の人の日常生活・社会生活における意思決定支援ガイドライン",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212395.html",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 1,
+        "impressions": 288,
+        "ctr": 0.35,
+        "position": 14.63
+      },
+      "previous7": {
+        "clicks": 4,
+        "impressions": 243,
+        "ctr": 1.65,
+        "position": 15.56
+      },
+      "last28": {
+        "clicks": 7,
+        "impressions": 700,
+        "ctr": 1,
+        "position": 16.41
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-02",
+    "slug": "lost-item-preparation",
+    "title": "鍵や財布をなくさないために。今日からできる紛失対策",
+    "url": "https://www.qring.jp/column/lost-item-preparation/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "予防・探索・発見後連絡の比較に置換。紛失直後と財布の中身の記事への役割別リンクを追加。",
+    "reason": "予防・探索・発見後連絡の比較に置換。紛失直後と財布の中身の記事への役割別リンクを追加。",
+    "changedFields": {
+      "relatedLinks": {
+        "before": null,
+        "after": []
+      },
+      "updatedAt": {
+        "before": "2026-11-06",
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-06",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "鍵・財布の紛失対策｜なくさない工夫と見つかった後の備え",
+      "after": "鍵・財布の紛失対策｜なくさない工夫と見つかった後の備え",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "鍵や財布をなくさないために、今日からできる紛失対策をご紹介。置き場所や外出前の確認習慣、紛失防止タグの特徴、拾った方から連絡を受ける方法まで解説します。",
+      "after": "鍵や財布をなくさないために、今日からできる紛失対策をご紹介。置き場所や外出前の確認習慣、紛失防止タグの特徴、拾った方から連絡を受ける方法まで解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "/column/lost-wallet/",
+        "/column/wallet-contents-safety/"
+      ],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-10-28",
+      "publishedAtAfter": "2026-10-28",
+      "timestampBefore": "2026-10-28T00:58:01+09:00",
+      "timestampAfter": "2026-10-28T00:58:01+09:00",
+      "updatedAtBefore": "2026-11-06",
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "落とし物・忘れ物対策に、つながるQR",
+        "href": "https://www.qring.jp/use-cases/belongings/",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "review-2",
+        "label": "警察庁｜落とし物・忘れ物への対応",
+        "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 6,
+        "impressions": 595,
+        "ctr": 1.01,
+        "position": 7.58
+      },
+      "previous7": {
+        "clicks": 4,
+        "impressions": 398,
+        "ctr": 1.01,
+        "position": 7.73
+      },
+      "last28": {
+        "clicks": 19,
+        "impressions": 1461,
+        "ctr": 1.3,
+        "position": 7.86
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-03",
+    "slug": "dementia-early-signs",
+    "title": "「もしかして認知症？」気になる初期症状をチェック",
+    "url": "https://www.qring.jp/column/dementia-early-signs/",
+    "publication": "公開済み",
+    "priority": "P1",
+    "problemAndCorrection": "初期の気づきに主題を限定。鑑別・服薬の注意、相談に使える観察メモを補足。検査の詳細は10日記事へ。",
+    "reason": "初期の気づきに主題を限定。鑑別・服薬の注意、相談に使える観察メモを補足。検査の詳細は10日記事へ。",
+    "changedFields": {
+      "relatedLinks": {
+        "before": [
+          {
+            "href": "/use-cases/elderly/",
+            "label": "つながるQRで、高齢者の外出時の連絡に備える"
+          }
+        ],
+        "after": []
+      },
+      "updatedAt": {
+        "before": "2026-11-07",
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "認知症の初期症状チェック｜物忘れとの違いと相談先",
+      "after": "認知症の初期症状チェック｜物忘れとの違いと相談先",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "認知症の初期症状にはどのようなものがある？物忘れとの違いや、家族が気づきたい日常の変化をチェック形式で紹介。気になったときの相談先も解説します。",
+      "after": "認知症の初期症状にはどのようなものがある？物忘れとの違いや、家族が気づきたい日常の変化をチェック形式で紹介。気になったときの相談先も解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "/column/dementia-forgetfulness/",
+        "https://www.jpn-geriat-soc.or.jp/tool/tool_02"
+      ],
+      "removed": [
+        "/use-cases/elderly/",
+        "https://www.gov-online.go.jp/article/202501/entry-7013.html",
+        "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-07",
+      "publishedAtAfter": "2026-11-07",
+      "timestampBefore": null,
+      "timestampAfter": null,
+      "updatedAtBefore": "2026-11-07",
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-2",
+        "label": "厚生労働省｜認知症に関する相談について",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "review-3",
+        "label": "日本老年医学会｜認知機能の評価法と認知症の診断",
+        "href": "https://www.jpn-geriat-soc.or.jp/tool/tool_02",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "政府広報の旧URLは403。学会資料へ補完。医師の個別監修は受けていない。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 53,
+        "ctr": 0,
+        "position": 56.96
+      },
+      "previous7": {
+        "clicks": 0,
+        "impressions": 32,
+        "ctr": 0,
+        "position": 57.25
+      },
+      "last28": {
+        "clicks": 0,
+        "impressions": 86,
+        "ctr": 0,
+        "position": 56.51
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-04",
+    "slug": "senior-care-facility-types",
+    "title": "老人ホームって種類が多すぎ！何が違うの？",
+    "url": "https://www.qring.jp/column/senior-care-facility-types/",
+    "publication": "公開済み",
+    "priority": "P1",
+    "problemAndCorrection": "住まい4種の対象・費用比較と見学チェックを追加。個人の住まい選びに合わせカテゴリを企業・施設から家族の見守り・介護へ訂正。",
+    "reason": "住まい4種の対象・費用比較と見学チェックを追加。個人の住まい選びに合わせカテゴリを企業・施設から家族の見守り・介護へ訂正。",
+    "changedFields": {
+      "category": {
+        "before": "business-safety",
+        "after": "family-care"
+      },
+      "relatedLinks": {
+        "before": [
+          {
+            "href": "/use-cases/elderly/",
+            "label": "高齢者の外出時の連絡手段として、つながるQRを知る"
+          }
+        ],
+        "after": []
+      },
+      "updatedAt": {
+        "before": "2026-11-07",
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "高齢者向け施設の種類と違い｜サ高住・特養・グループホーム",
+      "after": "高齢者向け施設の種類と違い｜サ高住・特養・グループホーム",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "老人ホームや高齢者向け施設にはどんな種類がある？サ高住、特養、グループホーム、デイサービスなどの違いと、それぞれの役割や選び方を分かりやすく解説します。",
+      "after": "老人ホームや高齢者向け施設にはどんな種類がある？サ高住、特養、グループホーム、デイサービスなどの違いと、それぞれの役割や選び方を分かりやすく解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": [
+        "/use-cases/elderly/",
+        "https://www.kaigokensaku.mhlw.go.jp/commentary/service.html",
+        "https://www.kaigokensaku.mhlw.go.jp/publish_sumai/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-07",
+      "publishedAtAfter": "2026-11-07",
+      "timestampBefore": null,
+      "timestampAfter": null,
+      "updatedAtBefore": "2026-11-07",
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "厚生労働省｜介護サービス情報公表システム",
+        "href": "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "source-2",
+        "label": "厚生労働省｜介護保険制度の概要",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/gaiyo/index.html",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-3",
+        "label": "厚生労働省｜主な認知症施策（グループホーム等）",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00006.html",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-4",
+        "label": "厚生労働省｜介護保険サービスの流れ",
+        "href": "https://www.mhlw.go.jp/content/11909000/001512330.pdf",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-5",
+        "label": "厚生労働省｜高齢期の住まい",
+        "href": "https://www.mhlw.go.jp/content/12300000/001481759.pdf",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "旧公表システムの2URLは403。厚労省の住まい資料とサービスの流れで補完。個別施設の料金・空室・受入条件は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 22,
+        "ctr": 0,
+        "position": 14.05
+      },
+      "previous7": {
+        "clicks": 0,
+        "impressions": 17,
+        "ctr": 0,
+        "position": 12.29
+      },
+      "last28": {
+        "clicks": 0,
+        "impressions": 45,
+        "ctr": 0,
+        "position": 12.42
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-05",
+    "slug": "school-contact-list-privacy",
+    "title": "そういえば、学校の連絡網ってなくなった？",
+    "url": "https://www.qring.jp/column/school-contact-list-privacy/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "全国一律禁止と誤認させないよう、公立・私立のルールと学校ごとの運用を分離。共有しない家庭も含む実務チェック追加。",
+    "reason": "全国一律禁止と誤認させないよう、公立・私立のルールと学校ごとの運用を分離。共有しない家庭も含む実務チェック追加。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "学校の連絡網が減った理由｜個人情報とプライバシーの変化",
+      "after": "学校の連絡網が減った理由｜個人情報とプライバシーの変化",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "昔は当たり前だった学校の連絡網や住所録は、なぜ見かけなくなったのでしょうか。個人情報保護への意識の変化、連絡手段のデジタル化、プライバシーとの付き合い方を解説します。",
+      "after": "昔は当たり前だった学校の連絡網や住所録は、なぜ見かけなくなったのでしょうか。個人情報保護への意識の変化、連絡手段のデジタル化、プライバシーとの付き合い方を解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": [
+        "https://www.ppc.go.jp/",
+        "https://www.ppc.go.jp/all_faq_index/faq1-q4-18/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-07",
+      "publishedAtAfter": "2026-11-07",
+      "timestampBefore": null,
+      "timestampAfter": null,
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "個人情報保護委員会｜名簿の作成・配布に関するQ&A",
+        "href": "https://www.ppc.go.jp/all_faq_index/faq1-q4-18/",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "review-2",
+        "label": "文部科学省｜教育データの利活用に係る留意事項・公立学校編（第4版）",
+        "href": "https://www.mext.go.jp/content/20260423-mxt_syoto01-000028144_01.pdf",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "公立・私立を区別。学校・教育委員会ごとの実際の運用は未確認。MEXT資料の全条項への法務レビューは未実施。",
+    "searchData": {
+      "last7": {
+        "clicks": 1,
+        "impressions": 141,
+        "ctr": 0.71,
+        "position": 7.28
+      },
+      "previous7": {
+        "clicks": 0,
+        "impressions": 67,
+        "ctr": 0,
+        "position": 7.54
+      },
+      "last28": {
+        "clicks": 2,
+        "impressions": 225,
+        "ctr": 0.89,
+        "position": 7.38
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-06",
+    "slug": "elderly-monitoring-contact-system",
+    "title": "高齢者の見守りに、つながる安心を。",
+    "url": "https://www.qring.jp/column/elderly-monitoring-contact-system/",
+    "publication": "公開済み",
+    "priority": "P1",
+    "problemAndCorrection": "「補完」の反復を運用比較・不応答対応・評価指標案に置換。数値は実績ではなく提案と明記し、相談CTAを維持。",
+    "reason": "「補完」の反復を運用比較・不応答対応・評価指標案に置換。数値は実績ではなく提案と明記し、相談CTAを維持。",
+    "changedFields": {
+      "updatedAt": {
+        "before": "2026-11-06",
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-06",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "高齢者の見守りとQRコード｜発見後の連絡を支える仕組み",
+      "after": "高齢者の見守りとQRコード｜発見後の連絡を支える仕組み",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "高齢者の見守りには、日常の安否確認だけでなく、外出先で困ったときの連絡手段も大切です。地域の見守り活動を補完する、電話番号を知らせずに声でつながるQRコードの仕組みをご紹介します。",
+      "after": "高齢者の見守りには、日常の安否確認だけでなく、外出先で困ったときの連絡手段も大切です。地域の見守り活動を補完する、電話番号を知らせずに声でつながるQRコードの仕組みをご紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": [
+        "/service/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-06",
+      "publishedAtAfter": "2026-11-06",
+      "timestampBefore": "2026-11-06T09:33:41+09:00",
+      "timestampAfter": "2026-11-06T09:33:41+09:00",
+      "updatedAtBefore": "2026-11-06",
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "つながるQRのサービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "mhlw-community-watch",
+        "label": "厚生労働省：認知症施策の取組事例（地域の見守り体制整備）",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000167804.html",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "連絡成立率・作業時間などの導入成果は未確認。掲載した評価項目は提案であり実績ではない。",
+    "searchData": {
+      "last7": {
+        "clicks": 1,
+        "impressions": 50,
+        "ctr": 2,
+        "position": 6.6
+      },
+      "previous7": {
+        "clicks": 0,
+        "impressions": 66,
+        "ctr": 0,
+        "position": 5.68
+      },
+      "last28": {
+        "clicks": 1,
+        "impressions": 147,
+        "ctr": 0.68,
+        "position": 5.64
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-07",
+    "slug": "lost-dog-preparation",
+    "title": "もしも、大切な愛犬が迷子になったら。",
+    "url": "https://www.qring.jp/column/lost-dog-preparation/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "捜索を時系列の行動と連絡事項に整理。管轄差、発見後の更新、SNSの個人情報を具体化。",
+    "reason": "捜索を時系列の行動と連絡事項に整理。管轄差、発見後の更新、SNSの個人情報を具体化。",
+    "changedFields": {
+      "updatedAt": {
+        "before": "2026-11-07",
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "犬が迷子になったら？探し方と事前にできる対策｜つながるQR",
+      "after": "犬が迷子になったら？探し方と事前にできる対策｜つながるQR",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "愛犬が迷子になったら、まず何をすればいい？探すときの行動や警察・保健所への連絡、迷子札・マイクロチップによる備え、電話番号を公開せずに連絡を受ける方法をご紹介します。",
+      "after": "愛犬が迷子になったら、まず何をすればいい？探すときの行動や警察・保健所への連絡、迷子札・マイクロチップによる備え、電話番号を公開せずに連絡を受ける方法をご紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-07",
+      "publishedAtAfter": "2026-11-07",
+      "timestampBefore": null,
+      "timestampAfter": null,
+      "updatedAtBefore": "2026-11-07",
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "環境省｜迷子にさせてしまったら",
+        "href": "https://www.env.go.jp/nature/dobutsu/aigo/shuyo/if.html",
+        "checkedAt": "2026-11-06"
+      },
+      {
+        "id": "source-2",
+        "label": "環境省｜犬と猫のマイクロチップ情報登録について",
+        "href": "https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html",
+        "checkedAt": "2026-11-06"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 3,
+        "impressions": 100,
+        "ctr": 3,
+        "position": 7.66
+      },
+      "previous7": {
+        "clicks": 1,
+        "impressions": 84,
+        "ctr": 1.19,
+        "position": 10.38
+      },
+      "last28": {
+        "clicks": 4,
+        "impressions": 219,
+        "ctr": 1.83,
+        "position": 9.1
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-08",
+    "slug": "care-levels",
+    "title": "要支援？要介護？いったい何が違うの？",
+    "url": "https://www.qring.jp/column/care-levels/",
+    "publication": "公開済み",
+    "priority": "P1",
+    "problemAndCorrection": "7区分の表を自己判定に使わない説明を追加。認定の手順を申請前後の行動に整理し、30日の例外を明記。採用済みdescription維持。",
+    "reason": "7区分の表を自己判定に使わない説明を追加。認定の手順を申請前後の行動に整理し、30日の例外を明記。採用済みdescription維持。",
+    "changedFields": {
+      "relatedLinks": {
+        "before": [
+          {
+            "href": "/use-cases/elderly/",
+            "label": "つながるQRの関連サービスを見る"
+          }
+        ],
+        "after": []
+      },
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "要支援？要介護？いったい何が違うの？",
+      "after": "要支援？要介護？いったい何が違うの？",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "要支援と要介護は何が違うのでしょうか。要支援1・2、要介護1〜5の区分、利用できる支援やサービス、認定までの流れと相談先を分かりやすく解説します。",
+      "after": "要支援と要介護は何が違うのでしょうか。要支援1・2、要介護1〜5の区分、利用できる支援やサービス、認定までの流れと相談先を分かりやすく解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": [
+        "/column/senior-care-facility-types/",
+        "/use-cases/elderly/",
+        "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-08",
+      "publishedAtAfter": "2026-11-08",
+      "timestampBefore": "2026-11-08T08:00:00+09:00",
+      "timestampAfter": "2026-11-08T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "厚生労働省｜要介護認定はどのように行われるか",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "厚生労働省｜介護サービス情報公表システム",
+        "href": "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-3",
+        "label": "厚生労働省｜介護保険制度の概要",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/gaiyo/index.html",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-4",
+        "label": "厚生労働省｜介護保険サービスの流れ",
+        "href": "https://www.mhlw.go.jp/content/11909000/001512330.pdf",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "個別認定や給付の可否は自治体確認が必要。改訂済みのSEO descriptionは維持。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 34,
+        "ctr": 0,
+        "position": 28.09
+      },
+      "previous7": {
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 1.5
+      },
+      "last28": {
+        "clicks": 0,
+        "impressions": 41,
+        "ctr": 0,
+        "position": 23.98
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-09",
+    "slug": "lost-wallet",
+    "title": "お財布を落としたら？",
+    "url": "https://www.qring.jp/column/lost-wallet/",
+    "publication": "公開済み",
+    "priority": "P0",
+    "problemAndCorrection": "カード停止・遺失届・施設照会を行動表に。3か月の起点を公告に訂正。承認済みSEOタイトル・descriptionを維持。",
+    "reason": "カード停止・遺失届・施設照会を行動表に。3か月の起点を公告に訂正。承認済みSEOタイトル・descriptionを維持。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "財布を落としたら何をする？カード停止・遺失届・見つかった後の対応",
+      "after": "財布を落としたら何をする？カード停止・遺失届・見つかった後の対応",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。",
+      "after": "財布を落としたら、まずカードの利用停止を。クレジットカード・キャッシュカードの停止、警察への遺失届、駅・店舗への問い合わせを整理し、見つかった後の返還手続きや拾得者への報労金の基本を解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "/column/lost-property-retention/"
+      ],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-09",
+      "publishedAtAfter": "2026-11-09",
+      "timestampBefore": "2026-11-09T08:00:00+09:00",
+      "timestampAfter": "2026-11-09T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "警察庁｜落とし物・忘れ物",
+        "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "review-2",
+        "label": "警察庁｜遺失物法等の解釈運用基準",
+        "href": "https://www.npa.go.jp/laws/notification/kanbou/kaikei/20231222ishitsu-kaishakuunyoukijyun.pdf",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 6,
+        "impressions": 1384,
+        "ctr": 0.43,
+        "position": 8.81
+      },
+      "previous7": {
+        "clicks": 5,
+        "impressions": 1071,
+        "ctr": 0.47,
+        "position": 9.07
+      },
+      "last28": {
+        "clicks": 13,
+        "impressions": 2598,
+        "ctr": 0.5,
+        "position": 8.95
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-10",
+    "slug": "dementia-forgetfulness",
+    "title": "認知症と物忘れ、何が違う？",
+    "url": "https://www.qring.jp/column/dementia-forgetfulness/",
+    "publication": "公開済み",
+    "priority": "P1",
+    "problemAndCorrection": "学会資料とHDS-Rの9項目・30点・20点以下の目安を照合。所要時間の記載を削減し、診断の限界と受診準備を強化。",
+    "reason": "学会資料とHDS-Rの9項目・30点・20点以下の目安を照合。所要時間の記載を削減し、診断の限界と受診準備を強化。",
+    "changedFields": {
+      "relatedLinks": {
+        "before": [
+          {
+            "href": "/use-cases/elderly/",
+            "label": "つながるQRの関連サービスを見る"
+          }
+        ],
+        "after": []
+      },
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "認知症と物忘れ、何が違う？",
+      "after": "認知症と物忘れ、何が違う？",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "「昨日の夕食を思い出せない」「同じ話を何度もする」。こうした変化があったとき、単なる物忘れなのか、認知症なのか、不安になる方もいるでしょう。大切なのは、症状の違いを知るだけでなく、どこで相談し、どのような検査を受けられるかを知ることです。",
+      "after": "「昨日の夕食を思い出せない」「同じ話を何度もする」。こうした変化があったとき、単なる物忘れなのか、認知症なのか、不安になる方もいるでしょう。大切なのは、症状の違いを知るだけでなく、どこで相談し、どのような検査を受けられるかを知ることです。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "https://www.jpn-geriat-soc.or.jp/tool/tool_02"
+      ],
+      "removed": [
+        "/use-cases/elderly/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-10",
+      "publishedAtAfter": "2026-11-10",
+      "timestampBefore": "2026-11-10T08:00:00+09:00",
+      "timestampAfter": "2026-11-10T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "日本老年医学会｜認知機能の評価法と認知症の診断",
+        "href": "https://www.jpn-geriat-soc.or.jp/tool/tool_02",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 33,
+        "ctr": 0,
+        "position": 65.97
+      },
+      "previous7": {
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 53.17
+      },
+      "last28": {
+        "clicks": 0,
+        "impressions": 39,
+        "ctr": 0,
+        "position": 64
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-11",
+    "slug": "lost-property-retention",
+    "title": "忘れ物はいつまで保管する？",
+    "url": "https://www.qring.jp/column/lost-property-retention/",
+    "publication": "公開済み",
+    "priority": "P0",
+    "problemAndCorrection": "速やかな返還・提出義務と権利喪失期限を分離。3か月は公告起点へ訂正し、主体別の比較表と所有権取得の例外を追加。採用済みSEO維持。",
+    "reason": "速やかな返還・提出義務と権利喪失期限を分離。3か月は公告起点へ訂正し、主体別の比較表と所有権取得の例外を追加。採用済みSEO維持。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "忘れ物はいつまで保管する？店舗・警察の扱いと届出のルール",
+      "after": "忘れ物はいつまで保管する？店舗・警察の扱いと届出のルール",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "店舗の忘れ物の扱いは、施設の種類や管理体制で異なります。警察への提出、持ち主への返還、拾得者の権利や報労金の基本を整理し、店舗での管理上の注意点も解説します。",
+      "after": "店舗の忘れ物の扱いは、施設の種類や管理体制で異なります。警察への提出、持ち主への返還、拾得者の権利や報労金の基本を整理し、店舗での管理上の注意点も解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "https://www.npa.go.jp/laws/notification/kanbou/kaikei/20231222ishitsu-kaishakuunyoukijyun.pdf"
+      ],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-11",
+      "publishedAtAfter": "2026-11-11",
+      "timestampBefore": "2026-11-11T00:03:38+09:00",
+      "timestampAfter": "2026-11-11T00:03:38+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "警察庁｜落とし物・忘れ物",
+        "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "石川県警察｜落とし物・忘れ物（施設占有者の方へ）",
+        "href": "https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "review-3",
+        "label": "警察庁｜遺失物法等の解釈運用基準",
+        "href": "https://www.npa.go.jp/laws/notification/kanbou/kaikei/20231222ishitsu-kaishakuunyoukijyun.pdf",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-5",
+        "label": "e-Gov法令検索｜遺失物法（13・17・34〜36条）",
+        "href": "https://laws.e-gov.go.jp/law/418AC0000000073",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "e-Gov本文の機械取得は不可。警察庁の解釈運用基準と法令検索の該当条文で照合。個別店舗の特例指定・品物の処分判断は警察・法務確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 3,
+        "impressions": 697,
+        "ctr": 0.43,
+        "position": 7.46
+      },
+      "previous7": {
+        "clicks": 1,
+        "impressions": 540,
+        "ctr": 0.19,
+        "position": 8.43
+      },
+      "last28": {
+        "clicks": 4,
+        "impressions": 1239,
+        "ctr": 0.32,
+        "position": 7.88
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-12",
+    "slug": "photo-location-privacy",
+    "title": "写真の位置情報、大丈夫？",
+    "url": "https://www.qring.jp/column/photo-location-privacy/",
+    "publication": "公開済み",
+    "priority": "P0",
+    "problemAndCorrection": "将来の記録停止と既存写真の削除を分離。OS・アプリ差、Google フォトのカメラ記録情報の制約を具体化。",
+    "reason": "将来の記録停止と既存写真の削除を分離。OS・アプリ差、Google フォトのカメラ記録情報の制約を具体化。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "写真の位置情報、大丈夫？",
+      "after": "写真の位置情報、大丈夫？",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "SNSに投稿した何気ない写真から、自宅や撮影場所が推測されることがあります。位置情報を公開していなくても、電柱や道路標識、マンホール、建物の形などが手がかりになる場合があるのです。写真に潜む位置情報のリスクと、投稿前に確認したいことを紹介します。",
+      "after": "SNSに投稿した何気ない写真から、自宅や撮影場所が推測されることがあります。位置情報を公開していなくても、電柱や道路標識、マンホール、建物の形などが手がかりになる場合があるのです。写真に潜む位置情報のリスクと、投稿前に確認したいことを紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-12",
+      "publishedAtAfter": "2026-11-12",
+      "timestampBefore": "2026-11-12T05:52:51+09:00",
+      "timestampAfter": "2026-11-12T05:52:51+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "IPA｜情報セキュリティ10大脅威 用語と仕組み（写真の位置情報）",
+        "href": "https://www.ipa.go.jp/security/10threats/ps6vr7000000auzz-att/yougoyashikumi_2022.pdf",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "review-3",
+        "label": "Google フォト ヘルプ｜写真の撮影場所の情報を確認、編集する",
+        "href": "https://support.google.com/photos/answer/6153599?hl=ja",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "review-4",
+        "label": "Apple｜写真とプライバシー（位置情報の削除・共有）",
+        "href": "https://www.apple.com/jp/legal/privacy/data/ja/photos/",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "Apple深いガイドURLに429/取得不可。Apple公開プライバシー説明とGoogle公式本文で補完。全Androidメーカーの実機検証は未実施。",
+    "searchData": {
+      "last7": {
+        "clicks": 1,
+        "impressions": 247,
+        "ctr": 0.4,
+        "position": 7.81
+      },
+      "previous7": null,
+      "last28": {
+        "clicks": 1,
+        "impressions": 247,
+        "ctr": 0.4,
+        "position": 7.81
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-13",
+    "slug": "unidentified-elderly",
+    "title": "身元不明の高齢者、どう探す？",
+    "url": "https://www.qring.jp/column/unidentified-elderly/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "更新時点が混在する自治体別人数の羅列を削減。届出統計と保護後の身元不明を区別する読み方・家族の具体的行動へ置換。",
+    "reason": "更新時点が混在する自治体別人数の羅列を削減。届出統計と保護後の身元不明を区別する読み方・家族の具体的行動へ置換。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "身元不明の高齢者、どう探す？",
+      "after": "身元不明の高齢者、どう探す？",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "認知症などによって行方がわからなくなった高齢者。多くの方は比較的早く発見されますが、なかには保護された後も、名前や住所、家族がわからないまま生活している方がいます。行方不明者の人数だけでは見えない「身元不明のまま保護される」という問題を考えます。",
+      "after": "認知症などによって行方がわからなくなった高齢者。多くの方は比較的早く発見されますが、なかには保護された後も、名前や住所、家族がわからないまま生活している方がいます。行方不明者の人数だけでは見えない「身元不明のまま保護される」という問題を考えます。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "https://www.npa.go.jp/news/release/2026/R07yukuefumeisha.pdf"
+      ],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-13",
+      "publishedAtAfter": "2026-11-13",
+      "timestampBefore": "2026-11-13T07:46:47+09:00",
+      "timestampAfter": "2026-11-13T07:46:47+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "警察庁｜令和7年における行方不明者届受理等の状況",
+        "href": "https://www.npa.go.jp/news/release/2026/20260625001.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "国家公安委員会｜2026年6月25日記者会見要旨",
+        "href": "https://www.npsc.go.jp/pressconf_2026/06_25.htm",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-3",
+        "label": "厚生労働省｜行方のわからない認知症高齢者等をお探しの方へ",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000052978.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-4",
+        "label": "岡山県｜身元不明の認知症高齢者等に関する情報",
+        "href": "https://www.pref.okayama.jp/page/407947.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-5",
+        "label": "岐阜県｜身元不明で保護されている高齢者等に関する情報",
+        "href": "https://www.pref.gifu.lg.jp/page/13791.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-6",
+        "label": "千葉県｜認知症と思われる身元不明者について",
+        "href": "https://www.pref.chiba.lg.jp/koufuku/shien/ninchishou/mimotohumei.html",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "最新の全国統一の保護後身元不明人数は未確認。自治体別の時点が違う人数を削減し推計しない。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 114,
+        "ctr": 0,
+        "position": 6.77
+      },
+      "previous7": null,
+      "last28": {
+        "clicks": 0,
+        "impressions": 114,
+        "ctr": 0,
+        "position": 6.77
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-14",
+    "slug": "dog-microchip",
+    "title": "犬のマイクロチップって何？",
+    "url": "https://www.qring.jp/column/dog-microchip/",
+    "publication": "公開済み",
+    "priority": "P1",
+    "problemAndCorrection": "2,331件の調査母数と頭数の違いを補足。装着努力義務・登録／変更を区別し、各手段の役割比較を追加。",
+    "reason": "2,331件の調査母数と頭数の違いを補足。装着努力義務・登録／変更を区別し、各手段の役割比較を追加。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "犬のマイクロチップって何？",
+      "after": "犬のマイクロチップって何？",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "犬が迷子になったとき、飼い主を確認する手がかりになるマイクロチップ。ペットショップなどで購入した犬への装着が義務化され、身近な存在になっています。しかし、実際にはどれくらい普及しているのでしょうか。また、GPSのように犬の居場所を探せるのでしょうか。",
+      "after": "犬が迷子になったとき、飼い主を確認する手がかりになるマイクロチップ。ペットショップなどで購入した犬への装着が義務化され、身近な存在になっています。しかし、実際にはどれくらい普及しているのでしょうか。また、GPSのように犬の居場所を探せるのでしょうか。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "https://www.jpc.or.jp/pdf/r7_02_report.pdf"
+      ],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-14",
+      "publishedAtAfter": "2026-11-14",
+      "timestampBefore": "2026-11-14T02:22:05+09:00",
+      "timestampAfter": "2026-11-14T02:22:05+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "日本愛玩動物協会｜令和7年度全国愛玩動物飼養管理士の日の活動結果報告",
+        "href": "https://www.jpc.or.jp/pdf/r7_02_report.pdf",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-2",
+        "label": "環境省｜犬と猫のマイクロチップ情報登録について",
+        "href": "https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "source-3",
+        "label": "環境省｜令和7年版環境白書 第2部第2章第5節",
+        "href": "https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html",
+        "checkedAt": "2026-11-07"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "全国の犬だけの装着率はこの回答者調査から算出できない。登録数と装着率は別。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 114,
+        "ctr": 0,
+        "position": 11.42
+      },
+      "previous7": null,
+      "last28": {
+        "clicks": 0,
+        "impressions": 114,
+        "ctr": 0,
+        "position": 11.42
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-15",
+    "slug": "care-insurance-age",
+    "title": "介護保険って何歳から？",
+    "url": "https://www.qring.jp/column/care-insurance-age/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "加入年齢・受給条件を表で対照し、保険料と利用者負担を明確化。認定手順は8日記事へ案内。",
+    "reason": "加入年齢・受給条件を表で対照し、保険料と利用者負担を明確化。認定手順は8日記事へ案内。",
+    "changedFields": {
+      "relatedLinks": {
+        "before": [
+          {
+            "href": "/use-cases/elderly/",
+            "label": "つながるQRの関連サービスを見る"
+          }
+        ],
+        "after": []
+      },
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "介護保険って何歳から？",
+      "after": "介護保険って何歳から？",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "介護保険は何歳から加入するのでしょうか。そして、毎月いくら支払うのでしょうか。介護保険は40歳から加入する制度ですが、保険料を払うことと、介護サービスを利用できることは別です。年齢による違いと、気になるお金の仕組みを解説します。",
+      "after": "介護保険は何歳から加入するのでしょうか。そして、毎月いくら支払うのでしょうか。介護保険は40歳から加入する制度ですが、保険料を払うことと、介護サービスを利用できることは別です。年齢による違いと、気になるお金の仕組みを解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "https://www.mhlw.go.jp/stf/newpage_40211.html"
+      ],
+      "removed": [
+        "/use-cases/elderly/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-15",
+      "publishedAtAfter": "2026-11-15",
+      "timestampBefore": "2026-11-15T00:30:27+09:00",
+      "timestampAfter": "2026-11-15T00:30:27+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "厚生労働省｜介護保険制度の概要",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/gaiyo/index.html",
+        "checkedAt": "2026-11-28"
+      },
+      {
+        "id": "source-2",
+        "label": "厚生労働省｜第9期介護保険の第1号保険料等",
+        "href": "https://www.mhlw.go.jp/stf/newpage_40211.html",
+        "checkedAt": "2026-11-07"
+      },
+      {
+        "id": "review-3",
+        "label": "厚生労働省｜介護保険サービスの流れ",
+        "href": "https://www.mhlw.go.jp/content/11909000/001512330.pdf",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 49,
+        "ctr": 0,
+        "position": 31.37
+      },
+      "previous7": null,
+      "last28": {
+        "clicks": 0,
+        "impressions": 49,
+        "ctr": 0,
+        "position": 31.37
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-16",
+    "slug": "unknown-calls",
+    "title": "知らない番号から電話が来たら、出るべき？",
+    "url": "https://www.qring.jp/column/unknown-calls/",
+    "publication": "公開済み",
+    "priority": "P0",
+    "problemAndCorrection": "要約と冒頭の逐語重複をデータ側で解消。4段階の確認をリストにし、プライバシー番号も安全保証ではないと整理。",
+    "reason": "要約と冒頭の逐語重複をデータ側で解消。4段階の確認をリストにし、プライバシー番号も安全保証ではないと整理。",
+    "changedFields": {
+      "summary": {
+        "before": "スマートフォンに突然、知らない番号からの着信。 「仕事の連絡かもしれない」「宅配便かな？」「大切な用事だったらどうしよう」。そんなふうに迷った経験はありませんか？",
+        "after": "心当たりのない番号には、無理に出たり折り返したりする必要はありません。留守番電話などで用件を確かめ、必要なら自分で調べた公式窓口へ連絡しましょう。"
+      },
+      "introduction": {
+        "before": [
+          "スマートフォンに突然、知らない番号からの着信。",
+          "「仕事の連絡かもしれない」「宅配便かな？」「大切な用事だったらどうしよう」。そんなふうに迷った経験はありませんか？",
+          "最近では、警察官や金融機関を装った詐欺電話も問題になっています。では、知らない番号から電話がかかってきたとき、どう対応するのが安全なのでしょうか。"
+        ],
+        "after": [
+          "仕事や配送の連絡かもしれないと思うと、着信に迷うことがあります。番号の表示だけで相手を信用せず、用件と連絡先を別々に確かめる手順を紹介します。"
+        ]
+      },
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-14",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "知らない番号から電話が来たら出るべき？安全な対処法と詐欺対策",
+      "after": "知らない番号から電話が来たら出るべき？安全な対処法と詐欺対策",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "知らない番号から電話が来たら出るべき？警察を装った詐欺電話や国際電話の注意点、折り返す前の確認方法、家族でできる防犯対策を解説します。",
+      "after": "知らない番号から電話が来たら出るべき？警察を装った詐欺電話や国際電話の注意点、折り返す前の確認方法、家族でできる防犯対策を解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "/column/phone-number-personal-information/"
+      ],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-16",
+      "publishedAtAfter": "2026-11-16",
+      "timestampBefore": "2026-11-16T00:57:00+09:00",
+      "timestampAfter": "2026-11-16T00:57:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "source-1",
+        "label": "警察庁｜固定電話の番号表示・非通知拒否サービス",
+        "href": "https://www.npa.go.jp/bureau/safetylife/sos47/case/service/",
+        "checkedAt": "2026-11-14"
+      },
+      {
+        "id": "source-2",
+        "label": "警察庁｜警察に偽装した電話番号に注意",
+        "href": "https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/250325/01.html",
+        "checkedAt": "2026-11-14"
+      },
+      {
+        "id": "source-4",
+        "label": "警察庁｜架空料金請求詐欺",
+        "href": "https://www.npa.go.jp/bureau/safetylife/sos47/case/fictitious-billing/",
+        "checkedAt": "2026-11-14"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-17",
+    "slug": "dog-owner-voice",
+    "title": "犬は飼い主の声を聞き分けられる？声を覚える仕組みとは",
+    "url": "https://www.qring.jp/column/dog-owner-voice/",
+    "publication": "公開済み",
+    "priority": "P1",
+    "problemAndCorrection": "一次論文の所属・2022年・28頭・方法・82％と選抜条件を追加。録音での識別を電話・捜索効果へ外挿しないよう明記。",
+    "reason": "一次論文の所属・2022年・28頭・方法・82％と選抜条件を追加。録音での識別を電話・捜索効果へ外挿しないよう明記。",
+    "changedFields": {
+      "relatedService": {
+        "before": {
+          "href": "/use-cases/pets/",
+          "label": "ペットの迷子への備え"
+        },
+        "after": null
+      },
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "犬は飼い主の声を聞き分けられる？犬の聴覚と声の認識を解説",
+      "after": "犬は飼い主の声を聞き分けられる？犬の聴覚と声の認識を解説",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "犬は飼い主の声を覚えているのでしょうか？声の聞き分け方や言葉の理解、録音した声への反応など、犬の聴覚とコミュニケーションを解説します。",
+      "after": "犬は飼い主の声を覚えているのでしょうか？声の聞き分け方や言葉の理解、録音した声への反応など、犬の聴覚とコミュニケーションを解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/"
+      ],
+      "removed": [
+        "/use-cases/pets/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-17",
+      "publishedAtAfter": "2026-11-17",
+      "timestampBefore": "2026-11-17T05:57:38+09:00",
+      "timestampAfter": "2026-11-17T05:57:38+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "dog",
+        "label": "Gábor et al. (2022)｜The acoustic bases of human voice identity processing in dogs（Animal Cognition）",
+        "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "PMC原論文の対象・方法・結果・限界を確認。通話を聞かせた犬の行動・迷子捜索効果は検証されていない。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-18",
+    "slug": "young-onset-dementia",
+    "title": "認知症は何歳から始まる？若年性認知症の特徴と相談先",
+    "url": "https://www.qring.jp/column/young-onset-dementia/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "発症年齢と診断年齢を区別。高齢者一般の記事と異なる就労・家計・家族支援の相談準備を補足。",
+    "reason": "発症年齢と診断年齢を区別。高齢者一般の記事と異なる就労・家計・家族支援の相談準備を補足。",
+    "changedFields": {
+      "relatedService": {
+        "before": {
+          "href": "/use-cases/elderly/",
+          "label": "高齢者の見守りへの活用"
+        },
+        "after": null
+      },
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "認知症は何歳から始まる？若年性認知症の症状と早期相談のポイント",
+      "after": "認知症は何歳から始まる？若年性認知症の症状と早期相談のポイント",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "認知症は何歳から発症するのでしょうか？65歳未満で発症する若年性認知症の特徴や初期の変化、医療機関・相談窓口について解説します。",
+      "after": "認知症は何歳から発症するのでしょうか？65歳未満で発症する若年性認知症の特徴や初期の変化、医療機関・相談窓口について解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": [
+        "/use-cases/elderly/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-18",
+      "publishedAtAfter": "2026-11-18",
+      "timestampBefore": "2026-11-18T00:53:05+09:00",
+      "timestampAfter": "2026-11-18T00:53:05+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "young",
+        "label": "厚生労働省｜主な認知症施策について（若年性認知症施策）",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00006.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "young-support",
+        "label": "厚生労働省｜若年性認知症のガイドライン・取組事例",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000167853.html",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 85,
+        "ctr": 0,
+        "position": 49.65
+      },
+      "previous7": null,
+      "last28": {
+        "clicks": 0,
+        "impressions": 85,
+        "ctr": 0,
+        "position": 49.65
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-19",
+    "slug": "wallet-contents-safety",
+    "title": "財布に入れてはいけないものってある？紛失時に困らないための整理術",
+    "url": "https://www.qring.jp/column/wallet-contents-safety/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "必要／別保管／不要の実用表を追加。免許証等の携帯が必要な場面を尊重し、紛失後の詳細は9日記事へ。",
+    "reason": "必要／別保管／不要の実用表を追加。免許証等の携帯が必要な場面を尊重し、紛失後の詳細は9日記事へ。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "財布に入れてはいけないものは？紛失・盗難に備える持ち物チェック",
+      "after": "財布に入れてはいけないものは？紛失・盗難に備える持ち物チェック",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "財布に入れておくと危険なものは？キャッシュカードと暗証番号のメモ、使わないカードなど、紛失・盗難の被害を減らすための整理方法を紹介します。",
+      "after": "財布に入れておくと危険なものは？キャッシュカードと暗証番号のメモ、使わないカードなど、紛失・盗難の被害を減らすための整理方法を紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-19",
+      "publishedAtAfter": "2026-11-19",
+      "timestampBefore": "2026-11-19T08:00:00+09:00",
+      "timestampAfter": "2026-11-19T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "card",
+        "label": "金融庁｜あなたのキャッシュカードが狙われています",
+        "href": "https://www.fsa.go.jp/ordinary/card/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "lost",
+        "label": "警察庁｜遺失届とは？遺失届のポイント",
+        "href": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/loss.html",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 105,
+        "ctr": 0,
+        "position": 6.14
+      },
+      "previous7": null,
+      "last28": {
+        "clicks": 0,
+        "impressions": 105,
+        "ctr": 0,
+        "position": 6.14
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-20",
+    "slug": "qr-code-inventor",
+    "title": "QRコードって、そもそも誰が発明したの？日本生まれの技術の歴史",
+    "url": "https://www.qring.jp/column/qr-code-inventor/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "歴史を中心に標準化・特許権不行使・商標を区別。QR自体とサービスの技術を分け、仕組みは27日記事へ。",
+    "reason": "歴史を中心に標準化・特許権不行使・商標を区別。QR自体とサービスの技術を分け、仕組みは27日記事へ。",
+    "changedFields": {
+      "relatedService": {
+        "before": {
+          "href": "/service/",
+          "label": "つながるQRのサービスと利用条件"
+        },
+        "after": null
+      },
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "QRコードは誰が発明した？1994年に日本で生まれた理由と仕組み",
+      "after": "QRコードは誰が発明した？1994年に日本で生まれた理由と仕組み",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "QRコードは誰が、いつ発明したのでしょうか？1994年に日本で誕生した背景や、QRの意味、世界中に普及した理由をわかりやすく解説します。",
+      "after": "QRコードは誰が、いつ発明したのでしょうか？1994年に日本で誕生した背景や、QRの意味、世界中に普及した理由をわかりやすく解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": [
+        "/service/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-20",
+      "publishedAtAfter": "2026-11-20",
+      "timestampBefore": "2026-11-20T04:19:12+09:00",
+      "timestampAfter": "2026-11-20T04:19:12+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "history",
+        "label": "デンソーウェーブ｜QRコードの道のり",
+        "href": "https://www.qrcode.com/history/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "qr",
+        "label": "デンソーウェーブ｜QRコードとは？",
+        "href": "https://www.qrcode.com/about/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "review-4",
+        "label": "特許庁｜QRコードの開発と普及",
+        "href": "https://www.jpo.go.jp/news/koho/innovation/01_qrcode.html",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 1,
+        "impressions": 660,
+        "ctr": 0.15,
+        "position": 7.3
+      },
+      "previous7": null,
+      "last28": {
+        "clicks": 1,
+        "impressions": 660,
+        "ctr": 0.15,
+        "position": 7.3
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-21",
+    "slug": "cat-owner-memory",
+    "title": "猫は何日くらい飼い主を覚えている？猫の記憶と認識の不思議",
+    "url": "https://www.qring.jp/column/cat-owner-memory/",
+    "publication": "公開済み",
+    "priority": "P1",
+    "problemAndCorrection": "東大発表と一次論文要旨を照合し20匹・録音・反応・限界を追加。日数の答えを約束しないdescriptionへ。全文入手未確認は資料に明記。",
+    "reason": "東大発表と一次論文要旨を照合し20匹・録音・反応・限界を追加。日数の答えを約束しないdescriptionへ。全文入手未確認は資料に明記。",
+    "changedFields": {
+      "metaDescription": {
+        "before": "猫は飼い主を何日くらい覚えているのでしょうか？長期間離れていたときの反応や、声・においによる認識、再会時の接し方を紹介します。",
+        "after": "猫は何日で飼い主を忘れるのでしょうか。20匹の猫を対象にした飼い主の声の識別研究と、その結果からは分からない記憶の期間を区別し、再会時の接し方を紹介します。"
+      },
+      "relatedService": {
+        "before": {
+          "href": "/use-cases/pets/",
+          "label": "ペットの迷子への備え"
+        },
+        "after": null
+      },
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "猫は飼い主を何日で忘れる？声やにおいで人を認識する仕組み",
+      "after": "猫は飼い主を何日で忘れる？声やにおいで人を認識する仕組み",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "猫は飼い主を何日くらい覚えているのでしょうか？長期間離れていたときの反応や、声・においによる認識、再会時の接し方を紹介します。",
+      "after": "猫は何日で飼い主を忘れるのでしょうか。20匹の猫を対象にした飼い主の声の識別研究と、その結果からは分からない記憶の期間を区別し、再会時の接し方を紹介します。",
+      "changed": true
+    },
+    "links": {
+      "added": [
+        "https://www.u-tokyo.ac.jp/focus/ja/press/p01_250327_02.html"
+      ],
+      "removed": [
+        "/use-cases/pets/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-21",
+      "publishedAtAfter": "2026-11-21",
+      "timestampBefore": "2026-11-21T02:39:20+09:00",
+      "timestampAfter": "2026-11-21T02:39:20+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "cat",
+        "label": "Saito & Shinozuka (2013)｜Vocal recognition of owners by domestic cats (Felis catus)",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/23525707/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "cat-uni",
+        "label": "東京大学｜ツレない猫、答えないけど飼い主の声聞き分ける",
+        "href": "https://www.u-tokyo.ac.jp/focus/ja/press/p01_250327_02.html",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "PubMed原論文要旨と大学発表を確認。出版社の原論文全文は未確認。記憶の持続日数は断定しない。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-22",
+    "slug": "elderly-fall-prevention",
+    "title": "高齢者が転倒しやすいのはなぜ？家の中でできる予防対策",
+    "url": "https://www.qring.jp/column/elderly-fall-prevention/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "消費者庁の環境・身体要因に沿う確認表と、運動・服薬・転倒後対応の注意を補足。QRの検知・救急保証を否定。",
+    "reason": "消費者庁の環境・身体要因に沿う確認表と、運動・服薬・転倒後対応の注意を補足。QRの検知・救急保証を否定。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "高齢者が転倒しやすい原因とは？家庭でできる転倒予防を解説",
+      "after": "高齢者が転倒しやすい原因とは？家庭でできる転倒予防を解説",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "高齢者はなぜ転倒しやすくなるのでしょうか？筋力やバランス能力の変化、家の中の危険な場所、転倒を防ぐための生活習慣を紹介します。",
+      "after": "高齢者はなぜ転倒しやすくなるのでしょうか？筋力やバランス能力の変化、家の中の危険な場所、転倒を防ぐための生活習慣を紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-22",
+      "publishedAtAfter": "2026-11-22",
+      "timestampBefore": "2026-11-22T08:00:00+09:00",
+      "timestampAfter": "2026-11-22T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "fall",
+        "label": "消費者庁｜高齢者の事故を防ぐために",
+        "href": "https://www.caa.go.jp/policies/policy/consumer_safety/caution/caution_055/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "fall-check",
+        "label": "国立長寿医療研究センター｜高齢者のための転倒防止セルフチェック",
+        "href": "https://www.ncgg.go.jp/hospital/tento/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": {
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 18
+      },
+      "previous7": null,
+      "last28": {
+        "clicks": 0,
+        "impressions": 10,
+        "ctr": 0,
+        "position": 18
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-23",
+    "slug": "smartphone-emergency-sos",
+    "title": "スマホの緊急SOS機能、使ったことある？もしものときの備え方",
+    "url": "https://www.qring.jp/column/smartphone-emergency-sos/",
+    "publication": "公開済み",
+    "priority": "P1",
+    "problemAndCorrection": "Apple/Googleの設定と機種差、家族通知と公的通報の違いを具体化。試験通報禁止と衛星機能の条件を明確化。",
+    "reason": "Apple/Googleの設定と機種差、家族通知と公的通報の違いを具体化。試験通報禁止と衛星機能の条件を明確化。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-23",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "スマホの緊急SOS機能とは？iPhone・Androidの設定と注意点",
+      "after": "スマホの緊急SOS機能とは？iPhone・Androidの設定と注意点",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "スマートフォンの緊急SOS機能をご存じですか？iPhone・Androidでの基本的な仕組みや事前設定、緊急連絡先の登録、誤操作への注意点を解説します。",
+      "after": "スマートフォンの緊急SOS機能をご存じですか？iPhone・Androidでの基本的な仕組みや事前設定、緊急連絡先の登録、誤操作への注意点を解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-23",
+      "publishedAtAfter": "2026-11-23",
+      "timestampBefore": "2026-11-23T08:00:00+09:00",
+      "timestampAfter": "2026-11-23T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "android",
+        "label": "Google｜Androidスマートフォンを使用して緊急時に助けを求める",
+        "href": "https://support.google.com/android/answer/9319337?hl=ja",
+        "checkedAt": "2026-11-23"
+      },
+      {
+        "id": "sos-news",
+        "label": "Apple｜日本での衛星経由の緊急SOS提供開始と緊急通報の基本操作",
+        "href": "https://www.apple.com/jp/newsroom/2024/07/emergency-sos-via-satellite-available-today/",
+        "checkedAt": "2026-11-23"
+      },
+      {
+        "id": "apple-safety",
+        "label": "Apple｜Apple デバイスの安心機能",
+        "href": "https://support.apple.com/ja-jp/safety-features",
+        "checkedAt": "2026-11-23"
+      },
+      {
+        "id": "review-4",
+        "label": "Apple｜SOSを使ってiPhoneで緊急通報サービスに連絡する（機種・OSを確認）",
+        "href": "https://support.apple.com/ja-jp/guide/iphone/iph3c99374c/27/ios/27",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "Apple現行ガイドの検索結果と公式2024年案内・安心機能、Google現行本文を照合。現行Appleガイド全文は429。実端末・実際の緊急通報は試験しない。",
+    "searchData": {
+      "last7": {
+        "clicks": 4,
+        "impressions": 489,
+        "ctr": 0.82,
+        "position": 8.2
+      },
+      "previous7": null,
+      "last28": {
+        "clicks": 4,
+        "impressions": 489,
+        "ctr": 0.82,
+        "position": 8.2
+      },
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-24",
+    "slug": "phone-number-personal-information",
+    "title": "電話番号から個人情報はどこまでわかる？知られたときのリスクと対策",
+    "url": "https://www.qring.jp/column/phone-number-personal-information/",
+    "publication": "公開済み",
+    "priority": "P0",
+    "problemAndCorrection": "PPCの個人識別符号と個人情報の違いを明記。番号だけの追跡と情報照合・連絡先同期を分け、LINE現行ヘルプに限定して説明。",
+    "reason": "PPCの個人識別符号と個人情報の違いを明記。番号だけの追跡と情報照合・連絡先同期を分け、LINE現行ヘルプに限定して説明。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "電話番号から住所や名前はわかる？個人情報を守るための注意点",
+      "after": "電話番号から住所や名前はわかる？個人情報を守るための注意点",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "電話番号だけで住所や名前は特定されるのでしょうか？SNSとの関連付けや迷惑電話のリスク、電話番号を教えずに連絡する方法を解説します。",
+      "after": "電話番号だけで住所や名前は特定されるのでしょうか？SNSとの関連付けや迷惑電話のリスク、電話番号を教えずに連絡する方法を解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/"
+      ],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-24",
+      "publishedAtAfter": "2026-11-24",
+      "timestampBefore": "2026-11-24T08:00:00+09:00",
+      "timestampAfter": "2026-11-24T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "privacy",
+        "label": "個人情報保護委員会｜携帯電話番号やクレジットカード番号は個人識別符号に該当しますか",
+        "href": "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "contacts",
+        "label": "LINEヘルプセンター｜アドレス帳の情報の利用について",
+        "href": "https://help.line.me/line/?contentId=10002423&lang=ja",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "sms",
+        "label": "IPA｜情報セキュリティ安心相談窓口の相談状況（2025年第1四半期）",
+        "href": "https://www.ipa.go.jp/security/anshin/reports/2025q1outline.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "LINE現行ヘルプに限定して説明。電話番号からの本人情報取得を実際に試す調査は実施していない。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-25",
+    "slug": "pets-earthquake-prediction",
+    "title": "犬や猫は地震を予知できるって本当？動物の不思議な行動と防災",
+    "url": "https://www.qring.jp/column/pets-earthquake-prediction/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "予知・揺れへの反応・報知音への反応を区別。気象庁の限界説明と同行避難の意味、具体的準備に集約。",
+    "reason": "予知・揺れへの反応・報知音への反応を区別。気象庁の限界説明と同行避難の意味、具体的準備に集約。",
+    "changedFields": {
+      "relatedService": {
+        "before": {
+          "href": "/use-cases/pets/",
+          "label": "ペットの迷子への備え"
+        },
+        "after": null
+      },
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "犬や猫は地震を予知できる？科学的な根拠とペットの防災対策",
+      "after": "犬や猫は地震を予知できる？科学的な根拠とペットの防災対策",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "地震の前に犬が吠える、猫が隠れるという話は本当？動物の地震予知に関する科学的な見解と、飼い主ができる防災準備を紹介します。",
+      "after": "地震の前に犬が吠える、猫が隠れるという話は本当？動物の地震予知に関する科学的な見解と、飼い主ができる防災準備を紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "https://www.jma.go.jp/jma/kishou/know/faq/faq24.html"
+      ],
+      "removed": [
+        "/use-cases/pets/"
+      ]
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-25",
+      "publishedAtAfter": "2026-11-25",
+      "timestampBefore": "2026-11-25T00:41:57+09:00",
+      "timestampAfter": "2026-11-25T00:41:57+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "quake",
+        "label": "気象庁｜地震予知について",
+        "href": "https://www.jma.go.jp/jma/kishou/know/faq/faq24.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "pets-disaster",
+        "label": "環境省｜ペットの災害対策",
+        "href": "https://www.env.go.jp/nature/dobutsu/aigo/1_law/disaster.html",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "動物の行動で地震の日時・場所・規模を予測する効果は未確認。避難所の具体条件は自治体確認。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-26",
+    "slug": "monitoring-and-surveillance",
+    "title": "「見守り」と「監視」は何が違う？家族の安心と本人の自由を考える",
+    "url": "https://www.qring.jp/column/monitoring-and-surveillance/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "目的・範囲・頻度・閲覧者・保存・不応答を決める表を追加。GPS等を一律に否定しない。論点と関係の薄いPPC引用を削減。",
+    "reason": "目的・範囲・頻度・閲覧者・保存・不応答を決める表を追加。GPS等を一律に否定しない。論点と関係の薄いPPC引用を削減。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "見守りと監視の違いとは？高齢者のプライバシーと安全を両立する方法",
+      "after": "見守りと監視の違いとは？高齢者のプライバシーと安全を両立する方法",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "見守りと監視は何が違うのでしょうか？高齢の親や家族の安全を守りながら、本人の意思とプライバシーを尊重する方法を考えます。",
+      "after": "見守りと監視は何が違うのでしょうか？高齢の親や家族の安全を守りながら、本人の意思とプライバシーを尊重する方法を考えます。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-26",
+      "publishedAtAfter": "2026-11-26",
+      "timestampBefore": "2026-11-26T02:03:45+09:00",
+      "timestampAfter": "2026-11-26T02:03:45+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "consent",
+        "label": "厚生労働省｜認知症の人の日常生活・社会生活における意思決定支援ガイドライン",
+        "href": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212395.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-27",
+    "slug": "qr-code-scan-mechanism",
+    "title": "QRコードをスキャンすると、何が起きているの？仕組みをやさしく解説",
+    "url": "https://www.qring.jp/column/qr-code-scan-mechanism/",
+    "publication": "公開済み",
+    "priority": "P2",
+    "problemAndCorrection": "URL・電話番号・サービス接続の比較を追加。読み取りと発信を区別し、27日は技術、20日は発明史に役割分担。",
+    "reason": "URL・電話番号・サービス接続の比較を追加。読み取りと発信を区別し、27日は技術、20日は発明史に役割分担。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "QRコードをスキャンするとどうなる？仕組みと安全な使い方を解説",
+      "after": "QRコードをスキャンするとどうなる？仕組みと安全な使い方を解説",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "QRコードをスキャンするとスマートフォンの中で何が起こるのでしょうか？コードに入っている情報、URLを開く仕組み、安全に利用するための注意点を解説します。",
+      "after": "QRコードをスキャンするとスマートフォンの中で何が起こるのでしょうか？コードに入っている情報、URLを開く仕組み、安全に利用するための注意点を解説します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-27",
+      "publishedAtAfter": "2026-11-27",
+      "timestampBefore": "2026-11-27T08:00:00+09:00",
+      "timestampAfter": "2026-11-27T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "qr",
+        "label": "デンソーウェーブ｜QRコードとは？",
+        "href": "https://www.qrcode.com/about/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "qr-safety",
+        "label": "警視庁｜QRコードを利用する時の注意点",
+        "href": "https://www.keishicho.metro.tokyo.lg.jp/kurashi/cyber/notes/qrcord.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-28",
+    "slug": "disaster-family-contact",
+    "title": "災害時、家族と連絡が取れなかったら？安否確認の方法と事前の備え",
+    "url": "https://www.qring.jp/column/disaster-family-contact/",
+    "publication": "公開済み",
+    "priority": "P0",
+    "problemAndCorrection": "171の録音1・再生2とweb171の違い、体験日、家族の確認事項を具体化。171直後のペット記事リンクを準備の末尾へ移動。災害接続保証なし。",
+    "reason": "171の録音1・再生2とweb171の違い、体験日、家族の確認事項を具体化。171直後のペット記事リンクを準備の末尾へ移動。災害接続保証なし。",
+    "changedFields": {
+      "updatedAt": {
+        "before": null,
+        "after": "2026-11-28"
+      },
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "災害時に家族と連絡が取れないときは？171と安否確認の方法",
+      "after": "災害時に家族と連絡が取れないときは？171と安否確認の方法",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "地震などの災害時に家族と電話がつながらない場合、どうすればよいのでしょうか？災害用伝言ダイヤル171や安否確認の方法、事前に決めたい家族のルールを紹介します。",
+      "after": "地震などの災害時に家族と電話がつながらない場合、どうすればよいのでしょうか？災害用伝言ダイヤル171や安否確認の方法、事前に決めたい家族のルールを紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-28",
+      "publishedAtAfter": "2026-11-28",
+      "timestampBefore": "2026-11-28T04:58:01+09:00",
+      "timestampAfter": "2026-11-28T04:58:01+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": "2026-11-28",
+      "reason": "本文に実質的な補足・整理を実施"
+    },
+    "sources": [
+      {
+        "id": "171",
+        "label": "NTT東日本｜災害用伝言ダイヤル（171）概要とご提供のしくみ",
+        "href": "https://www.ntt-east.co.jp/saigai/voice171s/intro.html",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "web171",
+        "label": "NTT東日本｜災害用伝言板（web171）",
+        "href": "https://www.ntt-east.co.jp/saigai/web171/",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "review-3",
+        "label": "NTT東日本｜災害用伝言ダイヤル（171）体験利用",
+        "href": "https://www.ntt-east.co.jp/saigai/voice171s/howto.html",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "改善後の検索順位・CTR・問い合わせ効果、個別利用者への適用は未確認。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-29",
+    "slug": "why-we-misplace-things",
+    "title": "なぜ人は物をなくすの？脳の仕組みと忘れ物を減らすコツ",
+    "url": "https://www.qring.jp/column/why-we-misplace-things/",
+    "publication": "未公開原稿（公開レジストリへの登録なし）",
+    "priority": "P2",
+    "problemAndCorrection": "未公開維持。一次論文要旨の4実験と注意分散の結果を限定して説明。PDF全文の再検証は未完了とし、日常の工夫を実験効果と混同しない。",
+    "reason": "未公開維持。一次論文要旨の4実験と注意分散の結果を限定して説明。PDF全文の再検証は未完了とし、日常の工夫を実験効果と混同しない。",
+    "changedFields": {
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "なぜ人は物をなくす？置き忘れが起こる理由と予防する習慣",
+      "after": "なぜ人は物をなくす？置き忘れが起こる理由と予防する習慣",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "鍵や財布を置いた場所を忘れるのはなぜ？注意力と記憶の関係をわかりやすく解説し、忘れ物や置き忘れを減らすための工夫を紹介します。",
+      "after": "鍵や財布を置いた場所を忘れるのはなぜ？注意力と記憶の関係をわかりやすく解説し、忘れ物や置き忘れを減らすための工夫を紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [
+        "https://pubmed.ncbi.nlm.nih.gov/8683192/"
+      ],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-29",
+      "publishedAtAfter": "2026-11-29",
+      "timestampBefore": "2026-11-29T08:00:00+09:00",
+      "timestampAfter": "2026-11-29T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": null,
+      "reason": "未公開原稿のため更新日を付けず公開予定を維持"
+    },
+    "sources": [
+      {
+        "id": "memory",
+        "label": "Craik et al. (1996)｜The effects of divided attention on encoding and retrieval processes in human memory",
+        "href": "https://macal.missouri.edu/assets/doc/pubs/EffectsDividedAttentionEncodingRetrieval.pdf",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "memory-health",
+        "label": "米国国立医学図書館 MedlinePlus｜Memory loss",
+        "href": "https://www.medlineplus.gov/ency/article/003257.htm",
+        "checkedAt": "2026-11-16"
+      },
+      {
+        "id": "review-3",
+        "label": "PubMed｜Craik et al. (1996) 原論文要旨",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/8683192/",
+        "checkedAt": "2026-11-28"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "未公開。原論文PDFに読取可能な本文がなく、全文再確認は未完了。PubMedの原論文要旨の範囲に限定。公開・承認・画像取込は未実施。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  },
+  {
+    "date": "2026-11-30",
+    "slug": "number-private-calls",
+    "title": "電話番号を教えずに、声だけでつながる時代へ",
+    "url": "https://www.qring.jp/column/number-private-calls/",
+    "publication": "未公開原稿（公開レジストリへの登録なし）",
+    "priority": "P2",
+    "problemAndCorrection": "未公開維持。操作・正式名称・非公開の範囲を整理。匿名性・通信安全性・本人確認・自動発信の保証と誤認させない。",
+    "reason": "未公開維持。操作・正式名称・非公開の範囲を整理。匿名性・通信安全性・本人確認・自動発信の保証と誤認させない。",
+    "changedFields": {
+      "reviewedAt": {
+        "before": "2026-11-16",
+        "after": "2026-11-28"
+      }
+    },
+    "seoTitle": {
+      "before": "電話番号を教えずに通話する方法とは？プライバシーを守る連絡手段",
+      "after": "電話番号を教えずに通話する方法とは？プライバシーを守る連絡手段",
+      "reason": "現行の主題・検索意図と一致するため維持。GSCの少数データだけでは変更しない。"
+    },
+    "description": {
+      "before": "電話番号を相手に教えずに通話することはできるのでしょうか？プライバシー電話番号の仕組みや、QRコードを使った新しい連絡方法を紹介します。",
+      "after": "電話番号を相手に教えずに通話することはできるのでしょうか？プライバシー電話番号の仕組みや、QRコードを使った新しい連絡方法を紹介します。",
+      "changed": false
+    },
+    "links": {
+      "added": [],
+      "removed": []
+    },
+    "dates": {
+      "publishedAtBefore": "2026-11-30",
+      "publishedAtAfter": "2026-11-30",
+      "timestampBefore": "2026-11-30T08:00:00+09:00",
+      "timestampAfter": "2026-11-30T08:00:00+09:00",
+      "updatedAtBefore": null,
+      "updatedAtAfter": null,
+      "reason": "未公開原稿のため更新日を付けず公開予定を維持"
+    },
+    "sources": [
+      {
+        "id": "service",
+        "label": "株式会社QRing｜つながるQR サービス紹介",
+        "href": "https://www.qring.jp/service/",
+        "checkedAt": "2026-11-16"
+      }
+    ],
+    "verificationScope": "原稿・出典・構造化ブロック・公開条件を照合。ブラウザー結果はbrowser-validation.json参照。専門家監修を意味しない。",
+    "unconfirmed": "未公開。提供状況・課金の追加仕様は創作せず既存公式案内へ。公開・承認・画像取込は未実施。",
+    "searchData": {
+      "last7": null,
+      "previous7": null,
+      "last28": null,
+      "previous28": null
+    }
+  }
+]

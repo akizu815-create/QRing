@@ -60,3 +60,17 @@ for a in records:
   assert not (root/'column'/a['slug']).exists(), f'Unpublished individual route: {a["slug"]}'
 assert not list((root/'column').glob('private-column-canary-*'))
 print('Static export: existing URLs/content/metadata/schema/anchors preserved; municipal article listed and listing indexed; unpublished canaries absent from HTML/RSC/JS/XML.')
+
+# Reviewed future manuscripts are intentionally not imported by the public registry.
+# Scan the built payloads too, so an accidental future import fails closed.
+draft_file = Path('src/content/columns/revisions/20261128/unpublished-drafts.json')
+if draft_file.exists():
+ drafts = json.loads(draft_file.read_text())
+ for file in root.rglob('*'):
+  if file.is_file() and file.suffix in {'.html', '.txt', '.json', '.js', '.xml'}:
+   payload = file.read_text(errors='ignore')
+   for a in drafts:
+    assert a['title'] not in payload and '/column/' + a['slug'] + '/' not in payload, f'Reviewed future draft leaked: {file}: {a["slug"]}'
+ for a in drafts:
+  assert not (root / 'column' / a['slug']).exists()
+ print('Reviewed Nov29/30 drafts: absent from routes, HTML, RSC, JavaScript and XML.')

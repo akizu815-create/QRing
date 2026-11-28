@@ -19,7 +19,7 @@ export function articleCtaKind(article: Pick<Article, "category">) {
 export function additionalServiceCta(article: Article) {
   if (article.publicationPending || article.primaryAudience !== "personal" || article.cta !== "none" || article.relatedService || article.relatedLinks?.some((l) => /^\/(use-cases|service|municipalities|collaboration)\//.test(l.href))) return null;
   // Historical/technical trivia and emergency functions need no automatic commercial suggestion.
-  if (["qr-code-inventor", "smartphone-emergency-sos"].includes(article.slug)) return null;
+  if (["qr-code-inventor", "smartphone-emergency-sos", "dog-owner-voice", "cat-owner-memory", "pets-earthquake-prediction", "disaster-family-contact", "dementia-early-signs", "dementia-forgetfulness", "young-onset-dementia", "care-levels", "care-insurance-age", "senior-care-facility-types"].includes(article.slug)) return null;
   const kind = articleCtaKind(article);
   return kind === "existing" ? null : { ...SERVICE_CTAS[kind], kind };
 }

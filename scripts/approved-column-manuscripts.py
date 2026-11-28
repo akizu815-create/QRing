@@ -3,6 +3,7 @@
 Run --sync only for an explicitly approved revision. The default is a read-only
 exact-text check; this tool never generates prose or touches other articles.
 """
+from column_revision_support import reviewed_expected, verify_revision, REVISIONS
 import hashlib
 import json
 import re
@@ -63,10 +64,12 @@ def manuscript(slug):
 
 def main():
     records = json.loads(REGISTRY.read_text())
+    if '--sync' in sys.argv and any(a['slug'] in REVISIONS for a in records):
+        raise SystemExit('Reviewed revisions exist; legacy --sync would discard them. Amend the revision record instead.')
     for a in records:
         if a['slug'] not in METADATA:
             continue
-        expected = {**manuscript(a['slug']), **METADATA[a['slug']]}
+        expected = reviewed_expected(a['slug'], {**manuscript(a['slug']), **METADATA[a['slug']]})
         if '--sync' in sys.argv:
             revision = max(2, a['contentRevision'])
             a.update(expected)
@@ -83,11 +86,12 @@ def main():
             assert a[key] == value, f'{a["slug"]}: approved {key} differs'
         assert a['contentRevision'] == a['approvalRevision'] and a['contentRevision'] >= 2
         assert a['contentFormat'] == 'approved-manuscript'
-        assert a['publishedAt'] == '2026-10-28' and a['reviewedAt'] == '2026-11-06'
+        assert a['publishedAt'] == '2026-10-28'
+        verify_revision(a)
         assert a['cta'] == 'none', 'Do not append the legacy service pitch'
     if '--sync' in sys.argv:
         REGISTRY.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n')
-    print('Approved manuscripts: exact titles, introductions, headings, paragraphs, table cells, links and approval hashes match both supplied originals.')
+    print('Approved manuscripts: exact titles, introductions, headings, paragraphs, table cells, links and approval hashes match the supplied originals plus the explicit reviewed amendments.')
 
 
 if __name__ == '__main__':

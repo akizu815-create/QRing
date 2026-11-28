@@ -1,0 +1,621 @@
+{
+  "checkedOn": "2026-11-28",
+  "note": "取得の観測記録。出典の信頼性・個別主張の照合はarticle-details.jsonとREADMEの事実確認欄を参照。検索スニペットのみ／全文未取得を区別し、HTTP取得成功を内容検証完了と扱わない。",
+  "results": [
+    {
+      "url": "https://www.qring.jp/use-cases/elderly/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch0"
+    },
+    {
+      "url": "https://www.qring.jp/use-cases/belongings/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch0"
+    },
+    {
+      "url": "https://www.qring.jp/service/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch0"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000167804.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch0"
+    },
+    {
+      "url": "https://www.env.go.jp/nature/dobutsu/aigo/shuyo/if.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch0"
+    },
+    {
+      "url": "https://www.env.go.jp/nature/dobutsu/aigo/pickup/chip.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch0"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00003.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch0"
+    },
+    {
+      "url": "https://www.ppc.go.jp/all_faq_index/faq1-q4-18/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch0"
+    },
+    {
+      "url": "https://www.ppc.go.jp/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch0"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/kaigo-kouhyou.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.jpn-geriat-soc.or.jp/tool/tool_02",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www2.police.pref.ishikawa.lg.jp/information/information04/information010.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.ipa.go.jp/security/10threats/ps6vr7000000auzz-att/yougoyashikumi_2022.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.npa.go.jp/news/release/2026/20260625001.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.npsc.go.jp/pressconf_2026/06_25.htm",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000052978.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.pref.gifu.lg.jp/page/13791.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.pref.chiba.lg.jp/koufuku/shien/ninchishou/mimotohumei.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.jpc.or.jp/pdf/r7_02_report.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySourceBatch1"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/newpage_40211.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.npa.go.jp/bureau/safetylife/sos47/case/service/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.npa.go.jp/bureau/safetylife/sos47/new-topics/250325/01.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.npa.go.jp/bureau/safetylife/sos47/case/fictitious-billing/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00006.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000167853.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.fsa.go.jp/ordinary/card/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/loss.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.qrcode.com/history/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.qrcode.com/about/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23525707/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.u-tokyo.ac.jp/focus/ja/press/p01_250327_02.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/caution/caution_055/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://www.ncgg.go.jp/hospital/tento/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources28"
+    },
+    {
+      "url": "https://support.google.com/android/answer/9319337?hl=ja",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.apple.com/jp/newsroom/2024/07/emergency-sos-via-satellite-available-today/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://support.apple.com/ja-jp/safety-features",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://help.line.me/line/?contentId=10002423&lang=ja",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.ipa.go.jp/security/anshin/reports/2025q1outline.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.jma.go.jp/jma/kishou/know/faq/faq24.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.env.go.jp/nature/dobutsu/aigo/1_law/disaster.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212395.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.keishicho.metro.tokyo.lg.jp/kurashi/cyber/notes/qrcord.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.ntt-east.co.jp/saigai/voice171s/intro.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.ntt-east.co.jp/saigai/web171/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://macal.missouri.edu/assets/doc/pubs/EffectsDividedAttentionEncodingRetrieval.pdf",
+      "observation": "no readable lines.",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://www.medlineplus.gov/ency/article/003257.htm",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySources44"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityResearchCore"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23525707/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityResearchCore"
+    },
+    {
+      "url": "https://macal.missouri.edu/assets/doc/pubs/EffectsDividedAttentionEncodingRetrieval.pdf",
+      "observation": "no readable lines.",
+      "batch": "qualityResearchCore"
+    },
+    {
+      "url": "https://www.jma.go.jp/jma/kishou/know/faq/faq24.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityResearchCore"
+    },
+    {
+      "url": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityResearchCore"
+    },
+    {
+      "url": "https://www.npa.go.jp/news/release/2026/20260625001.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityResearchCore"
+    },
+    {
+      "url": "https://support.google.com/photos/answer/6153599?hl=ja",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySpecific"
+    },
+    {
+      "url": "https://www.npa.go.jp/news/release/2026/R07yukuefumeisha.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySpecific"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySpecific"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9334438/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySpecific"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23525707/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualitySpecific"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000076236_00006.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.qrcode.com/history/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.u-tokyo.ac.jp/focus/ja/press/p01_250327_02.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.ppc.go.jp/all_faq_index/faq1-q1-25/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://help.line.me/line/?contentId=10002423&lang=ja",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.ntt-east.co.jp/saigai/voice171s/intro.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.ntt-east.co.jp/saigai/web171/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/caution/caution_055/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000212395.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/nintei/gaiyo2.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.jpn-geriat-soc.or.jp/tool/tool_02",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://www.jpc.or.jp/pdf/r7_02_report.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFindFacts"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/document?lawid=419M60400000006_20241202_506M60400000013",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/419M60400000006",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/418AC0000000073",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://elaws.jp/418AC0000000073",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/document?lawid=418AC0000000073_20220401_503AC0000000037",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://www.npa.go.jp/laws/notification/kanbou/kaikei/20231222ishitsu-kaishakuunyoukijyun.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://elaws.jp/419M60400000006",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://www.ppc.go.jp/files/pdf/personal_pamph27_caa.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://legaldoc.jp/elaws/elaws-view?fid=419M60400000006_20241202_506M60400000013&id=419M60400000006",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=82998034",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://www.npa.go.jp/safetylife/chiiki2/flow.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://www.keishicho.metro.tokyo.lg.jp/sodan/otoshimono/kaisei.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://www.mext.go.jp/content/20260423-mxt_syoto01-000028144_01.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityLegalSearch"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/gaiyo/index.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityVerificationMore"
+    },
+    {
+      "url": "https://www.npa.go.jp/news/release/2026/R07yukuefumeisha.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityVerificationMore"
+    },
+    {
+      "url": "https://www.npsc.go.jp/pressconf_2026/06_25.htm",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityVerificationMore"
+    },
+    {
+      "url": "https://www.npa.go.jp/laws/notification/kanbou/kaikei/20231222ishitsu-kaishakuunyoukijyun.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityVerificationMore"
+    },
+    {
+      "url": "https://www.ntt-east.co.jp/saigai/voice171s/howto.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityVerificationMore"
+    },
+    {
+      "url": "https://www.npa.go.jp/laws/notification/kanbou/kaikei/20231222ishitsu-kaishakuunyoukijyun.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFinalRefs"
+    },
+    {
+      "url": "https://www.ntt-east.co.jp/saigai/web171s/howto.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFinalRefs"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8683192/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFinalRefs"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/content/11909000/001512330.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFacilitiesVerified"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/content/12300000/001481759.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityFacilitiesVerified"
+    },
+    {
+      "url": "https://www.npsc.go.jp/pressconf_2026/06_25.htm",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityReadRemaining"
+    },
+    {
+      "url": "https://www.npa.go.jp/news/release/2026/R07yukuefumeisha.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityReadRemaining"
+    },
+    {
+      "url": "https://www.apple.com/jp/legal/privacy/data/ja/photos/",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityReadRemaining"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/newpage_40211.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityReadRemaining"
+    },
+    {
+      "url": "https://support.google.com/android/answer/9319337?hl=ja",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityReadRemaining"
+    },
+    {
+      "url": "https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityStatisticCheck"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/newpage_40211.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityStatisticCheck"
+    },
+    {
+      "url": "https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityStatisticCheck"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/stf/newpage_40211.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityStatisticCheck"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/content/11909000/001512330.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityStatisticCheck"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/document?lawid=409AC0000000123_20270401_508AC0000000031",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/document?lawid=409AC0000000123_20280624_508AC0000000051",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=82998034",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=82998034&dataType=0",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.city.kobe.lg.jp/a46210/kenko/fukushi/carenet/nintei_guide/sonota_e02.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/409AC0000000123?occasion_date=20250709",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://laws.e-gov.go.jp/law/409AC0000000123?occasion_date=20291001",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.city.kobe.lg.jp/a46210/kenko/fukushi/carenet/nintei_guide/shinseidaikou_b11.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://naracitycc.fastcloud.jp/fa/faq/web/knowledge7333.html?suid=38c79767-f614-47af-9791-56b73a190d4b",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.city.funabashi.lg.jp/kenkou/kaigo/002/p010084.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/content/001296000.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.city.shunan.lg.jp/soshiki/25/142325.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://faq.city.kobe.lg.jp/faq/show/556?site_domain=default",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.mhlw.go.jp/content/12300000/000992873.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.env.go.jp/policy/hakusyo/r07/html/hj25020205.html",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    },
+    {
+      "url": "https://www.city.kurume.fukuoka.jp/1100keikaku/2090kansa/3060gaibukansa/files/r7-houkatugaiyou.pdf",
+      "observation": "ページ又は該当箇所を取得（本文全文・全主張の検証を意味しない）",
+      "batch": "qualityChipFixResearch"
+    }
+  ]
+}
